@@ -5,6 +5,7 @@ export default class PostPreview extends React.Component {
   render() {
     const {entry, widgetFor, getAsset} = this.props;
     let image = getAsset(entry.getIn(["data", "image"]));
+    let image1 = getAsset(entry.getIn(["data", "image"]));
 
     return <div id="main" className="mw6 center ph3 pv4">
       <h1 className="f2 lh-title b mb3">{ entry.getIn(["data", "title"])}</h1>
@@ -15,6 +16,7 @@ export default class PostPreview extends React.Component {
       <div className="cms mw6">
         <p>{ entry.getIn(["data", "description"]) }</p>
         { image && <img src={ image } alt={ entry.getIn(["data", "title"])} /> }
+        { image1 && <img src={ image1 } alt={ entry.getIn(["data", "title"])} /> }
         { widgetFor("body") }
       </div>
     </div>;
