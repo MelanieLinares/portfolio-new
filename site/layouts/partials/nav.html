@@ -1,4 +1,4 @@
-<nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
+<nav id="navbar" class="flex justify-between items-center center bg-white divider-grey relative">
 
 	<!-- Logo -->
 	<a href="/" class="pa3 db mr4 h-100 w3 flex-none">
@@ -7,13 +7,59 @@
 
 	<!-- Primary Nav -->
 	<ul class="flex b grey-3">
-		<li><a href="/products" class="pa3 no-underline db">Products</a></li>
+		<li><a href="/values" class="pa3 no-underline db">About</a></li>
 
-		<li><a href="/values" class="pa3 no-underline db">Values</a></li>
+		<li><a href="/post" class="pa3 no-underline db">Work</a></li>
 
-		<li><a href="/post" class="pa3 no-underline db">Blog</a></li>
-
-		<li><a href="/contact" class="pa3 no-underline db">Contact</a></li>
+		<li><a href="/products" class="pa3 no-underline db">Articles</a></li>
 	</ul>
 
 </nav>
+
+<script>
+	function test () {
+		console.log('Wide viewport');
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos > currentScrollPos) {
+		document.getElementById("navbar").style.top = "0";
+	  } else {
+		document.getElementById("navbar").style.top = "-77px";
+	  }
+	  prevScrollpos = currentScrollPos;
+	}
+	}
+	function testother () {
+		console.log('Wide viewport');
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+	  if (prevScrollpos > currentScrollPos) {
+		document.getElementById("navbar").style.top = "0";
+	  } else {
+		document.getElementById("navbar").style.top = "0";
+	  }
+	  prevScrollpos = currentScrollPos;
+	}
+	}
+	
+
+
+
+	var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+if (viewportWidth > 640) {
+	test();
+} else {
+	testother();
+}
+
+window.addEventListener('resize', function () {
+	viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+	if (viewportWidth > 640) {
+		test();
+	} else {
+		testother();
+	}
+}, false);
+</script>

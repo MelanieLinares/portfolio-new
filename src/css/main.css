@@ -85,3 +85,16 @@
 
 /* Uncomment out the line below to help debug layout issues */
 /*@import './imports/_debug';*/
+
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    transition: top 0.3s;
+    top: 0;
+}
+
+#main {
+    margin-top: 70px
+}
