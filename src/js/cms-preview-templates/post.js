@@ -15,7 +15,6 @@ export default class PostPreview extends React.Component {
       <div className="cms mw6">
         <p>{ entry.getIn(["data", "description"]) }</p>
         { image && <img src={ image } alt={ entry.getIn(["data", "title"])} /> }
-        { image1 && <img src={ image1 } alt={ entry.getIn(["data", "title"])} /> }
         { widgetFor("body") }
       </div>
     </div>;
