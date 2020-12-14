@@ -3,3 +3,8 @@ dist/
 site/data/webpack.json
 /npm-debug.log
 yarn-error.log
+
+# Local Netlify folder
+.netlify
+package.json
+yarn.lock
