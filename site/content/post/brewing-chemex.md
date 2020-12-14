@@ -1,11 +1,11 @@
 ---
-title: Creating a reusable component-based application for NCDMV to decrease SharePoint List dependencies
+title: Creating a reusable component-based application for NCDMV to decrease
+  SharePoint List dependencies
 date: 2017-01-04T15:04:10.000Z
-newdate: 2018-01-04T15:04:10.000Z
-description: >-
-  Brewing with a Chemex probably seems like a complicated, time-consuming
-  ordeal, but once you get used to the process, it becomes a soothing ritual
-  that's worth the effort every time.
+newdate: 2020-12-14T02:27:22.481Z
+description: Brewing with a Chemex probably seems like a complicated,
+  time-consuming ordeal, but once you get used to the process, it becomes a
+  soothing ritual that's worth the effort every time.
 image: /img/blog-chemex.jpg
 image1: /img/blog-flavor_wheel.jpg
 ---
