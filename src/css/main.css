@@ -88,12 +88,12 @@
 
 @font-face {
     font-family: Montserrat-Bold;
-    src: url(/assets/Montserrat-Bold.ttf);
+    src: url(/font/Montserrat-Bold.ttf);
 }
 
 @font-face {
     font-family:HeptaSlab-Light;
-    src: url(/assets/HeptaSlab-Light.ttf);
+    src: url(/font/HeptaSlab-Light.ttf);
 }
   
   h1 b {
