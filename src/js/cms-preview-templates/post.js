@@ -6,8 +6,9 @@ export default class PostPreview extends React.Component {
     const {entry, widgetFor, getAsset} = this.props;
     let image = getAsset(entry.getIn(["data", "image"]));
     let image1 = getAsset(entry.getIn(["data", "image1"]));
+    // let boopdate = format(entry.getIn(["data", "date"]), "ddd, MMM D, YYYY")
 
-    return <div id="main" className="mw6 center ph3 pv4">
+    return <div id="main" className="mw7 center ph3 pv4">
       <h1 className="f2 lh-title b mb3">{ entry.getIn(["data", "title"])}</h1>
       <div className="flex justify-between grey-3">
         <p>hi{ format(entry.getIn(["data", "date"]), "ddd, MMM D, YYYY") } { format(entry.getIn(["data", "newdate"]), "ddd, MMM D, YYYY") }</p>

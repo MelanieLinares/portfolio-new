@@ -1,6 +1,26 @@
-<a href="{{ .RelPermalink }}" class="no-underline pa3 bg-grey-1 br1 mb2 db raise w-100">
-	<h2 class="f3 b lh-title mb1 primary">{{ .Title }}</h2>
-	<p class="mid-gray lh-title mb2">{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-	<p class="mb0">{{ .Description }}</p>
-	<p class="link b dib black mb0">Readi more →</p>
-</a>
+<div class="w-30 mb2 " style="background-size: cover; background-position: center; background-image: url('{{ .Params.image }}')"></div>
+
+
+
+<div class="no-underline pa3 bg-grey-1 br1 mb2 db w-70">
+
+	<a href="{{ .RelPermalink }}" class="no-underline bg-grey-1 br1 mb1 db raise w-100"><h2 class="f3 pa3 b lh-title primary">{{ .Title }}</h2></a>
+	<p style="padding-top: 0" class="pa3 mid-gray lh-title mb2 no-underline bg-grey-1 br1 db w-100">
+		<span class="db"><span class="b mb2">{{ .Date.Format "Jan 2, 2006" }}
+	-
+	{{if .Params.newdate}}
+	<span>		{{ with .Params.newdate }}
+		<b>{{ dateFormat "Jan 2 2006" . }}</b>
+		{{ end }}</span>
+	{{else}}
+	<span>ongoing</span>
+	{{end}}
+</span>
+		
+		{{.Params.duration }}
+		{{if .Params.urllink}}
+		<a style="margin-top: 1em" class="link b db mb0 primary" href="{{ .Params.urllink }}" target="_black">View Live</a>	<span></span>{{end}}
+	</p>
+
+	
+</div>

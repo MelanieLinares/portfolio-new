@@ -1,3 +1,20 @@
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: bold
+}
+b {
+  font-weight: bold
+}
+
+
+
+
 html {
   font-size: var(--font-size);
   @media (--breakpoint-medium) {
@@ -20,10 +37,10 @@ body {
   background-color: var(--off-white);
  }
 
-p {
+/* p {
   margin-bottom: var(--spacing-medium);
   max-width: 32rem;
-}
+} */
 
 strong {
   font-weight: var(--bold-font-weight);

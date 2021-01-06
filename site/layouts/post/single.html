@@ -1,18 +1,33 @@
 {{ define "main" }}
 
-  <div id="main" class="mw6 center ph3 pv4">
-    <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
-    <div class="flex justify-between grey-3">
-      <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-      <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-      <p>Read in {{ .ReadingTime }} minutes</p>
-    </div>
-    <div class="cms mw6">
-      <div class="header-images">
-        {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
-        {{ if .Params.image1 }}<img src="{{ .Params.image1 }}" alt="{{ .Title }}" />{{ end }}
+  <div id="main" class=" center ph3 pv4">
+    <div class="hero"></div>
+    <section class="flex-ns flex-wrap" style="position: relative">
+      <div class="header-images ">
+        {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" style="position: absolute;transform: rotate(5deg);" class="mw6"/>{{ end }}
+        {{ if .Params.image1 }}<img src="{{ .Params.image1 }}" alt="{{ .Title }}" style="position: absolute;transform: rotate(-5deg);" class="mw6"/>{{ end }}
       </div>
-      <p>{{ .Description }}</p>
+       <div class="mt6 mw7-xxxl ml7-xxl mw7-xxl ml7-xl mw6-xl mw6-l ml7-l mw-none-m ml6-m">
+        <!-- <div class="mw7half pl7"> -->
+    <h1 class="f2 lh-title mb3"><b>{{.Params.titlebold }}</b> {{.Params.titlenormal }}  </h1>
+    
+      <p><b>Client:</b> StayOnline</p>
+      <p><b>When:</b> {{ .Date.Format "Jan 2, 2006" }}
+      -
+        {{ with .Params.newdate }}
+        {{ dateFormat "Jan 2 2006" . }}
+        {{ end }}
+        | 3 months
+      </p>
+      
+      {{if .Params.urllink}}
+      <p><a href="{{ .Params.urllink }}" target="_black">View Live</a> (website no longer in sync with this case study)</p>
+      {{ end }}
+      <!-- <p>Read in {{ .ReadingTime  }} minutes</p> -->
+    <!-- </div> -->
+  </div>
+  </section>
+    <div class="cms center pt7 mt5 mw8">
       {{ .Content }}
     </div>
   </div>
