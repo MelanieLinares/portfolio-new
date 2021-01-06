@@ -98,11 +98,11 @@
   
   h1 b {
     
-    font-family: Montserrat-Bold;
+    font-family: Montserrat-Bold!important;
   }
   h1 {
-    font-family: HeptaSlab-Light;
-    color: #57377D
+    font-family: HeptaSlab-Light!important;
+    color: #57377D!important;
   } 
 
 html {
