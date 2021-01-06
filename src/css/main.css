@@ -96,13 +96,14 @@
     src: url(/font/HeptaSlab-Light.ttf);
 }
   
-  h1 b {
-    
+  h1 b {    
     font-family: Montserrat-Bold!important;
+    font-size: 4.65vh!important;
   }
   h1 {
     font-family: HeptaSlab-Light!important;
     color: #57377D!important;
+    font-size: 4.33vh!important;
   } 
 
 html {
