@@ -95,16 +95,53 @@
     font-family:HeptaSlab-Light;
     src: url(/font/HeptaSlab-Light.ttf);
 }
+
+@font-face {
+    font-family:HeptaSlab-Regular;
+    src: url(/font/HeptaSlab-Regular.ttf);
+}
+
+@media screen and (max-width: 40em) and (orientation:landscape) { /* 460px + */
+    /* Landscape styles */
+    h1 {
+        font-size: 28px;
+    }
+    }
+
+@media screen and (--breakpoint-not-small) and (orientation:landscape) { /* 460px + */
+    /* Landscape styles */
+    h1 {
+        font-size: 28px;
+    }
+    }
+
+    @media screen and (--breakpoint-medium) and (orientation:landscape) { /* 800px - 959px */
+        /* Landscape styles */
+        h1 {
+            font-size: 28px;
+        }
+        }
+
+        @media screen and (--breakpoint-large) and (orientation:landscape) { /* 960px + */
+            /* Landscape styles */
+            h1 b {    
+                font-family: Montserrat-Bold!important;
+                font-size: 4.65vh!important;
+              }
+              h1 {
+                border: unset;
+                font-family: HeptaSlab-Light!important;                
+                font-size: 4.33vh;
+              } 
+            }
   
-  h1 b {    
+h1 b {    
     font-family: Montserrat-Bold!important;
-    font-size: 4.65vh!important;
-  }
-  h1 {
+}
+h1 {
     font-family: HeptaSlab-Light!important;
     color: #57377D!important;
-    font-size: 4.33vh!important;
-  } 
+} 
 
 html {
     background-color: white;
