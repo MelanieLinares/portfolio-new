@@ -18,10 +18,10 @@
 
 <script>
 	function test () {
-		console.log('Wide viewport');
+		// console.log('Wide viewport');
 	var prevScrollpos = window.pageYOffset;
 	window.onscroll = function() {
-		console.log(window.pageYOffset);
+		// console.log(window.pageYOffset);
 	var currentScrollPos = window.pageYOffset;
 	
 	  if (prevScrollpos > currentScrollPos) {
@@ -67,7 +67,7 @@
 	}
 	}
 	function testother () {
-		console.log('Wider viewport');
+		// console.log('Wider viewport');
 	var prevScrollpos = window.pageYOffset;
 	window.onscroll = function() {
 	var currentScrollPos = window.pageYOffset;
@@ -96,6 +96,8 @@ if (viewportWidth > 1280) {
 	testother();
 }
 
+
+OrigHeight = window.innerHeight;
 window.addEventListener('resize', function () {
 	viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 	if (viewportWidth > 1024) {
@@ -103,5 +105,39 @@ window.addEventListener('resize', function () {
 	} else {
 		testother();
 	}
+
+// 	NewHeight = window.innerHeight;
+
+// if(OrigHeight == NewHeight){}
+// if(OrigHeight !== NewHeight){
+// console.log(window.innerHeight);
+// }
+
 }, false);
+
+
+
+
+// window.addEventListener('resize', function () {
+
+// 	var heroElement = document.getElementById('hero');
+// 	var offsetHeightt = document.getElementById('hero').offsetHeight;
+// 	console.log("offsetHeight: " + offsetHeightt);
+// 	heroElement.pseudo("before", "height", offsetHeightt +"px");
+
+// }, false);
+
+
+
+    
+
+    // window.addEventListener('resize', function () {
+	// 	var widthh = window.innerWidth;
+    //    if (window.innerWidth !== widthh) {
+    //        console.log(widthh);
+    //    }
+	// }, false);
+
+
+
 </script>
