@@ -4,12 +4,12 @@
 
 <div class="no-underline pa3 bg-grey-1 br1 mb2 db w-70">
 
-
-	<ul>
+	{{if .Params.tags}}
+	<ul id="tags" class="pa3"> 
 		{{ range (.GetTerms "tags") }}
 			<li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
 	   {{ end }}
-	</ul>
+	</ul>{{ end }}
 
 	<a href="{{ .RelPermalink }}" class="no-underline bg-grey-1 br1 mb1 db raise w-100"><h2 class="f3 pa3 b lh-title primary">{{ .Title }}</h2></a>
 	<p style="padding-top: 0" class="pa3 mid-gray lh-title mb2 no-underline bg-grey-1 br1 db w-100">
@@ -26,7 +26,7 @@
 		
 		{{.Params.duration }}
 		{{if .Params.urllink}}
-		<a style="margin-top: 1em" class="link b db mb0 primary" href="{{ .Params.urllink }}" target="_black">View Live</a>	<span></span>{{end}}
+		<span class="db"><a style="margin-top: 1em" class="link b db mb0 primary" href="{{ .Params.urllink }}" target="_black">View Live</a></span>	{{end}}
 	</p>
 
 	

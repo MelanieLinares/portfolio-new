@@ -11,7 +11,7 @@ urllink: http://www.google.com
 image: /img/blog-flavor_wheel.jpg
 image1: img/about-shade-grown.jpg
 
-tags: ['value_4']
+tags: ['vuecli']
 ---
 
 ## What the updates mean to you
