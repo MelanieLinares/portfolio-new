@@ -19,12 +19,27 @@
         {{ end }}
         | 3 months
       </p>
+
+      {{ if .Params.tags }}{{ .Params.tags }}{{ end }}
       
       {{if .Params.urllink}}
       <p><a href="{{ .Params.urllink }}" target="_black">View Live</a> (website no longer in sync with this case study)</p>
       {{ end }}
+      
       <!-- <p>Read in {{ .ReadingTime  }} minutes</p> -->
     <!-- </div> -->
+
+    <span id="one"></span>
+    <span id="two"></span>
+    <span id="three"></span>
+    <span id="four"></span>
+    <span id="five"></span>
+
+    <svg class="triangle" height="210" width="185">
+      <!--   A18, ? ?, ? A18, 174 -->
+        <polygon points="18,26 155,110 18,184" style="fill:transparent;stroke:rgba(255,255,255,.2);stroke-width:30" />
+      </svg>
+
   </div>
   </section>
     <div class="cms center mw8">

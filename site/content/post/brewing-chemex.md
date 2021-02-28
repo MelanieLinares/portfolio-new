@@ -8,6 +8,8 @@ duration: (1+ years)
 urllink: http://www.google.com
 image: /img/blog-chemex.jpg
 image1: /img/blog-flavor_wheel.jpg
+
+tags: ['value_1', 'value_2']
 ---
 
 ## Creating a plan to decrease mobile bounce-rate

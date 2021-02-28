@@ -10,6 +10,8 @@ duration: (1+ years)
 urllink: http://www.google.com
 image: /img/blog-flavor_wheel.jpg
 image1: img/about-shade-grown.jpg
+
+tags: ['value_4']
 ---
 
 ## What the updates mean to you
