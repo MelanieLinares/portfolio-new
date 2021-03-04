@@ -12,10 +12,20 @@ blurb:
 intro:
   heading: intro heading
   text: intro text
-products:
-  - text: product text
+image_list_heading:
+  heading: Other note-worthy bits
+image_list:
+  - linktext: 1 **[Insight](https://www.google.com)**
+    text: product text
     image: img/android-chrome-192x192.png
-  - text: this is a second product
+  - linktext: 2 **[Insight](https://www.google.com)**
+    text: this is a second product
+    image: img/safari-pinned-tab.svg
+  - linktext: 3 **[Insight](https://www.google.com)**
+    text: product text
+    image: img/android-chrome-192x192.png
+  - linktext: 4 **[Insight](https://www.google.com)**
+    text: this is a second product
     image: img/safari-pinned-tab.svg
 values:
   heading: values heading
