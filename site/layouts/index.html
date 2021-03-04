@@ -44,12 +44,6 @@
         <p><a href="">UX Y’all</a> - 10/04/2019    |    <a href="">Modern Web October Event</a> – 10/16/2019    |    <a href="">Code for Durham: Civic Hacking</a> – 12/10/2019</p>
     </section>
 
-    {{ range .Params.intro }}
-    <p>heading: {{ .heading }}</p>
-    <p>subheading: {{ .subheading }}</p>
-    <p>introtext: {{ .introtext }} </p>
-    {{ end }}
-
 </section>
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}

@@ -36,9 +36,6 @@ export default class PostPreview extends React.Component {
             </div>
 
             <div className="tc">
-              <p>heading: {entry.getIn(["data", "intro", "heading"])}</p>
-              <p>subheading: {entry.getIn(["data", "intro", "subheading"])}</p>
-              <p>introtext: {entry.getIn(["data", "intro", "introtext"])}</p>
               <a href="#" className="btn raise">See all products</a>
             </div>
           </div>
