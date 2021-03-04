@@ -1,5 +1,4 @@
 ---
-title: this is the title
 subtitle: this is the subtitle
 image: img/products-grid3.jpg
 blurb:
