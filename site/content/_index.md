@@ -9,9 +9,8 @@ intro:
   heading: intro heading
   text: intro text
 products:
-  heading: product heading
-  text: product text
-  image: img/android-chrome-192x192.png
+  - text: product text
+    image: img/android-chrome-192x192.png
 values:
   heading: values heading
   text: values text
