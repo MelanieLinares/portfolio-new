@@ -1,5 +1,6 @@
 ---
 subtitle: this is the subtitle
+text: this is a **test** for markdown
 image: img/products-grid3.jpg
 blurb:
   heading: blurb heading
