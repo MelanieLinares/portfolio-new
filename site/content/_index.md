@@ -1,22 +1,17 @@
 ---
-title: "Great coffee with a conscience"
-subtitle: Support sustainable farming while enjoying a cup
-image: /img/home-jumbotron.jpg
+title: this is the title
+subtitle: this is the subtitle
+image: img/products-grid3.jpg
 blurb:
-    heading: I am an accessibility advocate.
-    text: "I love working with teams to launch user-focused, accessible, and progressive web applications. You can usually find me with a cup of tea on my desk, surrounded by sticky notes and a wide assortment of sketching pens. 
-
-"
-products:
-    - image: img/illustrations-coffee.svg
-      text: "We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability."
-    - image: /img/illustrations-coffee-gear.svg
-      text: "We offer a small, but carefully curated selection of brewing gear and tools for every taste and experience level. No matter if you roast your own beans or just bought your first french press, you’ll find a gadget to fall in love with in our shop."
+  heading: blurb heading
+  text: blurb text
 intro:
-    heading: "Other note-worthy bits"
-    text: "Kaldi is the ultimate spot for coffee lovers who want to learn about their java’s origin and support the farmers that grew it. We take coffee production, roasting and brewing seriously and we’re glad to pass that knowledge to anyone."      
+  heading: intro heading
+  text: intro text
+products:
+  - text: product text
+    image: img/android-chrome-192x192.png
 values:
-    heading: Our values
-    text: Coffee is an amazing part of human culture but it has a dark side too – one of colonialism and mindless abuse of natural resources and human lives. We want to turn this around and return the coffee trade to the drink’s exhilarating, empowering and unifying nature.
+  heading: values heading
+  text: values text
 ---
-
