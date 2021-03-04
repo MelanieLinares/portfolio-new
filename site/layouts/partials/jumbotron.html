@@ -6,40 +6,28 @@
           {{ if .title }}
           {{.title}}
 
-          {{ else }}
+          {{ else }}           
           <script type="text/javascript">
-            document.write("<p>");
+            document.write("<p>Oh hello");
             var day = new Date();
-            var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-            var d = weekday[day.getDay()];
             var hr = day.getHours();
-            if (hr == 1) {
-                document.write("    Club Life");
-            } else if (hr == 2) {
-                document.write("    Club Life    ");
-            } else if (hr == 3) {
-                document.write("    Identity     ");
-            } else if (hr == 4) {
-                document.write("A State Of Trance");
-            } else if (hr == 5) {
-                document.write("A State Of Trance");
-            } else if ((hr == 6) || (hr == 7) || (hr == 8) || (hr == 9) || (hr == 10) || (hr == 11) || (hr == 12) || (hr == 13) || (hr == 14)) {
-                document.write("    New Musikk");
-            } else if (hr == 15) {
-                document.write("     Protocol");
-            } else if ((hr == 16) || (hr == 17) || (hr == 18) || (hr == 19)) {
-                document.write("    New Musikk");
-            } else if (((hr == 20) || (hr == 21)) &&
-                ( d == "Monday" || d == "Tuesday" || d == "Wednesday" || d == "Thursday")) {
-                document.write("    Rock Rush");
-            } else if (hr == 22 && d == "Monday") {
-                document.write(" Spinnin Sessions");
-            } else if (hr == 23) {
-                document.write(" Planet Perfecto");
-            } else if (hr == 0) {
-                document.write(" Planet Perfecto");
-            }
-            document.write("</p>");
+            if ((hr >= 20) && (hr <= 24)) {
+              // 8:00pm est - 12:59pm
+                document.write(", & good night");
+            } else if ((hr >= 1) && (hr <= 5)) {
+              // 1:00am est - 5:59am
+                document.write(" night owl");              
+            } else if ((hr >= 6) && (hr <= 11)) { 
+              // 6:00am est - 10:59am
+                document.write(", & good morning");
+            } else if ((hr >= 11) && (hr <= 15)) {
+              // 11:00am est - 3:59pm
+                document.write(", & good afternoon");
+            } else if ((hr >= 16) && (hr <= 19)) {
+              // 4:00pm est - 7:59pm
+                document.write(", & good evening");
+            } 
+            document.write("!</span>");
         </script>
     
           
@@ -54,7 +42,15 @@
           {{.subtitle}}
         </p>
         {{ end }}
-
+      </div>
+      <div class="mw7 relative bg-fix-primary">
+        {{ if .text }}
+        <p class="b f4 di lh-title mb3 white mw6 bg-primary">
+          {{.text}}
+        </p>
+        {{ end }}
+      </div>
+      <div class="mw7 relative bg-fix-primary">
         {{ if .heroP }}
         <p style="margin-top: 2rem" class="di lh-title mb3 white mw6 bg-primary db">
           {{.heroP}} 
