@@ -43,8 +43,8 @@ collections: # A list of collections the CMS should be able to edit
               {label: "Link Text 2", name: "linktext2", widget: "text"},
               {label: "Link URL", name: "linkurl", widget: "string"},
               {label: "Link URL 2", name: "linkurl2", widget: "string"},
-              {label: "Description", name: "text", widget: "text"}]}
-              {label: "Description 2", name: "text2", widget: "text"}]}
+              {label: "Description", name: "text", widget: "text"},
+              {label: "Description 2", name: "text2", widget: "text"},
               {label: "Description 3", name: "text3", widget: "text"}]}
           - {label: "Values", name: "values", widget: "object", fields: [
               {label: "Heading", name: "heading", widget: string},
