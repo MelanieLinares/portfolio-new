@@ -6,22 +6,26 @@
       {{ range .image_list }}
       <div class="ph2-ns w-25-ns tc">
         <img src="{{.image}}" alt="" class="center db mb3" style="width: 240px">
-        <p>{{.linktext}}</p>
-        <p>{{.linkurl}}</p>
-        <p>{{.linktext2}}</p>
-        <p>{{.linkurl2}}</p>
-        <p>{{.text}}</p>
-        <p>{{.text2}}</p>
-        <p>{{.text3}}</p>
+
+        <p>
+          {{.text}}
+          <a href="{{.linkurl}}">{{.linktext}}</a>
+          {{ if .linkurl2 }}
+          and <a href="{{.linkurl2}}">{{.linktext2}}</a>
+          {{ end }}
+          {{.text2}}
+          {{.text3}}
+        </p>
+
       </div>
       {{ end }}
     </div>
   </div>
 
-  <div class="ph3 mw7 center">
+  <!-- <div class="ph3 mw7 center">
     <h2 class="f2 b lh-title mb2">{{.intro.heading}}</h2>
     <p class="mb4 mw6">{{.intro.text}}</p>
-  </div>
+  </div> -->
 
 
     <!-- <div class="tc">
