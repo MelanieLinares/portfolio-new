@@ -32,9 +32,17 @@ export default class PostPreview extends React.Component {
             <h2 className="f2 b lh-title mb2">{entry.getIn(["data", "image_list_heading", "heading"])}</h2>
               {(entry.getIn(["data", "image_list"]) || []).map((product, i) => <div className="ph2-ns w-50-ns" key={i}>
                 <img src={getAsset(product.get("image"))} alt="" className="center db mb3" style={{width: "240px"}}/>
-                <p>{product.get("linktext")}</p>
-                <p>{product.get("linkurl")}</p>
-                <p>{product.get("text")}</p>
+
+                <p>
+                  {product.get("text")}
+                  <a href={product.get("linkurl")}>{product.get("linktext")}</a>
+                  {product.get("text3")}
+                  if (linkurl2) {
+                  <a href={product.get("linkurl2")}>{product.get("linktext2")}</a>
+                  } 
+                  {product.get("text3")}
+                </p>
+
               </div>)}
             </div>
 

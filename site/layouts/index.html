@@ -46,9 +46,18 @@
 
 </section>
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "subtitle" .Params.subtitle "text" .Params.text) }}
+<!-- //this is what allows markup... only this -->
+<!-- <p class="b f4 di lh-title mb3 white mw6 bg-primary"></p>
+{{ .Content }} 
+</p> -->
+<!-- // -->
+
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "subtitle" .Params.subtitle "text" .Content) }}
+
+{{.Params.text}}
 
 {{ partial "short-text" .Params.blurb}}
+
 
 {{ partial "2-up" .Params }}
 
