@@ -1,8 +1,12 @@
 ---
 subtitle: I'm Melanie Linares, a front-end UX/UI developer based in Raleigh, NC.
-text: My specialities are accessibility and progressive enhancement. I work at
-  **[Insight](https://www.google.com)** as an accessibility and UX consultant
-  for the NCDOT. Currently I am having fun working with Vue and RESTful APIs.
+text: >-
+  My specialties are accessibility and progressive enhancement. I work at
+  **Insight** as an accessibility and UX consultant for the NCDOT. Currently I
+  am having fun working with Vue and RESTful APIs.
+
+
+  ![hello there alt text](img/about-direct-sourcing.jpg "hello there title")
 image: img/products-grid3.jpg
 blurb:
   heading: I am an accessibility advocate
@@ -25,7 +29,7 @@ image_list:
     text: product text
     image: img/android-chrome-192x192.png
   - linktext: 4 **[Insight](https://www.google.com)**
-    text: this is a second product
+    text: ""
     image: img/safari-pinned-tab.svg
 values:
   heading: values heading
