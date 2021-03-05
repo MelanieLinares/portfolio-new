@@ -7,7 +7,7 @@
         {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" style="position: absolute;transform: rotate(5deg);" class="mw6"/>{{ end }}
         {{ if .Params.image1 }}<img src="{{ .Params.image1 }}" alt="{{ .Title }}" style="position: absolute;transform: rotate(-5deg);" class="mw6"/>{{ end }}
       </div>
-       <div id="hero" class="">
+       <div id="hero" class="{{.Params.backgroundcolor}}">
         <!-- <div class="mw7half pl7"> -->
     <h1 class="lh-title mb3"><b>{{.Params.titlebold }}</b> {{.Params.titlenormal }}  </h1>
     

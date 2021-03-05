@@ -100,6 +100,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "Values Page"
         name: "values"
         fields:
+          - {label: "Background Color", name: "backgroundcolor", widget: "string"}
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
           - label: Values
