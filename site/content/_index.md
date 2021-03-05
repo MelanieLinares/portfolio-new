@@ -20,21 +20,21 @@ image_list:
       I am an Inclusion and Diversity 
       Event Regional Lead at Insight
     image: img/android-chrome-192x192.png
-    linktext2: " "
+    linktext2: ""
     linkurl: www.event.com
-    linkurl2: " "
-    text2: " "
-    text3: " "
+    linkurl2: ""
+    text2: ""
+    text3: ""
   - linktext: What we’ve been up to
     text: |-
       I am part of Insight’s Accessibility 
       and Inclusivity Design Team
     image: img/safari-pinned-tab.svg
     linkurl: example.com
-    linktext2: " "
-    linkurl2: " "
-    text2: " "
-    text3: " "
+    linktext2: ""
+    linkurl2: ""
+    text2: ""
+    text3: ""
   - linktext: Twitch
     text: |-
       I do occasional design and 
@@ -45,7 +45,7 @@ image_list:
     linktext2: Youtube
     linkurl: twitch.com
     linkurl2: youtube.com
-    text3: " "
+    text3: ""
   - linktext: Instagram
     text: |-
       My dog and two cats think I’m the 
@@ -54,9 +54,9 @@ image_list:
     image: img/safari-pinned-tab.svg
     text2: 📸
     linkurl: instagram.com
-    linktext2: " "
-    linkurl2: " "
-    text3: " "
+    linktext2: ""
+    linkurl2: ""
+    text3: ""
 values:
   heading: values heading
   text: values text
