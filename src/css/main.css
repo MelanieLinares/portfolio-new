@@ -203,6 +203,14 @@
     }
 }
 
+.article-roll .flex:first-child {
+    display: none
+}
+
+.hero {
+    padding-top: calc(80px + 4rem + var(--spacing-medium));
+}
+
 .triangle {
   margin-top: -100px;
 margin-left: -100px;

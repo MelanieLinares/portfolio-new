@@ -2,7 +2,7 @@
 
 	<!-- Logo -->
 	<a href="/" class="pa3 db mr4 h-100 w3 flex-none">
-		<img src="/img/logo-new.png" alt="Kaldi logo" class="br0 db mb0 w-100"/>
+		<img src="/img/logo.svg" alt="Kaldi logo" class="br0 db mb0 w-100"/>
 	</a>
 
 	<!-- Primary Nav -->
@@ -28,20 +28,20 @@
 		document.getElementById("navbar").style.top = "0";
 		document.getElementById("navbar").style.borderTop = "solid";
 			document.getElementById("navbar").style.borderTopWidth = "7px";
-			document.getElementById("navbar").style.borderTopColor = "#57377D"
+			document.getElementById("navbar").style.borderTopColor = "#2740ca"
 
 		if (currentScrollPos < 200) {
-			document.getElementById("navbar").style.backgroundColor = "#ffffff00";
+			document.getElementById("navbar").style.backgroundColor = "#ffffff00"; //transparent
 			document.getElementById("navbar").style.borderTop = "solid";
 			document.getElementById("navbar").style.borderTopWidth = "7px";
 			document.getElementById("navbar").style.borderBottomWidth = "0px";
-			document.getElementById("navbar").style.borderTopColor = "#57377D"
+			document.getElementById("navbar").style.borderTopColor = "#2740ca"
 		} 
 		else {
-			document.getElementById("navbar").style.backgroundColor = "white";
+			document.getElementById("navbar").style.backgroundColor = "white"; //solid
 			document.getElementById("navbar").style.borderTop = "solid";
 			document.getElementById("navbar").style.borderTopWidth = "7px";
-			document.getElementById("navbar").style.borderTopColor = "#57377D"
+			document.getElementById("navbar").style.borderTopColor = "#2740ca"
 			document.getElementById("navbar").style.borderBottom = "none";
 		}
 	  }
@@ -50,17 +50,17 @@
 		// document.getElementById("navbar").style.top = "-77px";
 
 		if (currentScrollPos < 200) {
-			document.getElementById("navbar").style.backgroundColor = "#ffffff00";
+			document.getElementById("navbar").style.backgroundColor = "#ffffff00"; //transparent
 			document.getElementById("navbar").style.top = "0";
 			document.getElementById("navbar").style.borderBottomWidth = "0px";
 		} 
 		else {
 			document.getElementById("navbar").style.top = "-78px";
-			document.getElementById("navbar").style.backgroundColor = "white";
+			document.getElementById("navbar").style.backgroundColor = "white"; //solid
 			document.getElementById("navbar").style.borderBottom = "solid";
 			document.getElementById("navbar").style.borderBottomWidth = "7px";
 			document.getElementById("navbar").style.borderTopWidth = "0px";
-			document.getElementById("navbar").style.borderBottomColor = "#57377D"
+			document.getElementById("navbar").style.borderBottomColor = "#2740ca"
 		}
 	  }
 	  prevScrollpos = currentScrollPos;
@@ -73,14 +73,14 @@
 	var currentScrollPos = window.pageYOffset;
 	document.getElementById("navbar").style.borderTop = "solid";
 			document.getElementById("navbar").style.borderTopWidth = "7px";
-			document.getElementById("navbar").style.borderTopColor = "#57377D"
+			document.getElementById("navbar").style.borderTopColor = "#2740ca"
 
 	  if (prevScrollpos > currentScrollPos) {
 		document.getElementById("navbar").style.top = "0";
-		document.getElementById("navbar").style.backgroundColor = "#ffffff";
+		document.getElementById("navbar").style.backgroundColor = "#ffffff"; //solid
 	  } else {
 		document.getElementById("navbar").style.top = "0";
-		document.getElementById("navbar").style.backgroundColor = "#ffffff";
+		document.getElementById("navbar").style.backgroundColor = "#ffffff"; //solid
 	  }
 	  prevScrollpos = currentScrollPos;
 	}

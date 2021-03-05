@@ -1,58 +1,12 @@
 {{ define "main" }}
 
-<section class="mw7 center ph3 pt4" style="padding-top:77px">
-
-    <section class="pa3">
-        <h1><b class="db">Oh hello, & good evening!</b> I'm Melanie Linares, a front-end UX/UI developer based in Raleigh, NC.</h2>
-        <p>My specialities are accessibility and progressive enhancement. I work at Insight as an accessibility and UX consultant for the NCDOT. Currently I am having fun working with Vue and RESTful APIs.
-            </p>
-    </section>
-    <section class="pa3">
-        <h2 class="b">I am an accessibility advocate</h2>
-        <p>I love working with teams to launch user-focused, accessible, and progressive web applications. You can usually find me with a cup of tea on my desk, surrounded by sticky notes and a wide assortment of sketching pens.</p>
-    </section>
-    <section class="pa3">
-        <h2 class="b">Other note-worthy bits</h2>
-        <ul>
-            <li><img class="db"/>I am an Inclusion and Diversity Event Lead at Insight
-            <br>Want to know more about <a href="">recent
-                 and upcoming events</a>?</li>
-            <li><img class="db"/>I am part of Insight’s global Accessibility and Inclusivity Design Team                
-            <br>Want to learn more about <a href="">what 
-                we’ve been up to</a>?</li>
-            <li><img class="db"/>I do occasional design and development streams on <a href="">Twitch</a> and <a href="">YouTube</a>, including walk-throughs and UX/UI process</li> 
-            <li><img class="db"/>My dog thinks I’m the best human 
-                ever (my cat is undecided <br> Yes, they have an <a href="">Instagram</a> 📸</li>                
-        </ul>
-    </section>
-    <section class="pa3">
-        <h2 class="b">Latest articles</h2>
-        <ul>
-            <li><a href="">SVG Filter Effects — Moving Forward</a><br>
-                In this last article of the SVG Filter Effects series, I’ll share a list of useful resources and 
-                experiments to learn more about SVG Filters to start creating your own effects.</li>
-            <li><a href="">SVG Filter Effects — Moving Forward</a><br>
-                In this last article of the SVG Filter Effects series, I’ll share a list of useful resources and 
-                experiments to learn more about SVG Filters to start creating your own effects.</li>
-            <li><a href="">SVG Filter Effects — Moving Forward</a><br>
-                In this last article of the SVG Filter Effects series, I’ll share a list of useful resources and 
-                experiments to learn more about SVG Filters to start creating your own effects.</li>              
-        </ul>
-    </section>
-    <section class="pa3">
-        <h2 class="b">Find me in the wild</h2>
-        <p><a href="">UX Y’all</a> - 10/04/2019    |    <a href="">Modern Web October Event</a> – 10/16/2019    |    <a href="">Code for Durham: Civic Hacking</a> – 12/10/2019</p>
-    </section>
-
-</section>
-
 <!-- //this is what allows markup... only this -->
 <!-- <p class="b f4 di lh-title mb3 white mw6 bg-primary"></p>
 {{ .Content }} 
 </p> -->
 <!-- // -->
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "subtitle" .Params.subtitle "text" .Content) }}
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "backgroundcolor" .Params.backgroundcolor "subtitle" .Params.subtitle "text" .Content) }}
 
 <!-- {{.Params.text}} -->
 

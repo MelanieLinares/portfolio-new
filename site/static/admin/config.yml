@@ -10,6 +10,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "site/content/article" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
+      - {label: "Background Color", name: "backgroundcolor", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "New Date", name: "newdate", widget: "datetime"}
@@ -23,6 +24,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "site/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
+      - {label: "Background Color", name: "backgroundcolor", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "New Date", name: "newdate", widget: "datetime"}
@@ -38,6 +40,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "Home Page"
         name: "home"
         fields:
+          - {label: "Background Color", name: "backgroundcolor", widget: "string"}
           # - {label: Title, name: title, widget: string}
           - {label: Subtitle, name: subtitle, widget: string}
           - {label: Text, name: text, widget: markdown}
@@ -66,6 +69,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "Contact Page"
         name: "contact"
         fields:
+          - {label: "Background Color", name: "backgroundcolor", widget: "string"}
           - {label: Title, name: title, widget: string}
           - {label: Logo, name: logo, widget: image}
           - {label: Body, name: body, widget: markdown}
