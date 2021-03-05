@@ -29,7 +29,7 @@ image_list:
     text: product text
     image: img/android-chrome-192x192.png
   - linktext: 4 **[Insight](https://www.google.com)**
-    text: this is a second product
+    text: ""
     image: img/safari-pinned-tab.svg
 values:
   heading: values heading
