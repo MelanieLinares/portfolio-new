@@ -1,15 +1,20 @@
 ---
-title: Decreasing bounce-rate of Stay Online's existing website through responsive implementation & re-branding
-titlebold: Decreasing bounce-rate
-titlenormal: of Stay Online's existing website through responsive implementation & re-branding
+backgroundcolor: purple
+title: Decreasing bounce-rate of Stay Online's existing website through
+  responsive implementation & re-branding
 date: 2017-01-05T15:04:00.000Z
 newdate: 2020-12-14T02:27:22.000Z
-duration: (1+ years)
+description: no, intro blurb >:[
 urllink: http://www.google.com
+duration: (1+ years)
 image: /img/blog-chemex.jpg
 image1: /img/blog-flavor_wheel.jpg
-
-tags: ['responsive', 'cross-browser']
+tags:
+  - responsive
+  - cross-browser
+titlebold: Decreasing bounce-rate
+titlenormal: of Stay Online's existing website through responsive implementation
+  & re-branding
 ---
 
 ## Creating a plan to decrease mobile bounce-rate
