@@ -63,6 +63,8 @@
 .pv4 {
   padding-top: var(--spacing-large);
   padding-bottom: var(--spacing-large);
+  padding-left: 8vw;
+  padding-right: 8vw;
 }
 .pv5 {
   padding-top: var(--spacing-extra-large);

@@ -15,3 +15,62 @@
   .i-l       { font-style: italic; }
   .fs-normal-l     { font-style: normal; }
 }
+
+/* h1 b {    
+  font-family: Montserrat-Bold;
+} */
+
+h1 {
+  color: transparent;  
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #F61D0E;  
+} 
+
+h1 span {
+  color: #2740CA;  
+  -webkit-text-stroke-width: 0!important;
+  -webkit-text-stroke-color: transparent!important;
+  box-shadow: unset!important  
+}
+
+.hero p {
+  color: #2740CA;  
+}
+.hero p b, .hero p strong{
+  color: #2740CA;  
+  font-family: Poppins-Bold
+}
+
+.hero h1 span {
+  display: block;
+  width: 100%
+}
+
+h1 {
+  font-family: Poppins-Bold;
+}
+
+h2 {
+  font-family: HeptaSlab;
+  color: #2740CA; 
+}
+
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(/font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(/font/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(/font/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: HeptaSlab;
+  src: url(/font/HeptaSlab-SemiBold.ttf);
+}

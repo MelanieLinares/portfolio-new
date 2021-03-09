@@ -2,7 +2,7 @@
 backgroundcolor: orange
 subtitle: I'm Melanie Linares, a front-end UX/UI developer based in Raleigh, NC.
 text: \*\*My specialties are accessibility and progressive enhancement.\*\* I work at \*\*\[Insight](google.com)\*\* as an accessibility and UX consultant for the NCDOT. Currently I am having fun working with Vue and RESTful APIs.
-image: img/products-grid3.jpg
+image: img/desk.jpg
 blurb:
   heading: I am an accessibility advocate
   text: I love working with teams to launch user-focused, accessible, and

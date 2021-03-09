@@ -1,14 +1,14 @@
-<div id="{{.backgroundcolor}}" class="pv5 pv6-l ph3 bg-center cover hero" style="background-image: url('{{.imageUrl}}')">
-  <div class="mw7 center ph3">
+<div id="{{.backgroundcolor}}" class="pv5 pv6-l ph3 bg-center cover hero" style="background-image: url('{{.imageUrl}}'); margin-top: -2.5rem; margin-bottom: 5rem; border-bottom: 1px solid transparent; clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);">
+  <div class="mw7 ph3" style="">
     <div class="db mb3">
-      <div class="mw7 relative bg-fix-primary mb3">
-        <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
+      <div class="mw7 relative mb3">
+        <h1 class="f2 f1-l b di lh-title mb3 mw6">
           {{ if .title }}
           {{.title}}
 
           {{ else }}           
           <script type="text/javascript">
-            document.write("<p>Oh hello");
+            document.write("Oh hello");
             var day = new Date();
             var hr = day.getHours();
             if ((hr >= 20) && (hr <= 24)) {
@@ -27,23 +27,28 @@
               // 4:00pm est - 7:59pm
                 document.write(", & good evening");
             } 
-            document.write("!</span>");
+            document.write("!");
         </script>
     
           
           {{ end }}
 
+          {{ if .subtitle }}
+          <span class="b f2 di lh-solid mb3 mw7">
+            {{.subtitle}}
+          </span>
+          {{ end }}
 
         </h1>
       </div>
-      <div class="mw7 relative bg-fix-primary">
+      <!-- <div class="mw7 relative bg-fix-primary">
         {{ if .subtitle }}
-        <p class="b f4 di lh-title mb3 white mw6 bg-primary">
+        <p class="b f4 di lh-title mb3 mw6">
           {{.subtitle}}
         </p>
         {{ end }}
-      </div>
-      <div class="mw7 relative bg-fix-primary">
+      </div> -->
+      <div class="mw6half relative">
         {{ if .text }}        
           {{.text}}        
         {{ end }}
@@ -57,8 +62,12 @@
         </p>        
       </div>
       {{ end }} -->
+
     </div>
-  </div>
+  </div>  
+  <div class="homepage-img"><img src="img/Group 493.png"/></div>
+  <div class="laptop-img"><img src="img/laptop.gif"/></div>
+  
 </div>
 
 <script>

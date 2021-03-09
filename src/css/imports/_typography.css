@@ -90,6 +90,10 @@ sup {
   text-overflow: ellipsis;
 }
 
+#navbar img {
+  font-size: 22px
+}
+
 @media (--breakpoint-not-small) {
   .measure-ns  {
     max-width: 30em;
