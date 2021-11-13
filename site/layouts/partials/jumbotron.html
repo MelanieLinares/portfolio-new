@@ -1,42 +1,67 @@
-<div id="{{.backgroundcolor}}" class="pv5 pv6-l ph3 bg-center cover hero" style="background-image: url('{{.imageUrl}}'); margin-top: -2.5rem; margin-bottom: 5rem; border-bottom: 1px solid transparent; clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);">
-  <div class="mw7 ph3" style="">
-    <div class="db mb3">
-      <div class="mw7 relative mb3">
-        <h1 class="f2 f1-l b di lh-title mb3 mw6">
+<!-- <div id="{{.backgroundcolor}}" class="bg-center cover hero" style="background-image: url('{{.imageUrl}}');"> -->
+    
+  <div id="{{.backgroundcolor}}" class="bg-center cover hero">
+    <div class="hero-header">
+      <div>
+
+        <div class="squiggle">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+       viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+          <path d="M6.4,206.4c7.1-7.1-5.6-19.9,1.6-27s19.9,5.6,27-1.6c7.1-7.1-5.6-19.9,1.6-27c7.1-7.1,19.9,5.6,27-1.6
+            c7.1-7.1-5.6-19.9,1.6-27c7.1-7.1,19.9,5.6,27-1.6c7.1-7.1-5.6-19.9,1.6-27l0,0c7.1-7.1,19.9,5.6,27-1.6c7.1-7.1-5.6-19.9,1.6-27
+            c7.1-7.1,19.9,5.6,27-1.6c7.1-7.1-5.6-19.9,1.6-27c7.1-7.1,19.9,5.6,27-1.6c7.1-7.1-5.6-19.9,1.6-27s19.9,5.6,27-1.6"/>
+          </svg>
+      </div>
+
+        <h1 class="lh-title">
+          <b>
           {{ if .title }}
           {{.title}}
 
           {{ else }}           
           <script type="text/javascript">
-            document.write("Oh hello");
-            var day = new Date();
-            var hr = day.getHours();
+
+            // document.write("Oh hey");
+            var time = new Date();
+            var options = { weekday: 'long'};
+            var day = new Intl.DateTimeFormat('en-US', options).format(time);
+            
+            // if (day == 'Tuesday') {
+            //   document.write("Oh hello, ");
+            // }
+
+            var hr = time.getHours();
             if ((hr >= 20) && (hr <= 24)) {
-              // 8:00pm est - 12:59pm
-                document.write(", & good night");
-            } else if ((hr >= 1) && (hr <= 5)) {
-              // 1:00am est - 5:59am
-                document.write(" night owl");              
-            } else if ((hr >= 6) && (hr <= 11)) { 
-              // 6:00am est - 10:59am
-                document.write(", & good morning");
-            } else if ((hr >= 11) && (hr <= 15)) {
-              // 11:00am est - 3:59pm
-                document.write(", & good afternoon");
+              // 8:00pm est - 12:59am
+              document.write("Hello there, my name is Melanie.");
+            } else if ((hr >= 1) && (hr <= 3)) {
+              // 1:00am est - 3:59am
+              document.write("Working this late on a " + day + "?");
+            } else if ((hr >= 4) && (hr <= 11)) { 
+              // 4:00am est - 10:59am
+                document.write("Hello " + day + ", let's get to work");
+              } else if ((hr >= 11) && (hr <= 14)) {
+              // 11:00am est - 2:59pm
+                document.write("Hey good afternoon! What are you working on today?");
             } else if ((hr >= 16) && (hr <= 19)) {
-              // 4:00pm est - 7:59pm
-                document.write(", & good evening");
+              // 3:00pm est - 7:59pm
+                if (hr < 17) {
+                document.write("Hello there, my name is Melanie.");
+                }
+                else {
+                document.write("Hello there, my name is Melanie.");
+                }
             } 
-            document.write("!");
+            else {
+              document.write("Hello there, my name is Melanie.");
+            }
         </script>
-    
+    </b>
           
           {{ end }}
 
           {{ if .subtitle }}
-          <span class="b f2 di lh-solid mb3 mw7">
             {{.subtitle}}
-          </span>
           {{ end }}
 
         </h1>
@@ -48,7 +73,7 @@
         </p>
         {{ end }}
       </div> -->
-      <div class="mw6half relative">
+      <div>
         {{ if .text }}        
           {{.text}}        
         {{ end }}
@@ -64,15 +89,34 @@
       {{ end }} -->
 
     </div>
-  </div>  
-  <div class="homepage-img"><img src="img/Group 493.png"/></div>
-  <div class="laptop-img"><img src="img/laptop.gif"/></div>
   
+    {{ if .imageUrl2 }}
+  <div class="homepage-img"><img src="img/me-test.png" alt="photooo of Melanie"/></div>
+  {{ end }}
+
+<!-- <div class="blur-wrap">
+<div class="blur-circle"></div>
+</div> -->
+
+  <!-- <div class="laptop-img"><img src="img/laptop.gif"/></div> -->
+    
 </div>
+
+<!-- <div class="bloop"></div> -->
 
 <script>
 
-  var element = document.getElementById("herosection");
-  element.classList.add("mystyle");
+  // var element = document.getElementById("herosection");
+  // element.classList.add("mystyle");
+
+// why (the above) it doesn't work on firefox?
+// var card = $(".hero-header");
+// var cardouter = $(".hero");
+
+// $(cardouter).on("mousemove",function(e) {  
+//   var ax = -($(window).innerWidth()/2- e.pageX)/50;
+//   var ay = ($(window).innerHeight()/2- e.pageY)/40;
+//   card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
+// });
 
 </script>

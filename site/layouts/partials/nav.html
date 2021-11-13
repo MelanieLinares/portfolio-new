@@ -1,17 +1,20 @@
 <nav id="navbar" class="flex justify-between items-center center relative">
 
 	<!-- Logo -->
-	<a href="/" class="pa3 db mr4 h-100 flex-none">
-		<img src="/img/logo.svg" alt="Kaldi logo" class="br0 db mb0 w-100"/>
+	<a href="/index.html" style="display: inline-block" aria-label="home">
+		<img src="/img/logo.svg" alt="Melanie Linares logo" class="br0 db mb0 desktop-logo"/>
+		<img src="/img/logo-mobile.svg" alt="Melanie Linares logo" class="br0 db mb0 mobile-logo"/>
+		<img src="/img/logo-icon.svg" alt="Melanie Linares logo" class="br0 db mb0 icon-logo"/>
+
 	</a>
 
 	<!-- Primary Nav -->
-	<ul class="flex b grey-3">
+	<ul class="flex b">
 		<li><a href="/values" class="pa3 no-underline db">About</a></li>
 
 		<li><a href="/post" class="pa3 no-underline db">Work</a></li>
 
-		<li><a href="/products" class="pa3 no-underline db">Articles</a></li>
+		<li><a href="/article" class="pa3 no-underline db">Articles</a></li>
 	</ul>
 
 </nav>
@@ -28,20 +31,20 @@
 		document.getElementById("navbar").style.top = "0";
 		document.getElementById("navbar").style.borderTop = "solid";
 			document.getElementById("navbar").style.borderTopWidth = "7px";
-			document.getElementById("navbar").style.borderTopColor = "#2740ca"
+			document.getElementById("navbar").style.borderTopColor = "#3c4bd2"
 
 		if (currentScrollPos < 200) {
 			document.getElementById("navbar").style.backgroundColor = "#ffffff00"; //transparent
 			document.getElementById("navbar").style.borderTop = "solid";
 			document.getElementById("navbar").style.borderTopWidth = "7px";
 			document.getElementById("navbar").style.borderBottomWidth = "0px";
-			document.getElementById("navbar").style.borderTopColor = "#2740ca"
+			document.getElementById("navbar").style.borderTopColor = "#3c4bd2"
 		} 
 		else {
-			document.getElementById("navbar").style.backgroundColor = "white"; //solid
+			document.getElementById("navbar").style.backgroundColor = "blue"; //solid
 			document.getElementById("navbar").style.borderTop = "solid";
 			document.getElementById("navbar").style.borderTopWidth = "7px";
-			document.getElementById("navbar").style.borderTopColor = "#2740ca"
+			document.getElementById("navbar").style.borderTopColor = "#3c4bd2"
 			document.getElementById("navbar").style.borderBottom = "none";
 		}
 	  }
@@ -56,11 +59,11 @@
 		} 
 		else {
 			document.getElementById("navbar").style.top = "-82px";
-			document.getElementById("navbar").style.backgroundColor = "ffffff00"; //solid
-			document.getElementById("navbar").style.borderBottom = "solid";
+			document.getElementById("navbar").style.backgroundColor = "red"; //solid
+			document.getElementById("navbar").style.borderBottom = "transparent";
 			document.getElementById("navbar").style.borderBottomWidth = "7px";
 			document.getElementById("navbar").style.borderTopWidth = "0px";
-			document.getElementById("navbar").style.borderBottomColor = "#2740ca"
+			document.getElementById("navbar").style.borderBottomColor = "#ffffff00"
 		}
 	  }
 	  prevScrollpos = currentScrollPos;
@@ -73,14 +76,14 @@
 	var currentScrollPos = window.pageYOffset;
 	document.getElementById("navbar").style.borderTop = "solid";
 			document.getElementById("navbar").style.borderTopWidth = "7px";
-			document.getElementById("navbar").style.borderTopColor = "#2740ca"
+			document.getElementById("navbar").style.borderTopColor = "#3c4bd2"
 
-	  if (prevScrollpos > currentScrollPos) {
+	  if (prevScrollpos < 150) {
 		document.getElementById("navbar").style.top = "0";
-		document.getElementById("navbar").style.backgroundColor = "#ffffff"; //solid
+		document.getElementById("navbar").style.backgroundColor = "#ffffff00"; //solid
 	  } else {
 		document.getElementById("navbar").style.top = "0";
-		document.getElementById("navbar").style.backgroundColor = "#ffffff"; //solid
+		document.getElementById("navbar").style.backgroundColor = "white"; //solid
 	  }
 	  prevScrollpos = currentScrollPos;
 	}
@@ -90,7 +93,7 @@
 
 
 	var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-if (viewportWidth > 1280) {
+if (viewportWidth > 1024) {
 	test();
 } else {
 	testother();

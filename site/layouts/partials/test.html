@@ -1,0 +1,8 @@
+<ul>
+    {{ $test := site.Data.test }}
+    {{ range $test.events }}
+        <li>
+          {{ .name }} - {{ .date }}
+        </li>
+    {{ end }}
+</ul>

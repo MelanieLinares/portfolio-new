@@ -6,5 +6,8 @@ description: this is an intro blurb
 urllink: this is an url
 image: img/about-direct-sourcing.jpg
 image1: img/about-single-origin.jpg
+tags:
+  - test
+  - test1
 ---
-this is the body
+this is the body for "test-article"

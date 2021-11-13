@@ -1,4 +1,5 @@
 ---
+backgroundcolor: multi
 title: Improving information architecture to reduce frustration in navigating
   Stay Online’s 10,000+ product EU website
 titlebold: Improving information architecture to reduce frustration

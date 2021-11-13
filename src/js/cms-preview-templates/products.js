@@ -16,9 +16,9 @@ export default class PostPreview extends React.Component {
     return <div>
       <Jumbotron image={image} title={entry.getIn(["data", "title"])} />
 
-      <div className="bg-off-white pv4">
+      <div className="bg-off-white pv4 how">
         <div className="ph3 center">
-          <h2 className="f3 b lh-title mb2">{entry.getIn(["data", "intro", "heading"])}</h2>
+          <span className="f3 b lh-title mb2">{entry.getIn(["data", "intro", "heading"])}</span>
           <p className="mb4 mw6">{entry.getIn(["data", "intro", "description"])}</p>
 
           <div className="flex-ns flex-wrap mhn2-ns mb3">
@@ -56,7 +56,7 @@ export default class PostPreview extends React.Component {
 
       <div className="pb4">
         {(entry.getIn(['data', 'testimonials']) || []).map((testimonial, index) => <div className="center mb3 ph3" key={index}>
-        	<blockquote className="bg-grey-1 primary pa3 mb3 br1 b mw6 center">
+        	<blockquote className="primary pa3 mb3 br1 b mw6 center">
         		<p className="f4 mb0">“{testimonial.get('quote')}”</p>
         		<cite className="tr db grey-3">{testimonial.get('author')}</cite>
         	</blockquote>
@@ -68,7 +68,7 @@ export default class PostPreview extends React.Component {
       <div className="bg-off-white pv4 ph3">
       	<div className="mw7 center">
 
-      		<h2 className="f2 b lh-title mb3">{entry.getIn(['data', 'pricing', 'heading'])}</h2>
+      		<span className="f2 b lh-title mb3">{entry.getIn(['data', 'pricing', 'heading'])}</span>
       		<p className="mw6">{entry.getIn(['data', 'pricing', 'description'])}</p>
 
       		<div className="flex-ns mhn2-ns mw7">

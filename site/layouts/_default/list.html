@@ -1,19 +1,25 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "backgroundcolor" "red" "title" "Work case studies" "subtitle" "Many times during projects I take on many roles: designer, developer, illustrator, and teacher. Here are some of my recent projects and the process behind them." "heroP" "If you have questions on any of these projects or would like to discuss how I may be right for your project please " "heroPlinktext" "get in touch" "heroPlinkurl" "/values") }}
+{{ if eq (relURL .URL) ("/article/") }}
+{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "backgroundcolor" "green" "title" "Articles" "subtitle" "this is a subtitle" "heroP" "If you have questions on any of these projects or would like to discuss how I may be right for your project please " "heroPlinktext" "get in touch" "heroPlinkurl" "/values") }}
+{{ end }}
 
-<div class="mw7 center">
+{{ if eq (relURL .URL) ("/post/") }}
+{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "backgroundcolor" "purple" "title" "Work case studies" "subtitle" "I have taken on many roles in past projects: designer, developer, and illustrator." "heroP" "If you have questions on any of these projects or would like to discuss how I may be right for your project please " "heroPlinktext" "get in touch" "heroPlinkurl" "/values") }}
+{{ end }}
+
+<section class="mw7 center">
   <ul class="flex-ns flex-wrap mhn1-ns pa3">
       {{ range (.Paginator 6).Pages.ByPublishDate.Reverse }}
-          <div class="w-100-ns ph1-ns flex">
+          <li class="w-100-ns ph1-ns flex">
             {{ .Render "li"}}
-          </div>
+          </li>
       {{ end }}
   </ul>
 
   <div class="pa3 w-100">If you are interested in learning more about the type of teams I enjoy working with, please introduce yourself over on LinkedIn and let’s chat!</div>
 
   {{ partial "pagination" . }}
-</div>
+</section>
 
 {{end}}

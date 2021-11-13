@@ -1,64 +1,60 @@
 ---
-backgroundcolor: orange
-subtitle: I'm Melanie Linares, a front-end UX/UI developer based in Raleigh, NC.
-text: \*\*My specialties are accessibility and progressive enhancement.\*\* I work at \*\*\[Insight](google.com)\*\* as an accessibility and UX consultant for the NCDOT. Currently I am having fun working with Vue and RESTful APIs.
+backgroundcolor: red
+subtitle: I am an accessibility focused UX developer.
+text: I craft high performing, beautiful websites that are conversion-focused & user friendly.
 image: img/desk.jpg
+image2: img/desk.jpg
 blurb:
   heading: I am an accessibility advocate
   text: I love working with teams to launch user-focused, accessible, and
-    progressive web applications. You can usually find me with a cup of tea on
-    my desk, surrounded by sticky notes and a wide assortment of sketching
-    pens...
+    progressive web applications. I believe that if the web lacks access then it is missing its purpose. As of August 2021 I am certified as a web accessibility specialist through IAAP.
 intro:
   heading: intro heading
   text: intro text
 image_list_heading:
-  heading: Other note-worthy bits
+  heading: Note-worthy bits
 image_list:
-  - linktext: recent event highlights.
-    text: |-
-      I am an Inclusion and Diversity 
-      Event Regional Lead at Insight. Check out
-    image: img/android-chrome-192x192.png
-    linktext2: ""
-    linkurl: www.event.com
-    linkurl2: ""
-    text2: ""
-    text3: ""
-  - linktext: What we’ve been up to.
+  - linktext: Here's what we’re up to.
     text: |-
       I am part of Insight’s Accessibility 
-      and Inclusivity Design Team.
-    image: img/safari-pinned-tab.svg
+      and Inclusivity Design and Planning Team.
+    image: img/accessibility.png
     linkurl: example.com
     linktext2: ""
     linkurl2: ""
     text2: ""
     text3: ""
-  - linktext: Twitch
+  - linktext: Youtube.
     text: |-
-      I do occasional design and 
-      development streams and videos 
-      on
-    image: img/android-chrome-192x192.png
-    text2: and
-    linktext2: Youtube
-    linkurl: twitch.com
-    linkurl2: youtube.com
+      I occasionally create videos (or stream) about design and 
+      development on
+    image: img/video.png
+    text2: anddd
+    linkurl: youtube.com
     text3: ""
-  - linktext: Instagram
+  - linktext: Instagram.
     text: |-
       My dog and two cats think I’m the 
       best human ever. And yes, they 
       have an
-    image: img/safari-pinned-tab.svg
+    image: img/pets.png
     text2: 📸
     linkurl: instagram.com
     linktext2: ""
     linkurl2: ""
     text3: ""
-values:
-  heading: values heading
-  text: values text
+  # - linktext: recent event highlights.
+  #   text: |-
+  #     I am an Inclusion and Diversity 
+  #     Event Regional Lead at Insight. Check out
+  #   image: img/android-chrome-192x192.png
+  #   linktext2: ""
+  #   linkurl: www.event.com
+  #   linkurl2: ""
+  #   text2: ""
+  #   text3: ""
+
 ---
-**My specialties are accessibility and progressive enhancement.** I work at **[Insight](google.com)** as an accessibility and UX consultant for the NCDOT. Currently I am having fun working with Vue and RESTful APIs.
+I work at **[Insight](google.com)** as a senior software developer and consultant. Currently I am having fun working with Vue, React and RESTful APIs.
+
+**[Check out my recent work](/post)**

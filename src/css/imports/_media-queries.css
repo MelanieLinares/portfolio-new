@@ -3,3 +3,289 @@
 @custom-media --breakpoint-medium screen and (min-width: 50em);
 
 @custom-media --breakpoint-large screen and (min-width: 60em);
+
+@media screen and (max-width: 400px){
+    /* .polaroid {
+        padding: 1.25em 1em 3.25em 1em!important;
+    }
+    .item .polaroid + img {
+        bottom: -17vw !important;
+        width: 30% !important;
+        right: -.75em!important;
+        left: unset!important;
+        transform: scaleX(1) rotate(199deg) !important;    
+    }  */
+
+    /* #navbar > a {
+        display: block;
+        width: 100%;
+    }
+
+    #navbar ul {
+        width: 100%;
+        margin-top: 68px;
+        padding-left: 10px;
+    } */
+
+    /* .mobile-logo {
+        display: none!important;
+    }
+
+    .desktop-logo {
+        display: block!important;
+    } */
+
+    .icon-logo {
+        display: block!important
+    } 
+    .mobile-logo {
+        display: none!important
+    } 
+    #red .squiggle {
+        top: calc(75vw + 3em) !important;
+    }
+
+    #red .hero-header {
+        padding-top: calc(100vw + 2em);
+    }
+}
+
+
+@media (min-width: 401px) and (max-width: 639px) {
+    .noteworthy img,
+    .noteworthy p {
+        display: unset
+    }
+    .noteworthy {
+        display: flex;
+    }
+    .noteworthy p {
+        margin-bottom: 3em;
+        text-align: left
+    }
+    .boom {
+        margin-top: 2em
+    }
+    .noteworthy:first-of-type img {
+        margin-right: 1.6em
+    }
+    .noteworthy:nth-of-type(2) img {
+        margin-right: .2em
+    }
+    .noteworthy img {
+        margin-right: 1.2em
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 800px) {
+    .boom {
+        display: block;
+    }
+    .noteworthy {
+        display: flex
+    }
+    .noteworthy p {
+        text-align: left;
+    }
+    .noteworthy:first-of-type img {
+        margin-right: 1.6em
+    }
+    .noteworthy:nth-of-type(2) img {
+        margin-right: .2em
+    }
+    .noteworthy img {
+        margin-right: 1.2em
+    }
+  }
+
+.mobile-logo, .icon-logo {
+    display: none
+}
+
+@media screen and (max-width: 500px) { /**/
+    .homepage-img {
+        margin-top: 0;
+        right: 0;
+        position: absolute;
+    }
+    .hero:before {
+        mix-blend-mode: unset;
+    }
+    .desktop-logo {
+        display: none
+    }  
+    .mobile-logo {
+        display: unset
+    } 
+    
+    nav ul {
+        position:absolute;
+        right: 0;
+        top: 0;
+        height: 69px
+      }
+      /* #navbar ul li {
+        padding-bottom: 1.25em;
+        padding-top: 1.25em;
+        margin-top: -16px
+    } */
+    nav {
+        display: block!important
+    }
+    nav a img {
+        margin-bottom: 0
+    }
+    nav ul {
+        justify-content: left!important;
+    }
+
+    .btn {
+        display: grid
+    }
+    h1, h1.lh-title {
+      font-size: 34px; 
+      font-weight: 700; 
+    }
+    h1 b {
+        font-size: 24px; 
+    }
+    p {
+        font-size: 16px;
+        margin-top: 1.5em
+    }
+    .hero-header {
+        -webkit-transform: rotate(0deg);
+    }
+
+    /* .homepage-img img {
+        display: none
+    } */
+
+    .hero {
+        background-image: none!important;
+        /* padding-bottom: 60vw; */
+        /* padding-bottom: calc(var(--spacing-extra-large) + 1.5em); */
+        /* clip-path:polygon(0 0, 100% 0%, 100% 95%, 0% 100%); */
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+
+    section, footer {
+        padding-left: 6.5vw;
+        padding-right: 6.5vw;
+    }
+    .lh-title {
+        font-size: 24px;
+    }
+    
+    .latest-project {
+        font-size: 16px;
+        position: relative;
+        color: white;
+        /* background-color: #303894; */
+        background-color: #5461bd;
+
+        padding: 85vw 6.5vw 2em 6.5vw;
+        /* margin-top: -66vw; */
+
+        /* padding: 3.5em 6.5vw 2em 6.5vw; */
+        /* -webkit-clip-path: polygon(0 5.25%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);        font-family: "Nunito Sans", sans-serif !important; */
+        line-height: 1.25em;
+        /* margin-top: -2.15em; */
+        margin-bottom: 2em;
+        border: unset;
+        border-right: unset;
+        top: unset;
+        right: unset;
+        width: unset;
+        border-top-left-radius: unset;
+        border-bottom-left-radius: unset;
+        -webkit-transform: unset;
+    }
+    .latest-project a, .upcoming-events a {
+        display: grid
+    }
+    .latest-project a:first-of-type {
+        margin-bottom: 1em
+    }
+    .upcoming-events {
+        font-size: 16px;
+        position: relative;
+        color: white;
+        background-color: #B40404; 
+        padding: 3.5em 6.5vw 2em 6.5vw;
+        clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);
+        line-height: 1.25em;
+        margin-top: -2em;
+        margin-bottom: 2em;
+        border: unset;
+        border-right: unset;
+        top: unset;
+        right: unset;
+        width: unset;
+        border-top-left-radius: unset;
+        border-bottom-left-radius: unset;
+        -webkit-transform: unset;
+    }
+    .upcoming-events h2, .latest-project h2 {
+        font-family: 'Corben', sans-serif;
+        margin-bottom: .5em;
+        color: white;
+        font-weight: 500
+    }
+}
+
+@media screen and (min-width: 768px) { 
+    .hero-header {
+        width:50vw;
+        margin-top: -1em
+    }
+    .homepage-img {
+        width:66vw;
+        margin-right: -7.5em;
+        padding-top: .5em;
+    }
+    /* .hero {
+        padding-bottom: .5em;
+    } */
+}
+
+@media screen and (min-width: 901px) and (max-width: 1023px) { 
+    #red h1 {
+        font-size: 42px;
+    }
+    #red h1 b {
+        font-size: 26px;
+    }
+    .hero-header {
+        width:59vw;
+        margin-top: -1em
+    }
+    .hero-header p {
+        width:90%;
+    }
+    .homepage-img {
+        width:54vw;
+        margin-right: -5.5em;
+        margin-top: -3.5em!important;
+    }
+    /* .hero {
+        padding-bottom: .5em;
+    } */
+}
+
+@media screen and (min-width: 1024px) { 
+    .homepage-img {
+        width: 47%;
+        height: auto;
+        right: 9em!important;
+    }
+    .hero-header {
+        width:62.5vw;
+        margin-top: -1em
+    }
+    .hero-header p {
+        width:90%;
+    }
+}

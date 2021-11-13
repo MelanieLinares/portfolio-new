@@ -1,11 +1,11 @@
 {{ define "main" }}
 
-<div class="pv5 pv6-l ph3 bg-center cover" style="background-image: url('/img/blog-index.jpg')">
+<div id="multi" class="pv5 pv6-l ph3 bg-center cover hero" style="background-image: url('/img/blog-index.jpg')">
     <div class="mw7 center ph3">
       <div class="db mb3">
         <div class="mw7 relative bg-fix-primary mb3">
           <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
-            Work case studies: {{ .Title }}
+            Wbork case studies: {{ .Title }}
           </h1>
         </div>
       </div>
@@ -13,14 +13,14 @@
   </div>
 
   <div class="mw7 tr ph1-ns">
-    <p class="pa3" style="padding-bottom: 0"><a href="/tags">View all tags</a></p>
+    <p class="pa3"><a href="/tags">View all tags</a></p>
   </div>
 <div class="mw7 center">
   <ul class="flex-ns flex-wrap mhn1-ns pa3">
       {{ range (.Paginator 6).Pages.ByPublishDate.Reverse }}
-          <div class="w-100-ns ph1-ns flex">
+          <li class="w-100-ns ph1-ns flex">
             {{ .Render "li"}}
-          </div>
+          </li>
       {{ end }}
   </ul>
 

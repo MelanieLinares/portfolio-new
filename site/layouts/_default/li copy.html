@@ -1,6 +1,24 @@
 
-<div class="no-underline pa3 bg-grey-1 br1 mb2 db w-100">
+	{{ if eq .Dir ("post/") }}
+	<div class="item"><div class="polaroid"><img src="{{ .Params.image }}"></div></div>
+	{{ end }}
 
-	<a href="{{ .RelPermalink }}" class="no-underline bg-grey-1 br1 mb1 db raise w-100"><h2 class="f3 pa3 b lh-title primary">{{ .Title }}</h2></a>
+	<div style="margin-bottom: 1em">
+
+		<a href="{{ .RelPermalink }}" class="br1 mb1 db raise w-100">
+
+		<span class="htitle">{{ .Title }}</span></a>
 	
+
+
+
+	<!-- {{ if eq .Dir ("post/") }}
+		{{ range (.GetTerms "tags") }}
+		<a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+		{{ end }}
+	{{ end }} -->
+
+
+<div class="">{{ .Description }}</div>
+
 </div>

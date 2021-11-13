@@ -7,6 +7,7 @@
 .mw3  {  max-width: 4rem; }
 .mw4  {  max-width: 8rem; }
 .mw5  {  max-width: 16rem; }
+.mw5half  {  max-width: 22rem; }
 .mw6  {  max-width: 32rem; }
 .mw6half  {  max-width: 40rem; }
 .mw7  {  max-width: 48rem; }
@@ -26,6 +27,7 @@
   .mw3-ns  {  max-width: 4rem; }
   .mw4-ns  {  max-width: 8rem; }
   .mw5-ns  {  max-width: 16rem; }
+  .mw5half-ns  {  max-width: 20rem; }
   .mw6-ns  {  max-width: 32rem; }
   .mw7-ns  {  max-width: 48rem; }
   .mw8-ns  {  max-width: 64rem; }
@@ -42,6 +44,7 @@
   .mw3-m  {  max-width: 4rem; }
   .mw4-m  {  max-width: 8rem; }
   .mw5-m  {  max-width: 16rem; }
+  .mw5half-m  {  max-width: 20rem; }
   .mw6-m  {  max-width: 32rem; }
   .mw7-m  {  max-width: 48rem; }
   .mw8-m  {  max-width: 64rem; }
@@ -58,6 +61,7 @@
   .mw3-l  {  max-width: 4rem; }
   .mw4-l  {  max-width: 8rem; }
   .mw5-l  {  max-width: 16rem; }
+  .mw5half-l  {  max-width: 20rem; }
   .mw6-l  {  max-width: 32rem; }
   .mw7-l  {  max-width: 48rem; }
   .mw7half-l  {  max-width: 50rem; }
@@ -75,6 +79,7 @@
   .mw3-xl  {  max-width: 4rem; }
   .mw4-xl  {  max-width: 8rem; }
   .mw5-xl  {  max-width: 16rem; }
+  .mw5half-xl  {  max-width: 20rem; }
   .mw6-xl  {  max-width: 32rem; }
   .mw7-xl  {  max-width: 42rem; }
   .mw8-xl  {  max-width: 64rem; }
@@ -91,6 +96,7 @@
   .mw3-xxl  {  max-width: 4rem; }
   .mw4-xxl  {  max-width: 8rem; }
   .mw5-xxl  {  max-width: 16rem; }
+  .mw5half-xxl  {  max-width: 20rem; }
   .mw6-xxl  {  max-width: 32rem; }
   .mw7-xxl  {  max-width: 42rem; }
   .mw8-xxl  {  max-width: 64rem; }
@@ -107,6 +113,7 @@
   .mw3-xxxl  {  max-width: 4rem; }
   .mw4-xxxl  {  max-width: 8rem; }
   .mw5-xxxl  {  max-width: 16rem; }
+  .mw5half-xxxl  {  max-width: 20rem; }
   .mw6-xxxl  {  max-width: 32rem; }
   .mw7-xxxl  {  max-width: 47rem; }
   .mw8-xxxl  {  max-width: 64rem; }
