@@ -5,7 +5,7 @@
       <div class="db mb3">
         <div class="mw7 relative bg-fix-primary mb3">
           <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
-            Wnork case studies: All {{ .Title }}
+            Articles and Case Study Categories
           </h1>
         </div>
       </div>
@@ -14,7 +14,7 @@
 
 <div class="mw7 center">
   <ul class="flex-ns flex-wrap mhn1-ns pa3">
-      {{ range (.Paginator 6).Pages.ByPublishDate.Reverse }}
+      {{ range (.Paginator 20).Pages.ByPublishDate.Reverse }}
           <li class="w-100-ns ph1-ns flex">
             
 

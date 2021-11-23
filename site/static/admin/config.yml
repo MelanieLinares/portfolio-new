@@ -30,6 +30,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "New Date", name: "newdate", widget: "datetime"}
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "URL", name: "urllink", widget: "text"}
+      - {label: "Favorite", name: "favorite", widget: "string"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Image", name: "image1", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}

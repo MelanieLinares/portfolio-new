@@ -1,48 +1,99 @@
 {{ define "main" }}
 
+{{ partial "jumbotron" (dict "imageUrl" .Params.image "imageUrl2" .Params.image2 "backgroundcolor" .Params.backgroundcolor "title" .Params.titlebold "subtitle" .Params.titlenormal "text" .Params.notice ) }}
+
   <div id="main" class=" center ph3 pv4">
-    <div class="hero"></div>
-    <section class="flex-ns flex-wrap" style="position: relative">
-      <div class="header-images ">
+    <!-- <div class="hero"></div> -->
+    <section class="flex-ns" style="position: relative; flex-direction: row-reverse">
+      <!-- <div class="header-images ">
         {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" style="position: absolute;transform: rotate(5deg);" class="mw6"/>{{ end }}
         {{ if .Params.image1 }}<img src="{{ .Params.image1 }}" alt="{{ .Title }}" style="position: absolute;transform: rotate(-5deg);" class="mw6"/>{{ end }}
-      </div>
-       <div id="hero" class="{{.Params.backgroundcolor}}">
-        <!-- <div class="mw7half pl7"> -->
-    <h1 class="lh-title mb3"><b>{{.Params.titlebold }}</b> {{.Params.titlenormal }}  </h1>
-    
-      <p><b>Client:</b> StayOnline</p>
-      <p><b>When:</b> {{ .Date.Format "Jan 2, 2006" }}
-      -
-        {{ with .Params.newdate }}
-        {{ dateFormat "Jan 2 2006" . }}
-        {{ end }}
-        | 3 months
-      </p>
+      </div> -->
 
-     
-      {{if .Params.urllink}}
+      <!-- <div class="header-images ">
+        {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" class="mw6"/>{{ end }}
+        {{ if .Params.image1 }}<img src="{{ .Params.image1 }}" alt="{{ .Title }}" class="mw6"/>{{ end }}
+      </div> -->
+
+       <!-- <div id="hero" class="{{.Params.backgroundcolor}}"> -->
+        <!-- <div class="mw7half pl7"> -->
+    <!-- <h1 class="lh-title mb3"><b>{{.Params.titlebold }}</b> {{.Params.titlenormal }}  </h1> -->
+    
+    
+      <!-- {{if .Params.urllink}}
       <p><a href="{{ .Params.urllink }}" target="_black">View Live</a> (website no longer in sync with this case study)</p>
-      {{ end }}
+      {{ end }} -->
       
       <!-- <p>Read in {{ .ReadingTime  }} minutes</p> -->
     <!-- </div> -->
 
-    <span id="one"></span>
+    <!-- <span id="one"></span>
     <span id="two"></span>
     <span id="three"></span>
     <span id="four"></span>
-    <span id="five"></span>
+    <span id="five"></span> -->
 
-    <svg class="triangle" height="210" width="185">
-      <!--   A18, ? ?, ? A18, 174 -->
+    <!-- <svg class="triangle" height="210" width="185">
         <polygon points="18,26 155,110 18,184" style="fill:transparent;stroke:rgba(255,255,255,.2);stroke-width:30" />
-      </svg>
+      </svg> -->
 
-  </div>
-  </section>
+  <!-- </div> -->
+
+  <aside>
+    <ul class="project-info">
+      <li>
+        <img src="{{ .Params.logo }}" alt="{{ .Params.client }}"/>
+      </li>
+      <li>
+        <b>CLIENT</b> {{ .Params.client }}
+      </li>
+      <li>
+        <b>ROLE</b> {{ .Params.role }}
+      </li>
+      <li>
+        <b>TEAM</b> {{ .Params.team }}
+      </li>
+      {{ if .Params.technology }}
+      <li>
+        <b>TECHNOLOGY STACK</b> 
+        {{ range .Params.technology }}
+        <ul><li>{{ . }}</li></ul>
+      {{ end }}
+      </li>
+      {{ end }}
+      <li>
+        <b>DATES</b> 
+        {{ .Date.Format "Jan 2, 2006" }} -
+            {{ with .Params.newdate }}
+            {{ dateFormat "Jan 2 2006" . }}
+        {{ end }}| {{ .Params.duration }}
+      </li>
+    </ul>
+      </aside>
+
     <div class="cms center mw8">
       {{ .Content }}
     </div>
+    
+
+  </section>
+    <div style="position: relative">      
+      {{ with .PrevInSection }}
+      <h3>Next case study</h3>
+      <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width: 25%; height: auto" />
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <p>{{ .Params.description }}</p>
+      {{ else }}
+      <div>
+          {{ range first 1 (where .Site.Pages "Type" "post") }}
+  <h3>Next case study</h3>
+  <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width: 25%; height: auto" />
+  <a href="{{ .Permalink }}">{{ .Title }}</a>
+  <p>{{ .Params.description }}</p>
+{{ end }}
+      </div>
+    {{ end }}
+  </div>
+
   </div>
 {{ end }}

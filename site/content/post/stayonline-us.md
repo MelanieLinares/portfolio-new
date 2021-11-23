@@ -1,17 +1,24 @@
 ---
-backgroundcolor: multi
-title: Decreasing the bounce-rate of Stay Online's website through responsive design
-date: 2017-01-05T15:04:00.000Z
-newdate: 2020-12-14T02:27:22.000Z
+backgroundcolor: darkblue
+title: Decreasing the bounce-rate of StayOnline's website through responsive design
+date: 2015-06-29T15:04:00.000Z
+newdate: 2016-09-07T02:27:22.000Z
 description: no, intro blurb >:[
-urllink: http://www.google.com
-duration: (1+ years)
-image: /img/blog-chemex.jpg
+duration: 2 months
+logo: /img/stayonline-logo.png
+image: /img/stayonline-us.jpg
+image2: /img/stayonline-us-tablet.png
 tags:
   - responsive
-  - cross-browser
-titlebold: Time for a redesign! 🎉 
-titlenormal: Decreasing the bounce-rate of Stay Online's website through responsive design
+  - cross-browser 
+  - html & css
+  - .net mvc
+  - javascript
+titlebold: Decreasing the bounce-rate of StayOnline's website
+titlenormal: through responsive design
+client: StayOnline LLC.
+role: Front-End Web Developer
+team: Web Development
 
 ---
 
@@ -30,14 +37,14 @@ Stay Online is a power cord manufacturer and distributer, known for having the l
 
 ## Gathering insight, identifying issues & tasks 
 
-- ☑️ Design needs to maintain IE6+ (and later IE8+) browser compatibility
-- ☑️ Data-heavy pages need to balance showing necessary data and providing an ideal mobile experience
-- ☑️ Use-cases for redesign include customers, but also warehouse workers and sales employees at tradeshows
-- ☑️ Branding needs to incorporate new accessible branding colors and tagline so print and web colors match
-- ☑️ Code refactoring is needed to remove table-based layout
-- ☑️ Complete A/B testing for layout to determine on a 3 or 2 column layout
-- ☑️ Bring photography to the branding forefront
-- ☑️ Work with Marketing and Sales managers to identify business needs for the new homepage 
+- Design needs to maintain IE6+ (and later IE8+) browser compatibility
+- Data-heavy pages need to balance showing necessary data and providing an ideal mobile experience
+- Use-cases for redesign include customers, but also warehouse workers and sales employees at tradeshows
+- Branding needs to incorporate new accessible branding colors and tagline so print and web colors match
+- Code refactoring is needed to remove table-based layout
+- Complete A/B testing for layout to determine on a 3 or 2 column layout
+- Bring photography to the branding forefront
+- Work with Marketing and Sales managers to identify business needs for the new homepage 
 
 > It is problem and solution that drives design. Stay Online's problem 
 was the large amount of customers being unsuccessful to order 
@@ -60,7 +67,7 @@ StayOnline's client-base still had a strong percentage of IE6 use (even back in 
 ## Rethinking the layout through wireframes 
 Making a site responsive is not a matter of making elements fit, but providing an equal experience for users regardless of screen size. 
 
-![this is the alt text](/img/blog-chemex.jpg "Title is optional")
+![this is the alt text](/img/stayonline-wireframe.png "Title is optional")
 
 **Optimizing the Navigation:**  After years of adding every new product line to the sidebar the experience of navigating 
 the website was less than ideal.

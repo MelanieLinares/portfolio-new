@@ -1,8 +1,36 @@
+h1:before {
+    content: "";
+    display: block;
+    width: 1.75em;
+    height: 2px;
+    padding-top: 0.2em;
+    border-top: 4px solid #fff;
+}
+
 .hero-header {
     max-width: 725px;
     -webkit-transform: rotate(-6deg);
     padding: .5em;
     z-index: 2;
+    position: relative;
+    padding-left: 400px;
+}
+
+.hero-header img:last-of-type {
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    width: 100%;
+    /* width: calc(100% - 410px);
+    position: absolute; */
+    margin-top: 15px;
+}
+
+.hero-header img:first-of-type {
+    position: absolute;
+    top: 39px;
+    margin-left: -400px;
 }
 
 .hero-header div:last-of-type p:last-of-type {
@@ -33,12 +61,12 @@
     box-shadow: inset 0 0 0 2px #cc0808;
 }
 
-#multi .hero-header {
+/* #multi .hero-header {
     max-width: unset;
-}
-#multi .homepage-img {
+} */
+/* #multi .homepage-img {
     display: none
-}
+} */
 
 .hero-header p {
     max-width: 600px
@@ -63,7 +91,8 @@ nav img {
     transition: all 0.3s;
     top: 0;  
     border-top: 7px solid #3c4bd2;
-    width: 100%;
+    width: calc(100% - 12vw);
+    padding: 0 6vw;
 }
 
 #navbar ul {

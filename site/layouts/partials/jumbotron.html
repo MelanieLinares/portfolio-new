@@ -14,11 +14,12 @@
       </div>
 
         <h1 class="lh-title">
-          <b>
+         
           {{ if .title }}
-          {{.title}}
+          <b>{{.title}}</b>
 
-          {{ else }}           
+          {{ else }}  
+          <b>         
           <script type="text/javascript">
 
             // document.write("Oh hey");
@@ -61,7 +62,7 @@
           {{ end }}
 
           {{ if .subtitle }}
-            {{.subtitle}}
+           {{.subtitle}}
           {{ end }}
 
         </h1>
@@ -73,11 +74,11 @@
         </p>
         {{ end }}
       </div> -->
-      <div>
+     
         {{ if .text }}        
-          {{.text}}        
+           <div class="notice">{{.text}}</div>        
         {{ end }}
-      </div>
+      
       <!-- {{ if .heroP }}
       <div class="mw7 relative bg-fix-primary">
         <p style="margin-top: 2rem" class="di lh-title mb3 white mw6 bg-primary db">
@@ -88,11 +89,16 @@
       </div>
       {{ end }} -->
 
+      <img src="{{ .imageUrl2 }}" alt="{{ .Title }}" />
+
+      <img src="{{ .imageUrl }}" alt="{{ .Title }}" />
+
     </div>
   
     {{ if .imageUrl2 }}
-  <div class="homepage-img"><img src="img/me-test.png" alt="photooo of Melanie"/></div>
+  <div class="homepage-img"><img src="{{ .Params.image }}" alt="{{ .Title }}" style="width: 25%; height: auto" /></div>
   {{ end }}
+  
 
 <!-- <div class="blur-wrap">
 <div class="blur-circle"></div>
@@ -104,7 +110,7 @@
 
 <!-- <div class="bloop"></div> -->
 
-<script>
+<!-- <script>
 
   // var element = document.getElementById("herosection");
   // element.classList.add("mystyle");
@@ -119,4 +125,4 @@
 //   card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
 // });
 
-</script>
+</script> -->

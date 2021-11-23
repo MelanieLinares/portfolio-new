@@ -5,12 +5,12 @@
 {{ end }}
 
 {{ if eq (relURL .URL) ("/post/") }}
-{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "backgroundcolor" "purple" "title" "Work case studies" "subtitle" "I have taken on many roles in past projects: designer, developer, and illustrator." "heroP" "If you have questions on any of these projects or would like to discuss how I may be right for your project please " "heroPlinktext" "get in touch" "heroPlinkurl" "/values") }}
+{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "backgroundcolor" "purple" "title" "Work case studies" "subtitle" "Here are some of my recent projects and the process behind them" "heroP" "If you have questions on any of these projects or would like to discuss how I may be right for your project please " "heroPlinktext" "get in touch" "heroPlinkurl" "/values") }}
 {{ end }}
 
 <section class="mw7 center">
   <ul class="flex-ns flex-wrap mhn1-ns pa3">
-      {{ range (.Paginator 6).Pages.ByPublishDate.Reverse }}
+      {{ range (.Paginator 7).Pages }}
           <li class="w-100-ns ph1-ns flex">
             {{ .Render "li"}}
           </li>

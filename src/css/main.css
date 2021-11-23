@@ -11,7 +11,7 @@
  *    Articles individual: default
    *
  */
- @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Montserrat:wght@500;900&family=Roboto+Slab:wght@300;400;600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&=familyPoppins:wght@500;900&familyMontserrat:wght@500&family=Hepta+Slab:wght@300;400;600&display=swap');
 
 /* External Library Includes */
 @import './imports/_reset';
@@ -121,11 +121,233 @@
 }
  */
 
+ blockquote {
+    border-left: #F4EDFD solid .75rem;
+    color: #57377D;
+    margin: 0 10rem;
+    margin-top: 10rem;
+    font-size: 1.152rem;
+    margin-left: 15rem;
+ }
 
+ blockquote:before {
+    content: url(/img/semicircle.png);
+    position: absolute;
+    left: 0;
+    margin-left: -11rem;
+    z-index: 0;
+    margin-top: -17rem;
+ }
 
+ /* #gathering-insight-identifying-issues--tasks, #gathering-insight-identifying-issues--tasks + ul,
+ #project-overview-and-task-breakdown, #project-overview-and-task-breakdown + ul,
+ #why-the-concern-over-accessibility, #why-the-concern-over-accessibility + p, #why-the-concern-over-accessibility + p + p, #why-the-concern-over-accessibility + p + p + ul, #why-the-concern-over-accessibility + p + p + ul +  p, #why-the-concern-over-accessibility + p + p + ul + p + ul {
+     background-color: #E8F8FF;
+ } */
 
+ #mixed + #main #gathering-insight-identifying-issues--tasks, 
+ #mixed + #main #gathering-insight-identifying-issues--tasks + ul,
+ #mixed + #main #project-overview-and-task-breakdown, 
+ #mixed + #main #project-overview-and-task-breakdown + ul,
+ #mixed + #main #why-the-concern-over-accessibility, 
+ #mixed + #main #why-the-concern-over-accessibility + p, 
+ #mixed + #main #why-the-concern-over-accessibility + p + p, 
+ #mixed + #main #why-the-concern-over-accessibility + p + p + ul, 
+ #mixed + #main #why-the-concern-over-accessibility + p + p + ul + p, 
+ #mixed + #main #why-the-concern-over-accessibility + p + p + ul + p + ul {
+     background-color: #701c45;
+     color: white;
+ }
 
+ #darkblue + #main #gathering-insight-identifying-issues--tasks, 
+ #darkblue + #main #gathering-insight-identifying-issues--tasks + ul,
+ #darkblue + #main #project-overview-and-task-breakdown, 
+ #darkblue + #main #project-overview-and-task-breakdown + ul,
+ #darkblue + #main #why-the-concern-over-accessibility, 
+ #darkblue + #main #why-the-concern-over-accessibility + p, 
+ #darkblue + #main #why-the-concern-over-accessibility + p + p, 
+ #darkblue + #main #why-the-concern-over-accessibility + p + p + ul, 
+ #darkblue + #main #why-the-concern-over-accessibility + p + p + ul + p, 
+ #darkblue + #main #why-the-concern-over-accessibility + p + p + ul + p + ul {
+     background-color: #184a9f;
+     color: white;
+ }
 
+ #gathering-insight-identifying-issues--tasks,
+ #project-overview-and-task-breakdown,
+ #why-the-concern-over-accessibility,
+ #why-the-concern-over-accessibility + p,
+ #why-the-concern-over-accessibility + p + p,
+ #why-the-concern-over-accessibility + p + p + ul + p  {
+    margin-bottom: 0;
+    padding-bottom: var(--spacing-small);
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+ }
+
+ #gathering-insight-identifying-issues--tasks,
+ #project-overview-and-task-breakdown,
+ #why-the-concern-over-accessibility  {
+    padding: 4rem;
+    padding-bottom: 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+ }
+
+ #why-the-concern-over-accessibility + p,
+ #why-the-concern-over-accessibility + p + p,
+ #why-the-concern-over-accessibility + p + p + ul + p,
+ #why-the-concern-over-accessibility + p + p + ul {
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+
+ #gathering-insight-identifying-issues--tasks + ul,
+ #project-overview-and-task-breakdown + ul,
+ #why-the-concern-over-accessibility + p + p + ul,
+ #why-the-concern-over-accessibility + p + p + ul + p + ul {
+    margin-left: 0;
+    padding-left: 6rem;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
+ }
+
+ #gathering-insight-identifying-issues--tasks + ul,
+ #project-overview-and-task-breakdown + ul,
+ #why-the-concern-over-accessibility + p + p + ul + p + ul {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+ }
+
+ /* #gathering-insight-identifying-issues--tasks + ul li,
+ #project-overview-and-task-breakdown + ul + li,
+ #why-the-concern-over-accessibility + p + p + ul li,
+ #why-the-concern-over-accessibility + p + p + ul + p + ul li {
+    padding-top: 1rem;
+ } */
+ 
+ #gathering-insight-identifying-issues--tasks + ul li:before,
+ #project-overview-and-task-breakdown + ul li:before,
+ #why-the-concern-over-accessibility + p + p + ul li:before,
+ #why-the-concern-over-accessibility + p + p + ul + p + ul li:before  {
+    left: -2rem;
+ }
+
+ #multi + #main .cms ul > li:before {
+     color: red;
+ }
+
+ #mixed + #main #why-the-concern-over-accessibility + p + p + ul > li:before,
+ #mixed + #main #why-the-concern-over-accessibility + p + p + ul + p + ul > li:before {
+    color: #e16125;
+}
+
+#mixed + #main #why-the-concern-over-accessibility:before {
+    border-color: #e16125;
+}
+    
+ #main section section .cms a:first-of-type {
+     background-color: #57377D;
+     color: white;
+     padding: 1rem;
+     display: block;
+     width: fit-content;
+     text-decoration: none;
+ }
+
+ #main section .cms a:first-of-type:hover, #main section .cms a:first-of-type:focus {
+    background-color: #2e154c;
+    margin: unset;
+}
+
+.project-info li:first-of-type img {
+    height: 32px;
+}
+
+.project-info li:first-of-type {
+    margin-bottom: 0.75rem;
+}
+
+#hunger-for-professional-betterment + ul li:before {
+    content: '';
+}
+
+#hunger-for-professional-betterment + ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#hunger-for-professional-betterment + ul li {
+    display: flex;
+    width: 460px;
+    /* flex-direction: column;
+    justify-content: center; */
+    padding: 3em 0;
+    padding-left: 170px;
+}
+
+#hunger-for-professional-betterment + ul li img {
+    width: 168px;
+    height: auto;
+    top: 0;
+    left: -20px;
+    position: absolute;
+}
+
+#hunger-for-professional-betterment + ul li a {
+    display: contents;
+}
+
+.project-info b {
+    color: #57377D;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 400!important;
+    display: inherit;
+    margin-bottom: 5px
+}
+
+ul.project-info > li {
+    margin-bottom: 1.5rem
+}
+
+ul.project-info > li ul li {
+    margin-bottom: 5px
+}
+
+.project-info {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    margin-top: 15px;
+    top: 8rem;
+    padding: 2rem;
+    background-color: #ffffffe6;
+    /* background: rgba(255, 255, 255, 0); */
+    /* backdrop-filter: blur(20px); */
+    border-radius: 1rem;
+}
+
+#rethinking-the-layout-through-wireframes + p + p {
+    position:relative;
+    left: calc(-6.5vw - 1rem);
+    width: 100vw;   
+    background-color: #d4f1ff;
+    margin: 2rem 0;
+} 
+
+#rethinking-the-layout-through-wireframes + p + p img {
+    max-width: 1200px;
+    max-width: 1200px;
+    padding-left: 6.5vw;
+} 
+
+b, strong {
+font-weight: bold!important
+}
+
+h3 strong
 
 .blur-wrap {
     position: absolute;
@@ -209,6 +431,7 @@
 
 body {
     font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1.15rem
 }
 
 .homepage-img {
@@ -307,19 +530,34 @@ h2:before {
     width: 1.75em;
     height: 2px; 
     padding-top: .4em;
-    border-top: 2px solid #535ebf;
+    border-top: 2px solid #4CD5F7;
 }
+
+#pink + #main h2:before {
+    border-top: 2px solid #EE48AB;
+}
+
+#darkgreen .hero-header img:first-of-type {
+    margin-top: 43vh;
+    margin-left: -225px;
+    z-index: 1;
+}
+
+#darkgreen .hero-header  {
+    padding-left: 300px;
+}
+
 
 .latest-project h2:before {
     border-top: 2px solid white;  
 }
 
 h1.lh-title { 
-    color: #ffffff1f
+    color: #00000015
 }
 
 h2 {
-    color: #535ebf;
+    color: #57377D;
     margin-bottom: 1em
 }
 
@@ -329,7 +567,7 @@ h2 {
 }
 
 section { 
-    padding: 0 6.5vw 3em 6.5vw;
+    /* padding: 0 6.5vw 3em 6.5vw; */
     margin-bottom: 3em;
 }
 
@@ -612,7 +850,8 @@ html {
 }
 
 .cms {
-    position: relative
+    position: relative;
+    margin-left: 1rem;
 }
 
 .cms a {
