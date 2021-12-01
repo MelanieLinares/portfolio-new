@@ -32,7 +32,7 @@ Stay Online is a power cord manufacturer and distributer, known for having the l
 
 **Project team:**  lead developer, front-end developer (myself), marketing director
 
-[Skip to the results](post/brewing-chemex/#comparing-the-results)
+[Skip to the results](post/stayonline-us/#comparing-the-results)
        
 
 ## Gathering insight, identifying issues & tasks 

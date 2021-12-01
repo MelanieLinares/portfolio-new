@@ -245,10 +245,6 @@
     .mobile-logo {
         display: none!important;
     } 
-    .icon-logo {
-        display: unset!important;
-        padding-left: 0;
-    } 
     .hero-header {
         padding-left: 0!important;
     }
@@ -261,40 +257,121 @@
         margin-left: 1px!important;
         width: 25vw;
     }
+    #darkblue2 .hero-header img:first-of-type {
+        z-index: 1;
+        margin-top: 85vw;
+        height: 60vw;
+        left: 45vw;
+    }
     .hero:before {
-        height: 85vh
-    }
-    #multi .notice {
-        color: black;
-        background-color: white;
-        padding: 1rem;
-        padding-left: 2rem;
-        border-radius: 1rem;
-        margin-top: -2rem;
-        border: 1px solid rgb(75, 213, 247)!important;
-    }
-    #multi .notice:before {
-        left: 0.33rem;
-        top: 9px;
-    }
-    #multi .hero-header img:last-of-type {
-        background: rgba(75, 213, 247, 1)!important;
+        max-height: 640px;
+        height: 90vh;
     }
     .hero {
         padding-bottom: 100px!important;
+        padding-top: 125px;
     }
     h1 {
         font-size: 35px;
         -webkit-text-stroke-width: 1px;
     }
     h1 b {
-        font-size: 32px!important;
+        font-size: 34px!important;
+    }
+    h2 {
+        font-size: 2.05rem!important;
+    }
+    p, ul, ul b {
+        font-size: 1.3rem!important;
+        line-height: 1.4em!important;
+    }
+    nav img {
+        height: 40px;
+        width: 40px;
+    }
+    .icon-logo {
+        display: unset!important;
+        padding-left: 0.75rem;
+        padding-bottom: 0;
+        height: 40px;
+        width: 40px;
+    } 
+    footer {
+        font-size: 1rem!important;
+    }
+    aside {
+        margin-bottom: 5rem;
+    }
+    #gathering-insight-identifying-issues--tasks,
+    #project-overview-and-task-breakdown, 
+    #why-the-concern-over-accessibility {
+        padding: 2rem!important;
+        padding-bottom: 0;
+    }
+    #gathering-insight-identifying-issues--tasks + ul, 
+    #project-overview-and-task-breakdown + ul, 
+    #why-the-concern-over-accessibility + p + p + ul, 
+    #why-the-concern-over-accessibility + p + p + ul + p + ul {
+        padding-left: 3rem!important;
+        padding-right: 2rem!important;
+        padding-bottom: 2rem!important;
+    }
+    blockquote:before {
+        content: ''!important;
+    }
+    blockquote {
+        margin-top: 5rem!important;
+        margin-left: 0!important;
+        margin-right: 0!important;
+        padding-left: 1.5rem!important;
+    }
+    blockquote p {
+        font-size: 1.5rem!important;
+    }
+    #mixed .hero-header img:last-of-type {
+        height: unset;
+    }
+    #pink.hero:before {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+    #pink img:first-of-type {
+        -webkit-transform: unset;
+        width: unset;
+        left: unset;
+        margin-top: unset;
+        top: unset;
+        margin-left: unset;
+    }
+    #pink .hero-header {
+        margin-top: unset;
+    }
+    #hunger-for-professional-betterment + ul,
+    #hunger-for-professional-betterment + ul li {
+        display: block!important;
+        width: unset!important;
+        padding-left: 0!important;
+    }
+    #hunger-for-professional-betterment + ul li img {
+        width: 125px!important;
+        position: relative!important;
+        display: block!important;
+        margin-left: 0!important;
+    }
+    #darkblue .hero-header img:first-of-type {
+        display: none;
+    }
+    #rethinking-the-layout-through-wireframes + p + p {
+        overflow:scroll
     }
 }
 
 @media (--breakpoint-not-small) {
     body {
         border: 5px solid red;
+    }
+    .hero-header {
+        padding-left: 0!important;
     }
     .desktop-logo {
         display: none!important;
@@ -306,8 +383,8 @@
     .icon-logo {
         display: none!important;
     } 
-    #darkgreen .hero-header {
-        padding-left: 0!important;
+    #rethinking-the-layout-through-wireframes + p + p {
+        overflow:scroll
     }
     #main {
         padding: 0 5vw!important;
@@ -323,6 +400,30 @@
 
     .project-info {
         margin-top: -47px!important;
+    }
+    #mixed2 + #main .project-info, #mixed + #main .project-info {
+        margin-top: -43px!important;
+    }
+    p, ul, ul b {
+        font-size: 1.15rem !important;
+        line-height: 1.4em !important;
+    }
+    #darkgreen .hero-header img:first-of-type {
+        margin-top: 40vh!important;
+    }
+    #darkblue2 .hero-header img:first-of-type {
+        margin-top: 42vw;
+        left: 25vw;
+        height: 45vw;
+    }
+    #darkblue .hero-header img:first-of-type {
+        display: none
+    }
+    blockquote {
+        margin: 0 5rem!important;
+        margin-top: 7.5rem!important;
+        margin-left: 7.5rem!important;
+        margin-bottom: 7.55rem!important;
     }
 }
   

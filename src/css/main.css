@@ -168,7 +168,17 @@
  #darkblue + #main #why-the-concern-over-accessibility + p + p, 
  #darkblue + #main #why-the-concern-over-accessibility + p + p + ul, 
  #darkblue + #main #why-the-concern-over-accessibility + p + p + ul + p, 
- #darkblue + #main #why-the-concern-over-accessibility + p + p + ul + p + ul {
+ #darkblue + #main #why-the-concern-over-accessibility + p + p + ul + p + ul,
+ #darkblue2 + #main #gathering-insight-identifying-issues--tasks, 
+ #darkblue2 + #main #gathering-insight-identifying-issues--tasks + ul,
+ #darkblue2 + #main #project-overview-and-task-breakdown, 
+ #darkblue2 + #main #project-overview-and-task-breakdown + ul,
+ #darkblue2 + #main #why-the-concern-over-accessibility, 
+ #darkblue2 + #main #why-the-concern-over-accessibility + p, 
+ #darkblue2 + #main #why-the-concern-over-accessibility + p + p, 
+ #darkblue2 + #main #why-the-concern-over-accessibility + p + p + ul, 
+ #darkblue2 + #main #why-the-concern-over-accessibility + p + p + ul + p, 
+ #darkblue2 + #main #why-the-concern-over-accessibility + p + p + ul + p + ul  {
      background-color: #184a9f;
      color: white;
  }
@@ -247,13 +257,14 @@
     border-color: #e16125;
 }
     
- #main section section .cms a:first-of-type {
+#main .cms a:first-of-type {
      background-color: #57377D;
      color: white;
      padding: 1rem;
      display: block;
      width: fit-content;
      text-decoration: none;
+     margin-top: 2.5rem;
  }
 
  #main section .cms a:first-of-type:hover, #main section .cms a:first-of-type:focus {
