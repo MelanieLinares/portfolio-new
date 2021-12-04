@@ -109,16 +109,14 @@ h2 {
   padding-left: 1em
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&=familyPoppins:wght@500;900&familyMontserrat:wght@500&family=Hepta+Slab:wght@300;400;600&display=swap');
-
-/* @font-face {
+@font-face {
   font-family: Poppins;
-  src: url(/font/Poppins-Regular.ttf);
+  src: url(/font/Poppins-Black.ttf);
 }
 
-@font-face {
+/* @font-face {
   font-family: Poppins-Bold;
-  src: url(/font/Poppins-Bold.ttf);
+  src: url(/font/Poppins-old.ttf);
 }
 
 @font-face {
