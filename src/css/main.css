@@ -314,7 +314,7 @@
 .project-info b {
     color: #57377D;
     font-size: 16px;
-    font-family: 'Montserrat';
+    /* font-family: 'Montserrat'; */
     font-weight: 400!important;
     display: inherit;
     margin-bottom: 5px
