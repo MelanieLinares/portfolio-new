@@ -264,7 +264,9 @@
      display: block;
      width: fit-content;
      text-decoration: none;
-     margin-top: 2.5rem;
+     margin-top: 1.5rem;
+     border-radius: 1rem;
+     margin-bottom: 5rem;
  }
 
  #main section .cms a:first-of-type:hover, #main section .cms a:first-of-type:focus {

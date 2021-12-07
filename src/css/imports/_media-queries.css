@@ -239,6 +239,37 @@
     body {
         border: 5px solid purple;
     }
+    .cms h2 {
+        font-size: 1.8rem !important;
+    }
+    h1 {
+        font-size: 32px !important;
+    }
+    h1 b {
+        font-size: 16px!important; 
+    }
+    #mixed2.hero:before {
+        height: 101vh;
+        max-height: 620px;
+    }
+
+    #multi.hero:before {
+        height: 105vh;
+        max-height: 660px;
+    }
+    #mixed.hero:before {
+        height: 112vh;
+        max-height: 720px;
+    } 
+    .hero:before {
+        min-height: 500px;
+    }
+    /* #mixed.hero:before, 
+    #multi.hero:before {
+        max-height: 98vw;
+        height: 95vh;
+    } */
+
     .desktop-logo {
         display: none!important;
     } 
@@ -253,19 +284,19 @@
         margin: auto;
     }
     #darkgreen .hero-header img:first-of-type {
-        margin-top: 60vh!important;
+        margin-top: 440px!important;
         margin-left: 1px!important;
         width: 25vw;
     }
     #darkblue2 .hero-header img:first-of-type {
         z-index: 1;
-        margin-top: 85vw;
+        margin-top: 400px;
         height: 60vw;
-        left: 45vw;
+        left: 65vw;
     }
     .hero:before {
         max-height: 640px;
-        height: 90vh;
+        height: 95vh;
     }
     .hero {
         padding-bottom: 100px!important;
@@ -370,8 +401,40 @@
     body {
         border: 5px solid red;
     }
+    #main .cms ul li {
+         display: flex!important;
+         position: relative;
+    }
+
+    #hunger-for-professional-betterment + ul li:first-of-type {
+        display: block!important;
+        padding: 2em 0;
+       padding-left: 170px!important;
+       position: relative!important;
+   }
+   #hunger-for-professional-betterment + ul li:first-of-type img {
+        float: left;
+        position: absolute!important;
+        left: -1em;
+        top: 1em;
+    }
+    #pink .hero-header img:first-of-type {
+        height: 75%
+    }
+    #pink:before {
+        min-height: 641px;
+    }
+    .hero:before {
+        max-height: 90vw;
+        height: 76vh;
+        min-height: 750px;
+    }
     .hero-header {
         padding-left: 0!important;
+    }
+    #pink .hero-header {
+        padding-left: 560px;
+        margin-top: 0;
     }
     .desktop-logo {
         display: none!important;
@@ -409,7 +472,9 @@
         line-height: 1.4em !important;
     }
     #darkgreen .hero-header img:first-of-type {
-        margin-top: 40vh!important;
+        margin-top: 70vw !important; 
+        margin-left: 0!important;
+        max-width: 20vw;
     }
     #darkblue2 .hero-header img:first-of-type {
         margin-top: 42vw;
@@ -424,6 +489,18 @@
         margin-top: 7.5rem!important;
         margin-left: 7.5rem!important;
         margin-bottom: 7.55rem!important;
+    } 
+    #pink.hero:before {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+    #pink img:first-of-type {
+        -webkit-transform: unset;
+        width: unset;
+        left: unset;
+        margin-top: unset;
+        top: unset;
+        margin-left: unset;
     }
 }
   
@@ -431,9 +508,36 @@
     body {
         border: 5px solid orange;
     }
+    #hunger-for-professional-betterment + ul li:first-of-type {
+        display: block!important;
+        padding: 1em 0;
+        padding-left: 170px;
+    }
+    #rethinking-the-layout-through-wireframes + p + p {
+        left: unset!important;
+        width: unset!important;
+        position: relative;
+        height: 40vw;
+    }
+    #rethinking-the-layout-through-wireframes + p + p img {
+        max-width: unset!important;
+        padding-left: 0!important;
+        height: 40vw;
+        width: unset!important;
+        overflow: scroll!important;
+        position: absolute;
+    }
+    .cms h2:first-of-type {
+        font-size: 2.15rem;
+        margin-top: 0;
+    }
     #darkgreen .hero-header {
         padding-left: 0 !important;
         margin: auto;
+    }
+    .hero:before {
+        max-height: 90vw;
+        height: 72vh;
     }
     #navbar {
         padding: 0 6vw;
@@ -459,11 +563,32 @@
     #main > section {
         display: flex;
     }
+    .hero-header {
+        max-width: unset
+    }
+    #mixed2.hero:before {
+        max-height: 90vw;
+        height: 60vh;
+    }
 }
   
 @media (--breakpoint-large) {
     body {
         border: 5px solid yellow;
+    }
+    #darkblue2 .hero-header img:first-of-type {
+        margin-top: 33vw;
+        left: 12vw;
+        height: 35vw;
+    }
+    #darkblue2 .hero-header img:first-of-type {
+        margin-top: 50vw;
+    }
+    #darkgreen .hero-header img:first-of-type {
+        margin-top: 55vw !important;
+    }
+    #pink + #main .cms h2:first-of-type, #pink + #main aside {
+        margin-top: 10rem;
     }
     #darkgreen .hero-header {
         min-width: 36em;
@@ -482,6 +607,10 @@
 @media screen and (min-width: 80em) {
     body {
         border: 5px solid lime;
+    }
+    #darkblue2 .hero-header img:first-of-type,
+    #darkgreen .hero-header img:first-of-type {
+        margin-top: 37vw!important;
     }
     #main {
         padding: 0 6vw;
