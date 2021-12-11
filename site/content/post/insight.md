@@ -5,8 +5,8 @@ date: 2019-02-19T15:04:00.000Z
 newdate: 2021-11-10T02:27:22.000Z
 description: no, intro blurb >:[
 duration: 2 years 10 months
-logo: /img/insight-logo.png
-image: /img/insight2.jpg
+logo: /img/logos/insight-logo.png
+# image: /img/insight2.jpg
 image2: /img/insight1.jpg
 tags:
   - accessibility

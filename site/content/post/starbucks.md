@@ -7,7 +7,8 @@ description: no, intro blurb >:[
 duration: 7 weeks
 logo: /img/starbucks-logo.png
 image: /img/undraw_success_factors_re_ce93.png
-image2: /img/Group 527.png
+image1: /img/CoffeeIcons.png
+# image2: /img/Group 527.png
 notice: For legal reasons images are representational only and not of actual work completed
 tags:
   - react

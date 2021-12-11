@@ -121,6 +121,40 @@
 }
  */
 
+ #darkgreen.hero:after {
+    content: url(/img/CoffeeIcons.png);
+    position: absolute;
+    left: 0px;
+    top: 14em;
+ }
+
+ #darkblue.hero:after,
+ #darkblue2.hero:after {
+    content: url(/img/PowercordGroup.png);
+    position: absolute;
+    left: 0px;
+    top: 14em;
+    opacity: .65
+ }
+
+ #mixed.hero:after {
+    content: url(/img/WheelchairGroup.png);
+    position: absolute;
+    left: 0px;
+    top: 14em;
+ }
+
+ #multi.hero:after {
+    content: url(/img/WeatherGroup.png);
+    position: absolute;
+    left: 0px;
+    top: 20em;
+ }
+
+ #multi.hero:before {
+    height: 90vh;
+ }
+
  blockquote {
     border-left: #F4EDFD solid .75rem;
     color: #57377D;
@@ -335,7 +369,7 @@ ul.project-info > li ul li {
     position: sticky;
     margin-top: 15px;
     top: 8rem;
-    padding: 2rem;
+    padding: 2rem 1.8rem;
     background-color: #ffffffe6;
     /* background: rgba(255, 255, 255, 0); */
     /* backdrop-filter: blur(20px); */
@@ -875,6 +909,7 @@ html, body {
     /* min-width: 280px; */
     display: block;
     width: 100%;
+    overflow-x: hidden;
 }
 
   #tags {

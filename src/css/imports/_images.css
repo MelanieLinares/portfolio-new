@@ -5,4 +5,5 @@ img {
 /* Remove border-radiius from full-width images */
 img:not(.w-100) {
   border-radius: var(--border-radius);
+  margin-left: -5px;
 }

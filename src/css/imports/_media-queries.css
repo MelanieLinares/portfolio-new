@@ -239,6 +239,15 @@
     body {
         border: 5px solid purple;
     }
+
+    #navbar {
+        width: -webkit-fill-available;
+    }
+
+    #pink + #main section {
+        padding-top: 300px!important;
+    }
+
     .cms h2 {
         font-size: 1.8rem !important;
     }
@@ -395,12 +404,59 @@
     #rethinking-the-layout-through-wireframes + p + p {
         overflow:scroll
     }
+
+    #navbar ul {
+        font-size: 1.14rem !important;
+    }
+
+    aside .project-info details {
+        display: block!important;
+    }
+
+    aside .project-info details + li,
+    aside .project-info details + li + li,
+    aside .project-info details + li + li + li,
+    aside .project-info details + li + li + li + li {
+        display: none!important;
+    }
+
+    #mixed2 .hero-header img:first-of-type {
+        top: 12em;
+        margin-left: -39px;
+        width: 81vh;
+    }
 }
 
 @media (--breakpoint-not-small) {
     body {
         border: 5px solid red;
     }
+
+    #navbar {
+        width: -webkit-fill-available;
+    }
+
+    #pink + #main section {
+        padding-top: 620px!important;
+    }
+
+    #mixed2 .hero-header img:first-of-type {
+        top: 15em;
+        margin-left: -50px;
+        width: 101vh;
+    }
+
+    aside .project-info details {
+        display: block!important;
+    }
+
+    aside .project-info details + li,
+    aside .project-info details + li + li,
+    aside .project-info details + li + li + li,
+    aside .project-info details + li + li + li + li {
+        display: none!important;
+    }
+
     #main .cms ul li {
          display: flex!important;
          position: relative;
@@ -419,7 +475,10 @@
         top: 1em;
     }
     #pink .hero-header img:first-of-type {
-        height: 75%
+        height: 600px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
     }
     #pink:before {
         min-height: 641px;
@@ -440,8 +499,9 @@
         display: none!important;
     }  
     .mobile-logo {
-        display: unset!important;
+        display: inline-block!important;
         padding-left: 0;
+        width: 122px
     } 
     .icon-logo {
         display: none!important;
@@ -455,10 +515,6 @@
     }
     #main > section {
         display: block;
-    }
-
-    aside {
-        column-count: 2;
     }
 
     .project-info {
@@ -508,6 +564,32 @@
     body {
         border: 5px solid orange;
     }
+
+    #pink + #main section {
+        padding-top: 600px!important;
+    }
+
+    #navbar {
+        width: -webkit-fill-available;
+    }
+
+    #mixed2 .hero-header img:first-of-type {
+        top: 15em;
+        margin-left: -60px;
+        width: 95vh;
+    }
+
+    aside .project-info details {
+        display: none!important;
+    }
+
+    aside .project-info details + li,
+    aside .project-info details + li + li,
+    aside .project-info details + li + li + li,
+    aside .project-info details + li + li + li + li {
+        display: block!important;
+    }
+
     #hunger-for-professional-betterment + ul li:first-of-type {
         display: block!important;
         padding: 1em 0;
@@ -539,14 +621,14 @@
         max-height: 90vw;
         height: 72vh;
     }
-    #navbar {
-        padding: 0 6vw;
-    }
+
     .desktop-logo {
         display: unset!important;
+
     }
     .mobile-logo {
         display: none!important;
+        width: 190px;
     }
     #main {
         padding: 0 5vw!important;
@@ -557,9 +639,7 @@
         padding-right: 0;
         margin-top: unset!important;
     }
-    aside {
-        column-count: unset;
-    }
+
     #main > section {
         display: flex;
     }
@@ -576,6 +656,17 @@
     body {
         border: 5px solid yellow;
     }
+
+    #navbar {
+        width: -webkit-fill-available;
+    }
+
+    #mixed2 .hero-header img:first-of-type {
+        top: 10.5em;
+        margin-left: -77px;
+        width: 127vh;
+    }
+
     #darkblue2 .hero-header img:first-of-type {
         margin-top: 33vw;
         left: 12vw;
@@ -608,6 +699,21 @@
     body {
         border: 5px solid lime;
     }
+
+    #navbar {
+        width: -webkit-fill-available;
+    }
+
+    #pink + #main section {
+        padding-top: 450px!important;
+    }
+
+    #mixed2 .hero-header img:first-of-type {
+        top: 8em;
+        margin-left: calc((-100vw + 60em) / 2);
+        width: 100vw;
+    }
+
     #darkblue2 .hero-header img:first-of-type,
     #darkgreen .hero-header img:first-of-type {
         margin-top: 37vw!important;
@@ -626,16 +732,24 @@
     body {
         border: 5px solid pink;
     }
+
+    #mixed2 .hero-header img:first-of-type {
+        top: 6em;
+        margin-left: calc((-100vw + 75em) / 2);
+        width: 100vw;
+    }
+
     .hero .hero-header {
         max-width: 75em!important;
         margin: auto;
     }
     #navbar {
         padding-left: calc((100% - 75em) / 2);
+        padding-right: calc((100% - 75em) / 2);
     }
     #main {
         min-width: 38em;
-        max-width: 89em !important;
+        max-width: 87em !important;
         margin: auto;
     }
 }
@@ -644,11 +758,22 @@
     body {
         border: 5px solid peru
     }
+
+    #navbar {
+        width: -webkit-fill-available;
+    }
+
+    #mixed2 .hero-header img:first-of-type {
+        top: 0;
+        margin-left: calc((-100vw + 75em) / 2);
+        width: 100vw;
+    }
+
     .desktop-logo {
         display: unset!important;        
     }
     #main {        
-        max-width: 1645px!important;
+        /* max-width: 1645px!important; */
         margin: auto;
     }
 }

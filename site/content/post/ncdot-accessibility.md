@@ -6,9 +6,9 @@ newdate: 2019-08-07T15:04:10.000Z
 description: We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
   Mountain coffee beans in our store next week.
 duration: 2 months
-logo: /img/ncdot-logo.png
+logo: /img/logos/ncdot-logo.png
 image: /img/accessibility-ncdot.jpg
-image2: /img/Group 535.png
+# image2: /img/Group 535.png
 image1: /img/blog-flavor_wheel.jpg
 role: Accessibility Specialist 
 team: Web Services

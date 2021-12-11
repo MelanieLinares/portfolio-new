@@ -5,7 +5,7 @@ date: 2015-06-29T15:04:00.000Z
 newdate: 2016-09-07T02:27:22.000Z
 description: no, intro blurb >:[
 duration: 2 months
-logo: /img/stayonline-logo.png
+logo: /img/logos/stayonline-logo.png
 image: /img/stayonline-us.jpg
 image2: /img/stayonline-us-tablet.png
 tags:

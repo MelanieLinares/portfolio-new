@@ -40,13 +40,17 @@
   <!-- </div> -->
 
   <aside>
+    
     <ul class="project-info">
       <li>
         <img src="{{ .Params.logo }}" alt="{{ .Params.client }}"/>
       </li>
+      
       <li>
         <b>CLIENT</b> {{ .Params.client }}
       </li>
+      <details style="display: none">
+      <summary>Project Details</summary>
       <li>
         <b>ROLE</b> {{ .Params.role }}
       </li>
@@ -56,9 +60,9 @@
       {{ if .Params.technology }}
       <li>
         <b>TECHNOLOGY STACK</b> 
-        {{ range .Params.technology }}
-        <ul><li>{{ . }}</li></ul>
-      {{ end }}
+        <ul>{{ range .Params.technology }}
+        <li>{{ . }}</li>
+      {{ end }}</ul>
       </li>
       {{ end }}
       <li>
@@ -68,7 +72,30 @@
             {{ dateFormat "Jan 2 2006" . }}
         {{ end }}| {{ .Params.duration }}
       </li>
-    </ul>
+    </details>
+    <li>
+      <b>ROLE</b> {{ .Params.role }}
+    </li>
+    <li>
+      <b>TEAM</b> {{ .Params.team }}
+    </li>
+    {{ if .Params.technology }}
+    <li>
+      <b>TECHNOLOGY STACK</b> 
+      <ul>{{ range .Params.technology }}
+      <li>{{ . }}</li>
+    {{ end }}</ul>
+    </li>
+    {{ end }}
+    <li>
+      <b>DATES</b> 
+      {{ .Date.Format "Jan 2, 2006" }} -
+          {{ with .Params.newdate }}
+          {{ dateFormat "Jan 2 2006" . }}
+      {{ end }}| {{ .Params.duration }}
+    </li>
+    </ul>   
+ 
       </aside>
 
     <div class="cms center mw8">

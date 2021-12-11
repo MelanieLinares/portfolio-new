@@ -6,9 +6,9 @@ newdate: 2021-06-14T02:27:22.000Z
 description: no, intro blurb >:[
 notice: For legal reasons images are representational only and not of actual work completed
 duration: 1 month
-logo: /img/labcorp-logo.png
+logo: /img/logos/labcorp-logo.png
 image: /img/Group 524.png
-image2: /img/Group 531.png
+# image2: /img/Group 531.png
 tags:
   - react
   - responsive

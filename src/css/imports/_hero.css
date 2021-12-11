@@ -137,7 +137,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
 }
 
 #pink + #main section {
-    padding-top: 90px!important;
+    padding-top: 440px!important;
 }
 
 #mixed .hero-header img:first-of-type {
@@ -154,8 +154,11 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
 
 #mixed2 .hero-header img:first-of-type {
     position: absolute;
-    top: 39px;
-    margin-left: -400px;
+    top: 5em;
+    margin-left: -260px;
+    z-index: 0;
+    width: 190vh;
+    max-width: initial;
 }
 
 #multi .hero-header, #pink .hero-header, #darkgreen .hero-header, #darkblue .hero-header, #darkblue2 .hero-header, #mixed .hero-header, #mixed2 .hero-header  {

@@ -5,9 +5,9 @@ date: 2015-01-05T15:04:00.000Z
 newdate: 2015-04-10T02:27:22.000Z
 description: no, intro blurb >:[
 duration: 3 months
-logo: /img/stayonline-logo.png
+logo: /img/logos/stayonline-logo.png
 image: /img/stayonline-eu.jpg
-image2: /img/powercord.png
+# image2: /img/powercord.png
 role: Front-end developer
 team: Web Dev
 technology:
