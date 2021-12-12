@@ -235,9 +235,48 @@
     }
 } */
 
+@media screen and (max-width: 320px) {
+    body {
+        border: 5px solid black!important;
+    }
+
+    #navbar ul a {
+        font-size: 1rem !important;
+        padding: 1.5em .75em;
+    }
+
+    #navbar ul li:first-of-type a {
+        padding: 1.5em 1.25em;
+    }
+
+    #navbar ul {
+        margin-left: .5em;
+    }
+
+    #multi.hero:before,
+    #mixed.hero:before,
+    #mixed2.hero:before,
+    #darkgreen.hero:before,
+    #darkblue.hero:before,
+    #darkblue2.hero:before {
+        height: 128vh!important;
+        max-height: 820px!important;
+    }
+}
+
 @media screen and (max-width: 40em) {
     body {
         border: 5px solid purple;
+    }
+
+    #gathering-insight-identifying-issues--tasks,
+    #project-overview-and-task-breakdown,
+    #why-the-concern-over-accessibility,
+    #why-the-concern-over-accessibility + p,
+    #why-the-concern-over-accessibility + p + p,
+    #why-the-concern-over-accessibility + p + p + ul + p  {
+       padding-left: 2rem!important;
+       padding-right: 2rem!important;
     }
 
     #navbar {
@@ -322,7 +361,7 @@
         font-size: 2.05rem!important;
     }
     p, ul, ul b {
-        font-size: 1.3rem!important;
+        /* font-size: 1.15rem!important; */
         line-height: 1.4em!important;
     }
     nav img {
@@ -352,7 +391,7 @@
     #project-overview-and-task-breakdown + ul, 
     #why-the-concern-over-accessibility + p + p + ul, 
     #why-the-concern-over-accessibility + p + p + ul + p + ul {
-        padding-left: 3rem!important;
+        padding-left: 4rem!important;
         padding-right: 2rem!important;
         padding-bottom: 2rem!important;
     }
@@ -366,7 +405,7 @@
         padding-left: 1.5rem!important;
     }
     blockquote p {
-        font-size: 1.5rem!important;
+        font-weight: bold!important;
     }
     #mixed .hero-header img:last-of-type {
         height: unset;
@@ -487,6 +526,7 @@
         max-height: 90vw;
         height: 76vh;
         min-height: 750px;
+        min-height: 739px;
     }
     .hero-header {
         padding-left: 0!important;

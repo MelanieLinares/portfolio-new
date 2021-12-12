@@ -33,7 +33,7 @@ Imagine a stack of physical applications encompasing a year's worth of unentered
 **the challenge:** the current NCDMV system was not built for the number of participants and time needed to not only add new receipients to the databasee, but also edit, manage status, curate documentation, and maintain those already on the legacy system—in addition to vendors of the device itself. The backlog was a problem.
 
 ![this is the alt text](/img/Image%2060.png "Title is optional")
-*source: [cbs17.com](cbs17.com)
+*source: [cbs17.com](cbs17.com)*
 
 A new internal portal would need to be created so that NCDMV employees could access and process participant and vendor data for hundreds of thousands of citizens, efficiently and securely.
 

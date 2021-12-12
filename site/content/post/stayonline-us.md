@@ -56,7 +56,7 @@ StayOnline's client-base still had a strong percentage of IE6 use (even back in 
 
 **Development Overhead:**
 - CSS adjustments were constantly required with each page addition
-- Layout bugs were constantly found by the team and users as it was easy to mistype or forget a closing `</td>` tag. When the entire page is unformatted table tags it is not worth upkeep. 
+- Layout bugs were constantly found by the team and users as it was easy to mistype or forget a closing table tag. When the entire page is unformatted table tags it is not worth upkeep. 
 
 **User Pain Points:**
 - Many users complained of not seeing content because it was either overflow: hidden, off-screen, or required scrolling horizontally

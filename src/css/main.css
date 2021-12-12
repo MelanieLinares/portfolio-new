@@ -125,7 +125,8 @@
     content: url(/img/CoffeeIcons.png);
     position: absolute;
     left: 0px;
-    top: 14em;
+    /* top: 14em; */
+    top: 8em;
  }
 
  #darkblue.hero:after,
@@ -133,15 +134,15 @@
     content: url(/img/PowercordGroup.png);
     position: absolute;
     left: 0px;
-    top: 14em;
+    top: 3.8em;
     opacity: .65
  }
 
  #mixed.hero:after {
     content: url(/img/WheelchairGroup.png);
     position: absolute;
-    left: 0px;
-    top: 14em;
+    left: -307px;
+    top: 7.75em;
  }
 
  #multi.hero:after {
@@ -278,14 +279,14 @@
     left: -2rem;
  }
 
- #multi + #main .cms ul > li:before {
+ /* #multi + #main .cms ul > li:before {
      color: red;
  }
 
  #mixed + #main #why-the-concern-over-accessibility + p + p + ul > li:before,
  #mixed + #main #why-the-concern-over-accessibility + p + p + ul + p + ul > li:before {
     color: #e16125;
-}
+} */
 
 #mixed + #main #why-the-concern-over-accessibility:before {
     border-color: #e16125;
@@ -302,6 +303,24 @@
      border-radius: 1rem;
      margin-bottom: 5rem;
  }
+
+ #main .cms em a {
+    background-color: unset!important;
+    color: unset!important;
+    padding: unset!important;
+    display: inline-block!important;;
+    width: unset!important;
+    text-decoration: underline!important;
+    margin-top: unset!important;
+    border-radius: unset!important;
+    margin-bottom: unset!important;
+}
+
+p img + em {
+    font-size: .7em;
+    margin-bottom: 2em;
+    display: block;
+}
 
  #main section .cms a:first-of-type:hover, #main section .cms a:first-of-type:focus {
     background-color: #2e154c;

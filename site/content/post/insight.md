@@ -6,7 +6,7 @@ newdate: 2021-11-10T02:27:22.000Z
 description: no, intro blurb >:[
 duration: 2 years 10 months
 logo: /img/logos/insight-logo.png
-# image: /img/insight2.jpg
+image: /img/insight1.jpg
 image2: /img/insight1.jpg
 tags:
   - accessibility
