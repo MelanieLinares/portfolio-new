@@ -1,6 +1,6 @@
 ---
 backgroundcolor: mixed
-title: Increase accessibility across NCDOT websites, including keyboard & screen reader testing, for Section 508 compliance
+title: Increase accessibility across NCDOT websites for Section 508 compliance
 date: 2019-06-03T15:04:10.000Z
 newdate: 2019-08-07T15:04:10.000Z
 description: We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
@@ -10,6 +10,7 @@ logo: /img/logos/ncdot-logo.png
 image: /img/accessibility-ncdot.jpg
 # image2: /img/Group 535.png
 image1: /img/blog-flavor_wheel.jpg
+preview: /img/ncdot-preview.png
 role: Accessibility Specialist 
 team: Web Services
 technology:
@@ -23,132 +24,124 @@ technology:
   - AxE DevTools
 tags:
   - accessibility
-  - html & css
   - javascript
-titlebold: Increase accessibility across NCDOT websites, including keyboard & screen reader testing,
+titlebold: Increase accessibility across NCDOT websites
 titlenormal: for Section 508 compliance
 client: NC Department of Transportation
-weight: 2;
+weight: 1
 notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 ---
 
 ## Creating a plan to increase usability and accessibility
 
-The NCDOT's newly released website (codename RNR) allows citizens a secure, 
-quick and easy way to view all transportation-related information and acts as a hub 
-for NC news, division specific information, safety policies and resources, maps and 
-more. Previously an outdated system, the new system provided a vast user 
-experience improvement. Unfortunately despite looking great the site failed initial 
-accessibility audits... not a good sign for a government website.
+The NCDOT’s new website (as of 2018) allows citizens a secure, quick, and easy way to view all transportation-related information. Unfortunately, despite looking great the site failed initial accessibility audits. This is not good for a government website.
 
 **The starting score:** 67 (based on Google Lighthouse)
 
 **The goal:** accessibility within a 3rd-party (SharePoint 2016) can be tricky, but 
 we needed to reach > 90  
 
-**Project team:**  front-end developer (myself), manager
-
 [Skip to the results](post/ncdot-accessibility/#comparing-the-results)
 
 ## Why the concern over accessibility?
 
-Originally brought on to work with the DMV team for separate smaller projects 
-I first noticed the accessibility issues when forced to use my keyboard for 
-navigation after a battery-operated mouse died. It may seem like a small thing 
-but it is important to recognize that accessibility is for everyone, from someone 
-who is blind, has limb differentiation, to someone having a temporary disability.   
+Originally brought on for front-end development, I noticed the accessibility issues when my battery-operated mouse died. This "situational disability" required I use my keyboard to navigate the website. It may seem small, but it is important to recognize that accessibility is for everyone, from someone who is blind, has limb differentiation, to someone having a temporary or situational disability. As a government agency, the website is required to be accessible.   
  
-**The main issue for citizens**
-- Those with vision disabilities are unable to understand important safety and legal announcements, creating an information barrier
-- Those with physical disabilities have a hard (or impossible) time making convenient online transactions such as driver license renewals or toll payments
-- Those with situational or temporary disabilities (including slower internet speeds) are at a disadvantage using an important application unnecessarily
+### The main issue for citizens
+- Those with vision disabilities are unable to understand important safety and legal announcements
+- Those with physical disabilities have a hard (or impossible) time making convenient online transactions
+- Those with situational or temporary disabilities (including slower internet speeds) have difficulties accessing
  
-**The main issue for the NCDOT:**  
+### The main issue for the NCDOT: 
 - As a federal agency, the websites for the NCDOT and NCDMV must meet Section 508 regulations and be ADA compliant. Failure to meet guidelines can lead to lawsuits.     
 - A federal agency can lose citizen and customer trust
 
 > Accessibility is about access, pure and simple. If a government application cannot be used by citizens then never mind the legal repercussions, the design improvements are wasted.
 
-## Conducting the initial accessibility audit
+## Conducting the accessibility audit
+![this is the alt text](/img/ncdot-a11y2.png "Title is optional")
+*WCAG 2.0 and Section 508 guidelines were referenced for specific requirements (note: this audit was pre WCAG 2.1)*
 
-- the first step was in identifying page templates and associated JavaScript components      
-- most viewed pages were sorted by template and then tested with Lighthouse for baseline needed improvements
-- NVDA, a free screen reader, was used to identify issues with the information hierarchy and html syntax
-- after issues found in the above scenarios were fixed then keyboard testing was conducted to find outliers in accessing content
-- WCAG 2.0 guidelines were referenced for specific requirements
-- a few color-accessibility web extensions (such as Colorblinding, NoCoffee Vision Simulator, and Disability Simulator) were used to find issues that a system other than one's own vision would not identify
+### Establishing a baseline
+- testing level was established according to government regulations and client needs
+- the first step was in identifying page templates and associated JavaScript components 
+- sorted most viewed pages by template and then tested with Lighthouse for baseline needed improvements 
+- guidelines reviewed and a goal checklist created prior to testing
 
-## Audit findings and task breakdown
+### Manual testing
+- NVDA screen readerused to identify issues with the information hierarchy and HTML syntax
+- keyboard testing conducted to find outliers in accessing content
+- web extensions (such as Colorblinding, NoCoffee Vision Simulator, and Disability Simulator) used for hard to identify issues
+- TalkBack and VoiceOver used to test mobile devices
 
-**Why focus on components and most viewed pages?:**  
-- Two categories of user were identified: internal team member and external purchasing customer      
-- Stay Online team members would submit orders on behalf of the company and for phone orders
+### Automatic testing
+![this is the alt text](/img/ncdot-a11y.png "Title is optional")
+- Axe DevTools
+- W.A.V.E. (web accessibility evaluation tool)
+- Chrome DevTools
+- Accessibility Insights for the Web
+- cross-browser testing emphasized
 
-**Sorting pages to prioritize testing:**
-- External customers included one time buy customers and return annual buyers who bought in bulk
-- Greater expectation for product customization and proof that products meet EU regulations
+## Audit findings and breakdown
+### Focus on components
+Components associated with key functionality prioritized. If a user cannot interact correctly with a design then it is ineffective, regardless of aesthetics.
+- Date pickers could not be accessed via keyboard
+- Contact form in the footer of every page
+- Incorrect use of headings based on the template
 
-![this is the alt text](/img/blog-chemex.jpg "Title is optional")
-[From left to right]:  Sketches of dividing up the master page section; Responsive menu sketches; notes planning out static page layouts
 
-**Screen readers are very picky and unfortunately no two are the same:**  
-- BLLLAAAHHH Existing U.S. approach for site navigation was with a sidebar menu that grew in height over time      
-- Initial A/B testing on a mega menu style horizontal navigation vs the existing vertical style
-- Testers expressed confusion over navigation location (mega menu was not toggled on load so the only available navigation link was “products”)
+![this is the alt text](/img/ncdot-wave.png "Title is optional")
 
-**Keyboard testing and why you should not use CSS to disguise focus:** 
-- BLLLAAAHHH Existing U.S. approach for site navigation was with a sidebar menu that grew in height over time      
-- Initial A/B testing on a mega menu style horizontal navigation vs the existing vertical style
-- Testers expressed confusion over navigation location (mega menu was not toggled on load so the only available navigation link was “products”)
+### Sorting pages on most viewed pages to prioritize testing 
+- Homepage
+- Contact
+- About
+- Form-based application pages
+- Commonly used information such as locations and how-to info
 
-**Keyboard testing and why you should not use CSS to disguise focus:**  
-- BLLLAAAHHH Existing U.S. approach for site navigation was with a sidebar menu that grew in height over time      
-- Initial A/B testing on a mega menu style horizontal navigation vs the existing vertical style
-- Testers expressed confusion over navigation location (mega menu was not toggled on load so the only available navigation link was “products”)
+
+### Screen readers and understanding the rotor 
+Proper use of headings, sections, and links help ensure a screen reader user can access content quickly and directly.
+
+### Keyboard testing and why you should not use CSS to disguise focus:  
+It is important to ensure a keyboard can navigate a page. Content should have proper focus and not disappear off-screen. You may not like the look of a focus ring around a link but it serves a functional purpose.
 
 ## Major changes and impact
 
 ![this is the alt text](/img/ncdot-acc-overview.png "Title is optional")
 
-**Major navigation changes:**  
-- BLLLAAAHHH Existing U.S. approach for site navigation was with a sidebar menu that grew in height over time      
-- Initial A/B testing on a mega menu style horizontal navigation vs the existing vertical style
-- Testers expressed confusion over navigation location (mega menu was not toggled on load so the only available navigation link was “products”)
-- After several prototype versions using tester feedback a decision was made to revert to the sidebar approach but keep the new category labels
+### Keyboard changes  
+- Skip to main link existed but was not functional, now a user can skip the lengthy navigation if they choose
+- Headings reorganized and given proper hierarchy according to semantics vs aesthetics
+- Focus rings on vital links added back, as well as hover underlines
+- Elements arranged out of logical order via CSS caused issues when tabbing through content. Content and CSS adjusted so layout matched original, but improved for screen readers
+
 
 ![this is the alt text](/img/ncdot-alert.png "Title is optional")
 
-**ALERTS AND POP-UPS**
-- BLLLAAAHHH Existing U.S. approach for site navigation was with a sidebar menu      
-- Initial A/B testing on a mega menu style horizontal 
-- Testers expressed confusion over navigation location navigation 
+### Alerts & pop-ups
+- Originally not accessible via tabbing and did not have an easy way to close
+- Alerts of important information were not announced to screen readers. Aria used responsibly to resolve the issue.
+
 
 ![this is the alt text](/img/ncdot-components.png "Title is optional")
 
-**REPEATABLE COMPONENTS**
-- BLLLAAAHHH Existing U.S. approach for site navigation was with a sidebar menu      
-- Initial A/B testing on a mega menu style horizontal 
-- Testers expressed confusion over navigation location navigation 
+### Repeatable components
+- Some components found to be inaccessible.  Adjusted code as able. Others (often plugins) replaced with native HTML5
 
 ![this is the alt text](/img/ncdot-navigation.png "Title is optional")
 
-**NAVIGATION**
-- BLLLAAAHHH Existing U.S. approach for site navigation was with a sidebar menu      
-- Initial A/B testing on a mega menu style horizontal 
-- Testers expressed confusion over navigation location navigation 
+### Navigation
+- Navigation built with separate mobile and desktop code toggled according to media queries. The issue is both still accessed via a screen reader regardless of screen size.
+- Originally not all built using lists. The navigation was not properly read by a screen reader. Some info was skipped or not announced as link or navigation items. The content needed roles adjusted.
 
-## Comparing the results
+
+## The takeaway
  
-- BBLLAAHH The website saw improved search efficiency helped 
-by use of categories and better keywords increased 
-efficiency in finding products
+The original goal was to reach >90 via Lighthouse and this was successful. Of course a Lighthouse score does not ensure an accessible application, but was used as a benchmark. The remediation tasks were re-tested manually and through an automatic tool such as Axe DevTools. Previously the website, when read aloud via a screen reader, would stop after navigation or would after the first heading. The team was given a demo of the before and after. Training concluded the remediation to proactively reduce accessibility issues in the future. 
 
-- BBLLAAHH Category changes were implemented without 
-negatively affecting the U.S. database (the plan 
-was to merge category changes over to the U.S site)
+> Melanie, contributed a great deal to improving our website's load time, performance, and accessibility. The results were effective and immediate - faster page loads across the board, and forms and interactions were available to everyone regardless of capability.  
+*- Patrick Doran, NCDOT UX and Web Services Manager*
 
-## The takeaway: BLAH 
-
-- BLAH 
-
-> BBLLLAAHH Melanie has a great understanding of CSS, graphics and web design, responsive layout and CSS compilers.  Our web sites are much better as a result of her work. *- Brian Futrell, StayOnline Web Developer*
+> Thank you for all your efforts in keeping the web accessible.   
+*- Todd Darling, Insight Team Lead while on NCDOT contract*

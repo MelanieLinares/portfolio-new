@@ -2,7 +2,7 @@
 
 	/* Headings */
 	& h1, & h2, & h3, & h4, & h5, & h6 {
-		font-weight: var(--bold-font-weight);
+		font-weight: 700;
 		line-height: 1.25;
     margin-bottom: var(--spacing-small);
   }
@@ -12,18 +12,22 @@
   }
 
   & h2 {
-    font-size: 2.15rem;
+    font-size: 2.3rem;
 	margin-top: 10rem
   }
 
   & h3 {
     /* font-size: 1.25rem; */
-	font-size: 20px;
+	font-size: 22px;
 	padding-top: 1.25rem;
   }
 
+  & h2:not(:first-of-type) ~ h3 {
+	margin-top: 1.5em;
+  }
+
   & h4 {
-    font-size: 1rem;;
+    font-size: 1rem;
   }
 
   & h5 {

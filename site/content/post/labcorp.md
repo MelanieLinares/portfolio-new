@@ -4,15 +4,14 @@ title: Customizable weather and time-management dashboard widgets so teams stay 
 date: 2021-05-05T15:04:00.000Z
 newdate: 2021-06-14T02:27:22.000Z
 description: no, intro blurb >:[
-notice: For legal reasons images are representational only and not of actual work completed
+notice: For legal reasons images of work completed cannot be shown
 duration: 1 month
 logo: /img/logos/labcorp-logo.png
 image: /img/Group 524.png
+preview: /img/labcorp-preview.png
 # image2: /img/Group 531.png
 tags:
   - react
-  - responsive
-  - html & css
   - sharepoint
 titlebold: Customizable weather and time-management dashboard widgets so teams stay 
 titlenormal: on-task & connected

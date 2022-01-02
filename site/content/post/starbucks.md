@@ -8,12 +8,13 @@ duration: 7 weeks
 logo: /img/starbucks-logo.png
 image: /img/undraw_success_factors_re_ce93.png
 image1: /img/CoffeeIcons.png
+preview: /img/starbucks-preview.png
 # image2: /img/Group 527.png
-notice: For legal reasons images are representational only and not of actual work completed
+notice: For legal reasons images of work completed cannot be shown
 tags:
   - react
   - typescript
-  - html & css
+  - javascript
 titlebold: Manage assets easily with an improved internal web portal  
 titlenormal: built for a better user experience
 client: Starbucks
@@ -31,7 +32,7 @@ Managing assets can be a pain if the application does not allow for dynamic acti
 I worked with UX to implement and improve wireframes, create case studies and identify edge cases. 
 My role was to take the approved design and specs and build out the needed pages and components.
 
-**Specific tasks:**
+### Specific tasks
 - create new UI components
 - ensure reusability of existing and new components
 - integrate with REST apis
@@ -44,6 +45,3 @@ I learned a lot about component hierarchy through this project and it was a deep
 has a very knowledgeable team that was a great asset when I needed help. I always love working directly with UX and 
 back-end teammates and this project experience had both. The Starbucks team knew what they needed from this platform 
 and I'm glad our team was able to deliver. ☕✨
-
-
-![this is the alt text](/img/Image%2060.png "Title is optional")

@@ -92,7 +92,9 @@
       {{ .Date.Format "Jan 2, 2006" }} -
           {{ with .Params.newdate }}
           {{ dateFormat "Jan 2 2006" . }}
-      {{ end }}| {{ .Params.duration }}
+      {{ end }}
+      <br/>
+      ({{ .Params.duration }})
     </li>
     </ul>   
  
@@ -103,24 +105,28 @@
     </div>
     
 
-  </section>
-    <div style="position: relative">      
-      {{ with .PrevInSection }}
-      <h3>Next case study</h3>
-      <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width: 25%; height: auto" />
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-      <p>{{ .Params.description }}</p>
-      {{ else }}
-      <div>
-          {{ range first 1 (where .Site.Pages "Type" "post") }}
-  <h3>Next case study</h3>
-  <img src="{{ .Params.image }}" alt="{{ .Title }}" style="width: 25%; height: auto" />
-  <a href="{{ .Permalink }}">{{ .Title }}</a>
-  <p>{{ .Params.description }}</p>
-{{ end }}
+  </section>    
+  <h3 class="related-title">Related case studies</h3> 
+  <div id="related" style="position: relative">   
+    <div class="inner"> 
+      
+      
+ 
+
+    
+    {{ range first 3 ( where ( where .Site.Pages ".Params.tags" "intersect" .Params.tags ) "Title" "!=" .Title ) }} 
+    
+
+    {{ if isset .Params "preview" }}
+    <div class="tile">
+    <img src="{{ .Params.preview }}" alt="{{ .Title }}" />
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <!-- <p>{{ .Params.description }}</p> -->
+  </div>
+    {{ end }}
+          
+        {{ end }}
+      </div> </div></div>
+    
       </div>
     {{ end }}
-  </div>
-
-  </div>
-{{ end }}

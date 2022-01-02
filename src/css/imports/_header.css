@@ -20,11 +20,15 @@ h1:before {
     background: rgba( 255, 255, 255, 0.25 );
     backdrop-filter: blur( 20px );
     -webkit-backdrop-filter: blur( 20px );
-    border-radius: 10px;
+    border-radius: 15px;
     width: 100%;
     /* width: calc(100% - 410px);
     position: absolute; */
     margin-top: 15px;
+    box-shadow: 0 0 0 1px #00000014, 0 12px 36px 0 #0000001f;
+
+    width: 80%;
+    margin-left: 20%;
 }
 
 .hero-header img:first-of-type {

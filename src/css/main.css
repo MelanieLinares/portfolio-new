@@ -11,7 +11,7 @@
  *    Articles individual: default
    *
  */
- @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&=familyPoppins:wght@500;900&familyMontserrat:wght@500&family=Hepta+Slab:wght@300;400;600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&=familyPoppins:wght@500;900&familyMontserrat:wght@500&family=Hepta+Slab:wght@300;400;600;700&familyPermanent+Marker:wght@400;&display=swap');
 
 /* External Library Includes */
 @import './imports/_reset';
@@ -121,6 +121,310 @@
 }
  */
 
+ #the-takeaway {
+    padding-top: 2em!important;
+    margin-top: calc(10rem + 150px);
+ }
+
+ #the-takeaway + p {
+    padding-bottom: 3em!important;
+    margin-bottom: calc(10rem + 50px)!important;
+    padding-right: 33vw;
+ }
+
+ #the-takeaway + p,
+ #the-takeaway + ul,
+ #the-takeaway + ul + p,
+ #the-takeaway {
+    color: white;
+    width: 101vw;
+    margin-left: -16.15rem;
+    padding: 0 14vw;
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+
+ #darkblue + #main #the-takeaway + ul {
+     padding-bottom: 3em;
+ }
+
+ #the-takeaway + ul:after,
+ #the-takeaway + p:after {
+    margin-top: calc(3em - 1px)!important;
+}
+
+ #darkblue + #main #the-takeaway + p,
+ #darkblue + #main #the-takeaway + ul,
+ #darkblue + #main #the-takeaway + ul + p,
+ #darkblue + #main #the-takeaway,
+ #darkblue2 + #main #the-takeaway + p,
+ #darkblue2 + #main #the-takeaway + ul,
+ #darkblue2 + #main #the-takeaway + ul + p,
+ #darkblue2 + #main #the-takeaway {
+    background-color: #313d81;
+ }
+
+ #darkblue + #main #the-takeaway + p:after,
+ #darkblue + #main #the-takeaway + ul + p:after,
+ #darkblue + #main #the-takeaway + ul:after,
+ #darkblue2 + #main #the-takeaway + p:after,
+ #darkblue2 + #main #the-takeaway + ul + p:after,
+ #darkblue2 + #main #the-takeaway + ul:after  {
+    background-color: #313d81;
+    z-index: -1;
+ }
+
+ #darkblue + #main #the-takeaway:after,
+ #darkblue2 + #main #the-takeaway:after {
+    background-color: #313d81;
+ }
+
+ #darkgreen + #main #the-takeaway + p,
+ #darkgreen + #main #the-takeaway + ul,
+ #darkgreen + #main #the-takeaway + ul + p,
+ #darkgreen + #main #the-takeaway {
+    background-color: #006241;
+ }
+
+ #darkgreen + #main #the-takeaway + p:after,
+ #darkgreen + #main #the-takeaway + ul + p:after {
+    background-color: #006241;
+    z-index: -1;
+ }
+
+ #darkgreen + #main #the-takeaway:after {
+    background-color: #006241;
+ }
+
+ #pink + #main #the-takeaway + p,
+ #pink + #main #the-takeaway + ul,
+ #pink + #main #the-takeaway + ul + p,
+ #pink + #main #the-takeaway {
+    background-color: #c11188;
+ }
+
+ #pink + #main #the-takeaway + p:after,
+ #pink + #main #the-takeaway + ul + p:after {
+    background-color: #c11188;
+    z-index: -1;
+ }
+ 
+ #pink + #main #the-takeaway:after {
+    background-color: #c11188;
+ }
+
+ #multi + #main #the-takeaway + p,
+ #multi + #main #the-takeaway + ul,
+ #multi + #main #the-takeaway + ul + p,
+ #multi + #main #the-takeaway {
+    background-color: #375de3;
+ }
+
+ #multi + #main #the-takeaway + p:after,
+ #multi + #main #the-takeaway + ul + p:after {
+    background-color: #375de3;
+    z-index: -1;
+ }
+
+ #multi + #main #the-takeaway:after {
+    background-color: #375de3;
+ }
+
+ #mixed + #main #the-takeaway + p,
+ #mixed + #main #the-takeaway + ul,
+ #mixed + #main #the-takeaway + ul + p,
+ #mixed + #main #the-takeaway,
+ #mixed2 + #main #the-takeaway + p,
+ #mixed2 + #main #the-takeaway + ul,
+ #mixed2 + #main #the-takeaway + ul + p,
+ #mixed2 + #main #the-takeaway {
+    background-color: #701c45;
+ }
+
+ #mixed + #main #the-takeaway + p:after,
+ #mixed + #main #the-takeaway + ul + p:after,
+ #mixed2 + #main #the-takeaway + p:after,
+ #mixed2 + #main #the-takeaway + ul + p:after {
+    background-color: #701c45;
+    z-index: -1;
+ }
+
+ #mixed + #main #the-takeaway:after,
+ #mixed2 + #main #the-takeaway:after {
+    background-color: #701c45;
+ }
+
+ #the-takeaway + p:after,
+ #the-takeaway + ul + p:after,
+ #the-takeaway + ul:after {
+    content: '';
+    -webkit-clip-path: polygon(0 0, 0 25%, 100% 0);
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    height: 100px;
+    display: block;
+    width: 103vw;
+    /* margin-top: calc(3em - 1px); */
+    margin-top: 0;
+    margin-left: -16.8rem;
+    position: absolute;
+ }
+
+ #the-takeaway:after {
+    content: '';
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    height: 100px;
+    background-color: #006241;
+    display: block;
+    margin-top: -6.46em;
+    width: 101vw;
+    margin-left: -16.15rem;
+    position: absolute;
+ }
+
+ #the-takeaway + ul + p img {
+     max-width: 870px;
+     margin-top: 2em;
+     margin-bottom: 2em;
+ }
+
+ #the-takeaway + ul + p img + em {
+    margin-top: -2em;
+    margin-bottom: 3em;
+}
+
+#mixed2 + #main #the-takeaway + ul + p:after {
+    margin-top: calc(-2em - 10px);
+}
+
+.related-title {
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
+    margin-bottom: var(--spacing-small);
+    color: #48377d;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3rem;
+}
+
+.related-title:before {
+    content: "";
+    display: block;
+    width: 1.75em;
+    height: 2px;
+    padding-top: 0.4em;
+    border-top: 2px solid #4CD5F7;
+}
+
+ #related {
+     margin-bottom: 10rem;
+ }
+
+ #related .inner {
+    display: flex;
+    max-width: 79em;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+#related .inner .tile {
+    width: 33%;    
+    margin-left: .5em;
+}
+
+#related .inner .tile:nth-of-type(2) {
+    margin-left: 1em;
+    margin-right: .5em;
+}
+
+#related .inner .tile img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+    }
+
+ #image-group {
+     display: none;
+ }
+
+ #image-group + p img:nth-of-type(3) {
+    box-shadow: 0px 0px 0px 1.09em #fff;
+    position: absolute;
+    right: -9em;
+    margin-top: 21.5em;
+    border-radius: 10px;
+}
+#image-group + p img:nth-of-type(2) {
+    box-shadow: 0px 0px 0px 1.09em #fff;
+    position: absolute;
+    right: -18em;
+    margin-top: 3em;
+    border-radius: 10px;
+}
+
+ code {
+    margin-left: 3px;
+    background-color: #edebeb;
+    padding: 0 4px;
+ }
+
+ .cms img {
+    box-shadow: 0 0 0 1px #00000014, 0 12px 36px 0 #0000001f;
+    border-radius: 10px;
+ }
+
+ .cms img + img {
+    box-shadow: unset;
+    border-radius: unset;
+ }
+
+ #darkblue + #main .cms h2 ~ p img + img {
+    width: 28em;
+    position: absolute;
+    right: -19em;
+    margin-top: 2em;
+ }
+
+ h2:nth-of-type(5):not(#the-takeaway):after {
+    content: url('/img/purple-triangle.png');
+    position: absolute;
+    right: -13em;
+    margin-top: -7em;
+    z-index: -1;
+    opacity: .33;
+    animation-name: spin;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+}
+
+#darkblue2 + #main h2:nth-of-type(4):after,
+#mixed2 + #main h2:nth-of-type(4):after {
+    content: url('/img/purple-triangle.png');
+    position: absolute;
+    right: -13em;
+    margin-top: -7em;
+    z-index: -1;
+    opacity: .33;
+    animation-name: spin;
+  animation-duration: 120s;
+  animation-iteration-count: infinite;
+}
+
+#darkblue2 + #main h2:nth-of-type(5):after,
+#mixed2 + #main h2:nth-of-type(5):after {
+    content: unset;
+}
+
+#the-challenge + p + p img {
+    box-shadow: unset;
+    border-radius: unset
+ }
+
+ h2:nth-of-type(4) ~ *,
+ h2:nth-of-type(4) {
+    /* border: 4px solid blue; */
+    /* margin-left: unset */
+}
+
  #darkgreen.hero:after {
     content: url(/img/CoffeeIcons.png);
     position: absolute;
@@ -141,7 +445,7 @@
  #mixed.hero:after {
     content: url(/img/WheelchairGroup.png);
     position: absolute;
-    left: -307px;
+    left: 0px;
     top: 7.75em;
  }
 
@@ -158,72 +462,182 @@
 
  blockquote {
     border-left: #F4EDFD solid .75rem;
-    color: #57377D;
+    color: #48377d;
     margin: 0 10rem;
     margin-top: 10rem;
     font-size: 1.152rem;
     margin-left: 15rem;
  }
 
- blockquote:before {
+ /* blockquote:before {
     content: url(/img/semicircle.png);
     position: absolute;
-    left: 0;
-    margin-left: -11rem;
+    right: 0;
+    margin-right: -38.5rem;
     z-index: 0;
     margin-top: -17rem;
- }
+ } */
 
  /* #gathering-insight-identifying-issues--tasks, #gathering-insight-identifying-issues--tasks + ul,
  #project-overview-and-task-breakdown, #project-overview-and-task-breakdown + ul,
- #why-the-concern-over-accessibility, #why-the-concern-over-accessibility + p, #why-the-concern-over-accessibility + p + p, #why-the-concern-over-accessibility + p + p + ul, #why-the-concern-over-accessibility + p + p + ul +  p, #why-the-concern-over-accessibility + p + p + ul + p + ul {
+ #why-the-concern-over-accessibility, #why-the-concern-over-accessibility + p, #why-the-concern-over-accessibility + p + h3, #why-the-concern-over-accessibility + p + h3 + ul, #why-the-concern-over-accessibility + p + h3 + ul +  p, #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul {
      background-color: #E8F8FF;
  } */
 
+ #gathering-insight-identifying-issues--tasks + p  {
+    position: relative
+ }
+
+ #gathering-insight-identifying-issues--tasks + p img:first-of-type {
+    height: 12em;
+    position: absolute;
+    clip: rect(0px,11em,12em,0px);
+    border-radius: unset!important;
+    transform: rotate(-10deg);
+    right: -15em;
+    margin-top: -4em;
+ }
+
+ #gathering-insight-identifying-issues--tasks + p img:last-of-type {
+    height: 12em;
+    width: unset!important;
+    position: absolute;
+    clip: rect(0px,11em,12em,0px);
+    transform: rotate(10deg);
+    border-radius: unset!important;
+    right: -15em;
+    margin-top: 12em;
+}
+
+#gathering-insight-identifying-issues--tasks + p img:first-of-type + em {
+    border: 1px solid white;
+    background-color: white;
+    position: absolute;
+    transform: rotate(-10deg);
+    right: calc(-11.5em - 8px);
+    width:calc((14em - 2em) + 6px);
+    margin-top: 9.5em;
+    padding: 1em;
+    font-family: 'Permanent Marker', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0 0 0 1px #00000014, 0 12px 36px 0 #0000001f;
+
+ }
+
+ #gathering-insight-identifying-issues--tasks + p img:first-of-type + em:before {
+    content: '';
+    height: calc(13em + 2px);
+    width: calc(13.5em + 1px);
+    top: calc(-14.25em + 1px);
+    left: -1px;
+    display: block;
+    position: absolute;
+    border: .5em solid white;
+    border-top: 1em solid white;
+    border-bottom: 0px solid white;
+    box-shadow: 0 0 0 1px #00000014, 0 12px 36px 0 #0000001f;    
+ }
+
+ #gathering-insight-identifying-issues--tasks + p img:last-of-type + em {
+    border: 1px solid white;
+    background-color: white;
+    position: absolute;
+    transform: rotate(10deg);
+    right: calc(-9em - 4px);
+    width:calc((14em - 2em) + 6px);
+    margin-top: 26.5em;
+    padding: 1em;
+    font-family: 'Permanent Marker', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0 0 0 1px #00000014, 0 12px 36px 0 #0000001f;
+    z-index: 1;
+}
+
+#gathering-insight-identifying-issues--tasks + p {
+    margin-top: 0;
+}
+
+#gathering-insight-identifying-issues--tasks + p img:last-of-type + em:before {
+    content: '';
+    height: calc(12em + 1px);
+    width: calc(13.5em + 1px);
+    top: calc(-13.25em + 2px);
+    left: -1px;
+    display: block;
+    position: absolute;
+    border: .5em solid white;
+    border-top: 1em solid white;
+    border-bottom: 0px solid white;
+    box-shadow: 0 0 0 1px #00000014, 0 12px 36px 0 #0000001f;
+ }
+
  #mixed + #main #gathering-insight-identifying-issues--tasks, 
  #mixed + #main #gathering-insight-identifying-issues--tasks + ul,
+ #mixed + #main #gathering-insight-identifying-issues--tasks + p + ul,
  #mixed + #main #project-overview-and-task-breakdown, 
  #mixed + #main #project-overview-and-task-breakdown + ul,
  #mixed + #main #why-the-concern-over-accessibility, 
  #mixed + #main #why-the-concern-over-accessibility + p, 
- #mixed + #main #why-the-concern-over-accessibility + p + p, 
- #mixed + #main #why-the-concern-over-accessibility + p + p + ul, 
- #mixed + #main #why-the-concern-over-accessibility + p + p + ul + p, 
- #mixed + #main #why-the-concern-over-accessibility + p + p + ul + p + ul {
+ #mixed + #main #why-the-concern-over-accessibility + p + h3, 
+ #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul, 
+ #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul + h3, 
+ #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul,
+ #mixed2 + #main #project-overview-and-task-breakdown, 
+ #mixed2 + #main #project-overview-and-task-breakdown + ul {
      background-color: #701c45;
      color: white;
+     z-index: -1;
  }
 
  #darkblue + #main #gathering-insight-identifying-issues--tasks, 
  #darkblue + #main #gathering-insight-identifying-issues--tasks + ul,
+ #darkblue + #main #gathering-insight-identifying-issues--tasks + p + ul,
  #darkblue + #main #project-overview-and-task-breakdown, 
  #darkblue + #main #project-overview-and-task-breakdown + ul,
  #darkblue + #main #why-the-concern-over-accessibility, 
  #darkblue + #main #why-the-concern-over-accessibility + p, 
- #darkblue + #main #why-the-concern-over-accessibility + p + p, 
- #darkblue + #main #why-the-concern-over-accessibility + p + p + ul, 
- #darkblue + #main #why-the-concern-over-accessibility + p + p + ul + p, 
- #darkblue + #main #why-the-concern-over-accessibility + p + p + ul + p + ul,
+ #darkblue + #main #why-the-concern-over-accessibility + p + h3, 
+ #darkblue + #main #why-the-concern-over-accessibility + p + h3 + ul, 
+ #darkblue + #main #why-the-concern-over-accessibility + p + h3 + ul + h3, 
+ #darkblue + #main #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul,
  #darkblue2 + #main #gathering-insight-identifying-issues--tasks, 
  #darkblue2 + #main #gathering-insight-identifying-issues--tasks + ul,
+ #darkblue2 + #main #gathering-insight-identifying-issues--tasks + p + ul,
  #darkblue2 + #main #project-overview-and-task-breakdown, 
  #darkblue2 + #main #project-overview-and-task-breakdown + ul,
  #darkblue2 + #main #why-the-concern-over-accessibility, 
  #darkblue2 + #main #why-the-concern-over-accessibility + p, 
- #darkblue2 + #main #why-the-concern-over-accessibility + p + p, 
- #darkblue2 + #main #why-the-concern-over-accessibility + p + p + ul, 
- #darkblue2 + #main #why-the-concern-over-accessibility + p + p + ul + p, 
- #darkblue2 + #main #why-the-concern-over-accessibility + p + p + ul + p + ul  {
-     background-color: #184a9f;
+ #darkblue2 + #main #why-the-concern-over-accessibility + p + h3, 
+ #darkblue2 + #main #why-the-concern-over-accessibility + p + h3 + ul, 
+ #darkblue2 + #main #why-the-concern-over-accessibility + p + h3 + ul + h3, 
+ #darkblue2 + #main #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul {
+     background-color: #313d81;
      color: white;
+     z-index: -1;
+ }
+
+ #darkblue + #main #gathering-insight-identifying-issues--tasks, 
+ #darkblue + #main #project-overview-and-task-breakdown, 
+ #darkblue + #main #why-the-concern-over-accessibility, 
+ #darkblue + #main #why-the-concern-over-accessibility + p + h3, 
+ #darkblue + #main #why-the-concern-over-accessibility + p + h3 + ul + h3, 
+ #darkblue2 + #main #gathering-insight-identifying-issues--tasks, 
+ #darkblue2 + #main #project-overview-and-task-breakdown, 
+ #darkblue2 + #main #why-the-concern-over-accessibility, 
+ #darkblue2 + #main #why-the-concern-over-accessibility + p + h3, 
+ #darkblue2 + #main #why-the-concern-over-accessibility + p + h3 + ul + h3,
+ #mixed2 + #main #project-overview-and-task-breakdown  {
+     font-weight: 600;
  }
 
  #gathering-insight-identifying-issues--tasks,
  #project-overview-and-task-breakdown,
  #why-the-concern-over-accessibility,
  #why-the-concern-over-accessibility + p,
- #why-the-concern-over-accessibility + p + p,
- #why-the-concern-over-accessibility + p + p + ul + p  {
+ #why-the-concern-over-accessibility + p + h3,
+ #why-the-concern-over-accessibility + p + h3 + ul + h3  {
     margin-bottom: 0;
     padding-bottom: var(--spacing-small);
     padding-left: 4rem;
@@ -241,17 +655,18 @@
  }
 
  #why-the-concern-over-accessibility + p,
- #why-the-concern-over-accessibility + p + p,
- #why-the-concern-over-accessibility + p + p + ul + p,
- #why-the-concern-over-accessibility + p + p + ul {
+ #why-the-concern-over-accessibility + p + h3,
+ #why-the-concern-over-accessibility + p + h3 + ul + h3,
+ #why-the-concern-over-accessibility + p + h3 + ul {
     margin-top: 0;
     margin-bottom: 0;
  }
 
  #gathering-insight-identifying-issues--tasks + ul,
+ #gathering-insight-identifying-issues--tasks + p + ul,
  #project-overview-and-task-breakdown + ul,
- #why-the-concern-over-accessibility + p + p + ul,
- #why-the-concern-over-accessibility + p + p + ul + p + ul {
+ #why-the-concern-over-accessibility + p + h3 + ul,
+ #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul {
     margin-left: 0;
     padding-left: 6rem;
     padding-right: 4rem;
@@ -259,23 +674,24 @@
  }
 
  #gathering-insight-identifying-issues--tasks + ul,
+ #gathering-insight-identifying-issues--tasks + p + ul,
  #project-overview-and-task-breakdown + ul,
- #why-the-concern-over-accessibility + p + p + ul + p + ul {
+ #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
  }
 
  /* #gathering-insight-identifying-issues--tasks + ul li,
  #project-overview-and-task-breakdown + ul + li,
- #why-the-concern-over-accessibility + p + p + ul li,
- #why-the-concern-over-accessibility + p + p + ul + p + ul li {
+ #why-the-concern-over-accessibility + p + h3 + ul li,
+ #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul li {
     padding-top: 1rem;
  } */
  
  #gathering-insight-identifying-issues--tasks + ul li:before,
  #project-overview-and-task-breakdown + ul li:before,
- #why-the-concern-over-accessibility + p + p + ul li:before,
- #why-the-concern-over-accessibility + p + p + ul + p + ul li:before  {
+ #why-the-concern-over-accessibility + p + h3 + ul li:before,
+ #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul li:before  {
     left: -2rem;
  }
 
@@ -283,8 +699,8 @@
      color: red;
  }
 
- #mixed + #main #why-the-concern-over-accessibility + p + p + ul > li:before,
- #mixed + #main #why-the-concern-over-accessibility + p + p + ul + p + ul > li:before {
+ #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul > li:before,
+ #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul > li:before {
     color: #e16125;
 } */
 
@@ -293,7 +709,7 @@
 }
     
 #main .cms a:first-of-type {
-     background-color: #57377D;
+     background-color: #313d81;
      color: white;
      padding: 1rem;
      display: block;
@@ -316,15 +732,26 @@
     margin-bottom: unset!important;
 }
 
+p em {
+    font-style: italic;
+}
+
+p:has(em) {
+    border: 2px solid red;
+}
+
 p img + em {
-    font-size: .7em;
+    font-size: .78em;
     margin-bottom: 2em;
     display: block;
+    width: 80%;
+    line-height: 1.5em;
+    margin-top: 0.5em;
 }
 
  #main section .cms a:first-of-type:hover, #main section .cms a:first-of-type:focus {
     background-color: #2e154c;
-    margin: unset;
+    margin-left: 0;
 }
 
 .project-info li:first-of-type img {
@@ -367,7 +794,7 @@ p img + em {
 }
 
 .project-info b {
-    color: #57377D;
+    color: #48377d;
     font-size: 16px;
     /* font-family: 'Montserrat'; */
     font-weight: 400!important;
@@ -395,18 +822,22 @@ ul.project-info > li ul li {
     border-radius: 1rem;
 }
 
-#rethinking-the-layout-through-wireframes + p + p {
+#rethinking-the-layout-through-wireframes + p + p,
+#wireframe-iterations + p {
     position:relative;
-    left: calc(-6.5vw - 1rem);
+    left: calc(-6.5vw - 8.3rem);
     width: 100vw;   
-    background-color: #d4f1ff;
+    background-color: #e2dcf3;
     margin: 2rem 0;
 } 
 
-#rethinking-the-layout-through-wireframes + p + p img {
+#rethinking-the-layout-through-wireframes + p + p img,
+#wireframe-iterations + p img {
     max-width: 1200px;
     max-width: 1200px;
     padding-left: 6.5vw;
+    box-shadow: none;
+    mix-blend-mode: luminosity;
 } 
 
 b, strong {
@@ -483,6 +914,7 @@ h3 strong
     justify-content: center;
     min-height: 600px; 
     /* overflow: hidden */
+    width: -webkit-fill-available;
 }
 
 .canvas{
@@ -493,6 +925,7 @@ h3 strong
     left: 0;
     z-index: 0;
     vertical-align: middle;
+    width: 100vw;
 }
 
 body {
@@ -623,7 +1056,7 @@ h1.lh-title {
 }
 
 h2 {
-    color: #57377D;
+    color: #48377d;
     margin-bottom: 1em
 }
 
@@ -699,7 +1132,7 @@ audio {
 #one {
     left: 9px;
     top: 32.23rem;
-    background-color: #57377d;
+    background-color: #48377d;
 
 }
 #one:after {
@@ -743,7 +1176,7 @@ audio {
 #four:after {
     left: 60px;
     top: 30px;
-    background-color: #57377d;
+    background-color: #48377d;
 }
 
 #five {
@@ -892,7 +1325,7 @@ a:hover, a:focus {
   margin-top: -200px;
 margin-left: -100px;
      animation-name: spin;
-  animation-duration: 60s;
+  animation-duration: 120s;
   animation-iteration-count: infinite;
   z-index: 1;
     position: absolute;
@@ -917,7 +1350,7 @@ html {
 
 .cms {
     position: relative;
-    margin-left: 1rem;
+    margin: 0 1rem;
 }
 
 .cms a {

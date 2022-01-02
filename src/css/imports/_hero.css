@@ -49,7 +49,7 @@
 
 #darkblue .hero-header img:first-of-type {
     z-index: 1;
-    margin-top: 21.25vw;
+    margin-top: 16.25vw;
     height: 700px;
     left: 0;
     margin-left: 0;
@@ -84,38 +84,104 @@
     background: linear-gradient(180deg, #ffffff 10%, #AEB9E2 45%, #AEB9E2 65%, #C2AEE2 100%);
 }
 
-#multi.hero:before {
-    /* background: linear-gradient(180deg, #ffffff 10%, #ec87d3 45%, #77c7fd 65%, #69d183 100%); */
+#hunger-for-professional-betterment + ul img {
+    box-shadow: unset;
+    border-radius: unset;
+}
+
+/* #multi.hero:before {
     background: rgb(57,95,232);
 background: radial-gradient(circle at calc(100% - 40vw), rgba(57,95,232,1) 30%, rgba(42,146,224,1) 45%, rgba(75,213,247,1) 60%);
-}
+} */
 
-#darkblue.hero:before, #darkblue2.hero:before {
-    /* background: linear-gradient(180deg, #ffffff 10%, #ec87d3 45%, #77c7fd 65%, #69d183 100%); */
-    background: rgb(7, 38, 148);
-background: radial-gradient(circle at calc(100% - 40vw), rgba(42,146,224,1) 30%, #1752aa 55%, #1c3781 70%);
-}
-
-#darkgreen.hero:before {
-    background: rgb(57,95,232);
-background: radial-gradient(circle at calc(100% - 45vw), #006241 50%, #05593E 70%, #1A3C34 85%);
-}
-
-#mixed.hero:before, #mixed2.hero:before {
-    /* background: linear-gradient(180deg, #ffffff 10%, #ec87d3 45%, #77c7fd 65%, #69d183 100%); */
-    background: rgb(233,109,180183);
-background: linear-gradient(to right,#701c45 20%,#701c1c 60%,#d65113 100%);
-/* padding-bottom: 20vh; */
+#multi.hero:before {
+    /* background: rgb(7, 38, 148);
+background: radial-gradient(circle at calc(100% - 40vw), rgba(42,146,224,1) 30%, #1752aa 55%, #1c3781 70%); */
+content: url(/img/labcorp-header.png)!important;
+height: 169vh;
+    top: -5vh;
+    max-height: unset;
+    clip-path: unset;
 }
 
 #pink.hero:before {
-    /* background: linear-gradient(180deg, #ffffff 10%, #ec87d3 45%, #77c7fd 65%, #69d183 100%); */
+    /* background: rgb(7, 38, 148);
+background: radial-gradient(circle at calc(100% - 40vw), rgba(42,146,224,1) 30%, #1752aa 55%, #1c3781 70%); */
+content: url(/img/insight-header.png)!important;
+height: 169vh;
+    top: -36vh;
+    max-height: unset;
+    clip-path: unset;
+}
+
+#darkblue.hero:before, #darkblue2.hero:before {
+    /* background: rgb(7, 38, 148);
+background: radial-gradient(circle at calc(100% - 40vw), rgba(42,146,224,1) 30%, #1752aa 55%, #1c3781 70%); */
+content: url(/img/stayonline-header.png)!important;
+height: 169vh;
+    top: -35vh;
+    max-height: unset;
+}
+
+#mixed.hero:before {
+    /* background: rgb(7, 38, 148);
+background: radial-gradient(circle at calc(100% - 40vw), rgba(42,146,224,1) 30%, #1752aa 55%, #1c3781 70%); */
+content: url(/img/ncdot-header.png)!important;
+height: 169vh;
+    top: -28vh;
+    max-height: unset;
+}
+
+#mixed2.hero:before {
+    /* background: rgb(7, 38, 148);
+background: radial-gradient(circle at calc(100% - 40vw), rgba(42,146,224,1) 30%, #1752aa 55%, #1c3781 70%); */
+content: url(/img/ncdot-header.png)!important;
+height: 169vh;
+    top: -34vh;
+    max-height: unset;
+}
+
+#darkgreen.hero:before {
+content: url(/img/starbucks-header.png)!important;
+height: 165vh;
+    top: -30vh;
+    max-height: unset;
+}
+
+#mixed2.hero .hero-header img:last-of-type,
+#darkgreen.hero .hero-header img:last-of-type,
+#multi.hero .hero-header img:last-of-type {
+    width: 100%;
+    margin-left: unset;
+    padding-bottom: 2em;
+}
+
+#mixed.hero .hero-header img:last-of-type {
+    width: 100%;
+    margin-left: unset;
+}
+
+#mixed2.hero + #main #wireframe-iterations + p img {
+    width: 1700px!important;
+    padding-left: 5em!important;
+}
+
+#darkblue2.hero:before {
+    top: -29.5vh;
+}
+/* 
+#darkgreen.hero:before {
+    background: rgb(57,95,232);
+background: radial-gradient(circle at calc(100% - 45vw), #006241 50%, #05593E 70%, #1A3C34 85%);
+} */
+
+/* #pink.hero:before {
     background: rgb(233,109,180183);
 background: linear-gradient(to right,#af0e2e 0,#d40e8c 50%,#582873 100%);
 padding-bottom: 10vh;
 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
 -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-}
+} */
 
 #pink img:first-of-type {
     -webkit-transform: rotate(5deg);
@@ -125,10 +191,11 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
 }
 
 #pink img:last-of-type {
-    -webkit-transform: rotate(-7deg);
+    /* -webkit-transform: rotate(-7deg);
     width: 82vh;
     margin-left: -100vh;
-    margin-top: -15vh;
+    margin-top: -15vh; */
+    display: none
 }
 
 #pink .hero-header {
