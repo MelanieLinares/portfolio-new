@@ -137,10 +137,10 @@
  #the-takeaway + ul + p,
  #the-takeaway {
     color: white;
-    width: 101vw;
+    width: 101.752vw;
     margin-left: -16.15rem;
     padding: 0 14vw;
-    margin-top: 0;
+    margin-top: -1px;
     margin-bottom: 0;
  }
 
@@ -172,6 +172,7 @@
  #darkblue2 + #main #the-takeaway + ul:after  {
     background-color: #313d81;
     z-index: -1;
+    margin-top: -1px;
  }
 
  #darkblue + #main #the-takeaway:after,
@@ -589,6 +590,7 @@
      background-color: #701c45;
      color: white;
      z-index: -1;
+     margin-top: -1px;
  }
 
  #darkblue + #main #gathering-insight-identifying-issues--tasks, 
@@ -616,6 +618,7 @@
      background-color: #313d81;
      color: white;
      z-index: -1;
+     margin-top: -1px;
  }
 
  #darkblue + #main #gathering-insight-identifying-issues--tasks, 
