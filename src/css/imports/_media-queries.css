@@ -4,10 +4,64 @@
 
 @custom-media --breakpoint-large screen and (min-width: 60em);
 
-
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
     body {
-        /* border: 5px solid black!important; */
+        border: 5px solid black!important;
+    }
+
+    /* .bg-center.cover.hero + #main .cms #gathering-insight-identifying-issues--tasks:after, .bg-center.cover.hero + #main .cms #project-overview-and-task-breakdown:after, .bg-center.cover.hero + #main .cms #why-the-concern-over-accessibility:after {
+        margin-top: -5.5em;
+    } */
+    
+    .hero:before {
+        background-size: cover;
+        left: -2em;
+        height: 100em;
+        top: -1em;
+    }
+  
+    #pink.hero:before,
+    #mixed.hero:before {
+        width: calc(100vw + 45em);
+    }
+
+    #darkblue.hero:before,
+    #darkblue2.hero:before {
+        width: calc(100vw + 25em);
+        height: 60em;
+    }
+
+    #multi.hero:before,
+    #mixed2.hero:before {
+        width: calc(100vw + 37em);
+    }
+
+    #pink.hero:before {
+        width: calc(100vw + 40em);
+    }
+
+    #darkgreen.hero:before {
+        width: calc(100vw + 35em);
+    }
+
+    h1 {
+        font-size: 24px!important;
+    }
+
+    h1 b {
+        font-size: 24px!important;
+    }
+
+    .hero-header {
+        padding: 0;
+    }
+
+    .hero-header h1 {
+        margin-bottom: 1em!important;
+    }
+
+    h1:before {
+        border-top: 2px solid #fff!important;
     }
 
     #navbar ul a {
@@ -31,9 +85,325 @@
 
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 320px) {
+    .bg-center.cover.hero + #main .cms #gathering-insight-identifying-issues--tasks:after, 
+    .bg-center.cover.hero + #main .cms #project-overview-and-task-breakdown:after, 
+    .bg-center.cover.hero + #main .cms #why-the-concern-over-accessibility:after,
+    #mixed.bg-center.cover.hero + #main .cms h2:nth-of-type(3):not(#the-takeaway):after,
+    .bg-center.cover.hero + #main .cms h2:nth-of-type(5):not(#the-takeaway):after {
+        margin-top: -5.5em;
+    }
+    
+        #wild:before {
+            margin-left: -19vw!important;
+            margin-top: -8.35em !important;
+        }
+    
+        #wild:after {
+            margin-left: -19vw !important;
+            margin-top: calc(3.5em - 10px) !important;
+        }
+}
+
+@media screen and (min-width: 321px) and (max-width: 348px) {
+
+.bg-center.cover.hero + #main .cms #gathering-insight-identifying-issues--tasks:after, 
+.bg-center.cover.hero + #main .cms #project-overview-and-task-breakdown:after, 
+.bg-center.cover.hero + #main .cms #why-the-concern-over-accessibility:after,
+.bg-center.cover.hero + #main .cms h2:nth-of-type(5):not(#the-takeaway):after {
+    margin-top: -5.5em;
+}
+
+    #wild:before {
+        margin-left: -19vw!important;
+        margin-top: -8.35em !important;
+    }
+
+    #wild:after {
+        margin-left: -19vw !important;
+        margin-top: calc(3.5em - 10px) !important;
+    }
+}
+
+@media screen and (min-width: 349px) and (max-width: 360px) {
+
+    #mixed.bg-center.cover.hero + #main .cms h2:nth-of-type(3):not(#the-takeaway):after, .bg-center.cover.hero + #main .cms h2:nth-of-type(4):not(#the-takeaway):after, .bg-center.cover.hero + #main .cms h2:nth-of-type(5):not(#the-takeaway):after {
+        margin-top: -4.5em;
+    }
+
+    .bg-center.cover.hero + #main .cms #gathering-insight-identifying-issues--tasks:after, 
+.bg-center.cover.hero + #main .cms #project-overview-and-task-breakdown:after, 
+.bg-center.cover.hero + #main .cms #why-the-concern-over-accessibility:after,
+.bg-center.cover.hero + #main .cms h2:nth-of-type(5):not(#the-takeaway):after {
+    margin-top: -4.5em;
+}
+
+    #wild:before {
+        margin-left: -19vw!important;
+        margin-top: -8.35em !important;
+    }
+
+    #wild:after {
+        margin-left: -19vw !important;
+        margin-top: calc(3.5em - 10px) !important;
+    }
+
+    .hero:before {
+        background-size: cover;
+        left: -2em;
+        height: 100em;
+        top: -1em;
+    }
+  
+    #pink.hero:before,
+    #mixed.hero:before {
+        width: calc(100vw + 45em);
+    }
+
+    #darkblue.hero:before,
+    #darkblue2.hero:before {
+        width: calc(100vw + 25em);
+        height: 60em;
+    }
+
+    #multi.hero:before,
+    #mixed2.hero:before {
+        width: calc(100vw + 37em);
+    }
+
+    #pink.hero:before {
+        width: calc(100vw + 40em);
+    }
+
+    #darkgreen.hero:before {
+        width: calc(100vw + 30em);
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 399px) {
+    .hero:before {
+        background-size: cover;
+        left: -2em;
+        height: 100em;
+        top: -1em;
+    }
+  
+    #pink.hero:before,
+    #mixed.hero:before {
+        width: calc(100vw + 55em);
+    }
+
+    #darkblue.hero:before,
+    #darkblue2.hero:before {
+        width: calc(100vw + 25em);
+        height: 75em;
+    }
+
+    #multi.hero:before,
+    #mixed2.hero:before {
+        width: calc(100vw + 50em);
+    }
+
+    #pink.hero:before {
+        width: calc(100vw + 45em);
+    }
+
+    #darkgreen.hero:before {
+        width: calc(100vw + 40em);
+    }
+
+    #mixed.bg-center.cover.hero + #main .cms h2:nth-of-type(3):not(#the-takeaway):after, .bg-center.cover.hero + #main .cms h2:nth-of-type(4):not(#the-takeaway):after, .bg-center.cover.hero + #main .cms h2:nth-of-type(5):not(#the-takeaway):after {
+        margin-top: -4.5em;
+    }
+
+    .bg-center.cover.hero + #main .cms #gathering-insight-identifying-issues--tasks:after, 
+    .bg-center.cover.hero + #main .cms #project-overview-and-task-breakdown:after, 
+    .bg-center.cover.hero + #main .cms #why-the-concern-over-accessibility:after,
+    #mixed.bg-center.cover.hero + #main .cms h2:nth-of-type(3):not(#the-takeaway):after,
+    .bg-center.cover.hero + #main .cms h2:nth-of-type(5):not(#the-takeaway):after {
+        margin-top: -5em;
+    }
+
+    #wild:before {
+        margin-left: -19vw!important;
+        margin-top: -8.35em !important;
+    }
+
+    #wild:after {
+        margin-left: -19vw !important;
+        margin-top: calc(3.5em - 10px) !important;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+    .hero:before {
+        background-size: cover;
+        left: -2em;
+        height: 100em;
+        top: -1em;
+    }
+  
+    #pink.hero:before,
+    #mixed.hero:before {
+        width: calc(100vw + 50em);
+    }
+
+    #darkblue.hero:before,
+    #darkblue2.hero:before {
+        width: calc(100vw + 25em);
+        height: 75em;
+    }
+
+    #multi.hero:before,
+    #mixed2.hero:before {
+        width: calc(100vw + 45em);
+    }
+
+    #pink.hero:before {
+        width: calc(100vw + 35em);
+    }
+
+    #darkgreen.hero:before {
+        width: calc(100vw + 35em);
+    }
+
+    #mixed.bg-center.cover.hero + #main .cms h2:nth-of-type(3):not(#the-takeaway):after,
+    .bg-center.cover.hero + #main .cms h2:nth-of-type(4):not(#the-takeaway):after,
+    .bg-center.cover.hero + #main .cms h2:nth-of-type(5):not(#the-takeaway):after {
+        margin-top: -4.5em;
+    }
+
+    .bg-center.cover.hero + #main .cms h2:not(#the-takeaway):after, .bg-center.cover.hero + #main .cms #gathering-insight-identifying-issues--tasks:after, .bg-center.cover.hero + #main .cms #project-overview-and-task-breakdown:after, .bg-center.cover.hero + #main .cms #why-the-concern-over-accessibility:after {
+        margin-top: -4.75em;
+    }
+
+    #the-takeaway:after {
+        margin-left: -4.5rem!important;
+    }
+
+    #wild:before {
+        margin-left: -19vw!important;
+        margin-top: -8.35em !important;
+    }
+
+    #wild:after {
+        margin-left: -19vw !important;
+        margin-top: calc(3.5em - 10px) !important;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 639px) {
+
+    .bg-center.cover.hero + #main .cms #major-changes-and-impact:after {
+        margin-top: -3.75em!important;
+    }
+
+    .hero:before {
+        background-size: cover;
+        left: -2em;
+        height: 100em;
+        top: -1em;
+    }
+  
+    #pink.hero:before,
+    #mixed.hero:before {
+        width: calc(100vw + 50em);
+    }
+
+    #darkblue.hero:before,
+    #darkblue2.hero:before {
+        width: calc(100vw + 25em);
+        height: 75em;
+    }
+
+    #multi.hero:before,
+    #mixed2.hero:before {
+        width: calc(100vw + 33em);
+    }
+
+    #pink.hero:before {
+        width: calc(100vw + 30em);
+    }
+
+    #darkgreen.hero:before {
+        width: calc(100vw + 25em);
+    }
+
+    #wild:before {
+        margin-left: -20vw!important;
+        margin-top: -8.35em !important;
+    }
+
+    #wild:after {
+        margin-left: -20vw !important;
+        margin-top: calc(3.5em - 10px) !important;
+    }
+}
+
+@media screen and (min-width: 627px) and (max-width: 639px) {
+
+    .bg-center.cover.hero + #main .cms h2:not(#the-takeaway):after, .bg-center.cover.hero + #main .cms #gathering-insight-identifying-issues--tasks:after, .bg-center.cover.hero + #main .cms #project-overview-and-task-breakdown:after, .bg-center.cover.hero + #main .cms #why-the-concern-over-accessibility:after {
+        /* margin-top: -4.75em; */
+        margin-top: calc(-20vw + 1em);
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 626px) {
+
+    .bg-center.cover.hero + #main .cms h2:not(#the-takeaway):after, .bg-center.cover.hero + #main .cms #gathering-insight-identifying-issues--tasks:after, .bg-center.cover.hero + #main .cms #project-overview-and-task-breakdown:after, .bg-center.cover.hero + #main .cms #why-the-concern-over-accessibility:after {
+        margin-top: -4.75em;
+        /* margin-top: calc(-20vw + 1em); */
+    }
+}
+
+@media screen and (max-width: 639px) {
+
+    #the-challenge + p + p img {
+        width: 108vw;
+        margin-left: -15vw!important;
+        margin-bottom: 0;
+        max-width: 450px;
+    }
+
+    #the-challenge + p + p {
+        margin-bottom: 3em;
+    }
+
+    .cms img { 
+        /* height: 300px;
+        max-width: 100vh!important;  */
+        max-height: 20em;
+    }
+
+    .cms img + em { 
+        position: absolute;
+    }
+
+    #conducting-the-accessibility-audit + p,
+    #automatic-testing + p,
+    #major-changes-and-impact + p,
+    #image-group + p,
+    #exploring-the-different-users-and-user-flows + p,
+    #harmony-through-mentorship + p + p,
+    #tables-for-layout-thats-so-2002 + p + p,
+    #tweaking-the-color-palette-and-branding-for-accessibility-and-user-experience + p + p + p,
+    #comparing-the-results + p,
+    #team-exploration-and-planning-for-a-mvp-release + p + p,
+    #major-navigation-changes + ul + p + p,
+    ul + p { 
+        overflow: scroll; 
+        margin-bottom: 6em;
+        margin-right: calc(-3vw - 1rem);
+        padding-right: calc(3vw + 1rem);
+        padding-left: .5rem;
+    }
+
+    .cms img, img {
+        max-width: unset;
+    }
+
     body {
-        /* border: 5px solid purple; */
+        border: 5px solid purple;
     }
 
     aside {
@@ -43,10 +413,7 @@
     .cms h2:first-of-type {
         margin-top: 6rem;
     }
-    
-    .hero {
-        padding-bottom: 3rem;
-    }
+
 
     #darkblue .hero-header img:last-of-type,
     #darkblue2 .hero-header img:last-of-type {
@@ -63,14 +430,14 @@
         padding-right: 2rem!important;
     }
 
-    #multi.hero:before, #mixed.hero:before, #mixed2.hero:before, #darkgreen.hero:before, #darkblue.hero:before, #darkblue2.hero:before {
+    /* #multi.hero:before, #mixed.hero:before, #mixed2.hero:before, #darkgreen.hero:before, #darkblue.hero:before, #darkblue2.hero:before {
         height: 152vh !important;
         max-height: 860px !important;
-    }
+    } */
 
-    #multi.hero:before {
+    /* #multi.hero:before {
         top: -45vh;
-    }
+    } */
 
     #rethinking-the-layout-through-wireframes + p + p, #wireframe-iterations + p {
         left: calc(11.5vw - 8.3rem)!important;
@@ -140,7 +507,7 @@
 
     #the-takeaway {
         margin-top: calc(3rem + 150px)!important;
-        width: calc(100vw - 27vw)!important;
+        /* width: calc(100vw - 27vw)!important; */
     }
 
     #the-takeaway:after {
@@ -148,7 +515,7 @@
     }
 
     #the-takeaway + p {
-        padding-right: 14vw!important;
+        padding-right: 14vw;
     }
 
     #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway {
@@ -165,7 +532,7 @@
         margin-bottom: 2em;
     }
 
-    #multi.hero:before,
+    /* #multi.hero:before,
     #mixed.hero:before,
     #mixed2.hero:before,
     #darkgreen.hero:before,
@@ -173,7 +540,7 @@
     #darkblue2.hero:before {
         height: 128vh!important;
         max-height: 860px!important;
-    }
+    } */
 
     #gathering-insight-identifying-issues--tasks,
     #project-overview-and-task-breakdown,
@@ -194,40 +561,17 @@
         width: 88vw;
     }
 
-    #pink + #main section {
+    #pink + #main section:not(#wild) {
         padding-top: 300px!important;
     }
 
     .cms h2 {
         font-size: 1.8rem !important;
     }
-    h1 {
-        font-size: 32px !important;
-    }
-    h1 b {
-        font-size: 16px!important; 
-    }
-    #mixed2.hero:before {
-        height: 101vh;
-        max-height: 620px;
-    }
 
-    #multi.hero:before {
-        height: 105vh;
-        max-height: 660px;
+    .hero {
+        padding-bottom: 3rem;
     }
-    #mixed.hero:before {
-        height: 112vh;
-        max-height: 720px;
-    } 
-    .hero:before {
-        min-height: 500px;
-    }
-    /* #mixed.hero:before, 
-    #multi.hero:before {
-        max-height: 98vw;
-        height: 95vh;
-    } */
 
     .desktop-logo {
         display: none!important;
@@ -253,20 +597,20 @@
         height: 60vw;
         left: 65vw;
     }
-    .hero:before {
+    /* .hero:before {
         max-height: 640px;
         height: 95vh;
-    }
+    } */
     .hero {
         /* padding-bottom: 100px; */
         padding-top: 125px;
     }
     h1 {
-        font-size: 35px;
+        font-size: 30px;
         -webkit-text-stroke-width: 1px;
     }
     h1 b {
-        font-size: 34px!important;
+        font-size: 30px;
     }
     h2 {
         font-size: 2.05rem!important;
@@ -310,8 +654,8 @@
         height: unset;
     }
     #pink.hero:before {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        /* -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
     }
     #pink img:first-of-type {
         -webkit-transform: unset;
@@ -369,11 +713,513 @@
         right: 0!important;
         margin-top: 2em;
     }
+
+    .hero:before {
+        background-repeat: repeat-x;
+    }
+
+    .cms {
+        width: unset!important;
+    }
+    
+    .related-title {
+        margin-top: 10rem;
+    }
+
+    #mixed.bg-center.cover.hero + #main .cms h2:nth-of-type(4):not(#the-takeaway):after,
+    .bg-center.cover.hero + #main .cms h2:not(#the-takeaway):after {
+        height: 333vh!important;
+    }
+
+    #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway, #wild {
+        padding: 0 13vw!important;
+    }
+
+    #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway {
+        margin-left: -13vw!important;
+    }
+
+    #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility,
+    #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility, #why-the-concern-over-accessibility + p, #why-the-concern-over-accessibility + p + p, #why-the-concern-over-accessibility + p + p + ul + p,
+    #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility, #why-the-concern-over-accessibility + p, #why-the-concern-over-accessibility + p + h3, #why-the-concern-over-accessibility + p + h3 + ul + h3 {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+
+    #gathering-insight-identifying-issues--tasks + ul, #gathering-insight-identifying-issues--tasks + p + ul, #project-overview-and-task-breakdown + ul, #why-the-concern-over-accessibility + p + h3 + ul, #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul {
+        padding-left: 2rem !important;
+        padding-right: 0!important;
+    }
+
+    #wild p:after,
+    #wild p:before {
+        display: none
+    }
+
+    #wild {
+        width: 106vw;
+        margin-left: -1.25rem!important;
+        padding: 0 14vw;
+        padding-right: 33vw;
+        margin-top: -1px;
+        margin-bottom: 0;
+        z-index: 1;
+    }
+
+    p img + em {
+        width: 100%!important;
+    }
+
+    #mixed + #main #gathering-insight-identifying-issues--tasks, #mixed + #main #gathering-insight-identifying-issues--tasks + ul, #mixed + #main #gathering-insight-identifying-issues--tasks + p + ul, #mixed + #main #project-overview-and-task-breakdown, #mixed + #main #project-overview-and-task-breakdown + ul, #mixed + #main #why-the-concern-over-accessibility, #mixed + #main #why-the-concern-over-accessibility + p, #mixed + #main #why-the-concern-over-accessibility + p + h3, #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul, #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul + h3, #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul, #mixed2 + #main #project-overview-and-task-breakdown, #mixed2 + #main #project-overview-and-task-breakdown + ul, #mixed + #main #rethinking-the-layout-through-wireframes + p + p, #mixed + #main #wireframe-iterations + p, #mixed2 + #main #rethinking-the-layout-through-wireframes + p + p, #mixed2 + #main #wireframe-iterations + p {
+        background-color: unset!important;
+    }
+
+    /* #the-takeaway:after {
+        margin-left: -5rem!important;
+    } */
+
+    #wild {
+        padding: 3em 13vw!important;
+    }
+
+    #wild:before {
+        margin-left: -6rem;
+        margin-top: -8.35em;
+    }
+    
+    #wild:after {
+        margin-left: -6rem;
+        margin-top: calc(3.5em - 11px);
+     }
+
+     #wild h2, #wild p {
+        transform: rotate(-9deg)!important;
+    }
 }
 
-@media (--breakpoint-not-small) {
-    body {
-        /* border: 5px solid red; */
+@media (--breakpoint-not-small) and (max-width: 799px)  {
+
+    #the-takeaway:after {
+        margin-top: -7.35em!important;
+    }
+
+    #mixed.bg-center.cover.hero + #main .cms h2:nth-of-type(2):not(#the-takeaway):after, #mixed2.bg-center.cover.hero + #main .cms h2:nth-of-type(3):not(#the-takeaway):after {
+        margin-top: -4em;
+    }
+
+    .bg-center.cover.hero + #main .cms h2:not(#the-takeaway):after {
+        margin-top: -4em;
+    }
+
+    #the-challenge + p + p img {
+        width: 108vw;
+        margin-left: -15vw!important;
+        margin-bottom: 0;
+        max-width: 450px;
+    }
+
+    #the-challenge + p + p {
+        margin-bottom: 3em;
+    }
+
+    .cms img { 
+        max-height: 20em;
+    }
+
+    .cms img + em { 
+        position: absolute;
+    }
+
+    #conducting-the-accessibility-audit + p,
+    #automatic-testing + p,
+    #major-changes-and-impact + p,
+    #image-group + p,
+    #exploring-the-different-users-and-user-flows + p,
+    #harmony-through-mentorship + p + p,
+    #tables-for-layout-thats-so-2002 + p + p,
+    #tweaking-the-color-palette-and-branding-for-accessibility-and-user-experience + p + p + p,
+    #comparing-the-results + p,
+    #team-exploration-and-planning-for-a-mvp-release + p + p,
+    #major-navigation-changes + ul + p + p,
+    ul + p { 
+        overflow: scroll; 
+        margin-bottom: 6em;
+        margin-right: calc(-3vw - 1rem);
+        padding-right: calc(3vw + 1rem);
+        padding-left: .5rem;
+    }
+
+    .cms img, img {
+        max-width: unset;
+    }
+
+    aside {
+        margin-bottom: 0;
+    }
+
+    .cms h2:first-of-type {
+        margin-top: 6rem;
+    }
+
+
+    #darkblue .hero-header img:last-of-type,
+    #darkblue2 .hero-header img:last-of-type {
+        margin-left: 0;
+    }
+    
+    #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility, #why-the-concern-over-accessibility + p, #why-the-concern-over-accessibility + p + h3, #why-the-concern-over-accessibility + p + h3 + ul + h3 {
+        padding-left: 2rem!important;
+        padding-right: 2rem!important;
+    }
+
+    #gathering-insight-identifying-issues--tasks + ul, #gathering-insight-identifying-issues--tasks + p + ul, #project-overview-and-task-breakdown + ul, #why-the-concern-over-accessibility + p + h3 + ul, #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul {
+        padding-left: 4rem!important;
+        padding-right: 2rem!important;
+    }
+
+    #rethinking-the-layout-through-wireframes + p + p, #wireframe-iterations + p {
+        left: calc(11.5vw - 8.3rem)!important;
+        width: 124vw!important;
+        overflow-x: scroll;
+    }
+
+    p + blockquote, ul + blockquote {
+        margin-top: 11rem !important;
+    }
+
+    blockquote:before {
+        content: ''!important;
+    }
+    blockquote {
+        margin-top: 5rem!important;
+        margin-left: 0!important;
+        margin-right: 0!important;
+        padding-left: 1.5rem!important;
+    }
+    blockquote p {
+        font-weight: bold!important;
+    }
+
+    #darkblue .hero-header img:first-of-type,
+    #darkblue2 .hero-header img:first-of-type {
+        display: none;
+    }
+
+    #darkblue .hero-header img:last-of-type,
+    #darkblue2 .hero-header img:last-of-type {
+        width: 100%!important;
+    }
+
+    #darkblue2 .hero-header {
+        width: 92.1vw!important
+    }
+
+    #gathering-insight-identifying-issues--tasks + p,
+    #image-group + p img:nth-of-type(2),
+    #image-group + p img:nth-of-type(3) {
+        display: none
+    }
+
+    #darkblue + #main #rethinking-the-layout-through-wireframes + p + p {
+        left: -2rem!important;
+        width: 103vw !important;
+    }
+
+    #related .inner {
+        display: block!important;
+        margin-top: 1em;
+    }
+    #related .inner .tile {
+        width: 100%!important;
+        margin-left: 0!important;
+        margin-bottom: 3em;
+    }
+
+    .related-title, #related {
+        padding: 0 1rem;
+    }
+
+    #the-takeaway {
+        margin-top: calc(3rem + 150px)!important;
+    }
+
+    #the-takeaway:after {
+        margin-top: -7.2em!important;
+    }
+
+    #the-takeaway + p {
+        padding-right: 14vw;
+    }
+
+    #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway {
+        margin-left: -9vw!important;
+    }
+
+    #the-takeaway:after, #the-takeaway + p:after, #the-takeaway + ul + p:after, #the-takeaway + ul:after {
+        margin-left: -14vw!important;
+    }
+
+    #the-takeaway + ul + p img {
+        max-width: 189vw!important;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    #gathering-insight-identifying-issues--tasks,
+    #project-overview-and-task-breakdown,
+    #why-the-concern-over-accessibility,
+    #why-the-concern-over-accessibility + p,
+    #why-the-concern-over-accessibility + p + p,
+    #why-the-concern-over-accessibility + p + p + ul + p  {
+       padding-left: 2rem!important;
+       padding-right: 2rem!important;
+    }
+
+    footer {
+        padding: 0 1.5rem;
+    }
+
+    #navbar {
+        width: 88vw;
+    }
+
+    #pink + #main section:not(#wild) {
+        padding-top: 300px!important;
+    }
+
+    .cms h2 {
+        font-size: 1.8rem !important;
+    }
+
+    .hero {
+        padding-bottom: 3rem;
+    }
+
+    .desktop-logo {
+        display: none!important;
+    } 
+    .mobile-logo {
+        display: none!important;
+    } 
+    .hero-header {
+        padding-left: 0!important;
+    }
+    #main {
+        padding: 0 3vw!important;
+        margin: auto;
+    }
+    #darkgreen .hero-header img:first-of-type {
+        margin-top: 440px!important;
+        margin-left: 1px!important;
+        width: 25vw;
+    }
+    #darkblue2 .hero-header img:first-of-type {
+        z-index: 1;
+        margin-top: 400px;
+        height: 60vw;
+        left: 65vw;
+    }
+
+    .hero {
+        padding-top: 125px;
+    }
+    h1 {
+        font-size: 30px;
+        -webkit-text-stroke-width: 1px;
+    }
+    h1 b {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 2.05rem!important;
+    }
+    p, ul, ul b {
+        line-height: 1.4em!important;
+    }
+    nav img {
+        height: 40px;
+        width: 40px;
+    }
+    .icon-logo {
+        display: unset!important;
+        padding-left: 0.75rem;
+        padding-bottom: 0;
+        height: 40px;
+        width: 40px;
+    } 
+    footer {
+        font-size: 1rem!important;
+    }
+
+    #gathering-insight-identifying-issues--tasks,
+    #project-overview-and-task-breakdown, 
+    #why-the-concern-over-accessibility {
+        padding: 2rem!important;
+        padding-bottom: 0;
+    }
+    #gathering-insight-identifying-issues--tasks + ul, 
+    #project-overview-and-task-breakdown + ul, 
+    #why-the-concern-over-accessibility + p + p + ul, 
+    #why-the-concern-over-accessibility + p + p + ul + p + ul {
+        padding-left: 4rem!important;
+        padding-right: 2rem!important;
+        padding-bottom: 2rem!important;
+    }
+    #mixed .hero-header img:last-of-type {
+        height: unset;
+    }
+
+    #pink img:first-of-type {
+        -webkit-transform: unset;
+        width: unset;
+        left: unset;
+        margin-top: unset;
+        top: unset;
+        margin-left: unset;
+    }
+    #pink .hero-header {
+        margin-top: unset;
+    }
+    #hunger-for-professional-betterment + ul,
+    #hunger-for-professional-betterment + ul li {
+        display: block!important;
+        width: unset!important;
+        padding-left: 0!important;
+    }
+    #hunger-for-professional-betterment + ul li img {
+        width: 125px!important;
+        position: relative!important;
+        display: block!important;
+        margin-left: 0!important;
+    }
+
+    #navbar ul {
+        font-size: 1.14rem !important;
+    }
+
+    aside .project-info details {
+        display: block!important;
+    }
+
+    aside .project-info details + li,
+    aside .project-info details + li + li,
+    aside .project-info details + li + li + li,
+    aside .project-info details + li + li + li + li {
+        display: none!important;
+    }
+
+    #mixed2 .hero-header img:first-of-type {
+        top: 12em;
+        margin-left: -39px;
+        width: 81vh;
+    }
+
+    #darkblue + #main .cms h2 ~ p img + img {
+        position: relative!important;
+        right: 0!important;
+        margin-top: 2em;
+    }
+
+    .hero:before {
+        background-repeat: repeat-x;
+    }
+
+    .cms {
+        width: unset!important;
+    }
+    
+    .related-title {
+        margin-top: 10rem;
+    }
+
+    #mixed.bg-center.cover.hero + #main .cms h2:nth-of-type(4):not(#the-takeaway):after, .bg-center.cover.hero + #main .cms h2:not(#the-takeaway):after {
+        height: 195vh!important;
+    }
+
+    #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway, #wild {
+        padding: 0 13vw!important;
+    }
+
+    #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway {
+        margin-left: -13vw!important;
+    }
+
+    #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility,
+    #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility, #why-the-concern-over-accessibility + p, #why-the-concern-over-accessibility + p + p, #why-the-concern-over-accessibility + p + p + ul + p,
+    #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility, #why-the-concern-over-accessibility + p, #why-the-concern-over-accessibility + p + h3, #why-the-concern-over-accessibility + p + h3 + ul + h3 {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+
+    #gathering-insight-identifying-issues--tasks + ul, #gathering-insight-identifying-issues--tasks + p + ul, #project-overview-and-task-breakdown + ul, #why-the-concern-over-accessibility + p + h3 + ul, #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul {
+        padding-left: 2rem !important;
+        padding-right: 0!important;
+    }
+
+    #wild p:after,
+    #wild p:before {
+        display: none
+    }
+
+    #wild {
+        width: 106vw;
+        margin-left: -1.25rem!important;
+        padding: 0 14vw;
+        padding-right: 33vw;
+        margin-top: -1px;
+        margin-bottom: 0;
+        z-index: 1;
+    }
+
+    p img + em {
+        width: 100%!important;
+    }
+
+    #mixed + #main #gathering-insight-identifying-issues--tasks, #mixed + #main #gathering-insight-identifying-issues--tasks + ul, #mixed + #main #gathering-insight-identifying-issues--tasks + p + ul, #mixed + #main #project-overview-and-task-breakdown, #mixed + #main #project-overview-and-task-breakdown + ul, #mixed + #main #why-the-concern-over-accessibility, #mixed + #main #why-the-concern-over-accessibility + p, #mixed + #main #why-the-concern-over-accessibility + p + h3, #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul, #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul + h3, #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul, #mixed2 + #main #project-overview-and-task-breakdown, #mixed2 + #main #project-overview-and-task-breakdown + ul, #mixed + #main #rethinking-the-layout-through-wireframes + p + p, #mixed + #main #wireframe-iterations + p, #mixed2 + #main #rethinking-the-layout-through-wireframes + p + p, #mixed2 + #main #wireframe-iterations + p {
+        background-color: unset!important;
+    }
+
+    #wild {
+        padding: 3em 13vw!important;
+    }
+
+     #wild:before {
+        margin-left: -20vw !important;
+        margin-top: -8.35em !important;
+    }
+
+     #wild:after {
+        margin-left: -20vw !important;
+        margin-top: calc(3.5em - 10px) !important;
+    }
+
+    #wild {
+        margin-left: -2rem !important;
+    }
+
+     #wild h2, #wild p {
+        transform: rotate(-9deg)!important;
+    }
+
+    .cms {
+        width: unset !important;
+    }
+
+    h1 {
+        font-size: 30px;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    #pink.hero:before, #mixed.hero:before {
+        width: calc(100vw + 50em);
+    }
+
+    .hero:before {
+        background-repeat: repeat-x;
+        background-size: cover;
+        left: -2em;
+        height: 100em;
+        top: -1em;
     }
 
     #gathering-insight-identifying-issues--tasks + p img:first-of-type,
@@ -385,7 +1231,6 @@
 
     #rethinking-the-layout-through-wireframes + p + p, #wireframe-iterations + p {
         left: calc(10.5vw - 8.3rem)!important;
-        width: 101vw;
         overflow-x: scroll;
     }
 
@@ -424,29 +1269,17 @@
 
     #the-takeaway {
         margin-top: calc(3rem + 150px)!important;
-        width: calc(100vw - 27vw)!important;
-    }
-
-    /* // */
-    #the-takeaway:after {
-        margin-top: -6.45em!important;
     }
 
     #the-takeaway + p {
-        padding-right: 14vw!important;
+        padding-right: 14vw;
     }
 
-/* // */
     #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway {
         margin-left: -8vw!important;
         padding-top: 2em!important;
     }
 
-    #the-takeaway:after, #the-takeaway + p:after, #the-takeaway + ul + p:after, #the-takeaway + ul:after {
-        margin-left: -14vw!important;
-    }
-
-    /* // */
     #the-takeaway + ul + p img {
         max-width: 100vw!important;
         margin-top: 2em;
@@ -458,7 +1291,7 @@
         width: -webkit-fill-available;
     }
 
-    #pink + #main section {
+    #pink + #main section:not(#wild) {
         padding-top: 620px!important;
     }
 
@@ -511,7 +1344,7 @@
     }
     .hero:before {
         max-height: 90vw;
-        height: 76vh;
+        height: 76em;
         min-height: 750px;
         min-height: 739px;
     }
@@ -533,9 +1366,7 @@
     .icon-logo {
         display: none!important;
     } 
-    /* #rethinking-the-layout-through-wireframes + p + p {
-        overflow-x:scroll
-    } */
+
     #main {
         padding: 0 5vw!important;
         margin: auto;
@@ -564,9 +1395,7 @@
         left: 25vw;
         height: 45vw;
     }
-    /* #darkblue .hero-header img:first-of-type {
-        display: none
-    } */
+
    p + blockquote,
    #the-takeaway + ul + blockquote {
         margin: 0!important;
@@ -580,10 +1409,7 @@
         margin-top: 7.5rem!important;
         margin-bottom: 7.55rem!important;
     } 
-    #pink.hero:before {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    }
+
     #pink img:first-of-type {
         -webkit-transform: unset;
         width: unset;
@@ -594,9 +1420,9 @@
     }
 }
   
-@media (--breakpoint-medium) {
+/* @media (--breakpoint-medium) {
     body {
-        /* border: 5px solid orange; */
+        border: 5px solid orange;
     }
 
     #rethinking-the-layout-through-wireframes + p + p, #wireframe-iterations + p {
@@ -632,7 +1458,7 @@
         margin: 0!important;
     }
 
-    #pink + #main section {
+    #pink + #main section:not(#wild) {
         padding-top: 600px!important;
     }
 
@@ -664,20 +1490,22 @@
     }
     #rethinking-the-layout-through-wireframes + p + p,
     #wireframe-iterations + p {
-        /* left: unset!important;
-        width: unset!important;
-        position: relative; */
         height: 23em;
     }
     #rethinking-the-layout-through-wireframes + p + p img,
     #wireframe-iterations + p img {
         max-width: unset!important;
         padding-left: 1vw!important;
-        height: 100%;
+        height: 95%;
         width: unset!important;
         overflow: scroll!important;
         position: absolute;
     }
+
+    #rethinking-the-layout-through-wireframes + p + p img {
+        height: 100%;
+    }
+
     .cms h2:first-of-type {
         font-size: 2.3rem;
         margin-top: 0;
@@ -704,7 +1532,6 @@
         margin: auto;
     }
     .project-info {
-        width:225px;
         padding-right: 0;
         margin-top: unset!important;
     }
@@ -715,38 +1542,15 @@
     .hero-header {
         max-width: unset
     }
-    /* #mixed2.hero:before {
-        max-height: 90vw;
-        height: 60vh;
-    } */
-}
+} */
   
-@media (--breakpoint-large) {
-    body {
-        /* border: 5px solid yellow; */
-    }
-
-    #mixed2.hero:before,
-    #pink.hero:before,
-    #darkblue.hero:before, #darkblue2.hero:before {
-        top: -27vh;
-    }
-
-    #mixed.hero:before,
-    #darkgreen.hero:before {
-        top: -25vh;
-    }
-
-    #darkblue2.hero:before {
-        top: -23vh;
-    }
+/* @media (--breakpoint-large) {
 
     aside {
         width: unset;
-        /* padding-left: 3vw; */
     }
 
-    #main > section {
+    #main > section:not(#wild) {
         display: inline-flex!important;
     }
 
@@ -784,23 +1588,18 @@
         max-width: unset;
     }
     .project-info {
-        width: 250px;
         padding-right: 0;
     }
     #main {
         padding: 0 5vw!important;
         margin: auto;
     }
-}
+} */
   
-@media screen and (min-width: 80em) {
-    body {
-        /* border: 5px solid lime; */
-    }
+/* @media screen and (min-width: 80em) {
 
     #rethinking-the-layout-through-wireframes + p + p, #wireframe-iterations + p {
         left: calc(2.5vw - 8rem) !important;
-        width: 101vw!important
     }
 
     #darkblue + #main .cms h2 ~ p img + img {
@@ -843,7 +1642,7 @@
         width: -webkit-fill-available;
     }
 
-    #pink + #main section {
+    #pink + #main section:not(#wild) {
         padding-top: 450px!important;
     }
 
@@ -862,15 +1661,11 @@
         margin: auto;
     }
     .project-info {
-        width: 325px;
         padding-right: 0;
     }
-}
+} */
   
-@media screen and (min-width: 100em) {
-    body {
-        /* border: 5px solid pink; */
-    }
+/* @media screen and (min-width: 100em) {
 
     #rethinking-the-layout-through-wireframes + p + p, #wireframe-iterations + p {
         left: calc(-4.5vw - 8rem) !important;
@@ -901,20 +1696,17 @@
         margin: auto;
     }
     #navbar {
-        padding-left: calc((100% - 75em) / 2);
-        padding-right: calc((100% - 75em) / 2);
+        padding-left: calc((100% - 78.5vw) / 2);
+        padding-right: calc((100% - 78.5vw) / 2);
     }
     #main {
         min-width: 38em;
-        max-width: 87em !important;
+        max-width: 92.5em!important;
         margin: auto;
     }
-}
+} */
   
-@media screen and (min-width: 115em) {
-    body {
-        /* border: 5px solid peru */
-    }
+/* @media screen and (min-width: 115em) {
 
     #rethinking-the-layout-through-wireframes + p + p, #wireframe-iterations + p {
         max-width: 87em!important;
@@ -949,10 +1741,9 @@
         display: unset!important;        
     }
     #main {        
-        /* max-width: 1645px!important; */
         margin: auto;
     }
-}
+} */
 
 .desktop-logo {
     display: unset;

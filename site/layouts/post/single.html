@@ -100,13 +100,13 @@
  
       </aside>
 
-    <div class="cms center mw8">
+    <div class="cms center">
       {{ .Content }}
     </div>
     
 
   </section>    
-  <h3 class="related-title">Related case studies</h3> 
+  <h2 class="related-title">Related case studies</h2> 
   <div id="related" style="position: relative">   
     <div class="inner"> 
       
@@ -119,14 +119,21 @@
 
     {{ if isset .Params "preview" }}
     <div class="tile">
-    <img src="{{ .Params.preview }}" alt="{{ .Title }}" />
     <a href="{{ .Permalink }}">{{ .Title }}</a>
-    <!-- <p>{{ .Params.description }}</p> -->
+    <p>{{ .Params.description }}</p>
+<img src="{{ .Params.preview }}" alt="{{ .Title }}" />
+
   </div>
     {{ end }}
           
         {{ end }}
-      </div> </div></div>
+      </div> </div>
+    
+<section id="wild">
+  <h2>Find me in the wild</h2>
+  <p>UX Y'all - 10/04/2019    |    Modern Web October Event - 10/16/2019    |    Code for Durham: Civic Hacking - 12/10/2019</p>
+</section>
+    </div>
     
       </div>
     {{ end }}

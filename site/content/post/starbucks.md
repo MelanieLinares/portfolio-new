@@ -3,7 +3,7 @@ backgroundcolor: darkgreen
 title: Manage assets easily with an improved internal web portal built for a better user experience
 date: 2021-09-05T15:04:00.000Z
 newdate: 2021-11-14T02:27:22.000Z
-description: no, intro blurb >:[
+description: We’re proud to announce that we’ll be offering a small batch of Jamaica Blue Mountain coffee beans in our store next week.
 duration: 7 weeks
 logo: /img/starbucks-logo.png
 image: /img/undraw_success_factors_re_ce93.png

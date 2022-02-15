@@ -3,7 +3,7 @@ backgroundcolor: darkblue2
 title: Launching Stay Online's 10,000+ EU product website with improved information architecture and internationalization 
 date: 2015-01-05T15:04:00.000Z
 newdate: 2015-04-10T02:27:22.000Z
-description: no, intro blurb >:[
+description: We’re proud to announce that we’ll be offering a small batch of Jamaica Blue Mountain coffee beans in our store next week.
 duration: 3 months
 logo: /img/logos/stayonline-logo.png
 image: /img/stayonline-eu.jpg
@@ -123,7 +123,7 @@ Stay Online needed an EU location for shipping but you might ask, *why did they 
 - 👍 Optimized keywords increased efficiency in finding products via search
 - 👌 Category changes were implemented without negatively affecting the U.S. database (the plan was to merge category changes over to the U.S site)
 - Internationalization is not just translation and takes time and effort from many cross-functional teams  
-- The site was released on a very short timeline. I learned a lot from leading this project, both about global standards but also how to properly manage multiple teams.   
+- The site was released on a very short timeline. I learned a lot from leading this project, both about global standards but also how to properly manage multiple teams.
 
 ![this is the alt text](/img/eu-responsive.gif "Title is optional")
 

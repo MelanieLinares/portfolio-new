@@ -97,55 +97,97 @@ background: radial-gradient(circle at calc(100% - 40vw), rgba(57,95,232,1) 30%, 
 #multi.hero:before {
     /* background: rgb(7, 38, 148);
 background: radial-gradient(circle at calc(100% - 40vw), rgba(42,146,224,1) 30%, #1752aa 55%, #1c3781 70%); */
-content: url(/img/labcorp-header.png)!important;
-height: 169vh;
-    top: -5vh;
+/* content: url(/img/labcorp-header.png)!important; */
+content: "" !important;
+    /* top: -20vh !important; */
     max-height: unset;
-    clip-path: unset;
+    background-image: url(/img/small-blur-LAB.gif) !important;
+    /* height: 200vh !important;
+    width: 106vw;
+    left: -5em; */
+    background-size: contain;
+    filter: blur(1em);
+    z-index: -2;
+    background-repeat: repeat-x;
 }
 
 #pink.hero:before {
     /* background: rgb(7, 38, 148);
 background: radial-gradient(circle at calc(100% - 40vw), rgba(42,146,224,1) 30%, #1752aa 55%, #1c3781 70%); */
-content: url(/img/insight-header.png)!important;
-height: 169vh;
-    top: -36vh;
+/* content: url(/img/insight-header.png)!important; */
+content: "" !important;
+    /* top: -30vh !important; */
     max-height: unset;
-    clip-path: unset;
+    background-image: url(/img/small-blur-INS.gif) !important;
+    /* height: 200vh !important;
+    width: 107vw;
+    left: -5em; */
+    background-size: contain;
+    filter: blur(1em);
+    z-index: -2;
+    background-repeat: repeat-x;
 }
 
 #darkblue.hero:before, #darkblue2.hero:before {
     /* background: rgb(7, 38, 148);
 background: radial-gradient(circle at calc(100% - 40vw), rgba(42,146,224,1) 30%, #1752aa 55%, #1c3781 70%); */
-content: url(/img/stayonline-header.png)!important;
-height: 169vh;
-    top: -35vh;
+/* content: url(/img/stayonline-header.png)!important; */
+content: "" !important;
+    /* top: -10vh !important; */
     max-height: unset;
+    background-image: url(/img/small-blur-SOL.gif) !important;
+    /* height: 200vh; */
+    /* width: 110vw; */
+    /* left: -4em; */
+    /* background-size: contain; */
+    filter: blur(1em);
+    z-index: -2;
+    background-repeat: repeat-x;
 }
 
 #mixed.hero:before {
-    /* background: rgb(7, 38, 148);
-background: radial-gradient(circle at calc(100% - 40vw), rgba(42,146,224,1) 30%, #1752aa 55%, #1c3781 70%); */
-content: url(/img/ncdot-header.png)!important;
-height: 169vh;
-    top: -28vh;
+content: "" !important;
+    /* top: -5vh !important; */
     max-height: unset;
+    background-image: url(/img/small-blur-NCDOT.gif) !important;
+    /* height: 200vh;
+    width: 110vw;
+    left: -4em; */
+    background-size: contain;
+    filter: blur(1em);
+    z-index: -2;
 }
 
 #mixed2.hero:before {
     /* background: rgb(7, 38, 148);
 background: radial-gradient(circle at calc(100% - 40vw), rgba(42,146,224,1) 30%, #1752aa 55%, #1c3781 70%); */
-content: url(/img/ncdot-header.png)!important;
-height: 169vh;
-    top: -34vh;
+/* content: url(/img/ncdot-header.png)!important; */
+content: "" !important;
+    /* top: -15vh !important; */
     max-height: unset;
+    background-image: url(/img/small-blur-NCDOT.gif) !important;
+    /* height: 200vh;
+    width: 110vw;
+    left: -4em; */
+    background-size: contain;
+    filter: blur(1em);
+    z-index: -2;
+    background-repeat: repeat-x;
 }
 
 #darkgreen.hero:before {
-content: url(/img/starbucks-header.png)!important;
-height: 165vh;
-    top: -30vh;
+/* content: url(/img/starbucks-header.png)!important; */
+content: "" !important;
+    /* top: -3em!important; */
     max-height: unset;
+    background-image: url(/img/small-blur-STAR.gif) !important;
+    /* height: 200vh;
+    width: 108vw;
+    left: -5em; */
+    background-size: contain;
+    filter: blur(1em);
+    z-index: -2;
+    background-repeat: repeat-x;
 }
 
 #mixed2.hero .hero-header img:last-of-type,
@@ -166,22 +208,10 @@ height: 165vh;
     padding-left: 5em!important;
 }
 
-#darkblue2.hero:before {
+/* #darkblue2.hero:before {
     top: -29.5vh;
-}
-/* 
-#darkgreen.hero:before {
-    background: rgb(57,95,232);
-background: radial-gradient(circle at calc(100% - 45vw), #006241 50%, #05593E 70%, #1A3C34 85%);
 } */
 
-/* #pink.hero:before {
-    background: rgb(233,109,180183);
-background: linear-gradient(to right,#af0e2e 0,#d40e8c 50%,#582873 100%);
-padding-bottom: 10vh;
-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
--webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-} */
 
 #pink img:first-of-type {
     -webkit-transform: rotate(5deg);
@@ -203,7 +233,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
     margin-top: 9em;
 }
 
-#pink + #main section {
+#pink + #main section:not(#wild) {
     padding-top: 440px!important;
 }
 
@@ -234,7 +264,7 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
 
 #multi .hero-header h1 b, #pink .hero-header h1 b, #darkgreen .hero-header h1 b, #darkblue .hero-header h1 b, #darkblue2 .hero-header h1 b, #mixed .hero-header h1 b, #mixed2 .hero-header h1 b {
     color: white;
-    font-size: 45px
+    /* font-size: 45px */
 }
 
 #multi .hero-header h1, #pink .hero-header h1, #darkgreen .hero-header h1, #darkblue .hero-header h1, #darkblue2 .hero-header h1, #mixed .hero-header h1, #mixed2 .hero-header h1 {
@@ -264,7 +294,7 @@ content: "";
 /* mix-blend-mode: screen; */
 display: block;
 position:absolute;
-width: 100%;
+/* width: 100%; */
 height: 80vh;
 /* height: 100%; */
 /* left: 0;
@@ -272,12 +302,13 @@ top: 0;
 -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 padding-bottom: 15vh */
-left: 0;
-top: 0;
+/* left: 0; */
+/* top: 0; */
 /* top: -18rem; */
--webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+/* -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
 padding-bottom: 0;
+filter: blur(7em);
 }
 
 #main .hero:before {
@@ -292,7 +323,7 @@ padding-bottom: 0;
 }
 
 #hero:before {
-    clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%); */
     z-index: -1;
     height: 100rem;
     max-height: 800px;

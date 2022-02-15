@@ -6,11 +6,11 @@ newdate: 2019-08-07T15:04:10.000Z
 description: We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
   Mountain coffee beans in our store next week.
 duration: 2 months
-logo: /img/logos/ncdot-logo.png
+logo: /img/logos/ncdot-logo.gif
 image: /img/accessibility-ncdot.jpg
 # image2: /img/Group 535.png
 image1: /img/blog-flavor_wheel.jpg
-preview: /img/ncdot-preview.png
+preview: /img/accessibility-ncdot.jpg
 role: Accessibility Specialist 
 team: Web Services
 technology:
@@ -76,6 +76,8 @@ Originally brought on for front-end development, I noticed the accessibility iss
 
 ### Automatic testing
 ![this is the alt text](/img/ncdot-a11y.png "Title is optional")
+*TBD caption*
+
 - Axe DevTools
 - W.A.V.E. (web accessibility evaluation tool)
 - Chrome DevTools
@@ -91,6 +93,7 @@ Components associated with key functionality prioritized. If a user cannot inter
 
 
 ![this is the alt text](/img/ncdot-wave.png "Title is optional")
+*TBD caption*
 
 ### Sorting pages on most viewed pages to prioritize testing 
 - Homepage
@@ -109,6 +112,7 @@ It is important to ensure a keyboard can navigate a page. Content should have pr
 ## Major changes and impact
 
 ![this is the alt text](/img/ncdot-acc-overview.png "Title is optional")
+*TBD caption*
 
 ### Keyboard changes  
 - Skip to main link existed but was not functional, now a user can skip the lengthy navigation if they choose
@@ -118,6 +122,7 @@ It is important to ensure a keyboard can navigate a page. Content should have pr
 
 
 ![this is the alt text](/img/ncdot-alert.png "Title is optional")
+*TBD caption*
 
 ### Alerts & pop-ups
 - Originally not accessible via tabbing and did not have an easy way to close
@@ -125,11 +130,13 @@ It is important to ensure a keyboard can navigate a page. Content should have pr
 
 
 ![this is the alt text](/img/ncdot-components.png "Title is optional")
+*TBD caption*
 
 ### Repeatable components
 - Some components found to be inaccessible.  Adjusted code as able. Others (often plugins) replaced with native HTML5
 
 ![this is the alt text](/img/ncdot-navigation.png "Title is optional")
+*TBD caption*
 
 ### Navigation
 - Navigation built with separate mobile and desktop code toggled according to media queries. The issue is both still accessed via a screen reader regardless of screen size.

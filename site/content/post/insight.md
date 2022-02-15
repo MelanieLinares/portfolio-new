@@ -1,11 +1,11 @@
 ---
 backgroundcolor: pink
-title: Prioritizing end user and client experience through hunger, heart, and harmony
+title: Prioritizing end user and client experience through Heart, Hunger, and Harmony
 date: 2019-02-19T15:04:00.000Z
 newdate: 2021-11-10T02:27:22.000Z
-description: no, intro blurb >:[
+description: We’re proud to announce that we’ll be offering a small batch of Jamaica Blue Mountain coffee beans in our store next week.
 duration: 2 years 10 months
-logo: /img/logos/insight-logo.png
+logo: /img/logos/insight-logo.gif
 image: /img/insight1.jpg
 image2: /img/insight1.jpg
 preview: /img/insight-preview.png
@@ -13,7 +13,7 @@ tags:
   - accessibility
   - mentorship
 titlebold: Prioritizing end user and client experience  
-titlenormal: through hunger, heart, and harmony
+titlenormal: through Heart, Hunger, and Harmony
 client: Insight 
 role: Senior Software Engineer
 team: Application Development
@@ -21,7 +21,10 @@ team: Application Development
 ---
 
 ## I started with one main goal: bring change in how Insight markets accessibility
-Insight Digital Innovation is a sector of Insight with a focus on product design. Accessibility, however, was not part of their core process when I was brought on-board. As part of Insight’s global team, I utilized the company’s values to evangelize accessibility as a standard, not an optional offering. These values are Hunger, Heart, and Harmony.
+Insight Digital Innovation is a sector of Insight with a focus on product design. Accessibility, however, was not part of their core process when I was brought on-board. As part of Insight’s global team, I utilized the company’s values to evangelize accessibility as a standard, not an optional offering. These values are Heart, Hunger, and Harmony.
+
+## Heart for the team
+I was part of the accessibility go-to-market planning committee. This team was hand-picked by the UX department lead. The team worked on a Sales presentation and plan for integrating accessibility into other products and services. Teammates have reached out to me for my knowledge of accessibility, CSS, and UX. I was invited to be an **inclusive and diversity event lead** as well as part of the **"A11y Rocks" accessibility design team**.
 
 ## Hunger for professional betterment
 - ![this is the alt text](/img/accessibility.png "Title is optional")
@@ -30,9 +33,6 @@ Insight Digital Innovation is a sector of Insight with a focus on product design
  Through Insight I was able to learn 
 Vue and React at an expediated pace. 
 (And I love Vue!) 🔥
-
-## Heart for the team
-I was part of the accessibility go-to-market planning committee. This team was hand-picked by the UX department lead. The team worked on a Sales presentation and plan for integrating accessibility into other products and services. Teammates have reached out to me for my knowledge of accessibility, CSS, and UX. I was invited to be an **inclusive and diversity event lead** as well as part of the **"A11y Rocks" accessibility design team**.
 
 ## Harmony through mentorship
 Insight allowed several opportunities for teammates to share professional knowledge. I have mentored junior developers 1-on-1, hosted several “Lunch N' Learns” (which are short, single topic talks during lunch breaks). I planned a class for employees on accessibility for Insight’s Accelerated Consultant Education program.

@@ -6,7 +6,7 @@ titlenormal: and less paperwork
 date: 2019-09-17T15:04:10.000Z
 newdate: 2020-12-29T20:11:54.193Z
 duration: 1 year 3 months
-logo: /img/logos/ncdot-logo.png
+logo: /img/logos/ncdot-logo.gif
 image: /img/Group 537.png
 image2: img/IconGroup.png
 image1: img/about-shade-grown.jpg
@@ -48,10 +48,9 @@ This project required the knowledge of multiple terms, the process in which an a
 ignition interlock management system
 ignition interlock medical accomodation -->
 
-**What is an ignition interlock device?**
+### What is an ignition interlock device?
 
 IIMS is the ignition interlock management system. This system makes use of a device that is "connected to a vehicle's ignition system... [The device] requires an individual to breathe into the equipment, which prevents the vehicle from starting if the individual's breath alcohol concentration is outside the acceptable range."
-
 *source: [NCDMV](https://www.ncdot.gov/dmv/license-id/license-suspension/Pages/ignition-interlock-devices.aspx)*
 
 ### image group
@@ -63,28 +62,6 @@ IIMS is the ignition interlock management system. This system makes use of a dev
 In some cases this new portal would be needed to monitor successful use of the device. The portal would also identify and alert necessary parties of court dates and eventual approved removal of the device.
 
 In other instances a participant might miss a court date. The device could be detecting misuse or malfunction. A participant could file a complaint on a vendor or request an exception be made due to medical reasons. Each of these use cases would need to be reflected in the internal IIMS portal and the data available only to those with approval.
-
-## Exploring the different users and user flows       
-![this is the alt text](/img/voma-sketch2.png "Title is optional")
-*BLLLAHH [From left to right]:  Sketches of dividing up the master page section; Responsive menu sketches; notes planning out static page layouts*
-
-
-After research and stakeholder interviews the team had a better understanding of requirements.
-
-By identifying persona needs the information was given proper hierarchy within the layout.
-
-**Main tasks for users included
-- create participant
-- edit participant profile 
-- modify dates
-- access a participant flagged for immediate follow-up
-- delete a use
-- download individual participant data
-- download report for a date range
-- review case notes including photographs
-
-Documentation was important for ensuring teams were up-to-date on design, API, and interactive decisions. 
-
 
 ## Project overview and task breakdown 
 
@@ -98,6 +75,27 @@ Documentation was important for ensuring teams were up-to-date on design, API, a
 - Work with Marketing and Sales managers to identify business needs for the new homepage 
 
 > BLAHHHIt may not seem like a problem to have a lot of products, but if they are not organized efficiently and the navigation not clear then all those products can start being too many. A good e-commerce website creates an easy purchasing experience.
+
+## Exploring the different users and user flows       
+![this is the alt text](/img/voma-sketch2.png "Title is optional")
+*BLLLAHH [From left to right]:  Sketches of dividing up the master page section; Responsive menu sketches; notes planning out static page layouts*
+
+
+After research and stakeholder interviews the team had a better understanding of requirements.
+
+By identifying persona needs the information was given proper hierarchy within the layout.
+
+### Main tasks for users included
+- create participant
+- edit participant profile 
+- modify dates
+- access a participant flagged for immediate follow-up
+- delete a use
+- download individual participant data
+- download report for a date range
+- review case notes including photographs
+
+Documentation was important for ensuring teams were up-to-date on design, API, and interactive decisions. 
 
 ## Wireframe Iterations
 

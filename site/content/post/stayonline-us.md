@@ -3,7 +3,7 @@ backgroundcolor: darkblue
 title: Decreasing the bounce-rate of Stay Online's website through a responsive redesign
 date: 2015-06-29T15:04:00.000Z
 newdate: 2016-09-07T02:27:22.000Z
-description: no, intro blurb >:[
+description: We’re proud to announce that we’ll be offering a small batch of Jamaica Blue Mountain coffee beans in our store next week.
 duration: 2 months
 logo: /img/logos/stayonline-logo.png
 image: /img/stayonline-us.jpg
