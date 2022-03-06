@@ -6,7 +6,7 @@
 
 @media screen and (max-width: 360px) {
     body {
-        border: 5px solid black!important;
+        border: 5px solid black;
     }
 
     /* .bg-center.cover.hero + #main .cms #gathering-insight-identifying-issues--tasks:after, .bg-center.cover.hero + #main .cms #project-overview-and-task-breakdown:after, .bg-center.cover.hero + #main .cms #why-the-concern-over-accessibility:after {
@@ -45,11 +45,11 @@
     }
 
     h1 {
-        font-size: 24px!important;
+        font-size: 24px;
     }
 
     h1 b {
-        font-size: 24px!important;
+        font-size: 24px;
     }
 
     .hero-header {
@@ -57,15 +57,15 @@
     }
 
     .hero-header h1 {
-        margin-bottom: 1em!important;
+        margin-bottom: 1em;
     }
 
     h1:before {
-        border-top: 2px solid #fff!important;
+        border-top: 2px solid #fff;
     }
 
     #navbar ul a {
-        font-size: 1rem !important;
+        font-size: 1rem ;
         padding: 1.5em .75em;
     }
 
@@ -80,7 +80,7 @@
     img:not(.w-100) {
         border-radius: 0.25rem;
         border-radius: var(--border-radius);
-        margin-left: 0!important;
+        margin-left: 0;
     }
 
 }
@@ -95,13 +95,13 @@
     }
     
         #wild:before {
-            margin-left: -19vw!important;
-            margin-top: -8.35em !important;
+            margin-left: -19vw;
+            margin-top: -8.35em ;
         }
     
         #wild:after {
-            margin-left: -19vw !important;
-            margin-top: calc(3.5em - 10px) !important;
+            margin-left: -19vw ;
+            margin-top: calc(3.5em - 10px) ;
         }
 }
 
@@ -115,13 +115,13 @@
 }
 
     #wild:before {
-        margin-left: -19vw!important;
-        margin-top: -8.35em !important;
+        margin-left: -19vw;
+        margin-top: -8.35em ;
     }
 
     #wild:after {
-        margin-left: -19vw !important;
-        margin-top: calc(3.5em - 10px) !important;
+        margin-left: -19vw ;
+        margin-top: calc(3.5em - 10px) ;
     }
 }
 
@@ -139,13 +139,13 @@
 }
 
     #wild:before {
-        margin-left: -19vw!important;
-        margin-top: -8.35em !important;
+        margin-left: -19vw;
+        margin-top: -8.35em ;
     }
 
     #wild:after {
-        margin-left: -19vw !important;
-        margin-top: calc(3.5em - 10px) !important;
+        margin-left: -19vw ;
+        margin-top: calc(3.5em - 10px) ;
     }
 
     .hero:before {
@@ -225,13 +225,13 @@
     }
 
     #wild:before {
-        margin-left: -19vw!important;
-        margin-top: -8.35em !important;
+        margin-left: -19vw;
+        margin-top: -8.35em ;
     }
 
     #wild:after {
-        margin-left: -19vw !important;
-        margin-top: calc(3.5em - 10px) !important;
+        margin-left: -19vw ;
+        margin-top: calc(3.5em - 10px) ;
     }
 }
 
@@ -278,24 +278,24 @@
     }
 
     #the-takeaway:after {
-        margin-left: -4.5rem!important;
+        margin-left: -4.5rem;
     }
 
     #wild:before {
-        margin-left: -19vw!important;
-        margin-top: -8.35em !important;
+        margin-left: -19vw;
+        margin-top: -8.35em ;
     }
 
     #wild:after {
-        margin-left: -19vw !important;
-        margin-top: calc(3.5em - 10px) !important;
+        margin-left: -19vw ;
+        margin-top: calc(3.5em - 10px) ;
     }
 }
 
 @media screen and (min-width: 501px) and (max-width: 639px) {
 
     .bg-center.cover.hero + #main .cms #major-changes-and-impact:after {
-        margin-top: -3.75em!important;
+        margin-top: -3.75em;
     }
 
     .hero:before {
@@ -330,13 +330,13 @@
     }
 
     #wild:before {
-        margin-left: -20vw!important;
-        margin-top: -8.35em !important;
+        margin-left: -20vw;
+        margin-top: -8.35em ;
     }
 
     #wild:after {
-        margin-left: -20vw !important;
-        margin-top: calc(3.5em - 10px) !important;
+        margin-left: -20vw ;
+        margin-top: calc(3.5em - 10px) ;
     }
 }
 
@@ -360,7 +360,7 @@
 
     #the-challenge + p + p img {
         width: 108vw;
-        margin-left: -15vw!important;
+        margin-left: -15vw;
         margin-bottom: 0;
         max-width: 450px;
     }
@@ -371,7 +371,7 @@
 
     .cms img { 
         /* height: 300px;
-        max-width: 100vh!important;  */
+        max-width: 100vh;  */
         max-height: 20em;
     }
 
@@ -421,18 +421,18 @@
     }
     
     #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility, #why-the-concern-over-accessibility + p, #why-the-concern-over-accessibility + p + h3, #why-the-concern-over-accessibility + p + h3 + ul + h3 {
-        padding-left: 2rem!important;
-        padding-right: 2rem!important;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     #gathering-insight-identifying-issues--tasks + ul, #gathering-insight-identifying-issues--tasks + p + ul, #project-overview-and-task-breakdown + ul, #why-the-concern-over-accessibility + p + h3 + ul, #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul {
-        padding-left: 4rem!important;
-        padding-right: 2rem!important;
+        padding-left: 4rem;
+        padding-right: 2rem;
     }
 
     /* #multi.hero:before, #mixed.hero:before, #mixed2.hero:before, #darkgreen.hero:before, #darkblue.hero:before, #darkblue2.hero:before {
-        height: 152vh !important;
-        max-height: 860px !important;
+        height: 152vh ;
+        max-height: 860px ;
     } */
 
     /* #multi.hero:before {
@@ -440,26 +440,26 @@
     } */
 
     #rethinking-the-layout-through-wireframes + p + p, #wireframe-iterations + p {
-        left: calc(11.5vw - 8.3rem)!important;
-        width: 124vw!important;
+        left: calc(11.5vw - 8.3rem);
+        width: 124vw;
         overflow-x: scroll;
     }
 
     p + blockquote, ul + blockquote {
-        margin-top: 11rem !important;
+        margin-top: 11rem ;
     }
 
     blockquote:before {
-        content: ''!important;
+        content: '';
     }
     blockquote {
-        margin-top: 5rem!important;
-        margin-left: 0!important;
-        margin-right: 0!important;
-        padding-left: 1.5rem!important;
+        margin-top: 5rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 1.5rem;
     }
     blockquote p {
-        font-weight: bold!important;
+        font-weight: bold;
     }
 
     #darkblue .hero-header img:first-of-type,
@@ -469,11 +469,11 @@
 
     #darkblue .hero-header img:last-of-type,
     #darkblue2 .hero-header img:last-of-type {
-        width: 100%!important;
+        width: 100%;
     }
 
     #darkblue2 .hero-header {
-        width: 92.1vw!important
+        width: 92.1vw
     }
 
     #gathering-insight-identifying-issues--tasks + p,
@@ -487,17 +487,17 @@
     } */
 
     #darkblue + #main #rethinking-the-layout-through-wireframes + p + p {
-        left: -2rem!important;
-        width: 103vw !important;
+        left: -2rem;
+        width: 103vw ;
     }
 
     #related .inner {
-        display: block!important;
+        display: block;
         margin-top: 1em;
     }
     #related .inner .tile {
-        width: 100%!important;
-        margin-left: 0!important;
+        width: 100%;
+        margin-left: 0;
         margin-bottom: 3em;
     }
 
@@ -506,12 +506,12 @@
     }
 
     #the-takeaway {
-        margin-top: calc(3rem + 150px)!important;
-        /* width: calc(100vw - 27vw)!important; */
+        margin-top: calc(3rem + 150px);
+        /* width: calc(100vw - 27vw); */
     }
 
     #the-takeaway:after {
-        margin-top: -7.2em!important;
+        margin-top: -7.2em;
     }
 
     #the-takeaway + p {
@@ -519,15 +519,15 @@
     }
 
     #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway {
-        margin-left: -9vw!important;
+        margin-left: -9vw;
     }
 
     #the-takeaway:after, #the-takeaway + p:after, #the-takeaway + ul + p:after, #the-takeaway + ul:after {
-        margin-left: -14vw!important;
+        margin-left: -14vw;
     }
 
     #the-takeaway + ul + p img {
-        max-width: 189vw!important;
+        max-width: 189vw;
         margin-top: 2em;
         margin-bottom: 2em;
     }
@@ -538,8 +538,8 @@
     #darkgreen.hero:before,
     #darkblue.hero:before,
     #darkblue2.hero:before {
-        height: 128vh!important;
-        max-height: 860px!important;
+        height: 128vh;
+        max-height: 860px;
     } */
 
     #gathering-insight-identifying-issues--tasks,
@@ -548,8 +548,8 @@
     #why-the-concern-over-accessibility + p,
     #why-the-concern-over-accessibility + p + p,
     #why-the-concern-over-accessibility + p + p + ul + p  {
-       padding-left: 2rem!important;
-       padding-right: 2rem!important;
+       padding-left: 2rem;
+       padding-right: 2rem;
     }
 
     footer {
@@ -562,11 +562,11 @@
     }
 
     #pink + #main section:not(#wild) {
-        padding-top: 300px!important;
+        padding-top: 300px;
     }
 
     .cms h2 {
-        font-size: 1.8rem !important;
+        font-size: 1.8rem ;
     }
 
     .hero {
@@ -574,21 +574,21 @@
     }
 
     .desktop-logo {
-        display: none!important;
+        display: none;
     } 
     .mobile-logo {
-        display: none!important;
+        display: none;
     } 
     .hero-header {
-        padding-left: 0!important;
+        padding-left: 0;
     }
     #main {
-        padding: 0 3vw!important;
+        padding: 0 3vw;
         margin: auto;
     }
     #darkgreen .hero-header img:first-of-type {
-        margin-top: 440px!important;
-        margin-left: 1px!important;
+        margin-top: 440px;
+        margin-left: 1px;
         width: 25vw;
     }
     #darkblue2 .hero-header img:first-of-type {
@@ -613,25 +613,25 @@
         font-size: 30px;
     }
     h2 {
-        font-size: 2.05rem!important;
+        font-size: 2.05rem;
     }
     p, ul, ul b {
-        /* font-size: 1.15rem!important; */
-        line-height: 1.4em!important;
+        /* font-size: 1.15rem; */
+        line-height: 1.4em;
     }
     nav img {
         height: 40px;
         width: 40px;
     }
     .icon-logo {
-        display: unset!important;
+        display: unset;
         padding-left: 0.75rem;
         padding-bottom: 0;
         height: 40px;
         width: 40px;
     } 
     footer {
-        font-size: 1rem!important;
+        font-size: 1rem;
     }
     /* aside {
         margin-bottom: 5rem;
@@ -639,16 +639,16 @@
     #gathering-insight-identifying-issues--tasks,
     #project-overview-and-task-breakdown, 
     #why-the-concern-over-accessibility {
-        padding: 2rem!important;
+        padding: 2rem;
         padding-bottom: 0;
     }
     #gathering-insight-identifying-issues--tasks + ul, 
     #project-overview-and-task-breakdown + ul, 
     #why-the-concern-over-accessibility + p + p + ul, 
     #why-the-concern-over-accessibility + p + p + ul + p + ul {
-        padding-left: 4rem!important;
-        padding-right: 2rem!important;
-        padding-bottom: 2rem!important;
+        padding-left: 4rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
     }
     #mixed .hero-header img:last-of-type {
         height: unset;
@@ -670,15 +670,15 @@
     }
     #hunger-for-professional-betterment + ul,
     #hunger-for-professional-betterment + ul li {
-        display: block!important;
-        width: unset!important;
-        padding-left: 0!important;
+        display: block;
+        width: unset;
+        padding-left: 0;
     }
     #hunger-for-professional-betterment + ul li img {
-        width: 125px!important;
-        position: relative!important;
-        display: block!important;
-        margin-left: 0!important;
+        width: 125px;
+        position: relative;
+        display: block;
+        margin-left: 0;
     }
     /* #darkblue .hero-header img:first-of-type {
         display: none;
@@ -688,18 +688,18 @@
     } */
 
     #navbar ul {
-        font-size: 1.14rem !important;
+        font-size: 1.14rem ;
     }
 
     aside .project-info details {
-        display: block!important;
+        display: block;
     }
 
     aside .project-info details + li,
     aside .project-info details + li + li,
     aside .project-info details + li + li + li,
     aside .project-info details + li + li + li + li {
-        display: none!important;
+        display: none;
     }
 
     #mixed2 .hero-header img:first-of-type {
@@ -709,8 +709,8 @@
     }
 
     #darkblue + #main .cms h2 ~ p img + img {
-        position: relative!important;
-        right: 0!important;
+        position: relative;
+        right: 0;
         margin-top: 2em;
     }
 
@@ -719,7 +719,7 @@
     }
 
     .cms {
-        width: unset!important;
+        width: unset;
     }
     
     .related-title {
@@ -728,27 +728,27 @@
 
     #mixed.bg-center.cover.hero + #main .cms h2:nth-of-type(4):not(#the-takeaway):after,
     .bg-center.cover.hero + #main .cms h2:not(#the-takeaway):after {
-        height: 333vh!important;
+        height: 333vh;
     }
 
     #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway, #wild {
-        padding: 0 13vw!important;
+        padding: 0 13vw;
     }
 
     #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway {
-        margin-left: -13vw!important;
+        margin-left: -13vw;
     }
 
     #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility,
     #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility, #why-the-concern-over-accessibility + p, #why-the-concern-over-accessibility + p + p, #why-the-concern-over-accessibility + p + p + ul + p,
     #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility, #why-the-concern-over-accessibility + p, #why-the-concern-over-accessibility + p + h3, #why-the-concern-over-accessibility + p + h3 + ul + h3 {
-        padding-left: 0!important;
-        padding-right: 0!important;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     #gathering-insight-identifying-issues--tasks + ul, #gathering-insight-identifying-issues--tasks + p + ul, #project-overview-and-task-breakdown + ul, #why-the-concern-over-accessibility + p + h3 + ul, #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul {
-        padding-left: 2rem !important;
-        padding-right: 0!important;
+        padding-left: 2rem ;
+        padding-right: 0;
     }
 
     #wild p:after,
@@ -758,7 +758,7 @@
 
     #wild {
         width: 106vw;
-        margin-left: -1.25rem!important;
+        margin-left: -1.25rem;
         padding: 0 14vw;
         padding-right: 33vw;
         margin-top: -1px;
@@ -767,19 +767,19 @@
     }
 
     p img + em {
-        width: 100%!important;
+        width: 100%;
     }
 
     #mixed + #main #gathering-insight-identifying-issues--tasks, #mixed + #main #gathering-insight-identifying-issues--tasks + ul, #mixed + #main #gathering-insight-identifying-issues--tasks + p + ul, #mixed + #main #project-overview-and-task-breakdown, #mixed + #main #project-overview-and-task-breakdown + ul, #mixed + #main #why-the-concern-over-accessibility, #mixed + #main #why-the-concern-over-accessibility + p, #mixed + #main #why-the-concern-over-accessibility + p + h3, #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul, #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul + h3, #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul, #mixed2 + #main #project-overview-and-task-breakdown, #mixed2 + #main #project-overview-and-task-breakdown + ul, #mixed + #main #rethinking-the-layout-through-wireframes + p + p, #mixed + #main #wireframe-iterations + p, #mixed2 + #main #rethinking-the-layout-through-wireframes + p + p, #mixed2 + #main #wireframe-iterations + p {
-        background-color: unset!important;
+        background-color: unset;
     }
 
     /* #the-takeaway:after {
-        margin-left: -5rem!important;
+        margin-left: -5rem;
     } */
 
     #wild {
-        padding: 3em 13vw!important;
+        padding: 3em 13vw;
     }
 
     #wild:before {
@@ -793,14 +793,14 @@
      }
 
      #wild h2, #wild p {
-        transform: rotate(-9deg)!important;
+        transform: rotate(-9deg);
     }
 }
 
 @media (--breakpoint-not-small) and (max-width: 799px)  {
 
     #the-takeaway:after {
-        margin-top: -7.35em!important;
+        margin-top: -7.35em;
     }
 
     #mixed.bg-center.cover.hero + #main .cms h2:nth-of-type(2):not(#the-takeaway):after, #mixed2.bg-center.cover.hero + #main .cms h2:nth-of-type(3):not(#the-takeaway):after {
@@ -813,7 +813,7 @@
 
     #the-challenge + p + p img {
         width: 108vw;
-        margin-left: -15vw!important;
+        margin-left: -15vw;
         margin-bottom: 0;
         max-width: 450px;
     }
@@ -853,10 +853,6 @@
         max-width: unset;
     }
 
-    aside {
-        margin-bottom: 0;
-    }
-
     .cms h2:first-of-type {
         margin-top: 6rem;
     }
@@ -868,37 +864,56 @@
     }
     
     #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility, #why-the-concern-over-accessibility + p, #why-the-concern-over-accessibility + p + h3, #why-the-concern-over-accessibility + p + h3 + ul + h3 {
-        padding-left: 2rem!important;
-        padding-right: 2rem!important;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     #gathering-insight-identifying-issues--tasks + ul, #gathering-insight-identifying-issues--tasks + p + ul, #project-overview-and-task-breakdown + ul, #why-the-concern-over-accessibility + p + h3 + ul, #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul {
-        padding-left: 4rem!important;
-        padding-right: 2rem!important;
+        padding-left: 4rem;
+        padding-right: 2rem;
     }
 
     #rethinking-the-layout-through-wireframes + p + p, #wireframe-iterations + p {
-        left: calc(11.5vw - 8.3rem)!important;
-        width: 124vw!important;
+        left: calc(11.5vw - 8.3rem);
+        width: 124vw;
         overflow-x: scroll;
     }
 
     p + blockquote, ul + blockquote {
-        margin-top: 11rem !important;
+        margin-top: 11rem ;
     }
 
     blockquote:before {
-        content: ''!important;
+        content: '❝';
+        font-size: 3em;
+        position: absolute;
+        left: 0;
+        margin-left: -0.25em;
+        margin-top: -0.25em;
     }
-    blockquote {
-        margin-top: 5rem!important;
-        margin-left: 0!important;
-        margin-right: 0!important;
-        padding-left: 1.5rem!important;
-    }
+
     blockquote p {
-        font-weight: bold!important;
+        font-size: 110%;
     }
+    blockquote p em {
+        font-size: 75%;
+        padding-top: 1em;
+        display: block;
+    }
+    
+   p + blockquote,
+   #the-takeaway + ul + blockquote {
+        margin: 0;
+        margin-top: 13rem;
+        margin-bottom: 0rem;
+    } 
+
+    blockquote + blockquote,
+    ul + blockquote {
+        margin: 0;
+        margin-top: 7.5rem;
+        margin-bottom: 7.55rem;
+    } 
 
     #darkblue .hero-header img:first-of-type,
     #darkblue2 .hero-header img:first-of-type {
@@ -907,11 +922,11 @@
 
     #darkblue .hero-header img:last-of-type,
     #darkblue2 .hero-header img:last-of-type {
-        width: 100%!important;
+        width: 100%;
     }
 
     #darkblue2 .hero-header {
-        width: 92.1vw!important
+        width: 92.1vw
     }
 
     #gathering-insight-identifying-issues--tasks + p,
@@ -921,17 +936,17 @@
     }
 
     #darkblue + #main #rethinking-the-layout-through-wireframes + p + p {
-        left: -2rem!important;
-        width: 103vw !important;
+        left: -2rem;
+        width: 103vw ;
     }
 
     #related .inner {
-        display: block!important;
+        display: block;
         margin-top: 1em;
     }
     #related .inner .tile {
-        width: 100%!important;
-        margin-left: 0!important;
+        width: 100%;
+        margin-left: 0;
         margin-bottom: 3em;
     }
 
@@ -940,11 +955,11 @@
     }
 
     #the-takeaway {
-        margin-top: calc(3rem + 150px)!important;
+        margin-top: calc(3rem + 150px);
     }
 
     #the-takeaway:after {
-        margin-top: -7.2em!important;
+        margin-top: -7.2em;
     }
 
     #the-takeaway + p {
@@ -952,15 +967,15 @@
     }
 
     #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway {
-        margin-left: -9vw!important;
+        margin-left: -9vw;
     }
 
     #the-takeaway:after, #the-takeaway + p:after, #the-takeaway + ul + p:after, #the-takeaway + ul:after {
-        margin-left: -14vw!important;
+        margin-left: -14vw;
     }
 
     #the-takeaway + ul + p img {
-        max-width: 189vw!important;
+        max-width: 189vw;
         margin-top: 2em;
         margin-bottom: 2em;
     }
@@ -971,8 +986,8 @@
     #why-the-concern-over-accessibility + p,
     #why-the-concern-over-accessibility + p + p,
     #why-the-concern-over-accessibility + p + p + ul + p  {
-       padding-left: 2rem!important;
-       padding-right: 2rem!important;
+       padding-left: 2rem;
+       padding-right: 2rem;
     }
 
     footer {
@@ -984,11 +999,11 @@
     }
 
     #pink + #main section:not(#wild) {
-        padding-top: 300px!important;
+        padding-top: 300px;
     }
 
     .cms h2 {
-        font-size: 1.8rem !important;
+        font-size: 1.8rem ;
     }
 
     .hero {
@@ -996,21 +1011,21 @@
     }
 
     .desktop-logo {
-        display: none!important;
+        display: none;
     } 
     .mobile-logo {
-        display: none!important;
+        display: none;
     } 
     .hero-header {
-        padding-left: 0!important;
+        padding-left: 0;
     }
     #main {
-        padding: 0 3vw!important;
+        padding: 0 3vw;
         margin: auto;
     }
     #darkgreen .hero-header img:first-of-type {
-        margin-top: 440px!important;
-        margin-left: 1px!important;
+        margin-top: 440px;
+        margin-left: 1px;
         width: 25vw;
     }
     #darkblue2 .hero-header img:first-of-type {
@@ -1031,39 +1046,39 @@
         font-size: 30px;
     }
     h2 {
-        font-size: 2.05rem!important;
+        font-size: 2.05rem;
     }
     p, ul, ul b {
-        line-height: 1.4em!important;
+        line-height: 1.4em;
     }
     nav img {
         height: 40px;
         width: 40px;
     }
     .icon-logo {
-        display: unset!important;
+        display: unset;
         padding-left: 0.75rem;
         padding-bottom: 0;
         height: 40px;
         width: 40px;
     } 
     footer {
-        font-size: 1rem!important;
+        font-size: 1rem;
     }
 
     #gathering-insight-identifying-issues--tasks,
     #project-overview-and-task-breakdown, 
     #why-the-concern-over-accessibility {
-        padding: 2rem!important;
+        padding: 2rem;
         padding-bottom: 0;
     }
     #gathering-insight-identifying-issues--tasks + ul, 
     #project-overview-and-task-breakdown + ul, 
     #why-the-concern-over-accessibility + p + p + ul, 
     #why-the-concern-over-accessibility + p + p + ul + p + ul {
-        padding-left: 4rem!important;
-        padding-right: 2rem!important;
-        padding-bottom: 2rem!important;
+        padding-left: 4rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
     }
     #mixed .hero-header img:last-of-type {
         height: unset;
@@ -1082,30 +1097,19 @@
     }
     #hunger-for-professional-betterment + ul,
     #hunger-for-professional-betterment + ul li {
-        display: block!important;
-        width: unset!important;
-        padding-left: 0!important;
+        display: block;
+        width: unset;
+        padding-left: 0;
     }
     #hunger-for-professional-betterment + ul li img {
-        width: 125px!important;
-        position: relative!important;
-        display: block!important;
-        margin-left: 0!important;
+        width: 125px;
+        position: relative;
+        display: block;
+        margin-left: 0;
     }
 
     #navbar ul {
-        font-size: 1.14rem !important;
-    }
-
-    aside .project-info details {
-        display: block!important;
-    }
-
-    aside .project-info details + li,
-    aside .project-info details + li + li,
-    aside .project-info details + li + li + li,
-    aside .project-info details + li + li + li + li {
-        display: none!important;
+        font-size: 1.14rem ;
     }
 
     #mixed2 .hero-header img:first-of-type {
@@ -1115,17 +1119,13 @@
     }
 
     #darkblue + #main .cms h2 ~ p img + img {
-        position: relative!important;
-        right: 0!important;
+        position: relative;
+        right: 0;
         margin-top: 2em;
     }
 
     .hero:before {
         background-repeat: repeat-x;
-    }
-
-    .cms {
-        width: unset!important;
     }
     
     .related-title {
@@ -1133,27 +1133,27 @@
     }
 
     #mixed.bg-center.cover.hero + #main .cms h2:nth-of-type(4):not(#the-takeaway):after, .bg-center.cover.hero + #main .cms h2:not(#the-takeaway):after {
-        height: 195vh!important;
+        height: 195vh;
     }
 
     #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway, #wild {
-        padding: 0 13vw!important;
+        padding: 0 13vw;
     }
 
     #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway {
-        margin-left: -13vw!important;
+        margin-left: -13vw;
     }
 
     #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility,
     #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility, #why-the-concern-over-accessibility + p, #why-the-concern-over-accessibility + p + p, #why-the-concern-over-accessibility + p + p + ul + p,
     #gathering-insight-identifying-issues--tasks, #project-overview-and-task-breakdown, #why-the-concern-over-accessibility, #why-the-concern-over-accessibility + p, #why-the-concern-over-accessibility + p + h3, #why-the-concern-over-accessibility + p + h3 + ul + h3 {
-        padding-left: 0!important;
-        padding-right: 0!important;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     #gathering-insight-identifying-issues--tasks + ul, #gathering-insight-identifying-issues--tasks + p + ul, #project-overview-and-task-breakdown + ul, #why-the-concern-over-accessibility + p + h3 + ul, #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul {
-        padding-left: 2rem !important;
-        padding-right: 0!important;
+        padding-left: 2rem ;
+        padding-right: 0;
     }
 
     #wild p:after,
@@ -1163,7 +1163,7 @@
 
     #wild {
         width: 106vw;
-        margin-left: -1.25rem!important;
+        margin-left: -1.25rem;
         padding: 0 14vw;
         padding-right: 33vw;
         margin-top: -1px;
@@ -1172,37 +1172,33 @@
     }
 
     p img + em {
-        width: 100%!important;
+        width: 100%;
     }
 
     #mixed + #main #gathering-insight-identifying-issues--tasks, #mixed + #main #gathering-insight-identifying-issues--tasks + ul, #mixed + #main #gathering-insight-identifying-issues--tasks + p + ul, #mixed + #main #project-overview-and-task-breakdown, #mixed + #main #project-overview-and-task-breakdown + ul, #mixed + #main #why-the-concern-over-accessibility, #mixed + #main #why-the-concern-over-accessibility + p, #mixed + #main #why-the-concern-over-accessibility + p + h3, #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul, #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul + h3, #mixed + #main #why-the-concern-over-accessibility + p + h3 + ul + h3 + ul, #mixed2 + #main #project-overview-and-task-breakdown, #mixed2 + #main #project-overview-and-task-breakdown + ul, #mixed + #main #rethinking-the-layout-through-wireframes + p + p, #mixed + #main #wireframe-iterations + p, #mixed2 + #main #rethinking-the-layout-through-wireframes + p + p, #mixed2 + #main #wireframe-iterations + p {
-        background-color: unset!important;
+        background-color: unset;
     }
 
     #wild {
-        padding: 3em 13vw!important;
+        padding: 3em 13vw;
     }
 
      #wild:before {
-        margin-left: -20vw !important;
-        margin-top: -8.35em !important;
+        margin-left: -20vw ;
+        margin-top: -8.35em ;
     }
 
      #wild:after {
-        margin-left: -20vw !important;
-        margin-top: calc(3.5em - 10px) !important;
+        margin-left: -20vw ;
+        margin-top: calc(3.5em - 10px) ;
     }
 
     #wild {
-        margin-left: -2rem !important;
+        margin-left: -2rem ;
     }
 
      #wild h2, #wild p {
-        transform: rotate(-9deg)!important;
-    }
-
-    .cms {
-        width: unset !important;
+        transform: rotate(-9deg);
     }
 
     h1 {
@@ -1230,15 +1226,15 @@
     }
 
     #rethinking-the-layout-through-wireframes + p + p, #wireframe-iterations + p {
-        left: calc(10.5vw - 8.3rem)!important;
+        left: calc(10.5vw - 8.3rem);
         overflow-x: scroll;
     }
 
     #darkblue + #main .cms h2 ~ p img + img {
-        position: relative!important;
-        right: -50vw!important;
-        margin-top: -50vw!important;
-        width: 14em!important;
+        position: relative;
+        right: -50vw;
+        margin-top: -50vw;
+        width: 14em;
     }
 
     #darkblue .hero-header img:first-of-type,
@@ -1253,10 +1249,10 @@
     }
 
     #image-group + p img:nth-of-type(2) {
-        box-shadow: 0px 0px 0px .5em #fff!important;
-        right: -5em!important;
+        box-shadow: 0px 0px 0px .5em #fff;
+        right: -5em;
         width: 400px;
-        margin-top: 12em!important;
+        margin-top: 12em;
     }
 
     #image-group + p img:nth-of-type(3) {
@@ -1264,11 +1260,11 @@
     }
 
     footer {
-        padding: 0 5vw !important;
+        padding: 0 5vw ;
     }
 
     #the-takeaway {
-        margin-top: calc(3rem + 150px)!important;
+        margin-top: calc(3rem + 150px);
     }
 
     #the-takeaway + p {
@@ -1276,12 +1272,12 @@
     }
 
     #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway {
-        margin-left: -8vw!important;
-        padding-top: 2em!important;
+        margin-left: -8vw;
+        padding-top: 2em;
     }
 
     #the-takeaway + ul + p img {
-        max-width: 100vw!important;
+        max-width: 100vw;
         margin-top: 2em;
         margin-bottom: 2em;
         margin-left: -2em;
@@ -1292,7 +1288,7 @@
     }
 
     #pink + #main section:not(#wild) {
-        padding-top: 620px!important;
+        padding-top: 620px;
     }
 
     #mixed2 .hero-header img:first-of-type {
@@ -1301,35 +1297,24 @@
         width: 101vh;
     }
 
-    aside .project-info details {
-        display: block!important;
-    }
-
-    aside .project-info details + li,
-    aside .project-info details + li + li,
-    aside .project-info details + li + li + li,
-    aside .project-info details + li + li + li + li {
-        display: none!important;
-    }
-
     #main .cms ul li {
-         display: flex!important;
+         display: flex;
          position: relative;
     }
 
     #main .cms #layout-was-changed-from-tables-and-unaccessible-code-to-html5 + ul li:nth-of-type(2) {
-        display: unset!important;
+        display: unset;
     }
 
     #hunger-for-professional-betterment + ul li:first-of-type {
-        display: block!important;
+        display: block;
         padding: 2em 0;
-       padding-left: 170px!important;
-       position: relative!important;
+       padding-left: 170px;
+       position: relative;
    }
    #hunger-for-professional-betterment + ul li:first-of-type img {
         float: left;
-        position: absolute!important;
+        position: absolute;
         left: -1em;
         top: 1em;
     }
@@ -1349,26 +1334,26 @@
         min-height: 739px;
     }
     .hero-header {
-        padding-left: 0!important;
+        padding-left: 0;
     }
     #pink .hero-header {
         padding-left: 560px;
         margin-top: 0;
     }
     .desktop-logo {
-        display: none!important;
+        display: none;
     }  
     .mobile-logo {
-        display: inline-block!important;
+        display: inline-block;
         padding-left: 0;
         width: 122px
     } 
     .icon-logo {
-        display: none!important;
+        display: none;
     } 
 
     #main {
-        padding: 0 5vw!important;
+        padding: 0 5vw;
         margin: auto;
     }
     #main > section {
@@ -1376,18 +1361,18 @@
     }
 
     .project-info {
-        margin-top: -47px!important;
+        margin-top: -47px;
     }
     #mixed2 + #main .project-info, #mixed + #main .project-info {
-        margin-top: -43px!important;
+        margin-top: -43px;
     }
     p, ul, ul b {
-        font-size: 1.15rem !important;
-        line-height: 1.4em !important;
+        font-size: 1.15rem ;
+        line-height: 1.4em ;
     }
     #darkgreen .hero-header img:first-of-type {
-        margin-top: 70vw !important; 
-        margin-left: 0!important;
+        margin-top: 70vw ; 
+        margin-left: 0;
         max-width: 20vw;
     }
     #darkblue2 .hero-header img:first-of-type {
@@ -1395,20 +1380,6 @@
         left: 25vw;
         height: 45vw;
     }
-
-   p + blockquote,
-   #the-takeaway + ul + blockquote {
-        margin: 0!important;
-        margin-top: 13rem!important;
-        margin-bottom: 0rem!important;
-    } 
-
-    blockquote + blockquote,
-    ul + blockquote {
-        margin: 0!important;
-        margin-top: 7.5rem!important;
-        margin-bottom: 7.55rem!important;
-    } 
 
     #pink img:first-of-type {
         -webkit-transform: unset;
@@ -1419,6 +1390,45 @@
         margin-left: unset;
     }
 }
+
+
+@media (max-width: 799px) { /* aside is hidden, drop down details visible */
+
+    .cms {
+        width: unset ;
+    }
+
+    aside .project-info details {
+        display: block;
+    }
+
+    aside .project-info details + li,
+    aside .project-info details + li + li,
+    aside .project-info details + li + li + li,
+    aside .project-info details + li + li + li + li {
+        display: none;
+    }
+
+    aside {
+        margin-bottom: 0;
+    }
+
+    aside .project-info details {
+        display: block;
+    }
+
+    aside .project-info details + li,
+    aside .project-info details + li + li,
+    aside .project-info details + li + li + li,
+    aside .project-info details + li + li + li + li {
+        display: none;
+    }
+}
+
+
+/* width: calc(78.5vw - 233px); */
+
+
   
 /* @media (--breakpoint-medium) {
     body {
@@ -1430,18 +1440,18 @@
     }
 
     #image-group + p img:nth-of-type(2) {
-        right: -12em !important;
+        right: -12em ;
         width: 360px;
-        margin-top: 4em !important;
+        margin-top: 4em ;
     }
 
     #the-takeaway:after, #the-takeaway + p:after, #the-takeaway + ul + p:after, #the-takeaway + ul:after {
-        margin-left: -14vw !important;
+        margin-left: -14vw ;
     }
 
     #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway {
-        margin-left: -6vw !important;
-        padding-top: 2em !important;
+        margin-left: -6vw ;
+        padding-top: 2em ;
     }
 
     aside {
@@ -1449,17 +1459,17 @@
     }
 
     aside li {
-        font-size: 1em!important;
+        font-size: 1em;
     }
 
     .cms {
         padding-left: 1.75rem;
         width: 65vw;
-        margin: 0!important;
+        margin: 0;
     }
 
     #pink + #main section:not(#wild) {
-        padding-top: 600px!important;
+        padding-top: 600px;
     }
 
     #navbar {
@@ -1473,18 +1483,18 @@
     }
 
     aside .project-info details {
-        display: none!important;
+        display: none;
     }
 
     aside .project-info details + li,
     aside .project-info details + li + li,
     aside .project-info details + li + li + li,
     aside .project-info details + li + li + li + li {
-        display: block!important;
+        display: block;
     }
 
     #hunger-for-professional-betterment + ul li:first-of-type {
-        display: block!important;
+        display: block;
         padding: 1em 0;
         padding-left: 170px;
     }
@@ -1494,11 +1504,11 @@
     }
     #rethinking-the-layout-through-wireframes + p + p img,
     #wireframe-iterations + p img {
-        max-width: unset!important;
-        padding-left: 1vw!important;
+        max-width: unset;
+        padding-left: 1vw;
         height: 95%;
-        width: unset!important;
-        overflow: scroll!important;
+        width: unset;
+        overflow: scroll;
         position: absolute;
     }
 
@@ -1511,7 +1521,7 @@
         margin-top: 0;
     }
     #darkgreen .hero-header {
-        padding-left: 0 !important;
+        padding-left: 0 ;
         margin: auto;
     }
     .hero:before {
@@ -1520,20 +1530,20 @@
     }
 
     .desktop-logo {
-        display: unset!important;
+        display: unset;
 
     }
     .mobile-logo {
-        display: none!important;
+        display: none;
         width: 190px;
     }
     #main {
-        padding: 0 5vw!important;
+        padding: 0 5vw;
         margin: auto;
     }
     .project-info {
         padding-right: 0;
-        margin-top: unset!important;
+        margin-top: unset;
     }
 
     #main > section {
@@ -1551,7 +1561,7 @@
     }
 
     #main > section:not(#wild) {
-        display: inline-flex!important;
+        display: inline-flex;
     }
 
     .cms {
@@ -1578,7 +1588,7 @@
         margin-top: 50vw;
     }
     #darkgreen .hero-header img:first-of-type {
-        margin-top: 55vw !important;
+        margin-top: 55vw ;
     }
     #pink + #main .cms h2:first-of-type, #pink + #main aside {
         margin-top: 10rem;
@@ -1591,7 +1601,7 @@
         padding-right: 0;
     }
     #main {
-        padding: 0 5vw!important;
+        padding: 0 5vw;
         margin: auto;
     }
 } */
@@ -1599,11 +1609,11 @@
 /* @media screen and (min-width: 80em) {
 
     #rethinking-the-layout-through-wireframes + p + p, #wireframe-iterations + p {
-        left: calc(2.5vw - 8rem) !important;
+        left: calc(2.5vw - 8rem) ;
     }
 
     #darkblue + #main .cms h2 ~ p img + img {
-        width: 22em!important;
+        width: 22em;
     }
 
     #darkblue .hero-header img:first-of-type {
@@ -1613,9 +1623,9 @@
     #darkblue2 .hero-header img:first-of-type,
     #darkblue2 .hero-header img:first-of-type {
         display: unset;
-        left: 17vw!important;
-        height: 50vw!important;
-        margin-top: 25vw !important;
+        left: 17vw;
+        height: 50vw;
+        margin-top: 25vw ;
     }
 
     #darkblue .hero-header img:last-of-type, #darkblue2 .hero-header img:last-of-type,
@@ -1625,7 +1635,7 @@
     }
 
     #multi + #main #the-takeaway {
-        margin-top: calc(7rem + 150px) !important;
+        margin-top: calc(7rem + 150px) ;
     }
 
     #project-overview-and-task-breakdown {
@@ -1633,9 +1643,9 @@
     }
 
     #image-group + p img:nth-of-type(2) {
-        right: -5em !important;
+        right: -5em ;
         width: 500px;
-        margin-top: 8em !important;
+        margin-top: 8em ;
     }
 
     #navbar {
@@ -1643,7 +1653,7 @@
     }
 
     #pink + #main section:not(#wild) {
-        padding-top: 450px!important;
+        padding-top: 450px;
     }
 
     #mixed2 .hero-header img:first-of-type {
@@ -1654,7 +1664,7 @@
 
     #darkblue2 .hero-header img:first-of-type,
     #darkgreen .hero-header img:first-of-type {
-        margin-top: 21vw!important;
+        margin-top: 21vw;
     }
     #main {
         padding: 0 6vw;
@@ -1668,21 +1678,21 @@
 /* @media screen and (min-width: 100em) {
 
     #rethinking-the-layout-through-wireframes + p + p, #wireframe-iterations + p {
-        left: calc(-4.5vw - 8rem) !important;
+        left: calc(-4.5vw - 8rem) ;
         padding-left: 6vw;
     }
 
     #darkblue2 .hero-header img:first-of-type, #darkblue2 .hero-header img:first-of-type {
-        left: 13em !important;
-        height: 40vw !important;
+        left: 13em ;
+        height: 40vw ;
     }
 
     #the-takeaway + ul + p img {
-        max-width: 76vw !important;
+        max-width: 76vw ;
     }
 
     #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway {
-        margin-left: -12vw !important;
+        margin-left: -12vw ;
     }
 
     #mixed2 .hero-header img:first-of-type {
@@ -1692,7 +1702,7 @@
     }
 
     .hero .hero-header {
-        max-width: 75em!important;
+        max-width: 75em;
         margin: auto;
     }
     #navbar {
@@ -1701,7 +1711,7 @@
     }
     #main {
         min-width: 38em;
-        max-width: 92.5em!important;
+        max-width: 92.5em;
         margin: auto;
     }
 } */
@@ -1709,22 +1719,22 @@
 /* @media screen and (min-width: 115em) {
 
     #rethinking-the-layout-through-wireframes + p + p, #wireframe-iterations + p {
-        max-width: 87em!important;
-        left: unset!important;
-        padding-left: unset!important
+        max-width: 87em;
+        left: unset;
+        padding-left: unset
     }
 
     #rethinking-the-layout-through-wireframes + p + p img, #wireframe-iterations + p img,
     #mixed2.hero + #main #wireframe-iterations + p img {
-        padding-left: unset!important
+        padding-left: unset
     }
 
     #the-takeaway + ul + p img {
-        max-width: 72vw !important;
+        max-width: 72vw ;
     }
 
     #the-takeaway + p, #the-takeaway + ul, #the-takeaway + ul + p, #the-takeaway {
-        margin-left: -13vw !important;
+        margin-left: -13vw ;
     }
 
     #navbar {
@@ -1738,7 +1748,7 @@
     }
 
     .desktop-logo {
-        display: unset!important;        
+        display: unset;        
     }
     #main {        
         margin: auto;
@@ -1747,7 +1757,7 @@
 
 .desktop-logo {
     display: unset;
-    padding-left: 0!important;
+    padding-left: 0;
 }  
 .mobile-logo {
     display: none

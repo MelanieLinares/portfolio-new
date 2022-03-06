@@ -2,6 +2,7 @@
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "imageUrl2" .Params.image2 "backgroundcolor" .Params.backgroundcolor "title" .Params.titlebold "subtitle" .Params.titlenormal "text" .Params.notice ) }}
 
+
   <div id="main" class=" center ph3 pv4">
     <!-- <div class="hero"></div> -->
     <section class="flex-ns" style="position: relative; flex-direction: row-reverse">
@@ -49,7 +50,7 @@
       <li>
         <b>CLIENT</b> {{ .Params.client }}
       </li>
-      <details style="display: none">
+      <details>
       <summary>Project Details</summary>
       <li>
         <b>ROLE</b> {{ .Params.role }}
