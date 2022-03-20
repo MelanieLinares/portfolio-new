@@ -25,6 +25,11 @@ client: NC Department of Transportation / Department of Motor Vehicles
 notice: For legal reasons some images are representational only or blurred
 
 ---
+
+<section class="content">
+
+<div class="first">
+
 ## Transforming a complex process into a powerful digital workflow impacting thousands
 Imagine a stack of physical applications, encompassing a year’s worth of unentered data for several hundred NC citizens, all waiting to be approved for a small device that would allow them to drive and continue life normally after a DUI. Now imagine that paperwork backlog is six years worth of pending applications.
 
@@ -39,7 +44,13 @@ A new internal portal was needed so NCDMV employees could access and process par
 **The goal BLAHHH accessibility within a 3rd-party (SharePoint 2016) can be tricky, but 
 we needed to reach > 90  
 
-[Skip to the results](post/ncdot-voma/#comparing-the-results)
+[Skip to the results](post/ncdot-voma/#the-takeaway)
+
+<div>
+
+</section>
+
+<section>
      
 ## Understanding the underlying system
 This project required the knowledge of multiple terms, the process in which an application is already processed and reviewed, currently enacted laws, and the ability to communicate ideas to both functional and cross-functional teams.
@@ -63,6 +74,10 @@ In some cases this new portal would be needed to monitor successful use of the d
 
 In other instances a participant might miss a court date. The device could be detecting misuse or malfunction. A participant could file a complaint on a vendor or request an exception be made due to medical reasons. Each of these use cases would need to be reflected in the internal IIMS portal and the data available only to those with approval.
 
+</section>
+
+<section>
+
 ## Project overview and task breakdown 
 
 - BBLLLAAAHHHH Design needs to maintain IE6+ (and later IE8+) browser compatibility
@@ -75,6 +90,10 @@ In other instances a participant might miss a court date. The device could be de
 - Work with Marketing and Sales managers to identify business needs for the new homepage 
 
 > BLAHHHIt may not seem like a problem to have a lot of products, but if they are not organized efficiently and the navigation not clear then all those products can start being too many. A good e-commerce website creates an easy purchasing experience.
+
+</section>
+
+<section>
 
 ## Exploring the different users and user flows       
 ![this is the alt text](/img/voma-sketch2.png "Title is optional")
@@ -97,6 +116,10 @@ By identifying persona needs the information was given proper hierarchy within t
 
 Documentation was important for ensuring teams were up-to-date on design, API, and interactive decisions. 
 
+</section>
+
+<section>
+
 ## Wireframe Iterations
 
 ![this is the alt text](/img/voma-wireframe.png "Title is optional")
@@ -104,6 +127,10 @@ Documentation was important for ensuring teams were up-to-date on design, API, a
 BLLAAHHH In some cases this new portal would be needed to monitor successful use of the device. The portal would also identify and alert necessary parties of court dates and eventual approved removal of the devices.
 
 BLLAAHHH In other instances a participant might miss a court date. The device could be detecting misuse or malfunction. A participant could file a complaint on a vendor or request an exception be made due to medical reasons. Each of these use cases would need to be reflected in the internal IIMS portal and the data available only to those with approval.
+
+</section>
+
+<section>
 
 ## Development considerations & challenges
 
@@ -115,6 +142,10 @@ BLLAAHHH In other instances a participant might miss a court date. The device co
 - Complete A/B testing for layout to determine on a 3 or 2 column layout
 - Bring photography to the branding forefront
 - Work with Marketing and Sales managers to identify business needs for the new homepage 
+
+</section>
+
+<section class="takeaway fullwidth white">
 
 ## The takeaway:  
 - BBLLAAHH Nurturing a site from IE6 to IE9+ has not been easy, but allowing gradual 
@@ -134,3 +165,5 @@ usability changes was beneficial for the company and older user-base
 
 > Melanie, thanks for all your hard work at the DOT and for continuing to educate us on usability!  
 *- Austin Johnson, Insight Team Lead while on NCDOT contract*
+
+</section>

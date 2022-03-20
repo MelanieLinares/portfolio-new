@@ -22,6 +22,10 @@ team: Web Development
 
 ---
 
+<section class="content">
+
+<div class="first">
+
 ## Creating a plan to decrease mobile bounce-rate
 Stay Online is a power cord manufacturer and distributer, known for having the largest U.S. in-stock inventory of power cords and adapters. The legacy e-commerce website, built in 1997, had not updated its user experience. Mobile users were not considered in marketing and design decisions.  This contributed to a large amount of site bounce-rate. There was a potential to capture these users by making the web experience accessible to them. Responsive design was not an easy sell to management. Data-driven design through analytics was needed to get the pitch approved.
 
@@ -33,8 +37,11 @@ Stay Online is a power cord manufacturer and distributer, known for having the l
 
 *(note:  mobile was defined as less than 1024px screen size during the design sprint)*
 
-[Skip to the results](post/stayonline-us/#comparing-the-results)
-       
+[Skip to the results](post/stayonline-us/#the-takeaway)
+
+</div>
+
+<div class="div2">       
 
 ## Gathering insight, identifying issues & tasks 
 
@@ -52,9 +59,17 @@ Stay Online is a power cord manufacturer and distributer, known for having the l
 - Bring photography to the branding forefront
 - Work with Marketing and Sales managers to identify business needs for new homepage 
 
+</div>
+
+
 > Stay Online's problem was that a large amount of customers were unable to order 
 products on mobile devices. Responsive design presented an 
 exciting opportunity.
+
+
+</section>
+
+<section>
 
 ## Tables for layout? That’s so 2002
 Stay Online's client-base still had a strong percentage of IE6 use (even back in 2012). Cross-browser compatibility was at the forefront of early planning. There was a large development backlog so the team planned an Agile release. The Sales team did not want any ordering downtime. Marketing did not want a drastic overnight aesthetic change. 
@@ -77,6 +92,10 @@ Stay Online's client-base still had a strong percentage of IE6 use (even back in
 ![this is the alt text](/img/stayonline-us-tabing.gif "Title is optional")
 *When using a keyboard to navigate a page, it is important that focus is not lost on a hidden element.*
 
+</section>
+
+<section>
+
 ## Rethinking the layout through wireframes 
 Making a site responsive is not a matter of making elements fit, but providing an equal experience for users regardless of screen size. When conducting competitor research certain layouts stood out as standard practices involving the navigation and homepage.
 
@@ -98,6 +117,10 @@ the website was less than ideal.
 ### Client Approval:  
 Work began on the product after an initial conversations with the lead developer. Data was gathered from Google Analytics thanks to close work with the Marketing director. A presentation of the benefits of a redesign was given to the CEO.
 
+</section>
+
+<section>
+
 ## Content-first & data-driven strategy
 A/B testing was required when changing the content on the homepage. 
 There was initial pushback on content because the team was used to 
@@ -116,6 +139,10 @@ approving feature requests without user testing.
 
 ![this is the alt text](/img/stayonline-us-responsive.jpg "Title is optional")
 
+</section>
+
+<section>
+
 ## Accessibility  
 Accessibility baselines were established using Lighthouse and Axe DevTools. Manual testing was completed.
 
@@ -133,7 +160,10 @@ The original website color palette included blue as the only official brand colo
 I worked with the marketing team to pair down these colors to blue, yellow, and gray. There are very specific accessibility rules on when and how to use them  
 
 ![this is the alt text](/img/stayonline-us-branding.jpg "Title is optional")
-  
+
+</section>
+
+<section>  
 
 ## Comparing the results
 
@@ -146,6 +176,10 @@ Previously ~85% mobile users left before making a purchase. The goal was to decr
 ### Development upkeep:   
 Decreased the amount of bugs logged for scrollbars or hidden (off-screen) content.
 The site has ~25% code reduction.
+
+</section>
+
+<section class="takeaway fullwidth white">
 
 ## The takeaway 
 
@@ -163,3 +197,5 @@ usability changes was beneficial for the company and older user-base
 
 > Melanie has a great understanding of CSS, graphics and web design, responsive layout and CSS compilers. **Our web sites are much better as a result of her work**.  
 *- Brian Futrell, Stay Online Web Developer*
+
+</section>

@@ -1,13 +1,4 @@
-.hero {
-    /* clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%); */
-    padding: 6vw;
-    padding-top: calc(100px + var(--spacing-extra-large));
-    position: relative;
-    /* margin-bottom: 13.25vw; */
-    /* background-attachment: fixed; */
-    display: flex;
-    padding-bottom: calc(100px + var(--spacing-extra-large));
-}
+
 
 @keyframes gradient {
 	0% {
@@ -263,12 +254,12 @@ content: "" !important;
 }
 
 #multi .hero-header h1 b, #pink .hero-header h1 b, #darkgreen .hero-header h1 b, #darkblue .hero-header h1 b, #darkblue2 .hero-header h1 b, #mixed .hero-header h1 b, #mixed2 .hero-header h1 b {
-    color: white;
-    /* font-size: 45px */
+    color: #48377d;
+    font-size: 42px
 }
 
 #multi .hero-header h1, #pink .hero-header h1, #darkgreen .hero-header h1, #darkblue .hero-header h1, #darkblue2 .hero-header h1, #mixed .hero-header h1, #mixed2 .hero-header h1 {
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: #48377d;
     margin-bottom: 75px
 }
 
@@ -276,11 +267,10 @@ content: "" !important;
     font-size: 14px;
     position: relative;
     padding-left: 25px;
-    color: white
 }
 
 .notice:before {
-    content: "*";
+    content: "*" / "";
     font-size: 3rem;
     position: absolute;
     left: 0;

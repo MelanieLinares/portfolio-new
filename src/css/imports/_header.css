@@ -8,12 +8,13 @@ h1:before {
 }
 
 .hero-header {
-    max-width: 725px;
+    max-width: 1400px;
+    margin: 0 auto;
     -webkit-transform: rotate(-6deg);
     padding: .5em;
     z-index: 2;
     position: relative;
-    padding-left: 400px;
+    /* padding-left: 400px; */
 }
 
 .hero-header img:last-of-type {
@@ -62,7 +63,7 @@ h1:before {
 .btn:hover,
 .btn:focus {
     background-position:right bottom;
-    color: white;
+    color: green;
     border-color:#E71708;
     box-shadow: inset 0 0 0 2px #cc0808;
 }
@@ -86,10 +87,10 @@ h1:before {
     box-shadow: 0 4px 6px rgba(0, 0, 0, .3);      
 }
 
-nav img,
+/* nav img,
 nav ul {
     filter: brightness(10);
-}
+} */
 
 #navbar {
     position: fixed;
@@ -97,16 +98,15 @@ nav ul {
     transition: all 0.3s;
     top: 0;  
     border-top: 7px solid #3c4bd2;
-    width: calc(100% - (100% - 75em));
-
+    width: calc(100% - 12vw);
+    left: 0;
     padding: 0 6vw;
     height: 64px;
 }
 
 #navbar ul {
-    color: #3c4bd2;
     align-items: center;
-  justify-content: center;
+  justify-content: right;
 }
 
 #navbar ul li {
@@ -122,6 +122,7 @@ nav ul {
     padding: 1.5em 1em;
     padding-bottom: 1em;
     display: unset;
+    color: #48377d;
 }
 
 #navbar ul a:hover {

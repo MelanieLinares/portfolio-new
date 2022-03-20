@@ -26,6 +26,10 @@ client: Stay Online LLC.
 
 ---
 
+<section class="content">
+
+<div class="first">
+
 ## Creating a plan to help users find a product quickly
 In 2015 Stay Online made the transition from a US business to an international one. The 
 company opened a shipping and manufacturing location in the Czech Republic. This 
@@ -37,8 +41,11 @@ new manufacturing location would need to take orders for the existing product li
 ### The goal:
 🏁 users (internal and external) find products more efficiently
 
-[Skip to the results](post/stayonline-eu/#the-final-result)
-       
+[Skip to the results](post/stayonline-eu/#the-takeaway)
+
+</div>
+
+<div class="div2">       
 
 ## Project overview and task breakdown 
 
@@ -51,7 +58,14 @@ new manufacturing location would need to take orders for the existing product li
 - Bring photography to the branding forefront
 - Work with Marketing and Sales managers to identify business needs for the new homepage 
 
+</div>
+
+
 > It may not seem like a problem to have a lot of products, but if not organized efficiently and the navigation not clear then getting sales from those products can start being ineffective. A good e-commerce website creates an easy purchasing experience.
+
+</section>
+
+<section>
 
 ## Team exploration and planning for a MVP release
 Stay Online brought me onto the EU launch team due to my familiarity with the U.S. website and my experience with responsive development. I co-led a discovery session to explore eCommerce requirements, limitations, and internationalization 
@@ -77,6 +91,9 @@ Stay Online needed an EU location for shipping but you might ask, *why did they 
 - Time would be a large design and development hindrance
 - Waterfall release method
 
+</section>
+
+<section>
 
 ## Internationalization and globalization was at the heart of market research 
 - international sales interns, Outside Sales team members, and the Marketing team were interviewed      
@@ -85,6 +102,10 @@ Stay Online needed an EU location for shipping but you might ask, *why did they 
 - Focus on bold colors, image-focused design, EU-specific regulation requirements
 - Unicode considerations
 - Coding requirements to allow easier auto translation of content 
+
+</section>
+
+<section>
 
 ## A new market means new users and expectations
 
@@ -117,7 +138,11 @@ Stay Online needed an EU location for shipping but you might ask, *why did they 
 ![this is the alt text](/img/stayonline-eu-design-abtest.jpg "Title is optional")
 *A/B testing was done on having sidebar navigation vs a mega menu navigation. Testers prefered the sidebar navigation.* 
 
-## The takeaway
+</section>
+
+<section class="takeaway fullwidth white">
+
+## The takeaway:
 
 - 👍 The website saw improved search efficiency over the A/B testing and launch period through the use of categories
 - 👍 Optimized keywords increased efficiency in finding products via search
@@ -133,3 +158,5 @@ Stay Online needed an EU location for shipping but you might ask, *why did they 
 
 > Melanie has a great understanding of CSS, graphics and web design, responsive layout and CSS compilers. **Our web sites are much better as a result of her work**.  
 *- Brian Futrell, Stay Online Web Developer*
+
+</section>
