@@ -45,11 +45,6 @@ Stay Online is a power cord manufacturer and distributer, known for having the l
 
 ## Gathering insight, identifying issues & tasks 
 
-![this is the alt text](/img/sticky-notes.jpg "Title is optional")
-*exploration*
-![this is the alt text](/img/sticky-notes1.jpg "Title is optional")
-*organizing tasks*
-
 - Design needs to maintain IE6+ (and later IE8+) browser compatibility
 - Data-heavy pages need balance showing necessary data and providing an ideal mobile experience
 - Users include customers, but also warehouse workers and sales employees at tradeshows
@@ -179,7 +174,7 @@ The site has ~25% code reduction.
 
 </section>
 
-<section class="takeaway fullwidth white">
+<section class="takeaway fullwidth">
 
 ## The takeaway 
 
@@ -192,10 +187,11 @@ usability changes was beneficial for the company and older user-base
 
 - Regrettably, company changes resulted in the redesign never becoming responsive for devices smaller than 768px.
 
+</section>
+
 > Melanie distinguished herself by **consistently deliverying quality solutions, on schedule**. [...] She always went the extra mile to ensure the quality of her work was at the highest level.  
 *- Gordon Harris, Stay Online Director, Marketing and Communications*
 
 > Melanie has a great understanding of CSS, graphics and web design, responsive layout and CSS compilers. **Our web sites are much better as a result of her work**.  
 *- Brian Futrell, Stay Online Web Developer*
 
-</section>

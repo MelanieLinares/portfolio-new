@@ -8,7 +8,6 @@ newdate: 2020-12-29T20:11:54.193Z
 duration: 1 year 3 months
 logo: /img/logos/ncdot-logo.gif
 image: /img/Group 537.png
-image2: img/IconGroup.png
 image1: img/about-shade-grown.jpg
 preview: /img/iims-preview.png
 technology:
@@ -145,7 +144,7 @@ BLLAAHHH In other instances a participant might miss a court date. The device co
 
 </section>
 
-<section class="takeaway fullwidth white">
+<section class="takeaway fullwidth">
 
 ## The takeaway:  
 - BBLLAAHH Nurturing a site from IE6 to IE9+ has not been easy, but allowing gradual 
@@ -157,6 +156,8 @@ usability changes was beneficial for the company and older user-base
 
 - Regrettably, company changes resulted in the redesign never becoming responsive for devices smaller than 768px.
 
+</section>
+
 ![this is the alt text](/img/voma-cupcake.jpg "Title is optional")
 *BLLLAHH celebration cupcake*
 
@@ -166,4 +167,3 @@ usability changes was beneficial for the company and older user-base
 > Melanie, thanks for all your hard work at the DOT and for continuing to educate us on usability!  
 *- Austin Johnson, Insight Team Lead while on NCDOT contract*
 
-</section>

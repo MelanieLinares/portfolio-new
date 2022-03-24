@@ -48,7 +48,7 @@ requirements, as well as last minute changes.
 
 </section>
 
-<section class="takeaway fullwidth white">
+<section class="takeaway fullwidth">
 
 ## The takeaway:  
 While a short project, this was my first introduction to React and SharePoint Workbench. 

@@ -65,7 +65,13 @@ new manufacturing location would need to take orders for the existing product li
 
 </section>
 
-<section>
+<section class="fullwidth purple">
+
+<div role="presentation" class="fullwidth img" style="background-image: url(/img/stayonline-eu.jpg)">
+
+</div>
+
+<div>
 
 ## Team exploration and planning for a MVP release
 Stay Online brought me onto the EU launch team due to my familiarity with the U.S. website and my experience with responsive development. I co-led a discovery session to explore eCommerce requirements, limitations, and internationalization 
@@ -90,6 +96,8 @@ Stay Online needed an EU location for shipping but you might ask, *why did they 
 - Focus on minimal viable product (MVP) for the first release 
 - Time would be a large design and development hindrance
 - Waterfall release method
+
+</div>
 
 </section>
 
@@ -140,7 +148,7 @@ Stay Online needed an EU location for shipping but you might ask, *why did they 
 
 </section>
 
-<section class="takeaway fullwidth white">
+<section class="takeaway fullwidth">
 
 ## The takeaway:
 
@@ -149,6 +157,8 @@ Stay Online needed an EU location for shipping but you might ask, *why did they 
 - 👌 Category changes were implemented without negatively affecting the U.S. database (the plan was to merge category changes over to the U.S site)
 - Internationalization is not just translation and takes time and effort from many cross-functional teams  
 - The site was released on a very short timeline. I learned a lot from leading this project, both about global standards but also how to properly manage multiple teams.
+
+</section>
 
 ![this is the alt text](/img/eu-responsive.gif "Title is optional")
 
@@ -159,4 +169,3 @@ Stay Online needed an EU location for shipping but you might ask, *why did they 
 > Melanie has a great understanding of CSS, graphics and web design, responsive layout and CSS compilers. **Our web sites are much better as a result of her work**.  
 *- Brian Futrell, Stay Online Web Developer*
 
-</section>

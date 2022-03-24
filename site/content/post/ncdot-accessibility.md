@@ -186,13 +186,15 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 </section>
 
 
-<section class="takeaway fullwidth white">
+<section class="takeaway fullwidth">
 
   ## The takeaway: 
   The original goal was to reach >90 via Lighthouse and this was successful. Of course a Lighthouse score does not ensure an accessible application, but was used as a benchmark. The remediation tasks were re-tested manually and through an automatic tool such as Axe DevTools. Previously the website, when read aloud via a screen reader, would stop after navigation or would after the first heading. The team was given a demo of the before and after. Training concluded the remediation to proactively reduce accessibility issues in the future. 
+  
+</section>
+
   > Melanie, contributed a great deal to improving our website's load time, performance, and accessibility. The results were effective and immediate - faster page loads across the board, and forms and interactions were available to everyone regardless of capability.  
   *- Patrick Doran, NCDOT UX and Web Services Manager*
   > Thank you for all your efforts in keeping the web accessible.   
   *- Todd Darling, Insight Team Lead while on NCDOT contract*
 
-</section>

@@ -96,9 +96,47 @@ html, body {
     display: block;
     background-size:cover!important;
     z-index: -1;
+    /* filter: blur(3em); */
+    background-repeat: no-repeat!important;
+    background: url('/img/orange-gradient.png');
+}
+
+.takeaway:after {
+    content: '';
+    height: 300px;
+    width: 100vw;
+    position:absolute;
+    margin-top: 2em;
+    margin-left: -2em;
+    background-color: white;
+    z-index: -1;
+}
+
+/* .content.mini + .takeaway */
+.takeaway {
+    background-color: #48347f;
+    color: white;
+}
+
+/* .content.mini + .takeaway h2  */
+.takeaway h2 {
+    color: white;
+}
+
+.hero-header:before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-size:cover!important;
+    z-index: -1;
     filter: blur(3em);
     background-repeat: no-repeat!important;
     background: url('/img/orange-circles.png');
+    transform: scaleX(-1);
+    top: -80vh;
+    left: -20vh;
+    width: 310vh;
+    height: 130vh;
 }
 
 .hero {
@@ -111,6 +149,7 @@ section {
 
 .takeaway.fullwidth {
     padding: 2em 1.5em 2em 1.5em;
+    margin-bottom: 0;
 }
   
 .fullwidth {
@@ -274,6 +313,12 @@ body {
 
  #related .inner .tile a:first-of-type {
     font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+#related .inner .tile a:first-of-type + p {
+    font-size: 15px;
+    margin: 1em 0;
 }
 
 h2 {
@@ -281,8 +326,12 @@ h2 {
     font-family: 'Poppins', sans-serif;
 }
 
-blockquote:first-of-type {
-    background-color: #DE4F4F;
+.hero .hero-header img {
+    background-color: #483181;
+}
+
+.content blockquote {
+    background-color: #D93A3A;
     color: white;
 }
 
@@ -337,10 +386,15 @@ em {
     font-size: 2.75em;
 }
 
+summary:hover {
+    cursor:pointer
+}
+
 .div2 {
     background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.075);
     border-radius: 1em;
-    padding: 2em 1em 0 1em;
+    padding: 2em 1em 2em 1em;
     box-shadow: 0 1px 1px rgba(0,0,0,0.20), 
     0 2px 2px rgba(0,0,0,0.15), 
     0 4px 4px rgba(0,0,0,0.10), 

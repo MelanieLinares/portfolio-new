@@ -12,6 +12,14 @@ a:focus:not(.btn) {
   transform: unset;
 }
 
+.first a:focus:not(.btn) {
+  padding: .75em;
+  margin: unset;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  transform: unset;
+}
+
 .article-roll a:focus {
   margin-bottom: 3px
 }
