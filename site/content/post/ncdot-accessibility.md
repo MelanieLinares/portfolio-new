@@ -32,7 +32,9 @@ weight: 1
 notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 ---
 
-<section class="content">
+<section>
+
+<div class="inner-wrap content">
 
 <div class="first">
 
@@ -62,9 +64,13 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
   > Accessibility is about access, pure and simple. If a government application cannot be used by citizens then never mind the legal repercussions, the design improvements are wasted.
 
+</div>
+
 </section>
 
 <section class="fullwidth purple">
+
+<div class="inner-wrap">
 
 <div role="presentation" class="fullwidth img" style="background-image: url(/img/decorative-desk.jpg)">
 
@@ -95,9 +101,13 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   - cross-browser testing emphasized
 
 </div>
+
+</div>
+
 </section>
 
 <section>
+<div class="inner-wrap">
 
   ## Audit findings and breakdown
   ### Focus on components
@@ -118,9 +128,11 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   ### Keyboard testing and why you should not use CSS to disguise focus:  
   It is important to ensure a keyboard can navigate a page. Content should have proper focus and not disappear off-screen. You may not like the look of a focus ring around a link but it serves a functional purpose.
 
+</div>
 </section>
 
-<section class="content">
+<section style="background-color: #F5F6FC">
+<div class="inner-wrap content">
 <div class="div-1">
 
   ## Major changes and impact
@@ -164,6 +176,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   *TBD caption*
 
 </div>
+</div>
 </section>
 
 <section>
@@ -188,8 +201,12 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
 <section class="takeaway fullwidth">
 
+<div class="inner-wrap">
+
   ## The takeaway: 
   The original goal was to reach >90 via Lighthouse and this was successful. Of course a Lighthouse score does not ensure an accessible application, but was used as a benchmark. The remediation tasks were re-tested manually and through an automatic tool such as Axe DevTools. Previously the website, when read aloud via a screen reader, would stop after navigation or would after the first heading. The team was given a demo of the before and after. Training concluded the remediation to proactively reduce accessibility issues in the future. 
+
+  </div>
   
 </section>
 

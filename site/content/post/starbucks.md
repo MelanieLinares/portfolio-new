@@ -50,12 +50,16 @@ My role was to take the approved design and specs and build out the needed pages
 
 <section class="takeaway fullwidth">
 
+<div class="inner-wrap">
+
 ## The takeaway:  
 Y'all, did you know that React is great for making dynamic components? 😉 Because this project was component-driven! 
 I learned a lot about component hierarchy through this project and it was a deep dive on learning TypeScript. Starbucks 
 has a very knowledgeable team that was a great asset when I needed help. I always love working directly with UX and 
 back-end teammates and this project experience had both. The Starbucks team knew what they needed from this platform 
 and I'm glad our team was able to deliver. ☕✨
+
+</div>
 
 </section>
 

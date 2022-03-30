@@ -26,7 +26,7 @@ client: Stay Online LLC.
 
 ---
 
-<section class="content">
+<section class="inner-wrap content">
 
 <div class="first">
 
@@ -150,6 +150,8 @@ Stay Online needed an EU location for shipping but you might ask, *why did they 
 
 <section class="takeaway fullwidth">
 
+<div class="inner-wrap">
+
 ## The takeaway:
 
 - 👍 The website saw improved search efficiency over the A/B testing and launch period through the use of categories
@@ -157,6 +159,8 @@ Stay Online needed an EU location for shipping but you might ask, *why did they 
 - 👌 Category changes were implemented without negatively affecting the U.S. database (the plan was to merge category changes over to the U.S site)
 - Internationalization is not just translation and takes time and effort from many cross-functional teams  
 - The site was released on a very short timeline. I learned a lot from leading this project, both about global standards but also how to properly manage multiple teams.
+
+</div>
 
 </section>
 

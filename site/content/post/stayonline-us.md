@@ -22,7 +22,7 @@ team: Web Development
 
 ---
 
-<section class="content">
+<section class="inner-wrap content">
 
 <div class="first">
 
@@ -176,6 +176,8 @@ The site has ~25% code reduction.
 
 <section class="takeaway fullwidth">
 
+<div class="inner-wrap">
+
 ## The takeaway 
 
 - Nurturing a site from IE6 to IE9+ has not been easy, but allowing gradual 
@@ -186,6 +188,8 @@ usability changes was beneficial for the company and older user-base
 - Mobile purchases, not just usage, since this project has increased dramatically
 
 - Regrettably, company changes resulted in the redesign never becoming responsive for devices smaller than 768px.
+
+</div>
 
 </section>
 

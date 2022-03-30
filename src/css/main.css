@@ -82,7 +82,10 @@
 /* Uncomment out the line below to help debug layout issues */
 /* @import './imports/_debug'; */
 
-html, body {
+
+
+
+html {
     overflow-x:hidden;
 }
 
@@ -96,7 +99,6 @@ html, body {
     display: block;
     background-size:cover!important;
     z-index: -1;
-    /* filter: blur(3em); */
     background-repeat: no-repeat!important;
     background: url('/img/orange-gradient.png');
 }
@@ -112,13 +114,11 @@ html, body {
     z-index: -1;
 }
 
-/* .content.mini + .takeaway */
 .takeaway {
     background-color: #48347f;
     color: white;
 }
 
-/* .content.mini + .takeaway h2  */
 .takeaway h2 {
     color: white;
 }
@@ -143,8 +143,19 @@ html, body {
     margin-top: 6em;
 }
 
-section {
-    margin-bottom: 6em;
+.content.mini {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+section:not(:first-of-type) {
+    padding-top: 7em;
+    padding-bottom: 4em;
+}
+
+section:first-of-type {
+    padding-top: 0;
+    padding-bottom: 4em;
 }
 
 .takeaway.fullwidth {
@@ -154,14 +165,25 @@ section {
   
 .fullwidth {
     padding: 2em 0 4em 0;
-    margin-top: 4em;
+    margin-top: 2em;
+    position: relative;
+    width: calc(100vw - 17px);
 }
 
 .fullwidth.img {
-    margin-top: -2em;
-    height:250px;
+    margin-top: 0;
+    height: 250px;
     background-attachment: fixed;
     margin-bottom: 6em;
+    position: absolute;
+    /* left: calc(((100vw - 1400px) /2) + 1.5em); */
+    left: 0;
+    top: 0;
+    width: 100vw;
+}
+
+.fullwidth.img + div h2 {
+    margin-top: 325px;
 }
 
 .fullwidth.purple {
@@ -214,7 +236,6 @@ h2:after {
     color: black;
 }
 
-/* section:nth-of-type(1) has class .content and does not get a number */
 section:nth-of-type(2) h2:before {
     content: "01" / "";
 }
@@ -307,9 +328,28 @@ section.takeaway h2:before {
 body {
     font-family: 'Atkinson Hyperlegible', sans-serif;
     font-size: 1.15rem;
+}
+
+.inner-wrap {
     padding: 0 1.5em;
     padding-bottom: 1.15em;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
 }
+
+#navbar .inner-nav {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative; 
+}
+
+#navbar .inner-nav ul li:first-of-type{
+    position:absolute;
+    left: 0
+}
+
 
  #related .inner .tile a:first-of-type {
     font-family: 'Poppins', sans-serif;
@@ -336,14 +376,9 @@ h2 {
 }
 
 .project-info {
-    grid-area: 1 / 9 / 2 / 12;
+    grid-area: 1 / 10 / 2 / 13;
 }
 
-.project-info {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
 
 .project-info img {
     height: 38px;
@@ -369,10 +404,6 @@ em {
     font-size: .75em;
     margin-bottom: 1.5em;
     padding-top: .5em;
-}
-
-#main {
-    max-width: 1400px;
 }
 
 .content blockquote:before {
@@ -409,8 +440,6 @@ summary:hover {
 .div2 h2:before {
     margin-left: 0.2em;
 }
-
-/* //css-grid// */
 
 .inner{
     display: grid;

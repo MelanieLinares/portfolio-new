@@ -50,10 +50,14 @@ requirements, as well as last minute changes.
 
 <section class="takeaway fullwidth">
 
+<div class="inner-wrap">
+
 ## The takeaway:  
 While a short project, this was my first introduction to React and SharePoint Workbench. 
 I have used and developed in SharePoint before, but the workbench made everything so much easier. Consider me a fan!
 The LabCorp team was a pleasure to work with when proposing small design changes and in coming to a compromise on 
 specific solutions. This experience jumpstarted my interest and drive to learn more about React so thank you team!  👏
+
+</div>
 
 </section>

@@ -89,9 +89,9 @@ nav ul {
     transition: all 0.3s;
     top: 0;  
     border-top: 7px solid #3c4bd2;
-    width: calc(100% - 12vw);
+    width: 100%;
     left: 0;
-    padding: 0 6vw;
+    /* padding: 0 6vw; */
     height: 64px;
 }
 
@@ -116,7 +116,7 @@ nav ul {
     color: #48377d;
 }
 
-#navbar ul a:hover {
+#navbar ul li:not(:first-of-type) a:hover {
     color: red;
     border-bottom: 2px solid red;
     /* margin-bottom: -1em; */
@@ -127,7 +127,7 @@ nav ul {
     background-color: transparent; */
 }
 
-#navbar ul a:focus {
+#navbar ul li:not(:first-of-type) a:focus {
     color: red;
     border-bottom: 2px solid red;
     /* margin-bottom: -1em; */
@@ -137,4 +137,15 @@ nav ul {
     display: unset;
     border-bottom: 2px solid transparent;
     background-color: transparent;
+}
+
+#navbar ul li:first-of-type a:focus {
+    /* padding: 1.5em 1em;
+    padding-bottom: 1em;
+    padding-top: calc(1em + 2px);
+    display: unset;
+    border-bottom: 2px solid transparent;
+    background-color: transparent; */
+    margin: unset;
+    background-color: unset;
 }

@@ -20,7 +20,7 @@ team: Application Development
 
 ---
 
-<section class="content">
+<section class="inner-wrap content">
 
 <span class="first"></span>
 <div class="div2">
@@ -63,9 +63,13 @@ Insight allowed several opportunities for teammates to share professional knowle
 
 <section class="takeaway fullwidth">
 
+<div class="inner-wrap">
+
 ## The takeaway:  
 I loved working with Insight and especially my close team. 
 I came to Insight with the goal to expand the state of accessibility within the company. I am proud that I 
 helped spark what I hope is long lasting innovation and cultural change. 🤟
+
+</div>
 
 </section>

@@ -25,7 +25,7 @@ notice: For legal reasons some images are representational only or blurred
 
 ---
 
-<section class="content">
+<section class="inner-wrap content">
 
 <div class="first">
 
@@ -146,6 +146,8 @@ BLLAAHHH In other instances a participant might miss a court date. The device co
 
 <section class="takeaway fullwidth">
 
+<div class="inner-wrap">
+
 ## The takeaway:  
 - BBLLAAHH Nurturing a site from IE6 to IE9+ has not been easy, but allowing gradual 
 usability changes was beneficial for the company and older user-base
@@ -155,6 +157,8 @@ usability changes was beneficial for the company and older user-base
 - Mobile purchases, not just usage, since this project has increased dramatically
 
 - Regrettably, company changes resulted in the redesign never becoming responsive for devices smaller than 768px.
+
+</div>
 
 </section>
 
