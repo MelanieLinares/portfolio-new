@@ -57,7 +57,7 @@
     .content .first:after {
         bottom: -6em;
         left: -2em;
-        width: calc(100vw + 1.5em);
+        width: calc(100vw + 2em);
         height: calc(100vh + 36em);
     }
 
@@ -112,6 +112,10 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .first {
+        grid-column-end: 12!important;
+    }
 
     .project-info li {
         display: none
