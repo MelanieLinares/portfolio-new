@@ -85,7 +85,7 @@
 
 
 
-html {
+html, body {
     overflow-x:hidden;
 }
 
@@ -140,7 +140,7 @@ html {
 }
 
 .hero {
-    margin-top: 6em;
+    padding-top: 6em;
 }
 
 .content.mini {

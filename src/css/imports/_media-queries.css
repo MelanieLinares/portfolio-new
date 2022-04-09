@@ -48,11 +48,11 @@
         font-size: 16px
     }
 
-    #navbar ul {
+    /* #navbar ul {
         left: 70px;
         position: absolute;
         width: calc(100vw - 100px);
-    }
+    } */
 
     .content .first:after {
         bottom: -6em;
