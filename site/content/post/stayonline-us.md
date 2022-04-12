@@ -7,7 +7,7 @@ description: We’re proud to announce that we’ll be offering a small batch of
 duration: 2 months
 logo: /img/logos/stayonline-logo.png
 image: /img/stayonline-us.jpg
-image2: /img/stayonline-us-tablet.png
+# image2: /img/stayonline-us-tablet.png
 preview: /img/stayonline-preview.png
 tags:
   - cross-browser 
@@ -22,7 +22,9 @@ team: Web Development
 
 ---
 
-<section class="inner-wrap content">
+<section>
+
+<div class="inner-wrap content">
 
 <div class="first">
 
@@ -40,8 +42,7 @@ Stay Online is a power cord manufacturer and distributer, known for having the l
 [Skip to the results](post/stayonline-us/#the-takeaway)
 
 </div>
-
-<div class="div2">       
+<div class="div2">      
 
 ## Gathering insight, identifying issues & tasks 
 
@@ -56,25 +57,34 @@ Stay Online is a power cord manufacturer and distributer, known for having the l
 
 </div>
 
-
 > Stay Online's problem was that a large amount of customers were unable to order 
 products on mobile devices. Responsive design presented an 
 exciting opportunity.
 
+</div>
 
 </section>
 
-<section>
+<section class="fullwidth purple">
+
+<div class="inner-wrap">
+
+<div class="newcontent">
 
 ## Tables for layout? That’s so 2002
+
+
+
 Stay Online's client-base still had a strong percentage of IE6 use (even back in 2012). Cross-browser compatibility was at the forefront of early planning. There was a large development backlog so the team planned an Agile release. The Sales team did not want any ordering downtime. Marketing did not want a drastic overnight aesthetic change. 
 
-![this is the alt text](/img/stayonline-us-table.jpg "Title is optional")
-![this is the alt text](/img/stayonline-us-tablet-before.gif "Title is optional")
+<!-- ![this is the alt text](/img/stayonline-us-table.jpg "Title is optional")
+![this is the alt text](/img/stayonline-us-tablet-before.gif "Title is optional") -->
 *The Stay Online website layout when I first started; I first broke the design down into a basic wireframe to help better identify where sections could be simplified*
 
 <!-- ![this is the alt text](/img/stayonline-us-table.jpg "Title is optional")
 *The Stay Online website layout when I first started; I first broke the design down into a basic wireframe to help better identify where sections could be simplified* -->
+
+<div>
 
 ### Development Overhead: 
 - CSS adjustments were constantly required with each page addition
@@ -86,6 +96,14 @@ Stay Online's client-base still had a strong percentage of IE6 use (even back in
 
 ![this is the alt text](/img/stayonline-us-tabing.gif "Title is optional")
 *When using a keyboard to navigate a page, it is important that focus is not lost on a hidden element.*
+
+  ![this is the alt text](/img/stayonline-us-display.png "Title is optional")
+
+  </div>
+
+</div>
+
+</div>
 
 </section>
 

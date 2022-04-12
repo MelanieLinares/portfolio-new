@@ -20,10 +20,13 @@ team: Application Development
 
 ---
 
-<section class="inner-wrap content">
+<section>
 
-<span class="first"></span>
-<div class="div2">
+<div class="inner-wrap content mini">
+
+<div class="first"></div>
+
+<div class="div2"> 
 
 ## I started with one main goal: bring change in how Insight markets accessibility
 Insight Digital Innovation is a sector of Insight with a focus on product design. Accessibility, however, was not part of their core process when I was brought on-board. As part of Insight’s global team, I utilized the company’s values to evangelize accessibility as a standard, not an optional offering. These values are Heart, Hunger, and Harmony.
@@ -40,16 +43,41 @@ I was part of the accessibility go-to-market planning committee. This team was h
 </section>
 
 
-<section> 
+<section style="background-color: #F5F6FC">
 
 ## Hunger for professional betterment
-- ![this is the alt text](/img/accessibility.png "Title is optional")
- I am a certified Web Accessibility Specialist from IAAP as of 2021 [I'm in their directory](post/brewing-chemex/#comparing-the-results)
- - ![this is the alt text](/img/vue-react.png "Title is optional")
- Through Insight I was able to learn 
-Vue and React at an expediated pace. 
-(And I love Vue!) 🔥
+<ul class="parent3">
+<li class="div--1">
+<div class="subparent3">
+<div class="subdiv--1"> 
 
+![this is the alt text](/img/accessibility.png "Title is optional")
+
+</div>
+<div class="subdiv--2">
+
+I am a certified Web Accessibility Specialist from IAAP as of 2021 [I'm in their directory](post/brewing-chemex/#comparing-the-results)
+
+</div>
+</div>
+</li>
+<li class="div--2"> 
+  <div class="subparent3">
+  <div class="subdiv--1" style="mix-blend-mode: darken;">
+
+  ![this is the alt text](/img/vue-react.png "Title is optional")
+
+  </div>
+  <div class="subdiv--2">
+
+  Through Insight I was able to learn 
+  Vue and React at an expediated pace. 
+  (And I love Vue!) 🔥
+
+  </div>
+  </div> <!--//subparent3 -->
+</li> <!--//div--2 -->
+</ul>
 </section>
 
 <section> 

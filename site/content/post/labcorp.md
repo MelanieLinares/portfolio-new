@@ -26,9 +26,11 @@ technology:
 
 ---
 
-<section class="content mini">
+<section>
 
-<span class="first"></span>
+<div class="inner-wrap content mini">
+
+<div class="first"></div>
 <div class="div2">
 
 ## Responsive dashboard widgets

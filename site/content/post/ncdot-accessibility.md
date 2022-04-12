@@ -72,33 +72,39 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
 <div class="inner-wrap">
 
-<div role="presentation" class="fullwidth img" style="background-image: url(/img/decorative-desk.jpg)">
+<!-- <div role="presentation" class="fullwidth img" style="background-image: url(/img/decorative-desk.jpg)">
 
-</div>
+</div> -->
 
-<div>
+<div class="newcontent">
 
   ## Conducting the accessibility audit
-  ![this is the alt text](/img/ncdot-a11y2.png "Title is optional")
-  *WCAG 2.0 and Section 508 guidelines were referenced for specific requirements (note: this audit was pre WCAG 2.1)*
+
   ### Establishing a baseline
   - testing level was established according to government regulations and client needs
   - the first step was in identifying page templates and associated JavaScript components 
   - sorted most viewed pages by template and then tested with Lighthouse for baseline needed improvements 
   - guidelines reviewed and a goal checklist created prior to testing
+
+  <div>
+
   ### Manual testing
   - NVDA screen readerused to identify issues with the information hierarchy and HTML syntax
   - keyboard testing conducted to find outliers in accessing content
   - web extensions (such as Colorblinding, NoCoffee Vision Simulator, and Disability Simulator) used for hard to identify issues
   - TalkBack and VoiceOver used to test mobile devices
+
   ### Automatic testing
-  ![this is the alt text](/img/ncdot-a11y.jpg "Title is optional")
-  *TBD caption*
   - Axe DevTools
   - W.A.V.E. (web accessibility evaluation tool)
   - Chrome DevTools
   - Accessibility Insights for the Web
   - cross-browser testing emphasized
+
+  </div>
+
+
+  ![this is the alt text](/img/ncdot-display.png "Title is optional")
 
 </div>
 
@@ -115,6 +121,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   - Date pickers could not be accessed via keyboard
   - Contact form in the footer of every page
   - Incorrect use of headings based on the template
+  ![this is the alt text](/img/ncdot-a11y2.png "Title is optional")
   ![this is the alt text](/img/ncdot-wave.png "Title is optional")
   *TBD caption*
   ### Sorting pages on most viewed pages to prioritize testing 

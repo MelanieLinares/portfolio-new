@@ -265,6 +265,10 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
 
+    .content blockquote {
+        margin-left: -10em;
+    }
+
     .desktop-logo {
         display: unset;
         height: 44px;
@@ -291,7 +295,58 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .newcontent > *:not(p:last-of-type), .newcontent > *:not(div:last-of-type) {
+        grid-column-start: 1;
+        grid-column-end: 4!important;
+    }
+
+    .newcontent div:last-of-type {
+        grid-column-start: 1 !important;
+        grid-column-end: 4 !important;
+    }
+
+    .newcontent p:last-of-type {
+        /* width: 83vw; */
+        max-width: unset!important;
+        position: relative!important;
+        margin-top: 0;
+        margin-bottom: -4.2em!important;
+        margin-right: -3em!important;
+    }
+
+    section:not(:first-of-type).fullwidth {
+        width: unset;
+    }
+
+}
+
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
+
+    .newcontent div:last-of-type {
+        grid-column-start: 1!important;
+        grid-column-end: 2!important;
+    }
+    
+    .newcontent p:last-of-type {
+        grid-column-start: 2!important;
+        grid-column-end: 4!important;
+        margin-bottom: -3.5px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 64vw;
+    }
+
+    .newcontent > *:not(p:last-of-type), .newcontent > *:not(div:last-of-type) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .newcontent p:last-of-type img {
+        width: 83vw;
+        max-width: unset;
+    }
 
     .content blockquote {
         margin-left: -10em;
@@ -325,6 +380,7 @@
 }
 
 @media screen and (max-width: 1400px) {
+    
     .fullwidth {
         margin-left: -1.5em;
         margin-right: -1.5em;
@@ -350,6 +406,22 @@
 }
 
 @media screen and (min-width: 1401px) {
+
+    .newcontent div:last-of-type {
+        grid-column-start: 1!important;
+        grid-column-end: 2!important;
+    }
+    
+    .newcontent p:last-of-type {
+        grid-column-start: 2!important;
+        grid-column-end: 4!important;
+        margin-bottom: -3.5px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 64vw;
+    }
+
     .div2 {
         grid-area: 2 / 1 / 5 / 9;
     }
