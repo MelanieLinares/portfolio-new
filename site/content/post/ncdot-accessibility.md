@@ -3,8 +3,7 @@ backgroundcolor: mixed
 title: Increase accessibility across NCDOT websites for Section 508 compliance
 date: 2019-06-03T15:04:10.000Z
 newdate: 2019-08-07T15:04:10.000Z
-description: We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+
 duration: 2 months
 logo: /img/logos/ncdot-logo.gif
 image: /img/accessibility-ncdot.jpg
@@ -45,7 +44,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   <br>
   **The goal:** accessibility within a 3rd-party (SharePoint 2016) can be tricky, but 
   we needed to reach > 90
-  [Skip to the results](post/ncdot-accessibility/#the-takeaway)
+  [Skip to the results](post/ncdot-accessibility/#final)
 
 </div>
 <div class="div2"> 
@@ -186,27 +185,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 </div>
 </section>
 
-<section>
-
-  ## Test
-<div class="parent3">
-<div class="div--1">
-<div class="subparent3">
-<div class="subdiv--1"> 1hello</div>
-<div class="subdiv--2">1there </div>
-</div>
-</div>
-<div class="div--2"> 
-<div class="subparent3">
-<div class="subdiv--1"> 2hello</div>
-<div class="subdiv--2">2there </div>
-</div>
-</div>
-</div>
-</section>
-
-
-<section class="takeaway fullwidth">
+<section id="final" class="takeaway fullwidth">
 
 <div class="inner-wrap">
 
@@ -217,8 +196,11 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   
 </section>
 
+<div class="inner-wrap">
+
   > Melanie, contributed a great deal to improving our website's load time, performance, and accessibility. The results were effective and immediate - faster page loads across the board, and forms and interactions were available to everyone regardless of capability.  
   *- Patrick Doran, NCDOT UX and Web Services Manager*
   > Thank you for all your efforts in keeping the web accessible.   
   *- Todd Darling, Insight Team Lead while on NCDOT contract*
 
+</div>

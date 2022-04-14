@@ -35,3 +35,7 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+footer .center {
+  text-align: center;
+}

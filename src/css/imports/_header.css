@@ -10,7 +10,6 @@ h1:before {
 .hero-header {
     max-width: 1400px;
     margin: 0 auto;
-    -webkit-transform: rotate(-6deg);
     padding: .5em;
     z-index: 2;
     position: relative;

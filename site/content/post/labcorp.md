@@ -3,7 +3,7 @@ backgroundcolor: multi
 title: Customizable weather and time-management dashboard widgets so teams stay on-task & connected
 date: 2021-05-05T15:04:00.000Z
 newdate: 2021-06-14T02:27:22.000Z
-description: We’re proud to announce that we’ll be offering a small batch of Jamaica Blue Mountain coffee beans in our store next week.
+
 notice: For legal reasons images of work completed cannot be shown
 duration: 1 month
 logo: /img/logos/labcorp-logo.gif
@@ -50,7 +50,7 @@ requirements, as well as last minute changes.
 
 </section>
 
-<section class="takeaway fullwidth">
+<section id="final" class="takeaway fullwidth">
 
 <div class="inner-wrap">
 

@@ -3,7 +3,7 @@ backgroundcolor: darkblue2
 title: Launching Stay Online's 10,000+ EU product website with improved information architecture and internationalization 
 date: 2015-01-05T15:04:00.000Z
 newdate: 2015-04-10T02:27:22.000Z
-description: We’re proud to announce that we’ll be offering a small batch of Jamaica Blue Mountain coffee beans in our store next week.
+
 duration: 3 months
 logo: /img/logos/stayonline-logo.png
 image: /img/stayonline-eu.jpg
@@ -44,7 +44,7 @@ client: Stay Online LLC.
   ### The goal:
   🏁 users (internal and external) find products more efficiently
 
-  [Skip to the results](post/stayonline-eu/#the-takeaway)
+  [Skip to the results](post/stayonline-eu/#final)
 
 </div>
 <div class="div2"> 
@@ -174,7 +174,7 @@ client: Stay Online LLC.
 </div>
 </section>
 
-<section class="takeaway fullwidth">
+<section id="final" class="takeaway fullwidth">
 
 <div class="inner-wrap">
 
@@ -188,10 +188,14 @@ client: Stay Online LLC.
   
 </section>
 
+<div class="inner-wrap">
+
   > Melanie distinguished herself by **consistently deliverying quality solutions, on schedule**. [...] She always went the extra mile to ensure the quality of her work was at the highest level.
   *- Gordon Harris, Stay Online Director, Marketing and Communications*
   > Melanie has a great understanding of CSS, graphics and web design, responsive layout and CSS compilers. **Our web sites are much better as a result of her work**   
   *- Brian Futrell, Stay Online Web Developer*
+
+</div>
 
 <!-- 
 

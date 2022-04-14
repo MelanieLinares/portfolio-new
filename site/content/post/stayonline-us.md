@@ -3,7 +3,7 @@ backgroundcolor: darkblue
 title: Decreasing the bounce-rate of Stay Online's website through a responsive redesign
 date: 2015-06-29T15:04:00.000Z
 newdate: 2016-09-07T02:27:22.000Z
-description: We’re proud to announce that we’ll be offering a small batch of Jamaica Blue Mountain coffee beans in our store next week.
+
 duration: 2 months
 logo: /img/logos/stayonline-logo.png
 image: /img/stayonline-us.jpg
@@ -39,7 +39,7 @@ Stay Online is a power cord manufacturer and distributer, known for having the l
 
 *(note:  mobile was defined as less than 1024px screen size during the design sprint)*
 
-[Skip to the results](post/stayonline-us/#the-takeaway)
+[Skip to the results](post/stayonline-us/#final)
 
 </div>
 <div class="div2">      
@@ -192,11 +192,11 @@ The site has ~25% code reduction.
 
 </section>
 
-<section class="takeaway fullwidth">
+<section id="final" class="takeaway fullwidth">
 
 <div class="inner-wrap">
 
-## The takeaway 
+## The takeaway: 
 
 - Nurturing a site from IE6 to IE9+ has not been easy, but allowing gradual 
 usability changes was beneficial for the company and older user-base
@@ -211,9 +211,13 @@ usability changes was beneficial for the company and older user-base
 
 </section>
 
+<div class="inner-wrap">
+
 > Melanie distinguished herself by **consistently deliverying quality solutions, on schedule**. [...] She always went the extra mile to ensure the quality of her work was at the highest level.  
 *- Gordon Harris, Stay Online Director, Marketing and Communications*
 
 > Melanie has a great understanding of CSS, graphics and web design, responsive layout and CSS compilers. **Our web sites are much better as a result of her work**.  
 *- Brian Futrell, Stay Online Web Developer*
+
+</div>
 

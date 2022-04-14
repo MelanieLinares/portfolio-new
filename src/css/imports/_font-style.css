@@ -16,28 +16,18 @@
   .fs-normal-l     { font-style: normal; }
 }
 
-#multi h1 {
-  -webkit-text-stroke-color: #1E2EA9;
-}
-
-#pink h1 {
-  -webkit-text-stroke-color: pink;
-}
-
 h1 {
   color: transparent;   
   line-height:.5em;
   -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: #2439cd; 
+  -webkit-text-stroke-color: #48377d; 
 } 
 
 h1 b {
-  color: #CC0808;  
+  color: #48377d;  
   -webkit-text-stroke-width: 0;
   -webkit-text-stroke-color: transparent; 
-  font-size: 30px;
   font-weight: 200;
-  /* display: block; */
   line-height: 1
 } 
 

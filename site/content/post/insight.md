@@ -3,7 +3,7 @@ backgroundcolor: pink
 title: Prioritizing end user and client experience through Heart, Hunger, and Harmony
 date: 2019-02-19T15:04:00.000Z
 newdate: 2021-11-10T02:27:22.000Z
-description: We’re proud to announce that we’ll be offering a small batch of Jamaica Blue Mountain coffee beans in our store next week.
+
 duration: 2 years 10 months
 logo: /img/logos/insight-logo.gif
 image: /img/insight.jpg
@@ -89,7 +89,7 @@ Insight allowed several opportunities for teammates to share professional knowle
 
 </section>
 
-<section class="takeaway fullwidth">
+<section id="final" class="takeaway fullwidth">
 
 <div class="inner-wrap">
 

@@ -82,7 +82,7 @@ we needed to reach > 90
   <br>
   **The goal:** accessibility within a 3rd-party (SharePoint 2016) can be tricky, but 
   we needed to reach > 90
-  [Skip to the results](post/ncdot-accessibility/#the-takeaway)
+  [Skip to the results](post/ncdot-voma/#final)
 
 </div>
 <div class="div2"> 
@@ -228,7 +228,7 @@ BLLAAHHH In other instances a participant might miss a court date. The device co
 </div>
 </section>
 
-<section class="takeaway fullwidth">
+<section id="final" class="takeaway fullwidth">
 
 <div class="inner-wrap">
 
@@ -246,8 +246,12 @@ BLLAAHHH In other instances a participant might miss a court date. The device co
   
 </section>
 
+<div class="inner-wrap">
+
   > [Melanie] helped modernize aging applications by refactoring them using modern JavaScript frameworks like Vue.js. Her user-first philosophy for user experience [...] made Melanie a critical part of the team's success.  
   *- Patrick Doran, NCDOT/NCDIT UX and Web Services Manager*
 
   > Melanie, thanks for all your hard work at the DOT and for continuing to educate us on usability!  
   *- Austin Johnson, Insight Team Lead while on NCDOT contract*
+
+  </div>

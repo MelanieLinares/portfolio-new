@@ -50,7 +50,7 @@ My role was to take the approved design and specs and build out the needed pages
 
 </section>
 
-<section class="takeaway fullwidth">
+<section id="final" class="takeaway fullwidth">
 
 <div class="inner-wrap">
 
