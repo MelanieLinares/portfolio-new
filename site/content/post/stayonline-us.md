@@ -29,7 +29,7 @@ team: Web Development
 <div class="first">
 
 ## Creating a plan to decrease mobile bounce-rate
-Stay Online is a power cord manufacturer and distributer, known for having the largest U.S. in-stock inventory of power cords and adapters. The legacy e-commerce website, built in 1997, had not updated its user experience. Mobile users were not considered in marketing and design decisions.  This contributed to a large amount of site bounce-rate. There was a potential to capture these users by making the web experience accessible to them. Responsive design was not an easy sell to management. Data-driven design through analytics was needed to get the pitch approved.
+Stay Online is a power cord manufacturer and distributer, known for having the largest U.S. in-stock inventory of power cords and adapters. The legacy e-commerce website, built in 1997, had not changed the layoutand design to fit changing technology and user experience best practices. Mobile users were not considered.  This contributed to a large bounce-rate from mobile device users. There was a potential to capture these users by making the web experience accessible to them. Responsive design was not an easy sell to management. Data-driven design through analytics was needed to get the pitch approved.
 
 ### The starting rate:   
 👎 ~85% mobile users leave 
@@ -44,15 +44,14 @@ Stay Online is a power cord manufacturer and distributer, known for having the l
 </div>
 <div class="div2">      
 
-## Gathering insight, identifying issues & tasks 
+## Gathering insight, identifying issues, and clarifying tasks 
 
 - Design needs to maintain IE6+ (and later IE8+) browser compatibility
-- Data-heavy pages need balance showing necessary data and providing an ideal mobile experience
-- Users include customers, but also warehouse workers and sales employees at tradeshows
-- Branding needs to incorporate new accessible branding colors
-- Code refactoring is needed to remove table-based layout
-- Complete A/B testing for layout to determine on a 3 or 2 column layout
-- Bring photography to the branding forefront
+- Data-heavy pages need content organization and prioritization to provide an ideal mobile experience
+- Users are defined as customers, but also internal warehouse workers who use the site for inventory management and sales employees who use the site for phone sales and promotion during tradeshows
+- Branding sstem needs to updating incorporate accessible branding colors for web and print
+- Code refactoring is needed to remove table-based layout and poorly formed html
+- Complete A/B testing for layout to determine whther a 3 or 2 column layout resulted in a better call-to-action response
 - Work with Marketing and Sales managers to identify business needs for new homepage 
 
 </div>
@@ -71,15 +70,15 @@ exciting opportunity.
 
 <div class="newcontent">
 
-## Tables for layout? That’s so 2002
+## Make it work! Make it comatibile! Make it progressively enhance!
 
 
 
-Stay Online's client-base still had a strong percentage of IE6 use (even back in 2012). Cross-browser compatibility was at the forefront of early planning. There was a large development backlog so the team planned an Agile release. The Sales team did not want any ordering downtime. Marketing did not want a drastic overnight aesthetic change. 
+Stay Online's client-base had a strong percentage of IE6 use (even back in 2012). Cross-browser compatibility was at the forefront of early planning. There was a large development backlog which could interfere with a waterfall redesign release where new features would have to be put on hold. After discussion the team planned an Agile release. The Sales team did not want any ordering downtime. Marketing did not want a drastic overnight aesthetic change which they feared would confuse customers and disrupt brand trust.
 
 <!-- ![this is the alt text](/img/stayonline-us-table.jpg "Title is optional")
 ![this is the alt text](/img/stayonline-us-tablet-before.gif "Title is optional") -->
-*The Stay Online website layout when I first started; I first broke the design down into a basic wireframe to help better identify where sections could be simplified*
+<!-- *The Stay Online website layout when I first started; I first broke the design down into a basic wireframe to help better identify where sections could be simplified* -->
 
 <!-- ![this is the alt text](/img/stayonline-us-table.jpg "Title is optional")
 *The Stay Online website layout when I first started; I first broke the design down into a basic wireframe to help better identify where sections could be simplified* -->
@@ -87,19 +86,21 @@ Stay Online's client-base still had a strong percentage of IE6 use (even back in
 <div>
 
 ### Development Overhead: 
-- CSS adjustments were constantly required with each page addition
-- Layout bugs were constantly found by the team and users as it was easy to mistype or forget a closing table tag. When the entire page is unformatted table tags it is not worth upkeep. 
+- CSS adjustments were constantly being logged as bugs with each new page creation. Templates were not implemented and pages hard coded.
+- Layout bugs were constantly found by the team and users as it was easy to mistype or forget a closing table tag. This resulted in the development focusing on tackling the growing backlog as a symptom versus tackling the cause. 
 
 ### User Pain Points: 
-- Many users complained they could not see content because it was either hidden, off-screen, or required scrolling horizontally
-- Many "power-users" complained of having difficulty tabbing through web content 
+- Many users complained they could not see content because it was either hidden, off-screen, or required scrolling horizontally on mid-size and small mobile devices
+- Users complained they were having difficulty tabbing through web content formatted with tables
+- Keyboard focus was either implemented inconsistently or hidden which was directly causing rampant accessibility issues
 
 ![this is the alt text](/img/stayonline-us-tabing.gif "Title is optional")
-*When using a keyboard to navigate a page, it is important that focus is not lost on a hidden element.*
-
+*tbd*
+  </div>
+  
   ![this is the alt text](/img/stayonline-us-display.png "Title is optional")
 
-  </div>
+
 
 </div>
 
@@ -113,28 +114,24 @@ Stay Online's client-base still had a strong percentage of IE6 use (even back in
 Making a site responsive is not a matter of making elements fit, but providing an equal experience for users regardless of screen size. When conducting competitor research certain layouts stood out as standard practices involving the navigation and homepage.
 
 ![this is the alt text](/img/stayonline-wireframe.png "Title is optional")
+*need: mood board of competitor research*
 
-### Optimizing the Navigation:   
+### Optimizing the Navigation and redesigning the homepage   
 After years of adding every new product line to the sidebar the experience of navigating 
-the website was less than ideal.
+product categories was inefficient.
 
-- Remove header clutter while still showcasing important site information    
-- Re-categorize product types and compare homepage and navigation placement with commonly bought products  
-- Discuss on how to tackle mobile navigation
-
-### Redesigning the Homepage: 
-- Exploring different concepts for showcasing feature products   
-- Testing what info is accessed from the homepage
-- Conducting A/B testing on 2-column vs the current 3-column layout 
+- Header clutter was reduced while still showcasing  what Sales determined to be important site information    
+- Product types were re-categorized and the homepage featured section changed from including every category to only the most commonly bought product categories  
+- Mobile navigation was discussed as part of the desktop responsive implementation
 
 ### Client Approval:  
-Work began on the product after an initial conversations with the lead developer. Data was gathered from Google Analytics thanks to close work with the Marketing director. A presentation of the benefits of a redesign was given to the CEO.
+Work began on the product after an initial conversations with the lead developer. Data on bounce-rate was gathered from Google Analytics thanks to close work with the Marketing director. A presentation of the benefits of a redesign was given to the CEO.
 
 </section>
 
 <section>
 
-## Content-first & data-driven strategy
+## Content-first and data-driven strategy
 A/B testing was required when changing the content on the homepage. 
 There was initial pushback on content because the team was used to 
 approving feature requests without user testing. 
@@ -146,9 +143,9 @@ approving feature requests without user testing.
 *Photo by Jason Goodman on Unsplash*
 
 ### Responsive Design:   
-- Started by making the site resize elements for a min-screen size of 1024px   
+- Started by making the site optimized for a min-screen size of 1024px which at the time was the average internal and external device width
 - Static tables and charts needed to be refactored and rewritten
-- The next goal was to have elements reflow for screen sizes of 768px. (Unfortunately, the project dissolved mid-release prior to a full responsive implementation)
+- The next goal was to have elements optimized device widths at a min of 768px. (Unfortunately, the project dissolved mid-release prior to a full responsive implementation)
 
 ![this is the alt text](/img/stayonline-us-responsive.jpg "Title is optional")
 
@@ -156,21 +153,20 @@ approving feature requests without user testing.
 
 <section>
 
-## Accessibility  
-Accessibility baselines were established using Lighthouse and Axe DevTools. Manual testing was completed.
+## Accessible Strategy  
+Accessibility baselines were established using Google Lighthouse and Axe DevTools. Manual testing was completed to meet WCAG 2.0 Level A.
 
-### Layout was changed from tables and unaccessible code to HTML5
-- Previous code used floats and absolute positioning to change logical order of content
-- "Divitus" (the overuse of the `<div>` tag) was combatted by using `<header>`, `<nav>`, `<aside>`, `<section>`, and `<footer>`
-- Lists were re-written to take advantage of how they would be used by a screenreader
-- These changes made use of HTML5's inherent accessible attributes
+### Layout was changed from tables and unsemantic code to HTML5
+- Previous code used floats and absolute positioning to change logical order of content which negatively affects keyboard users
+- "Divitus" (the overuse of the `<div>` tag) was combatted by using `<header>`, `<nav>`, `<aside>`, `<section>`, `<footer>`, and other html elements
+- Lists were re-written to use html `<ul>` and `<ol>` versus implicit lists so they could be utilized by a screenreader
 
-This is not to say that tables were not used as part of Stay Online's content. The use, however, was kept to what tables do best--displaying data for comparison or analysis. 
+Table usage was changed from layout to data presentation (comparison or analysis) when relevant. 
 
-### Tweaking the color palette and branding for accessibility and user experience
-The original website color palette included blue as the only official brand color for many years, but over the years many other colors crept in such as various greens, orange, red, yellow and (unfortunately) some yellow text.
+### Tweaking the color palette to meet accessible color contrast guidelines
+The original website color palette included the default CSS `color: blue` as the only official brand color without concern how this color is used and contrasts in compliance with accessibility guidelines.
 
-I worked with the marketing team to pair down these colors to blue, yellow, and gray. There are very specific accessibility rules on when and how to use them  
+I worked with the marketing team to pair down these colors to blue, yellow, and gray and define the appropriate hex, RGB, and CYMK codes as well as using rules for each color.  
 
 ![this is the alt text](/img/stayonline-us-branding.jpg "Title is optional")
 
@@ -187,8 +183,8 @@ Previously ~85% mobile users left before making a purchase. The goal was to decr
 👍 Four months later:  ~ 25% mobile users leave before making a purchase. 
  
 ### Development upkeep:   
-Decreased the amount of bugs logged for scrollbars or hidden (off-screen) content.
-The site has ~25% code reduction.
+Through the code optimization the amount of bugs logged for scrollbars or hidden (off-screen) content decreased.
+The site also has ~25% reduction in lines of code.
 
 </section>
 
@@ -198,14 +194,13 @@ The site has ~25% code reduction.
 
 ## The takeaway: 
 
-- Nurturing a site from IE6 to IE9+ has not been easy, but allowing gradual 
-usability changes was beneficial for the company and older user-base
+- Nurturing a site from IE6 to IE9+ has not been easy, but allowing gradual usability changes was beneficial for the company and the existing user-base
   
-- The bounce rate for the site steadily decreased though the implementations. Browser usage for older browsers steadily decreased without notable monetary loss 
+- The bounce-rate for the site steadily decreased though the agile implementations. Browser usage for older browsers also steadily decreased without notable monetary loss and in turn decreased the amount of legacy code needed
 
 - Mobile purchases, not just usage, since this project has increased dramatically
 
-- Regrettably, company changes resulted in the redesign never becoming responsive for devices smaller than 768px.
+- Regrettably, internally company changes resulted in the re-design project being postponed after the release for devices larger than 767px in width.
 
 </div>
 

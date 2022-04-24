@@ -1,6 +1,6 @@
 ---
 backgroundcolor: darkblue2
-title: Launching Stay Online's 10,000+ EU product website with improved information architecture and internationalization 
+title: Launching Stay Online's 10,000+ EU product website with improved information architecture and internationalization in mind
 date: 2015-01-05T15:04:00.000Z
 newdate: 2015-04-10T02:27:22.000Z
 
@@ -21,7 +21,7 @@ tags:
   - javascript
   - cross-browser
 titlebold: Launching Stay Online's 10,000+ EU product website  
-titlenormal: with improved information architecture and internationalization
+titlenormal: with improved information architecture and internationalization in mind
 client: Stay Online LLC.
 
 ---
@@ -33,16 +33,15 @@ client: Stay Online LLC.
 
 <div class="first">
 
-  ## Creating a plan to help users find a product quickly
+  ## Creating a plan to help online consumers find products quickly and globally
   In 2015 Stay Online made the transition from a US business to an international one. The 
-  company opened a shipping and manufacturing location in the Czech Republic. This 
-  new manufacturing location would need to take orders for the existing product line as well as new products. The new site would apply internationalization and global UX so new EU customers could handle orders.
+  company opened a shipping and manufacturing location in the Czech Republic. Stay Online wanted a dedicated website to funnl in EU-specific orders before planning a merged site in the future. The new site would apply internationalization and global UX patterns.
 
   ### The baseline:
-  💡 Sales associates noticed an increase in international customers with specific power cord needs that Stay Online could not provide. Sales associates noticed several new and previous re-occurring customers were discontinuing their accounts due to shipping costs when shipping to the EU.
+  💡 Sales associates noticed an increase in international customers with specific power cord needs that Stay Online could not provide given the high shipping costs when exporting.
 
   ### The goal:
-  🏁 users (internal and external) find products more efficiently
+  🏁 increase the number of sales to the EU and help these users find products they can use quickly
 
   [Skip to the results](post/stayonline-eu/#final)
 
@@ -51,18 +50,16 @@ client: Stay Online LLC.
 
 ## Project overview and task breakdown 
 
-- BBLLLAAAHHHH Design needs to maintain IE6+ (and later IE8+) browser compatibility
+- Design needs to maintain IE9+ browser compatibility
 - Data-heavy pages need to balance showing necessary data and providing an ideal mobile experience
-- Use-cases for redesign include customers, but also warehouse workers and sales employees at tradeshows
-- Branding needs to incorporate new accessible branding colors and tagline so print and web colors match
-- Code refactoring is needed to remove table-based layout
-- Complete A/B testing for layout to determine on a 3 or 2 column layout
-- Bring photography to the branding forefront
+- Branding needs to fit with existing Stay Online principles but also incorporate global standards and prictices
+- Complete A/B testing for layout to determine navigation approach
+- Bring iconography to the branding forefront
 - Work with Marketing and Sales managers to identify business needs for the new homepage 
 
 </div>
 
-  > It may not seem like a problem to have a lot of products, but if not organized efficiently and the navigation not clear then getting sales from those products can start being ineffective. A good e-commerce website creates an easy purchasing experience.
+  > It may not seem bad to have a lot of products, but if not organized efficiently within an e-commerce website then those same products start becoming a huge problem. We needed to create an easy purchasing experience.
 
 </div>
 
@@ -79,13 +76,12 @@ client: Stay Online LLC.
 <div class="newcontent">
 
   ## Team exploration and planning for a MVP release
-  Stay Online brought me onto the EU launch team due to my familiarity with the U.S. website and my experience with responsive development. I co-led a discovery session to explore eCommerce requirements, limitations, and internationalization 
-  needs.
+  Stay Online brought me onto the EU launch team due to my familiarity with the U.S. website and my experience with responsive development. I co-led a discovery session to explore eCommerce requirements, limitations, and internationalization needs with outside sales representatives.
 
   ### Why internationalization?
   Stay Online needed an EU location for shipping but you might ask, why did they need a new website?
   - easy localization for target audience culture, region, language
-  - coding process allows for translation easily
+  - coding process that allows for translation
 
   <div>
 
@@ -115,7 +111,7 @@ client: Stay Online LLC.
 <section>
 <div class="inner-wrap">
 
-  ## Internationalization and globalization was at the heart of market research 
+  ## Internationalization and globalization was at the heart of the go-to market strategy 
   - international sales interns, Outside Sales team members, and the Marketing team were interviewed      
   - Marketing ran specific user surveys
   - The website would need multi-language support, translated documentation, and branding tweaks

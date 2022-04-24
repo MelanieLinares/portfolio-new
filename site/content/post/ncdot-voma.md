@@ -1,8 +1,8 @@
 ---
 backgroundcolor: mixed2
-title: Manage current and new I.I.M.S. participants with an improved portal and less paperwork
-titlebold: Manage current and new I.I.M.S. participants with an improved portal 
-titlenormal: and less paperwork
+title: Manage current and new I.I.M.S. participants with a new portal for less paperwork
+titlebold: Manage current and new I.I.M.S. participants with a new portal 
+titlenormal: for less paperwork
 date: 2019-09-17T15:04:10.000Z
 newdate: 2020-12-29T20:11:54.193Z
 duration: 1 year 3 months
@@ -25,50 +25,6 @@ notice: For legal reasons some images are representational only or blurred
 
 ---
 
-<!-- <section class="inner-wrap content">
-
-<div class="first">
-
-## Transforming a complex process into a powerful digital workflow impacting thousands
-Imagine a stack of physical applications, encompassing a year’s worth of unentered data for several hundred NC citizens, all waiting to be approved for a small device that would allow them to drive and continue life normally after a DUI. Now imagine that paperwork backlog is six years worth of pending applications.
-
-### The challenge 
-The current NCDMV system was not built for the number of active and archived participants. The time needed to add new recipients to the database, edit, manage their status, curate documentation, and maintain the data on the legacy system caused a backlog of issues.
-
-![this is the alt text](/img/dmv-news-small.jpg "Title is optional")
-*source: [cbs17.com](https://www.cbs17.com/news/nc-dmv-backlog-allowed-drivers-on-the-road-who-shouldnt-have-been/)*
-
-A new internal portal was needed so NCDMV employees could access and process participant and vendor data for hundreds of thousands of citizens, efficiently and securely.
-
-**The goal BLAHHH accessibility within a 3rd-party (SharePoint 2016) can be tricky, but 
-we needed to reach > 90  
-
-[Skip to the results](post/ncdot-voma/#the-takeaway)
-
-<div>
-
-</section>
-
-<section>
-     
-
-
-
-
-
-
-</section>
-
-
-
-
-
-
-![this is the alt text](/img/voma-cupcake.jpg "Title is optional")
-*BLLLAHH celebration cupcake*
-
- -->
-
 <section>
 
 <div class="inner-wrap content">
@@ -89,18 +45,14 @@ we needed to reach > 90
 
 ## Project overview and task breakdown 
 
-- BBLLLAAAHHHH Design needs to maintain IE6+ (and later IE8+) browser compatibility
-- Data-heavy pages need to balance showing necessary data and providing an ideal mobile experience
-- Use-cases for redesign include customers, but also warehouse workers and sales employees at tradeshows
-- Branding needs to incorporate new accessible branding colors and tagline so print and web colors match
-- Code refactoring is needed to remove table-based layout
-- Complete A/B testing for layout to determine on a 3 or 2 column layout
-- Bring photography to the branding forefront
-- Work with Marketing and Sales managers to identify business needs for the new homepage 
+- Review project detailed specs regarding data types and DMV in-person process, including applications and citizen eligibility
+- Organize requirements into user flow and wireframes
+- Work directly with project owner to format/approve UI
+- Work with backend team to establish API requirements and implementation
 
 </div>
 
-  > BLAHHHIt may not seem like a problem to have a lot of products, but if they are not organized efficiently and the navigation not clear then all those products can start being too many. A good e-commerce website creates an easy purchasing experience.
+  > This project required knowledge of how the existing paper application is currently processed and reviewed, of currently enacted laws, and the ability to communicate ideas to both functional and cross-functional teams within multiple local agencies.
 
 </div>
 
@@ -113,106 +65,104 @@ we needed to reach > 90
 <div class="newcontent">
 
   ## Understanding the underlying system
+  ### What is IIMS, IIMA, and an ignition interlock device?
 
-  <div>
+  IIMS stands for ignition interlock management system while IIMA is the ignition interlock medical accommodation procedure within the system providing access for those that need additional assisteance or exeptions to DUI requirements due to medical reasons. This ignition interlock is a device that is “connected to a vehicle’s ignition system… [The device] requires an individual to breathe into the equipment, which prevents the vehicle from starting if the individual’s breath alcohol concentration is outside the acceptable range.”
+  *source: [NCDMV: Ignition Interlock Devices](https://www.ncdot.gov/dmv/license-id/license-suspension/Pages/ignition-interlock-devices.aspx#:~:text=Connected%20to%20a%20vehicle's%20ignition,is%20outside%20the%20acceptable%20range)*
 
-  This project required the knowledge of multiple terms, the process in which an application is already processed and reviewed, currently enacted laws, and the ability to communicate ideas to both functional and cross-functional teams.
-
-  **What is IIMS/IIMA?**
-  ignition interlock management system
-  ignition interlock medical accomodation
-
-  ### What is an ignition interlock device?
-
-  IIMS is the ignition interlock management system. This system makes use of a device that is "connected to a vehicle's ignition system... [The device] requires an individual to breathe into the equipment, which prevents the vehicle from starting if the individual's breath alcohol concentration is outside the acceptable range."
-  *source: [NCDMV](https://www.ncdot.gov/dmv/license-id/license-suspension/Pages/ignition-interlock-devices.aspx)*
-
-  ### Why the portal TBD heading :)?
-
+  ### Why the new portal?
+  
   In some cases this new portal would be needed to monitor successful use of the device. The portal would also identify and alert necessary parties of court dates and eventual approved removal of the device.
 
   In other instances a participant might miss a court date. The device could be detecting misuse or malfunction. A participant could file a complaint on a vendor or request an exception be made due to medical reasons. Each of these use cases would need to be reflected in the internal IIMS portal and the data available only to those with approval.
 
-  ![this is the alt text](/img/ncdot-display.png "Title is optional")
+  &nbsp;
+  
+  <!-- ![this is the alt text](/img/ncdot-display.png "Title is optional") -->
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="fullwidth">
+
+<div class="inner-wrap">
+
+<!-- <div role="presentation" class="fullwidth img" style="background-image: url(/img/decorative-desk.jpg)">
+
+</div> -->
+
+<div class="newcontent">
+
+  ## Exploring what is needed to deliver on the required process and user needs
+
+  ### Initial research
+  In the initial stage of being brought onto the project other teams had been researching and working on the legislation involved for years. A comically-sized stack of paper was placed on my desk and I spent the following day going through it with a highlighter and taking notes on a whiteboard. This research also consisted of the existing pages and online system that this portal would be incorporated with.
+
+  - How does the current system handle navigation?
+  - How are users authenticated and are there functions that only some users have access to? What does an unauthenticated user see?
+  - The current system uses a table with filters. How will filtering be handled without a SharePoint backend?
+  - There is a lot of data. Should also data be available, whe, to whom, and how can the data be grouped into views?
+
+  ### Stakeholder interviews
+  After conducting my own research and notes I consulted with the internal project liaison. We compared notes and unified on a strategy before driving downtown to meet with the project owner.
+  
+  After research and stakeholder interviews the team had a better understanding of requirements. The sketches were turned into the first round of wireframes to cover each user task.
+  <div>
+
+  - Business goals were discussed
+  - Technical limitations were identified
+  - User needs were discussed and a unified approach was decided upon
+  - Sketches of how different tasks and goals could be approached were created during the initial interview
+
+  ### User tasks included:
+  - create participant
+  - edit participant profile
+  - modify dates
+  - access a participant flagged for immediate follow-up
+  - delete a user
+  - download individual participant data
+  - download report for a date range
+  - review case notes including photographs
 
   </div>
 
-</div>
+  ![this is the alt text](/img/ncdot-display.png "Title is optional")
 
 </div>
 
-</section>
-
-<section>
-<div class="inner-wrap content">
-<div class="div-1">
-
-  ## TBD
-
-  ### TBD  
-  - TBD
-
-</div>
-<div class="div-2">
-
-![this is the alt text](/img/voma-sketch3.png "Title is optional")
-  *TBD caption*
-
-</div>
-<div class="div-3">
-
-
-![this is the alt text](/img/voma-sketch1.png "Title is optional")
-*BLLLAHH [From left to right]:  Sketches of dividing up the master page section; Responsive menu sketches; notes planning out static page layouts*
-
 </div>
 
-
-</div>
 </section>
 
 <section style="background-color: #F5F6FC">
 <div class="inner-wrap">
 
-## Exploring the different users and user flows       
-![this is the alt text](/img/voma-sketch2.png "Title is optional")
-*BLLLAHH [From left to right]:  Sketches of dividing up the master page section; Responsive menu sketches; notes planning out static page layouts*
-
-
-After research and stakeholder interviews the team had a better understanding of requirements.
-
-By identifying persona needs the information was given proper hierarchy within the layout.
-
-### Main tasks for users included
-- create participant
-- edit participant profile 
-- modify dates
-- access a participant flagged for immediate follow-up
-- delete a use
-- download individual participant data
-- download report for a date range
-- review case notes including photographs
-
-Documentation was important for ensuring teams were up-to-date on design, API, and interactive decisions. 
-
-</div>
-</section>
-
-<section>
-<div class="inner-wrap">
-
-## Wireframe Iterations
+## Establishing the UI with wireframes and a high fidelity prototype   
+### There would be three main views:    
+- dashboard
+- table with individual participants
+- table with participants grouped by date added
 
 ![this is the alt text](/img/voma-wireframe.png "Title is optional")
+*BLLAAHHH In some cases this new portal would be needed to monitor successful use of the device. The portal would also identify and alert necessary parties of court dates and eventual approved removal of the devices.*
 
-BLLAAHHH In some cases this new portal would be needed to monitor successful use of the device. The portal would also identify and alert necessary parties of court dates and eventual approved removal of the devices.
+It was important during this stage to maintain the basic structure of the existing pages this platform would be a part of. The DMV team did not want a rebranding and wanted the new system to fit in atheistically with the existing SharePoint systems and pages. This meant that the focus would be on optimized functionality and clear user experience. 
 
-BLLAAHHH In other instances a participant might miss a court date. The device could be detecting misuse or malfunction. A participant could file a complaint on a vendor or request an exception be made due to medical reasons. Each of these use cases would need to be reflected in the internal IIMS portal and the data available only to those with approval.
-
+### Some ideas that were put to wireframe and either adapted or tossed:
+- dashboard with dynamically updated alerts on upcoming or past deadlines for participant activity
+- detail page for participant or vendor
+- Pagination displaying page number of number versus participants shown range number of number
+- filters to toggle certain columns on or off
+- Ability to pin a column (such as participant ID) to the table if the table required horizontal scrolling
+ 
 </div>
 </section>
 
-<section style="background-color: #F5F6FC">
+<section>
 <div class="inner-wrap">
 
   ## Development considerations & challenges
@@ -225,6 +175,7 @@ BLLAAHHH In other instances a participant might miss a court date. The device co
   - Complete A/B testing for layout to determine on a 3 or 2 column layout
   - Bring photography to the branding forefront
   - Work with Marketing and Sales managers to identify business needs for the new homepage 
+
 </div>
 </section>
 
@@ -233,14 +184,7 @@ BLLAAHHH In other instances a participant might miss a court date. The device co
 <div class="inner-wrap">
 
   ## The takeaway: 
-  - BBLLAAHH Nurturing a site from IE6 to IE9+ has not been easy, but allowing gradual 
-  usability changes was beneficial for the company and older user-base
-    
-  - The bounce rate for the site steadily decreased though the implementations and the browser usage for older browsers steadily decreased without notable monetary loss 
-
-  - Mobile purchases, not just usage, since this project has increased dramatically
-
-  - Regrettably, company changes resulted in the redesign never becoming responsive for devices smaller than 768px.
+  This was a very long project, as is the case with most government work but the different teams I was able to work and collaborate with were great. This was my first introduction to Vue and Nuxt JS. While the project did experience some ups and downs with funding and performance obstacles, the end result was highly praised by the team which now uses this application each day. 👏
 
   </div>
   

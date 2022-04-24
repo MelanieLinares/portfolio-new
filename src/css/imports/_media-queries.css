@@ -134,6 +134,7 @@
     .div-1,.div-4{
         grid-column-end: 12!important;
         grid-column-start: 1!important;
+        padding-right: 1em;
     }
 
     .div-4{
@@ -170,6 +171,10 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1400px) {
+
+    .div-2 em {
+        border: 1px solid red;
+    }
 
     .div2 ul {
         padding-right: 5em; 
@@ -216,6 +221,7 @@
 
     .div-1, .div-4 {
         grid-column-end: 12!important;
+        padding-right: 1em;
     }
     .div-2 {
         grid-row-start: 3!important;
@@ -238,8 +244,14 @@
         grid-column-end: 10!important
     }
 
-    #main .cms .div2 ul:last-of-type {
+    #main .cms .div2 ul:last-of-type,
+    #main .cms .div2 h2:last-of-type + h3 + p {
         padding-right: 6em;
+    }
+
+    #main .cms .div2 h2:last-of-type,
+    #main .cms .div2 h2:last-of-type + h3 {
+        padding-right: 3em;
     }
 
     .content blockquote { 
@@ -264,6 +276,10 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
+
+    .div-1, .div-4 {
+        padding-right: 1em;
+    }
 
     .content blockquote {
         margin-left: -10em;
@@ -306,13 +322,13 @@
         grid-column-end: 4 !important;
     }
 
-    .newcontent p:last-of-type {
+    .newcontent div + p:last-of-type {
         /* width: 83vw; */
         max-width: unset!important;
         position: relative!important;
-        margin-top: 0;
+        margin-top: -1em;
         margin-bottom: -4.2em!important;
-        margin-right: -3em!important;
+        margin-right: -2em!important;
     }
 
     section:not(:first-of-type).fullwidth {
@@ -323,12 +339,16 @@
 
 @media screen and (min-width: 1201px) and (max-width: 1400px) {
 
+    .div-1, .div-4 {
+        padding-right: 1em;
+    }
+
     .newcontent div:last-of-type {
         grid-column-start: 1!important;
         grid-column-end: 2!important;
     }
     
-    .newcontent p:last-of-type {
+    .newcontent div + p:last-of-type {
         grid-column-start: 2!important;
         grid-column-end: 4!important;
         margin-bottom: -3.5px;
@@ -343,7 +363,7 @@
         grid-column-end: 4;
     }
 
-    .newcontent p:last-of-type img {
+    .newcontent div + p:last-of-type img {
         width: 83vw;
         max-width: unset;
     }
@@ -407,12 +427,20 @@
 
 @media screen and (min-width: 1401px) {
 
+    .div-2 em {
+        padding-left: 13em
+    }
+
+    .div-1, .div-4 {
+        padding-right: 1em;
+    }
+
     .newcontent div:last-of-type {
         grid-column-start: 1!important;
         grid-column-end: 2!important;
     }
     
-    .newcontent p:last-of-type {
+    .newcontent div + p:last-of-type {
         grid-column-start: 2!important;
         grid-column-end: 4!important;
         margin-bottom: -3.5px;
@@ -460,10 +488,8 @@
         margin: 0 auto;
     }
 
-/* 
-    .fullwidth div {
-        max-width: 1400px;
-        margin-left: calc(((100vw - 17px) / 2) - 664px);
+    /* section:not(:first-of-type).fullwidth {
+        width: unset;
     } */
 
     .fullwidth.img {

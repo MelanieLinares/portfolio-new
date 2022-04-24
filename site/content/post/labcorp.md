@@ -1,6 +1,6 @@
 ---
 backgroundcolor: multi
-title: Customizable weather and time-management dashboard widgets so teams stay on-task & connected
+title: Customizable dashboard widgets keep teams on-task and connected
 date: 2021-05-05T15:04:00.000Z
 newdate: 2021-06-14T02:27:22.000Z
 
@@ -13,8 +13,8 @@ preview: /img/labcorp-preview.png
 tags:
   - react
   - sharepoint
-titlebold: Customizable weather and time-management dashboard widgets so teams stay 
-titlenormal: on-task & connected
+titlebold: Customizable dashboard widgets 
+titlenormal: keep teams on-task and connected
 client: LabCorp
 role: UI Developer
 Team: Application Development
@@ -40,9 +40,9 @@ to clean up the final design to ensure widgets were responsive and accurate to e
 requirements, as well as last minute changes.
 
 ### Specific tasks:
-- diagnose, debug and remedy defects
+- diagnose, debug, and remedy defects
 - ensure reusability of UI components
-- integrate with weather api
+- integrate with third-party apis
 - utilize SharePoint Workbench in visualizing and implementing SPFx widget components
 - create 404 page  
 
@@ -56,9 +56,9 @@ requirements, as well as last minute changes.
 
 ## The takeaway:  
 While a short project, this was my first introduction to React and SharePoint Workbench. 
-I have used and developed in SharePoint before, but the workbench made everything so much easier. Consider me a fan!
+I have used and developed in SharePoint before, but Workbench made visualizing code changes so much easier. Consider me a fan!
 The LabCorp team was a pleasure to work with when proposing small design changes and in coming to a compromise on 
-specific solutions. This experience jumpstarted my interest and drive to learn more about React so thank you team!  👏
+specific solutions. This experience jumpstarted my interest and drive to learn more about React. Thank you team!  👏
 
 </div>
 
