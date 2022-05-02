@@ -214,7 +214,7 @@ em, .takeaway p {
     display: block;
     background-size:cover!important;
     z-index: -1;
-    /* filter: blur(3em); */
+    filter: blur(3em);
     background-repeat: no-repeat!important;
     background: url('/img/orange-circles.png');
     transform: scaleX(-1);

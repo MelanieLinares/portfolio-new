@@ -84,7 +84,7 @@ display: block;
 position:absolute;
 height: 80vh;
 padding-bottom: 0;
-/* filter: blur(7em); */
+filter: blur(7em);
 }
 
 #main .hero:before {

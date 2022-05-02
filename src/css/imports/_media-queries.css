@@ -91,6 +91,18 @@
     }
 }
 
+
+@media screen and (max-width: 540px) {
+    .hero:before {
+        filter: blur(0)!important;
+    }
+
+    .hero-header:before {
+        filter: blur(0)!important;
+    }
+}
+
+
 @media screen and (max-width: 768px) and (min-width: 501px) {
 
     aside {margin-top: -4rem !important}
