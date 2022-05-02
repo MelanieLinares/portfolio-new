@@ -503,6 +503,12 @@
     }
 }
 
+@media screen and (min-width: 1701px) {
+    .newcontent div + p:last-of-type {
+        max-width: 59.5vw!important;
+    }
+}
+
 @media screen and (min-width: 1401px) {
 
     .div-2 em {
@@ -516,16 +522,18 @@
     .newcontent div:last-of-type {
         grid-column-start: 1!important;
         grid-column-end: 2!important;
+        min-height: 37em;
     }
+    
     
     .newcontent div + p:last-of-type {
         grid-column-start: 2!important;
         grid-column-end: 4!important;
-        margin-bottom: -3.5px;
+        margin-bottom: -7px;
         position: absolute;
         right: 0;
         bottom: 0;
-        max-width: 68vw;
+        max-width: 65vw;
     }
 
     .div2 {

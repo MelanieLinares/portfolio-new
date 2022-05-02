@@ -160,7 +160,7 @@ em, .takeaway p {
 }
 
 .newcontent p:last-of-type {
-    margin-bottom: -3.5px;
+    margin-bottom: -6px;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -263,11 +263,11 @@ section.flex-ns {
     padding: 2em 0 4em 0;
     margin-top: 2em;
     position: relative;
-    width: unset
+    width: 100vw;
 }
 
 .content.mini + .fullwidth {
-    width: unset
+    width: 100vw
 }
 
 .fullwidth.img {
