@@ -87,13 +87,15 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   ### Why not test the entire site?
   The NCDOT website consists of several subsites and pages, but are based off templates and reusable components. Sites like this are constantly adding new content, but rarely change the underlying CMS structure. By identifying a representative set of pages the audit process takes less time and is more effective.
 
-  <div>
-
-  ### Establishing a baseline with automatic testing
+   ### Establishing a baseline with automatic testing
   - Automatics with Lighthouse, Axe DevTools chrome extension, W.A.V.E. (web accessibility evaluation tool)
   - Created a spreadsheet to organize and group
   - High severity and easy fixability were added to NCDOT ticketing system
   - Remaining issues were grouped by page or components, assigned an individual severity and discussed with web dept lead
+
+  <div>
+
+ 
 
 
 
@@ -141,7 +143,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 </div>
 </section>
 
-<section style="background-color: #F5F6FC">
+<section style="background-color: #ECEFF9">
 <div class="inner-wrap content">
 <div class="div-1">
 
@@ -204,6 +206,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
   > Melanie, contributed a great deal to improving our website's load time, performance, and accessibility. The results were effective and immediate - faster page loads across the board, and forms and interactions were available to everyone regardless of capability.  
   *- Patrick Doran, NCDOT UX and Web Services Manager*
+  
   > Thank you for all your efforts in keeping the web accessible.   
   *- Todd Darling, Insight Team Lead while on NCDOT contract*
 

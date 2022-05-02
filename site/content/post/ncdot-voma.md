@@ -138,7 +138,7 @@ notice: For legal reasons some images are representational only or blurred
 
 </section>
 
-<section style="background-color: #F5F6FC">
+<section style="background-color: #ECEFF9">
 <div class="inner-wrap">
 
 ## Establishing the UI with wireframes and a high fidelity prototype   

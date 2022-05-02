@@ -121,9 +121,9 @@
 
     {{ if isset .Params "preview" }}
     <div class="tile">
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-    <p>{{ .Params.description }}</p>
 <img src="{{ .Params.preview }}" alt="{{ .Title }}" />
+<a href="{{ .Permalink }}">{{ .Title }}</a>
+<p>{{ .Params.description }}</p>
 
   </div>
     {{ end }}

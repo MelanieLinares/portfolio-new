@@ -97,16 +97,17 @@
 	}
 
 	& ul {
-		line-height: 1.25em;
+		line-height: 1.33em;
 		/* margin-left: 1.33rem; */
 		margin-left: 2rem;
 		& >li:before {
-			content: '✱' / "";
-			/* left: -1.33rem; */
-			left: -2rem;
+			content: 'o✱' / "";
+			/* left: -2rem;
 			position: absolute;
-			/* color: var(--primary); */
-			color: #9da5e8;
+			color: #9da5e8; */
+		}
+		li {
+			margin-bottom: .5rem;
 		}
 	}
 

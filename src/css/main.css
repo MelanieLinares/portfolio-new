@@ -11,7 +11,7 @@
  *    Articles individual: default
    *
  */
- @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&=familyMontserrat:wght@500&family=Hepta+Slab:wght@300;400;600;700&familyPermanent+Marker:wght@400;&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&=familyMontserrat:wght@500&family=Hepta+Slab:wght@300;400;600;700&familyPermanent+Marker:wght@400;&display=swap');
 
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap');
  
@@ -89,6 +89,10 @@ html, body {
     overflow-x:hidden;
 }
 
+body {
+    background-color: #fdf4f4;
+}
+
 .content {
   position: relative  
 } 
@@ -126,6 +130,11 @@ p img {
 
 .newcontent div h2:last-of-type {
     padding-top: 3em;
+}
+
+p {
+    line-height: 1.33;
+    margin-bottom: 1rem
 }
 
 em, .takeaway p {
@@ -171,17 +180,23 @@ em, .takeaway p {
     z-index: -1;
     background-repeat: no-repeat!important;
     background: url('/img/orange-gradient.png');
+    mix-blend-mode: darken;
 }
 
-.takeaway:after {
+/* .takeaway:after {
     content: '';
-    height: 300px;
-    width: 100vw;
+    height: 280px;
+    width: calc(100vw + 2em);
     position:absolute;
     margin-top: 2em;
     margin-left: -2em;
     background-color: white;
     z-index: -1;
+} */
+
+.takeaway + div {
+    background-color: white;
+    padding-bottom: 0;
 }
 
 .takeaway {
@@ -234,6 +249,10 @@ section:first-of-type {
     padding-bottom: 4em;
 }
 
+section.flex-ns {
+    padding-bottom: 0;
+}
+
 .takeaway.fullwidth {
     padding: 2em 1.5em 2em 1.5em;
     margin-bottom: 0;
@@ -244,11 +263,11 @@ section:first-of-type {
     padding: 2em 0 4em 0;
     margin-top: 2em;
     position: relative;
-    width: calc(100vw - 17px);
+    width: unset
 }
 
 .content.mini + .fullwidth {
-    width: calc(100vw - 17px);
+    width: unset
 }
 
 .fullwidth.img {
@@ -280,6 +299,14 @@ section:first-of-type {
 
 .fullwidth.purple h2 {
     color: white;
+}
+
+.fullwidth.purple p,
+.fullwidth.purple ul,
+.takeaway p,
+.takeaway ul
+ {
+    opacity: .8
 }
 
 .cms h2 {
@@ -409,7 +436,7 @@ section.takeaway h2:before {
 
 body {
     font-family: 'Atkinson Hyperlegible', sans-serif;
-    font-size: 1.15rem;
+    font-size: 1.05rem;
 }
 
 .inner-wrap li img, .inner-wrap li img + em {
@@ -436,6 +463,7 @@ body {
 
 .related-title {
     padding: 0 .75em;
+    padding-top: 1em;
 }
 
 footer{
@@ -479,6 +507,15 @@ h2 {
     color: white;
 }
 
+.cms blockquote + blockquote {
+    padding-top: 0;
+    margin-bottom: 0
+}
+
+.cms blockquote + blockquote p em {
+    margin-bottom: 0
+}
+
 .project-info {
     grid-area: 1 / 10 / 2 / 13;
 }
@@ -492,7 +529,7 @@ h2 {
     display: block;
     color: #7C67BC;
     font-size: .75em;
-    margin-top: .5em;
+    margin-top: 1.15rem;
 }
 
 .project-info li {

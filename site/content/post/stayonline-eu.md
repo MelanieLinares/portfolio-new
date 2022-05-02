@@ -83,13 +83,16 @@ client: Stay Online LLC.
   - easy localization for target audience culture, region, language
   - coding process that allows for translation
 
-  <div>
+
 
   ### Information Gathering  
   - considerations such as GDPR, color best-practices, localized terms
   - Marketing and Sales teams were interviewed for their specific needs - feedback was then prioritized into sprints      
   - Existing sub-sites and marketing materials would be carried over incrementally as translations were completed
   - Grouped notes and outlined internal goals from a maintenance and code-based standpoint
+
+  
+  <div>
 
   ### Project Requirements  
   - A large amount of product APIs were required with little to no rewrite as the U.S. site also used the same data     
@@ -122,7 +125,7 @@ client: Stay Online LLC.
 </div>
 </section>
 
-<section style="background-color: #F5F6FC">
+<section style="background-color: #ECEFF9">
 <div class="inner-wrap content">
 <div class="div-1">
 
@@ -188,6 +191,7 @@ client: Stay Online LLC.
 
   > Melanie distinguished herself by **consistently deliverying quality solutions, on schedule**. [...] She always went the extra mile to ensure the quality of her work was at the highest level.
   *- Gordon Harris, Stay Online Director, Marketing and Communications*
+  
   > Melanie has a great understanding of CSS, graphics and web design, responsive layout and CSS compilers. **Our web sites are much better as a result of her work**   
   *- Brian Futrell, Stay Online Web Developer*
 

@@ -83,11 +83,12 @@ Stay Online's client-base had a strong percentage of IE6 use (even back in 2012)
 <!-- ![this is the alt text](/img/stayonline-us-table.jpg "Title is optional")
 *The Stay Online website layout when I first started; I first broke the design down into a basic wireframe to help better identify where sections could be simplified* -->
 
-<div>
-
 ### Development Overhead: 
 - CSS adjustments were constantly being logged as bugs with each new page creation. Templates were not implemented and pages hard coded.
 - Layout bugs were constantly found by the team and users as it was easy to mistype or forget a closing table tag. This resulted in the development focusing on tackling the growing backlog as a symptom versus tackling the cause. 
+
+<div>
+
 
 ### User Pain Points: 
 - Many users complained they could not see content because it was either hidden, off-screen, or required scrolling horizontally on mid-size and small mobile devices

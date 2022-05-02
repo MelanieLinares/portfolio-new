@@ -45,7 +45,7 @@ I was part of the accessibility go-to-market planning committee. This team was h
 </section>
 
 
-<section style="background-color: #F5F6FC">
+<section style="background-color: #ECEFF9">
 
 ## Hunger for professional betterment
 <ul class="parent3">
