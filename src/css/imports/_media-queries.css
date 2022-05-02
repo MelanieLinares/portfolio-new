@@ -107,7 +107,15 @@
     .cms ul>li:before {
         content: unset;
     }
-}
+
+    .cms .fullwidth h2:before {
+        opacity: 1!important;
+        mix-blend-mode: unset!important;
+        position: relative!important;
+    }
+
+    }
+
 
 
 @media screen and (max-width: 768px) and (min-width: 501px) {
