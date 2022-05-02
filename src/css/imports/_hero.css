@@ -80,24 +80,11 @@
 
 .hero:before {
 content: "";
-/* mix-blend-mode: screen; */
 display: block;
 position:absolute;
-/* width: 100%; */
 height: 80vh;
-/* height: 100%; */
-/* left: 0;
-top: 0;
--webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-padding-bottom: 15vh */
-/* left: 0; */
-/* top: 0; */
-/* top: -18rem; */
-/* -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
 padding-bottom: 0;
-filter: blur(7em);
+/* filter: blur(7em); */
 }
 
 #main .hero:before {
