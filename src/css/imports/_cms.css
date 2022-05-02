@@ -102,9 +102,9 @@
 		margin-left: 2rem;
 		& >li:before {
 			content: '✱' / "";
-			/* left: -2rem;
+			left: -2rem;
 			position: absolute;
-			color: #9da5e8; */
+			color: #9da5e8;
 		}
 		li {
 			margin-bottom: .5rem;

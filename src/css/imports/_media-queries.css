@@ -104,8 +104,13 @@
     list-style-type: disc;
     }
 
-    .cms ul>li:before {
-        content: unset;
+    .cms ul>li:before,
+    .cms h2:before {
+        content: unset!important;
+    }
+
+    section:not(:first-of-type) {
+        padding-top: 2.5rem!important;
     }
 
     .cms .fullwidth h2:before {
@@ -113,6 +118,13 @@
         mix-blend-mode: unset!important;
         position: relative!important;
     }
+
+    @supports (-webkit-touch-callout: none) {
+        /* CSS specific to iOS devices */
+        .cms .fullwidth h2 {
+            border: 1px solid red;
+        } 
+      }
 
     }
 
