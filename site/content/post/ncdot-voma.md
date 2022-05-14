@@ -14,7 +14,6 @@ technology:
   - vue
   - sharepoint
 role: Software Engineer
-team: Application Development
 tags:
   - vue
   - sharepoint

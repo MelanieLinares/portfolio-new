@@ -115,6 +115,20 @@ body {
     z-index: 1;
 }
 
+.purple a {
+    color: var(--highlight);
+    padding: 3px;
+}
+
+.purple a:hover {
+    color: #291e49;
+    padding: 3px;
+}
+
+aside ul.project-info {
+    line-height: 1.5em;
+}
+
 p {
     margin-top: .75em
 }
@@ -493,14 +507,17 @@ footer{
     margin: 1em 0;
 }
 
+.definition {
+    border-bottom: 1px dotted #ffffff
+} 
 h2 {
     color: #48377d;
     font-family: 'Poppins', sans-serif;
 }
 
-.hero .hero-header img {
+/* .hero .hero-header img {
     background-color: #483181;
-}
+} */
 
 .content blockquote {
     background-color: #D93A3A;

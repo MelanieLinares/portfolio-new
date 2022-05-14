@@ -10,7 +10,6 @@ image: /img/stayonline-eu.jpg
 # image2: /img/stayonline-eu-tablet.png
 preview: /img/stayonlineeu-preview.png
 role: Front-end developer
-team: Web Dev
 technology:
   - HTML/CSS
   - Javascript 

@@ -7,7 +7,7 @@ newdate: 2021-06-14T02:27:22.000Z
 notice: For legal reasons images of work completed cannot be shown
 duration: 1 month
 logo: /img/logos/labcorp-logo.gif
-image: /img/Group 524.png
+image: /img/Group 8.png
 preview: /img/labcorp-preview.png
 # image2: /img/Group 531.png
 tags:
@@ -17,7 +17,6 @@ titlebold: Customizable dashboard widgets
 titlenormal: keep teams on-task and connected
 client: LabCorp
 role: UI Developer
-Team: Application Development
 technology:
   - React
   - SharePoint SPFx (Framework)
@@ -37,7 +36,7 @@ technology:
 Brought on late into the project, the previous design team had already worked with the 
 client to construct an elegant solution in the form of dashboard widgets. My role was 
 to clean up the final design to ensure widgets were responsive and accurate to existing 
-requirements, as well as last minute changes.
+requirements.
 
 ### Specific tasks:
 - diagnose, debug, and remedy defects

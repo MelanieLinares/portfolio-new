@@ -11,7 +11,6 @@ image: /img/accessibility-ncdot.jpg
 image1: /img/blog-flavor_wheel.jpg
 preview: /img/accessibility-ncdot.jpg
 role: Accessibility Specialist 
-team: Web Services
 technology:
   - HTML/CSS
   - Sharepoint

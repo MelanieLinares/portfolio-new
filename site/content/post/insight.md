@@ -16,7 +16,6 @@ titlebold: Prioritizing internal and client experience
 titlenormal: through Heart, Hunger, and Harmony
 client: Insight 
 role: Senior Software Engineer
-team: Application Development
 
 ---
 

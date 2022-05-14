@@ -14,11 +14,14 @@ tags:
   - .net mvc
   - javascript
   - cross-browser
+technology:
+  - HTML/CSS
+  - Javascript 
+  - ASP.NET MVC
 titlebold: Decreasing the bounce-rate of Stay Online's website
 titlenormal: through a responsive redesign
 client: Stay Online LLC.
 role: Front-End Web Developer
-team: Web Development
 
 ---
 
@@ -32,10 +35,10 @@ team: Web Development
 Stay Online is a power cord manufacturer and distributer, known for having the largest U.S. in-stock inventory of power cords and adapters. The legacy e-commerce website, built in 1997, had not changed the layoutand design to fit changing technology and user experience best practices. Mobile users were not considered.  This contributed to a large bounce-rate from mobile device users. There was a potential to capture these users by making the web experience accessible to them. Responsive design was not an easy sell to management. Data-driven design through analytics was needed to get the pitch approved.
 
 ### The starting rate:   
-👎 ~85% mobile users leave 
+<span aria-hidden="true">👎</span> ~85% mobile users leave 
 
 ### The goal:   
-👌 < 50% mobile users leave 
+<span aria-hidden="true">👌</span> < 50% mobile users leave 
 
 *(note:  mobile was defined as less than 1024px screen size during the design sprint)*
 
