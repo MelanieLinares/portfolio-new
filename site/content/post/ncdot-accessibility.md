@@ -1,6 +1,6 @@
 ---
 backgroundcolor: mixed
-title: Increase accessibility across NCDOT websites through Section 508 compliance
+title: Increasing accessibility across NCDOT websites to meet Section 508 compliance
 date: 2019-06-03T15:04:10.000Z
 newdate: 2019-08-07T15:04:10.000Z
 
@@ -23,8 +23,8 @@ technology:
 tags:
   - accessibility
   - javascript
-titlebold: Increase accessibility across NCDOT websites
-titlenormal: through Section 508 compliance
+titlebold: Increasing accessibility across NCDOT websites
+titlenormal: to meet Section 508 compliance
 client: NC Department of Transportation
 weight: 1
 notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
@@ -41,7 +41,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   <br>
   **The starting score:** 67 (based on Google Lighthouse)
   <br>
-  **The goal:** <span aria-label="greater than 87">> 87</span>
+  **The goal:** <span aria-label="score greater than 87">> 87</span>
   [Skip to the results](post/ncdot-accessibility/#final)
 
 </div>
@@ -66,7 +66,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
 <div style="width: calc(100% - 100px);">
 
-  ### <span aria-hidden="true">🚩</span> The main issue for citizens
+  ### The main issue for citizens
   - Citizens with vision difficulties are unable to understand important safety and legal announcements
   - Citizens may have a hard time making convenient online transactions
   - Citizens with situational or temporary disabilities (including slow internet speeds) may have difficulties completing tasks 
@@ -81,7 +81,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
 <div style="width: calc(100% - 100px);">
 
-  ### <span aria-hidden="true">🚩</span> The main issue for the NCDOT: 
+  ### The main issue for the NCDOT: 
   - As a federal agency, the websites for the NCDOT and NCDMV fall under Section 508 regulations to be ADA compliant. Failure to meet guidelines can lead to lawsuits and a loss of citizen and customer trust
   </div>
   </div>
@@ -111,8 +111,8 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
    ### Establishing a baseline with automatic testing
   - Automatics with Lighthouse, Axe DevTools chrome extension, W.A.V.E. (web accessibility evaluation tool)
-  - Created a spreadsheet to organize and group
-  - High severity and easy fixability were added to NCDOT ticketing system
+  - Created a spreadsheet to organize and group issues
+  - Severity and tractability levels were added to NCDOT ticketing system
   - Remaining issues were grouped by page or components, assigned an individual severity and discussed with web dept lead
 
   <div>
@@ -127,7 +127,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   - Keyboard
   - Screen reader: NVDA and Talkback
   - Color contrast
-  - Code within DOM inspection
+  - Code inspection, including Javascript
 
   </div>
 
@@ -146,10 +146,10 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
   ## Audit findings and breakdown
   ### Focus on components
-  Components associated with key functionality such as datapickers and dynamically populated dropdowns received prioritization. This also included custom controls whic have a native alternative that is often replaced in favor of less accessible, but visually branded elements.
+  Components associated with key functionality such as datapickers and dynamically populated dropdowns received prioritization. This also included custom controls which have a native alternative that is often replaced in favor of less accessible, but visually branded elements.
   - Date pickers were not operable via keyboard or presented instances of keyboard traps
   - Custom dropdown elements would refresh pages on keychange when cycling through options
-  - Contact forms were in the footer of every page
+  - Contact forms withought correct label associations were in the footer of every page
   - Incorrect use of headings included implicit headings which contained no meaning in html syntax and skips in heading elements which disrupt a screen reader's ability to parse content
 
 </div>
@@ -174,14 +174,14 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   ### Keyboard changes  
   - Skip to main link existed but was not functional due to either an incorrect ID or empty href attribute, depending on the template. Navigation was added to a seperate component so it could be reused within templates
   - Headings re-organized and given proper hierarchy according to semantics vs aesthetic browser default sizing
-  - Focus rings on links added back, as well as hover underlines which were oiginally inconsistently implemented
+  - Focus rings on links added back, as well as hover underlines which were originally inconsistently implemented
   - Elements arranged out of logical tab order via tabindex or CSS floats caused issues when browsing through content.
 
 </div>
 <div class="div-2">
 
   ![this is the alt text](/img/ncdot-alert.png "Title is optional")
-  *Horizontal  alerts within the header and pop alerts provided imporant information to users visually and needed ARIA live region roles to share this inpormation with users not accessing the site visually.*
+  *Horizontal  alerts within the header and pop alerts provided imporant information to users visually and needed ARIA live region roles to share this information with users not accessing the site visually.*
 
 </div>
 <div class="div-3">
@@ -218,13 +218,13 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 <div class="inner-wrap">
 
   ## The takeaway: 
-  The original goal was to reach <span aria-label="greater than 87">> 87</span> via Lighthouse and reduce the number  of issues within W.A.V.E by 50% and this was successful. Of course a good score does not ensure an accessible application, but this was used as a benchmark. The remediation tasks were validated with help from the QA team. The team was given a demo of the before and after and given training on how to proactively reduce accessibility issues in the future. 
+  The original goal was to reach a <span aria-label="score greater than 87">> 87</span> via Lighthouse and reduce the number  of issues within W.A.V.E by 50% and this was successful. Of course a good score does not ensure an accessible application, but this was used as a benchmark. The remediation tasks were validated with help from the QA team. The team was given a demo of the before and after and given training on how to proactively reduce accessibility issues in the future. 
 
   </div>
   
 </section>
 
-<div class="inner-wrap">
+<div class="inner-wrap" aria-label="quotes">
 
   > Melanie, contributed a great deal to improving our website's load time, performance, and accessibility. The results were effective and immediate - faster page loads across the board, and forms and interactions were available to everyone regardless of capability.  
   *- Patrick Doran, NCDOT UX and Web Services Manager*
