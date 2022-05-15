@@ -48,7 +48,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 <div class="div2"> 
 
 ## Why the concern over accessibility?
-  Originally brought on for front-end development, I noticed the accessibility issues when my battery-operated mouse died. This [situational disability](www.google.com) required I use my keyboard to navigate the website. It is important to recognize that accessibility is for everyone, from someone who is blind, has limb differentiation, to someone having a temporary or situational disability. As a government agency, the website is required to be W.C.A.G. 2.0/Section 508 accessible.  
+  Originally brought on for front-end development, I noticed the accessibility issues when my battery-operated mouse died. This <a href="https://www.access-can.ca/news/the-state-of-disability#:~:text=Situational%20disabilities%20are%20a%20little,a%20permanent%20or%20temporary%20disability." target="_blank">situational disability</a> required I use my keyboard to navigate the website. It is important to recognize that accessibility is for everyone, from someone who is blind, has limb differentiation, to someone having a temporary or situational disability. As a government agency, the website is required to be W.C.A.G. 2.0/Section 508 accessible.  
 
   ### What is W.C.A.G?
   The Web Content Accessibility Guidelines are part of a series of web accessibility guidelines considered to be the benchmark for compliance. 
@@ -56,12 +56,35 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   ### What is Section 508?
   Section 508 as part of the Rehabilitation Act of 1973 is a law that requires government agencies to provide access to its Information and Communication Technology (ICT) to people with disabilities. The Revised 508 Standards incorporate by reference and apply the WCAG 2.0 Level AA Success Criteria to both web and non-web electronic content. 
 
+
+
+<div style="display: -webkit-box;">
+<div class="icon" style="align-items: center;
+  justify-content: center;">
+  <img class="" src="/img/icons/unhappy.png" alt="">
+    <!-- <a href="https://www.flaticon.com/free-icons/no-racism" title="no racism icons">No racism icons created by Freepik - Flaticon</a> --></div>
+
+<div style="width: calc(100% - 100px);">
+
   ### <span aria-hidden="true">🚩</span> The main issue for citizens
   - Citizens with vision difficulties are unable to understand important safety and legal announcements
   - Citizens may have a hard time making convenient online transactions
   - Citizens with situational or temporary disabilities (including slow internet speeds) may have difficulties completing tasks 
+  </div>
+  </div>
+
+<div style="display: -webkit-box;">
+<div class="icon" style="align-items: center;
+  justify-content: center;">
+  <img class="" src="/img/icons/leadership.png" alt="">
+    <!-- <a href="https://www.flaticon.com/free-icons/leadership" title="leadership icons">Leadership icons created by Freepik - Flaticon</a> --></div>
+
+<div style="width: calc(100% - 100px);">
+
   ### <span aria-hidden="true">🚩</span> The main issue for the NCDOT: 
   - As a federal agency, the websites for the NCDOT and NCDMV fall under Section 508 regulations to be ADA compliant. Failure to meet guidelines can lead to lawsuits and a loss of citizen and customer trust
+  </div>
+  </div>
 
 </div>
 

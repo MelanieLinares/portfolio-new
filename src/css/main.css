@@ -208,6 +208,13 @@ em, .takeaway p {
     z-index: -1;
 } */
 
+.icon {
+    width: 100px;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+}
+
 .takeaway + div {
     background-color: white;
     padding-bottom: 0;
