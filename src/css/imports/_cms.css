@@ -29,7 +29,9 @@
   & h3 {
     /* font-size: 1.25rem; */
 	font-size: 22px;
-	padding-top: 1.25rem;
+	/* padding-top: 1.25rem; */
+	margin-top: 2.5rem;
+	margin-bottom: 0;
   }
 
   & h2:not(:first-of-type) ~ h3 {
@@ -107,7 +109,7 @@
 			color: #9da5e8;
 		}
 		li {
-			margin-bottom: .5rem;
+			/* margin-bottom: .5rem; */
 		}
 	}
 

@@ -109,11 +109,38 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   ### Why not test the entire site?
   The NCDOT website consists of several subsites and pages, but are based off templates and reusable components. Sites like this are constantly adding new content, but rarely change the underlying CMS structure. By identifying a representative set of pages the audit process takes less time and is more effective.
 
-   ### Establishing a baseline with automatic testing
+
+
+### Establishing a baseline with automatic testing
+  <div style="display: flex; margin-bottom: 2em;" class="full-em">
+
+<span style="display: inline-block">
+
   - Automatics with Lighthouse, Axe DevTools chrome extension, W.A.V.E. (web accessibility evaluation tool)
   - Created a spreadsheet to organize and group issues
   - Severity and tractability levels were added to NCDOT ticketing system
   - Remaining issues were grouped by page or components, assigned an individual severity and discussed with web dept lead
+
+  </span>
+  <span class="" style="align-items: center;justify-content: center;">
+
+  <!-- ![this is the alt text](/img/ncdot-a11y2.png "Title is optional") -->
+  <!-- ![this is the alt text](/img/ncdot-wave.png "Title is optional") -->
+
+  <img src="/img/ncdot-a11y2.png" alt="this is the alt text" style="margin-bottom: 1rem;">
+  <em>Issues were prioritized by level of user impact and location</em>
+
+  <!-- <a href="https://www.flaticon.com/free-icons/leadership" title="leadership icons">Leadership icons created by Freepik - Flaticon</a> -->
+
+  </span>
+
+  </div>
+<!-- 
+   ### Establishing a baseline with automatic testing
+  - Automatics with Lighthouse, Axe DevTools chrome extension, W.A.V.E. (web accessibility evaluation tool)
+  - Created a spreadsheet to organize and group issues
+  - Severity and tractability levels were added to NCDOT ticketing system
+  - Remaining issues were grouped by page or components, assigned an individual severity and discussed with web dept lead -->
 
   <div>
 
@@ -156,9 +183,12 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
 <div class="div-5">
 
-  ![this is the alt text](/img/ncdot-a11y2.png "Title is optional")
+  ![this is the alt text](/img/ncdot-alert.png "Title is optional")
+  *Horizontal alerts within the header and pop alerts provided imporant information to users visually and needed ARIA live region roles to share this information with users not accessing the site visually.*
+
+  *Many pages included repeatable card components*
+  ![this is the alt text](/img/ncdot-components.png "Title is optional")
   <!-- ![this is the alt text](/img/ncdot-wave.png "Title is optional") -->
-  *Issues were prioritized by level of user impact and location*
 
   </div>
 
@@ -180,14 +210,15 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 </div>
 <div class="div-2">
 
-  ![this is the alt text](/img/ncdot-alert.png "Title is optional")
-  *Horizontal  alerts within the header and pop alerts provided imporant information to users visually and needed ARIA live region roles to share this information with users not accessing the site visually.*
+  ![](/img/skiptomain.png)
+  *Skip link appears on hover above the top navigation. For headings Voice Over was used to ensure proper hierarchy structure. Here the Voice Over Rotor, a quick access menu, shows the heading structure prior to changes.*
 
 </div>
 <div class="div-3">
 
-  ![this is the alt text](/img/ncdot-components.png "Title is optional")
-  *Many pages included repeatable card components*
+  ![](/img/voiceover-headings.png)
+  <em aria-hidden="true" style="height: 0; font-size: 0;
+    margin-bottom: 0;"></em>
 
 </div>
 <div class="div-4">

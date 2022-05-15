@@ -56,7 +56,7 @@ My role was to take the approved interactive prototype and to build the needed p
 <div class="inner-wrap">
 
 ## The takeaway:  
-Y'all, did you know that React is great for making dynamic components? 😉 I learned about <span class="definition" title="component hierarchy focuses the component's scope of responsibility, creates meaningful relationships between components, encourages composability, and provides balance between flexibility and structure">component hierarchy</span> through this project and it was my first deep dive into learning TypeScript. Starbucks 
+Y'all, did you know that React is great for making dynamic components? 😉 I learned about component hierarchy through this project and it was my first deep dive into learning TypeScript. Starbucks 
 has a very knowledgeable team that was a great asset during design and development. I always love working directly with UX and 
 back-end folks and this project experience had both. The Starbucks team knew what they needed from this platform 
 and I'm glad our team was able to deliver. ☕✨

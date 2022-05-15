@@ -125,7 +125,9 @@ body {
     margin-left: 6px;
 }
 
-.div-2 em:before {
+.div-2 em:before,
+.full-em em:before,
+.div-5 p:nth-of-type(1) em:before {
     content: '';
     background: url(/img/arrow.png);
     background-repeat: no-repeat;
@@ -136,6 +138,70 @@ body {
     width: 31px;
     z-index: 1;
 }
+
+.div-5 p:nth-of-type(2) em:before {
+    content: '';
+    background: url(/img/arrow.png);
+    background-repeat: no-repeat;
+    position:absolute;
+    margin-top: 7px;
+    margin-left: -45px;
+    height: 68px;
+    width: 31px;
+    z-index: 1;
+    transform: scaleY(-1);
+}
+
+.div-5 p:nth-of-type(1) em {
+width: calc(100% - 37px);
+padding-left: 31px;
+margin-top: -1.25em;
+margin-bottom: 4em
+}
+
+.full-em em {
+    width: calc(100% - 61px);
+    padding-left: 55px;
+    margin-top: -1.25em;
+    margin-bottom: 4em
+    }
+
+    .div-3 em {
+        width: 100%;
+    }
+
+    .div-3 em:after {
+        content: '';
+        background: url(/img/arrow-alt.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        margin-top: -100px;
+        margin-right: -45px;
+        height: 22px;
+        width: 74px;
+        z-index: 1;
+        transform: rotate(5deg);
+        right: 0;
+    }
+
+    .div-3 img {
+        max-height: 300px;
+        float: right;
+        padding-right: 1.75em;
+    }
+
+
+
+    .div-5 p:nth-of-type(3) {
+        margin-top: -.75em;
+        margin-bottom: 0
+    }
+
+.div-5 p:nth-of-type(2),
+.div-5 p:nth-of-type(3) em {
+    width: 85%;
+    margin-left: 15%
+    }
 
 .purple a {
     color: var(--highlight);
@@ -344,7 +410,7 @@ section.flex-ns {
     color: white;
 }
 
-.fullwidth.purple p,
+.fullwidth.purple p:not(:last-of-type),
 .fullwidth.purple ul,
 .takeaway p,
 .takeaway ul
