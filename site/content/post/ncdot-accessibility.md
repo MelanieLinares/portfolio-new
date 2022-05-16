@@ -58,7 +58,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
 
 
-<div style="display: -webkit-box;">
+<div style="display: -webkit-box;" class="image-block">
 <div class="icon" style="align-items: center;
   justify-content: center;">
   <img class="" src="/img/icons/unhappy.png" alt="">
@@ -73,7 +73,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   </div>
   </div>
 
-<div style="display: -webkit-box;">
+<div style="display: -webkit-box;" class="image-block">
 <div class="icon" style="align-items: center;
   justify-content: center;">
   <img class="" src="/img/icons/leadership.png" alt="">
