@@ -205,13 +205,13 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   - Skip to main link existed but was not functional due to either an incorrect ID or empty href attribute, depending on the template. Navigation was added to a seperate component so it could be reused within templates
   - Headings re-organized and given proper hierarchy according to semantics vs aesthetic browser default sizing
   - Focus rings on links added back, as well as hover underlines which were originally inconsistently implemented
-  - Elements arranged out of logical tab order via tabindex or CSS floats caused issues when browsing through content.
+  - Elements arranged out of logical tab order via tabindex or the CSS float property caused issues when browsing through content.
 
 </div>
 <div class="div-2">
 
   ![](/img/skiptomain.png)
-  *Skip link appears on hover above the top navigation. For headings Voice Over was used to ensure proper hierarchy structure. Here the Voice Over Rotor, a quick access menu, shows the heading structure prior to changes.*
+  *Skip link appears on keyboard tab focus above the top navigation. For headings Voice Over was used to ensure proper hierarchy structure. Here the Voice Over Rotor, a quick access menu, shows the heading structure prior to changes.*
 
 </div>
 <div class="div-3">
@@ -225,7 +225,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
   ### Alerts & pop-ups
   - Originally not focusable or operable, these did not have an accessible way to close content and were adjusted or given textual alternatives
-  - Alerts of important information were not announced to screen readers. Aria roles were added or re-implemented correctly.
+  - Alerts of important information were not announced to screen readers. <span title="ARIA: a set of roles and attributes that define ways to make content accessible" class="definition">Aria</span> roles were added or re-implemented correctly.
 
   ### Custom third-party components
   - Some components found to be inaccessible. Code was edited as able or replaced with native HTML5 controls
@@ -249,7 +249,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 <div class="inner-wrap">
 
   ## The takeaway: 
-  The original goal was to reach a <span aria-label="score greater than 87">> 87</span> via Lighthouse and reduce the number  of issues within W.A.V.E by 50% and this was successful. Of course a good score does not ensure an accessible application, but this was used as a benchmark. The remediation tasks were validated with help from the QA team. The team was given a demo of the before and after and given training on how to proactively reduce accessibility issues in the future. 
+  The original goal was to reach a <span aria-label="score greater than 87">> 87</span> via Lighthouse and reduce the number  of issues within W.A.V.E by 50% and this was successful. Of course a good score does not ensure an accessible application, but this was used as a benchmark. The <span title="remediation: the act of correcting problems" class="definition">remediation</span> tasks were validated with help from the QA team. The team was given a demo of the before and after and given training on how to proactively reduce accessibility issues in the future. 
 
   </div>
   

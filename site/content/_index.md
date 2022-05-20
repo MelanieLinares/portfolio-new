@@ -19,7 +19,7 @@ image_list:
       I am part of Insight’s Accessibility 
       and Inclusivity Design and Planning Team.
     image: img/accessibility.png
-    linkurl: example.com
+    linkurl: https://linktr.ee/melanielinares
     linktext2: ""
     linkurl2: ""
     text2: ""
