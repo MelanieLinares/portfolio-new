@@ -19,11 +19,11 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Image", name: "image1", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "post" 
-    label: "Post" 
-    folder: "site/content/post" 
-    create: true 
-    fields:
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
+    folder: "site/content/post" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
       - {label: "Background Color", name: "backgroundcolor", widget: "string"}
       - {label: "Title", name: "title", widget: "string"} # this is used everywhere except the post itself 
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -35,31 +35,18 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image1", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
 
-# added test fields below
+        # added test fields below
 
       - {label: "TitleBold", name: "titlebold", widget: "string", required: true}
       - {label: "TitleOutline", name: "titlenormal", widget: "string", required: true}
       - {label: "Hero Image", name: "preview", widget: "image", required: true}
-      # - {label: "Legal Msg", name: "notice", widget: "string"} 
+        # - {label: "Legal Msg", name: "notice", widget: "string"} 
       - {label: "Legal Msg", name: "notice", widget: "select", options: ["For legal reasons images of work completed cannot be shown", "For legal reasons some images are representational only or blurred", "For legal reasons images of work completed cannot be shown"]}
       - {label: "Client", name: "client", widget: "string"}
       - {label: "Client Logo", name: "logo", widget: "image"}
       - {label: "Project Role", name: "role", widget: "select", options: ["Software Engineer", "Senior Software Engineer", "UI Developer", Accessibility Specialist", "Front-End Web Developer"], required: true}}
-      - {
-          label: 'Select multiple',
-          name: 'select_multiple',
-          widget: 'select',
-          options: ['a', 'b', 'c'],
-          multiple: true,
-        }
-      - {label: "Start time"
-          name: "start"
-          widget: "datetime"
-          default: ""
-          date_format: "DD.MM.YYYY" # e.g. 24.12.2021
-          time_format: "HH:mm" # e.g. 21:07
-          format: "LLL"
-          picker_utc: false }
+      - {label: 'Select multiple', name: 'select_multiple', widget: 'select', options: ['a', 'b', 'c'], multiple: true }
+      - {label: "Start time", name: "start", widget: "datetime", default: "", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: false }
       - {label: "Duration", name: "duration", widget: "text"}
       - {label: "Intro Heading", name: "introheading", widget: "string"}
       - {label: "Intro Body", name: "introbody", widget: "text"}
@@ -68,7 +55,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Overview Blurb", name: "overviewblurb", widget: "text"}
       
 
-# added test fields above
+      # added test fields above
   - name: "pages"
     label: "Pages"
     files:
