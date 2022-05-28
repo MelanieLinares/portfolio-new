@@ -124,9 +124,16 @@ body {
     margin-left: 6px;
 }
 
+strong {
+    font-weight: bold;
+    font-size: 1rem
+}
+
 .div-2 em:before,
 .full-em em:before,
-.div-5 p:nth-of-type(1) em:before {
+.div-5 p:nth-of-type(1) em:before,
+.superwireframe + p em:before
+ {
     content: '';
     background: url(/img/arrow.png);
     background-repeat: no-repeat;
@@ -328,8 +335,74 @@ dd {
     margin-top: 0;
 }
 
-.image-block {
-    margin-top: 1em;
+/* .image-block div img {
+    height: 100%;
+    object-fit: none;
+} */
+
+/* .image-block {
+    margin-top: 3em;
+} */
+
+.image-block + p {
+    margin-top: 3em;
+}
+
+.image-block + div {
+    margin-top: 3em;
+}
+
+.scribble {
+    width: 60vw;
+    margin-top: -18em;
+    position: absolute;
+    right: -11em;
+    mix-blend-mode: color-burn;
+    filter: blur(0.5px);
+    opacity: .75;
+}
+
+.stat-block {
+    color:transparent;
+    background-color: #7E64BE;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    padding: .75em;
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+.stat-block { 
+margin-left: .75em;
+white-space: nowrap;
+margin-bottom: .25em;
+}
+
+.plus {
+    margin-left: .75em;  
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: #9C88CD;
+    font-weight: 100
+}
+
+.stat-block img {
+    filter: invert(1);
+    width: 100px;
+}
+
+.stat-block span {
+    display: block;
+    text-align: center;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: .75rem;
+    color: white;
+    -webkit-text-stroke-width: 0;
+    font-weight: normal;
+    white-space: nowrap
 }
 
 .icon {
@@ -337,6 +410,22 @@ dd {
     display: flex;
     align-items: center;
 }
+
+.icon + div ul {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.xs-icon {
+    width: 52px;
+    display: flex;
+    align-items: center;
+    margin-right: .25em
+}
+
+/* .blurb:before: {
+content: url(idea.png);
+} */
 
 .takeaway + div {
     background-color: white;
@@ -453,8 +542,68 @@ section.flex-ns {
     opacity: .8
 }
 
+.superwireframe {
+    /* width: calc(100vw - 3em); */
+    overflow-x: scroll;
+    border-radius: .25em;
+    background-color: #cdd1f3;
+    /* mix-blend-mode: exclusion; */
+}
+
+.wireframe {
+    width: 100%;
+}
+
+.wireframe img {
+    padding: 1em;
+    max-width: unset;
+    height: 35vh;
+    min-height: 200px;
+    max-height: 600px;
+    mix-blend-mode: multiply;
+}
+
+h2 + p, h3 + p, ul, ol, dl {
+    opacity: .75
+}
+
+blockquote p, aside ul, .first p:last-of-type, .newcontent div + p:last-of-type {
+    opacity: 1
+}
+
+.xs-icon {
+    /* filter: brightness(1) invert(0.6) sepia(.5) hue-rotate(200deg) saturate(300%) */
+    filter: brightness(1) invert(0.6) sepia(.5) hue-rotate(315deg) saturate(300%)
+
+}
+
+section.purple .xs-icon {
+filter: brightness(1) invert(0.6) sepia(0.5) hue-rotate(195deg) saturate(250%);
+}
+
+
 .small-img {
     width: 320px
+}
+
+.med-img {
+    width: calc(520px - 2em);
+    border-radius: 4px;
+    margin-left: 2em;
+    display: flex;
+}
+
+.lrg-img {
+    width: calc(800px - 3em);
+    border-radius: 4px;
+    margin-left: 3em;
+}
+
+.med-img > img,
+.lrg-img > img {
+    /* border: 1px solid #eeeeee; */
+    webkit-filter: drop-shadow(2px 2px 3px #00000025);
+    filter: drop-shadow(2px 2px 3px #00000025);
 }
 
 .cms h2 {

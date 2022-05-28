@@ -184,8 +184,29 @@
         .small-img img {
             height: 100%;
             object-fit: cover;
-            object-position: 33%;
+            object-position: 90% 100%;
         }
+
+        #understanding-the-underlying-system + h3 + dl + .image-block + .image-block {
+            width: 100%;
+            display: block!important;
+            margin-top: 3em;
+        }
+
+        #understanding-the-underlying-system + h3 + dl + .image-block + .image-block .small-img {
+            width: 100%;
+            display: block!important;
+        }
+
+        #understanding-the-underlying-system + h3 + dl + .image-block + .image-block .small-img + div {
+            width: 100%!important;
+            display: block!important;
+        }
+
+        .image-block + ul {
+            margin-top: 0!important;
+        }
+
     }
 
     @media screen and (max-width: 639px) {

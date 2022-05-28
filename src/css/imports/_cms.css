@@ -23,19 +23,24 @@
   }
 
   & h2 {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 
-  & h3:first-of-type {
+  & h2 + div h3,
+  h2 + h3,
+  .image-block h3 {
 	margin-top: 0;
   }
 
   & h3 {
-    /* font-size: 1.25rem; */
-	font-size: 22px;
+    font-size: 1.25rem;
 	/* padding-top: 1.25rem; */
 	margin-bottom: 0;
-	margin-top: 3rem;
+	margin-top: 5rem;
+  }
+
+  & dl {
+	margin-bottom: 2.5rem;
   }
 
   & h2:not(:first-of-type) ~ h3 {
@@ -90,8 +95,16 @@
 	/* Lists */
 	& ul, & ol, & li {
 		position: relative;
-		padding-top: .5rem;
+		margin-top: .5rem;
 		padding-bottom: .5rem;
+	}
+
+	& ol p {
+		display: contents
+	}
+
+	& ol li:before {
+		position: absolute
 	}
 
 	& ul, & ol {
@@ -105,32 +118,44 @@
 	& ul {
 		line-height: 1.33em;
 		/* margin-left: 1.33rem; */
-		margin-left: 2rem;
+		margin-left: 1.15rem;
 		& >li:before {
 			content: '✱' / "";
-			left: -2rem;
+			left: -1.15rem;
 			position: absolute;
-			color: #9da5e8;
+			/* color: #9da5e8; */
+			/* color: #ee9b94; */
+			font-size: .4em;
 		}
+		
 		li {
 			/* margin-bottom: .5rem; */
 		}
 	}
 
+
+
 	& ol {
 		list-style: none;
 		margin-left: var(--spacing-medium);
 		counter-reset: i 0;
-    & >li:before {
-      font-weight: 800;
-      left: var(--spacing-medium);
-      margin-right: 1.33rem;
-      position: relative;
-      height: 100%;
-      content: counter(i);
-      counter-increment: i;
-      color: var(--primary);
-    }
+		& li {
+			padding-left: .75em;
+
+			&:before {
+				font-weight: 800;
+				left: var(--spacing-medium);
+				margin-right: 1.33rem;
+				position: absolute;
+				height: 100%;
+				content: counter(i);
+				counter-increment: i;
+				color: var(--primary);
+				margin-left: -1.75em;
+				margin-top: 0;
+			  }
+		}
+
 	}
 
   /* Blockquotes */

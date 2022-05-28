@@ -41,7 +41,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   <br>
   **The starting score:** 67 (based on Google Lighthouse)
   <br>
-  **The goal:** <span aria-label="score greater than 87">> 87</span>
+  **The goal:** <span aria-label="score greater than 80">> 80</span>
   [Skip to the results](post/ncdot-accessibility/#final)
 
 </div>
@@ -174,10 +174,36 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   ## Audit findings and breakdown
   ### Focus on components
   Components associated with key functionality such as datapickers and dynamically populated dropdowns received prioritization. This also included custom controls which have a native alternative that is often replaced in favor of less accessible, but visually branded elements.
-  - Date pickers were not operable via keyboard or presented instances of keyboard traps
-  - Custom dropdown elements would refresh pages on keychange when cycling through options
-  - Contact forms withought correct label associations were in the footer of every page
-  - Incorrect use of headings included implicit headings which contained no meaning in html syntax and skips in heading elements which disrupt a screen reader's ability to parse content
+
+  <div style="display: -webkit-box;" class="image-block">
+<div class="xs-icon" style="align-items: baseline;
+  justify-content: center; padding-top: .5em;">
+  <img class="" src="/img/icons/ux-design.png" alt="">
+  <!-- <a href="https://www.flaticon.com/free-icons/ux" title="ux icons">Ux icons created by Freepik - Flaticon</a> -->
+    </div>
+<div style="width: calc(100% - 52px);">
+<ul>
+<li>Date pickers were not operable via keyboard or presented instances of keyboard traps</li>
+<li>Custom dropdown elements would refresh pages on keychange when cycling through options</li>
+</ul>
+  </div>
+  </div>
+
+
+  <div style="display: -webkit-box;" class="image-block">
+<div class="xs-icon" style="align-items: baseline;
+  justify-content: center; padding-top: .5em;">
+  <img class="" src="/img/icons/ux-design.png" alt="">
+  <!-- <a href="https://www.flaticon.com/free-icons/ux" title="ux icons">Ux icons created by Freepik - Flaticon</a> -->
+    </div>
+<div style="width: calc(100% - 52px);">
+<ul>
+<li>Contact forms withought correct label associations were in the footer of every page</li>
+<li>Incorrect use of headings included implicit headings which contained no meaning in html syntax and skips in heading elements which disrupt a screen reader's ability to parse content</li>
+</ul>
+  </div>
+  </div>
+  
 
 </div>
 
@@ -248,8 +274,25 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
 <div class="inner-wrap">
 
+<div style="display: flex" class="image-block">
+<div>
+
   ## The takeaway: 
-  The original goal was to reach a <span aria-label="score greater than 87">> 87</span> via Lighthouse and reduce the number  of issues within W.A.V.E by 50% and this was successful. Of course a good score does not ensure an accessible application, but this was used as a benchmark. The <span title="remediation: the act of correcting problems" class="definition">remediation</span> tasks were validated with help from the QA team. The team was given a demo of the before and after and given training on how to proactively reduce accessibility issues in the future. 
+
+<p>  The original goal was to reach a <span aria-label="score greater than 80">> 80</span> via Lighthouse and reduce the number  of issues within W.A.V.E by 50% and this was successful. Of course a good score does not ensure an accessible application, but this was used as a benchmark. The <span title="remediation: the act of correcting problems" class="definition">remediation</span> tasks were validated with help from the QA team. The team was given a demo of the before and after and given training on how to proactively reduce accessibility issues in the future. </p>
+  </div>
+  <div style="align-items: center;
+  justify-content: center; display: flex;">
+  <div class="stat-block">
+  50% <span>issue reduction</span>
+  </div>
+
+  <div class="stat-block">
+  82 <span>Google Lighthouse</span>
+  </div>
+
+  </div>
+  </div>
 
   </div>
   
