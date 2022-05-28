@@ -28,7 +28,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "TitleOutline", name: "titlenormal", widget: "string", required: true}
       - {label: "Hero Image", name: "preview", widget: "image", required: true}
         # - {label: "Legal Msg", name: "notice", widget: "string"} 
-      # - {label: "Legal Msg", name: "notice", widget: "select", options: ["For legal reasons images of work completed cannot be shown", "For legal reasons some images are representational only or blurred", "For legal reasons images of work completed cannot be shown"]}
+      - {label: "Legal Msg", name: "notice", widget: "select", options: 
+        ["For legal reasons images of work completed cannot be shown", "For legal reasons some images are representational only or blurred", "For legal reasons images of work completed cannot be shown"]}
       - {label: "Client", name: "client", widget: "string"}
       - {label: "Client Logo", name: "logo", widget: "image"}
       - {label: "Project Role", name: "role", widget: "select", options: 
