@@ -9,7 +9,7 @@ logo: /img/logos/stayonline-logo.png
 image: /img/stayonline-eu.jpg
 # image2: /img/stayonline-eu-tablet.png
 preview: /img/stayonlineeu-preview.png
-role: Front-end developer
+role: Front-End Web Developer
 technology:
   - HTML/CSS
   - Javascript 
