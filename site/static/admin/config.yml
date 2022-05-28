@@ -31,7 +31,8 @@ collections: # A list of collections the CMS should be able to edit
       # - {label: "Legal Msg", name: "notice", widget: "select", options: ["For legal reasons images of work completed cannot be shown", "For legal reasons some images are representational only or blurred", "For legal reasons images of work completed cannot be shown"]}
       - {label: "Client", name: "client", widget: "string"}
       - {label: "Client Logo", name: "logo", widget: "image"}
-      # - {label: "Project Role", name: "role", widget: "select", options: ["Software Engineer", "Senior Software Engineer", "UI Developer", Accessibility Specialist", "Front-End Web Developer"], required: true}}
+      - {label: "Project Role", name: "role", widget: "select", options: 
+        ["Software Engineer", "Senior Software Engineer", "UI Developer", Accessibility Specialist", "Front-End Web Developer"], required: true}
       - {label: 'Select multiple', name: 'select_multiple', widget: 'select', options: ['a', 'b', 'c'], multiple: true }
       - {label: "Start time", name: "start", widget: "datetime", default: "", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: false }
       - {label: "Duration", name: "duration", widget: "text"}
