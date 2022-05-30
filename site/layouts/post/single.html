@@ -96,10 +96,25 @@
       </aside>
 
       <div class="cms center">
-      {{ partial "intro" .Params }}
+        <section class="fullwidth ">
+          <div class="inner-wrap"> 
+          {{ partial "intro" .Params }}
+          {{ .Params.introbody | markdownify }}
+            <div class="mw7 center ph3 pt4">
 
+              {{ range $index, $element := .Params.values }}
+                {{ if modBool $index 2 }}
+                  {{ partial "media-block" $element }}
+                {{ else }}
+                  {{ partial "media-block-reverse" $element }}
+                {{ end }}
+              {{ end }}
+            
+            </div>
+          </div>
+        </section>
     <section class="fullwidth purple">
-      <div class="inner-wrap">
+      <div class="inner-wrap"> 
         <div class="newcontent">
         <!-- *** h2 -->
           <span class="backgroundBeforeElement"></span>

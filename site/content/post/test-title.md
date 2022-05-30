@@ -38,12 +38,13 @@ introbody: |-
   * you have to hit enter twice to get a new bullet
 
   ```
-  this is a code block
+  <p>this is a code block</p>
   ```
 
-  and this is an image:
+  and this is an image, but it CANNOT have spaces in the file name:
 
-  ![this is that image's alt text](img/Group 527.png)
+  ![this is that image's alt text](img/ncdot-a11y2.png)
+  
 select_multiple:
   - b
   - c

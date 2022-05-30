@@ -30,6 +30,39 @@ weight: 1
 notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
 overviewheading: Conducting the accessibility audit
+
+introbody: |-
+  ### This is a test of the intro body using rich text as an h3. 
+
+  Notice that I've added **bold** text, *italic* text, and a 
+
+  > quote.
+
+  I can also add a list:
+
+  * like so
+  * and also this
+  * you have to hit enter twice to get a new bullet
+
+  ```
+  this is a code block
+  ```
+
+  and this is an image:
+
+  ![this is that image's alt text](img/Group 527.png)
+select_multiple:
+  - b
+  - c
+values:
+  - heading: "Shade-grown coffee"
+    imageUrl: "/img/about-single-origin.jpg"
+    text: >
+      Coffee is a small tree or shrub that grows in the forest
+      understory in its wild form, and traditionally was grown
+      commercially under other trees that provided shade. The
+      forest-like structure of shade coffee farms provides habitat for
+      a great number of migratory and resident species.
 ---
 
 
