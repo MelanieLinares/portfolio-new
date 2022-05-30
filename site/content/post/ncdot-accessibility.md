@@ -28,9 +28,12 @@ titlenormal: to meet Section 508 compliance
 client: NC Department of Transportation
 weight: 1
 notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
+
+overviewheading: Conducting the accessibility audit
 ---
 
-<section>
+
+<!-- <section>
 
 <div class="inner-wrap content">
 
@@ -62,7 +65,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 <div class="icon" style="align-items: center;
   justify-content: center;">
   <img class="" src="/img/icons/unhappy.png" alt="">
-    <!-- <a href="https://www.flaticon.com/free-icons/no-racism" title="no racism icons">No racism icons created by Freepik - Flaticon</a> --></div>
+    <a href="https://www.flaticon.com/free-icons/no-racism" title="no racism icons">No racism icons created by Freepik - Flaticon</a></div>
 
 <div style="width: calc(100% - 100px);">
 
@@ -77,7 +80,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 <div class="icon" style="align-items: center;
   justify-content: center;">
   <img class="" src="/img/icons/leadership.png" alt="">
-    <!-- <a href="https://www.flaticon.com/free-icons/leadership" title="leadership icons">Leadership icons created by Freepik - Flaticon</a> --></div>
+    <a href="https://www.flaticon.com/free-icons/leadership" title="leadership icons">Leadership icons created by Freepik - Flaticon</a></div>
 
 <div style="width: calc(100% - 100px);">
 
@@ -92,15 +95,15 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
 </div>
 
-</section>
+</section> -->
 
-<section class="fullwidth purple">
+<!-- <section class="fullwidth purple">
 
 <div class="inner-wrap">
 
-<!-- <div role="presentation" class="fullwidth img" style="background-image: url(/img/decorative-desk.jpg)">
+<div role="presentation" class="fullwidth img" style="background-image: url(/img/decorative-desk.jpg)">
 
-</div> -->
+</div>
 
 <div class="newcontent">
 
@@ -124,23 +127,23 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
   </span>
   <span class="" style="align-items: center;justify-content: center;">
 
-  <!-- ![this is the alt text](/img/ncdot-a11y2.png "Title is optional") -->
-  <!-- ![this is the alt text](/img/ncdot-wave.png "Title is optional") -->
+ ![this is the alt text](/img/ncdot-a11y2.png "Title is optional")
+  ![this is the alt text](/img/ncdot-wave.png "Title is optional")
 
   <img src="/img/ncdot-a11y2.png" alt="this is the alt text" style="margin-bottom: 1rem;">
   <em>Issues were prioritized by level of user impact and location</em>
 
-  <!-- <a href="https://www.flaticon.com/free-icons/leadership" title="leadership icons">Leadership icons created by Freepik - Flaticon</a> -->
+  <a href="https://www.flaticon.com/free-icons/leadership" title="leadership icons">Leadership icons created by Freepik - Flaticon</a>
 
   </span>
 
   </div>
-<!-- 
+
    ### Establishing a baseline with automatic testing
   - Automatics with Lighthouse, Axe DevTools chrome extension, W.A.V.E. (web accessibility evaluation tool)
   - Created a spreadsheet to organize and group issues
   - Severity and tractability levels were added to NCDOT ticketing system
-  - Remaining issues were grouped by page or components, assigned an individual severity and discussed with web dept lead -->
+  - Remaining issues were grouped by page or components, assigned an individual severity and discussed with web dept lead
 
   <div>
 
@@ -164,7 +167,7 @@ notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 
 </div>
 
-</section>
+</section> -->
 
 <section>
 <div class="inner-wrap content">

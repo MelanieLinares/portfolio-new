@@ -34,11 +34,14 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Client Logo", name: "logo", widget: "image"}
       - {label: "Project Role", name: "role", widget: "select", options: 
         ["Software Engineer", "Senior Software Engineer", "UI Developer", Accessibility Specialist", "Front-End Web Developer"], required: true}
-      - {label: 'Select multiple', name: 'select_multiple', widget: 'select', options: ['a', 'b', 'c'], multiple: true }
+      - {label: 'Tags', name: 'tags', widget: 'select', options: 
+        ['accessibility', 'cross-browser', 'javascript', 'mentorship', '.net mvc', 'react', 'sharepoint', 'typescript', 'vue'], multiple: true }
+      - {label: 'Technology Stack', name: 'technology', widget: 'select', options: 
+        ['adobe xd', 'ASP.NET MVC', 'AxE DevTools', 'balsamiq', 'HTML/CSS', 'HTML, SCSS', 'Javascript', 'NVDA', 'React', 'Sharepoint', 'SharePoint SPFx (Framework)', 'SharePoint Workbench', 'TalkBack', 'Typescript', 'VoiceOver', 'vue', 'WAVE'], multiple: true }
       - {label: "Start time", name: "start", widget: "datetime", default: "", date_format: "DD.MM.YYYY", time_format: "HH:mm", format: "LLL", picker_utc: false }
       - {label: "Duration", name: "duration", widget: "text"}
       - {label: "Intro Heading", name: "introheading", widget: "string"}
-      - {label: "Intro Body", name: "introbody", widget: "text"}
+      - {label: "Intro Body", name: "intro_body", widget: "text"}
       - {label: "Overview Heading", name: "overviewheading", widget: "string"}
       - {label: "Overview Body", name: "overviewbody", widget: "text"}
       - {label: "Overview Blurb", name: "overviewblurb", widget: "text"}
@@ -51,6 +54,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Favorite", name: "favorite", widget: "string"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Image", name: "image1", widget: "image", required: false}
+      - {label: "IntroBody", name: "introbody", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"

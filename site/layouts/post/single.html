@@ -95,7 +95,21 @@
  
       </aside>
 
-    <div class="cms center">
+      <div class="cms center">
+      {{ partial "intro" .Params }}
+
+    <section class="fullwidth purple">
+      <div class="inner-wrap">
+        <div class="newcontent">
+        <!-- *** h2 -->
+          <span class="backgroundBeforeElement"></span>
+          <h2>{{ .Params.overviewheading }}</h2>
+        <!-- *** end h2 -->
+        {{ partial "overview" .Params }}
+        </div>
+      </div>
+    </section>
+
       {{ .Content }}
 
       <!-- {{ if .Params.technology }}
