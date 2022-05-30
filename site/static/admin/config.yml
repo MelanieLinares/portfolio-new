@@ -57,7 +57,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "IntroBody", name: "introbody", widget: "markdown"}
       - {label: "Values", name: "values", widget: "object", fields: [
         {label: "Heading", name: "heading", widget: string},
-        {label: "Text", name: "text", widget: "text"}]}      
+        {label: "Text", name: "text", widget: "text"},
+        {label: Image, name: image, widget: image}]}      
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
@@ -88,9 +89,13 @@ collections: # A list of collections the CMS should be able to edit
               {label: "Description", name: "text", widget: "text"},
               {label: "Description 2", name: "text2", widget: "text", required: false},
               {label: "Description 3", name: "text3", widget: "text", required: false}]}
-          - {label: "Values", name: "values", widget: "object", fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
+          - label: Values
+            name: values
+            widget: list
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Text, name: text, widget: text}
+              - {label: Image, name: imageUrl, widget: image}
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
