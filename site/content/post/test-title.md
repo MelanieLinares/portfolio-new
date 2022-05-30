@@ -25,7 +25,7 @@ description: intro blurb
 urllink: test.url.com
 favorite: yes
 introbody: |-
-  ### This is a test of the intro body using rich text as an h3. 
+  ### This is a test of the intro body using rich text as an h3.
 
   Notice that I've added **bold** text, *italic* text, and a 
 
@@ -44,7 +44,12 @@ introbody: |-
   and this is an image, but it CANNOT have spaces in the file name:
 
   ![this is that image's alt text](img/ncdot-a11y2.png)
-  
+
+  `<p>this is inline code</p>`
+values:
+  heading: value heading
+  text: value text
+  image: img/accessibility.png
 select_multiple:
   - b
   - c
