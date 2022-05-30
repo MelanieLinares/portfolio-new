@@ -6,13 +6,14 @@ notice: For legal reasons images of work completed cannot be shown
 client: TEst
 logo: img/apple-touch-icon.png
 role: UI Developer
-select_multiple:
-  - b
-  - c
+tags:
+  - cross-browser
+technology:
+  - adobe xd
 start: May 11, 2022 12:00 AM
 duration: this is a test
 introheading: Test intro heading
-introbody: Test intro body
+intro_body: this the OLD intro body
 overviewheading: Test overview heading
 overviewbody: Test overview body
 overviewblurb: test overview blurb
@@ -23,5 +24,28 @@ newdate: 2022-05-28T21:39:31.140Z
 description: intro blurb
 urllink: test.url.com
 favorite: yes
+introbody: |-
+  ### This is a test of the intro body using rich text as an h3. 
+
+  Notice that I've added **bold** text, *italic* text, and a 
+
+  > quote.
+
+  I can also add a list:
+
+  * like so
+  * and also this
+  * you have to hit enter twice to get a new bullet
+
+  ```
+  this is a code block
+  ```
+
+  and this is an image:
+
+  ![this is that image's alt text](img/Group 527.png)
+select_multiple:
+  - b
+  - c
 ---
 hi
