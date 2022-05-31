@@ -44,12 +44,14 @@ introbody: |-
   and this is an image, but it CANNOT have spaces in the file name:
 
   ![this is that image's alt text](img/ncdot-a11y2.png)
-
-  `<p>this is inline code</p>`
-values:
-  heading: value heading
-  text: value text
-  image: img/accessibility.png
+introw:
+  blurbsw:
+    - imagew: img/icons/unhappy.png
+      textw: |-
+        Notice that I've added **bold** text, *italic* text, and a 
+    - imagew: img/icons/unhappy.png
+      textw: |-
+        Notice that I've added **bold** text, *italic* text, and a 
 select_multiple:
   - b
   - c
