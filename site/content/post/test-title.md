@@ -55,7 +55,7 @@ intro:
     - imagew: img/blue-triangle.png
       textw: This is a **gradient** triangle
     - imagew: img/pets.png
-      textw: this is a dog and cat *icon*
+      textw: this is a dog and cat *icon* yay
 select_multiple:
   - b
   - c
