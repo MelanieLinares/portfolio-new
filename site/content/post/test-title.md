@@ -15,14 +15,20 @@ duration: this is a test
 introheading: Test intro heading
 intro_body: this the OLD intro body
 overviewheading: Test overview heading
-overviewbody: Test overview body
 overviewblurb: test overview blurb
+urllink: test.url.com
+introw:
+  blurbsw:
+    - imagew: img/icons/unhappy.png
+      textw: "Notice that I've added **bold** text, *italic* text, and a "
+    - imagew: img/icons/unhappy.png
+      textw: "Notice that I've added **bold** text, *italic* text, and a "
+overviewbody: Test overview body
 backgroundcolor: blurple
 title: test Title
 date: 2022-05-28T21:39:31.104Z
 newdate: 2022-05-28T21:39:31.140Z
 description: intro blurb
-urllink: test.url.com
 favorite: yes
 introbody: |-
   ### This is a test of the intro body using rich text as an h3.
@@ -44,14 +50,12 @@ introbody: |-
   and this is an image, but it CANNOT have spaces in the file name:
 
   ![this is that image's alt text](img/ncdot-a11y2.png)
-introw:
+intro:
   blurbsw:
-    - imagew: img/icons/unhappy.png
-      textw: |-
-        Notice that I've added **bold** text, *italic* text, and a 
-    - imagew: img/icons/unhappy.png
-      textw: |-
-        Notice that I've added **bold** text, *italic* text, and a 
+    - imagew: img/blue-triangle.png
+      textw: This is a **gradient** triangle
+    - imagew: img/pets.png
+      textw: this is a dog and cat *icon*
 select_multiple:
   - b
   - c
