@@ -55,7 +55,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Image", name: "image1", widget: "image", required: false}
       - {label: "IntroBody", name: "introbody", widget: "markdown"}
-      - {label: Introw, name: intro, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}]}      
+      - {label: Intro, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}]}      
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
