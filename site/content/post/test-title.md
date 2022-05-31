@@ -46,12 +46,10 @@ introbody: |-
   ![this is that image's alt text](img/ncdot-a11y2.png)
 introw:
   blurbsw:
-    - imagew: img/video.png
-      textw: |-
-        hi Notice that I've added **bold** text, *italic* text, and a 
+    - imagew: img/idea.png
+      textw: "hi Notice that I've added **bold** text, *italic* text, and a "
     - imagew: img/pets.png
-      textw: |-
-        hello Notice that I've added **bold** text, *italic* text, and a 
+      textw: "hello Notice that I've added **bold** text, *italic* text, and a "
 select_multiple:
   - b
   - c
