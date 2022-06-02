@@ -96,23 +96,25 @@
       </aside>
 
       <div class="cms center">
-        <section class="fullwidth ">
+        <section class="fullwidth">
           <div class="inner-wrap"> 
+            <section>
+    <div class="inner-wrap content">
+    <div class="first">
           {{ partial "intro" .Params }}
-          {{ .Params.introbody | markdownify }}
-
-          {{ partial "icon-media-block" .Params.introw }}
-          
-          </div>
+    </div>
+          {{ partial "overview" .Params }}
+         
         </section>
+
+        
     <section class="fullwidth purple">
       <div class="inner-wrap"> 
         <div class="newcontent">
         <!-- *** h2 -->
-          <span class="backgroundBeforeElement"></span>
           <h2>{{ .Params.overviewheading }}</h2>
         <!-- *** end h2 -->
-        {{ partial "overview" .Params }}
+        {{ partial "overview2" .Params }}
         </div>
       </div>
     </section>

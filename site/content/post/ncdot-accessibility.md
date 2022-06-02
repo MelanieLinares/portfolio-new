@@ -28,29 +28,36 @@ titlenormal: to meet Section 508 compliance
 client: NC Department of Transportation
 weight: 1
 notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
+introheading: Creating a plan for usability and accessibility
+overviewheading: Why the concern over accessibility?
+overviewbody: |-
+  Originally brought on for front-end development, I noticed the accessibility issues when my battery-operated mouse died. This [situational disability](https://www.access-can.ca/news/the-state-of-disability#:~:text=Situational%20disabilities%20are%20a%20little,a%20permanent%20or%20temporary%20disability.) required I use my keyboard to navigate the website. It is important to recognize that accessibility is for everyone, from someone who is blind, has limb differentiation, to someone having a temporary or situational disability. As a government agency, the website is required to be W.C.A.G. 2.0/Section 508 accessible.
 
-overviewheading: Conducting the accessibility audit
+  ### What is W.C.A.G?
 
+  The Web Content Accessibility Guidelines are part of a series of web accessibility guidelines considered to be the benchmark for compliance.
+
+  ### What is Section 508?
+
+  Section 508 as part of the Rehabilitation Act of 1973 is a law that requires government agencies to provide access to its Information and Communication Technology (ICT) to people with disabilities. The Revised 508 Standards incorporate by reference and apply the WCAG 2.0 Level AA Success Criteria to both web and non-web electronic content.
+overviewblurb: |-
+  Accessibility is about access, pure and simple. If a government application cannot be used by citizens then never mind the legal repercussions, the design improvements are wasted.
 introbody: |-
-  ### This is a test of the intro body using rich text as an h3. 
-
-  Notice that I've added **bold** text, *italic* text, and a 
-
-  > quote.
-
-  I can also add a list:
-
-  * like so
-  * and also this
-  * you have to hit enter twice to get a new bullet
-
-  ```
-  this is a code block
-  ```
-
-  and this is an image:
-
-  ![this is that image's alt text](img/Group 527.png)
+  The North Carolina Department of Transportation (NCDOT) as of 2018 had a new website redesign to allow citizens a secure, quick, and easy way to view all transportation-related information. Unfortunately, despite an improved visual UI the site failed initial accessibility audits.\
+  **The starting score:** 67 (based on Google Lighthouse)\
+  **The goal:** > 80
+introw:
+  blurbsw:
+    - imagew: img/video.png
+      textw: |-
+        ### The main issue for citizens 
+        - Citizens with vision difficulties are unable to understand important safety and legal announcements
+        - Citizens may have a hard time making convenient online transactions
+        - Citizens with situational or temporary disabilities (including slow internet speeds) may have difficulties completing tasks    
+    - imagew: img/pets.png
+      textw: |-
+        ### The main issue for the NCDOT:
+        As a federal agency, the websites for the NCDOT and NCDMV fall under Section 508 regulations to be ADA compliant. Failure to meet guidelines can lead to lawsuits and a loss of citizen and customer trust 
 select_multiple:
   - b
   - c
