@@ -23,23 +23,6 @@ tags:
 client: NC Department of Transportation / Department of Motor Vehicles
 # weight is the equivalent of favorite
 notice: For legal reasons some images are representational only or blurred
-introheading: Identifying ways to optimize a legacy internal DMV process digitally
-overviewheading: Why the concern over accessibility?
-overviewbody: |-
-  Originally brought on for front-end development, I noticed the accessibility issues when my battery-operated mouse died. This [situational disability](https://www.access-can.ca/news/the-state-of-disability#:~:text=Situational%20disabilities%20are%20a%20little,a%20permanent%20or%20temporary%20disability.) required I use my keyboard to navigate the website. It is important to recognize that accessibility is for everyone, from someone who is blind, has limb differentiation, to someone having a temporary or situational disability. As a government agency, the website is required to be W.C.A.G. 2.0/Section 508 accessible.
-
-  ### What is W.C.A.G?
-
-  The Web Content Accessibility Guidelines are part of a series of web accessibility guidelines considered to be the benchmark for compliance.
-
-  ### What is Section 508?
-
-  Section 508 as part of the Rehabilitation Act of 1973 is a law that requires government agencies to provide access to its Information and Communication Technology (ICT) to people with disabilities. The Revised 508 Standards incorporate by reference and apply the WCAG 2.0 Level AA Success Criteria to both web and non-web electronic content.
-overviewblurb: |-
-  Accessibility is about access, pure and simple. If a government application cannot be used by citizens then never mind the legal repercussions, the design improvements are wasted.
-introbody: |-
-  The NCDOT on behalf on the NCDMV assigned a team to work directly with the Ignition Interlock Program team. This team would be responsible of not only leading the developmental changes, but integrating the new application into the existing system.
-  The new system would need to still support the legacy system and its user’s needs. This included browser support, SharePoint frontend hosting, and matching UI.
 
 ---
 
