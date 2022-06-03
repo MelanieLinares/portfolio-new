@@ -101,7 +101,9 @@
             <section>
     <div class="inner-wrap content">
     <div class="first">
-          {{ partial "intro" .Params }}
+      <h2>{{ .Params.introheading }}</h2>
+      {{ .Params.introbody | markdownify }}
+      <a href="{{ .Permalink }}#final">Skip to the results</a>
     </div>
           {{ partial "overview" .Params }}
          
