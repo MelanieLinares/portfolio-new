@@ -58,33 +58,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "IntroBody", name: "introbody", widget: "markdown"}
       - {label: Intro, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}]}
 
-      - {label: 'Typed List'
-        name: 'typed_list'
-        widget: 'list'
-        types:
-          - label: 'Type 1 Object'
-            name: 'type_1_object'
-            widget: 'object'
-            fields:
-              - { label: 'String', name: 'string', widget: 'string' }
-              - { label: 'Boolean', name: 'boolean', widget: 'boolean' }
-              - { label: 'Text', name: 'text', widget: 'text' }
-          - label: 'Type 2 Object'
-            name: 'type_2_object'
-            widget: 'object'
-            fields:
-              - { label: 'Number', name: 'number', widget: 'number' }
-              - { label: 'Select', name: 'select', widget: 'select', options: ['a', 'b', 'c'] }
-              - { label: 'Datetime', name: 'datetime', widget: 'datetime' }
-              - { label: 'Markdown', name: 'markdown', widget: 'markdown' }
-          - label: 'Type 3 Object'
-            name: 'type_3_object'
-            widget: 'object'
-            fields:
-              - { label: 'Date', name: 'date', widget: 'date' }
-              - { label: 'Image', name: 'image', widget: 'image' }
-              - { label: 'File', name: 'file', widget: 'file' }}
-          - {label: 'Type 4 Object', name: 'type_4_object', widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}]}  
+      - {label: Test, name: test, widget: object, 
+        types: [{label: 'Type 1 Object',name: 'type_1_object', widget: 'object', fields: [{label: Test, name: test1, widget: list, fields: [{label: Image, name: test2, widget: image}, {label: Text, name: test3, widget: markdown}]}]}]}
+        
             
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
