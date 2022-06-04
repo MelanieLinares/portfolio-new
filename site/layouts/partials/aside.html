@@ -1,0 +1,54 @@
+  <aside>
+    
+    <ul class="project-info">
+      <li>
+        <img src="{{ .logo }}" alt="{{ .client }}"/>
+      </li>
+      
+      <li>
+        <b>CLIENT</b> {{ .client }}
+      </li>
+      <details>
+      <summary role="heading" aria-level="2">Project Details</summary>
+      <li>
+        <b>ROLE</b> {{ .role }}
+      </li>
+      {{ if .technology }}
+      <li>
+        <b>TECHNOLOGY STACK</b> 
+        <ul>{{ range .technology }}
+        <li>{{ . }}</li>
+      {{ end }}</ul>
+      </li>
+      {{ end }}
+      <li>
+        <b>DATES</b> 
+        {{ .Date.Format "Jan 2, 2006" }} -
+            {{ with .newdate }}
+            {{ dateFormat "Jan 2 2006" . }}
+        {{ end }}| {{ .duration }}
+      </li>
+    </details>
+    <li>
+      <b>ROLE</b> {{ .role }}
+    </li>
+    {{ if .technology }}
+    <li>
+      <b>TECHNOLOGY STACK</b> 
+      <ul>{{ range .technology }}
+      <li>{{ . }}</li>
+    {{ end }}</ul>
+    </li>
+    {{ end }}
+    <li>
+      <b>DATES</b> 
+      {{ .Date.Format "Jan 2, 2006" }} -
+          {{ with .newdate }}
+          {{ dateFormat "Jan 2 2006" . }}
+      {{ end }}
+      <br/>
+      ({{ .duration }})
+    </li>
+    </ul>   
+ 
+      </aside>

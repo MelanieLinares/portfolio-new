@@ -1,0 +1,40 @@
+{{ if .purplesectionheading }}
+
+<section class="fullwidth purple">
+    <div class="inner-wrap"> 
+      <div class="newcontent">
+        <h2>{{ .purplesectionheading }}</h2>
+
+        {{ if .purplesection1 }}
+        {{ .purplesection1 | markdownify }}
+        {{ end }}
+
+
+        
+        {{ if .textimagesplitcontent }}
+            {{ partial "textimagesplit" . }}
+        {{ end }}
+
+        {{ if .textimagesplitcontentreverse }}
+        {{ partial "textimagesplitreverse" . }}
+    {{ end }}
+
+
+
+<div>
+        {{ .purplesection2 | markdownify }}
+     </div> 
+
+
+     {{ if .purplesectionimg }}
+     <p><img src="{{ .purplesectionimg }}" alt="{{ .purplesectionimgalt }}"></p>
+ {{ end }}  
+
+
+  </div>
+
+</div>
+
+</section> 
+
+{{ end }}

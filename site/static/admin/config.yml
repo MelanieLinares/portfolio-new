@@ -45,6 +45,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Overview Heading", name: "overviewheading", widget: "string"}
       - {label: "Overview Body", name: "overviewbody", widget: "markdown"}
       - {label: "Overview Blurb", name: "overviewblurb", widget: "markdown"}
+      - {label: "Purple Section Heading", name: "purplesectionheading", widget: "string"}
       - {label: "Background Color", name: "backgroundcolor", widget: "string"}
       - {label: "Title", name: "title", widget: "string"} # this is used everywhere except the post itself 
       - {label: "Publish Date", name: "date", widget: "datetime"}

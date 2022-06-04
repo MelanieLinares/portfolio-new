@@ -30,6 +30,7 @@ weight: 1
 notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 introheading: Creating a plan for usability and accessibility
 overviewheading: Why the concern over accessibility?
+purplesectionheading: Conducting the accessibility audit
 overviewbody: |-
   Originally brought on for front-end development, I noticed the accessibility issues when my battery-operated mouse died. This [situational disability](https://www.access-can.ca/news/the-state-of-disability#:~:text=Situational%20disabilities%20are%20a%20little,a%20permanent%20or%20temporary%20disability.) required I use my keyboard to navigate the website. It is important to recognize that accessibility is for everyone, from someone who is blind, has limb differentiation, to someone having a temporary or situational disability. As a government agency, the website is required to be W.C.A.G. 2.0/Section 508 accessible.
 
@@ -46,6 +47,25 @@ introbody: |-
   The North Carolina Department of Transportation (NCDOT) as of 2018 had a new website redesign to allow citizens a secure, quick, and easy way to view all transportation-related information. Unfortunately, despite an improved visual UI the site failed initial accessibility audits.\
   **The starting score:** 67 (based on Google Lighthouse)\
   **The goal:** > 80
+purplesection1: |-
+  ### Why not test the entire site?
+  The NCDOT website consists of several subsites and pages, but are based off templates and reusable components. Sites like this are constantly adding new content, but rarely change the underlying CMS structure. By identifying a representative set of pages the audit process takes less time and is more effective.
+
+purplesection2: |-
+  ### Manual testing
+  The NVDA screen reader was used to identify issues with the information hierarchy and HTML native elements. Web extensions were utilized for hard to identify issues.
+  - Keyboard
+  - Screen reader: NVDA and Talkback
+  - Color contrast
+  - Code inspection, including Javascript
+
+textimagesplitcontent: |-
+  ### Establishing a baseline with automatic testing
+  - Automatics with Lighthouse, Axe DevTools chrome extension, W.A.V.E. (web accessibility evaluation tool)
+  - Created a spreadsheet to organize and group issues
+  - Severity and tractability levels were added to NCDOT ticketing system
+  - Remaining issues were grouped by page or components, assigned an individual severity and discussed with web dept lead
+textimagesplitimagecaption: Issues were prioritized by level of user impact and location
 introw:
   blurbsw:
     - imagew: img/video.png
@@ -65,6 +85,7 @@ values:
   - heading: "Shade-grown coffee"
     imageUrl: "/img/about-single-origin.jpg"
     text: The forest-like structure of shade 
+purplesectionimg: /img/ncdot-display.png
 ---
 
 
@@ -162,7 +183,7 @@ values:
   </span>
   <span class="" style="align-items: center;justify-content: center;">
 
- ![this is the alt text](/img/ncdot-a11y2.png "Title is optional")
+![this is the alt text](/img/ncdot-a11y2.png "Title is optional")
   ![this is the alt text](/img/ncdot-wave.png "Title is optional")
 
   <img src="/img/ncdot-a11y2.png" alt="this is the alt text" style="margin-bottom: 1rem;">
@@ -202,7 +223,19 @@ values:
 
 </div>
 
-</section> -->
+</section>  -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 <section>
 <div class="inner-wrap content">

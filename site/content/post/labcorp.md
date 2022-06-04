@@ -22,10 +22,22 @@ technology:
   - SharePoint SPFx (Framework)
   - SharePoint Workbench
   - HTML, SCSS
-
+introheading: Responsive dashboard widgets
+introbody: |-
+  Brought on late into the project, the previous design team had already worked with the client to construct an elegant solution in the form of dashboard widgets. My role was to clean up the final design to ensure widgets were responsive and accurate to existing requirements.
+overviewheading: Task breakdown
+overviewbody: |-
+  - diagnose, debug, and remedy defects
+  - ensure reusability of UI components
+  - integrate with third-party apis
+  - utilize SharePoint Workbench in visualizing and implementing SPFx widget components
+  - create 404 page 
+overviewblurb: |-
+  This would be a recommendation from the team.\
+  if I had one
 ---
 
-<section>
+<!-- <section>
 
 <div class="inner-wrap content mini">
 
@@ -47,7 +59,7 @@ requirements.
 
 </div>
 
-</section>
+</section> -->
 
 <section id="final" class="takeaway fullwidth">
 
