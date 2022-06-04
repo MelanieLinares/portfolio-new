@@ -17,6 +17,7 @@ intro_body: this the OLD intro body
 overviewheading: Test overview heading
 overviewbody: Test overview body
 overviewblurb: test overview blurb
+purplesectionheading: purple section heading
 backgroundcolor: blurple
 title: test Title
 date: 2022-05-28T21:39:31.104Z
@@ -53,5 +54,23 @@ introw:
 select_multiple:
   - b
   - c
+typed_list:
+  - type: type_1_object
+    string: type 1 string
+    text: type 1 text
+    boolean: true
+  - type: type_2_object
+    datetime: 2022-06-04T22:45:10.884Z
+    number: 2
+    select: b
+    markdown: type 2 markdown
+  - type: type_3_object
+    date: 2022-06-04T22:45:35.726Z
+    image: img/apple-touch-icon.png
+    file: img/triangle.png
+  - type: type_1_object
+    string: type 1 string the second one
+    text: type 1 text the second one
+    boolean: true
 ---
 hi
