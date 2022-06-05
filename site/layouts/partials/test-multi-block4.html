@@ -1,0 +1,14 @@
+<section style="background-color: #ECEFF9">
+  <div class="inner-wrap">
+
+
+{{ if .textimagesplitcontent }}
+        {{ partial "textimagesplit" . }}
+    {{ end }}
+
+    {{ if .textimagesplitcontentreverse }}
+    {{ partial "textimagesplitreverse" . }}
+{{ end }}
+
+</div>
+</section>

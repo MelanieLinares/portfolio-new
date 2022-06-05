@@ -1,0 +1,32 @@
+  <!-- <div class="div2" style="border: 4px solid red;"> 
+
+    <h2>Test Multi Sections</h2>
+
+
+    <div class="pv4">
+        <div class="ph3 center"> -->
+            
+            {{ range .typed_list }}
+
+                {{ if eq .type "text_with_scroll_img" }}
+                    {{ partial "test-multi-block" . }}
+                {{ end }}
+
+                {{ if eq .type "type_2_object" }}
+                    {{ partial "icon_section_right_img" . }}
+                {{ end }}
+
+                {{ if eq .type "heading_markdown" }}
+                    {{ partial "heading_markdown" . }}
+                {{ end }}
+
+                {{ if eq .type "type_4_object" }}
+                    {{ partial "test-multi-block4" . }}
+                {{ end }}
+
+            {{ end }}
+            
+        <!-- </div>
+    </div>
+
+    </div> -->

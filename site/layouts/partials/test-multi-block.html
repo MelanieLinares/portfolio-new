@@ -1,0 +1,59 @@
+  <section style="background-color: #ECEFF9" class="purple">
+    <div class="inner-wrap">
+    <h2>{{ .heading }}</h2>  
+    
+    
+    
+    
+    
+    
+
+      {{ if eq .fullwidth false }}
+      <div style="display: -webkit-box;" class="image-block">
+    <div style="width: calc(100% - 800px);">
+  
+     {{ .left_side_text | markdownify }}    
+    
+      </div>
+      <div class="lrg-img" style="align-items: center; justify-content: center;">
+        <div class="superwireframe">
+          <div class="wireframe">
+            <img src="{{.image}}"/>
+          </div>
+        </div>    
+          {{.caption}}
+      </div>
+    
+          </div>
+      {{end}}
+
+      {{ if eq .fullwidth true }}
+      <div>
+    
+       {{ .left_side_text | markdownify }}    
+      
+        </div>
+        <div>
+          <div class="superwireframe">
+            <div class="wireframe">
+              <img src="{{.image}}"/>
+            </div>
+          </div>    
+            {{.caption}}
+        </div>
+      
+            </div>
+        {{end}}
+
+    {{ if .blurb }}
+    <div class="blurb" style="background-color: white; padding: 1em; border-radius: 4px;">{{.blurb}}</div> 
+    {{ end }}
+    
+    {{ .full_width_text | markdownify }} 
+    
+    {{if .decorative_image}}
+    <img class="scribble" src="{{.decorative_image}}" alt="">
+    {{end}}
+     
+    </div>
+    </section>

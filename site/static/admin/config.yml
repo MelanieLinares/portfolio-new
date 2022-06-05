@@ -62,30 +62,46 @@ collections: # A list of collections the CMS should be able to edit
         name: 'typed_list'
         widget: 'list'
         types:
-          - label: 'Type 1 Object'
-            name: 'type_1_object'
+          - label: 'Text with scrolling image'
+            name: 'text_with_scroll_img'
             widget: 'object'
             fields:
-              - { label: 'String', name: 'string', widget: 'string' }
-              - { label: 'Boolean', name: 'boolean', widget: 'boolean' }
-              - { label: 'Text', name: 'text', widget: 'text' }
+              - { label: 'String', name: 'heading', widget: 'string' }
+              - { label: 'Text', name: 'left_side_text', widget: 'markdown' }
+              - { label: 'Full width image', name: 'fullwidth', widget: 'boolean'}
+              - { label: "Image", name: "image", widget: "image"}
+              - { label: 'Image caption', name: 'caption', widget: 'string' }
+              - { label: 'Blurb', name: 'blurb', widget: 'markdown' }
+              - { label: 'Text', name: 'full_width_text', widget: 'markdown' }
+              - { label: "Decorative Image", name: "decorative_image", widget: "image", required: false}
           - label: 'Type 2 Object'
             name: 'type_2_object'
             widget: 'object'
             fields:
-              - { label: 'Number', name: 'number', widget: 'number' }
-              - { label: 'Select', name: 'select', widget: 'select', options: ['a', 'b', 'c'] }
+              - {label: Intro, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}]}
+              - { label: 'Image', name: 'image1', widget: 'image' }
+              - { label: 'Caption', name: 'image1caption', widget: 'string' }
+              - { label: 'Image', name: 'image2', widget: 'image' }
+              - { label: 'Caption', name: 'image2caption', widget: 'string' }
               - { label: 'Datetime', name: 'datetime', widget: 'datetime' }
               - { label: 'Markdown', name: 'markdown', widget: 'markdown' }
-          - label: 'Type 3 Object'
-            name: 'type_3_object'
+          - label: 'heading_markdown'
+            name: 'heading_markdown'
             widget: 'object'
             fields:
-              - { label: 'Date', name: 'date', widget: 'date' }
-              - { label: 'Image', name: 'image', widget: 'image' }
-              - { label: 'File', name: 'file', widget: 'file' }
-        
-            
+              - { label: 'Heading', name: 'heading', widget: 'string' }
+              - { label: 'markdown', name: 'markdown', widget: 'markdown' }
+              - {label: Intro, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}]}
+              - { label: 'markdown optional', name: 'markdown_optional', widget: 'markdown' }
+          - label: 'type_4_object'
+            name: 'type_4_object'
+            widget: 'object'
+            fields:
+              - { label: 'Heading', name: 'heading', widget: 'string' }
+              - { label: 'markdown', name: 'textimagesplitcontent', widget: 'markdown' }
+              - { label: 'caption', name: 'textimagesplitimagecaption', widget: 'string' }  
+              - { label: 'markdown', name: 'textimagesplitcontentreverse', widget: 'markdown' }
+              - { label: 'caption', name: 'textimagesplitreverseimagecaption', widget: 'string' }             
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
