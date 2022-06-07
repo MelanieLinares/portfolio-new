@@ -103,7 +103,7 @@ purplesection2: >-
 purplesectionimg: img/ncdot-display.png
 image: img/renew.svg
 image1: img/team.png
-typed_list2:
+typed_list:
   - type: type_2_object
     markdown: >-
       ### This should be first (MARKDOWN) \
