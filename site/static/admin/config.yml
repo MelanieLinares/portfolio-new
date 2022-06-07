@@ -55,7 +55,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Purple Section (split)", name: "textimagesplitcontent", widget: "markdown", required: false}
       - {label: "Purple Section (split) caption", name: "textimagesplitimagecaption", widget: "string", required: false}
       - {label: "Purple Section 2", name: "purplesection2", widget: "markdown"}
-      - {label: "Purple Section Image", name: "image", widget: "image"}
+      - {label: "Purple Section Image", name: "purplesectionimg", widget: "image"}
       # - {label: "Background Color", name: "backgroundcolor", widget: "string"}       
       # - {label: "URL", name: "urllink", widget: "text"}
       # - {label: "Favorite", name: "favorite", widget: "string"}
