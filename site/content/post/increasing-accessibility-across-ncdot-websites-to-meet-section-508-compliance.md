@@ -1,5 +1,6 @@
 ---
-title: Increasing accessibility across NCDOT websites to meet Section 508 compliance
+title: Test Increasing accessibility across NCDOT websites to meet Section 508
+  compliance
 titlebold: "Increasing accessibility across NCDOT websites "
 titlenormal: to meet Section 508 compliance
 preview: img/blog-index.jpg
@@ -118,6 +119,30 @@ typed_list:
       to share this information with users not accessing the site visually.
     image2: img/blog-index.jpg
     image1: img/mentorship.jpg
+    introw:
+      blurbsw:
+        - imagew: img/orange-circles.png
+          textw: >-
+            <!--StartFragment-->
+
+
+            * Date pickers were not operable via keyboard or presented instances of keyboard traps
+
+            * Custom dropdown elements would refresh pages on keychange when cycling through options
+
+
+            <!--EndFragment-->
+        - textw: >-
+            <!--StartFragment-->
+
+
+            * Contact forms withought correct label associations were in the footer of every page
+
+            * Incorrect use of headings included implicit headings which contained no meaning in html syntax and skips in heading elements which disrupt a screen reader's ability to parse conten
+
+
+            <!--EndFragment-->
+          imagew: img/apple-touch-icon.png
   - type: type_5_object
     heading: Major changes and impact
     markdown: >-
