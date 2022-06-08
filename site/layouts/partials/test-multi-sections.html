@@ -24,6 +24,10 @@
                     {{ partial "test-multi-block4" . }}
                 {{ end }}
 
+                {{ if eq .type "type_5_object" }}
+                    {{ partial "test-multi-block5" . }}
+                {{ end }}
+
             {{ end }}
             
         <!-- </div>
