@@ -9,9 +9,8 @@
     <p><em>{{.caption}}</em></p>
     </div>
       </div>
-{{end}}
 
-{{ if not(.fullwidth) }}
+{{ else }}
 <p><img src="/img/stayonline-wireframe.png" alt="this is the alt text" title="Title is optional">
     <em>{{.caption}}</em></p>
 {{end}}
