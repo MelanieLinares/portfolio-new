@@ -69,10 +69,10 @@ collections: # A list of collections the CMS should be able to edit
         widget: 'list'
         types:
           - label: 'Test'
-              name: 'test-heading'
-              widget: 'object'
-              fields:
-                - { label: 'test-Heading', name: 'test-heading', widget: 'string' }
+            name: 'test-heading'
+            widget: 'object'
+            fields:
+              - { label: 'test-Heading', name: 'test-heading', widget: 'string' }
           - label: 'Typed List'
             name: 'typed_list'
             widget: 'list'
