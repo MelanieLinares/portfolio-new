@@ -80,6 +80,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'object'
             fields:
               - { label: 'Basic Content', name: 'basic_content', widget: 'markdown' }
+              - {label: Overview icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
           - label: 'Image with Content'
             name: 'image_with_content'
             widget: 'object'
@@ -87,6 +88,7 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'caption', name: 'caption', widget: 'string', required: false}              
               - { label: 'markdown', name: 'markdown', widget: 'markdown' }
+              - {label: Overview icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
               - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: false}
           - label: 'Stacked Images'
             name: 'stacked_images'
@@ -101,6 +103,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:              
               - { label: 'Full Basic Content', name: 'full_basic_content', widget: 'markdown', required: false}
               - { label: 'Half Basic Content', name: 'half_basic_content', widget: 'markdown' }
+              - {label: Overview icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
               - { label: 'Fancy Image', name: 'image', widget: 'image' }    
           - label: 'Scrollable Image with Caption'
             name: 'scrollable_img_with_caption'
@@ -115,6 +118,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'object'
             fields:              
               - { label: 'Blurb', name: 'blurb', widget: 'markdown' }
+              - {label: Overview icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
           - label: 'Image with Caption'
             name: 'img_with_caption'
             widget: 'object'
@@ -138,6 +142,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'object'
             fields:
               - { label: 'Basic Content', name: 'basic_content', widget: 'markdown' }
+              - {label: Overview icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
           - label: 'Image with Content'
             name: 'image_with_content'
             widget: 'object'
@@ -145,6 +150,7 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'caption', name: 'caption', widget: 'string', required: false}              
               - { label: 'markdown', name: 'markdown', widget: 'markdown' }
+              - {label: Overview icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
               - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: false}
           - label: 'Stacked Images'
             name: 'stacked_images2'
@@ -159,6 +165,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:              
               - { label: 'Full Basic Content', name: 'full_basic_content', widget: 'markdown', required: false}
               - { label: 'Half Basic Content', name: 'half_basic_content', widget: 'markdown' }
+              - {label: Overview icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
               - { label: 'Fancy Image', name: 'image', widget: 'image' }    
           - label: 'Scrollable Image with Caption'
             name: 'scrollable_img_with_caption'
@@ -173,6 +180,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'object'
             fields:              
               - { label: 'Blurb', name: 'blurb', widget: 'markdown' }
+              - {label: Overview icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
           - label: 'Image with Caption'
             name: 'img_with_caption'
             widget: 'object'
