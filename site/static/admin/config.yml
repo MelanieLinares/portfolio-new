@@ -107,7 +107,7 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'caption', name: 'caption', widget: 'string'}
               
-# fancy_img_with_content
+
           # - label: 'Text with scrolling image'
           #   name: 'text_with_scroll_img'
           #   widget: 'object'
