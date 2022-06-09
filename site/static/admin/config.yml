@@ -128,18 +128,18 @@ collections: # A list of collections the CMS should be able to edit
         types:
           # - label: "Heading", name: "heading", widget: "string"
           - label: 'Heading'
-            name: 'heading'
+            name: 'heading2'
             widget: 'object'
             fields:
               - { label: 'Heading', name: 'heading', widget: 'string' }
           # - label: "Basic Content", name: "basic_content", widget: "markdown"
           - label: 'Basic Content'
-            name: 'basic_content'
+            name: 'basic_content2'
             widget: 'object'
             fields:
               - { label: 'Basic Content', name: 'basic_content', widget: 'markdown' }
           - label: 'Image with Content'
-            name: 'image_with_content'
+            name: 'image_with_content2'
             widget: 'object'
             fields:
               - { label: 'Image', name: 'image', widget: 'image' }
@@ -147,21 +147,21 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'markdown', name: 'markdown', widget: 'markdown' }
               - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: false}
           - label: 'Stacked Images'
-            name: 'stacked_images'
+            name: 'stacked_images2'
             widget: 'object'
             fields:
               - { label: 'Image Top Layer', name: 'image_top', widget: 'image' }
               - { label: 'Image Bottom Layer', name: 'image_bottom', widget: 'image' }
               - { label: 'caption', name: 'caption', widget: 'string', required: false}              
           - label: 'Fancy Image with Content'
-            name: 'fancy_img_with_content'
+            name: 'fancy_img_with_content2'
             widget: 'object'
             fields:              
               - { label: 'Full Basic Content', name: 'full_basic_content', widget: 'markdown', required: false}
               - { label: 'Half Basic Content', name: 'half_basic_content', widget: 'markdown' }
               - { label: 'Fancy Image', name: 'image', widget: 'image' }    
           - label: 'Scrollable Image with Caption'
-            name: 'scrollable_img_with_caption'
+            name: 'scrollable_img_with_caption2'
             widget: 'object'
             fields:              
               - { label: 'Fullwidth Image?', name: 'fullwidth', widget: 'boolean', required: false}
@@ -169,12 +169,12 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'Fancy Image', name: 'image', widget: 'image' }
           # - label: "Blurb", name: "blurb", widget: "markdown"
           - label: 'Blurb'
-            name: 'blurb'
+            name: 'blurb2'
             widget: 'object'
             fields:              
               - { label: 'Blurb', name: 'blurb', widget: 'markdown' }
           - label: 'Image with Caption'
-            name: 'img_with_caption'
+            name: 'img_with_caption2'
             widget: 'object'
             fields:              
               - { label: 'Image', name: 'image', widget: 'image' }
