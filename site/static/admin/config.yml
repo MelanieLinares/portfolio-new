@@ -68,54 +68,94 @@ collections: # A list of collections the CMS should be able to edit
         name: 'typed_list'
         widget: 'list'
         types:
-          - label: 'Text with scrolling image'
-            name: 'text_with_scroll_img'
+          - label: "Heading", name: "heading", widget: "string"
+          - label: "Basic Content", name: "basic_content", widget: "markdown"
+          - label: 'Image with Content'
+            name: 'image_with_content'
             widget: 'object'
             fields:
-              - { label: 'String', name: 'heading', widget: 'string' }
-              - { label: 'Text', name: 'left_side_text', widget: 'markdown' }
-              - { label: 'Full width image', name: 'fullwidth', widget: 'boolean'}
-              - { label: "Image", name: "image", widget: "image"}
-              - { label: 'Image caption', name: 'caption', widget: 'string' }
-              - { label: 'Blurb', name: 'blurb', widget: 'markdown' }
-              - { label: 'Text', name: 'full_width_text', widget: 'markdown' }
-              - { label: "Decorative Image", name: "decorative_image", widget: "image", required: false}
-          - label: 'icon sections on left, image on right'
-            name: 'type_2_object'
-            widget: 'object'
-            fields:
-              - {label: Intro, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}]}
-              - { label: 'Image', name: 'image1', widget: 'image' }
-              - { label: 'Caption', name: 'image1caption', widget: 'string' }
-              - { label: 'Image', name: 'image2', widget: 'image' }
-              - { label: 'Caption', name: 'image2caption', widget: 'string' }
-              - { label: 'Markdown', name: 'markdown', widget: 'markdown' }
-          - label: 'heading_markdown'
-            name: 'heading_markdown'
-            widget: 'object'
-            fields:
-              - { label: 'Heading', name: 'heading', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'caption', name: 'caption', widget: 'string', required: false}              
               - { label: 'markdown', name: 'markdown', widget: 'markdown' }
-              - {label: Intro, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}]}
-              - { label: 'markdown optional', name: 'markdown_optional', widget: 'markdown' }
-          - label: 'text and image split'
-            name: 'type_4_object'
+              - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: false}
+          - label: 'Stacked Images'
+            name: 'stacked_images'
             widget: 'object'
             fields:
-              - { label: 'Heading', name: 'heading', widget: 'string' }
-              - { label: 'markdown', name: 'textimagesplitcontent', widget: 'markdown' }
-              - { label: 'caption', name: 'textimagesplitimagecaption', widget: 'string' }  
-              - { label: 'markdown reverse', name: 'textimagesplitcontentreverse', widget: 'markdown' }
-              - { label: 'caption reverse', name: 'textimagesplitreverseimagecaption', widget: 'string' }    
-          - label: 'stacked image with text'
-            name: 'type_5_object'
+              - { label: 'Image Top Layer', name: 'image_top', widget: 'image' }
+              - { label: 'Image Bottom Layer', name: 'image_bottom', widget: 'image' }
+              - { label: 'caption', name: 'caption', widget: 'string', required: false}              
+          - label: 'Fancy Image with Content'
+            name: 'fancy_img_with_content'
             widget: 'object'
-            fields:
-              - { label: 'Heading', name: 'heading', widget: 'string' }
-              - { label: 'markdown', name: 'markdown', widget: 'markdown' }
-              - { label: 'Image1', name: 'image1', widget: 'image' }
-              - { label: 'Image1', name: 'image2', widget: 'image' }
-              - { label: 'caption', name: 'caption', widget: 'string' }                         
+            fields:              
+              - { label: 'Full Basic Content', name: 'full_basic_content', widget: 'markdown', required: false}
+              - { label: 'Half Basic Content', name: 'half_basic_content', widget: 'markdown' }
+              - { label: 'Fancy Image', name: 'image', widget: 'image' }    
+          - label: 'Scrollable Image with Caption'
+            name: 'scrollable_img_with_caption'
+            widget: 'object'
+            fields:              
+              - { label: 'Fullwidth Image?', name: 'fullwidth', widget: 'boolean', required: false}
+              - { label: 'caption', name: 'caption', widget: 'string', required: false}
+              - { label: 'Fancy Image', name: 'image', widget: 'image' }
+          - label: "Blurb", name: "blurb", widget: "markdown"
+          - label: 'Image with Caption'
+            name: 'img_with_caption'
+            widget: 'object'
+            fields:              
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'caption', name: 'caption', widget: 'string'}
+              
+# fancy_img_with_content
+          # - label: 'Text with scrolling image'
+          #   name: 'text_with_scroll_img'
+          #   widget: 'object'
+          #   fields:
+          #     - { label: 'String', name: 'heading', widget: 'string', required: false}
+          #     - { label: 'Text', name: 'left_side_text', widget: 'markdown' }
+          #     - { label: 'Full width image', name: 'fullwidth', widget: 'boolean', required: false}
+          #     - { label: "Image", name: "image", widget: "image"}
+          #     - { label: 'Image caption', name: 'caption', widget: 'string', required: false}
+          #     - { label: 'Blurb', name: 'blurb', widget: 'markdown' }
+          #     - { label: 'Text', name: 'full_width_text', widget: 'markdown' }
+          #     - { label: "Decorative Image", name: "decorative_image", widget: "image", required: false}
+          # - label: 'icon sections on left, image on right'
+          #   name: 'type_2_object'
+          #   widget: 'object'
+          #   fields:
+          #     - {label: Intro, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}]}
+          #     - { label: 'Image', name: 'image1', widget: 'image' }
+          #     - { label: 'Caption', name: 'image1caption', widget: 'string', required: false}
+          #     - { label: 'Image', name: 'image2', widget: 'image' }
+          #     - { label: 'Caption', name: 'image2caption', widget: 'string', required: false}
+          #     - { label: 'Markdown', name: 'markdown', widget: 'markdown' }
+          # - label: 'heading_markdown'
+          #   name: 'heading_markdown'
+          #   widget: 'object'
+          #   fields:
+          #     - { label: 'Heading', name: 'heading', widget: 'string', required: false}
+          #     - { label: 'markdown', name: 'markdown', widget: 'markdown' }
+          #     - {label: Intro, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}]}
+          #     - { label: 'markdown optional', name: 'markdown_optional', widget: 'markdown' }
+          # - label: 'text and image split'
+          #   name: 'type_4_object'
+          #   widget: 'object'
+          #   fields:
+          #     - { label: 'Heading', name: 'heading', widget: 'string', required: false}
+          #     - { label: 'markdown', name: 'textimagesplitcontent', widget: 'markdown' }
+          #     - { label: 'caption', name: 'textimagesplitimagecaption', widget: 'string', required: false} 
+          #     - { label: 'markdown reverse', name: 'textimagesplitcontentreverse', widget: 'markdown', required: false}
+          #     - { label: 'caption reverse', name: 'textimagesplitreverseimagecaption', widget: 'string', required: false}    
+          # - label: 'stacked image with text'
+          #   name: 'type_5_object'
+          #   widget: 'object'
+          #   fields:
+          #     - { label: 'Heading', name: 'heading', widget: 'string', required: false}
+          #     - { label: 'markdown', name: 'markdown', widget: 'markdown' }
+          #     - { label: 'Image1', name: 'image1', widget: 'image' }
+          #     - { label: 'Image1', name: 'image2', widget: 'image' }
+          #     - { label: 'caption', name: 'caption', widget: 'string', required: false}                         
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"

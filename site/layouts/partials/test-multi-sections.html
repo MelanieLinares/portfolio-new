@@ -8,7 +8,39 @@
             
             {{ range .typed_list }}
 
-                {{ if eq .type "text_with_scroll_img" }}
+                {{ if eq .type "heading" }}
+                    {{ partial "heading" . }}
+                {{ end }}
+
+                {{ if eq .type "basic_content" }}
+                    {{ partial "basic_content" . }}
+                {{ end }}
+
+                {{ if eq .type "image_with_content" }}
+                    {{ partial "img_with_content" . }}
+                {{ end }}
+
+                {{ if eq .type "stacked_images" }}
+                    {{ partial "stacked_images" . }}
+                {{ end }}
+
+                {{ if eq .type "fancy_img_with_content" }}
+                    {{ partial "fancy_img_with_content" . }}
+                {{ end }}
+
+                {{ if eq .type "scrollable_img_with_caption" }}
+                    {{ partial "scrollable_img_with_caption" . }}
+                {{ end }}
+
+                {{ if eq .type "blurb" }}
+                    {{ partial "blurb" . }}
+                {{ end }}
+
+                {{ if eq .type "img_with_caption" }}
+                    {{ partial "img_with_caption" . }}
+                {{ end }}
+
+                <!-- {{ if eq .type "text_with_scroll_img" }}
                     {{ partial "test-multi-block" . }}
                 {{ end }}
 
@@ -26,7 +58,7 @@
 
                 {{ if eq .type "type_5_object" }}
                     {{ partial "test-multi-block5" . }}
-                {{ end }}
+                {{ end }} -->
 
             {{ end }}
             

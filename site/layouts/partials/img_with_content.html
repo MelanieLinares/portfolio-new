@@ -1,0 +1,7 @@
+{{ if eq .img_on_right "true" }}
+    {{ partial "textimagesplitreverse" . }}
+{{ end }}
+
+{{ if not (.img_on_right) }}
+    {{ partial "textimagesplit" . }}
+{{ end }}

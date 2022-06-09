@@ -1,0 +1,17 @@
+{{ if eq .fullwidth "true" }}
+<div style="display: -webkit-box;" class="image-block">
+      <div class="lrg-img" style="align-items: center; justify-content: center;">
+     <div class="superwireframe">
+    <div class="wireframe">
+    <img src="{{.image}}">
+    </div>
+    </div>
+    <p><em>{{.caption}}</em></p>
+    </div>
+      </div>
+{{end}}
+
+{{ if not(.fullwidth) }}
+<p><img src="/img/stayonline-wireframe.png" alt="this is the alt text" title="Title is optional">
+    <em>{{.caption}}</em></p>
+{{end}}
