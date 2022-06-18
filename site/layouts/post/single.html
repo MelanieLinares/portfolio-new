@@ -17,16 +17,16 @@
     <div class="first">
       <h2>{{ .Params.introheading }}</h2>
       {{ .Params.introbody | markdownify }}
-      <a href="{{ .Permalink }}#final">Skip to the results</a>
+      <a href="{{ .Permalink }}#test">Skip to the results</a>
     </div>
           {{ partial "overview" .Params }}
          
         </section>    
 
         {{ partial "purple-section" .Params }}
-<hr>
+
         {{ partial "test-multi-sections" .Params }}
-        <hr>
+
       {{ .Content }}
 
       <!-- {{ if .Params.technology }}

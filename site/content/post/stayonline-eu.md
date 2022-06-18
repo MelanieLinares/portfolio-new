@@ -1,6 +1,6 @@
 ---
 backgroundcolor: darkblue2
-title: Launching Stay Online's 10,000+ EU product website with improved information architecture and internationalization in mind
+title: Launching Stay Online's 10,000+ EU product website with improved information architecture in mind
 date: 2015-01-05T15:04:00.000Z
 newdate: 2015-04-10T02:27:22.000Z
 duration: 3 months
@@ -19,23 +19,24 @@ tags:
   - javascript
   - cross-browser
 titlebold: Launching Stay Online's 10,000+ EU product website  
-titlenormal: with improved information architecture and internationalization in mind
+titlenormal: with improved information architecture in mind
 client: Stay Online LLC.
 
 introheading: Creating a plan to help online consumers find products quickly and globally
 introbody: |-
   In 2015 Stay Online made the transition from a US business to an international one. The company opened a shipping and manufacturing location in the Czech Republic. Stay Online wanted a dedicated website to funnl in EU-specific orders before planning a merged site in the future. The new site would apply internationalization and global UX patterns.
 
+overviewheading: Project overview and task breakdown
+overviewbody: |-
   ### The baseline:
   💡 Sales associates noticed an increase in international customers with specific power cord needs that Stay Online could not provide given the high shipping costs when exporting.
 
   ### The goal:
   🏁 increase the number of sales to the EU and help these users find products they can use quickly
-overviewheading: Project overview and task breakdown
-overviewbody: |-
+  
   - Design needs to maintain IE9+ browser compatibility
   - Data-heavy pages need to balance showing necessary data and providing an ideal mobile experience
-  - Branding needs to fit with existing Stay Online principles but also incorporate global standards and prictices
+  - Branding needs to fit with existing Stay Online principles but also incorporate global standards and practices
   - Complete A/B testing for layout to determine navigation approach
   - Bring iconography to the branding forefront
   - Work with Marketing and Sales managers to identify business needs for the new homepage

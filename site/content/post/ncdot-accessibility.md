@@ -27,7 +27,6 @@ titlebold: Increasing accessibility across NCDOT websites
 titlenormal: to meet Section 508 compliance
 client: NC Department of Transportation
 weight: 1
-notice: Photo by KOBU Agency on Unsplash, edited to show NCDOT homepage
 introheading: Creating a plan for usability and accessibility
 overviewheading: Why the concern over accessibility?
 purplesectionheading: Conducting the accessibility audit
@@ -237,7 +236,7 @@ purplesectionimg: /img/ncdot-display.png
 
 
 
-<section>
+<section class="fullwidth">
 <div class="inner-wrap content">
 
 <div class="div-4">
@@ -292,7 +291,7 @@ purplesectionimg: /img/ncdot-display.png
 </div>
 </section>
 
-<section style="background-color: #ECEFF9">
+<section class="fullwidth" style="background-color: #ECEFF9">
 <div class="inner-wrap content">
 <div class="div-1">
 
@@ -343,12 +342,12 @@ purplesectionimg: /img/ncdot-display.png
 
 <section id="final" class="takeaway fullwidth">
 
-<div class="inner-wrap">
+<div class="inner-wrap" id="test">
 
 <div style="display: flex" class="image-block">
 <div>
 
-  ## The takeaway: 
+  <h2>The takeaway:</h2> 
 
 <p>  The original goal was to reach a <span aria-label="score greater than 80">> 80</span> via Lighthouse and reduce the number  of issues within W.A.V.E by 50% and this was successful. Of course a good score does not ensure an accessible application, but this was used as a benchmark. The <span title="remediation: the act of correcting problems" class="definition">remediation</span> tasks were validated with help from the QA team. The team was given a demo of the before and after and given training on how to proactively reduce accessibility issues in the future. </p>
   </div>

@@ -84,7 +84,7 @@
 		text-decoration: unset;
 		display: block;
     	width: fit-content;
-		margin-top: .5em;
+		margin-top: .75em;
 		margin-bottom: 1em;
 		&:hover {
 			background-color: var(--highlight);

@@ -66,6 +66,7 @@
     font-size: 14px;
     position: relative;
     padding-left: 25px;
+    color: white;
 }
 
 .notice:before {
@@ -75,7 +76,8 @@
     left: 0;
     top: -8px;
     opacity: .33;
-    color: black
+    /* color: black */
+    color: white
 }
 
 .hero:before {

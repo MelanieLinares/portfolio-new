@@ -20,11 +20,13 @@ h1 {
   color: transparent;   
   line-height:.5em;
   -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: #48377d; 
+  /* -webkit-text-stroke-color: #48377d;  */
+  -webkit-text-stroke-color: #ffffff;
 } 
 
 h1 b {
-  color: #48377d;  
+  /* color: #48377d;   */
+  color: #ffffff;
   -webkit-text-stroke-width: 0;
   -webkit-text-stroke-color: transparent; 
   font-weight: 200;

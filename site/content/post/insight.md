@@ -21,7 +21,7 @@ role: Senior Software Engineer
 
 <section>
 
-<div class="inner-wrap content mini">
+<div class="inner-wrap content">
 
 <div class="first"></div>
 

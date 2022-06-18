@@ -1,7 +1,7 @@
 <!-- <div id="{{.backgroundcolor}}" class="bg-center cover hero" style="background-image: url('{{.imageUrl}}');"> -->
     <span id=""></span>
   <div id="maincontent" class="bg-center cover hero">
-    <div class="hero-header">
+    <div class="hero-header" style="display: flex">
       <div>
 
         <div class="squiggle" aria-hidden="true">
@@ -66,6 +66,11 @@
           {{ end }}
 
         </h1>
+
+        {{ if .text }}        
+        <div class="notice">{{.text}}</div>        
+      {{ end }}
+
       </div>
       <!-- <div class="mw7 relative bg-fix-primary">
         {{ if .subtitle }}
@@ -75,9 +80,9 @@
         {{ end }}
       </div> -->
      
-        {{ if .text }}        
+        <!-- {{ if .text }}        
            <div class="notice">{{.text}}</div>        
-        {{ end }}
+        {{ end }} -->
       
       <!-- {{ if .heroP }}
       <div class="mw7 relative bg-fix-primary">
