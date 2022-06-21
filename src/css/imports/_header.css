@@ -46,6 +46,7 @@ h1:before {
 
 .hero-header h1 {
     width: 15.5em;
+    max-width: 94vw;
 }
 
 .hero-header div:last-of-type p:last-of-type {
