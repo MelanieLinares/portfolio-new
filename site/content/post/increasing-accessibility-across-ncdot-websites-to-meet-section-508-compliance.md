@@ -105,6 +105,44 @@ purplesectionimg: img/ncdot-display.png
 image: img/renew.svg
 image1: img/team.png
 typed_list:
+  - type: heading
+    heading: Audit findings and breakdown
+  - type: basic_content
+    basic_content: >-
+      <!--StartFragment-->
+
+
+      ### Focus on components
+
+
+      Components associated with key functionality such as datapickers and dynamically populated dropdowns received prioritization. This also included custom controls which have a native alternative that is often replaced in favor of less accessible, but visually branded elements.
+
+
+      <!--EndFragment-->
+    introw:
+      blurbsw:
+        - imagew: img/coffee.svg
+          textw: >-
+            <!--StartFragment-->
+
+
+            * Date pickers were not operable via keyboard or presented instances of keyboard traps
+
+            * Custom dropdown elements would refresh pages on keychange when cycling through options
+
+
+            <!--EndFragment-->
+        - imagew: img/cursor.svg
+          textw: >-
+            <!--StartFragment-->
+
+
+            * Contact forms withought correct label associations were in the footer of every page
+
+            * Incorrect use of headings included implicit headings which contained no meaning in html syntax and skips in heading elements which disrupt a screen reader's ability to parse content
+
+
+            <!--EndFragment-->
   - type: stacked_images
     image_top: img/Group 542.png
     image_bottom: img/Image 43.png
