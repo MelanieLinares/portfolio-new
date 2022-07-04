@@ -37,57 +37,19 @@ overviewbody: |-
 overviewblurb: |-
   This project required knowledge of how the existing paper application is currently processed and reviewed, of currently enacted laws, and the ability to communicate ideas to both functional and cross-functional teams within multiple local agencies.
 
+purplesectionheading: Understanding the underlying system
+purplesection1: |-
+  ### What is IIMS, IIMA, and an ignition interlock device?
+  - Igition Interlock: a small, handheld breathalyzer for car ignitions that's installed to prevent users from being able to start their vehicle after drinking alcohol
+  - IIMS: ignition interlock management system
+  - IIMA: ignition interlock medical accommodation
+
 ---
-
-<!-- <section>
-
-<div class="inner-wrap content">
-
-<div class="first">
-
-  ## Identifying ways to optimize a legacy internal DMV process digitally
-  The NCDOT on behalf on the NCDMV assigned a team to work directly with the Ignition Interlock Program team. This team would be responsible of not only leading the developmental changes, but integrating the new application into the existing system.
-  <br>
-  The new system would need to still support the legacy system and its user's needs. This included browser support, SharePoint frontend hosting, and matching UI.
-
-  [Skip to the results](post/ncdot-voma/#final)
-
-</div>
-<div class="div2"> 
-
-## Project overview and task breakdown 
-
-If you imagine a pile of paperwork one foot tall representing 6 months, the backlog of physical applications prior to the new portal was nearly 4 years worth. The initial system's purpose was to reduce that backlog. In order to accomplish this, the following was considered and assigned priority:
-
-- Review project details and specs regarding data types and DMV in-person process, including applications and citizen eligibility
-- Organize requirements into user flow and wireframes
-- Work directly with project owner to format/approve UI
-- Work with backend team to establish API requirements and implementation
-
-</div>
-
-  > This project required knowledge of how the existing paper application is currently processed and reviewed, of currently enacted laws, and the ability to communicate ideas to both <span class="definition" title="functional team: includes members of the same department with different responsibilities">functional</span> and  <span class="definition" title="cross-functional team: includes members of different departments with different responsibilities">cross-functional</span> teams within multiple local agencies.
-
-</div>
-
-</section> -->
 
 <section class="fullwidth purple">
 
 <div class="inner-wrap">
 
-  ## Understanding the underlying system
-
-  ### What is IIMS, IIMA, and an ignition interlock device?
-
-  <dl>
-    <dt>Igition Interlock</dt>
-    <dd>a small, handheld breathalyzer for car ignitions that's installed to prevent users from being able to start their vehicle after drinking alcohol</dd>
-    <dt>IIMS</dt>
-    <dd>ignition interlock management system</dd>
-    <dt>IIMA</dt>
-    <dd>ignition interlock medical accommodation</dd>
-</dl>
 
   <div style="display: -webkit-box;" class="image-block">
 <div class="small-img" style="align-items: center;
