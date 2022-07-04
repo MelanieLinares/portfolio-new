@@ -1,55 +1,74 @@
 ---
-backgroundcolor: mixed2
-title: Manage current and new I.I.M.S. participants with a new portal for less paperwork
-titlebold: Manage current and new I.I.M.S. participants with a new portal 
+title: Manage current and new I.I.M.S. participants with a new portal for less
+  paperwork
+titlebold: Manage current and new I.I.M.S. participants with a new portal
 titlenormal: for less paperwork
+preview: /img/iims-preview.png
+notice: For legal reasons some images are representational only or blurred
 date: 2019-09-17T15:04:10.000Z
 newdate: 2020-12-29T20:11:54.193Z
-duration: 1 year 3 months
+client: NC Department of Transportation / Department of Motor Vehicles
 logo: /img/logos/ncdot-logo.gif
-image: /img/Group%207.png
-image1: img/about-shade-grown.jpg
-preview: /img/iims-preview.png
-technology:
-  - vue
-  - sharepoint
-  - adobe xd
-  - balsamiq
 role: Software Engineer
 tags:
   - vue
   - sharepoint
   - cross-browser
-client: NC Department of Transportation / Department of Motor Vehicles
-# weight is the equivalent of favorite
-notice: For legal reasons some images are representational only or blurred
-introbody: |-
-  The NCDOT on behalf on the NCDMV assigned a team to work directly with the Ignition Interlock Program team. This team would be responsible of not only leading the developmental changes, but integrating the new application into the existing system.
-  The new system would need to still support the legacy system and its user’s needs. This included browser support, SharePoint frontend hosting, and matching UI.
+technology:
+  - vue
+  - sharepoint
+  - adobe xd
+  - balsamiq
+duration: 1 year 3 months
 introheading: Identifying ways to optimize a legacy internal DMV process digitally
+introbody: >-
+  The NCDOT on behalf on the NCDMV assigned a team to work directly with the
+  Ignition Interlock Program team. This team would be responsible of not only
+  leading the developmental changes, but integrating the new application into
+  the existing system.
+
+  The new system would need to still support the legacy system and its user’s needs. This included browser support, SharePoint frontend hosting, and matching UI.
 overviewheading: Project overview and task breakdown
-overviewbody: |-
-  If you imagine a pile of paperwork one foot tall representing 6 months, the backlog of physical applications prior to the new portal was nearly 4 years worth. The initial system’s purpose was to reduce that backlog. In order to accomplish this, the following was considered and assigned priority:
+overviewbody: >-
+  If you imagine a pile of paperwork one foot tall representing 6 months, the
+  backlog of physical applications prior to the new portal was nearly 4 years
+  worth. The initial system’s purpose was to reduce that backlog. In order to
+  accomplish this, the following was considered and assigned priority:
+
   - Review project details and specs regarding data types and DMV in-person process, including applications and citizen eligibility
+
   - Organize requirements into user flow and wireframes
+
   - Work directly with project owner to format/approve UI
+
   - Work with backend team to establish API requirements and implementation
-overviewblurb: |-
-  This project required knowledge of how the existing paper application is currently processed and reviewed, of currently enacted laws, and the ability to communicate ideas to both functional and cross-functional teams within multiple local agencies.
-
+overviewblurb: This project required knowledge of how the existing paper
+  application is currently processed and reviewed, of currently enacted laws,
+  and the ability to communicate ideas to both functional and cross-functional
+  teams within multiple local agencies.
 purplesectionheading: Understanding the underlying system
-purplesection1: |-
+purplesection1: >-
   ### What is IIMS, IIMA, and an ignition interlock device?
+
   - Igition Interlock: a small, handheld breathalyzer for car ignitions that's installed to prevent users from being able to start their vehicle after drinking alcohol
+
   - IIMS: ignition interlock management system
+
   - IIMA: ignition interlock medical accommodation
-
+purplesection2: this is purple section 2
+purplesectionimg: img/Group 7.png
+image: /img/Group%207.png
+image1: img/about-shade-grown.jpg
+typed_list:
+  - type: image_with_content
+    image: img/Capture-3.JPG
+    caption: this is the optional caption
+    markdown: this is the markdown
+backgroundcolor: mixed2
 ---
-
 <section class="fullwidth purple">
 
 <div class="inner-wrap">
-
 
   <div style="display: -webkit-box;" class="image-block">
 <div class="small-img" style="align-items: center;
@@ -89,7 +108,6 @@ purplesection1: |-
 
 </section>
 
-
 <section class="fullwidth">
 
 <div class="inner-wrap">
@@ -100,7 +118,7 @@ purplesection1: |-
 
 <div class="newcontent">
 
-  ## Exploring what is required to deliver the process according to user needs
+## Exploring what is required to deliver the process according to user needs
 
   <div style="display: -webkit-box;" class="image-block">
 <div class="small-img" style="align-items: center;
@@ -109,42 +127,38 @@ purplesection1: |-
     <!-- <a href="https://www.flaticon.com/free-icons/no-racism" title="no racism icons">No racism icons created by Freepik - Flaticon</a> --></div>
 <div style="width: calc(100% - 320px);">
 
-  ### Initial research
+### Initial research
 
   In the initial stage of being brought onto the project other teams had been researching and working on the legislation involved for years. A comically-sized stack of paper was placed on my desk and I spent the following day going through it with a highlighter and taking notes on a whiteboard. This research also consisted of the existing pages and online system that this portal would be incorporated with.
 
-  - How does the current system handle navigation?
-  - How are users authenticated and are there functions that only some users have access to? What does an unauthenticated user see?
-  - The current system uses a table with filters. How will filtering be handled without a SharePoint backend?
-  - There is a lot of data. To whom should the data be available, when, and how can the data be grouped into views?
-  </div>
-  </div>
+* How does the current system handle navigation?
+* How are users authenticated and are there functions that only some users have access to? What does an unauthenticated user see?
+* The current system uses a table with filters. How will filtering be handled without a SharePoint backend?
+* There is a lot of data. To whom should the data be available, when, and how can the data be grouped into views?
 
+### Stakeholder interviews
 
-
-
-
-
-  ### Stakeholder interviews
   After conducting my own research and notes I consulted with the internal project liaison. We compared notes and unified on a strategy before driving downtown to meet with the project owner. The project owner provided precise insight and feedback. They would be the person approving any changes.
-  
+
   After research and stakeholder interviews the team had a better understanding of requirements. The sketches were turned into the first round of wireframes to cover each user task.
+
   <div>
 
-  - Business goals were discussed
-  - Technical limitations were identified
-  - User needs were discussed and a unified approach was decided upon
-  - Sketches of how different tasks and goals could be approached were created during the initial interview
+* Business goals were discussed
+* Technical limitations were identified
+* User needs were discussed and a unified approach was decided upon
+* Sketches of how different tasks and goals could be approached were created during the initial interview
 
-  ### User tasks included:
-  - create participant
-  - edit participant profile
-  - modify dates
-  - access a participant flagged for immediate follow-up
-  - delete a user
-  - download individual participant data
-  - download report for a date range
-  - review case notes including photographs
+### User tasks included:
+
+* create participant
+* edit participant profile
+* modify dates
+* access a participant flagged for immediate follow-up
+* delete a user
+* download individual participant data
+* download report for a date range
+* review case notes including photographs
 
   </div>
 
@@ -159,22 +173,17 @@ purplesection1: |-
 <section style="background-color: #ECEFF9" class="purple">
 <div class="inner-wrap">
 
-## Establishing the UI with wireframes and a high fidelity prototype   
-
-
-
-
+## Establishing the UI with wireframes and a high fidelity prototype
 
 <div style="display: -webkit-box;" class="image-block">
 <div style="width: calc(100% - 800px);">
 
-### Four main views: 
-  - <strong>dashboard</strong> <br>hub for accessing other portals in addition to a quick glance of action items for ignition interlock
-  - <strong>list view</strong> <br>table with individual participants
-  - <strong>group view</strong> <br>table with participants grouped by date added
-  - <strong>detail view</strong> <br>editable form of participant and vendor information including action buttons
+### Four main views:
 
-
+* <strong>dashboard</strong> <br>hub for accessing other portals in addition to a quick glance of action items for ignition interlock
+* <strong>list view</strong> <br>table with individual participants
+* <strong>group view</strong> <br>table with participants grouped by date added
+* <strong>detail view</strong> <br>editable form of participant and vendor information including action buttons
 
   </div>
   <div class="lrg-img" style="align-items: center; justify-content: center;">
@@ -186,10 +195,8 @@ purplesection1: |-
 
 *BLLAAHHH In some cases this new portal would be needed to monitor successful use of the device. The portal would also identify and alert necessary parties of court dates and eventual approved removal of the devices.*
     </div>
+
   </div>
-
-
-
 
 <!-- <div class="superwireframe">
 <div class="wireframe">
@@ -197,16 +204,17 @@ purplesection1: |-
 </div>
 </div> -->
 
-<!-- *BLLAAHHH In some cases this new portal would be needed to monitor successful use of the device. The portal would also identify and alert necessary parties of court dates and eventual approved removal of the devices.* -->
+<!-- \*BLLAAHHH In some cases this new portal would be needed to monitor successful use of the device. The portal would also identify and alert necessary parties of court dates and eventual approved removal of the devices.\* -->
 
 <div class="blurb" style="background-color: white; padding: 1em; border-radius: 4px;">It was important during this stage to maintain the basic structure of the existing pages this platform would be a part of. The DMV team did not want a rebranding and wanted the new system to fit in atheistically with the existing SharePoint systems and pages. This meant that the focus would be on optimized functionality and clear user experience.</div> 
 
 ### Some ideas that were put to wireframe and either adapted or tossed:
-- dashboard with dynamically updated alerts on upcoming or past deadlines for participant activity
-- detail page for participant or vendor
-- Pagination displaying page number of number versus participants shown range number of number
-- filters to toggle certain columns on or off
-- Ability to pin a column (such as participant ID) to the table if the table required horizontal scrolling
+
+* dashboard with dynamically updated alerts on upcoming or past deadlines for participant activity
+* detail page for participant or vendor
+* Pagination displaying page number of number versus participants shown range number of number
+* filters to toggle certain columns on or off
+* Ability to pin a column (such as participant ID) to the table if the table required horizontal scrolling
 
 <img class="scribble" src="/img/scribble.jpeg" alt="">
  
@@ -216,15 +224,15 @@ purplesection1: |-
 <section style="background-color: #FFFFFF">
 <div class="inner-wrap">
 
-
 <div style="display: -webkit-box;" class="image-block">
 <div style="width: calc(100% - 520px);">
 
-  ## Profile data and management
+## Profile data and management
 
 **Challenge:** Per department and NC system standards profile data needed to be retained for years. Users also needed to be able to remove accounts whether due to error or dismissal from the program.
 
 **Solution:** Deleted data would be removed from the main API and added to seperate API for deleted accounts which would auto remove data after a certain amount of time. If a user needed to reinstate a user they could search for the participant's ID and if found, but tagged as deleted, could activate the newly visible reactivate button.
+
   </div>
   <div class="med-img" style="align-items: center;
   justify-content: center;">
@@ -232,22 +240,17 @@ purplesection1: |-
     </div>
   </div>
 
-
-
-
-
-
 </div>
 </section>
 
 <section>
 <div class="inner-wrap">
 
-
 <div style="display: -webkit-box;" class="image-block">
 <div style="width: calc(100% - 520px);">
 
-  ## Reports and custom filtering
+## Reports and custom filtering
+
 <p>A large portion of the portal would be used browsing for information. This would be utilized through search, sorting, and filtering. Reports would be utilized as a way to capture the current data into a shareable format.</p>
 
 <div style="display: -webkit-box;" class="image-block">
@@ -259,6 +262,7 @@ purplesection1: |-
 <div style="width: calc(100% - 52px);">
 
 ### Search
+
 <ul>
 <li>search by partial string or full string for name or ID</li>
 <li>search by date added or follow-up date range</li>
@@ -275,13 +279,13 @@ purplesection1: |-
 <div style="width: calc(100% - 52px);">
 
 ### Sorting and Filtering
+
 <ul>
 <li>sort ascending/descending was discussed and tested as being based on ID or last name by default.</li>
 <li>filtering was only implemented on search view vs separate filters on every view after much discussion</li>
 </ul>
   </div>
   </div>
-
 
   <div style="display: -webkit-box; margin-top: 1em;" class="image-block">
 <div class="xs-icon" style="align-items: baseline;
@@ -292,14 +296,13 @@ purplesection1: |-
 <div style="width: calc(100% - 52px);">
 
 ### Reports
+
 <ul>
 <li>ignition interlock team needed a method to download data based on certain criteria for sharing and task-keeping</li>
 <li>these reports would need to be exportable as pdfs, excel spreadsheet, or both as a single download</li>
 </ul>
   </div>
   </div>
-
-
 
   </div>
   <div class="med-img" style="align-items: center;
@@ -311,14 +314,14 @@ purplesection1: |-
 </div>
 </section>
 
-
 <section  style="background-color: #ECEFF9">
 <div class="inner-wrap">
 
 <div style="display: -webkit-box;" class="image-block">
 <div style="width: calc(100% - 520px);">
 
-  ## Alerts and notifications
+## Alerts and notifications
+
 <p>Several different pieces of in</p>
 
 <ul>
@@ -341,7 +344,7 @@ purplesection1: |-
   <div style="display: -webkit-box;" class="image-block">
 <div style="width: calc(100% - 320px);">
 
-  ## The takeaway: 
+## The takeaway:
 
 <p>This was a very long project, as is the case with most government work but the different teams I was able to work and collaborate with were great. This was my first introduction to Vue and Nuxt JS. While the project did experience some ups and downs with funding and performance obstacles, the end result was highly praised by the team which now uses this application each day. 🎉</p>
   </div>
@@ -361,10 +364,10 @@ purplesection1: |-
 
 <div class="inner-wrap">
 
-  > [Melanie] helped modernize aging applications by refactoring them using modern JavaScript frameworks like Vue.js. Her user-first philosophy for user experience [...] made Melanie a critical part of the team's success.  
-  *- Patrick Doran, NCDOT/NCDIT UX and Web Services Manager*
-
-  > Melanie, thanks for all your hard work at the DOT and for continuing to educate us on usability!  
-  *- Austin Johnson, Insight Team Lead while on NCDOT contract*
+> \[Melanie] helped modernize aging applications by refactoring them using modern JavaScript frameworks like Vue.js. Her user-first philosophy for user experience \[...] made Melanie a critical part of the team's success.\
+>   *\- Patrick Doran, NCDOT/NCDIT UX and Web Services Manager*
+>
+> Melanie, thanks for all your hard work at the DOT and for continuing to educate us on usability!\
+>   *\- Austin Johnson, Insight Team Lead while on NCDOT contract*
 
   </div>
