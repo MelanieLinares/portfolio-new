@@ -5,9 +5,9 @@
         <div class="ph2-ns w-50-ns mb4 flex">
           <div class="icon">
             <img src="{{ .imagew }}" alt="" class="center db mb3"></div>            
-            <div class="">
-              <p>{{ .textw | markdownify }}
-            </p></div>
+            <div class="" style="display: flex; justify-content: center; align-items: center;">
+              <div>{{ .textw | markdownify }}</div>
+            </div>
         </div>
     {{ end }}
         

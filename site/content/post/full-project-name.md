@@ -32,7 +32,6 @@ textimagesplitcontent: PURPLE SECTION (SPLIT) (OPTIONAL)
 textimagesplitimagecaption: PURPLE SECTION (SPLIT) CAPTION (OPTIONAL)
 purplesection2: PURPLE SECTION 2
 purplesectionimg: img/products-grid2.jpg
-image: img/small-blur-NCDOT.gif
 image1: img/small-blur-STAR.gif
 typed_list:
   - type: heading
@@ -48,16 +47,26 @@ typed_list:
   - type: image_with_content
     image: img/ncdot-preview2.PNG
     caption: Typed List - image with content - caption (optional)
-    markdown: Typed List - image with content - markdown
+    markdown: |-
+      ### Typed List - image with content - markdown 
+      - Skip to main link existed but was not functional due to either an incorrect ID or empty href attribute, depending on the template. Navigation was added to a seperate component so it could be reused within templates
+      - Headings re-organized and given proper hierarchy according to semantics vs aesthetic browser default sizing
+      - Focus rings on links added back, as well as hover underlines which were originally inconsistently implemented
+      - Elements arranged out of logical tab order via tabindex or the CSS float property caused issues when browsing through content.
     introw:
       blurbsw:
-        - imagew: img/me-test.png
-          textw: Typed List - image with content - OVERVIEW ICON SECTION (OPTIONAL) -
-            blurb - text
+        - imagew: img/video.png
+          textw: |-
+            ### Typed List - image with content - OVERVIEW ICON SECTION (OPTIONAL) - blurb - text 
+            Navigation for SharePoint is built with separate mobile and desktop code toggled with media queries. The issue is both are still accessible within the DOM via a screen reader regardless of screen size or device
+        - imagew: img/pets.png
+          textw: |-
+            ### Typed List - image with content - OVERVIEW ICON SECTION (OPTIONAL) - blurb - text 
+            Navigation for SharePoint is built with separate mobile and desktop code toggled with media queries. The issue is both are still accessible within the DOM via a screen reader regardless of screen size or device
   - type: stacked_images
-    image_top: img/ncdot-alert.png
-    image_bottom: img/ncdot-wave.png
-    caption: TYPED LIST - Stacked Images - CAPTION (OPTIONAL)
+    image_top: /img/voiceover-headings.png
+    image_bottom: /img/skiptomain.png
+    caption: TYPED LIST - Stacked Images - CAPTION (OPTIONAL) For headings Voice Over was used to ensure proper hierarchy structure. Here the Voice Over Rotor, a quick access menu, shows the heading structure prior to changes
   - type: fancy_img_with_content
     full_basic_content: TYPED LIST - Fancy Image with Content - FULL BASIC CONTENT (OPTIONAL)
     half_basic_content: TYPED LIST - Fancy Image with Content - HALF BASIC CONTENT

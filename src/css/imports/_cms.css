@@ -116,6 +116,7 @@
 	}
 
 	& ul {
+		 max-width: 860px;
 		line-height: 1.33em;
 		/* margin-left: 1.33rem; */
 		margin-left: 1.15rem;

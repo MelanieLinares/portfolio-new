@@ -4,3 +4,13 @@
 {{ else }}
     {{ partial "textimagesplit" . }}
 {{ end }}
+
+{{ partial "icon-media-block" .introw }}
+
+    <div class="center db mb3" style="width: fit-content; border: 1px solid red">
+<span style="display: inline-block">
+    <img src="{{ .image }}" alt="">
+    <em>{{.caption }}</em>
+</span>
+</div>
+<div>{{.markdown | markdownify}}</div>

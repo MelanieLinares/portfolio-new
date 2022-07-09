@@ -1,11 +1,23 @@
   <div class="div2"> 
-
+  <div class="div2-main">
     <h2>{{ .overviewheading }}</h2>
     {{ .overviewbody | markdownify }}
-
+</div>
+<div class="div2-other">
+    <div class="icon-section">
+      <div class="icon-section-inner">
       {{ partial "icon-media-block" .introw }} 
+</div>
 
-    </div>
-  <blockquote>
+</div>
+
+<div class="quote-wrap">
+<blockquote>
+  {{ .overviewblurb | markdownify }}
+</blockquote>
+</div>
+</div>
+   </div> 
+  <!-- <blockquote>
     {{ .overviewblurb | markdownify }}
-  </blockquote>
+  </blockquote> -->

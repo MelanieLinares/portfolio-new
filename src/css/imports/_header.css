@@ -10,7 +10,6 @@ h1:before {
 .hero-header {
     max-width: 1400px; /*should NOT be 1470*/
     margin: 0 auto;
-    padding: .5em;
     z-index: 2;
     position: relative;
     margin-bottom: 5em;
@@ -121,10 +120,11 @@ nav ul {
 
 #navbar ul a {
     /* margin-bottom: -1em; */
-    padding: 1.5em 1em;
+    padding: 1.5em 1.5em;
     padding-bottom: 1em;
     display: unset;
     color: #48377d;
+    margin-left: .25em;
 }
 
 #navbar ul li:not(:first-of-type) a:hover {

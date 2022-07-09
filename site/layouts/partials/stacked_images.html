@@ -1,13 +1,14 @@
-<div class="inner-wrap content">
+<div class="inner-wrap content" style="padding-top: 1.15em; border: 1px solid red;">
 
-    <div class="div-2">
-    <p><img src="{{.image_bottom}}" alt="">
-    <em>{{.caption}}</em></p>
+    <div class="top-img">
+    <img src="{{.image_top}}" alt="">
+        <em aria-hidden="true" style="height: 0; font-size: 0;
+    margin-bottom: 0;"></em>
+
     </div>
-    <div class="div-3">
-    <p><img src="{{.image_top}}" alt="">
-    <em aria-hidden="true" style="height: 0; font-size: 0;
-    margin-bottom: 0;"></em></p>
+    <div class="bottom-img">
+    <img src="{{.image_bottom}}" alt="">
+        <em>{{.caption}}</em>
     </div>    
     
 </div>

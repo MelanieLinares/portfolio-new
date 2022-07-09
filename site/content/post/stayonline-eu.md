@@ -42,58 +42,8 @@ overviewbody: |-
   - Work with Marketing and Sales managers to identify business needs for the new homepage
 overviewblurb: |-  
   It may not seem bad to have a lot of products, but if not organized efficiently within an e-commerce website then those same products start becoming a huge problem. We needed to create an easy purchasing experience.
----
-
-
-<!-- <section>
-
-<div class="inner-wrap content">
-
-<div class="first">
-
-  ## Creating a plan to help online consumers find products quickly and globally
-  In 2015 Stay Online made the transition from a US business to an international one. The 
-  company opened a shipping and manufacturing location in the Czech Republic. Stay Online wanted a dedicated website to funnl in EU-specific orders before planning a merged site in the future. The new site would apply internationalization and global UX patterns.
-
-  ### The baseline:
-  💡 Sales associates noticed an increase in international customers with specific power cord needs that Stay Online could not provide given the high shipping costs when exporting.
-
-  ### The goal:
-  🏁 increase the number of sales to the EU and help these users find products they can use quickly
-
-  [Skip to the results](post/stayonline-eu/#final)
-
-</div>
-<div class="div2"> 
-
-## Project overview and task breakdown 
-
-- Design needs to maintain IE9+ browser compatibility
-- Data-heavy pages need to balance showing necessary data and providing an ideal mobile experience
-- Branding needs to fit with existing Stay Online principles but also incorporate global standards and prictices
-- Complete A/B testing for layout to determine navigation approach
-- Bring iconography to the branding forefront
-- Work with Marketing and Sales managers to identify business needs for the new homepage 
-
-</div>
-
-  > It may not seem bad to have a lot of products, but if not organized efficiently within an e-commerce website then those same products start becoming a huge problem. We needed to create an easy purchasing experience.
-
-</div>
-
-</section> -->
-
-<section class="fullwidth purple">
-
-<div class="inner-wrap">
-
-<!-- <div role="presentation" class="fullwidth img" style="background-image: url(/img/decorative-desk.jpg)">
-
-</div> -->
-
-<div class="newcontent">
-
-  ## Team exploration and planning for a MVP release
+purplesectionheading: Team exploration and planning for a MVP release
+purplesection1: |-
   Stay Online brought me onto the EU launch team due to my familiarity with the U.S. website and my experience with responsive development. I co-led a discovery session to explore eCommerce requirements, limitations, and internationalization needs with outside sales representatives.
 
   ### Why internationalization?
@@ -101,33 +51,22 @@ overviewblurb: |-
   - easy localization for target audience culture, region, language
   - coding process that allows for translation
 
-
-
-  ### Information Gathering  
+textimagesplitcontent: |-
+  ### Information Gathering
   - considerations such as GDPR, color best-practices, localized terms
   - Marketing and Sales teams were interviewed for their specific needs - feedback was then prioritized into sprints      
   - Existing sub-sites and marketing materials would be carried over incrementally as translations were completed
   - Grouped notes and outlined internal goals from a maintenance and code-based standpoint
 
-  
-  <div>
-
-  ### Project Requirements  
+purplesection2: |-
+  ### Project Requirements
   - A large amount of product APIs were required with little to no rewrite as the U.S. site also used the same data     
   - Focus on minimal viable product (MVP) for the first release 
   - Time would be a large design and development hindrance
   - Waterfall release method
 
-  </div>
+---
 
-
-  ![this is the alt text](/img/stayonline-eu-display.png "Title is optional")
-
-</div>
-
-</div>
-
-</section>
 
 <section>
 <div class="inner-wrap">

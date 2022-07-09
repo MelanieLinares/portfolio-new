@@ -55,8 +55,7 @@ purplesection1: >-
   - IIMS: ignition interlock management system
 
   - IIMA: ignition interlock medical accommodation
-purplesection2: this is purple section 2
-purplesectionimg: img/Group 7.png
+
 image: /img/Group%207.png
 image1: img/about-shade-grown.jpg
 typed_list:
@@ -342,7 +341,7 @@ backgroundcolor: mixed2
 <div class="inner-wrap">
 
   <div style="display: -webkit-box;" class="image-block">
-<div style="width: calc(100% - 320px);">
+<div>
 
 ## The takeaway:
 

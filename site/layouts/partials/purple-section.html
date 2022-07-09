@@ -28,7 +28,10 @@
 
      {{ if .purplesectionimg }}
      <p><img src="{{ .purplesectionimg }}" alt="{{ .purplesectionimgalt }}"></p>
- {{ end }}  
+
+ {{else}}
+ <p><img src=" img/pixels-right.svg" alt="" style="margin-right: 1em; transform: scaleY(-1); filter: brightness(1.05);"></p>
+ {{end}}
 
 
   </div>

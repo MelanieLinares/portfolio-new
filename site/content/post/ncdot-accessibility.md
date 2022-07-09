@@ -8,7 +8,7 @@ duration: 2 months
 logo: /img/logos/ncdot-logo.gif
 image: /img/accessibility-ncdot.jpg
 # image2: /img/Group 535.png
-image1: /img/blog-flavor_wheel.jpg
+image1: /img/ncdot-a11y2.png
 preview: /img/accessibility-ncdot.jpg
 role: Accessibility Specialist 
 technology:

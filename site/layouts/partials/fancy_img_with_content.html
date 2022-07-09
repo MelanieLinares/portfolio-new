@@ -1,13 +1,22 @@
     <div class="inner-wrap">
-    <div class="newcontent">
       <div style="display: -webkit-box;" class="image-block">
+
+        <div style="width: calc(100% - 520px);">
     {{ .full_basic_content }}
-      <div>
-  {{ .half_basic_content }}
-      </div>
+    {{ partial "icon-media-block" .introw }}
+    {{ .half_basic_content }}
+    </div>
 
-    <p><img src="{{ .image }}" alt="this is the alt text" title="Title is optional"></p>
+      <div class="med-img" style="align-items: center;
+      justify-content: center;">
+      <img src="{{ .image }}" alt="this is the alt text" title="Title is optional">
+    </div>
 
     </div>
-  </div>
     </div>
+
+
+
+<!-- <div><img src="{{ .image }}" alt="" class="center db mb3"></div>
+<div>{{.caption }}</div>
+<div>{{.markdown | markdownify}}</div> -->
