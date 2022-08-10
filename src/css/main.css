@@ -431,22 +431,22 @@ em {
 
 h3 {
     font-family: 'JetBrains Mono', sans-serif;
-    font-size: 1.4em;
-    font-weight: bold;
+    font-size: 1.4em!important;
+    font-weight: bold!important;
 }
 
 h2 {
     font-family: 'Lora', sans-serif;
-    font-size: 2.5em;
+    font-size: 2.5em!important;
     line-height: 1.25;
-    font-weight: bold;
+    font-weight: bold!important;
 }
 
 h1 {
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #000;
     color: transparent;
-    font-weight: 800;
+    font-weight: 800!important;
 }
 
 h1 b {
