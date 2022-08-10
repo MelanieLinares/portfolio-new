@@ -11,11 +11,14 @@
 
 </div>
 
+{{ if .overviewblurb }}
 <div class="quote-wrap">
 <blockquote>
   {{ .overviewblurb | markdownify }}
 </blockquote>
 </div>
+{{end}}
+
 </div>
    </div> 
   <!-- <blockquote>

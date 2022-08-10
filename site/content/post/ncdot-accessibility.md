@@ -43,7 +43,8 @@ overviewbody: |-
 overviewblurb: |-
   Accessibility is about access, pure and simple. If a government application cannot be used by citizens then never mind the legal repercussions, the design improvements are wasted.
 introbody: |-
-  The North Carolina Department of Transportation (NCDOT) as of 2018 had a new website redesign to allow citizens a secure, quick, and easy way to view all transportation-related information. Unfortunately, despite an improved visual UI the site failed initial accessibility audits.\
+  The North Carolina Department of Transportation (NCDOT) as of 2018 had a new website redesign to allow citizens a secure, quick, and easy way to view all transportation-related information. Unfortunately, despite an improved visual UI the site failed initial accessibility audits.
+introbodysecondary: |-
   **The starting score:** 67 (based on Google Lighthouse)\
   **The goal:** > 80
 purplesection1: |-

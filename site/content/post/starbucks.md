@@ -25,7 +25,9 @@ technology:
   - HTML, SCSS
 introheading: Changing a simple form into a powerful workflow
 introbody: |-
-  Managing assets can be a pain if the application does not optimize how common actions such as add, remove, save, etc. are implemented. My role was to take the approved interactive prototype and to build the needed pages and components using React and TypeScript.
+  Managing assets can be a pain if the application does not optimize how common actions such as add, remove, save, etc. are implemented. My role required using React and TypeScript.
+introbodysecondary: |-
+  The goal: Take the approved interactive prototype and build needed pages and components
 overviewheading: Task breakdown
 overviewbody: |-
   **I worked with the UX team to:**
@@ -39,9 +41,9 @@ overviewbody: |-
   **I created and identified:**
   - new UI components and ensured reusability of existing components
   - UI design issues and solutions
-overviewblurb: |-
-  This would be a recommendation from the team.\
-  if I had one
+# overviewblurb: |-
+#   This would be a recommendation from the team.\
+#   if I had one
 ---
 <!-- 
 <section>

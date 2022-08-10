@@ -12,7 +12,7 @@ h1:before {
     margin: 0 auto;
     z-index: 2;
     position: relative;
-    margin-bottom: 5em;
+    /* margin-bottom: 5em; */
 }
 
 .hero-header img {
@@ -93,12 +93,16 @@ nav ul {
     filter: brightness(10);
 } */
 
+header {
+    border-top: 7px solid #3c4bd2;
+}
+
 #navbar {
     position: fixed;
     z-index: 3;
     transition: all 0.3s;
     top: 0;  
-    border-top: 7px solid #3c4bd2;
+
     width: 100%;
     left: 0;
     /* padding: 0 6vw; */

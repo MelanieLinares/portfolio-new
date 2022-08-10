@@ -32,9 +32,9 @@ overviewbody: |-
   - integrate with third-party apis
   - utilize SharePoint Workbench in visualizing and implementing SPFx widget components
   - create 404 page 
-overviewblurb: |-
-  This would be a recommendation from the team.\
-  if I had one
+# overviewblurb: |-
+#   This would be a recommendation from the team.\
+#   if I had one
 ---
 
 <!-- <section>

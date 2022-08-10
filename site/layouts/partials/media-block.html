@@ -1,4 +1,4 @@
-<div class="flex-m mhn3-m mb4">
+<!-- <div class="flex-m mhn3-m mb4">
 
   <div class="ph3-m w-50-m">
     <img src="{{.imageUrl}}" alt="">
@@ -9,4 +9,22 @@
     <p>{{.text}}</p>
   </div>
 
+</div> -->
+
+<div class="px-2 py-16 mx-auto sm:max-w-xl md:max-w-full md:px-0 lg:px-0 lg:py-20">
+  <div class="grid gap-10 lg:grid-cols-2">
+    <div class="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
+      <div class="max-w-xl mb-6">
+        <span class="backgroundBeforeElement"></span><h3 class="max-w-lg mb-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+          {{.heading}}
+        </h3>
+        <p class="text-base text-gray-700 md:text-lg">
+          {{.text}}
+        </p>
+      </div>
+    </div>
+    <div class="items-center justify-center">      
+      <img class="rounded shadow-lg block" src="{{.imageUrl}}" alt="">   
+  </div>
+  </div>
 </div>

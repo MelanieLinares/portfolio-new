@@ -1,13 +1,55 @@
-<header>
+<header class="nav">
+	<nav id="navbar" class="flex items-center h-20 justify-between transparent">
+	<div class="flex-1 no-underline">
+		<a href="/index.html" style="display: inline-block" aria-label="home">
+			<img src="/img/logo.svg" alt="Melanie Linares logo" class="h-full desktop-logo"/>
+			<img src="/img/logo-mobile.svg" alt="Melanie Linares logo" class="h-full mobile-logo"/>
+			<img src="/img/logo-icon.svg" alt="Melanie Linares logo" class="h-full icon-logo"/>
+
+		</a>
+	</div>
+	<!-- <a class="flex-1 no-underline block h-8"><img src="https://gustui.s3.amazonaws.com/gustlogo.png" class="h-full" /></a> -->
+	<ul class=" sm:flex sm:justify-center sm:h-full">
+
+			{{ if eq (relURL .URL) ("/values/") }}
+			<a href="/values" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
+				About</a>
+			{{ else }}
+			<a href="/values" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">
+				About</a>
+			{{ end }}
+
+			{{ if eq (relURL .URL) ("/post/") }}
+			<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
+				Work</a>
+			{{ else }}
+			<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">
+				Work</a>
+			{{ end }}
+
+			{{ if eq (relURL .URL) ("/article/") }}
+			<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
+				Articles</a>
+			{{ else }}
+			<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">
+				Articles</a>
+			{{ end }}
+		
+		</ul>
+	</nav>
+</header>
+
+
+<!-- <header>
 <nav id="navbar" class="flex justify-between items-center center relative">
 	<div id="skiptocontent"><a href="{{ .Permalink }}#maincontent" class="">skip to main content</a></div>
 
 <div class="inner-nav">
 
-	<!-- Primary Nav -->
+
 	<ul class="flex b">
 		<li>
-			<!-- Logo -->
+
 			<a href="/index.html" style="display: inline-block" aria-label="home">
 				<img src="/img/logo.svg" alt="Melanie Linares logo" class="br0 db mb0 desktop-logo"/>
 				<img src="/img/logo-mobile.svg" alt="Melanie Linares logo" class="br0 db mb0 mobile-logo"/>
@@ -23,166 +65,41 @@
 	</ul>
 </div>
 </nav>
-</header>
+</header> -->
 
 <script>
 
+// Enable hidden nav bar
+{
+  const nav = document.querySelector(".nav");
+  let lastScrollY = window.scrollY;
 
-	function test () {
-		// console.log('Wide viewport');
-	var prevScrollpos = window.pageYOffset;
-	window.onscroll = function() {
-		// console.log(window.pageYOffset);
-	var currentScrollPos = window.pageYOffset;
-	
-	  if (prevScrollpos > currentScrollPos) {
-		document.getElementById("navbar").style.top = "0";
-		document.getElementById("navbar").style.borderTop = "solid";
-			document.getElementById("navbar").style.borderTopWidth = "7px";
-			document.getElementById("navbar").style.borderTopColor = "#3c4bd2";
-			document.getElementById("navbar").style.boxShadow = "0 0 50px -10px #001f3033";
-			// document.getElementById("navbar").getElementsByTagName("ul")[0].style.filter = "unset";
-			// document.getElementsByClassName("desktop-logo")[0].style.filter = "unset";
-			// document.getElementsByClassName("mobile-logo")[0].style.filter = "unset";
-			// document.getElementsByClassName("icon-logo")[0].style.filter = "unset";
-
-		if (currentScrollPos < 200) {
-			document.getElementById("navbar").style.backgroundColor = "#ffffff00"; //ffffff00, pink
-			document.getElementById("navbar").style.borderTop = "solid";
-			document.getElementById("navbar").style.borderTopWidth = "7px";
-			document.getElementById("navbar").style.borderBottomWidth = "0px";
-			document.getElementById("navbar").style.borderTopColor = "#3c4bd2";
-			document.getElementById("navbar").style.boxShadow = "0 0 50px -10px #ffffff00";
-			// document.getElementById("navbar").getElementsByTagName("ul")[0].style.filter = "brightness(10)";
-			// document.getElementsByClassName("desktop-logo")[0].style.filter = "brightness(10)";
-			// document.getElementsByClassName("mobile-logo")[0].style.filter = "brightness(10)";
-			// document.getElementsByClassName("icon-logo")[0].style.filter = "brightness(10)";
-			// box-shadow: 0 0 50px -10px #001f3033;
-		} 
+  window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+		// nav.classList.add("nav--hidden");
+		if (window.scrollY > 200) {
+		nav.classList.remove("transparent");
+		nav.classList.add("shadow-sm");
+		nav.classList.add("bg-white");
+		nav.classList.add("nav--hidden");
+    	}
+    } else {
+      nav.classList.remove("nav--hidden");
+	  if (window.scrollY < 200) {
+		nav.classList.add("transparent");
+		nav.classList.remove("shadow-sm");
+		nav.classList.remove("bg-white");
+    	}
 		else {
-			document.getElementById("navbar").style.backgroundColor = "white"; //white
-			document.getElementById("navbar").style.borderTop = "solid";
-			document.getElementById("navbar").style.borderTopWidth = "7px";
-			document.getElementById("navbar").style.borderTopColor = "#3c4bd2"
-			document.getElementById("navbar").style.borderBottom = "none";
-			document.getElementById("navbar").style.boxShadow = "0 0 50px -10px #001f3033";
-			// document.getElementById("navbar").getElementsByTagName("ul")[0].style.filter = "unset";
-			// document.getElementsByClassName("desktop-logo")[0].style.filter = "unset";
-			// document.getElementsByClassName("mobile-logo")[0].style.filter = "unset";
-			// document.getElementsByClassName("icon-logo")[0].style.filter = "unset";			
+			nav.classList.remove("transparent");
+			nav.classList.add("shadow-sm");
+			nav.classList.add("bg-white");
+			nav.classList.remove("nav--hidden");
 		}
-	  }
+    }
 
-	  else {
-		// document.getElementById("navbar").style.top = "-77px";
-
-		// if (currentScrollPos < 200) {
-			// document.getElementById("navbar").style.backgroundColor = "limegreen"; //ffffff00
-			// document.getElementById("navbar").style.top = "0";
-			// document.getElementById("navbar").style.borderBottomWidth = "0px";
-		// } 
-		// else {
-			document.getElementById("navbar").style.top = "-82px";
-			document.getElementById("navbar").style.backgroundColor = "#3c4bd2"; 
-			document.getElementById("navbar").style.borderBottom = "transparent";
-			document.getElementById("navbar").style.borderBottomWidth = "7px";
-			document.getElementById("navbar").style.borderTopWidth = "0px";
-			document.getElementById("navbar").style.borderBottomColor = "purple"; //ffffff00
-			document.getElementById("navbar").style.boxShadow = "0 0 50px -10px #001f3033";
-			// document.getElementById("navbar").getElementsByTagName("ul")[0].style.filter = "unset)";
-			// document.getElementsByClassName("desktop-logo")[0].style.filter = "unset";
-			// document.getElementsByClassName("mobile-logo")[0].style.filter = "unset";
-			// document.getElementsByClassName("icon-logo")[0].style.filter = "unset";
-		// }
-	  }
-	  prevScrollpos = currentScrollPos;
-	}
-	}
-	function testother () {
-		// console.log('Wider viewport');
-	var prevScrollpos = window.pageYOffset;
-	window.onscroll = function() {
-	var currentScrollPos = window.pageYOffset;
-	document.getElementById("navbar").style.borderTop = "solid";
-			document.getElementById("navbar").style.borderTopWidth = "7px";
-			document.getElementById("navbar").style.borderTopColor = "#3c4bd2";
-			document.getElementById("navbar").style.boxShadow = "0 0 50px -10px #001f3033";
-
-	  if (prevScrollpos < 150) {
-		document.getElementById("navbar").style.top = "0";
-		document.getElementById("navbar").style.backgroundColor = "transparent"; //ffffff00
-		document.getElementById("navbar").style.boxShadow = "0 0 50px -10px #001f3033";
-		// document.getElementsByClassName("desktop-logo")[0].style.filter = "brightness(10)";
-		// document.getElementsByClassName("mobile-logo")[0].style.filter = "brightness(10)";
-		// document.getElementsByClassName("icon-logo")[0].style.filter = "brightness(10)";
-		// document.getElementById("navbar").getElementsByTagName("ul")[0].style.filter = "brightness(10)";
-		document.getElementById("navbar").style.boxShadow = "0 0 50px -10px #ffffff00";
-
-	  } else {
-		document.getElementById("navbar").style.top = "0";
-		document.getElementById("navbar").style.backgroundColor = "white"; //white
-		document.getElementById("navbar").style.boxShadow = "0 0 50px -10px #001f3033";
-		// document.getElementById("navbar").getElementsByTagName("ul")[0].style.filter = "unset";
-		// document.getElementsByClassName("desktop-logo")[0].style.filter = "unset";
-		// document.getElementsByClassName("mobile-logo")[0].style.filter = "unset";
-		// document.getElementsByClassName("icon-logo")[0].style.filter = "unset";
-	  }
-	  prevScrollpos = currentScrollPos;
-	}
-	}
-	
-
-
-
-	var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-if (viewportWidth > 1024) {
-	test();
-} else {
-	testother();
+    lastScrollY = window.scrollY;
+  });
 }
-
-
-OrigHeight = window.innerHeight;
-window.addEventListener('resize', function () {
-	viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-	if (viewportWidth > 1024) {
-		test();
-	} else {
-		testother();
-	}
-
-// 	NewHeight = window.innerHeight;
-
-// if(OrigHeight == NewHeight){}
-// if(OrigHeight !== NewHeight){
-// console.log(window.innerHeight);
-// }
-
-}, false);
-
-
-
-
-// window.addEventListener('resize', function () {
-
-// 	var heroElement = document.getElementById('hero');
-// 	var offsetHeightt = document.getElementById('hero').offsetHeight;
-// 	console.log("offsetHeight: " + offsetHeightt);
-// 	heroElement.pseudo("before", "height", offsetHeightt +"px");
-
-// }, false);
-
-
-
-    
-
-    // window.addEventListener('resize', function () {
-	// 	var widthh = window.innerWidth;
-    //    if (window.innerWidth !== widthh) {
-    //        console.log(widthh);
-    //    }
-	// }, false);
-
-
-
 </script>
+

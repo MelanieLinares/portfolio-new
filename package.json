@@ -67,6 +67,9 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
-    "netlify-cli": "^2.69.8"
+    "autoprefixer": "^9.8.8",
+    "netlify-cli": "^2.69.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }

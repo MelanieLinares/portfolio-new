@@ -6,10 +6,12 @@
     <li>Severity and tractability levels were added to NCDOT ticketing system</li>
     <li>Remaining issues were grouped by page or components, assigned an individual severity and discussed with web dept lead</li>
     </ul> -->
-    {{ .textimagesplitcontent | markdownify }}
+    hi{{ .textimagesplitcontent | markdownify }}hello
       </span>
+      {{ if .image1 }}
       <span class="" style="align-items: center;justify-content: center;">
       <img src="{{ .image1 }}" alt="this is the alt text" style="margin-bottom: 1rem;">
       <em>{{ .textimagesplitimagecaption }}</em>
       </span>
+      {{ end }}
       </div>

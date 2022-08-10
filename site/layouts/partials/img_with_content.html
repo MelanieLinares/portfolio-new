@@ -1,9 +1,12 @@
+{{ if .textimagesplitcontent }}
 {{ if eq .img_on_right "true" }}
     {{ partial "textimagesplitreverse" . }}
     
 {{ else }}
     {{ partial "textimagesplit" . }}
 {{ end }}
+{{ end }}
+
 
 {{ partial "icon-media-block" .introw }}
 

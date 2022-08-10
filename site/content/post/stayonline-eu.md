@@ -24,8 +24,9 @@ client: Stay Online LLC.
 
 introheading: Creating a plan to help online consumers find products quickly and globally
 introbody: |-
-  In 2015 Stay Online made the transition from a US business to an international one. The company opened a shipping and manufacturing location in the Czech Republic. Stay Online wanted a dedicated website to funnl in EU-specific orders before planning a merged site in the future. The new site would apply internationalization and global UX patterns.
-
+  In 2015 Stay Online made the transition from a US business to an international one. The company opened a shipping and manufacturing location in the Czech Republic. Stay Online wanted a dedicated website to funnel in EU-specific orders before planning a merged site in the future.
+introbodysecondary: |-
+  **The goal:** Prioritize content along with global UX patterns to create a site able to keep up with new shipping needs.
 overviewheading: Project overview and task breakdown
 overviewbody: |-
   ### The baseline:

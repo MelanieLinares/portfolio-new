@@ -20,19 +20,19 @@
     {{ end }}
 
 
-
+<div style="display: flex">
 <div>
         {{ .purplesection2 | markdownify }}
      </div> 
 
 
      {{ if .purplesectionimg }}
-     <p><img src="{{ .purplesectionimg }}" alt="{{ .purplesectionimgalt }}"></p>
+     <div class="purple-main-img"><img src="{{ .purplesectionimg }}" alt="{{ .purplesectionimgalt }}"></div>
 
  {{else}}
- <p><img src=" img/pixels-right.svg" alt="" style="margin-right: 1em; transform: scaleY(-1); filter: brightness(1.05);"></p>
+ <div class="purple-main-img"><img src=" img/pixels-right.svg" alt="" style="margin-right: 1em; transform: scaleY(-1); filter: brightness(1.05);"></div>
  {{end}}
-
+</div>
 
   </div>
 

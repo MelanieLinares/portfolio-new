@@ -9,30 +9,21 @@
 
   {{ partial "aside" .Params }}
 
+<div class="newthing">
+  <div>
+    <div>
+    <h2>{{ .Params.introheading }}</h2>
+    {{ .Params.introbody | markdownify }}
+  </div>
 
+
+    <div style="padding-left: 1.5em">
+      {{ .Params.introbodysecondary | markdownify }}<br>
+      <a href="{{ .Permalink }}#test">Skip to the results</a>
+    </div>
+</div>
+</div>
       <div class="cms center">
-
-        <div style="width: calc(100% - 3em); border: 3px solid red; display: grid; grid-template-columns: 2fr 1fr;">
-          <div>
-            <strong>Role</strong>
-            Led the design of end-to-end experience from first booking to pickup. I also conducted research, set up a metrics framework and wrote usability tests for the team to use when iterating core flows.
-          </div>
-
-          <div>
-            <strong>Team</strong>
-            Luca Di Michele – iOS Engineer
-            
-            Mark Spiteri – Android Engineer
-            
-            Matthew Bezzina – CEO
-            
-            Ryan Abela – CTO
-            
-            Bernard Gatt – Consultant
-            
-            Myself – Product & Design
-          </div>
-        </div>
 
         <section class="fullwidth">
           <div class="inner-wrap"> 
@@ -63,7 +54,7 @@
   <div class="inner-wrap" style="margin-bottom: 4em;"> 
   <h2 class="related-title">Related case studies</h2> 
   <div id="related" style="position: relative">   
-    <div class="inner"> 
+    <ul class="relative mx-auto grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3"> 
       
       
  
@@ -73,16 +64,19 @@
     
 
     {{ if isset .Params "preview" }}
-    <div class="tile">
+    <li>
+      <a href="{{ .Permalink }}" class="card-v8 bg radius-lg">
+        <div>
 <img src="{{ .Params.preview }}" alt="" />
-<a href="{{ .Permalink }}">{{ .Title }}</a>
-<p>{{ .Params.description }}</p>
-
-  </div>
+<span class="card-v8__title">{{ .Title }}</span>
+<p class="padding-sm">{{ .Params.description }}</p>
+</div>
+</a>
+    </li>
     {{ end }}
           
         {{ end }}
-     </div> </div> </div>
+  </ul> </div> </div>
     
 <!-- <section id="wild" class="inner-wrap">
   <h2>Find me in the wild</h2>

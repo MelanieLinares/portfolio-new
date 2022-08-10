@@ -4,9 +4,9 @@
 
 <div class="article-block no-underline pa3 br1 mb2 db w-70">
 	{{if .Params.tags}}
-	<ul id="tags" class="pa3"> 
+	<ul id="tags"> 
 		{{ range (.GetTerms "tags") }}
-			<li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+			<li><a href="{{ .Permalink }}" class="px-3 text-base text-indigo-500 border border-indigo-500 undefined">{{ .LinkTitle }}</a></li>
 	   {{ end }}
 	</ul>{{ end }}
 
