@@ -1,7 +1,9 @@
 {{ define "main" }}
 
+<div class="max-w-7xl mx-auto">
 {{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "backgroundcolor" "multi" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }}
 
 {{ .Content }}
+</div>
 
 {{ end }}

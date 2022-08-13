@@ -28,5 +28,6 @@ introbody: >-
 
   **The starting score:**  67 (based on Google Lighthouse)
 
+
   **The goal:** score greater than 80
 ---

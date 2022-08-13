@@ -1,47 +1,43 @@
 {{ define "main" }}
 
+<section id="top-section" class="pink">
+
+  <div class="max-w-7xl mx-auto">
+
 {{ partial "jumbotron" (dict "imageUrl" .Params.preview "imageUrl2" .Params.image2 "backgroundcolor" .Params.backgroundcolor "title" .Params.titlebold "subtitle" .Params.titlenormal "text" .Params.notice ) }}
 
 
-  <div id="main" class=" center ph3 pv4">
+  <div id="main" class="">
 
-    <section class="flex-ns grid-parent">
+    <div class="">
 
   {{ partial "aside" .Params }}
 
-<div class="newthing">
-  <div>
+<div class="intro-section content-850">
     <div>
     <h2>{{ .Params.introheading }}</h2>
     {{ .Params.introbody | markdownify }}
   </div>
 
 
-    <div style="padding-left: 1.5em">
+    <div>
       {{ .Params.introbodysecondary | markdownify }}<br>
       <a href="{{ .Permalink }}#test">Skip to the results</a>
     </div>
 </div>
+
+</div>  
 </div>
-      <div class="cms center">
 
-        <section class="fullwidth">
-          <div class="inner-wrap"> 
-            <section>
-    <div class="inner-wrap content">
-    <div class="first">
-      <h2>{{ .Params.introheading }}</h2>
-      {{ .Params.introbody | markdownify }}
-      <a href="{{ .Permalink }}#test">Skip to the results</a>
-    </div>
-          {{ partial "overview" .Params }}
-         
-        </section>    
+</div>
 
-        {{ partial "purple-section" .Params }}
+</section>
+
+      <div class="cms"> 
 
         {{ partial "test-multi-sections" .Params }}
 
+         
       {{ .Content }}
 
       <!-- {{ if .Params.technology }}
@@ -50,8 +46,8 @@
     </div>
     
 
-  </section>  
-  <div class="inner-wrap" style="margin-bottom: 4em;"> 
+
+  <div class="inner-wrap max-w-7xl mx-auto" style="margin-bottom: 4em;"> 
   <h2 class="related-title">Related case studies</h2> 
   <div id="related" style="position: relative">   
     <ul class="relative mx-auto grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3"> 
@@ -82,7 +78,5 @@
   <h2>Find me in the wild</h2>
   <p>UX Y'all - 10/04/2019    |    Modern Web October Event - 10/16/2019    |    Code for Durham: Civic Hacking - 12/10/2019</p>
 </section> -->
-    </div>
-    
-      </div>
+
     {{ end }}

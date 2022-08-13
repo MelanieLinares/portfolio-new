@@ -13,6 +13,7 @@ h1:before {
     z-index: 2;
     position: relative;
     /* margin-bottom: 5em; */
+    margin-top: 5rem;
 }
 
 .hero-header img {

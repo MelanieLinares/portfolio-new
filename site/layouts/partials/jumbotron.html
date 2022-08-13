@@ -1,8 +1,8 @@
 <!-- <div id="{{.backgroundcolor}}" class="bg-center cover hero" style="background-image: url('{{.imageUrl}}');"> -->
     <span id=""></span>
-  <div id="maincontent" class="bg-center cover hero">
+  <div id="maincontent" class="">
     <div class="hero-header" style="display: flex">
-      <div style="display: grid; justify-content: center; align-items: center; padding-top: 10px; padding-right: .5em">
+      <div style="display: flex; align-items: center; width: 60em; margin-right: 7em; height: 32em;">
 <div>
         <h1 class="text-4xl md:text-5xl">
          
@@ -84,12 +84,15 @@
         </p>        
       </div>
       {{ end }} -->
+
+      <div class="hero-header-image">
       {{ if .imageUrl2 }} 
       <img src="{{ .imageUrl2 }}" alt="{{ .Title }}" />
       {{ end }}
 
       <img src="{{ .imageUrl }}" alt="{{ .Title }}" />
 
+      </div>
     </div>
   
 

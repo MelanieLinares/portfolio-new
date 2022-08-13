@@ -76,7 +76,7 @@
 /* Variables */
 /* Importing here will allow you to override any variables in the modules */
 /* @import './imports/_colors'; */
-/* @import './imports/_media-queries'; */
+@import './imports/_media-queries';
 /* @import './imports/_variables'; */
 
 /* Debugging */
@@ -86,136 +86,82 @@
 /* Uncomment out the line below to help debug layout issues */
 /* @import './imports/_debug'; */
 
-@media screen and (max-width: 639px) {
-    .sm\:flex {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    .sm\:h-full {
-        height: 100%;
-    }
-    .sm\:justify-center {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    
+
+
+#top-section {
+    height: 115vh;
+    min-height: 800px;
 }
 
-@media screen and (max-width: 319px) {
-
-    .desktop-logo, .mobile-logo {
-        display: none;
-    }
-
-    .icon-logo {
-        width: 2em;
-    }
-
+#top-section.pink {
+    background-color: #F8E9E8
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-
-    .desktop-logo, .mobile-logo {
-        display: none;
-    }
-
-    .icon-logo {
-        width: 2.250em;
-    }
-
+header {
+    z-index: 1;
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
-
-    .desktop-logo {
-        display: none;
-    }  
-    .mobile-logo {
-        display: unset;
-        height: 44px;
-    } 
-    .icon-logo {
-        display: none;
-    }
-    
+.hero-header {
+    padding-top: 5rem;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-    .mobile-logo {
-        display: none;
-    }  
-    .desktop-logo {
-        display: unset;
-        height: 44px;
-    } 
-    .icon-logo {
-        display: none;
-    }
-
+.hero-header-image {
+    max-width: 33.5em;
+    height: 33.85em;
+    transform: rotate(6deg);
+    border-radius: 0.5em;
+    margin-top: 2.5em;
+    margin-bottom: 3em;
+    background-color: white;
+    margin-left: -3em;
+    margin-right: 1.5em
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-
-    .desktop-logo {
-        display: none;
-    }  
-    .mobile-logo {
-        display: unset;
-        height: 44px;
-    } 
-    .icon-logo {
-        display: none;
-    }
-
+.hero-header-image img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5em;
+    transform: rotate(1.5deg);
+    margin-top: -10px;
+    margin-left: -5px;
 }
 
-@media screen and (min-width: 1201px) and (max-width: 1470px) {
-
-    .desktop-logo {
-        display: unset;
-        height: 44px;
-    }  
-    .mobile-logo {
-        display: none;
-    } 
-    .icon-logo {
-        display: none;
-    }
-
+.intro-section {
+    background-color: white;
+    border-radius: .5em;
+    padding: 2.5em;
+    margin-top: -7em;
+    position: relative;
 }
 
-@media screen and (min-width: 1471px) and (max-width: 1900px) {
-
-    .desktop-logo {
-        display: unset;
-        height: 44px;
-    }  
-    .mobile-logo {
-        display: none;
-    } 
-    .icon-logo {
-        display: none;
-    }
-
+.intro-section:before {
+    content: '';
+    display: block;
+    border: 2px dashed #de4f4f;
+    margin-left: -3em;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0.5em;
+    border-radius: 0.5em;
 }
 
-@media screen and (min-width: 1901px) {
-
-    .desktop-logo { /*//required//*/
-        display: unset;
-        height: 44px;
-    }  
-
-    .project-info details, 
-    .mobile-logo, 
-    .icon-logo { /*//required//*/
-        display: none;
-    }
-
+#main {
+    position: relative
 }
+
+aside {
+    position:absolute;
+    right: 0;
+    margin-top: 8em;
+    padding-bottom: 8em;
+}
+
+aside img {
+    height: 48px;
+    width: auto;
+}
+
 
 .overlap-bg {
     background-color: #EEF0F8;
@@ -278,17 +224,34 @@
 }
 
 ul:not(.icon-group),
-ul:not(.vertical-icon-group) {
+ul:not(.vertical-icon-group),
+ul:not(.project-info){
     list-style: disc;
     padding-left: 1em;
     margin: .65em 0;
 }
 
 ul.icon-group,
-ul.vertical-icon-group {
+ul.vertical-icon-group,
+ul.project-info {
     list-style: none;
     padding-left: 0;
     margin: .65em 0;
+}
+
+ul.project-info {
+    max-width: 15em;
+}
+
+ul.project-info ul {
+    list-style: disc;
+    padding-left: 1.25em;
+    margin: 0;
+}
+
+ul.project-info b {
+    display: block;
+    margin-top: .25em
 }
 
 .offset-section:not(.transparent) {
@@ -437,19 +400,35 @@ h2 {
     font-size: 2.5em!important;
     line-height: 1.25;
     font-weight: bold!important;
+    color: #E47272
 }
 
 h1 {
     -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-color: #DE4F4F;
     color: transparent;
     font-weight: 800!important;
+
 }
 
 h1 b {
-    -webkit-text-stroke-width: unset;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: unset;
-    color: black;
+    color: #DE4F4F;
+}
+
+.cms section {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cms section h2 {
+    max-width: 850px
+}
+
+.cms section:first-of-type h2 {
+    margin-top: -1em;
 }
 
 .cms .fullwidth h2:before {
@@ -465,17 +444,6 @@ h1 b {
     margin-top: -0.75em;
     margin-left: 0;
     opacity: .17;
-}
-
-h2:after {
-    content: "";
-    display: block;
-    width: 7em;
-    max-width: 50vw;
-    height: 2px;
-    padding-top: 0.4em;
-    border-top: 2px solid #4cd5f7;
-    margin-top: 4px;
 }
 
 .icon-with-content {
@@ -576,7 +544,7 @@ h2:after {
 }
 
 .card-v8:hover {
-    --shadow-md: 0 0.9px 1.5px rgba(0, 0, 0, 0.03),0 3.1px 5.5px rgba(0, 0, 0, 0.08),0 14px 25px rgba(0, 0, 0, 0.12);
+    /* --shadow-md: 0 0.9px 1.5px rgba(0, 0, 0, 0.03),0 3.1px 5.5px rgba(0, 0, 0, 0.08),0 14px 25px rgba(0, 0, 0, 0.12); */
     --color-bg-light: hsl(0, 0%, 100%);
     background-color: var(--color-bg-light);
     box-shadow: var(--shadow-md);
@@ -597,8 +565,8 @@ h2:after {
 }
 
 .card-v8:hover:after {
-    transform: translate(5px, 5px);
-    border: 3px dashed black;
+    transform: translate(7px, 7px);
+    border: 2px dashed #de4f4f;
 }
 
 .card-v8__title {
