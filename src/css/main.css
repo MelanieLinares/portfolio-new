@@ -404,11 +404,11 @@ h2 {
 }
 
 h1 {
+    font-family: 'Poppins', sans-serif;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #DE4F4F;
     color: transparent;
     font-weight: 800!important;
-
 }
 
 h1 b {

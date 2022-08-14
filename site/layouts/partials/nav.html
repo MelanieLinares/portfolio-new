@@ -1,42 +1,103 @@
 <header class="nav">
-	<nav id="navbar" class="flex items-center h-20 justify-between transparent max-w-7xl mx-auto">
-	<div class="flex-1 no-underline">
-		<a href="/index.html" style="display: inline-block" aria-label="home">
-			<img src="/img/logo.svg" alt="Melanie Linares logo" class="h-full desktop-logo"/>
-			<img src="/img/logo-mobile.svg" alt="Melanie Linares logo" class="h-full mobile-logo"/>
-			<img src="/img/logo-icon.svg" alt="Melanie Linares logo" class="h-full icon-logo"/>
+	<!-- flex items-center h-20 justify-between transparent max-w-7xl mx-auto -->
+	<nav id="navbar" class="">
+		<div class="max-w-7xl mx-auto">
+			<div class="flex justify-between">
+				<div class="flex space-x-7" style="width: 100%">
+					<div>
+						<!-- Website Logo -->
+						<a href="/index.html" style="display: inline-block" aria-label="home">
+							<img src="/img/logo.svg" alt="Melanie Linares logo" class="h-full desktop-logo"/>
+							<img src="/img/logo-mobile.svg" alt="Melanie Linares logo" class="h-full mobile-logo"/>
+							<img src="/img/logo-icon.svg" alt="Melanie Linares logo" class="h-full icon-logo"/>
+						</a>
+					</div>
+					<!-- Primary Navbar items -->
+					<div class="hidden xs:flex items-center space-x-1 justify-end" style="width: 100%">
+						{{ if eq (relURL .URL) ("/values/") }}
+						<a href="/values" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
+							About</a>
+						{{ else }}
+						<a href="/values" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">
+							About</a>
+						{{ end }}
+			
+						{{ if eq (relURL .URL) ("/post/") }}
+						<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
+							Work</a>
+						{{ else }}
+						<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">
+							Work</a>
+						{{ end }}
+			
+						{{ if eq (relURL .URL) ("/article/") }}
+						<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
+							Articles</a>
+						{{ else }}
+						<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">
+							Articles</a>
+						{{ end }}					</div>
+				</div>
+				<!-- Mobile menu button -->
+				<div class="xs:hidden flex items-center">
+					<button class="outline-none mobile-menu-button">
+					<svg class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+						x-show="!showMenu"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path d="M4 6h16M4 12h16M4 18h16"></path>
+					</svg>
+				</button>
+				</div>
+			</div>
+		</div>
+		<!-- mobile menu -->
+		<div class="hidden mobile-menu">
+			<ul class="">
+				<li>
+					{{ if eq (relURL .URL) ("/values/") }}
+					<a href="/values" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
+						About</a>
+					{{ else }}
+					<a href="/values" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">
+						About</a>
+					{{ end }}
+				</li>
+				<li>
+					{{ if eq (relURL .URL) ("/post/") }}
+					<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
+						Work</a>
+					{{ else }}
+					<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">
+						Work</a>
+					{{ end }}
+				</li>
+				<li>
+					{{ if eq (relURL .URL) ("/article/") }}
+					<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
+						Articles</a>
+					{{ else }}
+					<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">
+						Articles</a>
+					{{ end }}
+				</li>			
+			</ul>
+		</div>
+		<script>
+			const btn = document.querySelector("button.mobile-menu-button");
+			const menu = document.querySelector(".mobile-menu");
 
-		</a>
-	</div>
-	<!-- <a class="flex-1 no-underline block h-8"><img src="https://gustui.s3.amazonaws.com/gustlogo.png" class="h-full" /></a> -->
-	<ul class=" sm:flex sm:justify-center sm:h-full">
-
-			{{ if eq (relURL .URL) ("/values/") }}
-			<a href="/values" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
-				About</a>
-			{{ else }}
-			<a href="/values" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">
-				About</a>
-			{{ end }}
-
-			{{ if eq (relURL .URL) ("/post/") }}
-			<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
-				Work</a>
-			{{ else }}
-			<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">
-				Work</a>
-			{{ end }}
-
-			{{ if eq (relURL .URL) ("/article/") }}
-			<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
-				Articles</a>
-			{{ else }}
-			<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">
-				Articles</a>
-			{{ end }}
-		
-		</ul>
+			btn.addEventListener("click", () => {
+				menu.classList.toggle("hidden");
+			});
+		</script>
 	</nav>
+
 </header>
 
 
@@ -66,6 +127,7 @@
 </div>
 </nav>
 </header> -->
+
 
 <script>
 

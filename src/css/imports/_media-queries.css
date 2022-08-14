@@ -15,6 +15,94 @@
     
 }
 
+@media screen and (min-width: 481px) {
+
+    .mobile-menu-button {
+        display: none
+    }
+    
+}
+
+@media (min-width: 481px){
+    .xs\:flex{display:flex!important}
+    .xs\:h-full{height:100%!important}
+    .xs\:justify-center{justify-content:center!important}
+}
+
+@media screen and (max-width: 480px) {
+
+    #navbar div:first-of-type {
+        max-width: calc(100vw - 2em)!important;
+    }
+
+    .desktop-logo {
+        display: none!important;
+    }  
+    .mobile-logo {
+        margin-top: 1em;
+        display: block!important;
+        height: 44px!important;
+    } 
+    .icon-logo {
+        display: none!important;
+        }
+
+    #navbar ul {
+        /* display: block!important; */
+    }
+
+    #top-section {
+        height: unset!important;
+        padding-bottom: 35vh;
+        min-height: 115vh;
+        overflow-x: hidden;
+    }
+
+    #maincontent {
+        overflow-x: hidden;
+    }
+
+    #top-section #maincontent {
+        overflow-x: unset;
+    }
+
+    .hero-header {
+            display: block!important;
+    }
+    
+    .hero-header div:first-of-type{
+      width: calc(100vw - 4em)!important; 
+      height: 29em!important; 
+    }
+
+    details + li,
+    details + li + li,
+    details + li + li + li br {
+        display: none!important;
+    }
+
+    ul.project-info {
+        max-width: unset!important;
+    }
+
+    aside {
+        position: relative!important; 
+        margin-top: 0!important; 
+    }
+
+    .text-4xl {
+        font-size: 2.3rem !important;
+        line-height: 2.25rem !important;
+    }
+
+    .hero-header-image {
+        max-width: 40.5em!important;
+        margin-left: -4.5em!important;
+        margin-right: -5.5em!important;
+    }
+    
+}
+
 @media screen and (max-width: 319px) {
 
     .desktop-logo, .mobile-logo {
@@ -42,71 +130,69 @@
 @media screen and (min-width: 481px) and (max-width: 767px) {
 
     .desktop-logo {
-        display: none;
+        display: none!important;
     }  
     .mobile-logo {
-        display: unset;
-        height: 44px;
+        margin-top: 1em;
+        display: block!important;
+        height: 44px!important;
     } 
     .icon-logo {
-        display: none;
+        display: none!important;
+    }
+
+    #top-section {
+        height: unset!important;
+        padding-bottom: 35vh;
+        min-height: 115vh;
+        overflow-x: hidden;
+    }
+
+    .hero-header {
+            display: block!important;
     }
     
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-
-    .mobile-logo {
-        display: none;
-    }  
-    .desktop-logo {
-        display: unset;
-        height: 44px;
-    } 
-    .icon-logo {
-        display: none;
+    .hero-header div:first-of-type{
+      width: calc(100vw - 4em)!important; 
+      height: 22em!important; 
     }
 
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1200px) {
-
-    .desktop-logo {
-        display: none;
-    }  
-    .mobile-logo {
-        display: unset;
-        height: 44px;
-    } 
-    .icon-logo {
-        display: none;
+    details + li,
+    details + li + li,
+    details + li + li + li br {
+        display: none!important;
     }
 
-}
-
-@media screen and (min-width: 1201px) and (max-width: 1470px) {
-
-    .desktop-logo {
-        display: unset;
-        height: 44px;
-    }  
-    .mobile-logo {
-        display: none;
-    } 
-    .icon-logo {
-        display: none;
+    ul.project-info {
+        max-width: unset!important;
     }
 
+    aside {
+        position: relative!important; 
+        margin-top: 0!important; 
+    }
+
+    .text-4xl {
+        font-size: 2.85rem!important;
+        line-height: 2.8rem!important;
+    }
+
+    .hero-header-image {
+        max-width: 40.5em!important;
+        margin-left: -4.5em!important;
+        margin-right: -5.5em!important;
+    }
 }
 
-@media screen and (min-width: 1471px) and (max-width: 1900px) {
+@media screen and (min-width: 768px) {
 
-    .desktop-logo {
-        display: unset;
-        height: 44px;
-    }  
     .mobile-logo {
         display: none;
+    }  
+    .desktop-logo {
+        margin-top: 1em;
+        display: unset;
+        height: 44px;
     } 
     .icon-logo {
         display: none;
@@ -151,4 +237,8 @@
     .project-info details {
         display: none;
     } 
+}
+
+#navbar div:first-of-type {
+    position: relative;
 }
