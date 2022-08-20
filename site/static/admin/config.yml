@@ -78,13 +78,11 @@ collections: # A list of collections the CMS should be able to edit
               - { label: Content, name: content, widget: markdown}
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'caption', name: 'caption', widget: 'string', required: false}  
-              - { label: 'Typed List 2', name: 'typed_list2', widget: 'list', types:
-                  - label: 'Heading2'
-                    name: 'heading2'
-                    widget: 'object'
-                    fields:
-                      - { label: 'Heading02', name: 'heading02', widget: 'string' }
-                }
+              - label: 'Typed List 2'
+                name: 'typed_list2'
+                widget: 'list'
+                types:
+                  - { label: 'Heading2', name: 'heading2', widget: 'string'}
      
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "pages"
