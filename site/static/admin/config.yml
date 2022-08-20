@@ -78,10 +78,12 @@ collections: # A list of collections the CMS should be able to edit
               - { label: Content, name: content, widget: markdown}
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'caption', name: 'caption', widget: 'string', required: false}  
-              - label: 'Typed List 2'
-                name: 'typed_list2'
+              - label: '2 Col Content & Img'
+                name: '2col_content_img'
                 widget: 'list'
                 types:
+                  - { label: Content, name: content, widget: markdown}
+                  - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
                   - label: 'Heading2'
                     name: 'heading2'
                     widget: 'object'
