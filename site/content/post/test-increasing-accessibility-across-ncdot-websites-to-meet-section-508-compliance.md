@@ -71,6 +71,7 @@ typed_list:
 
       **Wow bold text!** `and code styled text?` 
 
+
       ## A heading level 2
 
 
@@ -100,6 +101,9 @@ typed_list:
 
 
       ![alt2](img/about-jumbotron.jpg "title2")
+
+
+      <em>This is em tag html</em>
 
 
       ```
