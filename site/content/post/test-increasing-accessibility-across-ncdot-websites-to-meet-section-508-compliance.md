@@ -57,4 +57,58 @@ typed_list:
 
 
       Section 508 as part of the Rehabilitation Act of 1973 is a law that requires government agencies to provide access to its Information and Communication Technology (ICT) to people with disabilities. The Revised 508 Standards incorporate by reference and apply the WCAG 2.0 Level AA Success Criteria to both web and non-web electronic content.
+  - type: generic_image
+    caption: Horizontal alerts within the header and pop alerts provided imporant
+      information to users visually and needed ARIA live region roles to share
+      this information with users not accessing the site visually.
+    image: img/Group 542.png
+  - type: heading
+    heading: This is a new heading
+  - type: generic_content
+    generic_content: >-
+      This is new content: "Generic Content"
+
+
+      **Wow bold text!** `and code styled text?` 
+
+
+      ## A heading level 2
+
+
+      content
+
+
+      ### And heading level 3 :)
+
+
+      > A quote
+
+
+      list:
+
+
+      * stert
+
+      * sdf
+
+      * sdf
+
+
+      Wait, what?!!! You can enter a image block and code block?? You can't change the order, but it enters in the order placed, and you can have multiple iterations.
+
+
+      ![alt text](img/about-direct-sourcing.jpg "title")
+
+
+      ![alt2](img/about-jumbotron.jpg "title2")
+
+
+      <em>This is em tag html</em>
+
+
+      ```
+
+      This is a code block :)
+
+      ```
 ---
