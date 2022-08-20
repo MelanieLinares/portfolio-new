@@ -31,42 +31,6 @@ introbody: >-
 
   **The goal:** score greater than 80
 typed_list:
-  - type: heading
-    heading: Why the concern over accessibility?
-  - type: generic_content
-    generic_content: >-
-      Originally brought on for front-end development, I noticed the
-      accessibility issues when my battery-operated mouse died. This situational
-      disability required I use my keyboard to navigate the website. It is
-      important to recognize that accessibility is for everyone, from someone
-      who is blind, has limb differentiation, to someone having a temporary or
-      situational disability. As a government agency, the website is required to
-      be W.C.A.G. 2.0/Section 508 accessible.
-
-
-
-
-      ### generic_ content - What is W.C.A.G?
-
-
-      The Web Content Accessibility Guidelines are part of a series of web accessibility guidelines considered to be the benchmark for compliance.\
-
-
-
-      ### generic_content - What is Section 508?
-
-
-      Section 508 as part of the Rehabilitation Act of 1973 is a law that requires government agencies to provide access to its Information and Communication Technology (ICT) to people with disabilities. The Revised 508 Standards incorporate by reference and apply the WCAG 2.0 Level AA Success Criteria to both web and non-web electronic content.
-  - type: generic_image
-    caption: Horizontal alerts within the header and pop alerts provided imporant
-      information to users visually and needed ARIA live region roles to share
-      this information with users not accessing the site visually.
-    image: img/Group 542.png
-  - type: heading
-    heading: heading - This is a new heading
-  - type: generic_content
-    generic_content: >-
-      This is new content: "Generic Content"
   - type: 2col_image_content
     content: >-
       Hi - Originally brought on for front-end development, I noticed the
@@ -78,15 +42,13 @@ typed_list:
       be W.C.A.G. 2.0/Section 508 accessible.
 
 
-
-
-      ### What is W.C.A.G?
+      ### Hi - What is W.C.A.G?
 
 
       The Web Content Accessibility Guidelines are part of a series of web accessibility guidelines considered to be the benchmark for compliance.
 
 
-      ### What is Section 508?
+      ### Hi - What is Section 508?
 
 
       Section 508 as part of the Rehabilitation Act of 1973 is a law that requires government agencies to provide access to its Information and Communication Technology (ICT) to people with disabilities. The Revised 508 Standards incorporate by reference and apply the WCAG 2.0 Level AA Success Criteria to both web and non-web electronic content.
