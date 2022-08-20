@@ -69,7 +69,9 @@ typed_list:
       This is new content: "Generic Content"
 
 
-      **Wow bold text!** `and code styled text?` ## **A heading level 2**
+      **Wow bold text!** `and code styled text?` 
+
+      ## A heading level 2
 
 
       content
@@ -94,10 +96,10 @@ typed_list:
       Wait, what?!!! You can enter a image block and code block?? You can't change the order, but it enters in the order placed, and you can have multiple iterations.
 
 
-      ![alt text](img/Group 507@2x.png "title")
+      ![alt text](img/about-direct-sourcing.jpg "title")
 
 
-      ![alt2](img/Image 60.png "title2")
+      ![alt2](img/about-jumbotron.jpg "title2")
 
 
       ```
