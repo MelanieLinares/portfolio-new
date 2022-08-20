@@ -69,8 +69,7 @@ typed_list:
       This is new content: "Generic Content"
 
 
-      **Wow bold text! `and code styled text?`**
-
+      **Wow bold text!** `and code styled text?`
 
       ## **A heading level 2**
 
@@ -92,8 +91,6 @@ typed_list:
       * sdf
 
       * sdf
-
-
 
 
       Wait, what?!!! You can enter a image block and code block?? You can't change the order, but it enters in the order placed, and you can have multiple iterations.
