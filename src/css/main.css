@@ -89,8 +89,9 @@
 
 
 #top-section {
-    height: 115vh;
-    min-height: 800px;
+    /* height: 115vh;
+    min-height: 800px; */
+    padding-bottom: 10em;
 }
 
 #top-section.pink {
@@ -119,11 +120,13 @@ header {
 
 .hero-header-image img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
+    object-position: top;
     border-radius: 0.5em;
     transform: rotate(1.5deg);
     margin-top: -10px;
-    margin-left: -5px;
+    margin-left: -5px
 }
 
 .intro-section {
@@ -153,13 +156,14 @@ header {
 aside {
     position:absolute;
     right: 0;
-    margin-top: 8em;
+    margin-top: 7em;
     padding-bottom: 8em;
 }
 
 aside img {
-    height: 48px;
+    height: 42px;
     width: auto;
+    object-fit: contain;
 }
 
 

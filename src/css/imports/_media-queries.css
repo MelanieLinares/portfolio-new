@@ -52,9 +52,9 @@
     }
 
     #top-section {
-        height: unset!important;
+        /* height: unset!important;
         padding-bottom: 35vh;
-        min-height: 115vh;
+        min-height: 115vh; */
         overflow-x: hidden;
     }
 
@@ -68,6 +68,7 @@
 
     .hero-header {
             display: block!important;
+            padding-top: 7rem;
     }
     
     .hero-header div:first-of-type{
@@ -142,9 +143,9 @@
     }
 
     #top-section {
-        height: unset!important;
+        /* height: unset!important;
         padding-bottom: 35vh;
-        min-height: 115vh;
+        min-height: 115vh; */
         overflow-x: hidden;
     }
 
@@ -154,8 +155,17 @@
     
     .hero-header div:first-of-type{
       width: calc(100vw - 4em)!important; 
-      height: 22em!important; 
+      height: auto!important; 
     }
+
+    .hero-header div:first-of-type h1{
+        padding-bottom: 2.5em!important; 
+      }
+
+      .hero-header div:first-of-type h1 + .notice{
+        padding-bottom: 5em!important; 
+        margin-top: -5em
+      }
 
     details + li,
     details + li + li,
@@ -178,15 +188,76 @@
     }
 
     .hero-header-image {
-        max-width: 40.5em!important;
-        margin-left: -4.5em!important;
-        margin-right: -5.5em!important;
+        max-width: 54.5em !important;
+        margin-left: -4.5em !important;
+        margin-right: -5.5em !important;
+        height: auto !important;
+        transform: rotate(4deg) !important;
+    }
+
+    .hero-header-image img {
+        transform: rotate(3.5deg)!important;
+        max-height: 85vh;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
+    .intro-section.content-850 {
+        max-width: calc(100vw - 300px);
+    }
 
+    .hero-header div:first-of-type h1 + .notice{
+        padding-bottom: 5em!important; 
+        margin-top: -5em
+    }
+
+    .hero-header {
+        display: block!important;
+    }
+
+    .hero-header h1 {
+        max-width: calc(100vw - 1.5em);
+        padding-bottom: 2.5em;
+    }
+
+    .hero-header div:not(.hero-header-image) {
+        margin-right: 0!important;
+        width: unset!important;
+        height: unset!important;
+    }
+
+    .hero-header .hero-header-image {
+        /* padding-bottom: 5em!important; */
+        height: unset;
+        margin-bottom: 6em;
+    }
+
+    .project-info details {
+        display: none!important;
+    } 
+
+    .hero-header-image {
+        max-width: calc(100vw + 1.5em)!important;
+    }
+
+    #top-section {
+        /* height: 153vh!important;
+        min-height: 1700px!important; */
+    }
+
+    aside {
+        max-width: 200px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1399px) {
+
+    .intro-section.content-850 {
+        max-width: calc(100vw - 600px);
+        min-width: 725px; 
+    }
 
 }
 
