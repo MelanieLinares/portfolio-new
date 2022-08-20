@@ -46,14 +46,14 @@ typed_list:
 
 
 
-      ### What is W.C.A.G?
+      ### generic_ content - What is W.C.A.G?
 
 
       The Web Content Accessibility Guidelines are part of a series of web accessibility guidelines considered to be the benchmark for compliance.\
 
 
 
-      ### What is Section 508?
+      ### generic_content - What is Section 508?
 
 
       Section 508 as part of the Rehabilitation Act of 1973 is a law that requires government agencies to provide access to its Information and Communication Technology (ICT) to people with disabilities. The Revised 508 Standards incorporate by reference and apply the WCAG 2.0 Level AA Success Criteria to both web and non-web electronic content.
@@ -63,7 +63,7 @@ typed_list:
       this information with users not accessing the site visually.
     image: img/Group 542.png
   - type: heading
-    heading: This is a new heading
+    heading: heading - This is a new heading
   - type: generic_content
     generic_content: >-
       This is new content: "Generic Content"

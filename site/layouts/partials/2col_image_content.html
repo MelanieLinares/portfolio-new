@@ -1,20 +1,19 @@
-<!-- {{ if .textimagesplitcontent }}
-{{ if eq .img_on_right "true" }}
-    {{ partial "textimagesplitreverse" . }}
-    
-{{ else }}
-    {{ partial "textimagesplit" . }}
+<div class="2col_image_content">
+<p>{{.heading}}</p>
+<p>{{.generic_content | markdownify}}</p>
+<p><img src="{{.image}}" ></p>
+<hr>
+
+{{ range .typed_list }}
+
+{{ if eq .type "heading" }}
+    {{ partial "heading" . }}
 {{ end }}
+
+{{ if eq .type "generic_content" }}
+    {{ partial "generic_content" . }}
 {{ end }}
 
+{{end}}
 
-{{ partial "icon-media-block" .introw }}
-
-    <div class="center db mb3" style="width: fit-content; border: 1px solid red">
-<span style="display: inline-block">
-    <img src="{{ .image }}" alt="">
-    <em>{{.caption }}</em>
-</span>
 </div>
-<div>{{.markdown | markdownify}}</div> -->
-
