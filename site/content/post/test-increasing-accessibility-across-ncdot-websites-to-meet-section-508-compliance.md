@@ -69,9 +69,7 @@ typed_list:
       This is new content: "Generic Content"
 
 
-      **Wow bold text!** `and code styled text?`
-
-      ## **A heading level 2**
+      **Wow bold text!** `and code styled text?` ## **A heading level 2**
 
 
       content
