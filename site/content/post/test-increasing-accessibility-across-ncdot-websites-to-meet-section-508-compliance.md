@@ -31,7 +31,7 @@ introbody: >-
 
   **The goal:** score greater than 80
 typed_list:
-  - type: 2col_image_content
+  - type: Twocol_image_content
     content: >-
       Hi - Originally brought on for front-end development, I noticed the
       accessibility issues when my battery-operated mouse died. This situational
@@ -52,7 +52,9 @@ typed_list:
 
 
       Section 508 as part of the Rehabilitation Act of 1973 is a law that requires government agencies to provide access to its Information and Communication Technology (ICT) to people with disabilities. The Revised 508 Standards incorporate by reference and apply the WCAG 2.0 Level AA Success Criteria to both web and non-web electronic content.
-    2col_content_img:
+    Twocol_content_img:
+      - type: heading2
+        heading02: heeeeelllloooooo :)
       - type: introw
         blurbsw:
           - imagew: img/Capture-3.JPG
@@ -61,5 +63,7 @@ typed_list:
             textw: more icon text!!!
       - type: heading2
         heading02: heading02, the content type doesn't work
+      - type: heading2
+        heading02: bork
     image: img/icons-twitter.svg
 ---

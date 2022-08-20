@@ -1,0 +1,39 @@
+<div class="Twocol_image_content">
+<p>{{.content | markdownify}}</p>
+<p><img src="{{.image}}" ></p>
+<hr>
+
+
+
+
+{{ range .Twocol_content_img }}
+
+    {{ if eq .type "heading2" }}
+    <h3>{{.heading02}}</h3>
+    <!-- {{ partial "icon-media-block" .blurbsw }} -->
+    {{ end }}
+
+    {{ if eq .type "introw" }}
+        {{ partial "icon-media-block" . }}
+    {{ end }}
+
+
+    <!-- {{ range .blurbsw }}
+
+        <div class="relative icon-with-content">
+            <div class="absolute flex items-center justify-center">
+        <img src="{{ .imagew }}" alt="" class="center db mb3 icon">
+            </div>
+        <div class="mt-2 text-base text-gray-500 icon-content">
+            {{ .textw | markdownify }}
+        </div>
+        </div>
+
+    {{ end }} -->
+
+
+
+
+{{end}}
+
+</div>
