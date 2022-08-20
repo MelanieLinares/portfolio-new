@@ -59,7 +59,7 @@ purplesection1: >-
 image: /img/Group%207.png
 image1: img/about-shade-grown.jpg
 typed_list:
-  - type: image_with_content
+  - type: generic_image
     image: img/Capture-3.JPG
     caption: this is the optional caption
     markdown: this is the markdown

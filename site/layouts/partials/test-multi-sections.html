@@ -16,8 +16,8 @@
                     {{ partial "generic_content" . }}
                 {{ end }}
 
-                {{ if eq .type "image_with_content" }}
-                    {{ partial "img_with_content" . }}
+                {{ if eq .type "generic_image" }}
+                    {{ partial "generic_image" . }}
                 {{ end }}
 
                 <!-- {{ if eq .type "stacked_images" }}
