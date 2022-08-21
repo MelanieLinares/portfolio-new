@@ -1,39 +1,52 @@
-<div class="Twocol_image_content">
-<p>{{.content | markdownify}}</p>
-<p><img src="{{.image}}" ></p>
-<hr>
+<div class="Twocol_image_content offset-section transparent lg:flex">
+    <section class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8 lg:flex">
+
+    <div class="w-full mt-4 lg:mt-0 lg:w-1/2">
 
 
+        {{ range .Twocol_content_img }}
 
+            {{ if eq .type "heading3" }}
+            <h2>{{.heading03}}</h2>
+            {{ end }}
 
-{{ range .Twocol_content_img }}
+            {{ if eq .type "introw" }}
+                {{ partial "icon-media-block" . }}
+            {{ end }}
 
-    {{ if eq .type "heading2" }}
-    <h3>{{.heading02}}</h3>
-    <!-- {{ partial "icon-media-block" .blurbsw }} -->
-    {{ end }}
+            {{ if eq .type "content2" }}
+                <p>{{.content02 | markdownify}}</p>
+            {{ end }}
 
-    {{ if eq .type "introw" }}
-        {{ partial "icon-media-block" . }}
-    {{ end }}
+        {{end}}
+    
+      <!-- <ul class="icon-group space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            <li class="relative">
+                <div class="absolute flex items-center">
+                  <img src="https://cdn-icons-png.flaticon.com/128/1570/1570100.png" data-src="https://cdn-icons-png.flaticon.com/128/1570/1570100.png" alt="Leader " title="Leader " width="128" height="128" class="lzy lazyload--done pr-4" srcset="https://cdn-icons-png.flaticon.com/128/1570/1570100.png 4x">
+                </div>
+              <div class="mt-2 ml-16 text-base pl-16"><h3>Competitive exchange1 rates</h3> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.
+                <p>Skip to main link existed but was not functional due to either an incorrect ID or empty href attribute, depending on the template. Navigation was added to a seperate component so it could be reused within templates Headings re-organized and given proper hierarchy according to semantics vs aesthetic browser default sizing</p>
+      <p>Navigation was added to a seperate component so it could be reused within templates . Headings re-organized and given proper hierarchy according to semantics vs aesthetic browser default sizing .</p>
+              </div>
+            </li>
+          </ul> -->
+    
+      <!-- <ul>
+      <li>Tailwind UI components and templates to bootstrap your new apps, projects or landing sites!</li>
+                    <li>Tailwind UI components and templates to bootstrap your new apps, projects or landing sites!</li>
+                    <li>Tailwind UI components and templates to bootstrap your new apps, projects or landing sites!</li>
+                    <li>Tailwind UI components and templates to bootstrap your new apps, projects or landing sites!</li>
+                  </ul> -->
+    
+      </div>
 
+      <div class="w-full text-top lg:text-left lg:w-1/2">
+    
+        <img src="{{.image}}" alt="TBD">
+        <em>NEED TO CREATE CMS LABEL - 1 Weekly would be working cooperatively with the product and engineering teams on enterprise -facing features</em>        
+        
+          </div>
 
-    <!-- {{ range .blurbsw }}
-
-        <div class="relative icon-with-content">
-            <div class="absolute flex items-center justify-center">
-        <img src="{{ .imagew }}" alt="" class="center db mb3 icon">
-            </div>
-        <div class="mt-2 text-base text-gray-500 icon-content">
-            {{ .textw | markdownify }}
-        </div>
-        </div>
-
-    {{ end }} -->
-
-
-
-
-{{end}}
-
-</div>
+    </section>
+     </div>

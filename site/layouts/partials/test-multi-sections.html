@@ -24,6 +24,10 @@
                     {{ partial "Twocol_image_content" . }}
                 {{ end }}
 
+                {{ if eq .type "display_image_section" }}
+                    {{ partial "display_image_section" . }}
+                {{ end }}
+
                 <!-- {{ if eq .type "stacked_images" }}
                     {{ partial "stacked_images" . }}
                 {{ end }}

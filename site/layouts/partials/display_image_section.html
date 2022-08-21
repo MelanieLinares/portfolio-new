@@ -1,0 +1,44 @@
+<!-- display image section -->
+
+
+<div class="display_image_section parent-outer">
+
+  <div class="max-w-7xl mx-auto">
+  <div class="content-850">
+
+    {{ range .display_image_section }}
+
+      {{ if eq .type "heading3" }}
+      <h2>{{.heading03}}</h2>
+      {{ end }}
+
+      {{ if eq .type "content2" }}
+      <p>{{.content02 | markdownify}}</p>
+      {{ end }}
+
+    {{end}}
+
+  </div>
+  
+  <div class="parent-all max-w-7xl mx-auto">
+  
+  <div class="div1-04">
+
+    {{ range .display_image_section }}
+
+      {{ if eq .type "content3" }}
+      <p>{{.content03 | markdownify}}</p>
+      {{ end }}
+
+      {{ if eq .type "introw" }}
+        {{ partial "icon-media-block" . }}
+      {{ end }}
+
+    {{end}}
+
+  </div>
+  <div class="div2-04">
+    <img src="/img/ncdot-display.png" alt="TBD">
+  </div>
+  </div>
+  </div>

@@ -75,20 +75,46 @@ collections: # A list of collections the CMS should be able to edit
             name: 'Twocol_image_content'
             widget: 'object'
             fields:
-              - { label: Content, name: content, widget: markdown}
+              - { label: "heading05", name: "heading05", widget: "string"}
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'caption', name: 'caption', widget: 'string', required: false}  
               - label: 'Two Col Content & Img'
                 name: 'twocol_content_img'
                 widget: 'list'
                 types:
-                  - { label: Content, name: content, widget: markdown}
-                  - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
-                  - label: 'Heading2'
-                    name: 'heading2'
+                  - label: 'Content2'
+                    name: 'Content02'
                     widget: 'object'
                     fields:
-                      - { label: 'Heading02', name: 'heading02', widget: 'string' }
+                      - { label: 'Content002', name: 'Content002', widget: 'markdown' }
+                  - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
+                  - label: 'Heading3'
+                    name: 'heading3'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Heading03', name: 'heading03', widget: 'string' }
+          - label: 'Display Image Section'
+            name: 'display_image_section'
+            widget: 'object'
+            fields:
+              - { label: "heading05", name: "heading05", widget: "string"}
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'caption', name: 'caption', widget: 'string', required: false}  
+              - label: 'Display Img Content'
+                name: 'display_image_section_content'
+                widget: 'list'
+                types:
+                  - label: 'Content2'
+                    name: 'Content02'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Content002', name: 'Content002', widget: 'markdown' }
+                  - label: 'Content3'
+                    name: 'Content03'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Content003', name: 'Content003', widget: 'markdown' }
+                  - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
      
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "pages"
