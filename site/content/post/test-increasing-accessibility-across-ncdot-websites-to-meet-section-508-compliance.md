@@ -37,14 +37,21 @@ typed_list:
         heading03: Why the concern over accessibility?
       - type: content2
         content02: >-
-          Originally brought on for front-end development, I noticed the accessibility issues when my battery-operated mouse died. This situational disability required I use my keyboard to navigate the website. It is important to recognize that accessibility is for everyone, from someone who is blind, has limb differentiation, to someone having a temporary or situational disability. As a government agency, the website is required to be W.C.A.G. 2.0/Section 508 accessible.
+          Originally brought on for front-end development, I noticed the
+          accessibility issues when my battery-operated mouse died. This
+          situational disability required I use my keyboard to navigate the
+          website. It is important to recognize that accessibility is for
+          everyone, from someone who is blind, has limb differentiation, to
+          someone having a temporary or situational disability. As a government
+          agency, the website is required to be W.C.A.G. 2.0/Section 508
+          accessible.
 
           ### What is W.C.A.G?
 
           The Web Content Accessibility Guidelines are part of a series of web accessibility guidelines considered to be the benchmark for compliance.
 
           ### What is Section 508?
-          
+
           Section 508 as part of the Rehabilitation Act of 1973 is a law that requires government agencies to provide access to its Information and Communication Technology (ICT) to people with disabilities. The Revised 508 Standards incorporate by reference and apply the WCAG 2.0 Level AA Success Criteria to both web and non-web electronic content.
       - type: introw
         blurbsw:
@@ -61,9 +68,10 @@ typed_list:
             textw: >-
               **The main issue for citizens**
 
-              
+
               As a federal agency, the websites for the NCDOT and NCDMV fall under Section 508 regulations to be ADA compliant. Failure to meet guidelines can lead to lawsuits and a loss of citizen and customer trust
     image: img/me-test.png
+    heading05: boo this was required
   - type: display_image_section
     display_image_section:
       - type: heading3
@@ -96,6 +104,8 @@ typed_list:
           - Color contrast
 
           - Code inspection, including Javascript
+    heading05: boo this was required, and the image
+    image: img/orange-circles.png
   - type: stacked_image_section
     stacked_image_section:
       - type: heading3
@@ -109,24 +119,27 @@ typed_list:
               Components associated with key functionality such as datapickers and dynamically populated dropdowns received prioritization. This also included custom controls which have a native alternative that is often replaced in favor of less accessible, but visually branded elements.
       - type: content2
         content02: >-
-          - Date pickers were not operable via keyboard or presented instances of keyboard traps
+          - Date pickers were not operable via keyboard or presented instances
+          of keyboard traps
 
           - Custom dropdown elements would refresh pages on keychange when cycling through options
 
           - Contact forms withought correct label associations were in the footer of every page
 
           - Incorrect use of headings included implicit headings which contained no meaning in html syntax and skips in heading elements which disrupt a screen reader's ability to parse content.
-      # - type: introw
-      #   blurbsw:
-      #     - imagew: img/icons-twitter.svg
-      #       textw: >-
-      #         **The main issue for citizens**
-
-      #         Citizens with vision difficulties are unable to understand important safety and legal announcements
-      #     - imagew: img/icons-twitter.svg
-      #       textw: >-
-      #         **The main issue for citizens**
-              
-      #         As a federal agency, the websites for the NCDOT and NCDMV fall under Section 508 regulations to be ADA compliant
     image: img/me-test.png
+    heading05: boo this was required
+  - type: Twocol_image_content
+    twocol_content_img:
+      - type: heading3
+        heading03: left column
+      - type: Content02
+        Content002: left column content
+    right_twocol_content_img:
+      - type: heading3
+        heading03: right column
+      - type: Content02
+        Content002: right column content
+    heading05: in congif remove this and the image
+    image: img/renew.svg
 ---
