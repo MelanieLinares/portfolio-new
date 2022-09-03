@@ -126,12 +126,12 @@ collections: # A list of collections the CMS should be able to edit
                 name: 'display_image_section_content'
                 widget: 'list'
                 types:
-                  - label: 'Content02'
+                  - label: 'Content2'
                     name: 'Content02'
                     widget: 'object'
                     fields:
                       - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-                    - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
+                      - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
      
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "pages"
