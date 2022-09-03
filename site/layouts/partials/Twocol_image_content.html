@@ -19,6 +19,27 @@
             {{ end }}
 
         {{end}}
+
+
+        <!-- {{ if eq .name "right_twocol_content_img" }} -->
+        {{ range .right_twocol_content_img }}
+<div class="right column">
+        {{ if eq .type "heading3" }}
+        <h2>{{.heading03}}</h2>
+        {{ end }}
+
+        {{ if eq .type "introw" }}
+            {{ partial "icon-media-block" . }}
+        {{ end }}
+
+        {{ if eq .type "content2" }}
+            <p>{{.content02 | markdownify}}</p>
+        {{ end }}
+</div>
+    {{end}}
+    <!-- {{end}} -->
+
+        
     
       <!-- <ul class="icon-group space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
             <li class="relative">
