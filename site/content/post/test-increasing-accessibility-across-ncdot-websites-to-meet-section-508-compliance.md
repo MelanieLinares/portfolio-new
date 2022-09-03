@@ -96,6 +96,26 @@ typed_list:
           - Color contrast
 
           - Code inspection, including Javascript
+  - type: stacked_image_section
+    stacked_image_section:
+      - type: heading3
+        heading03: Audit findings and breakdown
+      - type: introw
+        blurbsw:
+          - imagew: https://cdn-icons-png.flaticon.com/128/1570/1570100.png
+            textw: >-
+              ### Focus on components
+
+              Components associated with key functionality such as datapickers and dynamically populated dropdowns received prioritization. This also included custom controls which have a native alternative that is often replaced in favor of less accessible, but visually branded elements.
+      - type: content2
+        content02: >-
+          - Date pickers were not operable via keyboard or presented instances of keyboard traps
+
+          - Custom dropdown elements would refresh pages on keychange when cycling through options
+
+          - Contact forms withought correct label associations were in the footer of every page
+
+          - Incorrect use of headings included implicit headings which contained no meaning in html syntax and skips in heading elements which disrupt a screen reader's ability to parse content.
       # - type: introw
       #   blurbsw:
       #     - imagew: img/icons-twitter.svg

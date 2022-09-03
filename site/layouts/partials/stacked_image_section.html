@@ -1,0 +1,27 @@
+<div class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8 lg:flex">
+    <div class="w-full text-top lg:text-left lg:w-1/2">
+    <img src="https://codyhouse.co/app/assets/img/adv-gallery-v2-img-1.jpg" alt="TBD">
+    <em>1 Weekly would be working cooperatively with the product and engineering teams on enterprise -facing features</em>
+    <p><em>2 Weekly would be working cooperatively with the product and engineering teams on enterprise -facing features</em>
+    <img src="https://codyhouse.co/app/assets/img/adv-gallery-v2-img-2.jpg" alt="TBD"></p>
+      </div>
+      <div class="w-full mt-4 lg:mt-0 lg:w-1/2">
+
+    {{ range .stacked_image_section }}
+
+      {{ if eq .type "heading3" }}
+      <h2>{{.heading03}}</h2>
+      {{ end }}
+
+      {{ if eq .type "content2" }}
+      <p>{{.content02 | markdownify}}</p>
+      {{ end }}
+
+      {{ if eq .type "introw" }}
+      {{ partial "icon-media-block" . }}
+    {{ end }}
+
+  {{end}}
+
+      </div>
+    </div>

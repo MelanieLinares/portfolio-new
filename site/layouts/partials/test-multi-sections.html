@@ -28,6 +28,10 @@
                     {{ partial "display_image_section" . }}
                 {{ end }}
 
+                {{ if eq .type "stacked_image_section" }}
+                    {{ partial "stacked_image_section" . }}
+                {{ end }}
+
                 <!-- {{ if eq .type "stacked_images" }}
                     {{ partial "stacked_images" . }}
                 {{ end }}
