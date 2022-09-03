@@ -126,7 +126,7 @@ collections: # A list of collections the CMS should be able to edit
                 name: 'display_image_section_content'
                 widget: 'list'
                 types:
-                  - label: 'Content2'
+                  - label: 'Content02'
                     name: 'Content02'
                     widget: 'object'
                     fields:
