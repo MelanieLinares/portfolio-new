@@ -1,20 +1,22 @@
-<!-- display image section -->
-
-
 <div class="display_image_section parent-outer">
 
   <div class="max-w-7xl mx-auto">
   <div class="content-850">
 
-    {{ range .display_image_section }}
 
-      {{ if eq .type "heading3" }}
-      <h2>{{.heading03}}</h2>
+
+    <h2>{{.heading05}}</h2>
+
+
+    {{ range .display_image_section_content }}
+
+      {{ if eq .type "Content02" }}
+      <p>{{.Content002 | markdownify}}</p>
       {{ end }}
 
-      {{ if eq .type "content2" }}
-      <p>{{.content02 | markdownify}}</p>
-      {{ end }}
+      <!-- {{ if eq .type "Content03" }}
+      <p>{{.Content003 | markdownify}}</p>
+      {{ end }} -->
 
     {{end}}
 
@@ -24,10 +26,10 @@
   
   <div class="div1-04">
 
-    {{ range .display_image_section }}
+    {{ range .display_image_section_content }}
 
-      {{ if eq .type "content3" }}
-      <p>{{.content03 | markdownify}}</p>
+      {{ if eq .type "Content03" }}
+      <p>{{.Content003 | markdownify}}</p>
       {{ end }}
 
       {{ if eq .type "introw" }}
@@ -37,8 +39,10 @@
     {{end}}
 
   </div>
+
+
   <div class="div2-04">
-    <img src="/img/ncdot-display.png" alt="TBD">
+    <img src="{{.image}}" alt="TBD">
   </div>
   </div>
   </div>

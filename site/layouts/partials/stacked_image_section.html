@@ -1,20 +1,38 @@
+<!-- - type: stacked_image_section
+heading05: Yes stacked image
+image: img/powercord.png
+display_image_section_content:
+  - type: Content02
+    Content002: Yes stacked image - content2(002) -->
+
 <div class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8 lg:flex">
     <div class="w-full text-top lg:text-left lg:w-1/2">
-    <img src="https://codyhouse.co/app/assets/img/adv-gallery-v2-img-1.jpg" alt="TBD">
-    <em>1 Weekly would be working cooperatively with the product and engineering teams on enterprise -facing features</em>
-    <p><em>2 Weekly would be working cooperatively with the product and engineering teams on enterprise -facing features</em>
-    <img src="https://codyhouse.co/app/assets/img/adv-gallery-v2-img-2.jpg" alt="TBD"></p>
+    <img src="{{.image1}}" alt="TBD">
+    <em>{{.caption1}} 1 Weekly would be working cooperatively with the product and engineering teams on enterprise -facing features</em>
+    <br/><br/>
+
+
+
+      {{ if .image2 }} 
+      <em>{{.caption2}} 2 Weekly would be working cooperatively with the product and engineering teams on enterprise -facing features</em>
+      
+      <img src="{{.image2}}" alt="TBD">
+      {{ end }}
+
       </div>
       <div class="w-full mt-4 lg:mt-0 lg:w-1/2">
 
-    {{ range .stacked_image_section }}
 
-      {{ if eq .type "heading3" }}
-      <h2>{{.heading03}}</h2>
-      {{ end }}
+        {{ if "heading05" }}
+        <h2>{{.heading05}}</h2>
+        {{ end }}
 
-      {{ if eq .type "content2" }}
-      <p>{{.content02 | markdownify}}</p>
+    {{ range .display_image_section_content }}
+
+
+
+      {{ if eq .type "Content02" }}
+      <p>{{.Content002 | markdownify}}</p>
       {{ end }}
 
       {{ if eq .type "introw" }}

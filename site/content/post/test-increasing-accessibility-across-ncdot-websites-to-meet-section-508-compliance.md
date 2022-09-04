@@ -127,7 +127,7 @@ typed_list:
           - Contact forms withought correct label associations were in the footer of every page
 
           - Incorrect use of headings included implicit headings which contained no meaning in html syntax and skips in heading elements which disrupt a screen reader's ability to parse content.
-    image: img/me-test.png
+    image1: img/me-test.png
     heading05: boo this was required
   - type: Twocol_image_content
     twocol_content_img:
