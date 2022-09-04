@@ -34,23 +34,6 @@ twocol_content_img:
         {{end}}
 
 
-        <!-- {{ if eq .name "right_twocol_content_img" }} -->
-        {{ range .right_twocol_content_img }}
-<div class="right column">
-        {{ if eq .type "heading3" }}
-        <h2>{{.heading03}}</h2>
-        {{ end }}
-
-        {{ if eq .type "introw" }}
-            {{ partial "icon-media-block" . }}
-        {{ end }}
-
-        {{ if eq .type "content2" }}
-            <p>{{.content02 | markdownify}}</p>
-        {{ end }}
-</div>
-    {{end}}
-    <!-- END - if eq .name "right_twocol_content_img"  -->
 
         
     
