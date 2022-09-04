@@ -44,7 +44,7 @@ typed_list:
   - type: Twocol_image_content
     heading05: Yes two col content + img
     image: img/starbucks-logo.png
-    caption: hello there - this is a caption - 1 Weekly would be working cooperatively with the product and engineering teams on enterprise -facing features
+    caption: helloo there - this is a caption - 1 Weekly would be working cooperatively with the product and engineering teams on enterprise -facing features
     twocol_content_img:
       - type: Content02
         Content002: Yes two col content + img - add two col content & img item -
