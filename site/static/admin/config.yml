@@ -80,7 +80,7 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'caption', name: 'caption', widget: 'string', required: false}  
               - label: 'Two Col Content & Img'
                 name: 'twocol_content_img'
-                widget: 'list'
+                widget: 'object'
                 types:
                   - label: 'Content2'
                     name: 'Content02'
@@ -106,7 +106,7 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'caption', name: 'caption', widget: 'string', required: false}  
               - label: 'Display Img Content'
                 name: 'display_image_section_content'
-                widget: 'list'
+                widget: 'object'
                 types:
                   - label: 'Content2'
                     name: 'Content02'
@@ -134,7 +134,7 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'caption2', name: 'caption2', widget: 'string', required: false}  
               - label: 'Stacked Img Content'
                 name: 'stacked_image_section_content'
-                widget: 'list'
+                widget: 'object'
                 types:
                   - label: 'Content2'
                     name: 'Content02'
