@@ -31,6 +31,10 @@ twocol_content_img:
                 <p>{{.Content002 | markdownify}}</p>
             {{ end }}
 
+            {{ if eq .type "OverlapImg" }}
+            {{ partial "overlap-img" . }}
+            {{ end }}
+
         {{end}}
 
 

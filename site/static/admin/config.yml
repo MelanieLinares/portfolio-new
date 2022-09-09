@@ -93,6 +93,12 @@ collections: # A list of collections the CMS should be able to edit
                     widget: 'object'
                     fields:
                       - { label: 'Heading03', name: 'heading03', widget: 'string' }
+                  - label: 'OverlapIMG'
+                    name: 'OverlapImg'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Large Img', name: 'largeimg', widget: 'image' }
+                      - { label: 'Small Img', name: 'smallimg', widget: 'image' }                      
           - label: 'Display Image Section'
             name: 'display_image_section'
             widget: 'object'
@@ -133,11 +139,12 @@ collections: # A list of collections the CMS should be able to edit
                     widget: 'object'
                     fields:
                       - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-                  - label: 'Content3'
-                    name: 'Content03'
+                  - label: 'OverlapIMG'
+                    name: 'OverlapImg'
                     widget: 'object'
                     fields:
-                      - { label: 'Content003', name: 'Content003', widget: 'markdown' }
+                      - { label: 'Large Img', name: 'largeimg', widget: 'image' }
+                      - { label: 'Small Img', name: 'smallimg', widget: 'image' }
                   - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                     
      
       - {label: "Body", name: "body", widget: "markdown", required: false}

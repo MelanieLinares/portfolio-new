@@ -29,15 +29,17 @@ display_image_section_content:
 
     {{ range .display_image_section_content }}
 
-
-
       {{ if eq .type "Content02" }}
       <p>{{.Content002 | markdownify}}</p>
       {{ end }}
 
       {{ if eq .type "introw" }}
       {{ partial "icon-media-block" . }}
-    {{ end }}
+      {{ end }}
+
+      {{ if eq .type "OverlapImg" }}
+      {{ partial "overlap-img" . }}
+      {{ end }}
 
   {{end}}
 
