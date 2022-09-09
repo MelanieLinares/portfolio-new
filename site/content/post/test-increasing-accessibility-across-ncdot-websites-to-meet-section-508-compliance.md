@@ -177,4 +177,11 @@ typed_list:
       - type: Content02
         Content002: t﻿his is a second content 2
     image: img/Group 527.png
+  - type: Twocol_content
+    twocol_content_left:
+      - type: Content02
+        Content002: l﻿eft content 2
+    twocol_content_right:
+      - type: Content02
+        Content002: r﻿ight content 2
 ---
