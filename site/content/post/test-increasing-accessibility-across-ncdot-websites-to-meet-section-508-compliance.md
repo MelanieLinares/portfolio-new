@@ -77,9 +77,6 @@ typed_list:
 
 
               As a federal agency, the websites for the NCDOT and NCDMV fall under Section 508 regulations to be ADA compliant. Failure to meet guidelines can lead to lawsuits and a loss of citizen and customer trust
-      - type: OverlapImg
-        largeimg: img/Group 527.png
-        smallimg: img/Group 527.png
   - type: display_image_section
     heading05: Conducting the accessibility audit
     image: img/ncdot-display.png
