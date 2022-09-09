@@ -1,19 +1,14 @@
-<!-- - type: Twocol_image_content
-heading05: Yes two col content + img
-image: img/starbucks-logo.png
-twocol_content_img:
+<!-- - type: Twocol_content
+twocol_content_left:
   - type: Content02
-    Content002: Yes two col content + img - add two col content & img item -
-      content2(002)
-  - type: heading3
-    heading03: Yes two col content + img - add two col content & img item - heading03 -->
+    Content002: left content 2 -->
 
 <div class="Twocol_image_content offset-section transparent lg:flex">
     <section class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8 lg:flex">
 
     <div class="w-full mt-4 lg:mt-0 lg:w-1/2">
 
-        {{ range .twocol_content_1 }}
+        {{ range .twocol_content_left }}
 
             {{ if eq .type "heading3" }}
             <h2>{{.heading03}}</h2>
@@ -43,7 +38,7 @@ twocol_content_img:
 
       <div class="w-full text-top lg:text-left lg:w-1/2">
     
-        {{ range .twocol_content_2 }}
+        {{ range .twocol_content_right }}
 
             {{ if eq .type "heading3" }}
             <h2>{{.heading03}}</h2>

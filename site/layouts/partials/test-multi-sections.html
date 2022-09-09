@@ -32,6 +32,10 @@
                     {{ partial "stacked_image_section" . }}
                 {{ end }}
 
+                {{ if eq .type "Twocol_content" }}
+                    {{ partial "Twocol_content" . }}
+                {{ end }}
+
                 <!-- {{ if eq .type "stacked_images" }}
                     {{ partial "stacked_images" . }}
                 {{ end }}
