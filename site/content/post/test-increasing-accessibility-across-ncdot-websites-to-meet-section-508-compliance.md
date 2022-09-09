@@ -121,6 +121,14 @@ typed_list:
     image2: img/Image 43.png
     caption2: Many pages included repeatable card components
     display_image_section_content:
+      - type: introw
+        blurbsw:
+          - imagew: img/Group 527.png
+            textw: >-
+              ### Focus on components
+
+
+              Components associated with key functionality such as datapickers and dynamically populated dropdowns received prioritization. This also included custom controls which have a native alternative that is often replaced in favor of less accessible, but visually branded elements.
       - type: Content02
         Content002: >-
           * Date pickers were not operable via keyboard or presented instances
