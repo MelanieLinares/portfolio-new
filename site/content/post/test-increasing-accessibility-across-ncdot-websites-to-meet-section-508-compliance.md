@@ -139,24 +139,5 @@ typed_list:
 
                 Components associated with key functionality such as datapickers and dynamically populated dropdowns received prioritization. This also included custom controls which have a native alternative that is often replaced in favor of less accessible, but visually branded elements.
               imagew: img/layout.png
-    stacked_image_section_content:
-      - type: introw
-        introw:
-          blurbsw:
-            - imagew: img/Group 527.png
-              textw: >-
-                ### Focus on components
-
-
-                Components associated with key functionality such as datapickers and dynamically populated dropdowns received prioritization. This also included custom controls which have a native alternative that is often replaced in favor of less accessible, but visually branded elements.
-      - type: Content02
-        Content002: >-
-          Date pickers were not operable via keyboard or presented instances of
-          keyboard traps \
-
-          Custom dropdown elements would refresh pages on key change when cycling through options \
-
-          Contact forms without correct label associations were in the footer of every page \
-
-          Incorrect use of headings included implicit headings which contained no meaning in html syntax and skips in heading elements which disrupt a screen reader's ability to parse content
+    stacked_image_section_content: []
 ---
