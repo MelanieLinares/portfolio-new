@@ -179,9 +179,61 @@ typed_list:
     image: img/Group 527.png
   - type: Twocol_content
     twocol_content_left:
+      - type: heading3
+        heading03: Major changes and impact
       - type: Content02
-        Content002: l﻿eft content 2
+        Content002: "### Keyboard changes
+
+
+          * Skip to main link existed but was not functional due to
+          either an incorrect ID or empty href attribute, depending on the
+          template. Navigation was added to a seperate component so it could be
+          reused within templates\r \ 
+
+          * Headings re-organized and given proper hierarchy according
+          to semantics vs aesthetic browser default sizing\r 
+
+          * Focus rings on links added back, as well as hover
+          underlines which were originally inconsistently implemented\r 
+
+          * Elements arranged out of logical tab order via tabindex or
+          the CSS float property caused issues when browsing through content."
+      - type: Content02
+        Content002: '![TBD](img/Image 46.png "TBD-title")'
     twocol_content_right:
+      - type: OverlapImg
+        largeimg: img/insight2.jpg
+        smallimg: img/blue-triangle.png
       - type: Content02
-        Content002: r﻿ight content 2
+        Content002: "### Alerts & pop-ups
+
+
+          Originally not focusable or operable, these did not have an
+          accessible way to close content and were adjusted or given textual
+          alternatives\r 
+
+          Alerts of important information were not announced to screen
+          readers. Aria roles were added or re-implemented correctly
+
+
+
+          ### Custom third-party components
+
+
+          Some components found to be inaccessible. Code was edited as
+          able or replaced with native HTML5 controls
+
+
+          ### Navigation
+
+
+          \r
+
+          Navigation for SharePoint is built with separate mobile and
+          desktop code toggled with media queries. The issue is both are still
+          accessible within the DOM via a screen reader regardless of screen
+          size or device\r 
+
+          Originally not all built using lists or link tags the
+          navigation was changed to utilize valid html and link tags."
 ---
