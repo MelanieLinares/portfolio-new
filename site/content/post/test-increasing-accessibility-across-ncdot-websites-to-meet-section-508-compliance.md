@@ -200,6 +200,8 @@ typed_list:
           the CSS float property caused issues when browsing through content."
       - type: Content02
         Content002: |-
+          ![ALT](img/Group 527.png "TITLE")
+
           h﻿ello
 
           ![alt](img/layout.png "title")
