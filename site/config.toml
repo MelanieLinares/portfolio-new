@@ -19,7 +19,7 @@ title = "Homepage"
       autoHeadingIDType = 'github'
     [markup.goldmark.renderer]
       hardWraps = false
-      unsafe = true
+      unsafe = false
       xhtml = false
 
 # RSS, categories and tags disabled for an easy start
