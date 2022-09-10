@@ -199,7 +199,10 @@ typed_list:
           * Elements arranged out of logical tab order via tabindex or
           the CSS float property caused issues when browsing through content."
       - type: Content02
-        Content002: '![TBD](img/Image 46.png "TBD-title")'
+        Content002: |-
+          ![this is the alt](img/accessibility-ncdot.jpg "this is the title")
+
+          ![alt](img/layout.png "title")
     twocol_content_right:
       - type: OverlapImg
         largeimg: img/insight2.jpg
