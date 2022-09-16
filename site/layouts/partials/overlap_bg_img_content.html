@@ -1,0 +1,24 @@
+{{ if eq .img_on_right "true" }}
+<div class="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8 pr-4">
+
+<p class="mt-4 text-lg text-gray-500 dark:text-gray-300">{{.content}}</p> 
+
+</div> 
+
+<div class="w-full mt-4 lg:mt-0 lg:w-3/4 overlap-bg">
+    
+    <img class="full-img" src="{{.image}}" alt="TBD">
+
+</div>
+{{end}}
+
+{{ if eq .img_on_right "false" }}
+<div class="w-full mt-4 lg:mt-0 lg:w-3/4 overlap-bg-reverse">
+    
+    <img class="full-img" src="{{.image}}" alt="TBD">
+
+</div>
+
+<div class="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">{{.content}}</div>
+
+{{end}}

@@ -95,7 +95,7 @@ typed_list:
 
           * Created a spreadsheet to organize and group issues\
             Severity and tractability levels were added to NCDOT ticketing system\
-          * Remaining issues were grouped by page or components, assigned an individual severity and discussed with web dept lead 
+          * Remaining issues were grouped by page or components, assigned an individual severity and discussed with web dept lead
 
 
           ### Manual testing
@@ -173,9 +173,9 @@ typed_list:
           ![](img/Image 46.png)
 
 
-          <﻿em>Drop-down navigation contained multiple columns and subheaders. This navigation was duplicated within the code for muliple screen sizes rather than using CSS to adjust the layout</em>
+          <em>Drop-down navigation contained multiple columns and subheaders. This navigation was duplicated within the code for muliple screen sizes rather than using CSS to adjust the layout</em>
       - type: Content02
-        Content002: t﻿his is a second content 2
+        Content002: this is a second content 2
     image: img/Group 527.png
   - type: Twocol_content
     twocol_content_left:
@@ -188,13 +188,13 @@ typed_list:
           * Skip to main link existed but was not functional due to
           either an incorrect ID or empty href attribute, depending on the
           template. Navigation was added to a seperate component so it could be
-          reused within templates\r \ 
+          reused within templates
 
           * Headings re-organized and given proper hierarchy according
-          to semantics vs aesthetic browser default sizing\r 
+          to semantics vs aesthetic browser default sizing
 
           * Focus rings on links added back, as well as hover
-          underlines which were originally inconsistently implemented\r 
+          underlines which were originally inconsistently implemented
 
           * Elements arranged out of logical tab order via tabindex or
           the CSS float property caused issues when browsing through content."

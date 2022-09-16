@@ -16,6 +16,10 @@
                     {{ partial "generic_content" . }}
                 {{ end }}
 
+                {{ if eq .type "twocol_icon_content" }}
+                    {{ partial "twocol_icon_content" . }}
+                {{ end }}
+
                 {{ if eq .type "generic_image" }}
                     {{ partial "generic_image" . }}
                 {{ end }}
