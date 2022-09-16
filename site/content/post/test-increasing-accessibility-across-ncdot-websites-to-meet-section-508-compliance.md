@@ -182,22 +182,17 @@ typed_list:
       - type: heading3
         heading03: Major changes and impact
       - type: Content02
-        Content002: "### Keyboard changes
+        Content002: >-
+          ### Keyboard changes
 
 
-          * Skip to main link existed but was not functional due to
-          either an incorrect ID or empty href attribute, depending on the
-          template. Navigation was added to a seperate component so it could be
-          reused within templates
+          * Skip to main link existed but was not functional due to either an incorrect ID or empty href attribute, depending on the template. Navigation was added to a seperate component so it could be reused within templates
 
-          * Headings re-organized and given proper hierarchy according
-          to semantics vs aesthetic browser default sizing
+          * Headings re-organized and given proper hierarchy according to semantics vs aesthetic browser default sizing
 
-          * Focus rings on links added back, as well as hover
-          underlines which were originally inconsistently implemented
+          * Focus rings on links added back, as well as hover underlines which were originally inconsistently implemented
 
-          * Elements arranged out of logical tab order via tabindex or
-          the CSS float property caused issues when browsing through content."
+          * Elements arranged out of logical tab order via tabindex or the CSS float property caused issues when browsing through content.
       - type: Content02
         Content002: '![skjdhfksd](img/apple-touch-icon.png "titlesfsdff gfgdfgsd fdsf")'
     twocol_content_right:
@@ -236,4 +231,11 @@ typed_list:
 
           Originally not all built using lists or link tags the
           navigation was changed to utilize valid html and link tags."
+  - type: scroll-image
+    caption: optional caption
+    image: img/decorative-desk.jpg
+  - type: overlap_bg_img_content
+    image: img/Capture-3.JPG
+    content: c﻿ontent boop boop
+    img_on_right: true
 ---
