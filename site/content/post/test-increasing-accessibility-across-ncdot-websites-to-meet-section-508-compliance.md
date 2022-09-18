@@ -202,18 +202,15 @@ typed_list:
       - type: Content02
         Content002: "### Alerts & pop-ups
 
-
           Originally not focusable or operable, these did not have an
           accessible way to close content and were adjusted or given textual
-          alternatives\r 
+          alternatives
 
           Alerts of important information were not announced to screen
           readers. Aria roles were added or re-implemented correctly
 
 
-
           ### Custom third-party components
-
 
           Some components found to be inaccessible. Code was edited as
           able or replaced with native HTML5 controls
@@ -221,13 +218,10 @@ typed_list:
 
           ### Navigation
 
-
-          \r
-
           Navigation for SharePoint is built with separate mobile and
           desktop code toggled with media queries. The issue is both are still
           accessible within the DOM via a screen reader regardless of screen
-          size or device\r 
+          size or device
 
           Originally not all built using lists or link tags the
           navigation was changed to utilize valid html and link tags."
@@ -236,6 +230,8 @@ typed_list:
     image: img/decorative-desk.jpg
   - type: overlap_bg_img_content
     image: img/Capture-3.JPG
-    content: c﻿ontent boop boop
+    content: content boop boop
     img_on_right: true
+  - type: fullwidth-img
+    image: img/decorative-desk.jpg    
 ---

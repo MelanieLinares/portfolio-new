@@ -40,6 +40,26 @@
                     {{ partial "Twocol_content" . }}
                 {{ end }}
 
+                {{ if eq .type "scroll-image" }}
+                    {{ partial "scroll-image" . }}
+                {{ end }}
+
+                {{ if eq .type "overlap_bg_img_content" }}
+                    {{ partial "overlap_bg_img_content" . }}
+                {{ end }}
+
+                {{ if eq .type "fullwidth-img" }}
+                    {{ partial "fullwidth-img" . }}
+                {{ end }}
+
+                {{ if eq .type "three-col-text-grid" }}
+                    {{ partial "three-col-text-grid" . }}
+                {{ end }}
+
+                {{ if eq .type "icon-cards" }}
+                    {{ partial "icon-cards" . }}
+                {{ end }}
+
                 <!-- {{ if eq .type "stacked_images" }}
                     {{ partial "stacked_images" . }}
                 {{ end }}

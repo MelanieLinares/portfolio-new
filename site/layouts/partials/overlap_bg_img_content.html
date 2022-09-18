@@ -1,4 +1,6 @@
-{{ if eq .img_on_right "true" }}
+<div class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
+
+{{ if eq .img_on_right true }}
 <div class="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8 pr-4">
 
 <p class="mt-4 text-lg text-gray-500 dark:text-gray-300">{{.content}}</p> 
@@ -12,8 +14,8 @@
 </div>
 {{end}}
 
-{{ if eq .img_on_right "false" }}
-<div class="w-full mt-4 lg:mt-0 lg:w-3/4 overlap-bg-reverse">
+{{ if eq .img_on_right false }}
+<div class="w-full mt-4 lg:mt-0 lg:w-3/4 overlap-bg-reverse"> 
     
     <img class="full-img" src="{{.image}}" alt="TBD">
 
@@ -22,3 +24,5 @@
 <div class="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">{{.content}}</div>
 
 {{end}}
+
+</div>

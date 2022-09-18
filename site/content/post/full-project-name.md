@@ -452,8 +452,9 @@ Headings re-organized and given proper hierarchy according to semantics vs aesth
 
 <h2>16</h2>
 <div class="max-w-7xl mx-auto">
-[...]
 <!-- image or overlap image -->
+[...]
+<!-- end image or overlap image -->
   </div>
 <br>
 <div class="parent-all max-w-7xl mx-auto">

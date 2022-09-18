@@ -61,6 +61,9 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'object'
             fields:
               - { label: 'Generic Content', name: 'generic_content', widget: 'markdown' }
+              - { label: 'Featured Text', name: 'featuredtext', widget: 'markdown' }    
+              - { label: 'Pill Featured Text', name: 'pillfeaturedtext', widget: 'string' }          
+              - {label: Icon Cards, name: cards, widget: object, fields: [{label: Icon Blurbs, name: blurbcards, widget: list, fields: [{label: Image, name: imagecards, widget: image}, {label: Text, name: textcards, widget: markdown}]}], required: false}              
               # - {label: Overview icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
           - label: 'Generic Image'
             name: 'generic_image'
