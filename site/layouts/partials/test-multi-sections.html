@@ -60,6 +60,26 @@
                     {{ partial "icon-cards" . }}
                 {{ end }}
 
+                {{ if eq .type "featured-text" }}
+                    {{ partial "featured-text" . }}
+                {{ end }}
+
+                {{ if eq .type "image-jumble-grid" }}
+                    {{ partial "image-jumble-grid" . }}
+                {{ end }}
+
+                {{ if eq .type "offset-two-column" }}
+                    {{ partial "offset-two-column" . }}
+                {{ end }}
+
+                {{ if eq .type "pill-featured-text" }}
+                    {{ partial "pill-featured-text" . }}
+                {{ end }}
+
+                {{ if eq .type "scroll-image" }}
+                    {{ partial "scroll-image" . }}
+                {{ end }}
+
                 <!-- {{ if eq .type "stacked_images" }}
                     {{ partial "stacked_images" . }}
                 {{ end }}

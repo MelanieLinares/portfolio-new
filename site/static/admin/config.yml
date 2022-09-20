@@ -222,8 +222,64 @@ collections: # A list of collections the CMS should be able to edit
                     fields:
                       - { label: 'Large Img', name: 'largeimg', widget: 'image' }
                       - { label: 'Small Img', name: 'smallimg', widget: 'image' }
-                  - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                     
+                  - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}        
+          - label: 'Fullwidth Img'
+            name: 'fullwidth-img'
+            widget: 'object'
+            fields:
+              - { label: "image", name: "image", widget: "image"}             
+          - label: 'Three Column Text Grid'
+            name: 'three-col-text-grid'
+            widget: 'object'
+            fields:
+              - { label: "heading", name: "heading", widget: "string"}
+              - { label: "content left", name: "content1", widget: "markdown"}
+              - { label: "content right", name: "content2", widget: "markdown"}
+          - {label: Icon Cards, name: icon-cards, widget: object, fields: [{label: Card, name: blurbcards, widget: list, fields: [{label: Image, name: imagecards, widget: image}, {label: Text, name: textcards, widget: markdown}]}]}
+              - { label: "tbd", name: "tbd", widget: "string"} 
+          - label: 'Featured Text'
+            name: 'featured-text'
+            widget: 'object'
+            fields:
+              - { label: "text", name: "featuredtext", widget: "markdown"}    
+          - label: 'Image Jumble Grid'
+            name: 'image-jumble-grid'
+            widget: 'object'
+            fields:
+              - { label: "image1", name: "image1", widget: "image"} 
+              - { label: "image1 caption", name: "image1-caption", widget: "string"}  
+              - { label: "image2", name: "image2", widget: "image"} 
+              - { label: "image2 caption", name: "image2-caption", widget: "string"} 
+              - { label: "image3", name: "image3", widget: "image"} 
+              - { label: "image3 caption", name: "image3-caption", widget: "string"}  
+              - { label: "image4", name: "image4", widget: "image"} 
+              - { label: "image4 caption", name: "image4-caption", widget: "string"}  
+
+          - label: 'Offset Two Column'
+            name: 'offset-two-column'
+            widget: 'object'
+            fields:
+              - { label: "content", name: "col-content", widget: "markdown"}  
+              - { label: "image", name: "image", widget: "markdown"}
+          - label: 'Pill Featured Text'
+            name: 'pill-featured-text'
+            widget: 'object'
+            fields:
+              - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+          - label: 'Scroll Image'
+            name: 'scroll-image'
+            widget: 'object'
+            fields:
+              - { label: "image", name: "image", widget: "image"}  
+              - { label: "caption", name: "caption", widget: "string"}     
+   
      
+   
+       
+ 
+    
+     
+
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "pages"
     label: "Pages"
