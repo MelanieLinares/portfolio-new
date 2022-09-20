@@ -259,7 +259,7 @@ collections: # A list of collections the CMS should be able to edit
             name: 'offset-two-column'
             widget: 'object'
             fields:
-              - { label: "content", name: "col-content", widget: "markdown"}  
+              - { label: "content", name: "colcontent", widget: "markdown"}  
               - { label: "image", name: "image", widget: "markdown"}
           - label: 'Pill Featured Text'
             name: 'pill-featured-text'
