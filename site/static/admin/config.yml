@@ -172,53 +172,53 @@ collections: # A list of collections the CMS should be able to edit
                     fields:
                       - { label: 'Content002', name: 'Content002', widget: 'markdown' }
                   - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                         
-          # - label: 'Display Image Section'
-          #   name: 'display_image_section'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "heading05", name: "heading05", widget: "string"}
-          #     - { label: 'Image', name: 'image', widget: 'image' }
-          #     - { label: 'caption', name: 'caption', widget: 'string', required: false}  
-          #     - label: 'Display Img Content'
-          #       name: 'display_image_section_content'
-          #       widget: 'list'
-          #       types:
-          #         - label: 'Content2'
-          #           name: 'Content02'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-          #         - label: 'Content3'
-          #           name: 'Content03'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Content003', name: 'Content003', widget: 'markdown' }
-          #         - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
-          # - label: 'Stacked  Image Section'
-          #   name: 'stacked_image_section'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "heading05", name: "heading05", widget: "string"}
-          #     - { label: 'Image1', name: 'image1', widget: 'image' }
-          #     - { label: 'caption1', name: 'caption1', widget: 'string', required: false}
-          #     - { label: 'Image2', name: 'image2', widget: 'image' }
-          #     - { label: 'caption2', name: 'caption2', widget: 'string', required: false}  
-          #     - label: 'Display Img Content'
-          #       name: 'display_image_section_content'
-          #       widget: 'list'
-          #       types:
-          #         - label: 'Content2'
-          #           name: 'Content02'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-          #         - label: 'OverlapIMG'
-          #           name: 'OverlapImg'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Large Img', name: 'largeimg', widget: 'image' }
-          #             - { label: 'Small Img', name: 'smallimg', widget: 'image' }
-          #         - label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}]       
+          - label: 'Display Image Section'
+            name: 'display_image_section'
+            widget: 'object'
+            fields:
+              - { label: "heading05", name: "heading05", widget: "string"}
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'caption', name: 'caption', widget: 'string', required: false}  
+              - label: 'Display Img Content'
+                name: 'display_image_section_content'
+                widget: 'list'
+                types:
+                  - label: 'Content2'
+                    name: 'Content02'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Content002', name: 'Content002', widget: 'markdown' }
+                  - label: 'Content3'
+                    name: 'Content03'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Content003', name: 'Content003', widget: 'markdown' }
+                  - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
+          - label: 'Stacked  Image Section'
+            name: 'stacked_image_section'
+            widget: 'object'
+            fields:
+              - { label: "heading05", name: "heading05", widget: "string"}
+              - { label: 'Image1', name: 'image1', widget: 'image' }
+              - { label: 'caption1', name: 'caption1', widget: 'string', required: false}
+              - { label: 'Image2', name: 'image2', widget: 'image' }
+              - { label: 'caption2', name: 'caption2', widget: 'string', required: false}  
+              - label: 'Display Img Content'
+                name: 'display_image_section_content'
+                widget: 'list'
+                types:
+                  - label: 'Content2'
+                    name: 'Content02'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Content002', name: 'Content002', widget: 'markdown' }
+                  - label: 'OverlapIMG'
+                    name: 'OverlapImg'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Large Img', name: 'largeimg', widget: 'image' }
+                      - { label: 'Small Img', name: 'smallimg', widget: 'image' }
+                  - label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}]       
           # - label: 'Fullwidth Img'
           #   name: 'fullwidth-img'
           #   widget: 'object'
