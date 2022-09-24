@@ -218,7 +218,7 @@ collections: # A list of collections the CMS should be able to edit
                     fields:
                       - { label: 'Large Img', name: 'largeimg', widget: 'image' }
                       - { label: 'Small Img', name: 'smallimg', widget: 'image' }
-                  - label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}]       
+                  - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}      
           # - label: 'Fullwidth Img'
           #   name: 'fullwidth-img'
           #   widget: 'object'
