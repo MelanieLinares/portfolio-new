@@ -231,8 +231,6 @@ collections: # A list of collections the CMS should be able to edit
               - { label: "heading", name: "heading", widget: "string"}
               - { label: "content left", name: "content1", widget: "markdown"}
               - { label: "content right", name: "content2", widget: "markdown"}
-          # - label: Icon Cards, name: icon-cards, widget: object, fields: [{label: Card, name: blurbcards, widget: list, fields: [{label: Image, name: imagecards, widget: image}, {label: Text, name: textcards, widget: markdown}]}]
-          #     - { label: "tbd", name: "tbd", widget: "string"} 
           - label: 'Icon Cards'
             name: 'cards'
             widget: 'object'
@@ -244,23 +242,23 @@ collections: # A list of collections the CMS should be able to edit
                   - { label: Image, name: imagecards, widget: image}
                   - { label: Text, name: textcards, widget: markdown}
               - { label: "tbd", name: "tbd", widget: "string"}
-          # - label: 'Featured Text'
-          #   name: 'featured-text'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "text", name: "featuredtext", widget: "markdown"}    
-          # - label: 'Image Jumble Grid'
-          #   name: 'image-jumble-grid'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "image1", name: "image1", widget: "image"} 
-          #     - { label: "image1 caption", name: "image1caption", widget: "string"}  
-          #     - { label: "image2", name: "image2", widget: "image"} 
-          #     - { label: "image2 caption", name: "image2caption", widget: "string"} 
-          #     - { label: "image3", name: "image3", widget: "image"} 
-          #     - { label: "image3 caption", name: "image3caption", widget: "string"}  
-          #     - { label: "image4", name: "image4", widget: "image"} 
-          #     - { label: "image4 caption", name: "image4caption", widget: "string"}  
+          - label: 'Featured Text'
+            name: 'featured-text'
+            widget: 'object'
+            fields:
+              - { label: "text", name: "featuredtext", widget: "markdown"}    
+          - label: 'Image Jumble Grid'
+            name: 'image-jumble-grid'
+            widget: 'object'
+            fields:
+              - { label: "image1", name: "image1", widget: "image"} 
+              - { label: "image1 caption", name: "image1caption", widget: "string"}  
+              - { label: "image2", name: "image2", widget: "image"} 
+              - { label: "image2 caption", name: "image2caption", widget: "string"} 
+              - { label: "image3", name: "image3", widget: "image"} 
+              - { label: "image3 caption", name: "image3caption", widget: "string"}  
+              - { label: "image4", name: "image4", widget: "image"} 
+              - { label: "image4 caption", name: "image4caption", widget: "string"}  
 
           # - label: 'Offset Two Column'
           #   name: 'offset-two-column'
