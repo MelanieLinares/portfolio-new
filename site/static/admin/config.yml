@@ -231,8 +231,8 @@ collections: # A list of collections the CMS should be able to edit
               - { label: "heading", name: "heading", widget: "string"}
               - { label: "content left", name: "content1", widget: "markdown"}
               - { label: "content right", name: "content2", widget: "markdown"}
-          - {label: Icon Cards, name: icon-cards, widget: object, fields: [{label: Card, name: blurbcards, widget: list, fields: [{label: Image, name: imagecards, widget: image}, {label: Text, name: textcards, widget: markdown}]}]}
-              - { label: "tbd", name: "tbd", widget: "string"} 
+          # - {label: Icon Cards, name: icon-cards, widget: object, fields: [{label: Card, name: blurbcards, widget: list, fields: [{label: Image, name: imagecards, widget: image}, {label: Text, name: textcards, widget: markdown}]}]}
+          #     - { label: "tbd", name: "tbd", widget: "string"} 
           # - label: 'Featured Text'
           #   name: 'featured-text'
           #   widget: 'object'
