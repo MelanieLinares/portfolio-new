@@ -237,12 +237,13 @@ collections: # A list of collections the CMS should be able to edit
             name: 'cards'
             widget: 'object'
             fields: 
-              - label: 'Icon Blurbs'
-                name: 'blurbcards'
-                widget: 'list'
+              - label: 'Icon Cards'
+                name: 'iconcards'
+                widget: 'object'
                 fields: 
                   - { label: Image, name: imagecards, widget: image}
                   - { label: Text, name: textcards, widget: markdown}
+              - { label: "tbd", name: "tbd", widget: "string"}
           # - label: 'Featured Text'
           #   name: 'featured-text'
           #   widget: 'object'
