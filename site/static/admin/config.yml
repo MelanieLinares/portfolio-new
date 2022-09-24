@@ -258,25 +258,24 @@ collections: # A list of collections the CMS should be able to edit
               - { label: "image3", name: "image3", widget: "image"} 
               - { label: "image3 caption", name: "image3caption", widget: "string"}  
               - { label: "image4", name: "image4", widget: "image"} 
-              - { label: "image4 caption", name: "image4caption", widget: "string"}  
-
-          # - label: 'Offset Two Column'
-          #   name: 'offset-two-column'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "content", name: "colcontent", widget: "markdown"}  
-          #     - { label: "image", name: "image", widget: "markdown"}
-          # - label: 'Pill Featured Text'
-          #   name: 'pill-featured-text'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
-          # - label: 'Scroll Image'
-          #   name: 'scroll-image'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "image", name: "image", widget: "image"}  
-          #     - { label: "caption", name: "caption", widget: "string"}      
+              - { label: "image4 caption", name: "image4caption", widget: "string"} 
+          - label: 'Offset Two Column'
+            name: 'offset-two-column'
+            widget: 'object'
+            fields:
+              - { label: "content", name: "colcontent", widget: "markdown"}  
+              - { label: "image", name: "image", widget: "markdown"}
+          - label: 'Pill Featured Text'
+            name: 'pill-featured-text'
+            widget: 'object'
+            fields:
+              - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+          - label: 'Scroll Image'
+            name: 'scroll-image'
+            widget: 'object'
+            fields:
+              - { label: "image", name: "image", widget: "image"}  
+              - { label: "caption", name: "caption", widget: "string"}      
      
 
       - {label: "Body", name: "body", widget: "markdown", required: false}
