@@ -129,49 +129,49 @@ collections: # A list of collections the CMS should be able to edit
                     fields:
                       - { label: 'Large Img', name: 'largeimg', widget: 'image' }
                       - { label: 'Small Img', name: 'smallimg', widget: 'image' }                                    
-          # - label: 'Two col content + img'
-          #   name: 'Twocol_image_content'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "heading05", name: "heading05", widget: "string"}
-          #     - { label: 'Image', name: 'image', widget: 'image' }
-          #     - { label: 'caption', name: 'caption', widget: 'string', required: false}  
-          #     - label: 'Two Col Content & Img'
-          #       name: 'twocol_content_img'
-          #       widget: 'list'
-          #       types:
-          #         - label: 'Content2'
-          #           name: 'Content02'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-          #         - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
-          #         - label: 'Heading3'
-          #           name: 'heading3'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Heading03', name: 'heading03', widget: 'string' }
-          #         - label: 'OverlapIMG'
-          #           name: 'OverlapImg'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Large Img', name: 'largeimg', widget: 'image' }
-          #             - { label: 'Small Img', name: 'smallimg', widget: 'image' }    
-          # - label: 'Two col icon content'
-          #   name: 'Twocol_icon_content'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "heading05", name: "heading05", widget: "string", required: false} 
-          #     - label: 'Two Col Icon Content'
-          #       name: 'twocol_content_icon'
-          #       widget: 'list'
-          #       types:
-          #         - label: 'Content2'
-          #           name: 'Content02'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-          #         - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                         
+          - label: 'Two col content + img'
+            name: 'Twocol_image_content'
+            widget: 'object'
+            fields:
+              - { label: "heading05", name: "heading05", widget: "string"}
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'caption', name: 'caption', widget: 'string', required: false}  
+              - label: 'Two Col Content & Img'
+                name: 'twocol_content_img'
+                widget: 'list'
+                types:
+                  - label: 'Content2'
+                    name: 'Content02'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Content002', name: 'Content002', widget: 'markdown' }
+                  - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
+                  - label: 'Heading3'
+                    name: 'heading3'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Heading03', name: 'heading03', widget: 'string' }
+                  - label: 'OverlapIMG'
+                    name: 'OverlapImg'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Large Img', name: 'largeimg', widget: 'image' }
+                      - { label: 'Small Img', name: 'smallimg', widget: 'image' }    
+          - label: 'Two col icon content'
+            name: 'Twocol_icon_content'
+            widget: 'object'
+            fields:
+              - { label: "heading05", name: "heading05", widget: "string", required: false} 
+              - label: 'Two Col Icon Content'
+                name: 'twocol_content_icon'
+                widget: 'list'
+                types:
+                  - label: 'Content2'
+                    name: 'Content02'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Content002', name: 'Content002', widget: 'markdown' }
+                  - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                         
           # - label: 'Display Image Section'
           #   name: 'display_image_section'
           #   widget: 'object'
