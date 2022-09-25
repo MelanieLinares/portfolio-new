@@ -270,12 +270,12 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'object'
             fields:
               - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
-          # - label: 'Scroll Image'
-          #   name: 'scrollimage'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "image", name: "image", widget: "image"}  
-          #     - { label: "caption", name: "caption", widget: "string"}      
+          - label: 'Scroll Image'
+            name: 'scrollimage'
+            widget: 'object'
+            fields:
+              - { label: "image", name: "image", widget: "image"}  
+              - { label: "caption", name: "caption", widget: "string"}      
      
 
       - {label: "Body", name: "body", widget: "markdown", required: false}
