@@ -30,5 +30,9 @@ introbody: >-
   **The starting score:**  67 (based on Google Lighthouse)
 
   **The goal:** score greater than 80
-typed_list: []
+typed_list:
+  - type: Twocol_image_content
+    heading05: fgdfg
+    image: img/capture1.jpg
+    caption: dgfdfgdgd sedfsdfh sdfdfg
 ---
