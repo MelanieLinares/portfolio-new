@@ -1,6 +1,6 @@
 ---
-title: (a test)  Increasing accessibility across NCDOT websites to meet Section
-  508 compliance
+title: (a test)  - Increasing accessibility across NCDOT websites to meet
+  Section 508 compliance
 titlebold: Increasing accessibility across NCDOT websites
 titlenormal: to meet Section 508 compliance
 preview: img/accessibility-ncdot.jpg
