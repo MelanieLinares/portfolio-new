@@ -108,6 +108,13 @@ collections: # A list of collections the CMS should be able to edit
                     fields:
                       - { label: 'Large Img', name: 'largeimg', widget: 'image' }
                       - { label: 'Small Img', name: 'smallimg', widget: 'image' }  
+                      - { label: 'Caption', name: 'caption', widget: 'text' }
+                  - label: 'Captioned Image'
+                    name: 'CaptionImg'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Img', name: 'captionimg', widget: 'image' }  
+                      - { label: 'Caption', name: 'caption', widget: 'text' }  
               - label: 'Right Two Col Content'
                 name: 'twocol_content_right'
                 widget: 'list'
@@ -128,7 +135,14 @@ collections: # A list of collections the CMS should be able to edit
                     widget: 'object'
                     fields:
                       - { label: 'Large Img', name: 'largeimg', widget: 'image' }
-                      - { label: 'Small Img', name: 'smallimg', widget: 'image' }                                    
+                      - { label: 'Small Img', name: 'smallimg', widget: 'image' }  
+                      - { label: 'Caption', name: 'caption', widget: 'text' }  
+                  - label: 'Captioned Image'
+                    name: 'CaptionImg'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Img', name: 'captionimg', widget: 'image' }  
+                      - { label: 'Caption', name: 'caption', widget: 'text' }                                 
           - label: 'Two col content + img'
             name: 'Twocol_image_content'
             widget: 'object'
@@ -270,12 +284,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'object'
             fields:
               - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
-          - label: 'Scroll Image'
-            name: 'scrollimage'
-            widget: 'object'
-            fields:
-              - { label: "image", name: "image", widget: "image"}  
-              - { label: "caption", name: "caption", widget: "string"}      
+     
      
 
       - {label: "Body", name: "body", widget: "markdown", required: false}
