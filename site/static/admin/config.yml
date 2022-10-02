@@ -174,7 +174,13 @@ collections: # A list of collections the CMS should be able to edit
                     widget: 'object'
                     fields:
                       - { label: 'Large Img', name: 'largeimg', widget: 'image' }
-                      - { label: 'Small Img', name: 'smallimg', widget: 'image' }    
+                      - { label: 'Small Img', name: 'smallimg', widget: 'image' } 
+                  - label: 'Pill Featured Text'
+                    name: 'pillfeaturedtext'
+                    widget: 'object'
+                    fields:
+                      - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+
           - label: 'Two col icon content'
             name: 'Twocol_icon_content'
             widget: 'object'
