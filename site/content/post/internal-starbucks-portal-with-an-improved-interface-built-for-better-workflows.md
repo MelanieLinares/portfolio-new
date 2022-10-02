@@ -82,4 +82,18 @@ typed_list:
               providing thoughtful feedback relating to UI/UX standards and WCAG
               guidelines\r"
             imagew: img/layout.png
+  - type: Twocol_image_content
+    twocol_content_img:
+      - type: Content02
+        Content002: >-
+          - I developed UI components based on existing widget and from scratch
+          utilizing React and Typescript 
+
+
+          - Collaboration was important to the process as I worked with backend and frontend to ensure optimized API calls between parent and child components
+
+
+          - Some components included: typography, color palletes, data cards, tables, modals, and forms 
+    heading05: Building the components according to atomic design
+    image: img/parkinson-bro.png
 ---
