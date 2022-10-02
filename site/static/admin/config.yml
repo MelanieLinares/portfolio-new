@@ -151,16 +151,8 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'caption', name: 'caption', widget: 'string', required: false}
 
-              - label: 'Icon Cards'
-                name: 'cards'
-                widget: 'object'
-                fields: 
-                - label: 'Icon Cards'
-                  name: 'iconcards'
-                  widget: 'object'
-                  fields: 
-                    - { label: Image, name: imagecards, widget: image}
-                    - { label: Text, name: textcards, widget: markdown}
+              - {label: Icon Cards, name: cards, widget: object, fields: [{label: Icon Cards, name: iconcards, widget: list, fields: [{label: Image, name: imagecards, widget: image}, {label: Text, name: textcards, widget: markdown}]}], required: false}
+
 
               - label: 'Two Col Content & Img'
                 name: 'twocol_content_img'
