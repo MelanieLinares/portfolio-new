@@ -41,4 +41,45 @@ typed_list:
           > *Roy H. Williams, author and marketing consultant*
     caption: freshly ground and brewed caramel coffee to start the virtual meeting
     image: img/blog-chemex.jpeg
+    cards:
+      iconcards:
+        - textcards: Weekly stand up meetings would be required along with code reviews
+          imagecards: img/coffee.svg
+        - textcards: React and Typescript were the Javascript library and language I would
+            be using
+          imagecards: img/idea.png
+        - textcards: "I would need to utilize branding colors and established widgets "
+          imagecards: img/icons-vimeo.svg
+        - textcards: I would be working cooperatively with the product and engineering
+            teams on enterprise -facing features
+          imagecards: img/monitor.png
+  - type: Twocol_image_content
+    heading05: Working with the UX team to refine UI
+    image: img/decorative-desk.jpg
+    caption: example representing Starbucks UI
+    twocol_content_img:
+      - type: Content02
+        Content002: When multiple teams work together several perspectives and expertise
+          can be utilized. After UX internally met with shareholders to create
+          the first version of the UI I met with them and we worked together to
+          harmonize the feedback along with information I gathered from the data
+          team.
+      - type: introw
+        blurbsw:
+          - textw: "### Phase one refinements:
+
+
+              - I collaborated with product and design management
+              to define features, approach, and identify opportunities for
+              improvement
+
+
+              - Prototype was improved to account for edge cases\r
+              in user flow, including slow internet speeds
+
+
+              - Error messages and notifications were improved by
+              providing thoughtful feedback relating to UI/UX standards and WCAG
+              guidelines\r"
+            imagew: img/layout.png
 ---
