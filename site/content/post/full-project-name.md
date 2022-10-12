@@ -1,8 +1,9 @@
 ---
-title: Full Project Name
+preview: img/Capture-3.JPG
+overviewheading: Overview Heading
+title: Full Project Name :)
 titlebold: Title Bold
 titlenormal: Title Outline
-preview: img/Capture-3.JPG
 notice: For legal reasons images of work completed cannot be shown
 date: 2022-07-04T22:12:31.154Z
 newdate: 2022-07-04T22:12:31.180Z
@@ -14,12 +15,10 @@ tags:
 technology:
   - ASP.NET MVC
 duration: Duration
-description: Description
 introheading: Intro Heading
 introbody: Intro Body
-overviewheading: Overview Heading
 overviewbody: Overview Body
-
+description: Description
 ---
 Body
 
