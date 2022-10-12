@@ -1,7 +1,7 @@
 ---
 preview: img/Capture-3.JPG
 overviewheading: Overview Heading
-title: Full Project Name :)
+title: Full Project Name :o)
 titlebold: Title Bold
 titlenormal: Title Outline
 notice: For legal reasons images of work completed cannot be shown
