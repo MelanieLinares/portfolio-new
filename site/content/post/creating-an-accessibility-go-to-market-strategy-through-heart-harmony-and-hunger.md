@@ -65,22 +65,13 @@ typed_list:
           share this information with users not accessing the site visually.
     twocol_content_right:
       - type: heading3
-        heading03: Harmony of WCAG guidelines to  actionable tasks
+        heading03: Harmony of WCAG guidelines to actionable tasks
       - type: Content02
         Content002: >-
-          \[ add pill content ]
+          An audit considers the compliance of a product and the data as the
+          results, but now that you have a long list of issues what do you do?
 
 
-          <!--StartFragment-->
-
-
-          An audit considers the compliance of a product and the data as the results, but now that you have a long list of issues what do you do?
-
-
-          <!--EndFragment-->
-
-
-          \[end pill]
 
 
           **The A11y team held a few ideation sessions which resulted in a system that could:**
