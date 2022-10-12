@@ -119,6 +119,11 @@ collections: # A list of collections the CMS should be able to edit
                 name: 'twocol_content_right'
                 widget: 'list'
                 types:
+                  - label: 'Pill Featured Text'
+                    name: 'pillfeaturedtext'
+                    widget: 'object'
+                    fields:
+                      - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
                   - label: 'Content2'
                     name: 'Content02'
                     widget: 'object'
