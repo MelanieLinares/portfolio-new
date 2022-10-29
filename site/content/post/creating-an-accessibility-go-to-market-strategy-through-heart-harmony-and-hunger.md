@@ -77,27 +77,27 @@ typed_list:
           **The A11y team held a few ideation sessions which resulted in a system that could:**
 
 
-          * quantify issue complexity and severity 
+          * quantify issue complexity and severity
 
-          * prioritize specific teams and individuals that could jump in and offer valuable remediation experience for a variety of issues 
+          * prioritize specific teams and individuals that could jump in and offer valuable remediation experience for a variety of issues
 
-          * bridge the info gap of the user with disabilities and the user for certain stakeholders that still struggle to see accessibility as beneficial outside of lawsuit prevention 
+          * bridge the info gap of the user with disabilities and the user for certain stakeholders that still struggle to see accessibility as beneficial outside of lawsuit prevention
 
           * give realistic expectations of audit, results delivery, and remediation planning without first seeing a single visual for the product involved in the bid
   - type: offset-two-column
     image: img/about-direct-sourcing.jpg
     colcontent: >-
-      Hunger for continued improvement
+      ## Hunger for continued improvement
 
 
       **We ran a practice audit of Insight’s website. This included:**
 
 
-      - establishing a scope
+      * establishing a scope
 
-      - a t-shirt sizing approach to ranking issue severity and complexity
+      * a t-shirt sizing approach to ranking issue severity and complexity
 
-      - presented the results to a sampling of sales team managers and development managers
+      * presented the results to a sampling of sales team managers and development managers
 
 
       The purpose was practice, but also to present a real plan for real changes that should and could be implemented internally. 
