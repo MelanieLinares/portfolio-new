@@ -78,19 +78,19 @@ collections: # A list of collections the CMS should be able to edit
                       - { label: 'Image', name: 'image', widget: 'image' }
                       - { label: 'caption', name: 'caption', widget: 'string', required: false}    
               # - {label: Icon Cards, name: cards, widget: object, fields: [{label: Icon Cards, name: iconcards, widget: list, fields: [{label: Image, name: imagecards, widget: image}, {label: Text, name: textcards, widget: markdown}]}], required: false}
-                      - { label: 'Generic Content', name: 'generic_content', widget: 'markdown', required: false} 
-                      - { label: 'Featured Text', name: 'featuredtext', widget: 'markdown', required: false}    
-                      - { label: 'Pill Featured Text', name: 'pillfeaturedtext', widget: 'string', required: false}
-                      - label: Icon Cards
-                        name: cards
-                        widget: object
+                  - { label: 'Generic Content', name: 'generic_content', widget: 'markdown', required: false} 
+                  - { label: 'Featured Text', name: 'featuredtext', widget: 'markdown', required: false}    
+                  - { label: 'Pill Featured Text', name: 'pillfeaturedtext', widget: 'string', required: false}
+                  - label: Icon Cards
+                    name: cards
+                    widget: object
+                    fields: 
+                      - label: 'Icon Cards'
+                        name: 'iconcards'
+                        widget: 'list'
                         fields: 
-                          - label: 'Icon Cards'
-                            name: 'iconcards'
-                            widget: 'list'
-                            fields: 
-                              - {label: Image, name: imagecards, widget: image, required: false} 
-                              - {label: Text, name: textcards, widget: markdown}
+                          - {label: Image, name: imagecards, widget: image, required: false} 
+                          - {label: Text, name: textcards, widget: markdown}
                                                                   
           - label: 'Generic Image'
             name: 'generic_image'
