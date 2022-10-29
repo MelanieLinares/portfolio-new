@@ -181,6 +181,11 @@ typed_list:
 
 
           <!--EndFragment-->
+  - type: generic_content
+    content_options:
+      - type: scroll-image
+        image: img/Group 538.png
+        caption: TBD caption
 backgroundcolor: mixed2
 image1: img/about-shade-grown.jpg
 purplesectionheading: Understanding the underlying system
