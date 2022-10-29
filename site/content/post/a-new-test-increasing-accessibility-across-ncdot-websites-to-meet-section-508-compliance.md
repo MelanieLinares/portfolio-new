@@ -1,13 +1,12 @@
 ---
-title: (a new test)  - Increasing accessibility across NCDOT websites to meet
-  Section 508 compliance
+title: Increasing accessibility across NCDOT websites to meet Section 508 compliance
 titlebold: Increasing accessibility across NCDOT websites
 titlenormal: to meet Section 508 compliance
 preview: img/accessibility-ncdot.jpg
 notice: For legal reasons some images are representational only or blurred
 date: 2022-09-25T03:08:56.535Z
 newdate: 2022-09-25T03:08:56.556Z
-client: Test
+client: NCDOT
 logo: img/favicon-16x16.png
 role: Software Engineer
 tags:
