@@ -60,9 +60,9 @@ collections: # A list of collections the CMS should be able to edit
             name: 'generic_content'
             widget: 'object'
             fields:
-              - { label: 'Generic Content', name: 'generic_content', widget: 'markdown' }
-              - { label: 'Featured Text', name: 'featuredtext', widget: 'markdown' }    
-              - { label: 'Pill Featured Text', name: 'pillfeaturedtext', widget: 'string' }          
+              - { label: 'Generic Content', name: 'generic_content', widget: 'markdown', required: false} 
+              - { label: 'Featured Text', name: 'featuredtext', widget: 'markdown', required: false}    
+              - { label: 'Pill Featured Text', name: 'pillfeaturedtext', widget: 'string', required: false}           
               - {label: Icon Cards, name: cards, widget: object, fields: [{label: Icon Blurbs, name: blurbcards, widget: list, fields: [{label: Image, name: imagecards, widget: image}, {label: Text, name: textcards, widget: markdown}]}], required: false}              
           - label: 'Generic Image'
             name: 'generic_image'
@@ -269,17 +269,6 @@ collections: # A list of collections the CMS should be able to edit
               - { label: "heading", name: "heading", widget: "string"}
               - { label: "content left", name: "content1", widget: "markdown"}
               - { label: "content right", name: "content2", widget: "markdown"}
-          - label: 'Icon Cards'
-            name: 'cards'
-            widget: 'object'
-            fields: 
-              - label: 'Icon Cards'
-                name: 'iconcards'
-                widget: 'object'
-                fields: 
-                  - { label: Image, name: imagecards, widget: image}
-                  - { label: Text, name: textcards, widget: markdown}
-              - { label: "tbd", name: "tbd", widget: "string"}
           - label: 'Featured Text'
             name: 'featured-text'
             widget: 'object'
