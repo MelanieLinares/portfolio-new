@@ -65,6 +65,11 @@ collections: # A list of collections the CMS should be able to edit
                 name: 'content_options'
                 widget: 'list'
                 types:
+                  - label: 'Heading'
+                    name: 'heading'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Heading', name: 'heading', widget: 'string' }
                   - label: 'Scroll Image'
                     name: 'scroll-image'
                     widget: 'object'
@@ -78,9 +83,22 @@ collections: # A list of collections the CMS should be able to edit
                       - { label: 'Image', name: 'image', widget: 'image' }
                       - { label: 'caption', name: 'caption', widget: 'string', required: false}    
               # - {label: Icon Cards, name: cards, widget: object, fields: [{label: Icon Cards, name: iconcards, widget: list, fields: [{label: Image, name: imagecards, widget: image}, {label: Text, name: textcards, widget: markdown}]}], required: false}
-                  - { label: 'Generic Content', name: 'generic_content', widget: 'markdown', required: false} 
-                  - { label: 'Featured Text', name: 'featuredtext', widget: 'markdown', required: false}    
-                  - { label: 'Pill Featured Text', name: 'pillfeaturedtext', widget: 'string', required: false}
+                  - label: 'Generic Content'
+                    name: 'generic_content'
+                    widget: 'markdown'
+                    fields:
+                      - {label: 'content', name: 'genericcontent', widget: 'markdown'}
+                   
+                  - label: 'Featured Text'
+                    name: 'featuredtext'
+                    widget: 'markdown'
+                    fields:
+                      - {label: 'content', name: 'featuredtext', widget: 'string'}    
+                  - label: 'Pill Featured Text'
+                    name: 'pillfeaturedtext'
+                    widget: 'string'
+                    fields:
+                        - {label: 'content', name: 'pillfeaturedtext', widget: 'string'} 
                   - label: Icon Cards
                     name: cards
                     widget: object
