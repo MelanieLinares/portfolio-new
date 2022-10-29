@@ -85,7 +85,7 @@ typed_list:
 
           * give realistic expectations of audit, results delivery, and remediation planning without first seeing a single visual for the product involved in the bid
   - type: offset-two-column
-    image: o﻿opsies
+    image: img/about-direct-sourcing.jpg
     colcontent: >-
       ## Hunger for continued improvement
 
