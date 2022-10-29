@@ -96,6 +96,15 @@ collections: # A list of collections the CMS should be able to edit
                     widget: 'object'
                     fields:
                       - { label: 'Content002', name: 'Content002', widget: 'markdown' }
+                  - label: 'Stacked  Image Section'
+                    name: 'stacked_image_section'
+                    widget: 'object'
+                    fields:
+                      - { label: "heading05", name: "heading05", widget: "string"}
+                      - { label: 'Image1', name: 'image1', widget: 'image' }
+                      - { label: 'caption1', name: 'caption1', widget: 'string', required: false}
+                      - { label: 'Image2', name: 'image2', widget: 'image' }
+                      - { label: 'caption2', name: 'caption2', widget: 'string', required: false}                       
                   - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
                   - label: 'Heading3'
                     name: 'heading3'
@@ -293,7 +302,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'object'
             fields:
               - { label: "content", name: "colcontent", widget: "markdown"}  
-              - { label: "image", name: "image", widget: "markdown"}
+              - { label: "image", name: "image", widget: "image"}
           - label: 'Pill Featured Text'
             name: 'pillfeaturedtext'
             widget: 'object'
