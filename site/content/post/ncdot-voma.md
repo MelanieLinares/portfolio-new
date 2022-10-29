@@ -1,9 +1,22 @@
 ---
+overviewblurb: This project required knowledge of how the existing paper
+  application is currently processed and reviewed, of currently enacted laws,
+  and the ability to communicate ideas to both functional and cross-functional
+  teams within multiple local agencies.
+purplesection1: >-
+  ### What is IIMS, IIMA, and an ignition interlock device?
+
+  - Igition Interlock: a small, handheld breathalyzer for car ignitions that's installed to prevent users from being able to start their vehicle after drinking alcohol
+
+  - IIMS: ignition interlock management system
+
+  - IIMA: ignition interlock medical accommodation
 title: Manage current and new I.I.M.S. participants with a new portal for less
   paperwork
+preview: /img/iims-preview.png
+overviewheading: Project overview and task breakdown
 titlebold: Manage current and new I.I.M.S. participants with a new portal
 titlenormal: for less paperwork
-preview: /img/iims-preview.png
 notice: For legal reasons some images are representational only or blurred
 date: 2019-09-17T15:04:10.000Z
 newdate: 2020-12-29T20:11:54.193Z
@@ -28,7 +41,150 @@ introbody: >-
   the existing system.
 
   The new system would need to still support the legacy system and its user’s needs. This included browser support, SharePoint frontend hosting, and matching UI.
-overviewheading: Project overview and task breakdown
+typed_list:
+  - type: generic_content
+    generic_content: T﻿BD
+    cards:
+      blurbcards:
+        - textcards: >-
+            <!--StartFragment-->
+
+
+            Citizen is assigned an ignition interlock as a provision of driving after a DWI conviction
+
+
+            An initial application is created
+
+
+
+
+            <!--EndFragment-->
+          imagecards: img/wheelchair4.svg
+        - textcards: >-
+            <!--StartFragment-->
+
+
+            **Citizens can file for exemption, deferral, or specific accommodations due to medical reasons**
+
+
+            <!--EndFragment-->
+          imagecards: img/wheelchair4.svg
+        - textcards: >-
+            <!--StartFragment-->
+
+
+            **Once every 30 or 60 days citizens are required to bring their vehicle for inspection so the ignition interlock provider can download monitoring data. This data is added to their file**
+
+
+            <!--EndFragment-->
+          imagecards: img/wheelchair4.svg
+        - textcards: >-
+            <!--StartFragment-->
+
+
+            **Throughout this process NCDMV Ingition Interlock teammembers manually add and update information from mailed in applications, usage logs, request letters, denial letters, and compliants**
+
+
+            <!--EndFragment-->
+          imagecards: img/wheelchair4.svg
+  - type: Twocol_image_content
+    heading05: Why the new portal?
+    image: img/parkinson-bro.png
+    caption: TBD
+    twocol_content_img:
+      - type: Content02
+        Content002: >-
+          <!--StartFragment-->
+
+
+          In some cases this new portal would be needed to monitor successful use of the device. The portal would also identify and alert necessary parties of court dates and eventual approved removal of the device.
+
+
+          In other instances a participant might miss a court date. The device could be detecting misuse or malfunction. A participant could file a complaint on a vendor or request an exception be made due to medical reasons. Each of these use cases would need to be reflected in the internal IIMS portal and the data available only to those with approval.
+
+
+
+
+          <!--EndFragment-->
+  - type: Twocol_content
+    twocol_content_left:
+      - type: stacked_image_section
+        image1: img/about-direct-sourcing.jpg
+        image2: img/about-jumbotron.jpg
+        caption1: TBD 1
+        caption2: TBD 2
+        heading05: waeh
+    twocol_content_right:
+      - type: heading3
+        heading03: Exploring what is required to deliver the process according to user
+          needs
+      - type: Content02
+        Content002: >-
+          <!--StartFragment-->
+
+
+          ### Initial research
+
+
+          In the initial stage of being brought onto the project other teams had been researching and working on the legislation involved for years. A comically-sized stack of paper was placed on my desk and I spent the following day going through it with a highlighter and taking notes on a whiteboard. This research also consisted of the existing pages and online system that this portal would be incorporated with.
+
+
+          * How does the current system handle navigation?
+
+          * How are users authenticated and are there functions that only some users have access to? What does an unauthenticated user see?
+
+          * The current system uses a table with filters. How will filtering be handled without a SharePoint backend?
+
+          * There is a lot of data. To whom should the data be available, when, and how can the data be grouped into views?
+
+
+
+
+          ### Stakeholder interviews
+
+
+          After conducting my own research and notes I consulted with the internal project liaison. We compared notes and unified on a strategy before driving downtown to meet with the project owner. The project owner provided precise insight and feedback. They would be the person approving any changes.
+
+
+          After research and stakeholder interviews the team had a better understanding of requirements. The sketches were turned into the first round of wireframes to cover each user task.
+
+
+          * Business goals were discussed
+
+          * Technical limitations were identified
+
+          * User needs were discussed and a unified approach was decided upon
+
+          * Sketches of how different tasks and goals could be approached were created during the initial interview
+
+
+
+
+          ### User tasks included:
+
+
+          * create participant
+
+          * edit participant profile
+
+          * modify dates
+
+          * access a participant flagged for immediate follow-up
+
+          * delete a user
+
+          * download individual participant data
+
+          * download report for a date range
+
+          * review case notes including photographs
+
+
+          <!--EndFragment-->
+backgroundcolor: mixed2
+image1: img/about-shade-grown.jpg
+purplesectionheading: Understanding the underlying system
+image: /img/Group%207.png
 overviewbody: >-
   If you imagine a pile of paperwork one foot tall representing 6 months, the
   backlog of physical applications prior to the new portal was nearly 4 years
@@ -42,28 +198,6 @@ overviewbody: >-
   - Work directly with project owner to format/approve UI
 
   - Work with backend team to establish API requirements and implementation
-overviewblurb: This project required knowledge of how the existing paper
-  application is currently processed and reviewed, of currently enacted laws,
-  and the ability to communicate ideas to both functional and cross-functional
-  teams within multiple local agencies.
-purplesectionheading: Understanding the underlying system
-purplesection1: >-
-  ### What is IIMS, IIMA, and an ignition interlock device?
-
-  - Igition Interlock: a small, handheld breathalyzer for car ignitions that's installed to prevent users from being able to start their vehicle after drinking alcohol
-
-  - IIMS: ignition interlock management system
-
-  - IIMA: ignition interlock medical accommodation
-
-image: /img/Group%207.png
-image1: img/about-shade-grown.jpg
-typed_list:
-  - type: generic_image
-    image: img/Capture-3.JPG
-    caption: this is the optional caption
-    markdown: this is the markdown
-backgroundcolor: mixed2
 ---
 <section class="fullwidth purple">
 
@@ -159,8 +293,6 @@ backgroundcolor: mixed2
 * download report for a date range
 * review case notes including photographs
 
-  </div>
-
   ![this is the alt text](/img/voma-display.png "Title is optional")
 
 </div>
@@ -184,14 +316,6 @@ backgroundcolor: mixed2
 * <strong>group view</strong> <br>table with participants grouped by date added
 * <strong>detail view</strong> <br>editable form of participant and vendor information including action buttons
 
-  </div>
-  <div class="lrg-img" style="align-items: center; justify-content: center;">
- <div class="superwireframe">
-<div class="wireframe">
-<img src="/img/voma-wireframe.png"/>
-</div>
-</div>
-
 *BLLAAHHH In some cases this new portal would be needed to monitor successful use of the device. The portal would also identify and alert necessary parties of court dates and eventual approved removal of the devices.*
     </div>
 
@@ -203,7 +327,7 @@ backgroundcolor: mixed2
 </div>
 </div> -->
 
-<!-- \*BLLAAHHH In some cases this new portal would be needed to monitor successful use of the device. The portal would also identify and alert necessary parties of court dates and eventual approved removal of the devices.\* -->
+<!-- \\*BLLAAHHH In some cases this new portal would be needed to monitor successful use of the device. The portal would also identify and alert necessary parties of court dates and eventual approved removal of the devices.\\* -->
 
 <div class="blurb" style="background-color: white; padding: 1em; border-radius: 4px;">It was important during this stage to maintain the basic structure of the existing pages this platform would be a part of. The DMV team did not want a rebranding and wanted the new system to fit in atheistically with the existing SharePoint systems and pages. This meant that the focus would be on optimized functionality and clear user experience.</div> 
 
