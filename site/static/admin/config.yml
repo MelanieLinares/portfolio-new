@@ -89,6 +89,15 @@ collections: # A list of collections the CMS should be able to edit
                     fields:
                       - {label: 'content', name: 'genericcontent', widget: 'markdown'}
                    
+                  - label: 'Two Column Text Grid'
+                    name: 'two-col-text-grid'
+                    widget: 'object'
+                    fields:
+                      - { label: "heading", name: "heading", widget: "string"}
+                      - { label: "content left", name: "content1", widget: "markdown"}
+                      - { label: "content right", name: "content2", widget: "markdown"}
+
+
                   - label: 'Featured Text'
                     name: 'featuredtext'
                     widget: 'markdown'
@@ -109,6 +118,13 @@ collections: # A list of collections the CMS should be able to edit
                         fields: 
                           - {label: Image, name: imagecards, widget: image, required: false} 
                           - {label: Text, name: textcards, widget: markdown}
+                  - label: 'Overlap Background Img Content'
+                    name: 'overlap_bg_img_content'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Image', name: 'image', widget: 'image' }
+                      - { label: 'Content', name: 'content', widget: 'markdown' }    
+                      - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: true}                          
                                                                   
           - label: 'Generic Image'
             name: 'generic_image'
@@ -320,8 +336,8 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'object'
             fields:
               - { label: "image", name: "image", widget: "image"}             
-          - label: 'Three Column Text Grid'
-            name: 'three-col-text-grid'
+          - label: 'Two Column Text Grid'
+            name: 'two-col-text-grid'
             widget: 'object'
             fields:
               - { label: "heading", name: "heading", widget: "string"}

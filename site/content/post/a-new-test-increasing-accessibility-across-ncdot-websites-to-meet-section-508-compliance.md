@@ -120,13 +120,10 @@ typed_list:
   - type: Twocol_content
     twocol_content_left:
       - type: stacked_image_section
-        heading05: heading05
         image1: img/Group 542.png
         caption1: Horizontal alerts within the header and pop alerts provided imporant
           information to users visually and needed ARIA live region roles to
           share this information with users not accessing the site visually.
-        caption2: Many pages included repeatable card components
-        image2: img/Image 43.png
     twocol_content_right:
       - type: heading3
         heading03: Prioritizing the findings

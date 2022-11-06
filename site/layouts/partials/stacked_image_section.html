@@ -5,22 +5,22 @@ display_image_section_content:
   - type: Content02
     Content002: Yes stacked image - content2(002) -->
 
-<div class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8 lg:flex">
-    <div class="w-full text-top lg:text-left lg:w-1/2">
+<div class="container max-w-7xl mx-auto">
+    <div class="lg:w-4/5">
     <img src="{{.image1}}" alt="TBD">
-    <em>{{.caption1}} 1 Weekly would be working cooperatively with the product and engineering teams on enterprise -facing features</em>
+    <em>{{.caption1}}</em>
     <br/><br/>
 
 
 
       {{ if .image2 }} 
-      <em>{{.caption2}} 2 Weekly would be working cooperatively with the product and engineering teams on enterprise -facing features</em>
+      <em>{{.caption2}}</em>
       
       <img src="{{.image2}}" alt="TBD">
       {{ end }}
 
-      </div>
-      <div class="w-full mt-4 lg:mt-0 lg:w-1/2">
+      <!-- </div>
+      <div class="w-full mt-4 lg:mt-0 lg:w-1/2"> -->
 
 
         {{ if "heading05" }}
