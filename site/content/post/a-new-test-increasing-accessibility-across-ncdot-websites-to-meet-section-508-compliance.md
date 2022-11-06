@@ -124,6 +124,9 @@ typed_list:
         caption1: Horizontal alerts within the header and pop alerts provided imporant
           information to users visually and needed ARIA live region roles to
           share this information with users not accessing the site visually.
+        heading05: remove this completely
+        caption2: remove as required?
+        image2: img/arrow-alt.png
     twocol_content_right:
       - type: heading3
         heading03: Prioritizing the findings
@@ -156,6 +159,23 @@ typed_list:
 
 
           * The dropdown navigation was duplicated within the code for multiple screen sizes rather than using CSS to adjust the layout.
+
+            * This resulted in duplicated content for assistive technology users. Link purpose was lost and users could become confused. Additionally, the additional content acted as further navigation barriers for keyboard users.
+          * Some elements were contained within implicit lists or were non-standard rather than native controls.
+
+            * Implicit lists prevent assistive technology users from understanding information relationships. Custom elements, if improperly coded, do not allow screen reader users to activate them.
+          * The dropdown navigation bar contained white links over an orange background-image
+
+            * The color contrast for most of the links (some darker areas passed contrast) did not pass the WCAG recommendation of 4.5:1. Low-vision users would have difficulty reading the content.
+      - type: two-col-text-grid
+        heading: Header navigation was tested for keyboard operability, clarity of
+          functionality, and color contrast
+        content1: The header consists of a logo, a search form field, and NC-wide
+          helpful links. The main navigation includes dropdown elements of
+          multiple columns of links, each with its header.
+        content2: >-
+          * The dropdown navigation was duplicated within the code for multiple
+          screen sizes rather than using CSS to adjust the layout.
 
             * This resulted in duplicated content for assistive technology users. Link purpose was lost and users could become confused. Additionally, the additional content acted as further navigation barriers for keyboard users.
           * Some elements were contained within implicit lists or were non-standard rather than native controls.
