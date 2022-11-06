@@ -144,7 +144,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: 'Content', name: 'content', widget: 'markdown' }    
-              - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: true}                        
+              - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: false}                        
           - label: 'Two col content general'
             name: 'Twocol_content'
             widget: 'object'

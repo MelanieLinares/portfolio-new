@@ -168,6 +168,7 @@ typed_list:
 
             * The color contrast for most of the links (some darker areas passed contrast) did not pass the WCAG recommendation of 4.5:1. Low-vision users would have difficulty reading the content.
       - type: two-col-text-grid
+        image: img/header.jpg
         heading: Header navigation was tested for keyboard operability, clarity of
           functionality, and color contrast
         content1: The header consists of a logo, a search form field, and NC-wide

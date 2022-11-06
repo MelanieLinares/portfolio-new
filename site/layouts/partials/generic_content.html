@@ -11,6 +11,9 @@
             {{ .genericcontent | markdownify }}
         {{ end }}
 
+        {{ if eq .type "two-col-text-grid" }}
+            {{ partial "two-col-text-grid" . }}
+        {{ end }}
     {{end}}
 
 </div>
