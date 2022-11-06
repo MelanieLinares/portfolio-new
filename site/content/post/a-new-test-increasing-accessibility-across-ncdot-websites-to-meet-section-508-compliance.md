@@ -4,10 +4,10 @@ titlebold: Increasing accessibility across NCDOT websites
 titlenormal: to meet Section 508 compliance
 preview: img/accessibility-ncdot.jpg
 notice: For legal reasons some images are representational only or blurred
-date: 2022-09-25T03:08:56.535Z
-newdate: 2022-09-25T03:08:56.556Z
+date: 2019-06-04T03:08:56.535Z
+newdate: 2019-08-08T03:08:56.556Z
 client: NCDOT
-logo: img/favicon-16x16.png
+logo: img/ncdot-logo.jpg
 role: Software Engineer
 tags:
   - cross-browser
@@ -17,13 +17,13 @@ technology:
   - AxE DevTools
   - Javascript
   - TalkBack
-duration: 7 weeks
+duration: 2 months
 introheading: Creating a plan for usability and accessibility
 introbody: >-
-  The North Carolina Department of Transportation (NCDOT) as of 2018 had a new
-  website redesign to allow citizens a secure, quick, and easy way to view all
-  transportation-related information. Unfortunately, despite an improved visual
-  UI the site failed initial accessibility audits.
+  The North Carolina Department of Transportation (NCDOT) had a new website
+  redesign in 2018. The redesign’s purpose was to allow citizens an easier way
+  to view all transportation-related information. Unfortunately, despite an
+  improved visual UI, the site failed initial accessibility audits.
 
 
   **The starting score:**  67 (based on Google Lighthouse)
@@ -33,34 +33,34 @@ typed_list:
   - type: Twocol_image_content
     heading05: Why the concern over accessibility?
     image: img/capture1.jpg
-    caption: "The need for accessibility happens often later in life, but we should
-      consider users of all needs and ages "
+    caption: "1 in 4 adults in the U.S. have some type of disability. 75% of
+      Americans with disabilities report using the internet on a daily basis.
+      (source: CDC, 2018; Pew Research Center, 2021)"
     twocol_content_img:
       - type: Content02
         Content002: >-
-          Originally brought on for front-end development, I noticed the
-          accessibility issues when my battery-operated mouse died. This
-          situational disability required I use my keyboard to navigate the
-          website. It is important to recognize that accessibility is for
-          everyone, from someone who is blind, has limb differentiation, to
-          someone having a temporary or situational disability. As a government
-          agency, the website is required to be W.C.A.G. 2.0/Section 508
-          accessible.
+          I noticed accessibility issues when the batteries in my mouse died.
+          This [situational
+          disability](https://userway.org/blog/how-situational-disabilities-impact-us-all)
+          required me to use my keyboard to navigate the website. It is
+          important to recognize that accessibility benefits everyone. As a
+          government agency, the website is required to be W.C.A.G. 2.0/Section
+          508 accessible.
 
 
           ### What is W.C.A.G?
 
 
-          The Web Content Accessibility Guidelines are part of a series of web accessibility guidelines considered to be the benchmark for compliance.
+          The Web Content Accessibility Guidelines are guidelines considered to be the benchmark for accessibility compliance.
 
 
           ### What is Section 508?
 
 
-          Section 508 as part of the Rehabilitation Act of 1973 is a law that requires government agencies to provide access to its Information and Communication Technology (ICT) to people with disabilities. The Revised 508 Standards incorporate by reference and apply the WCAG 2.0 Level AA Success Criteria to both web and non-web electronic content.
+          Section 508, as part of the Rehabilitation Act of 1973, is a law that requires government agencies to provide access to web and non-web electronic content to people with disabilities. 
       - type: introw
         blurbsw:
-          - imagew: img/coffee.svg
+          - imagew: img/noun-citizen-4727116.png
             textw: >-
               ### The main issue for citizens
 
@@ -69,13 +69,13 @@ typed_list:
 
               * Citizens may have a hard time making convenient online transactions
 
-              * Citizens with situational or temporary disabilities (including slow internet speeds) may have difficulties completing tasks
-          - imagew: img/coffee.svg
+              * Citizens may have difficulties completing timed tasks
+          - imagew: img/noun-justice-4727128.png
             textw: >-
               ### The main issue for the NCDOT
 
 
-              *  As a federal agency, the websites for the NCDOT and NCDMV fall under Section 508 regulations to be ADA compliant. Failure to meet guidelines can lead to lawsuits and a loss of citizen and customer trust
+              *  As a federal agency, websites failing to meet guidelines can lead to lawsuits and loss of citizen trust
   - type: display_image_section
     heading05: Conducting the accessibility audit
     image: img/ncdot-display.png
@@ -85,7 +85,7 @@ typed_list:
           ### Why not test the entire site?
 
 
-          The NCDOT website consists of several subsites and pages, but are based off templates and reusable components. Sites like this are constantly adding new content, but rarely change the underlying CMS structure. By identifying a representative set of pages the audit process takes less time and is more effective.
+          The NCDOT website consists of several subsites and pages based on templates and reusable components. Sites like this are constantly adding new content but rarely change the underlying CMS structure. By identifying a representative set of pages the audit process takes less time and is more effective.
 
 
 
@@ -93,13 +93,13 @@ typed_list:
           ### Establishing a baseline with automatic testing
 
 
-          * Automatics with Lighthouse, Axe DevTools chrome extension, W.A.V.E. (web accessibility evaluation tool)
+          * Automatic violations were identified with Google Lighthouse, Axe DevTools chrome extension, and the W.A.V.E. (web accessibility evaluation tool) extension
 
-          * Created a spreadsheet to organize and group issues
+          * A spreadsheet was created to organize and group issues
 
-          * Severity and tractability levels were added to NCDOT ticketing system
+          * Severity levels and occurrence data were added to the NCDOT ticketing system
 
-          * Remaining issues were grouped by page or components, assigned an individual severity and discussed with web dept lead
+          * The remaining issues were grouped by page or components. They were assigned an individual severity and discussed with the web department lead
 
 
 
@@ -107,20 +107,20 @@ typed_list:
           ### Manual testing
 
 
-          The NVDA screen reader was used to identify issues with the information hierarchy and HTML native elements. Web extensions were utilized for hard to identify issues.
+          The NVDA screen reader was used to manually identify issues with the information hierarchy and custom elements. Web extensions were utilized for hard-to-identify issues.
 
 
-          * Keyboard
+          * Keyboard navigation and operation tested
 
           * Screen reader: NVDA and Talkback
 
-          * Color contrast
+          * Color contrast tested
 
-          * Code inspection, including JavaScript
+          * Code inspected, including JavaScript
   - type: Twocol_content
     twocol_content_left:
       - type: stacked_image_section
-        heading05: heading05 Audit findings and breakdown
+        heading05: heading05
         image1: img/Group 542.png
         caption1: Horizontal alerts within the header and pop alerts provided imporant
           information to users visually and needed ARIA live region roles to
@@ -129,76 +129,44 @@ typed_list:
         image2: img/Image 43.png
     twocol_content_right:
       - type: heading3
-        heading03: heading03 Audit findings and breakdown
-      - type: introw
-        blurbsw:
-          - imagew: img/coffee.svg
-            textw: >-
-              ### Focus on components
-
-
-              Components associated with key functionality such as datapickers and dynamically populated dropdown elements received prioritization. This also included custom controls which have a native alternative that is often replaced in favor of less accessible, but visually branded elements.
+        heading03: Prioritizing the findings
       - type: Content02
         Content002: >-
-          * Date pickers were not operable via keyboard or presented instances
-          of keyboard traps
+          ### Focus on components
 
-          * Custom dropdown elements would refresh pages on keychange when cycling through options
+
+          Components associated with key functionality such as date pickers and dynamically populated dropdowns received prioritization. This also included custom controls which have a native alternative that is often replaced in favor of less accessible, but visually branded elements.
+
+
+          * Date pickers were not operable via keyboard or presented instances of keyboard traps
+
+          * Custom dropdown elements would refresh pages on key change when cycling through options
 
           * Contact forms without correct label associations were in the footer of every page
 
-          * Incorrect use of headings included implicit headings which contained no meaning in html syntax and skips in heading elements which disrupt a screen reader's ability to parse content
-  - type: Twocol_content
-    twocol_content_left:
-      - type: heading3
-        heading03: Major changes and impact
-      - type: Content02
-        Content002: >-
-          ### Keyboard changes
+          * Incorrect use of headings included implicit headings which contained no meaning in HTML syntax and skips in heading elements which disrupt a screen reader's ability to parse content
+  - type: generic_content
+    content_options:
+      - type: generic_image
+        image: img/header.jpg
+      - type: generic_content
+        genericcontent: >-
+          ### Header navigation was tested for keyboard operability, clarity of
+          functionality, and color contrast
 
 
-          * Skip to main link existed but was not functional due to either an incorrect ID or empty href attribute, depending on the template. Navigation was added to a seperate component so it could be reused within templates
-
-          * Headings re-organized and given proper hierarchy according to semantics vs aesthetic browser default sizing
-
-          * Focus rings on links added back, as well as hover underlines which were originally inconsistently implemented
-
-          * Elements arranged out of logical tab order via tabindex or the CSS float property caused issues when browsing through content.
-      - type: CaptionImg
-        captionimg: img/Image 46.png
-        caption: Drop-down navigation contained multiple columns and subheaders. This
-          navigation was duplicated within the code for muliple screen sizes
-          rather than using CSS to adjust the layout
-    twocol_content_right:
-      - type: OverlapImg
-        largeimg: img/skiptomain.png
-        smallimg: img/voiceover-headings.png
-        caption: Skip link appears on keyboard tab focus above the top navigation. For
-          headings Voice Over was used to ensure proper hierarchy structure.
-          Here the Voice Over Rotor, a quick access menu, shows the heading
-          structure prior to changes.
-      - type: Content02
-        Content002: >-
-          ### Alerts & pop-ups
+          The header consists of a logo, a search form field, and NC-wide helpful links. The main navigation includes dropdown elements of multiple columns of links, each with its header.
 
 
-          * Originally not focusable or operable, these did not have an accessible way to close content and were adjusted or given textual alternatives
+          * The dropdown navigation was duplicated within the code for multiple screen sizes rather than using CSS to adjust the layout.
 
-          * Alerts of important information were not announced to screen readers. Aria roles were added or re-implemented correctly.
+            * This resulted in duplicated content for assistive technology users. Link purpose was lost and users could become confused. Additionally, the additional content acted as further navigation barriers for keyboard users.
+          * Some elements were contained within implicit lists or were non-standard rather than native controls.
 
+            * Implicit lists prevent assistive technology users from understanding information relationships. Custom elements, if improperly coded, do not allow screen reader users to activate them.
+          * The dropdown navigation bar contained white links over an orange background-image
 
-          ### Custom third-party components
-
-
-          Some components found to be inaccessible. Code was edited as able or replaced with native HTML5 controls
-
-
-          ### Navigation
-
-
-          * Navigation for SharePoint is built with separate mobile and desktop code toggled with media queries. The issue is both are still accessible within the DOM via a screen reader regardless of screen size or device
-
-          * Originally not all built using lists or link tags the navigation was changed to utilize valid html and link tags.
+            * The color contrast for most of the links (some darker areas passed contrast) did not pass the WCAG recommendation of 4.5:1. Low-vision users would have difficulty reading the content.
 ---
 ## The takeaway
 
