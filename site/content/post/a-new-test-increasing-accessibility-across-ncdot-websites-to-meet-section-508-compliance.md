@@ -184,6 +184,23 @@ typed_list:
           * The dropdown navigation bar contained white links over an orange background-image
 
             * The color contrast for most of the links (some darker areas passed contrast) did not pass the WCAG recommendation of 4.5:1. Low-vision users would have difficulty reading the content.
+      - type: overlap_bg_img_content
+        image: img/hero-section.jpg
+        content: >-
+          ### Top-of-page/hero content was checked for link purpose, image
+          alternative text, and custom component accessibility
+
+
+          *This content is constantly changing on the site and needs dynamic implementation. The content consists of a full-width image, white text and a learn more link within a translucent background overlaid on the image. A location form component is located in the top right.* 
+
+
+          * The image itself lacked an alt attribute and occurred within a section of constantly updating CMS content
+            * This was something that needed to be fixed on the CMS side of things as alt attributes were not included in the compiled code. Alt text inclusion would still need to be entered manually so the possibility of the alt text being non-compliant remains an issue.
+          * The overused ‘Learn More’ link name is vague and not recommended in most situations
+            * Visual users may be able to discern the relationship between paragraph content and link purpose, but screen reader users may access link names separate from their surrounding content. Vague names do not help a user understand the purpose.
+          * The ‘Select Your Location’ element opens a pseudo dialog containing a third-party auto-complete input and a current location button
+            * It was important to ensure that the keyboard, as well as screen reader users, could operate the control and understand it. Since this element was not within NCDOT’s codebase any accessibility changes would need to be resourced or the element re-written internally.
+        img_on_right: true
 ---
 ## The takeaway
 
