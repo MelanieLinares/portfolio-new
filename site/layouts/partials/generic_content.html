@@ -1,5 +1,19 @@
-<div class="generic-content">
-    {{.generic_content | markdownify}}
+<section class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8 lg:flex parent-outer">
+<div class="generic-content max-w-7xl mx-auto">
+
+    {{ range .content_options }}
+
+        {{ if eq .type "generic_image" }}
+            {{ partial "generic_image" . }}
+        {{ end }}
+
+        {{ if eq .type "generic_content" }}
+            {{ .genericcontent | markdownify }}
+        {{ end }}
+
+    {{end}}
+
 </div>
+</section>
 
 <!-- {{ partial "icon-media-block" .introw }} -->
