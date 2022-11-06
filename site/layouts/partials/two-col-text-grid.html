@@ -1,6 +1,9 @@
+<div class="max-w-7xl mx-auto">
+    <img src="{{ .image }}" alt="">
+</div>
 <div class="parent-all max-w-7xl mx-auto">
     <div class="div1-13"><h3>{{.heading}}</h3></div>
-    <div class="div2-13">{{.content1 | markdownify}}</div>
+    <div class="div2-13"><em>{{.content1 | markdownify}}</em></div>
     <div class="div3-13"> {{.content2 | markdownify}}
     </div>
-    </div>
+</div>
