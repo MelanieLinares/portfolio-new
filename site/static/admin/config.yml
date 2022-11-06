@@ -93,6 +93,7 @@ collections: # A list of collections the CMS should be able to edit
                     name: 'two-col-text-grid'
                     widget: 'object'
                     fields:
+                      - { label: 'Image', name: 'image', widget: 'image' }
                       - { label: "heading", name: "heading", widget: "string"}
                       - { label: "content left", name: "content1", widget: "markdown"}
                       - { label: "content right", name: "content2", widget: "markdown"}
@@ -340,6 +341,7 @@ collections: # A list of collections the CMS should be able to edit
             name: 'two-col-text-grid'
             widget: 'object'
             fields:
+              - { label: 'Image', name: 'image', widget: 'image' }
               - { label: "heading", name: "heading", widget: "string"}
               - { label: "content left", name: "content1", widget: "markdown"}
               - { label: "content right", name: "content2", widget: "markdown"}
