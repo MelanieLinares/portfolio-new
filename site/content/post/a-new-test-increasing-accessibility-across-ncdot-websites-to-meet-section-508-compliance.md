@@ -147,26 +147,6 @@ typed_list:
           * Incorrect use of headings included implicit headings which contained no meaning in HTML syntax and skips in heading elements which disrupt a screen reader's ability to parse content
   - type: generic_content
     content_options:
-      - type: generic_image
-        image: img/header.jpg
-      - type: generic_content
-        genericcontent: >-
-          ### Header navigation was tested for keyboard operability, clarity of
-          functionality, and color contrast
-
-
-          The header consists of a logo, a search form field, and NC-wide helpful links. The main navigation includes dropdown elements of multiple columns of links, each with its header.
-
-
-          * The dropdown navigation was duplicated within the code for multiple screen sizes rather than using CSS to adjust the layout.
-
-            * This resulted in duplicated content for assistive technology users. Link purpose was lost and users could become confused. Additionally, the additional content acted as further navigation barriers for keyboard users.
-          * Some elements were contained within implicit lists or were non-standard rather than native controls.
-
-            * Implicit lists prevent assistive technology users from understanding information relationships. Custom elements, if improperly coded, do not allow screen reader users to activate them.
-          * The dropdown navigation bar contained white links over an orange background-image
-
-            * The color contrast for most of the links (some darker areas passed contrast) did not pass the WCAG recommendation of 4.5:1. Low-vision users would have difficulty reading the content.
       - type: two-col-text-grid
         image: img/header.jpg
         heading: Header navigation was tested for keyboard operability, clarity of
