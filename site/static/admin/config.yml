@@ -81,7 +81,47 @@ collections: # A list of collections the CMS should be able to edit
                     widget: 'object'
                     fields:
                       - { label: 'Image', name: 'image', widget: 'image' }
-                      - { label: 'caption', name: 'caption', widget: 'string', required: false}    
+                      - { label: 'caption', name: 'caption', widget: 'string', required: false} 
+
+                  - label: 'Two col content general'
+                    name: 'Twocol_content'
+                    widget: 'object'
+                    fields:
+                      - label: 'Left Two Col Content'
+                        name: 'twocol_content_left'
+                        widget: 'list'
+                        types:
+                          - label: 'Content2'
+                            name: 'Content02'
+                            widget: 'object'
+                            fields:
+                              - { label: 'Content002', name: 'Content002', widget: 'markdown' }                       
+                          - label: 'Captioned Image'
+                            name: 'CaptionImg'
+                            widget: 'object'
+                            fields:
+                              - { label: 'Img', name: 'captionimg', widget: 'image' }  
+                              - { label: 'Caption', name: 'caption', widget: 'text' }  
+                      - label: 'Right Two Col Content'
+                        name: 'twocol_content_right'
+                        widget: 'list'
+                        types:
+                          - label: 'Pill Featured Text'
+                            name: 'pillfeaturedtext'
+                            widget: 'object'
+                            fields:
+                              - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+                          - label: 'Content2'
+                            name: 'Content02'
+                            widget: 'object'
+                            fields:
+                              - { label: 'Content002', name: 'Content002', widget: 'markdown' }
+                          - label: 'Captioned Image'
+                            name: 'CaptionImg'
+                            widget: 'object'
+                            fields:
+                              - { label: 'Img', name: 'captionimg', widget: 'image' }  
+                              - { label: 'Caption', name: 'caption', widget: 'text' }        
               # - {label: Icon Cards, name: cards, widget: object, fields: [{label: Icon Cards, name: iconcards, widget: list, fields: [{label: Image, name: imagecards, widget: image}, {label: Text, name: textcards, widget: markdown}]}], required: false}
                   - label: 'Generic Content'
                     name: 'generic_content'
@@ -163,7 +203,6 @@ collections: # A list of collections the CMS should be able to edit
                     name: 'stacked_image_section'
                     widget: 'object'
                     fields:
-                      - { label: "heading05", name: "heading05", widget: "string"}
                       - { label: 'Image1', name: 'image1', widget: 'image' }
                       - { label: 'caption1', name: 'caption1', widget: 'string', required: false}
                       - { label: 'Image2', name: 'image2', widget: 'image' }
@@ -341,6 +380,7 @@ collections: # A list of collections the CMS should be able to edit
             name: 'two-col-text-grid'
             widget: 'object'
             fields:
+              - { label: "main heading (opt)", name: "mainheading", widget: "string", required: false}
               - { label: 'Image', name: 'image', widget: 'image' }
               - { label: "heading", name: "heading", widget: "string"}
               - { label: "content left", name: "content1", widget: "markdown"}

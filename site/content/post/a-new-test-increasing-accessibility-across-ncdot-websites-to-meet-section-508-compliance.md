@@ -124,9 +124,6 @@ typed_list:
         caption1: Horizontal alerts within the header and pop alerts provided imporant
           information to users visually and needed ARIA live region roles to
           share this information with users not accessing the site visually.
-        heading05: remove this completely
-        caption2: remove as required?
-        image2: img/arrow-alt.png
     twocol_content_right:
       - type: heading3
         heading03: Prioritizing the findings
@@ -148,6 +145,7 @@ typed_list:
   - type: generic_content
     content_options:
       - type: two-col-text-grid
+        mainheading: Findings overview and user impact
         image: img/header.jpg
         heading: Header navigation was tested for keyboard operability, clarity of
           functionality, and color contrast
@@ -181,7 +179,7 @@ typed_list:
             * Visual users may be able to discern the relationship between paragraph content and link purpose, but screen reader users may access link names separate from their surrounding content. Vague names do not help a user understand the purpose.
           * The ‘Select Your Location’ element opens a pseudo dialog containing a third-party auto-complete input and a current location button
             * It was important to ensure that the keyboard, as well as screen reader users, could operate the control and understand it. Since this element was not within NCDOT’s codebase any accessibility changes would need to be resourced or the element re-written internally.
-        img_on_right: true
+        img_on_right: false
 ---
 ## The takeaway
 

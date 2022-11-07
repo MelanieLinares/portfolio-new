@@ -8,29 +8,26 @@ twocol_content_left:
 
     <div class="w-full mt-4 lg:mt-0 lg:w-1/2">
 
-        {{ range .twocol_content_left }}
 
-            {{ if eq .type "stacked_image_section" }}
-            <!-- <h2>{{.heading05}}</h2> -->
-            {{ partial "stacked_image_section" . }}
-            {{ end }}
+{{ range .twocol_content_right }}
 
-            {{ if eq .type "introw" }}
-                {{ partial "icon-media-block" . }}
-            {{ end }}
+{{ if eq .type "heading3" }}
+<h2>{{.heading03}}</h2>
+{{ end }}
 
-            {{ if eq .type "Content02" }}
-                <p>{{.Content002 | markdownify}}</p>
-            {{ end }}
+{{ if eq .type "introw" }}
+    {{ partial "icon-media-block" . }}
+{{ end }}
 
-            {{ if eq .type "OverlapImg" }}
-            {{ partial "overlap-img" . }}
-            {{ end }}
+{{ if eq .type "Content02" }}
+    <p>{{.Content002 | markdownify}}</p>
+{{ end }}
 
-        {{end}}
+{{ if eq .type "OverlapImg" }}
+{{ partial "overlap-img" . }}
+{{ end }}
 
-
-
+{{end}}
         
     
 
@@ -38,26 +35,28 @@ twocol_content_left:
       </div>
 
       <div class="w-full text-top lg:text-left lg:w-1/2">
-    
-        {{ range .twocol_content_right }}
+        {{ range .twocol_content_left }}
 
-            {{ if eq .type "heading3" }}
-            <h2>{{.heading03}}</h2>
-            {{ end }}
+        {{ if eq .type "stacked_image_section" }}
+        <!-- <h2>{{.heading05}}</h2> -->
+        {{ partial "stacked_image_section" . }}
+        {{ end }}
 
-            {{ if eq .type "introw" }}
-                {{ partial "icon-media-block" . }}
-            {{ end }}
+        {{ if eq .type "introw" }}
+            {{ partial "icon-media-block" . }}
+        {{ end }}
 
-            {{ if eq .type "Content02" }}
-                <p>{{.Content002 | markdownify}}</p>
-            {{ end }}
+        {{ if eq .type "Content02" }}
+            <p>{{.Content002 | markdownify}}</p>
+        {{ end }}
 
-            {{ if eq .type "OverlapImg" }}
-            {{ partial "overlap-img" . }}
-            {{ end }}
+        {{ if eq .type "OverlapImg" }}
+        {{ partial "overlap-img" . }}
+        {{ end }}
 
-        {{end}}
+    {{end}}
+
+
         
           </div>
 

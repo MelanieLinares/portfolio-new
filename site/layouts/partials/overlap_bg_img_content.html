@@ -1,13 +1,13 @@
 <div class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
 
 {{ if eq .img_on_right true }}
-<div class="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8 pr-4">
+<div class="w-full text-center lg:text-left lg:w-3/4 pr-4">
 
-<p class="mt-4 text-lg text-gray-500 dark:text-gray-300">{{.content}}</p> 
+<p class="mt-4 text-lg text-gray-500 dark:text-gray-300" style="padding-top: 8.3em">{{.content | markdownify}}</p> 
 
 </div> 
 
-<div class="w-full mt-4 lg:mt-0 lg:w-3/4 overlap-bg">
+<div class="w-full lg:-mt-16 lg:w-2/4 overlap-bg">
     
     <img class="full-img" src="{{.image}}" alt="TBD">
 
@@ -15,13 +15,13 @@
 {{end}}
 
 {{ if eq .img_on_right false }}
-<div class="w-full mt-4 lg:mt-0 lg:w-3/4 overlap-bg-reverse"> 
+<div class="w-full lg:-mt-16 lg:w-3/4 overlap-bg-reverse"> 
     
     <img class="full-img" src="{{.image}}" alt="TBD">
 
 </div>
 
-<div class="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">{{.content}}</div>
+<div class="w-full text-center lg:text-left lg:w-3/4" style="padding-top: 8.3em; padding-left: 2.5em;">{{.content | markdownify}}</div>
 
 {{end}}
 
