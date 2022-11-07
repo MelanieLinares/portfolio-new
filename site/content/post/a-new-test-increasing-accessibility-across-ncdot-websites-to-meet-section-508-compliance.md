@@ -124,6 +124,8 @@ typed_list:
         caption1: Horizontal alerts within the header and pop alerts provided imporant
           information to users visually and needed ARIA live region roles to
           share this information with users not accessing the site visually.
+        caption2: no really this and image 2 shouldn't be required
+        image2: img/favicon-16x16.png
     twocol_content_right:
       - type: heading3
         heading03: Prioritizing the findings
@@ -180,6 +182,45 @@ typed_list:
           * The ‘Select Your Location’ element opens a pseudo dialog containing a third-party auto-complete input and a current location button
             * It was important to ensure that the keyboard, as well as screen reader users, could operate the control and understand it. Since this element was not within NCDOT’s codebase any accessibility changes would need to be resourced or the element re-written internally.
         img_on_right: false
+      - type: Twocol_content
+        twocol_content_left:
+          - type: CaptionImg
+            captionimg: img/Image 43.png
+            caption: TBD - adjust this caption
+        twocol_content_right:
+          - type: Content02
+            Content002: >-
+              ### Repeatable card components were tested for structure, image,
+              and link names, as well as tested for duplicated information
+
+
+              *The card components consist of multiple links, decorative image content, date, and read more buttons. Other cards consisted entirely of images linked to individual articles.*
+
+
+              * Images within each card either serve a decorative or meaningful purpose
+
+                * If the content is decorative but includes unhelpful alternative text it only serves as a barrier for users accessing additional content.
+              * Headings before each set of card components were tested for explicit markup and correct heading level
+
+                * When a heading has the wrong level or does not use heading markup the baked-in browser element purpose is not conveyed. A user may not understand the content or be able to understand content relationships.
+      - type: featuredtext
+        featuredtext: Using ARIA roles and attributes, we can improve the accessibility
+          of components by providing additional semantics.
+      - type: two-col-text-grid
+        heading: Dialogs, Third-party components, and SharePoint-specific elements (oh
+          my!) were tested for focus changes and screen reader use.
+        content1: "*The dialogs included those which appear on the first load and those
+          initiated by a user. Third-party components consisted of datepicker,
+          map, and auto-complete search widgets.*"
+        content2: >-
+          * Originally not focusable or operable, the site’s dialogs were not
+          accessible 
+
+            * Dialogs need to have the proper role and structure so assistive technology users understand the content.
+          * Alerts of important information were not announced to screen readers.
+
+            * Without correct Aria roles, important information may not be announced to users. Low or no-vision users will miss out on important information afforded by visual users.
+        image: img/dialog.jpg
 ---
 ## The takeaway
 
