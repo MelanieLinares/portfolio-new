@@ -12,20 +12,19 @@ console.log("🦊 Hello! Edit me in src/index.js");
 
 
 
-const target = document.querySelectorAll('h2');
+// const target = document.querySelectorAll('h2');
 
 
-target.forEach(
-    function(currentValue, currentIndex, listObj) {
-
-      // create new element
-const elem = document.createElement('span');
-
-elem.className ="backgroundBeforeElement";
+// target.forEach(
+//     function(currentValue, currentIndex, listObj) {
 
 
-// insert the element before target element
-target[currentIndex].before(elem);
-    },
-    'myThisArg'
-  );
+// const elem = document.createElement('span');
+
+// elem.className ="backgroundBeforeElement";
+
+
+// target[currentIndex].before(elem);
+//     },
+//     'myThisArg'
+//   );
