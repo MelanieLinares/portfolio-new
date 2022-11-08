@@ -46,6 +46,10 @@ twocol_content_left:
             {{ partial "icon-media-block" . }}
         {{ end }}
 
+        {{ if eq .type "generic_image" }}
+            {{ partial "generic_image" . }}
+        {{ end }}
+
         {{ if eq .type "Content02" }}
             <p>{{.Content002 | markdownify}}</p>
         {{ end }}

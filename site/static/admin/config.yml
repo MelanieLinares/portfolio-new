@@ -96,12 +96,12 @@ collections: # A list of collections the CMS should be able to edit
                             widget: 'object'
                             fields:
                               - { label: 'Content002', name: 'Content002', widget: 'markdown' }                       
-                          - label: 'Captioned Image'
-                            name: 'CaptionImg'
+                          - label: 'Generic Image'
+                            name: 'generic_image'
                             widget: 'object'
                             fields:
-                              - { label: 'Img', name: 'captionimg', widget: 'image' }  
-                              - { label: 'Caption', name: 'caption', widget: 'text' }  
+                              - { label: 'Image', name: 'image', widget: 'image' }
+                              - { label: 'caption', name: 'caption', widget: 'string', required: false}  
                       - label: 'Right Two Col Content'
                         name: 'twocol_content_right'
                         widget: 'list'

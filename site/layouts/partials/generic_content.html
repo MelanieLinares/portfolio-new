@@ -18,6 +18,10 @@
         {{ if eq .type "overlap_bg_img_content" }}
         {{ partial "overlap_bg_img_content" . }}
     {{ end }}
+
+    {{ if eq .type "Twocol_content" }}
+                    {{ partial "Twocol_content" . }}
+                {{ end }}
         
     {{end}}
 

@@ -184,8 +184,8 @@ typed_list:
         img_on_right: false
       - type: Twocol_content
         twocol_content_left:
-          - type: CaptionImg
-            captionimg: img/Image 43.png
+          - type: generic_image
+            image: img/Image 43.png
             caption: TBD - adjust this caption
         twocol_content_right:
           - type: Content02
