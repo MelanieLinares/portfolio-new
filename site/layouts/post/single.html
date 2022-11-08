@@ -2,12 +2,12 @@
 
 <section id="top-section" class="pink">
 
-  <div class="max-w-7xl mx-auto">
+  <div class=""> <!-- max-w-7xl mx-auto -->
 
 {{ partial "jumbotron" (dict "imageUrl" .Params.preview "imageUrl2" .Params.image2 "backgroundcolor" .Params.backgroundcolor "title" .Params.titlebold "subtitle" .Params.titlenormal "text" .Params.notice ) }}
 
 
-  <div id="main" class="">
+  <div id="main" class="max-w-7xl mx-auto ">
 
     <div class="">
 
@@ -37,7 +37,7 @@
 <div class="partials">
         {{ partial "test-multi-sections" .Params }}
 </div>
-        <div class="body inner-wrap max-w-7xl mx-auto" style="margin-bottom: 4em; margin-top: 4em;">
+        <div class="body inner-wrap max-w-7xl mx-auto " style="margin-bottom: 4em; margin-top: 4em;">
       {{ .Content }}
       </div>
 

@@ -58,9 +58,9 @@
         overflow-x: hidden;
     }
 
-    #maincontent {
+    /* #maincontent {
         overflow-x: hidden;
-    }
+    } */
 
     #top-section #maincontent {
         overflow-x: unset;
@@ -92,8 +92,8 @@
     }
 
     .text-4xl {
-        font-size: 4rem !important;
-        line-height: 2.25rem !important;
+        font-size: 2.2rem!important;
+        line-height: 2.45rem !important;
     }
 
     .hero-header-image {
@@ -183,8 +183,8 @@
     }
 
     .text-4xl {
-        font-size: 4rem!important;
-        line-height: 2.8rem!important;
+        font-size: 3rem!important;
+        line-height: 3rem!important;
     }
 
     .hero-header-image {
@@ -203,6 +203,9 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
+    .text-4xl {
+        font-size: 3.55rem!important;
+    }
     .intro-section.content-850 {
         max-width: calc(100vw - 300px);
     }
