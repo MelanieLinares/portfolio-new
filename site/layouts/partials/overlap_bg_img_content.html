@@ -3,7 +3,7 @@
 {{ if eq .img_on_right true }}
 <div class="w-full text-center lg:text-left lg:w-3/4 pr-4">
 
-<p class="mt-4 text-lg text-gray-500 dark:text-gray-300" style="padding-top: 8.3em">{{.content | markdownify}}</p> 
+<p class="mt-4 text-lg text-gray-500 dark:text-gray-300">{{.content | markdownify}}</p> 
 
 </div> 
 
@@ -21,7 +21,7 @@
 
 </div>
 
-<div class="w-full text-center lg:text-left lg:w-3/4" style="padding-top: 8.3em; padding-left: 2.5em;">{{.content | markdownify}}</div>
+<div class="w-full text-center lg:text-left lg:w-3/4" style="margin-top: 3.5em; padding-left: 2.5em;">{{.content | markdownify}}</div>
 
 {{end}}
 

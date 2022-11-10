@@ -205,7 +205,7 @@ collections: # A list of collections the CMS should be able to edit
                     fields:
                       - { label: 'Image1', name: 'image1', widget: 'image' }
                       - { label: 'caption1', name: 'caption1', widget: 'string', required: false}
-                      - { label: 'Image2', name: 'image2', widget: 'image' }
+                      - { label: 'Image2', name: 'image2', widget: 'image', required: false}
                       - { label: 'caption2', name: 'caption2', widget: 'string', required: false}                       
                   - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
                   - label: 'Heading3'

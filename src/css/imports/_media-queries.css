@@ -30,6 +30,16 @@
 }
 
 @media screen and (max-width: 480px) {
+    h1 {
+        word-spacing: .33rem!important;
+        -webkit-text-stroke-width: unset!important;
+        -webkit-text-stroke-color: unset!important;
+        color: #DE4F4F!important;
+    }
+    
+    h1 b {
+        word-spacing: -.5rem!important;
+    }
 
     #navbar div:first-of-type {
         max-width: calc(100vw - 4em)!important;
@@ -129,6 +139,13 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
+    h1 {
+        word-spacing: .33rem!important;
+    }
+    
+    h1 b {
+        word-spacing: -.85rem!important;
+    }
 
     .desktop-logo {
         display: none!important;
@@ -203,6 +220,10 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
+    h1 {
+        word-spacing: .2rem!important;
+    }
+
     .text-4xl {
         font-size: 3.55rem!important;
     }
@@ -260,6 +281,28 @@
     .intro-section.content-850 {
         max-width: calc(100vw - 600px);
         min-width: 725px; 
+    }
+
+    h1 {
+        word-spacing: .25rem!important;
+    }
+    
+    h1 b {
+        word-spacing: -.95rem!important;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+
+    .text-4xl {
+        font-size: 3.55rem !important;
+        font-size: 4rem !important;
+    } 
+
+    .max-w-7xl {
+        max-width: 1536px!important;
+        width: calc(100vw - 6em);
     }
 
 }

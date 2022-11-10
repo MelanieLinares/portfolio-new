@@ -124,8 +124,6 @@ typed_list:
         caption1: Horizontal alerts within the header and pop alerts provided imporant
           information to users visually and needed ARIA live region roles to
           share this information with users not accessing the site visually.
-        caption2: no really this and image 2 shouldn't be required
-        image2: img/favicon-16x16.png
     twocol_content_right:
       - type: heading3
         heading03: Prioritizing the findings
