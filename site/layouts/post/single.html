@@ -22,7 +22,7 @@
 
     <div>
       {{ .Params.introbodysecondary | markdownify }}<br>
-      <a href="{{ .Permalink }}#test">Skip to the results</a>
+      <a href="{{ .Permalink }}#takeaway">Skip to the results</a>
     </div>
   </section>
 
@@ -37,7 +37,7 @@
 <div class="partials">
         {{ partial "test-multi-sections" .Params }}
 </div>
-        <section class="body inner-wrap max-w-7xl mx-auto " style="margin-bottom: 4em; margin-top: 4em;">
+        <section id="takeaway" class="body inner-wrap max-w-7xl mx-auto " style="margin-bottom: 4em; margin-top: 4em;">
       {{ .Content }}
         </section>
 

@@ -321,11 +321,19 @@ max-width: 1400px;
     max-width: 850px;
 }
 
+.content-850 h3:not(:nth-of-type(1)),
+.content-850 h3:not(:nth-of-type(1)) + p,
+.content-850 h3:not(:nth-of-type(1)) + ul,
+.content-850 h3:not(:nth-of-type(1)) + p + ul {
+    padding-right: 6rem;
+    width: calc(100% - 12em);
+}
+
 .div2-04 img { 
     position: absolute;
     bottom: 0;
     right: 0;
-    width: calc((100% / 12) * 6);
+    width: calc(50% + 12.75em);
  }
 
  .div1-09 { grid-area: 1 / 1 / 2 / 13; }
@@ -442,6 +450,10 @@ h3 {
 .icon-with-content h3 {
     margin-top: 0!important;
 }
+
+.generic-content div.max-w-7xl {
+    padding-bottom: 6em;
+}
  
 h2 {
     position: relative;
@@ -449,7 +461,7 @@ h2 {
     font-size: 2.25em!important;
     line-height: 1.15;
     font-weight: bold!important;
-    color: rgba(222, 79, 79, .825);
+    color: rgba(222, 79, 79, .85);
     display: inline;
 }
 
@@ -459,6 +471,14 @@ h2 + * {
 
 .Twocol_image_content, .parent-outer {
     margin-bottom: 10em;
+}
+
+div + .Twocol_image_content {
+    margin-bottom: 1em;
+}
+
+.max-w-7xl.mx-auto.image {
+    padding-bottom: 0;
 }
 
 h1 {
@@ -517,6 +537,10 @@ h1 b {
 margin-top: 10em;
 }
 
+.cms .partials div:nth-of-type(1) section:last-of-type .parent-all {
+    padding-bottom: 0;
+}
+
 .cms .partials div:nth-of-type(1) section {
     margin-top: -2.15em;
 }
@@ -532,8 +556,59 @@ margin-top: 10em;
     display: block;
 }
 
-h2:nth-of-type(3) {
-    border: 1px solid red;
+.div3-13 {
+    padding-bottom: 6em;
+}
+
+.yup > section:nth-of-type(1) {
+    position: relative;
+    margin-bottom: 17em
+}
+
+.yup > section:nth-of-type(3) {
+    background-color: #f4f5fd;
+    position: relative;
+    padding-top: 5em;
+    margin-top:-7.5em!important;
+    margin-bottom: 14.25em;
+}
+
+.yup > section:nth-of-type(3):before {
+    content: '';
+    width: 100vw; 
+    height: 0; 
+    border-bottom: 100px solid #f4f5fd; 
+    border-left: 100vw solid transparent;
+    margin-top: -100px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+.yup > section:nth-of-type(3):after {
+    content: '';
+    width: 100vw; 
+    height: 0; 
+    border-top: 100px solid #f4f5fd; 
+    border-right: 100vw solid transparent;
+    position: absolute;
+    bottom: -100px;
+    z-index: 0;
+}
+
+.div2-04 img {
+    margin-right: -1em;
+}
+
+.yup > section:nth-of-type(1):after {
+    content:'';
+    border-top: 3px solid #fae6e6;
+    width: 80em;
+    height: 5px;
+    position: absolute;
+    bottom: -7em;
+    margin-left: calc((100vw - 80em) /2);
+    opacity: .5;
 }
 
 .cms .fullwidth h2:before {

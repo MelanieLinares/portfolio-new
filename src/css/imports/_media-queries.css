@@ -361,6 +361,10 @@
     .project-info details {
         display: none;
     } 
+
+    /* .content-850 {
+        padding-right: 6rem;
+    } */
 }
 
 #navbar div:first-of-type {
