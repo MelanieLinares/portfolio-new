@@ -8,19 +8,20 @@
       <li>
         <b>CLIENT</b> {{ .client }}
       </li>
-      <details>
+      <details role="listitem">
       <summary role="heading" aria-level="2">Project Details</summary>
+      <ul>
       <li>
         <b>ROLE</b> {{ .role }}
       </li>
-      {{ if .technology }}
+      <!-- {{ if .technology }}
       <li>
         <b>TECHNOLOGY STACK</b> 
         <ul>{{ range .technology }}
         <li>{{ . }}</li>
       {{ end }}</ul>
       </li>
-      {{ end }}
+      {{ end }} -->
       <li>
         <b>DATES</b> 
         {{ .Date.Format "Jan 2, 2006" }} -
@@ -28,18 +29,19 @@
             {{ dateFormat "Jan 2 2006" . }}
         {{ end }}| {{ .duration }}
       </li>
+      </ul>
     </details>
     <li>
       <b>ROLE</b> {{ .role }}
     </li>
-    {{ if .technology }}
+    <!-- {{ if .technology }}
     <li>
       <b>TECHNOLOGY STACK</b> 
       <ul>{{ range .technology }}
       <li>{{ . }}</li>
     {{ end }}</ul>
     </li>
-    {{ end }}
+    {{ end }} -->
     <li>
       <b>DATES</b> 
       {{ .Date.Format "Jan 2, 2006" }} -

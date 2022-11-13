@@ -91,6 +91,11 @@ html, body {
     overflow-x:hidden;
   }
 
+  .bg-pink {
+    /* background-color: var(--white); */
+    background-color: #f8e9e8;
+  }
+
 #top-section {
     /* height: 115vh;
     min-height: 800px; */
@@ -143,7 +148,7 @@ header {
 .intro-section:before {
     content: '';
     display: block;
-    border: 2px dashed rgba(222, 79, 79, .33);
+    border: 2px dashed rgba(222, 79, 79, 1);
     margin-left: -3em;
     width: 100%;
     height: 100%;
@@ -414,18 +419,19 @@ em {
 }
 
 h2:before {
-    content: '﹁';
+    content: '﹁'/ '';
     transform: scaleX(-1);
 }
 
 h2:after {
-    content: '﹂';
+    content: '﹂'/ '';
     transform: scaleX(-1);
     font-family: Poppins,sans-serif;
     position: absolute;
     right: 0;
     font-size: 5rem;
-    bottom: -0.73em;
+    /* bottom: -0.73em; */
+    bottom: -1em;
     margin-right: -.3em;
     opacity: .17;
 }
@@ -438,9 +444,10 @@ h2:after {
 h3 {
     font-family: 'JetBrains Mono', sans-serif;
     font-size: 1.4em!important;
-    font-weight: bold!important;
+    font-weight: bolder!important;
     color: #00414d;
     margin-top: 1.5em!important;
+    word-spacing: -0.25rem !important;
 }
 
 .icon-with-content {
@@ -461,7 +468,7 @@ h2 {
     font-size: 2.25em!important;
     line-height: 1.15;
     font-weight: bold!important;
-    color: rgba(222, 79, 79, .85);
+    color: #DE4F4F;
     display: inline;
 }
 
@@ -471,6 +478,10 @@ h2 + * {
 
 .Twocol_image_content, .parent-outer {
     margin-bottom: 10em;
+}
+
+.yup section:last-of-type.parent-outer {
+    margin-bottom: 0;
 }
 
 div + .Twocol_image_content {
@@ -491,7 +502,7 @@ h1 {
 }
 
 h1 b {
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2.5px;
     -webkit-text-stroke-color: unset;
     color: #DE4F4F;
     font-family: 'JetBrains Mono', sans-serif;
@@ -530,7 +541,8 @@ h1 b {
 } */
 
 .cms section h2 {
-    max-width: 850px
+    max-width: 850px;
+    word-spacing: -0.5rem !important;
 }
 
 .cms + section {
@@ -565,19 +577,44 @@ margin-top: 10em;
     margin-bottom: 17em
 }
 
-.yup > section:nth-of-type(3) {
-    background-color: #f4f5fd;
+.yup > section:nth-of-type(3),
+#takeaway {
+    /* background-color: #f4f5fd; */
+    background-color: #C33235;
     position: relative;
     padding-top: 5em;
     margin-top:-7.5em!important;
     margin-bottom: 14.25em;
 }
 
-.yup > section:nth-of-type(3):before {
+.yup > section:nth-of-type(3), #takeaway {
+    color: #FFE2E2;
+}
+
+#takeaway {
+    background-color: #00414d;
+    color: #E2EEFF;
+}
+
+.yup > section:nth-of-type(3) h2,
+.yup > section:nth-of-type(3) h3,
+#takeaway h2,
+#takeaway h3 {
+    color: #FFE2E2;
+}
+
+
+#takeaway h2 {
+    color: #E2EEFF;
+}
+
+.yup > section:nth-of-type(3):before,
+#takeaway:before {
     content: '';
     width: 100vw; 
     height: 0; 
-    border-bottom: 100px solid #f4f5fd; 
+    /* border-bottom: 100px solid #f4f5fd;  */
+    border-bottom: 100px solid #C33235;
     border-left: 100vw solid transparent;
     margin-top: -100px;
     position: absolute;
@@ -585,15 +622,25 @@ margin-top: 10em;
     z-index: 0;
 }
 
-.yup > section:nth-of-type(3):after {
+#takeaway:before {
+    border-bottom: 100px solid #00414d;
+}
+
+.yup > section:nth-of-type(3):after,
+#takeaway:after {
     content: '';
     width: 100vw; 
     height: 0; 
-    border-top: 100px solid #f4f5fd; 
+    /* border-top: 100px solid #f4f5fd;  */
+    border-top: 100px solid #C33235; 
     border-right: 100vw solid transparent;
     position: absolute;
     bottom: -100px;
     z-index: 0;
+}
+
+#takeaway:after {
+    border-top: 100px solid #00414d;
 }
 
 .div2-04 img {
@@ -603,11 +650,11 @@ margin-top: 10em;
 .yup > section:nth-of-type(1):after {
     content:'';
     border-top: 3px solid #fae6e6;
-    width: 80em;
+    width: 75.5em;
     height: 5px;
     position: absolute;
     bottom: -7em;
-    margin-left: calc((100vw - 80em) /2);
+    margin-left: calc((100vw - 75.5em) /2);
     opacity: .5;
 }
 
@@ -622,7 +669,8 @@ margin-top: 10em;
     position: absolute;
     left: 0;
     font-size: 5rem;
-    margin-top: -0.68em;
+    /* margin-top: -0.68em; */
+    margin-top: -1em;
     margin-left: -.3em;
     opacity: .17;
 }

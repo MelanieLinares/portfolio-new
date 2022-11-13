@@ -13,9 +13,9 @@
 
   {{ partial "aside" .Params }}
 
-<section class="intro-section content-850">
+<section class="intro-section content-850" aria-labelledby="introheading">
     <div>
-    <h2>{{ .Params.introheading }}</h2>
+    <h2 id="introheading" style="display:block">{{ .Params.introheading }}</h2>
     {{ .Params.introbody | markdownify }}
   </div>
 
@@ -37,16 +37,20 @@
 <div class="partials">
         {{ partial "test-multi-sections" .Params }}
 </div>
-        <section id="takeaway" class="body inner-wrap max-w-7xl mx-auto " style="margin-bottom: 4em; margin-top: 4em;">
-      {{ .Content }}
+{{ if .Content }}
+        <section id="takeaway" class="body" style="margin-bottom: 4em; margin-top: 50px!important;" aria-labelledby="the-takeaway">
+      <div class="inner-wrap max-w-7xl mx-auto">{{ .Content }}</div>
         </section>
+        {{ end }}
+
 
     </div>
     
 
 
-  <section class="related-content inner-wrap max-w-7xl mx-auto" style="margin-bottom: 4em;"> 
-  <h2 class="related-title">Related case studies</h2> 
+  <section class="related-content" style="padding-bottom: 4em; padding-top: 14em; background-color: #f8e9e8; margin-top: -4em;" aria-labelledby="related-title"> 
+ <div class="inner-wrap max-w-7xl mx-auto">
+    <h2 id="related-title" class="related-title">Related case studies</h2> 
   <div id="related" style="position: relative">   
     <ul class="relative mx-auto grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3"> 
       
@@ -60,6 +64,7 @@
     {{ if isset .Params "preview" }}
     <li>
       <a href="{{ .Permalink }}" class="card-v8 bg radius-lg">
+        <span style="position: absolute; opacity: 0;">case study</span>
         <div>
 <img src="{{ .Params.preview }}" alt="" />
 <span class="card-v8__title">{{ .Title }}</span>
@@ -70,7 +75,8 @@
     {{ end }}
           
         {{ end }}
-  </ul> </div> </section>
+  </ul> </div> </div>
+</section>
     
 <!-- <section id="wild" class="inner-wrap">
   <h2>Find me in the wild</h2>

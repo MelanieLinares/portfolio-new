@@ -285,15 +285,39 @@
 
     h1 {
         word-spacing: .25rem!important;
+        font-size: 3.05em!important;
     }
     
     h1 b {
         word-spacing: -.95rem!important;
+        font-size: 1.18em!important;
+    }
+
+    .content-850 h3:not(:nth-of-type(1)) + p, .content-850 h3:not(:nth-of-type(1)) + ul, .content-850 h3:not(:nth-of-type(1)) + p + ul {
+        padding-right: 9rem!important;
+        width: calc(100% - 18em)!important;
+    }
+
+    .display_image_section.parent-outer .content-850 + .parent-all.max-w-7xl.mx-auto {
+        padding-bottom: 3em;
+    }
+
+    .div2-04 img {
+        margin-right: -5em!important;
+    }
+
+    .div2-04 img {
+        width: calc(50% + 17.75em)!important;
     }
 
 }
 
 @media screen and (min-width: 1400px) {
+
+    h1 b {
+        word-spacing: -.95rem!important;
+        font-size: larger;
+    }
 
     .text-4xl {
         font-size: 3.55rem !important;

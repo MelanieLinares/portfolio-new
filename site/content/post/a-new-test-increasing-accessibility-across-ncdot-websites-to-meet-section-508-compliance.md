@@ -32,7 +32,7 @@ introbody: >-
 typed_list:
   - type: Twocol_image_content
     heading05: Why the concern over accessibility?
-    image: img/capture1.jpg
+    image: img/parkinson-bro.png
     caption: "1 in 4 adults in the U.S. have some type of disability. 75% of
       Americans with disabilities report using the internet on a daily basis.
       (source: CDC, 2018; Pew Research Center, 2021)"

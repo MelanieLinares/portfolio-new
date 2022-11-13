@@ -1,8 +1,8 @@
 ---
 title: Creating an accessibility go-to-market strategy through heart, harmony,
   and hunger
-titlebold: Creating an accessibility go-to-market strategy through
-titlenormal: heart, harmony, and hunger
+titlebold: Creating an accessibility go-to-market strategy
+titlenormal: through heart, harmony, and hunger
 preview: img/Group 538.png
 notice: For legal reasons some images are representational only or blurred
 date: 2022-10-12T00:54:47.742Z
