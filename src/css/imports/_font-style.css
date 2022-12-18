@@ -108,6 +108,11 @@ h1 b {
 }
 
 /* @font-face {
+  font-family: 'JetBrains';
+  src: url('/font/JetBrainsMono[wght].ttf');
+} */
+
+/* @font-face {
   font-family: Poppins-Bold;
   src: url(/font/Poppins-old.ttf);
 }

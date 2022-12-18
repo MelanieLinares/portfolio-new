@@ -285,12 +285,12 @@
 
     h1 {
         word-spacing: .25rem!important;
-        font-size: 3.05em!important;
+        font-size: 3.25em!important;
     }
     
     h1 b {
         word-spacing: -.95rem!important;
-        font-size: 1.18em!important;
+        font-size: 1em!important;
     }
 
     .content-850 h3:not(:nth-of-type(1)) + p, .content-850 h3:not(:nth-of-type(1)) + ul, .content-850 h3:not(:nth-of-type(1)) + p + ul {
@@ -307,7 +307,8 @@
     }
 
     .div2-04 img {
-        width: calc(50% + 17.75em)!important;
+        /* width: calc(50% + 17.75em)!important; */
+        width: calc(50% + 23.75em)!important;
     }
 
 }
