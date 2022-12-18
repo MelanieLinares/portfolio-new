@@ -4,8 +4,8 @@ title: Decreasing the bounce-rate of Stay Online's website through a responsive
 titlebold: Decreasing the bounce-rate of Stay Online's website
 titlenormal: through a responsive redesign
 preview: /img/stayonline-preview.png
-date: 2022-12-18T03:33:35.909Z
-newdate: 2022-12-25T03:33:37.626Z
+date: 2015-06-30T02:33:35.909Z
+newdate: 2016-09-08T02:33:37.626Z
 client: Stay Online LLC.
 logo: /img/logos/stayonline-logo.png
 role: Front-End Web Developer
