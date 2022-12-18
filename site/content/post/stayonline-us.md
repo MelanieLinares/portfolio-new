@@ -39,7 +39,7 @@ introbody: >-
 
   **The goal:** 👌 fewer than 50% of mobile users leave
 typed_list:
-  - type: Twocol_image_contents
+  - type: Twocol_image_content
     heading05: Gathering insight, identifying  issues, and clarifying tasks
     image: img/sol-placeholder.png
     twocol_content_img:
