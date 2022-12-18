@@ -1,28 +1,169 @@
 ---
-backgroundcolor: darkblue
-title: Decreasing the bounce-rate of Stay Online's website through a responsive redesign
+title: Decreasing the bounce-rate of Stay Online's website through a responsive
+  redesign
+titlebold: Decreasing the bounce-rate of Stay Online's website
+titlenormal: through a responsive redesign
+preview: /img/stayonline-preview.png
 date: 2015-06-29T15:04:00.000Z
 newdate: 2016-09-07T02:27:22.000Z
-
-duration: 2 months
+client: Stay Online LLC.
 logo: /img/logos/stayonline-logo.png
-image: /img/stayonline-us.jpg
-# image2: /img/stayonline-us-tablet.png
-preview: /img/stayonline-preview.png
+role: Front-End Web Developer
 tags:
-  - cross-browser 
+  - cross-browser
   - .net mvc
   - javascript
   - cross-browser
 technology:
   - HTML/CSS
-  - Javascript 
+  - Javascript
   - ASP.NET MVC
-titlebold: Decreasing the bounce-rate of Stay Online's website
-titlenormal: through a responsive redesign
-client: Stay Online LLC.
-role: Front-End Web Developer
+duration: 2 months
+introheading: Creating a plan to decrease mobile bounce rate
+introbody: >-
+  Stay Online is a power cord manufacturer and distributor, known for having the
+  largest U.S. in-stock inventory of power cords and adapters. The legacy
+  e-commerce website, built in 1997, had not changed to be compliant with best
+  practices introduced with HTML5. Mobile users were not considered. This
+  contributed to a large number of mobile device users leaving the site upon
+  load or before completing a purchase. There was a potential to capture these
+  users by making the web experience accessible. Responsive design was not an
+  easy sell to management. Data-driven design through analytics was needed to
+  get the pitch approved.
 
+
+
+
+  **The starting rate:** 👎 about 85% of mobile users leave
+
+
+   **The goal:** 👌 fewer than 50% of mobile users leave
+typed_list:
+  - type: Twocol_image_content
+    heading05: Gathering insight, identifying  issues, and clarifying tasks
+    image: img/sol-placeholder.png
+    twocol_content_img:
+      - type: Content02
+        Content002: >-
+          ### Insight and issues
+
+
+          - Design needs to maintain IE6+ (and later IE8+) browser compatibility 
+
+          - Data-heavy pages need content organization and prioritization to provide an ideal mobile experience
+
+          - The branding system needed updating to incorporate accessible colors for web and print
+
+          - Code refactoring is needed to remove a table-based layout and poorly formed HTML
+  - type: Twocol_icon_content
+    heading05: Three main types of users were identified.
+    twocol_content_icon:
+      - type: introw
+        blurbsw:
+          - textw: >-
+              **Business-to-Business Customers**
+
+              These users include one time buyers and repeat buyers. They use multiple devices and browsers, buy in bulk and enjoy the ability to customize a product or order. Older browser support is very important to the existing user base.
+            imagew: img/yellow-blob.png
+          - textw: >-
+              **Inventory Warehouse Workers**
+
+              These are internal Stay Online employees working on mobile devices. They use authenticated portions of the website to check stock and product location. They need the website to not limit functionality for small devices.
+            imagew: img/wheelchair5.svg
+          - textw: >-
+              **Sales and Marketing Employees**
+
+              These are internal and external Stay Online employees working on multiple devices, including tablets when at trade shows. They need the website to work fast and reliably on low data connections.
+            imagew: img/turquoise-triangle.png
+      - type: Content02
+        Content002: I worked with Marketing and Sales managers to identify business
+          needs for a new homepage and discovered that a major problem was that
+          a large number of customers were unable to order products on mobile
+          devices. Responsive design presented an exciting opportunity.
+  - type: Twocol_content
+    twocol_content_left:
+      - type: Content02
+        Content002: >-
+          ## Make it work! Make it compatible! Make it progressively enhanced!
+
+
+          Stay Online’s client base contained an ample percentage of IE6 users (even back in 2012 when use within the U.S. was below 1%). The codebase included a table-based layout structure and polyfills, all of which would need to be re-evaluated. The site would need to be cross-browser-compatible.
+
+
+          Technical debt from supporting older browsers had increased over time. In early conversations, many voices were worried about any change. The Sales team did not want any ordering downtime with the transition to the new site. Marketing did not want a drastic overnight aesthetic change, fearing change would confuse customers and disrupt brand trust. The Web team wanted an easier-to-maintain code base.
+
+
+          A plan was made to implement an agile versus waterfall release for design and code changes which would satisfy Sales and Marketing. A plan to reduce the number of HTML and CSS files through reusable code was made to satisfy the needs of the Web team.
+
+
+          ### Development overhead:
+
+
+          Development issues consistently shifted focus from site improvements to patching fixes. The symptoms of the backlog were treated versus tackling the cause.
+
+
+          CSS adjustments were constantly being logged as bugs with each new page creation
+
+          Templates were not implemented and pages were hand-coded.
+
+          Layout bugs were constantly found by the team and users 
+
+
+          ### User pain points:
+
+
+          Many users complained they could not see the content because it was either hidden, off-screen, or required scrolling horizontally on mid-size and small mobile devices. Users complained they were having difficulty tabbing through web content formatted with tables. Keyboard focus needed to be implemented more consistently or hidden. This was directly causing rampant accessibility issues.
+  - type: generic_content
+    content_options:
+      - type: generic_content
+        genericcontent: >-
+          ## Rethinking the layout through research
+
+
+          Making a site responsive is not a matter of making elements fit, but providing an equal experience for users regardless of screen size. When conducting competitive analysis, specific layouts stood out as standard practices involving the navigation and homepage.
+
+
+          \[﻿]
+
+
+          ![test](img/moodboard-placeholder.jpg)
+
+
+          ### Client approval
+
+
+          Research began on the product after initial conversations with the lead development stakeholders. Data on bounce rate was gathered from Google Analytics thanks to close work with the Marketing director. A presentation of the benefits of a redesign was given to the CEO.
+
+
+          ### Testing designs to determine major changes
+
+
+          A/B testing was completed to determine whether a 3 or 2 column layout resulted in a better call-to-action response. Additionally testing was conducted regarding removing teh left side navigation in favor of a full-width top menu with drop downs. Despite positive data from new users the negative data from existing users resulted in the decision to keep the side navigation.
+  - type: generic_content
+    content_options:
+      - type: generic_content
+        genericcontent: >-
+          ## Content-first and data-driven strategy
+
+
+          ### Content-first
+
+
+          Requirements from Marketing, Sales, and Development were gathered and compared to what content is most visited by users. Key internal stakeholders were surveyed on the gathered data and asked to rank the importance of the information. Later tests requested users to place key components within a basic wire-frame to gather further data on content hierarchy and placement.
+
+
+          ### Wire-framing concepts
+
+
+          * Started by making the site optimized for a min-screen size of 1024px which at the time was the average internal and external device-width
+
+          * Static tables and charts needed to be refactored and rewritten
+
+          * The next goal was to have elements optimized device-widths at a min of 768px. (Unfortunately, the project dissolved mid-release before full responsive implementation)
+      - type: generic_image
+        image: img/stayonline-wireframe.png
+backgroundcolor: darkblue
+image: /img/stayonline-us.jpg
 ---
 
 <section>
