@@ -37,9 +37,9 @@ introbody: >-
   **The starting rate:** 👎 about 85% of mobile users leave
 
 
-   **The goal:** 👌 fewer than 50% of mobile users leave
+  **The goal:** 👌 fewer than 50% of mobile users leave
 typed_list:
-  - type: Twocol_image_content
+  - type: Twocol_image_contents
     heading05: Gathering insight, identifying  issues, and clarifying tasks
     image: img/sol-placeholder.png
     twocol_content_img:
