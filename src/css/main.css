@@ -585,8 +585,8 @@ margin-top: 10em;
     margin-bottom: 17em
 }
 
-.yup > section:nth-of-type(3),
-#takeaway {
+#takeaway,
+.angled-section {
     /* background-color: #f4f5fd; */
     background-color: #C24242;
     position: relative;
@@ -616,8 +616,8 @@ margin-top: 10em;
     color: #E2EEFF;
 }
 
-.yup > section:nth-of-type(3):before,
-#takeaway:before {
+#takeaway:before,
+.angled-section:before {
     content: '';
     width: 100vw; 
     height: 0; 
@@ -634,8 +634,8 @@ margin-top: 10em;
     border-bottom: 100px solid #00414d;
 }
 
-.yup > section:nth-of-type(3):after,
-#takeaway:after {
+#takeaway:after,
+.angled-section:after {
     content: '';
     width: 100vw; 
     height: 0; 
