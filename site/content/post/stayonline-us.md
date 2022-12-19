@@ -162,6 +162,8 @@ typed_list:
           * The next goal was to have elements optimized device-widths at a min of 768px. (Unfortunately, the project dissolved mid-release before full responsive implementation)
       - type: generic_image
         image: img/stayonline-wireframe.png
+  - type: angled-section
+    test: Yay, an angled section! O.o
 backgroundcolor: darkblue
 image: /img/stayonline-us.jpg
 ---
