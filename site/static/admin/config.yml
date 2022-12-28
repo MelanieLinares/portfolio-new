@@ -65,17 +65,23 @@ collections: # A list of collections the CMS should be able to edit
                 name: 'content_options'
                 widget: 'list'
                 types:
-                  - label: 'Heading'
+                  - label: 'Fulwidth'
                     name: 'heading'
-                    widget: 'object'
-                    fields:
-                      - { label: 'Heading', name: 'heading', widget: 'string' }
-                  - label: 'Scroll Image'
-                    name: 'scroll-image'
-                    widget: 'object'
-                    fields:
-                      - { label: 'Image', name: 'image', widget: 'image' }
-                      - { label: 'caption', name: 'caption', widget: 'string', required: false}                        
+                    widget: 'list'
+                    types:
+                      - label: 'Fulwidth'
+                        name: 'heading'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'caption', name: 'caption', widget: 'string', required: false}
+
+                      - label: 'Halfwidth'
+                        name: 'heading'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'caption', name: 'caption', widget: 'string', required: false}                        
                                        
 
           - label: 'Blank Section'
