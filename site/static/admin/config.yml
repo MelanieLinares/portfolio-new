@@ -63,12 +63,12 @@ collections: # A list of collections the CMS should be able to edit
            
               - label: 'Layout Types'
                 name: 'ftypes_section'
-                widget: 'list'
-                types: 
+                widget: 'object'
+                fields: 
               
                   - label: 'Fullwidth'
                     name: 'fullwidth_section'
-                    widget: 'object'
+                    widget: 'list'
                     types:
                       - label: 'Heading'
                         name: 'heading-angled'
