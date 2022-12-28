@@ -68,22 +68,30 @@ collections: # A list of collections the CMS should be able to edit
               
                   - label: 'Fullwidth'
                     name: 'fullwidth_section'
-                    widget: 'list'
+                    widget: 'object'
                     types:
                       - label: 'Heading'
                         name: 'heading-angled'
-                        widget: 'object'
-                        fields:
-                          - { label: 'Heading', name: 'heading', widget: 'string' }
+                        widget: 'list'
+                        types:
+                          - label: 'Heading'
+                            name: 'heading'
+                            widget: 'object'
+                            fields:
+                              - { label: 'Heading', name: 'heading', widget: 'string' }
                   - label: '50 / 50 Section'
                     name: '50_section'
-                    widget: 'list'
+                    widget: 'object'
                     types:
                       - label: 'Heading'
                         name: 'heading-angled'
-                        widget: 'object'
-                        fields:
-                          - { label: 'Heading', name: 'heading', widget: 'string' }                        
+                        widget: 'list'
+                        types:
+                          - label: 'Heading'
+                            name: 'heading'
+                            widget: 'object'
+                            fields:
+                              - { label: 'Heading', name: 'heading', widget: 'string' }                        
                                        
 
           - label: 'Blank Section'
