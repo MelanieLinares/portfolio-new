@@ -73,6 +73,18 @@
                     {{ partial "scroll-image" . }}
                 {{ end }}
 
+                {{ if eq .type "angled-section" }}
+                    {{ partial "angled-section" . }}
+                {{ end }}
+
+                {{ if eq .type "rectangular-section" }}
+                    {{ partial "rectangular-section" . }}
+                {{ end }}
+                
+                {{ if eq .type "blank-section" }}
+                    {{ partial "blank-section" . }}
+                {{ end }}                   
+
                 <!-- {{ if eq .type "stacked_images" }}
                     {{ partial "stacked_images" . }}
                 {{ end }}
