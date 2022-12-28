@@ -59,25 +59,10 @@ collections: # A list of collections the CMS should be able to edit
           - label: 'Angled Section'
             name: 'angled-section'
             widget: 'object'
-            fields:
-              # - { label: 'Test', name: 'test', widget: 'string' }
-              # -  label: 'Angled Typed List'
-              #     name: 'angled_typed_list'
-              #     widget: 'object'
-              #     fields:
-              #       - label: 'First Section'
-              #         name: 'first-section'
-              #         widget: 'object'
-              #         fields:
-              #           - { label: 'Test', name: '01test', widget: 'string' }
-              #       - label: 'Second Section'
-              #         name: 'second-section'
-              #         widget: 'object'
-              #         fields:
-              #           - { label: 'Test', name: '02test', widget: 'string' }
+            fields: 
            
-              - label: 'Angled Typed List'
-                name: 'angled_typed_list'
+              - label: 'Fullwidth'
+                name: 'fullwidth_section'
                 widget: 'list'
                 types:
                   - label: 'Heading'
@@ -91,8 +76,51 @@ collections: # A list of collections the CMS should be able to edit
                     fields:
                       - { label: 'Image', name: 'image', widget: 'image' }
                       - { label: 'caption', name: 'caption', widget: 'string', required: false} 
-              
-
+              - label: '50 - 50 section'
+                name: '50_section'
+                widget: 'list'
+                types:
+                  - label: 'Heading'
+                    name: 'heading-angled'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Heading', name: 'heading', widget: 'string' }
+                  - label: 'Scroll Image'
+                    name: 'scroll-image-angled'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Image', name: 'image', widget: 'image' }
+                      - { label: 'caption', name: 'caption', widget: 'string', required: false}              
+              - label: '3 to 1 section'
+                name: '3_1_section'
+                widget: 'list'
+                types:
+                  - label: 'Heading'
+                    name: 'heading-angled'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Heading', name: 'heading', widget: 'string' }
+                  - label: 'Scroll Image'
+                    name: 'scroll-image-angled'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Image', name: 'image', widget: 'image' }
+                      - { label: 'caption', name: 'caption', widget: 'string', required: false}
+              - label: '1 to 3 section'
+                name: '1_3_section'
+                widget: 'list'
+                types:
+                  - label: 'Heading'
+                    name: 'heading-angled'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Heading', name: 'heading', widget: 'string' }
+                  - label: 'Scroll Image'
+                    name: 'scroll-image-angled'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Image', name: 'image', widget: 'image' }
+                      - { label: 'caption', name: 'caption', widget: 'string', required: false}                      
 
           - label: 'Blank Section'
             name: 'blank-section'
