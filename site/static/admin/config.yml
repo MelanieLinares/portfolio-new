@@ -59,39 +59,23 @@ collections: # A list of collections the CMS should be able to edit
           - label: 'Angled Section'
             name: 'angled-section'
             widget: 'object'
-            fields: 
+            fields:
            
-              - label: 'Layout Types'
-                name: 'ftypes_section'
-                widget: 'object'
-                fields: 
-              
-                  - label: 'Fullwidth'
-                    name: 'fullwidth_section'
-                    widget: 'list'
-                    types:
-                      - label: 'Heading'
-                        name: 'heading-angled'
-                        widget: 'list'
-                        types:
-                          - label: 'Heading'
-                            name: 'heading'
-                            widget: 'object'
-                            fields:
-                              - { label: 'Heading', name: 'heading', widget: 'string' }
-                  - label: '50 / 50 Section'
-                    name: '50_section'
+              - label: 'Content Options'
+                name: 'content_options'
+                widget: 'list'
+                types:
+                  - label: 'Heading'
+                    name: 'heading'
                     widget: 'object'
-                    types:
-                      - label: 'Heading'
-                        name: 'heading-angled'
-                        widget: 'list'
-                        types:
-                          - label: 'Heading'
-                            name: 'heading'
-                            widget: 'object'
-                            fields:
-                              - { label: 'Heading', name: 'heading', widget: 'string' }                        
+                    fields:
+                      - { label: 'Heading', name: 'heading', widget: 'string' }
+                  - label: 'Scroll Image'
+                    name: 'scroll-image'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Image', name: 'image', widget: 'image' }
+                      - { label: 'caption', name: 'caption', widget: 'string', required: false}                        
                                        
 
           - label: 'Blank Section'
