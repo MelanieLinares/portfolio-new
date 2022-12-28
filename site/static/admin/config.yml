@@ -49,118 +49,115 @@ collections: # A list of collections the CMS should be able to edit
 
       - label: 'Typed List'
         name: 'typed_list'
-        widget: 'list'
-        types:
+        widget: 'object'
+        fields:
           # - label: 'Heading'
           #   name: 'heading'
           #   widget: 'object'
           #   fields:
           #     - { label: 'Heading', name: 'heading', widget: 'string' }
-          - label: 'Angled Section'
-            name: 'angled-section'
-            widget: 'object'
-            fields:
+
            
-              - label: 'Content Options'
-                name: 'content_options'
-                widget: 'list'
-                types:
-                  - label: 'Fulwidth'
-                    name: 'heading01'
-                    widget: 'object'
-                    fields:
-                      - label: 'Fulwidth Components'
-                        name: 'heading02'
-                        widget: 'list'
-                        types:
-                          - label: 'Basic Content'
-                            name: 'generic_content'
-                            widget: 'object'
-                            fields:
-                              - { label: 'Content', name: 'generic-content', widget: 'markdown' }
-                          - label: 'Captioned Image'
-                            name: 'CaptionImg'
-                            widget: 'object'
-                            fields:
-                              - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
-                              - { label: 'Img', name: 'captionimg', widget: 'image' }  
-                              - { label: 'Caption', name: 'caption', widget: 'text' }
-                          - label: 'Scroll Image'
-                            name: 'scroll-image'
-                            widget: 'object'
-                            fields:
-                              - { label: 'Image', name: 'image', widget: 'image' }
-                              - { label: 'caption', name: 'caption', widget: 'string', required: false}
-                          - label: 'Stacked  Image Section'
-                            name: 'stacked_image_section'
-                            widget: 'object'
-                            fields:
-                              - { label: 'Image1', name: 'image1', widget: 'image' }
-                              - { label: 'caption1', name: 'caption1', widget: 'string', required: false}
-                              - { label: 'Image2', name: 'image2', widget: 'image', required: false}
-                              - { label: 'caption2', name: 'caption2', widget: 'string', required: false}
-                          - label: 'OverlapIMG'
-                            name: 'OverlapImg'
-                            widget: 'object'
-                            fields:
-                              - { label: 'Large Img', name: 'largeimg', widget: 'image' }
-                              - { label: 'Small Img', name: 'smallimg', widget: 'image' }  
-                              - { label: 'Caption', name: 'caption', widget: 'text' }               
-                          - label: 'Featured Text'
-                            name: 'featured-text'
-                            widget: 'object'
-                            fields:
-                              - { label: "text", name: "featuredtext", widget: "markdown"}                          
-                          - label: 'Display Image Section'
-                            name: 'display_image_section'
-                            widget: 'object'
-                            fields:
-                              - { label: "heading05", name: "heading05", widget: "string"}
-                              - { label: 'Image', name: 'image', widget: 'image' }
-                              - { label: 'caption', name: 'caption', widget: 'string', required: false}  
-                              - label: 'Display Img Content'
-                                name: 'display_image_section_content'
-                                widget: 'list'
-                                types:
-                                  - label: 'Content2'
-                                    name: 'Content02'
-                                    widget: 'object'
-                                    fields:
-                                      - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-                                  - label: 'Content3'
-                                    name: 'Content03'
-                                    widget: 'object'
-                                    fields:
-                                      - { label: 'Content003', name: 'Content003', widget: 'markdown' }
-                                  - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                            
-                          - label: 'Pill Featured Text'
-                            name: 'pillfeaturedtext'
-                            widget: 'object'
-                            fields:
-                              - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
-                          - label: Icon Cards
-                            name: cards
-                            widget: object
+          - label: 'Content Options'
+            name: 'content_options'
+            widget: 'list'
+            types:
+              - label: 'Fulwidth'
+                name: 'heading01'
+                widget: 'object'
+                fields:
+                  - label: 'Fulwidth Components'
+                    name: 'heading02'
+                    widget: 'list'
+                    types:
+                      - label: 'Basic Content'
+                        name: 'generic_content'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Content', name: 'generic-content', widget: 'markdown' }
+                      - label: 'Captioned Image'
+                        name: 'CaptionImg'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                          - { label: 'Img', name: 'captionimg', widget: 'image' }  
+                          - { label: 'Caption', name: 'caption', widget: 'text' }
+                      - label: 'Scroll Image'
+                        name: 'scroll-image'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'caption', name: 'caption', widget: 'string', required: false}
+                      - label: 'Stacked  Image Section'
+                        name: 'stacked_image_section'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Image1', name: 'image1', widget: 'image' }
+                          - { label: 'caption1', name: 'caption1', widget: 'string', required: false}
+                          - { label: 'Image2', name: 'image2', widget: 'image', required: false}
+                          - { label: 'caption2', name: 'caption2', widget: 'string', required: false}
+                      - label: 'OverlapIMG'
+                        name: 'OverlapImg'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Large Img', name: 'largeimg', widget: 'image' }
+                          - { label: 'Small Img', name: 'smallimg', widget: 'image' }  
+                          - { label: 'Caption', name: 'caption', widget: 'text' }               
+                      - label: 'Featured Text'
+                        name: 'featured-text'
+                        widget: 'object'
+                        fields:
+                          - { label: "text", name: "featuredtext", widget: "markdown"}                          
+                      - label: 'Display Image Section'
+                        name: 'display_image_section'
+                        widget: 'object'
+                        fields:
+                          - { label: "heading05", name: "heading05", widget: "string"}
+                          - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'caption', name: 'caption', widget: 'string', required: false}  
+                          - label: 'Display Img Content'
+                            name: 'display_image_section_content'
+                            widget: 'list'
+                            types:
+                              - label: 'Content2'
+                                name: 'Content02'
+                                widget: 'object'
+                                fields:
+                                  - { label: 'Content002', name: 'Content002', widget: 'markdown' }
+                              - label: 'Content3'
+                                name: 'Content03'
+                                widget: 'object'
+                                fields:
+                                  - { label: 'Content003', name: 'Content003', widget: 'markdown' }
+                              - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                            
+                      - label: 'Pill Featured Text'
+                        name: 'pillfeaturedtext'
+                        widget: 'object'
+                        fields:
+                          - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+                      - label: Icon Cards
+                        name: cards
+                        widget: object
+                        fields: 
+                          - label: 'Icon Cards'
+                            name: 'iconcards'
+                            widget: 'list'
                             fields: 
-                              - label: 'Icon Cards'
-                                name: 'iconcards'
-                                widget: 'list'
-                                fields: 
-                                  - {label: Image, name: imagecards, widget: image, required: false} 
-                                  - {label: Text, name: textcards, widget: markdown}
-                          - label: 'Overlap Background Img Content'
-                            name: 'overlap_bg_img_content'
-                            widget: 'object'
-                            fields:
-                              - { label: 'Image', name: 'image', widget: 'image' }
-                              - { label: 'Content', name: 'content', widget: 'markdown' }    
-                              - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: false} 
-                          - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                         
-                          - label: 'Fullwidth Img'
-                            name: 'fullwidth-img'
-                            widget: 'object'
-                            fields:
-                              - { label: "image", name: "image", widget: "image"}             
+                              - {label: Image, name: imagecards, widget: image, required: false} 
+                              - {label: Text, name: textcards, widget: markdown}
+                      - label: 'Overlap Background Img Content'
+                        name: 'overlap_bg_img_content'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'Content', name: 'content', widget: 'markdown' }    
+                          - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: false} 
+                      - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                         
+                      - label: 'Fullwidth Img'
+                        name: 'fullwidth-img'
+                        widget: 'object'
+                        fields:
+                          - { label: "image", name: "image", widget: "image"}             
 
 
 
