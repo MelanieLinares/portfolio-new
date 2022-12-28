@@ -73,31 +73,70 @@ collections: # A list of collections the CMS should be able to edit
                         name: 'heading02'
                         widget: 'list'
                         types:
-                          - label: 'Content'
-                            name: 'heading04'
+                          - label: 'Basic Content'
+                            name: 'generic_content'
+                            widget: 'object'
+                            fields:
+                              - { label: 'Content', name: 'generic-content', widget: 'markdown' }
+                          - label: 'Captioned Image'
+                            name: 'CaptionImg'
+                            widget: 'object'
+                            fields:
+                              - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                              - { label: 'Img', name: 'captionimg', widget: 'image' }  
+                              - { label: 'Caption', name: 'caption', widget: 'text' }
+                          - label: 'Scroll Image'
+                            name: 'scroll-image'
                             widget: 'object'
                             fields:
                               - { label: 'Image', name: 'image', widget: 'image' }
                               - { label: 'caption', name: 'caption', widget: 'string', required: false}
-                          - label: 'Grid'
-                            name: 'heading05'
+                          - label: 'Stacked  Image Section'
+                            name: 'stacked_image_section'
                             widget: 'object'
                             fields:
+                              - { label: 'Image1', name: 'image1', widget: 'image' }
+                              - { label: 'caption1', name: 'caption1', widget: 'string', required: false}
+                              - { label: 'Image2', name: 'image2', widget: 'image', required: false}
+                              - { label: 'caption2', name: 'caption2', widget: 'string', required: false}
+                          - label: 'OverlapIMG'
+                            name: 'OverlapImg'
+                            widget: 'object'
+                            fields:
+                              - { label: 'Large Img', name: 'largeimg', widget: 'image' }
+                              - { label: 'Small Img', name: 'smallimg', widget: 'image' }  
+                              - { label: 'Caption', name: 'caption', widget: 'text' }               
+                          - label: 'Featured Text'
+                            name: 'featured-text'
+                            widget: 'object'
+                            fields:
+                              - { label: "text", name: "featuredtext", widget: "markdown"}                          
+                          - label: 'Display Image Section'
+                            name: 'display_image_section'
+                            widget: 'object'
+                            fields:
+                              - { label: "heading05", name: "heading05", widget: "string"}
                               - { label: 'Image', name: 'image', widget: 'image' }
-                              - { label: 'caption', name: 'caption', widget: 'string', required: false}
-                                            
-                                       
+                              - { label: 'caption', name: 'caption', widget: 'string', required: false}  
+                              - label: 'Display Img Content'
+                                name: 'display_image_section_content'
+                                widget: 'list'
+                                types:
+                                  - label: 'Content2'
+                                    name: 'Content02'
+                                    widget: 'object'
+                                    fields:
+                                      - { label: 'Content002', name: 'Content002', widget: 'markdown' }
+                                  - label: 'Content3'
+                                    name: 'Content03'
+                                    widget: 'object'
+                                    fields:
+                                      - { label: 'Content003', name: 'Content003', widget: 'markdown' }
+                                  - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                            
 
-          - label: 'Blank Section'
-            name: 'blank-section'
-            widget: 'object'
-            fields:
-              - { label: 'Test', name: 'test', widget: 'string' }               
-          - label: 'Rectangular Section'
-            name: 'rectangular-section'
-            widget: 'object'
-            fields:
-              - { label: 'Test', name: 'test', widget: 'string' } 
+
+
+
                            
           # - label: 'Basic Content'
           #   name: 'generic_content'
@@ -113,12 +152,7 @@ collections: # A list of collections the CMS should be able to edit
           #           widget: 'object'
           #           fields:
           #             - { label: 'Heading', name: 'heading', widget: 'string' }
-          #         - label: 'Scroll Image'
-          #           name: 'scroll-image'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Image', name: 'image', widget: 'image' }
-          #             - { label: 'caption', name: 'caption', widget: 'string', required: false} 
+
           #         - label: 'Generic Image'
           #           name: 'generic_image'
           #           widget: 'object'
@@ -159,12 +193,7 @@ collections: # A list of collections the CMS should be able to edit
           #                   widget: 'object'
           #                   fields:
           #                     - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-          #                 - label: 'Captioned Image'
-          #                   name: 'CaptionImg'
-          #                   widget: 'object'
-          #                   fields:
-          #                     - { label: 'Img', name: 'captionimg', widget: 'image' }  
-          #                     - { label: 'Caption', name: 'caption', widget: 'text' }        
+              
           #     # - {label: Icon Cards, name: cards, widget: object, fields: [{label: Icon Cards, name: iconcards, widget: list, fields: [{label: Image, name: imagecards, widget: image}, {label: Text, name: textcards, widget: markdown}]}], required: false}
           #         - label: 'Generic Content'
           #           name: 'generic_content'
@@ -182,11 +211,7 @@ collections: # A list of collections the CMS should be able to edit
           #             - { label: "content right", name: "content2", widget: "markdown"}
 
 
-          #         - label: 'Featured Text'
-          #           name: 'featuredtext'
-          #           widget: 'markdown'
-          #           fields:
-          #             - {label: 'content', name: 'featuredtext', widget: 'string'}    
+  
           #         - label: 'Pill Featured Text'
           #           name: 'pillfeaturedtext'
           #           widget: 'string'
@@ -242,33 +267,15 @@ collections: # A list of collections the CMS should be able to edit
           #           widget: 'object'
           #           fields:
           #             - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-          #         - label: 'Stacked  Image Section'
-          #           name: 'stacked_image_section'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Image1', name: 'image1', widget: 'image' }
-          #             - { label: 'caption1', name: 'caption1', widget: 'string', required: false}
-          #             - { label: 'Image2', name: 'image2', widget: 'image', required: false}
-          #             - { label: 'caption2', name: 'caption2', widget: 'string', required: false}                       
+                                 
           #         - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
           #         - label: 'Heading3'
           #           name: 'heading3'
           #           widget: 'object'
           #           fields:
           #             - { label: 'Heading03', name: 'heading03', widget: 'string' }
-          #         - label: 'OverlapIMG'
-          #           name: 'OverlapImg'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Large Img', name: 'largeimg', widget: 'image' }
-          #             - { label: 'Small Img', name: 'smallimg', widget: 'image' }  
-          #             - { label: 'Caption', name: 'caption', widget: 'text' }
-          #         - label: 'Captioned Image'
-          #           name: 'CaptionImg'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Img', name: 'captionimg', widget: 'image' }  
-          #             - { label: 'Caption', name: 'caption', widget: 'text' }  
+          #         
+  
           #     - label: 'Right Two Col Content'
           #       name: 'twocol_content_right'
           #       widget: 'list'
@@ -289,19 +296,8 @@ collections: # A list of collections the CMS should be able to edit
           #           widget: 'object'
           #           fields:
           #             - { label: 'Heading03', name: 'heading03', widget: 'string' }
-          #         - label: 'OverlapIMG'
-          #           name: 'OverlapImg'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Large Img', name: 'largeimg', widget: 'image' }
-          #             - { label: 'Small Img', name: 'smallimg', widget: 'image' }  
-          #             - { label: 'Caption', name: 'caption', widget: 'text' }  
-          #         - label: 'Captioned Image'
-          #           name: 'CaptionImg'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Img', name: 'captionimg', widget: 'image' }  
-          #             - { label: 'Caption', name: 'caption', widget: 'text' }                                 
+          #         
+                                     
           # - label: 'Two col content + img'
           #   name: 'Twocol_image_content'
           #   widget: 'object'
@@ -340,12 +336,7 @@ collections: # A list of collections the CMS should be able to edit
           #           widget: 'object'
           #           fields:
           #             - { label: 'Heading03', name: 'heading03', widget: 'string' }
-          #         - label: 'OverlapIMG'
-          #           name: 'OverlapImg'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Large Img', name: 'largeimg', widget: 'image' }
-          #             - { label: 'Small Img', name: 'smallimg', widget: 'image' } 
+          #          
           #         - label: 'Pill Featured Text'
           #           name: 'pillfeaturedtext'
           #           widget: 'object'
@@ -367,28 +358,7 @@ collections: # A list of collections the CMS should be able to edit
           #           fields:
           #             - { label: 'Content002', name: 'Content002', widget: 'markdown' }
           #         - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                         
-          # - label: 'Display Image Section'
-          #   name: 'display_image_section'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "heading05", name: "heading05", widget: "string"}
-          #     - { label: 'Image', name: 'image', widget: 'image' }
-          #     - { label: 'caption', name: 'caption', widget: 'string', required: false}  
-          #     - label: 'Display Img Content'
-          #       name: 'display_image_section_content'
-          #       widget: 'list'
-          #       types:
-          #         - label: 'Content2'
-          #           name: 'Content02'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-          #         - label: 'Content3'
-          #           name: 'Content03'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Content003', name: 'Content003', widget: 'markdown' }
-          #         - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
+
           # - label: 'Stacked  Image Section'
           #   name: 'stacked_image_section'
           #   widget: 'object'
@@ -407,12 +377,7 @@ collections: # A list of collections the CMS should be able to edit
           #           widget: 'object'
           #           fields:
           #             - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-          #         - label: 'OverlapIMG'
-          #           name: 'OverlapImg'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Large Img', name: 'largeimg', widget: 'image' }
-          #             - { label: 'Small Img', name: 'smallimg', widget: 'image' }
+          
           #         - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}      
           # - label: 'Fullwidth Img'
           #   name: 'fullwidth-img'
@@ -428,11 +393,7 @@ collections: # A list of collections the CMS should be able to edit
           #     - { label: "heading", name: "heading", widget: "string"}
           #     - { label: "content left", name: "content1", widget: "markdown"}
           #     - { label: "content right", name: "content2", widget: "markdown"}
-          # - label: 'Featured Text'
-          #   name: 'featured-text'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "text", name: "featuredtext", widget: "markdown"}    
+    
           # - label: 'Image Jumble Grid'
           #   name: 'image-jumble-grid'
           #   widget: 'object'
