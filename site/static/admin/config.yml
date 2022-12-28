@@ -66,18 +66,18 @@ collections: # A list of collections the CMS should be able to edit
                 widget: 'list'
                 types:
                   - label: 'Fulwidth'
-                    name: 'heading'
+                    name: 'heading01'
                     widget: 'list'
                     types:
                       - label: 'Fulwidth'
-                        name: 'heading'
+                        name: 'heading02'
                         widget: 'object'
                         fields:
                           - { label: 'Image', name: 'image', widget: 'image' }
                           - { label: 'caption', name: 'caption', widget: 'string', required: false}
 
                       - label: 'Halfwidth'
-                        name: 'heading'
+                        name: 'heading03'
                         widget: 'object'
                         fields:
                           - { label: 'Image', name: 'image', widget: 'image' }
