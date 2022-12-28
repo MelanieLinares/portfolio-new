@@ -60,7 +60,23 @@ collections: # A list of collections the CMS should be able to edit
             name: 'angled-section'
             widget: 'object'
             fields:
-              - { label: 'Test', name: 'test', widget: 'string' }
+              # - { label: 'Test', name: 'test', widget: 'string' }
+              - label: 'Angled Typed List'
+                      name: 'angled_typed_list'
+                      widget: 'list'
+                      types:
+                        - label: 'First Section'
+                          name: 'first-section'
+                          widget: 'object'
+                          fields:
+                            - { label: 'Test', name: '01test', widget: 'string' }
+                        - label: 'Second Section'
+                          name: 'second-section'
+                          widget: 'object'
+                          fields:
+                            - { label: 'Test', name: '02test', widget: 'string' }
+
+
           - label: 'Blank Section'
             name: 'blank-section'
             widget: 'object'
