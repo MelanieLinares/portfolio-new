@@ -67,8 +67,8 @@ collections: # A list of collections the CMS should be able to edit
                 types:
                   - label: 'Fulwidth'
                     name: 'heading01'
-                    widget: 'list'
-                    types:
+                    widget: 'object'
+                    fields:
                       - label: 'Fulwidth'
                         name: 'heading02'
                         widget: 'object'
