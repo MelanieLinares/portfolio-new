@@ -133,6 +133,34 @@ collections: # A list of collections the CMS should be able to edit
                                     fields:
                                       - { label: 'Content003', name: 'Content003', widget: 'markdown' }
                                   - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                            
+                          - label: 'Pill Featured Text'
+                            name: 'pillfeaturedtext'
+                            widget: 'object'
+                            fields:
+                              - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+                          - label: Icon Cards
+                            name: cards
+                            widget: object
+                            fields: 
+                              - label: 'Icon Cards'
+                                name: 'iconcards'
+                                widget: 'list'
+                                fields: 
+                                  - {label: Image, name: imagecards, widget: image, required: false} 
+                                  - {label: Text, name: textcards, widget: markdown}
+                          - label: 'Overlap Background Img Content'
+                            name: 'overlap_bg_img_content'
+                            widget: 'object'
+                            fields:
+                              - { label: 'Image', name: 'image', widget: 'image' }
+                              - { label: 'Content', name: 'content', widget: 'markdown' }    
+                              - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: false} 
+                          - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                         
+                          - label: 'Fullwidth Img'
+                            name: 'fullwidth-img'
+                            widget: 'object'
+                            fields:
+                              - { label: "image", name: "image", widget: "image"}             
 
 
 
@@ -147,18 +175,9 @@ collections: # A list of collections the CMS should be able to edit
           #       name: 'content_options'
           #       widget: 'list'
           #       types:
-          #         - label: 'Heading'
-          #           name: 'heading'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Heading', name: 'heading', widget: 'string' }
 
-          #         - label: 'Generic Image'
-          #           name: 'generic_image'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Image', name: 'image', widget: 'image' }
-          #             - { label: 'caption', name: 'caption', widget: 'string', required: false} 
+
+ 
 
           #         - label: 'Two col content general'
           #           name: 'Twocol_content'
@@ -173,33 +192,18 @@ collections: # A list of collections the CMS should be able to edit
           #                   widget: 'object'
           #                   fields:
           #                     - { label: 'Content002', name: 'Content002', widget: 'markdown' }                       
-          #                 - label: 'Generic Image'
-          #                   name: 'generic_image'
-          #                   widget: 'object'
-          #                   fields:
-          #                     - { label: 'Image', name: 'image', widget: 'image' }
-          #                     - { label: 'caption', name: 'caption', widget: 'string', required: false}  
+ 
           #             - label: 'Right Two Col Content'
           #               name: 'twocol_content_right'
           #               widget: 'list'
           #               types:
-          #                 - label: 'Pill Featured Text'
-          #                   name: 'pillfeaturedtext'
-          #                   widget: 'object'
-          #                   fields:
-          #                     - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+
           #                 - label: 'Content2'
           #                   name: 'Content02'
           #                   widget: 'object'
           #                   fields:
           #                     - { label: 'Content002', name: 'Content002', widget: 'markdown' }
               
-          #     # - {label: Icon Cards, name: cards, widget: object, fields: [{label: Icon Cards, name: iconcards, widget: list, fields: [{label: Image, name: imagecards, widget: image}, {label: Text, name: textcards, widget: markdown}]}], required: false}
-          #         - label: 'Generic Content'
-          #           name: 'generic_content'
-          #           widget: 'markdown'
-          #           fields:
-          #             - {label: 'content', name: 'genericcontent', widget: 'markdown'}
                    
           #         - label: 'Two Column Text Grid'
           #           name: 'two-col-text-grid'
@@ -212,48 +216,13 @@ collections: # A list of collections the CMS should be able to edit
 
 
   
-          #         - label: 'Pill Featured Text'
-          #           name: 'pillfeaturedtext'
-          #           widget: 'string'
-          #           fields:
-          #               - {label: 'content', name: 'pillfeaturedtext', widget: 'string'} 
-          #         - label: Icon Cards
-          #           name: cards
-          #           widget: object
-          #           fields: 
-          #             - label: 'Icon Cards'
-          #               name: 'iconcards'
-          #               widget: 'list'
-          #               fields: 
-          #                 - {label: Image, name: imagecards, widget: image, required: false} 
-          #                 - {label: Text, name: textcards, widget: markdown}
-          #         - label: 'Overlap Background Img Content'
-          #           name: 'overlap_bg_img_content'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Image', name: 'image', widget: 'image' }
-          #             - { label: 'Content', name: 'content', widget: 'markdown' }    
-          #             - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: true}                          
+ 
+
+                         
                                                                   
-          # - label: 'Generic Image'
-          #   name: 'generic_image'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: 'Image', name: 'image', widget: 'image' }
-          #     - { label: 'caption', name: 'caption', widget: 'string', required: false}              
-          # - label: 'Scroll Image'
-          #   name: 'scroll-image'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: 'Image', name: 'image', widget: 'image' }
-          #     - { label: 'caption', name: 'caption', widget: 'string', required: false}    
-          # - label: 'Overlap Background Img Content'
-          #   name: 'overlap_bg_img_content'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: 'Image', name: 'image', widget: 'image' }
-          #     - { label: 'Content', name: 'content', widget: 'markdown' }    
-          #     - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: false}                        
+             
+ 
+                       
           # - label: 'Two col content general'
           #   name: 'Twocol_content'
           #   widget: 'object'
@@ -268,7 +237,6 @@ collections: # A list of collections the CMS should be able to edit
           #           fields:
           #             - { label: 'Content002', name: 'Content002', widget: 'markdown' }
                                  
-          #         - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
           #         - label: 'Heading3'
           #           name: 'heading3'
           #           widget: 'object'
@@ -280,17 +248,12 @@ collections: # A list of collections the CMS should be able to edit
           #       name: 'twocol_content_right'
           #       widget: 'list'
           #       types:
-          #         - label: 'Pill Featured Text'
-          #           name: 'pillfeaturedtext'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+
           #         - label: 'Content2'
           #           name: 'Content02'
           #           widget: 'object'
           #           fields:
           #             - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-          #         - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
           #         - label: 'Heading3'
           #           name: 'heading3'
           #           widget: 'object'
@@ -308,16 +271,7 @@ collections: # A list of collections the CMS should be able to edit
 
           #     # - {label: Icon Cards, name: cards, widget: object, fields: [{label: Icon Cards, name: iconcards, widget: list, fields: [{label: Image, name: imagecards, widget: image}, {label: Text, name: textcards, widget: markdown}]}], required: false}
 
-          #     - label: Icon Cards
-          #       name: cards
-          #       widget: object
-          #       fields: 
-          #         - label: 'Icon Cards'
-          #           name: 'iconcards'
-          #           widget: 'list'
-          #           fields: 
-          #             - {label: Image, name: imagecards, widget: image, required: false} 
-          #             - {label: Text, name: textcards, widget: markdown}
+
 
 
 
@@ -330,18 +284,13 @@ collections: # A list of collections the CMS should be able to edit
           #           widget: 'object'
           #           fields:
           #             - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-          #         - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
           #         - label: 'Heading3'
           #           name: 'heading3'
           #           widget: 'object'
           #           fields:
           #             - { label: 'Heading03', name: 'heading03', widget: 'string' }
           #          
-          #         - label: 'Pill Featured Text'
-          #           name: 'pillfeaturedtext'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+
 
           # - label: 'Two col icon content'
           #   name: 'Twocol_icon_content'
@@ -357,33 +306,9 @@ collections: # A list of collections the CMS should be able to edit
           #           widget: 'object'
           #           fields:
           #             - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-          #         - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                         
 
-          # - label: 'Stacked  Image Section'
-          #   name: 'stacked_image_section'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "heading05", name: "heading05", widget: "string"}
-          #     - { label: 'Image1', name: 'image1', widget: 'image' }
-          #     - { label: 'caption1', name: 'caption1', widget: 'string', required: false}
-          #     - { label: 'Image2', name: 'image2', widget: 'image' }
-          #     - { label: 'caption2', name: 'caption2', widget: 'string', required: false}  
-          #     - label: 'Display Img Content'
-          #       name: 'display_image_section_content'
-          #       widget: 'list'
-          #       types:
-          #         - label: 'Content2'
-          #           name: 'Content02'
-          #           widget: 'object'
-          #           fields:
-          #             - { label: 'Content002', name: 'Content002', widget: 'markdown' }
-          
-          #         - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}      
-          # - label: 'Fullwidth Img'
-          #   name: 'fullwidth-img'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "image", name: "image", widget: "image"}             
+
+    
           # - label: 'Two Column Text Grid'
           #   name: 'two-col-text-grid'
           #   widget: 'object'
@@ -412,11 +337,7 @@ collections: # A list of collections the CMS should be able to edit
           #   fields:
           #     - { label: "content", name: "colcontent", widget: "markdown"}  
           #     - { label: "image", name: "image", widget: "image"}
-          # - label: 'Pill Featured Text'
-          #   name: 'pillfeaturedtext'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+          
      
      
 
