@@ -60,7 +60,7 @@ collections: # A list of collections the CMS should be able to edit
               - label: 'Fulwidth Components'
                 name: 'heading02'
                 widget: 'object'
-                types:
+                fields:
 
                   - label: 'Content Background'
                     name: 'background'
