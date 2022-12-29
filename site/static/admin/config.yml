@@ -65,28 +65,31 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'list'
             fields:
 
-                  - label: 'Fulwidth Components'
-                    name: 'heading02'
-                    widget: 'list'
-                    types:
-                      - label: 'Basic Content'
-                        name: 'generic_content'
-                        widget: 'object'
-                        fields:
-                          - { label: 'Content', name: 'generic-content', widget: 'markdown' }
-                      - label: 'Captioned Image'
-                        name: 'CaptionImg'
-                        widget: 'object'
-                        fields:
-                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
-                          - { label: 'Img', name: 'captionimg', widget: 'image' }  
-                          - { label: 'Caption', name: 'caption', widget: 'text' }
-                      - label: 'Scroll Image'
-                        name: 'scroll-image'
-                        widget: 'object'
-                        fields:
-                          - { label: 'Image', name: 'image', widget: 'image' }
-                          - { label: 'caption', name: 'caption', widget: 'string', required: false}
+              - label: 'Fulwidth Components'
+                name: 'heading02'
+                widget: 'list'
+                types:
+                  - label: 'Basic Content'
+                    name: 'generic_content'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Content', name: 'generic-content', widget: 'markdown' }
+                  - label: 'Captioned Image'
+                    name: 'CaptionImg'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                      - { label: 'Img', name: 'captionimg', widget: 'image' }  
+                      - { label: 'Caption', name: 'caption', widget: 'text' }
+                  - label: 'Scroll Image'
+                    name: 'scroll-image'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Image', name: 'image', widget: 'image' }
+                      - { label: 'caption', name: 'caption', widget: 'string', required: false}
+
+                      # backspace 2 for below
+
                       - label: 'Stacked  Image Section'
                         name: 'stacked_image_section'
                         widget: 'object'
