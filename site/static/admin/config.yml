@@ -51,13 +51,14 @@ collections: # A list of collections the CMS should be able to edit
         name: 'typed_list'
         widget: 'object'
         fields:
-          # - label: 'Heading'
-          #   name: 'heading'
-          #   widget: 'object'
-          #   fields:
-          #     - { label: 'Heading', name: 'heading', widget: 'string' }
+          - label: 'Basic Content'
+            name: 'generic_content'
+            widget: 'object'
+            fields:
+              - { label: 'Angled Section', name: 'angled-content', widget: 'boolean'}
+              - { label: 'Rectangular Section', name: 'rectangular-content', widget: 'boolean'}
+              - { label: 'Blank Section', name: 'blank-content', widget: 'boolean'}
 
-           
           - label: 'Content Options'
             name: 'content_options'
             widget: 'list'
@@ -159,20 +160,34 @@ collections: # A list of collections the CMS should be able to edit
                         fields:
                           - { label: "image", name: "image", widget: "image"}             
 
-
+                      - label: 'Image Jumble Grid'
+                        name: 'image-jumble-grid'
+                        widget: 'object'
+                        fields:
+                          - { label: "image1", name: "image1", widget: "image"} 
+                          - { label: "image1 caption", name: "image1caption", widget: "string"}  
+                          - { label: "image2", name: "image2", widget: "image"} 
+                          - { label: "image2 caption", name: "image2caption", widget: "string"} 
+                          - { label: "image3", name: "image3", widget: "image", required: false} 
+                          - { label: "image3 caption", name: "image3caption", widget: "string", required: false}  
+                          - { label: "image4", name: "image4", widget: "image", required: false} 
+                          - { label: "image4 caption", name: "image4caption", widget: "string", required: false}
+                          - { label: "image5", name: "image5", widget: "image", required: false}
+                          - { label: "image5 caption", name: "image5caption", widget: "string", required: false}
+                          - { label: "image6", name: "image6", widget: "image", required: false} 
+                          - { label: "image6 caption", name: "image6caption", widget: "string", required: false}
+                          - { label: "image7", name: "image7", widget: "image", required: false} 
+                          - { label: "image7 caption", name: "image7caption", widget: "string", required: false}
+                      - label: 'New Unnamed Section'
+                        name: 'needtonamethis'
+                        widget: 'object'
+                        fields:
+                          - { label: "text", name: "unnamed-text", widget: "markdown"}
+                          - { label: "image", name: "unnamed-image", widget: "image"}
+                          - {label: main unnamed section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
 
 
                            
-          # - label: 'Basic Content'
-          #   name: 'generic_content'
-          #   widget: 'object'
-          #   fields:
-           
-          #     - label: 'Content Options'
-          #       name: 'content_options'
-          #       widget: 'list'
-          #       types:
-
 
  
 
@@ -202,6 +217,15 @@ collections: # A list of collections the CMS should be able to edit
           #                     - { label: 'Content002', name: 'Content002', widget: 'markdown' }
               
                    
+
+
+
+
+
+
+
+
+
           #         - label: 'Two Column Text Grid'
           #           name: 'two-col-text-grid'
           #           widget: 'object'
