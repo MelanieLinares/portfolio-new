@@ -49,24 +49,26 @@ collections: # A list of collections the CMS should be able to edit
 
       - label: 'Typed List'
         name: 'typed_list'
-        widget: 'object'
-        fields:
-          - label: 'Basic Content'
-            name: 'generic_content'
-            widget: 'object'
-            fields:
-              - { label: 'Angled Section', name: 'angled-content', widget: 'boolean'}
-              - { label: 'Rectangular Section', name: 'rectangular-content', widget: 'boolean'}
-              - { label: 'Blank Section', name: 'blank-content', widget: 'boolean'}
+        widget: 'list'
+        types:
 
           - label: 'Content Options'
             name: 'content_options'
-            widget: 'list'
-            types:
+            widget: 'object'
+            fields:
               - label: 'Fulwidth'
                 name: 'heading01'
                 widget: 'object'
                 fields:
+
+                  - label: 'Basic Content'
+                    name: 'generic_content'
+                    widget: 'object'
+                    fields:
+                      - { label: 'Angled Section', name: 'angled-content', widget: 'boolean'}
+                      - { label: 'Rectangular Section', name: 'rectangular-content', widget: 'boolean'}
+                      - { label: 'Blank Section', name: 'blank-content', widget: 'boolean'}
+
                   - label: 'Fulwidth Components'
                     name: 'heading02'
                     widget: 'list'
