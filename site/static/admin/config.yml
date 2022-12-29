@@ -55,7 +55,7 @@ collections: # A list of collections the CMS should be able to edit
           - label: 'Another Section'
             name: 'content_options'
             widget: 'list'
-            fields:
+            types:
 
               - label: 'Fulwidth Components'
                 name: 'heading02'
