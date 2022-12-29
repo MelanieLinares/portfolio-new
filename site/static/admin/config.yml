@@ -73,7 +73,7 @@ collections: # A list of collections the CMS should be able to edit
                   - label: 'Yet Another Section'
                     name: 'content_options'
                     widget: 'list'
-                    fields:
+                    types:
 
                       - label: 'Basic Content'
                         name: 'generic_content'
