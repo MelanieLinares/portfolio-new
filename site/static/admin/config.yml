@@ -50,7 +50,7 @@ collections: # A list of collections the CMS should be able to edit
       - label: 'Sections'
         name: 'typed_list'
         widget: 'object'
-        types:
+        fields:
 
           - label: 'Content Background'
             name: 'background'
