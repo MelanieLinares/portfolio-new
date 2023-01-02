@@ -53,7 +53,7 @@ collections: # A list of collections the CMS should be able to edit
         types:
 
           - label: 'Fullwidth Layout'
-            name: 'heading02'
+            name: 'fullwidth'
             widget: 'object'
             fields:
 
@@ -181,7 +181,300 @@ collections: # A list of collections the CMS should be able to edit
                       - {label: main unnamed section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
 
 
-                        
+          - label: '50-50 Layout'
+            name: '50_50'
+            widget: 'object'
+            fields:
+
+              - {label: "Content Background", name: "background", widget: "select", options: ["Angled Section", "Rectangular Section", "Blank Section"], required: true}
+
+              - label: 'Left Side'
+                name: 'left_side'
+                widget: 'object'
+                fields:
+
+                  - label: 'Section Components'
+                    name: 'content_options'
+                    widget: 'list'
+                    types:
+
+                      - label: 'Basic Content'
+                        name: 'generic_content'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Content', name: 'generic-content', widget: 'markdown' }
+                      - label: 'Captioned Image'
+                        name: 'CaptionImg'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                          - { label: 'Img', name: 'captionimg', widget: 'image' }  
+                          - { label: 'Caption', name: 'caption', widget: 'text' }
+
+                      - label: 'OverlapIMG'
+                        name: 'OverlapImg'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Large Img', name: 'largeimg', widget: 'image' }
+                          - { label: 'Small Img', name: 'smallimg', widget: 'image' }  
+                          - { label: 'Caption', name: 'caption', widget: 'text' }                                                                             
+                      - label: 'Pill Featured Text'
+                        name: 'pillfeaturedtext'
+                        widget: 'object'
+                        fields:
+                          - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+                      - label: Icon Cards
+                        name: cards
+                        widget: object
+                        fields: 
+                          - label: 'Icon Cards'
+                            name: 'iconcards'
+                            widget: 'list'
+                            fields: 
+                              - {label: Image, name: imagecards, widget: image, required: false} 
+                              - {label: Text, name: textcards, widget: markdown}
+                      - label: 'Overlap Background Img Content'
+                        name: 'overlap_bg_img_content'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'Content', name: 'content', widget: 'markdown' }    
+                          - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: false} 
+                      - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                               
+
+              - label: 'Right Side'
+                name: 'right_side'
+                widget: 'object'
+                fields:
+
+                  - label: 'Section Components'
+                    name: 'content_options'
+                    widget: 'list'
+                    types:
+
+                      - label: 'Basic Content'
+                        name: 'generic_content'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Content', name: 'generic-content', widget: 'markdown' }
+                      - label: 'Captioned Image'
+                        name: 'CaptionImg'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                          - { label: 'Img', name: 'captionimg', widget: 'image' }  
+                          - { label: 'Caption', name: 'caption', widget: 'text' }
+
+                      - label: 'OverlapIMG'
+                        name: 'OverlapImg'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Large Img', name: 'largeimg', widget: 'image' }
+                          - { label: 'Small Img', name: 'smallimg', widget: 'image' }  
+                          - { label: 'Caption', name: 'caption', widget: 'text' }                                                                             
+                      - label: 'Pill Featured Text'
+                        name: 'pillfeaturedtext'
+                        widget: 'object'
+                        fields:
+                          - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+                      - label: Icon Cards
+                        name: cards
+                        widget: object
+                        fields: 
+                          - label: 'Icon Cards'
+                            name: 'iconcards'
+                            widget: 'list'
+                            fields: 
+                              - {label: Image, name: imagecards, widget: image, required: false} 
+                              - {label: Text, name: textcards, widget: markdown}
+                      - label: 'Overlap Background Img Content'
+                        name: 'overlap_bg_img_content'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'Content', name: 'content', widget: 'markdown' }    
+                          - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: false} 
+                      - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false} 
+
+                  
+          - label: '3-1 Layout'
+            name: '3_1'
+            widget: 'object'
+            fields:
+
+              - {label: "Content Background", name: "background", widget: "select", options: ["Angled Section", "Rectangular Section", "Blank Section"], required: true}
+
+              - label: '3_leftsection'
+                name: '3left_side'
+                widget: 'object'
+                fields:
+
+                  - label: 'Section Components'
+                    name: 'content_options'
+                    widget: 'list'
+                    types:
+
+                      - label: 'Basic Content'
+                        name: 'generic_content'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Content', name: 'generic-content', widget: 'markdown' }
+                      - label: 'Captioned Image'
+                        name: 'CaptionImg'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                          - { label: 'Img', name: 'captionimg', widget: 'image' }  
+                          - { label: 'Caption', name: 'caption', widget: 'text' }
+
+                      - label: 'OverlapIMG'
+                        name: 'OverlapImg'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Large Img', name: 'largeimg', widget: 'image' }
+                          - { label: 'Small Img', name: 'smallimg', widget: 'image' }  
+                          - { label: 'Caption', name: 'caption', widget: 'text' }                                                                             
+                      - label: 'Pill Featured Text'
+                        name: 'pillfeaturedtext'
+                        widget: 'object'
+                        fields:
+                          - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+                      - label: Icon Cards
+                        name: cards
+                        widget: object
+                        fields: 
+                          - label: 'Icon Cards'
+                            name: 'iconcards'
+                            widget: 'list'
+                            fields: 
+                              - {label: Image, name: imagecards, widget: image, required: false} 
+                              - {label: Text, name: textcards, widget: markdown}
+                      - label: 'Overlap Background Img Content'
+                        name: 'overlap_bg_img_content'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'Content', name: 'content', widget: 'markdown' }    
+                          - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: false} 
+                      - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                               
+
+              - label: '1_rightsection'
+                name: '1right_side'
+                widget: 'object'
+                fields:
+
+                  - label: 'Section Components'
+                    name: 'content_options'
+                    widget: 'list'
+                    types:
+
+                      - label: 'Basic Content'
+                        name: 'generic_content'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Content', name: 'generic-content', widget: 'markdown' }
+                      - label: 'Captioned Image'
+                        name: 'CaptionImg'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                          - { label: 'Img', name: 'captionimg', widget: 'image' }  
+                          - { label: 'Caption', name: 'caption', widget: 'text' }                                                                             
+                      - label: 'Pill Featured Text'
+                        name: 'pillfeaturedtext'
+                        widget: 'object'
+                        fields:
+                          - { label: "text", name: "pillfeaturedtext", widget: "markdown"}                  
+
+          - label: '1-3 Layout'
+            name: '1_3'
+            widget: 'object'
+            fields:
+
+              - {label: "Content Background", name: "background", widget: "select", options: ["Angled Section", "Rectangular Section", "Blank Section"], required: true}
+
+              - label: '1_leftsection'
+                name: '1left_side'
+                widget: 'object'
+                fields:
+
+                  - label: 'Section Components'
+                    name: 'content_options'
+                    widget: 'list'
+                    types:
+
+                      - label: 'Basic Content'
+                        name: 'generic_content'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Content', name: 'generic-content', widget: 'markdown' }
+                      - label: 'Captioned Image'
+                        name: 'CaptionImg'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                          - { label: 'Img', name: 'captionimg', widget: 'image' }  
+                          - { label: 'Caption', name: 'caption', widget: 'text' }                                                                             
+                      - label: 'Pill Featured Text'
+                        name: 'pillfeaturedtext'
+                        widget: 'object'
+                        fields:
+                          - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+              
+              - label: '3_rightsection'
+                name: '3right_side'
+                widget: 'object'
+                fields:
+
+                  - label: 'Section Components'
+                    name: 'content_options'
+                    widget: 'list'
+                    types:
+
+                      - label: 'Basic Content'
+                        name: 'generic_content'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Content', name: 'generic-content', widget: 'markdown' }
+                      - label: 'Captioned Image'
+                        name: 'CaptionImg'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                          - { label: 'Img', name: 'captionimg', widget: 'image' }  
+                          - { label: 'Caption', name: 'caption', widget: 'text' }
+
+                      - label: 'OverlapIMG'
+                        name: 'OverlapImg'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Large Img', name: 'largeimg', widget: 'image' }
+                          - { label: 'Small Img', name: 'smallimg', widget: 'image' }  
+                          - { label: 'Caption', name: 'caption', widget: 'text' }                                                                             
+                      - label: 'Pill Featured Text'
+                        name: 'pillfeaturedtext'
+                        widget: 'object'
+                        fields:
+                          - { label: "text", name: "pillfeaturedtext", widget: "markdown"}
+                      - label: Icon Cards
+                        name: cards
+                        widget: object
+                        fields: 
+                          - label: 'Icon Cards'
+                            name: 'iconcards'
+                            widget: 'list'
+                            fields: 
+                              - {label: Image, name: imagecards, widget: image, required: false} 
+                              - {label: Text, name: textcards, widget: markdown}
+                      - label: 'Overlap Background Img Content'
+                        name: 'overlap_bg_img_content'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Image', name: 'image', widget: 'image' }
+                          - { label: 'Content', name: 'content', widget: 'markdown' }    
+                          - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: false} 
+                      - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                               
+                                              
 
  
 
