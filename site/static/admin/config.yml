@@ -73,7 +73,7 @@ collections: # A list of collections the CMS should be able to edit
                     name: 'CaptionImg'
                     widget: 'object'
                     fields:
-                      - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                      - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: false}
                       - { label: 'Img', name: 'captionimg', widget: 'image' }  
                       - { label: 'Caption', name: 'caption', widget: 'text' }
                   - label: 'Scroll Image'
@@ -207,7 +207,7 @@ collections: # A list of collections the CMS should be able to edit
                         name: 'CaptionImg'
                         widget: 'object'
                         fields:
-                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: false}
                           - { label: 'Img', name: 'captionimg', widget: 'image' }  
                           - { label: 'Caption', name: 'caption', widget: 'text' }
 
@@ -261,7 +261,7 @@ collections: # A list of collections the CMS should be able to edit
                         name: 'CaptionImg'
                         widget: 'object'
                         fields:
-                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: false}
                           - { label: 'Img', name: 'captionimg', widget: 'image' }  
                           - { label: 'Caption', name: 'caption', widget: 'text' }
 
@@ -323,7 +323,7 @@ collections: # A list of collections the CMS should be able to edit
                         name: 'CaptionImg'
                         widget: 'object'
                         fields:
-                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: false}
                           - { label: 'Img', name: 'captionimg', widget: 'image' }  
                           - { label: 'Caption', name: 'caption', widget: 'text' }
 
@@ -377,7 +377,7 @@ collections: # A list of collections the CMS should be able to edit
                         name: 'CaptionImg'
                         widget: 'object'
                         fields:
-                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: false}
                           - { label: 'Img', name: 'captionimg', widget: 'image' }  
                           - { label: 'Caption', name: 'caption', widget: 'text' }                                                                             
                       - label: 'Pill Featured Text'
@@ -412,7 +412,7 @@ collections: # A list of collections the CMS should be able to edit
                         name: 'CaptionImg'
                         widget: 'object'
                         fields:
-                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: false}
                           - { label: 'Img', name: 'captionimg', widget: 'image' }  
                           - { label: 'Caption', name: 'caption', widget: 'text' }                                                                             
                       - label: 'Pill Featured Text'
@@ -440,7 +440,7 @@ collections: # A list of collections the CMS should be able to edit
                         name: 'CaptionImg'
                         widget: 'object'
                         fields:
-                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: true}
+                          - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: false}
                           - { label: 'Img', name: 'captionimg', widget: 'image' }  
                           - { label: 'Caption', name: 'caption', widget: 'text' }
 
