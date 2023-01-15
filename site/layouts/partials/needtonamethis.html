@@ -1,0 +1,31 @@
+    <div class="{{.background}}">
+
+      {{ if .unnamed_text }}
+      {{ .unnamed_text | markdownify }}
+      {{ end }}
+
+      <img alt="tbd" src="{{ .unnamed_image }}">
+    
+    <div class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8 lg:flex">
+
+{{ range .introw.blurbsw }}
+
+<div class="relative icon-with-content">
+  <div class="absolute flex items-center justify-center">
+<img src="{{ .imagew }}" alt="" class="center db mb3 icon">
+  </div>
+<div class="mt-2 text-base text-gray-500 icon-content">
+  {{ .textw | markdownify }}
+</div>
+</div>
+
+{{ end }}
+
+<!-- {{ if eq .type "generic_content" }}
+    {{.generic_content | markdownify}}
+{{ end }} -->
+      
+
+
+        </div>
+      </div>

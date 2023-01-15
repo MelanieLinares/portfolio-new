@@ -21,5 +21,14 @@
 <!-- caption: yes generic image
 image: img/team.png -->
 
+<style>
+    .caption:before, .img-w-caption .caption:before {
+        background: url('img/obtuse-arrow.svg');
+        background-repeat: no-repeat;
+    }
+</style>
+
 <img src="{{ .image }}" alt="">
-<em>{{.caption }}</em>
+{{ if .caption }}
+<div class="caption"><em>{{.caption }}</em></div>
+{{ end }}

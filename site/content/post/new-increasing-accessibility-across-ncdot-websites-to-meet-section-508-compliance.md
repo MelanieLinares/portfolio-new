@@ -15,6 +15,7 @@ tags:
 technology:
   - HTML/CSS
 duration: TBD
+theme: pink
 introheading: Creating a plan for usability and accessibility
 introbody: >-
   The North Carolina Department of Transportation (NCDOT) had a new website
@@ -27,12 +28,12 @@ introbody: >-
 
   **The goal:** greater than 80
 typed_list:
-  - type: 50_50
-    background: Blank Section
+  - type: fifty_fifty
+    background: Blank
     left_side:
       content_options:
         - type: generic_content
-          generic-content: >-
+          generic_content: >-
             ## Why the concern over accessibility?
 
 
@@ -70,14 +71,14 @@ typed_list:
     right_side:
       content_options:
         - type: CaptionImg
-          captionimg: img/design-stats.gif
+          image: img/design-stats.gif
           caption: "The need for accessibility happens often later in life, but we should
             consider users of all needs and ages "
   - type: fullwidth
-    background: Blank Section
+    background: Blank
     content_options:
       - type: generic_content
-        generic-content: >-
+        generic_content: >-
           ## Conducting the accessibility audit
 
 
@@ -90,9 +91,6 @@ typed_list:
         display_image_section_content:
           - type: Content02
             Content002: >-
-              W﻿TH is "Content 2"? HEY!! 
-
-
               ### Establishing a baseline with automatic testing
 
 
@@ -118,25 +116,22 @@ typed_list:
               * Color contrast tested
 
               * Code inspection, including JavaScript
-        heading05: THIS SHOULD BE OPTIONAl
-  - type: 50_50
-    background: Angled Section
+              
+  - type: fifty_fifty
+    background: Angled
     left_side:
       content_options:
         - type: generic_content
-          generic-content: "Prioritizing the findings
+          generic_content: >-
+            ## Prioritizing the findings
 
-
-            Focus on components
-
-
-            \r
+            ### Focus on components
 
             Components associated with key functionality such as
             date pickers and dynamically populated dropdowns received
             prioritization. This also included custom controls which have a
             native alternative that is often replaced in favor of less
-            accessible, but visually branded elements.\r\n"
+            accessible, but visually branded elements.
         - type: introw
           blurbsw:
             - imagew: img/people.svg
@@ -153,22 +148,18 @@ typed_list:
       content_options:
         - type: CaptionImg
           caption: >-
-            HEY!! Again the 50-50 layout needs the ability for a stacked image
-            thing
-
-
             Horizontal alerts within the header and pop alerts provided important information to users visually and needed ARIA live region roles to share this information with users not accessing the site visually.
 
 
             Many pages included repeatable card components
-          captionimg: img/insight2.jpg
+          image: img/insight2.jpg
   - type: fullwidth
-    background: Blank Section
+    background: Blank
     content_options:
       - type: fullwidth-img
         image: img/header.jpg
       - type: generic_content
-        generic-content: >-
+        generic_content: >-
           ### Header navigation was tested for keyboard operability, clarity of
           functionality, and color contrast
 
@@ -210,7 +201,7 @@ typed_list:
           image content without the background
         smallimg: img/Group 531.png
       - type: generic_content
-        generic-content: >-
+        generic_content: >-
           Repeatable card components were tested for structure, image, and link
           names, as well as tested for duplicated information
 
@@ -230,7 +221,7 @@ typed_list:
       - type: fullwidth-img
         image: img/dialog.jpg
       - type: generic_content
-        generic-content: >-
+        generic_content: >-
           *The dialogs included those which appear on the first load and those
           initiated by a user. Third-party components consisted of datepicker,
           map, and auto-complete search widgets.*

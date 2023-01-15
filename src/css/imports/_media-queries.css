@@ -313,11 +313,11 @@
 
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1536px) {
 
     h1 b {
         word-spacing: -.95rem!important;
-        font-size: larger;
+        /* font-size: larger; */
     }
 
     .text-4xl {

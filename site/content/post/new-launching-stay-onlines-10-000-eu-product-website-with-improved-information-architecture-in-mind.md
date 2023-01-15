@@ -13,7 +13,8 @@ tags:
   - cross-browser
 technology:
   - HTML/CSS
-duration: TBD
+duration: tbd
+theme: blue
 introheading: Creating a plan to help online consumers find products quickly and globally
 introbody: >-
   In 2015 Stay Online made the transition from a U.S. business to an
@@ -30,12 +31,12 @@ introbody: >-
 
   Prioritize content and global UX patterns to create a site that increase sales and meets international standards.
 typed_list:
-  - type: 50_50
-    background: Blank Section
+  - type: fifty_fifty
+    background: Blank
     left_side:
       content_options:
         - type: generic_content
-          generic-content: >-
+          generic_content: >-
             ## Internationalization and globalization was at the heart of
             product strategy
 
@@ -67,16 +68,16 @@ typed_list:
           caption: Day 1 began with meetings--lots of meetings. Stay Online brought me
             onto the EU launch team due to my familiarity with the U.S. website
             and my experience with responsive development
-          captionimg: img/Image 46.png
+          image: img/Image 46.png
   - type: fullwidth
-    background: Rectangular Section
+    background: Rectangular
     content_options:
       - type: needtonamethis
-        unnamed-text: |-
+        unnamed_text: |-
           ## A new market means new users and expectations
 
           ### What do users of this new website need?
-        unnamed-image: img/sample2.png
+        unnamed_image: img/sample2.png
         introw:
           blurbsw:
             - imagew: img/blue-triangle.png
@@ -91,18 +92,18 @@ typed_list:
                 regulations
 
                 * Ability to find products quickly
-  - type: 50_50
-    background: Blank Section
+  - type: fifty_fifty
+    background: Blank
     left_side:
       content_options:
         - type: CaptionImg
-          captionimg: img/eu-responsive.gif
+          image: img/eu-responsive.gif
           caption: TBD about the wireframe (also I need to add "Stacked Image" to the Left
             and Right for this component)
     right_side:
       content_options:
         - type: generic_content
-          generic-content: >-
+          generic_content: >-
             ### Wireframes and early iterations
 
 
@@ -117,12 +118,12 @@ typed_list:
 
 
             Early ideas that did not work and did not make it into final designs include a horizontal top menu for products, no sidebar layout, and homepage content consensus.
-  - type: 50_50
-    background: Angled Section
+  - type: fifty_fifty
+    background: Angled
     left_side:
       content_options:
         - type: generic_content
-          generic-content: >-
+          generic_content: >-
             ### Major navigation changes
 
 
@@ -139,14 +140,14 @@ typed_list:
     right_side:
       content_options:
         - type: CaptionImg
-          captionimg: img/meeting.jpg
+          image: img/meeting.jpg
           caption: TBD about the wireframe
-  - type: 50_50
-    background: Rectangular Section
+  - type: fifty_fifty
+    background: Rectangular
     left_side:
       content_options:
         - type: generic_content
-          generic-content: >-
+          generic_content: >-
             ### Search functionality and results page changes
 
 
@@ -160,14 +161,14 @@ typed_list:
     right_side:
       content_options:
         - type: CaptionImg
-          captionimg: img/ncdot-alert.png
+          image: img/ncdot-alert.png
           caption: TBD about the image
-  - type: 50_50
-    background: Rectangular Section
+  - type: fifty_fifty
+    background: Rectangular
     left_side:
       content_options:
         - type: generic_content
-          generic-content: >-
+          generic_content: >-
             ### Product and category page changes
 
 
@@ -181,6 +182,6 @@ typed_list:
     right_side:
       content_options:
         - type: CaptionImg
-          captionimg: img/insight1.jpg
+          image: img/insight1.jpg
           caption: TBD for image
 ---

@@ -1,28 +1,42 @@
 
-{{ range .blurbcards }}
- 
+<!-- <div class="max-w-7xl mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl fullwidth yellow card-list"> -->
+<div class="fullwidth yellow card-list">
+  {{ if eq .process true }}
+<!-- <b>process</b> -->
+<ol class="grid gap-4 row-gap-5 sm:grid-cols-2 lg:grid-cols-3 process">
+  {{ end }}
 
-<div class="max-w-7xl mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl fullwidth yellow card-list">
-  <div class="grid gap-4 row-gap-5 sm:grid-cols-2 lg:grid-cols-3">
-    
-    
-  <div class="flex flex-col justify-between p-5 border rounded shadow-sm">
+  {{ if eq .process false }}
+  <ul class="grid gap-4 row-gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    {{ end }}
+     
+    {{ range .blurbcards }}
+  <li class="flex p-5 border rounded shadow-sm">
     <div class="max-w-sm w-full lg:max-w-full lg:flex">
+      {{ if .imagecards }}
       <div class="flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden">
-        <img src="https://cdn-icons-png.flaticon.com/128/1570/1570100.png" data-src="https://cdn-icons-png.flaticon.com/128/1570/1570100.png" alt="Leader " title="Leader " width="64" height="64" class="lzy lazyload--done" srcset="https://cdn-icons-png.flaticon.com/128/1570/1570100.png 4x">
+        <img src="{{.imagecards}}" alt="" width="64" height="64" class="lzy lazyload--done">
       </div>
+      {{end}}
       <div class="bg-white rounded-b lg:rounded-b-none lg:rounded-r pl-4 flex flex-col justify-between leading-normal">
         <div class="">
           {{ .textcards | markdownify }}
         </div>
       </div>
     </div>
-  </div>
+  </li>
+{{ end }}
+
+{{ if eq .process true }}
+</ol>
+{{ end }}
+
+{{ if eq .process false }}
+</ul>
+  {{ end }}
 
 
-</div>
       
 </div>
 
 
-{{ end }}

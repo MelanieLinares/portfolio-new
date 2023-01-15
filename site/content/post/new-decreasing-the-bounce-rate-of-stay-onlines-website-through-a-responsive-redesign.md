@@ -14,6 +14,7 @@ tags:
 technology:
   - HTML/CSS
 duration: tbd
+theme: blue
 introheading: Creating a plan to decrease mobile bounce rate
 introbody: >-
   Stay Online is a power cord manufacturer and distributor, known for having the
@@ -41,7 +42,7 @@ introbody: >-
   (note: mobile was defined as less than 1024px screen size during the design sprint)
 typed_list:
   - type: fullwidth
-    background: Blank Section
+    background: Blank
     content_options:
       - type: overlap_bg_img_content
         image: img/sample.png
@@ -59,9 +60,11 @@ typed_list:
           * The branding system needed updating to incorporate accessible colors for web and print
 
           * Code refactoring is needed to remove a table-based layout and poorly formed HTML
+        img_on_right: false
       - type: needtonamethis
-        unnamed-text: "### Three main types of users were identified"
-        unnamed-image: img/sample2.png
+        unnamed_text: |-
+          ### Three main types of users were identified
+        unnamed_image: img/sample2.png
         introw:
           blurbsw:
             - textw: >-
@@ -80,15 +83,15 @@ typed_list:
                 These are internal and external Stay Online employees working on multiple devices, including tablets when at trade shows. They need the website to work fast and reliably on low data connections.
               imagew: img/scroll.svg
       - type: generic_content
-        generic-content: I worked with Marketing and Sales managers to identify business
+        generic_content: I worked with Marketing and Sales managers to identify business
           needs for a new homepage and discovered that a major problem was that
           a large number of customers were unable to order products on mobile
           devices. Responsive design presented an exciting opportunity.
   - type: fullwidth
-    background: Angled Section
+    background: Angled
     content_options:
       - type: generic_content
-        generic-content: >-
+        generic_content: >-
           ## Make it work! Make it compatible! Make it progressively enhanced!
 
 
@@ -114,10 +117,10 @@ typed_list:
 
           Many users complained they could not see the content because it was either hidden, off-screen, or required scrolling horizontally on mid-size and small mobile devices. Users complained they were having difficulty tabbing through web content formatted with tables. Keyboard focus needed to be implemented more consistently or hidden. This was directly causing rampant accessibility issues.
   - type: fullwidth
-    background: Blank Section
+    background: Blank
     content_options:
       - type: generic_content
-        generic-content: >-
+        generic_content: >-
           ## Rethinking the layout through research
 
 
@@ -125,7 +128,7 @@ typed_list:
       - type: fullwidth-img
         image: img/moodboard-placeholder.jpg
       - type: generic_content
-        generic-content: >-
+        generic_content: >-
           ### Client approval
 
 
@@ -137,10 +140,10 @@ typed_list:
 
           A/B testing was completed to determine whether a 3 or 2 column layout resulted in a better call-to-action response. Additionally testing was conducted regarding removing teh left side navigation in favor of a full-width top menu with drop downs. Despite positive data from new users the negative data from existing users resulted in the decision to keep the side navigation.
   - type: fullwidth
-    background: Blank Section
+    background: Blank
     content_options:
       - type: generic_content
-        generic-content: >-
+        generic_content: >-
           ### Content-first:
 
 
@@ -159,10 +162,10 @@ typed_list:
         caption: tbd
         image: img/Group 538.png
   - type: fullwidth
-    background: Rectangular Section
+    background: Rectangular
     content_options:
       - type: generic_content
-        generic-content: >-
+        generic_content: >-
           ## Optimizing the navigation and redesigning the homepage
 
 
@@ -180,12 +183,12 @@ typed_list:
         image3: img/grayscale-laptop.gif
         image4: img/stayonline-eu-design.jpg
         type: image-jumble-grid
-  - type: 50_50
-    background: Blank Section
+  - type: fifty_fifty
+    background: Blank
     left_side:
       content_options:
         - type: generic_content
-          generic-content: >-
+          generic_content: >-
             ## Accessible Strategy
 
 
@@ -197,27 +200,27 @@ typed_list:
 
             * Previous code used floats and absolute positioning to change the logical order of content which negatively affects keyboard users
 
-            * “Divitus” (the overuse of the <div> tag) was combated by using <header>, <nav>, <aside>, <section>, <footer>, and other HTML elements
+            * “Divitus” (the overuse of the `<div>` tag) was combated by using `<header>`, `<nav>`, `<aside>`, `<section>`, `<footer>`, and other HTML elements
 
-            * Lists were re-written to use HTML <ul> and <ol> versus implicit lists so they could be utilized by a screen reader
+            * Lists were re-written to use HTML `<ul>` and `<ol>` versus implicit lists so they could be utilized by a screen reader
 
             * Table usage was changed from layout to data presentation (comparison or analysis) when relevant.
     right_side:
       content_options:
         - type: generic_content
-          generic-content: >-
+          generic_content: >-
             ### Tweaking the color palette to meet accessible color contrast
             guidelines
 
             \[screenshots of old design showing inaccessible colors and contrast]
         - type: CaptionImg
-          captionimg: img/stayonline-us-branding.jpg
+          image: img/stayonline-us-branding.jpg
           caption: ratio...
   - type: fullwidth
-    background: Blank Section
+    background: Blank
     content_options:
       - type: generic_content
-        generic-content: "## Comparing the results"
+        generic_content: "## Comparing the results"
       - image5caption: caption
         image4caption: caption
         image3caption: caption

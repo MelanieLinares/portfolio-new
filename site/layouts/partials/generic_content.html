@@ -1,31 +1,50 @@
-<section class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8 lg:flex parent-outer" aria-labelledby="mainheading">
-<div class="generic-content max-w-7xl mx-auto">
+<section class="{{.background}}" aria-labelledby="heading03">
+    <div class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8 lg:flex parent-outer">
+<div class="generic-content">
 
     {{ range .content_options }}
 
-        {{ if eq .type "generic_image" }}
-            {{ partial "generic_image" . }}
+        {{ if eq .type "heading3" }}
+            <h2 id="heading03">{{.heading03}}</h2>
         {{ end }}
 
         {{ if eq .type "generic_content" }}
-            {{ .genericcontent | markdownify }}
+            {{.generic_content | markdownify}}
         {{ end }}
 
-        {{ if eq .type "two-col-text-grid" }}
-            {{ partial "two-col-text-grid" . }}
+        {{ if eq .type "CaptionImg" }}
+            {{ partial "generic_image" . }}
         {{ end }}
 
+         {{ if eq .type "cards" }}
+            {{ partial "icon-cards" . }}
+        {{ end }}
+        
         {{ if eq .type "overlap_bg_img_content" }}
-        {{ partial "overlap_bg_img_content" . }}
+            {{ partial "overlap_bg_img_content" . }}
+        {{ end }}
+
+        {{ if eq .type "needtonamethis" }}
+            {{ partial "needtonamethis" . }}
+        {{ end }}
+
+        {{ if eq .type "display_image_section" }}
+            {{ partial "display_image_section" . }}
+        {{ end }}        
+
+        {{ if eq .type "fullwidth-img" }}
+            {{ partial "fullwidth-img" . }}
+        {{ end }}
+
+        {{ if eq .type "scroll-image" }}
+            {{ partial "scroll-image" . }}
+        {{ end }}
+
+        {{ if eq .type "image-jumble-grid" }}
+            {{ partial "image-jumble-grid" . }}
+        {{ end }}
+
     {{ end }}
 
-    {{ if eq .type "Twocol_content" }}
-                    {{ partial "Twocol_content" . }}
-                {{ end }}
-        
-    {{end}}
-
-</div>
+</div></div>
 </section>
-
-<!-- {{ partial "icon-media-block" .introw }} -->

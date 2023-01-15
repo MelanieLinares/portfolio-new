@@ -1,10 +1,17 @@
-<section class="display_image_section parent-outer" aria-labelledby="heading-05">
+<div class="display_image_section parent-outer" aria-labelledby="heading-05">
 
   <div class="max-w-7xl mx-auto">
   <div class="content-850">
 
 
+    {{ if eq .type "display_image_section" }}
+
+    {{ if eq .type "heading05"}} 
+    <b>remove this - h5</b> 
     <h2 id="heading-05">{{.heading05}}</h2>
+    {{ end }}
+
+    {{ end }}
 
 
 

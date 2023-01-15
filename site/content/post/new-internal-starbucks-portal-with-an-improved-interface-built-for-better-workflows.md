@@ -15,6 +15,7 @@ tags:
 technology:
   - HTML/CSS
 duration: tbd
+theme: green
 introheading: Updating the dashboard UI to lead to a better management workflow
 introbody: >-
   Managing data can be a pain if the application does not give easy access to
@@ -22,16 +23,14 @@ introbody: >-
   and TypeScript.
 
 
-
-
   The business learned clients needed to easily see percentages of funding and re-adjust portfolios, calculations, and cross-portfolio assets within portfolios. Concerns were raised to achieve the goal with fewer clicks. A main dashboard would allow direct adjustments as well as portfolio-specific views.
 typed_list:
-  - type: 50_50
-    background: Blank Section
+  - type: fifty_fifty
+    background: Blank
     left_side:
       content_options:
         - type: generic_content
-          generic-content: >-
+          generic_content: >-
             ## Meeting with the team to workshop improvements
 
 
@@ -56,34 +55,22 @@ typed_list:
     right_side:
       content_options:
         - type: CaptionImg
-          caption: "Freshly ground and brewed caramel coffee to start the virtual meeting.
-
-
-            Photo by <a
-            href=\"https://unsplash.com/@cwmonty?utm_source=unsplash&utm_medium\
-            =referral&utm_content=creditCopyText\">Chris Montgomery</a> on <a
-            href=\"https://unsplash.com/photos/smgTvepind4?utm_source=unsplash&\
-            utm_medium=referral&utm_content=creditCopyText\">Unsplash</a>
-
-            \  "
-          captionimg: img/chris-montgomery-smgtvepind4-unsplash.jpg
-  - type: 1_3
-    background: Rectangular Section
-    1left_side:
+          caption: "Freshly ground and brewed caramel coffee to start the virtual meeting."
+          image: img/chris-montgomery-smgtvepind4-unsplash.jpg
+  - type: one_three
+    background: Rectangular
+    oneleft_side:
       content_options:
         - type: CaptionImg
           arrow_on_right: true
           caption: >-
             While the teams worked remotely we connected daily outside of
             stand-up meetings.
-
-
-            Photo by <a href="https://unsplash.com/@marvelous?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marvin Meyer</a> on <a href="https://unsplash.com/photos/SYTO3xs06fU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-          captionimg: img/marvin-meyer-syto3xs06fu-unsplash-1-.jpg
-    3right_side:
+          image: img/marvin-meyer-syto3xs06fu-unsplash-1-.jpg
+    threeright_side:
       content_options:
         - type: generic_content
-          generic-content: "## Working with the UX team to refine UI
+          generic_content: "## Working with the UX team to refine UI
 
 
             When multiple teams work together, several perspectives
@@ -98,10 +85,6 @@ typed_list:
             revenue is divided and utilized?
 
 
-            \r
-
-            \r
-
             Existing APIs for each portfolio were causing issues for
             users making changes due to calculations occurring after form
             submission and only within a current portfolio set. If revenue
@@ -110,7 +93,7 @@ typed_list:
             portfolio or a sub-portfolio would cause the main portfolio to
             exceed 100%. The big question was how should errors be handled
             within the UI and within the API? Could and should errors be
-            avoided?\r\n"
+            avoided?"
         - type: introw
           blurbsw:
             - imagew: img/wireframe-icon-cropped.png
@@ -126,12 +109,12 @@ typed_list:
         - type: pillfeaturedtext
           pillfeaturedtext: Accessibility is not just for public-facing applications. It
             was important for me to emphasize this to the team
-  - type: 50_50
-    background: Blank Section
+  - type: fifty_fifty
+    background: Blank
     left_side:
       content_options:
         - type: generic_content
-          generic-content: >-
+          generic_content: >-
             ## Building the components according to atomic design
 
 
@@ -147,6 +130,5 @@ typed_list:
     right_side:
       content_options:
         - type: CaptionImg
-          caption: <a href="https://storyset.com/web">Web illustrations by Storyset</a>
-          captionimg: img/posts-bro-cropped.png
+          image: img/posts-bro-cropped.png
 ---

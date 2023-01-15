@@ -14,6 +14,7 @@ tags:
 technology:
   - HTML/CSS
 duration: TBD
+theme: pink
 introheading: Identifying ways to optimize a legacy internal DMV process digitally
 introbody: "The North Carolina Department of Transportation (NCDOT) on behalf of
   the North Carolina Driver Motor Vehicles (NCDMV) assigned a team to work
@@ -31,10 +32,10 @@ introbody: "The North Carolina Department of Transportation (NCDOT) on behalf of
   that integrated into the existing design system\r\n"
 typed_list:
   - type: fullwidth
-    background: Blank Section
+    background: Blank
     content_options:
       - type: generic_content
-        generic-content: >-
+        generic_content: >-
           ## Why the new portal?
 
 
@@ -43,7 +44,8 @@ typed_list:
 
           **The new portal would be needed to:**
       - type: cards
-        iconcards:
+        process: false
+        blurbcards:
           - imagecards: img/coffee.svg
             textcards: Monitor successful use of the ignition interlock device
           - imagecards: img/idea.png
@@ -54,7 +56,7 @@ typed_list:
   - type: fullwidth
     content_options:
       - type: generic_content
-        generic-content: >-
+        generic_content: >-
           ## Exploring what is required to deliver the process according to user
           needs
 
@@ -118,15 +120,15 @@ typed_list:
           project outline, and limitations. A comically-sized stack of paper was
           placed on my desk and I spent the following day going through it with
           a highlighter and outline the structure on a whiteboard.
-        caption2: HEY!! You should add Stack Image component to the 50-50 layout
+        caption2: HEY!! I added Stack Image component to the fifty_fifty layout
         image2: img/laptop.gif
         image1: img/Rectangle 1.png
-    background: Angled Section
+    background: Angled
   - type: fullwidth
-    background: Blank Section
+    background: Blank
     content_options:
       - type: generic_content
-        generic-content: |-
+        generic_content: |-
           ## Wireframes and high fidelity prototype iterations
 
           ### The team identified four main views:
@@ -145,7 +147,7 @@ typed_list:
       - type: scroll-image
         image: img/ncdot-wireframe.png
       - type: generic_content
-        generic-content: >-
+        generic_content: >-
           H﻿EY!! You are missing one of the grid sections that has a caption of
           the right and other content on the left
 
@@ -167,10 +169,10 @@ typed_list:
 
           * Ability to pin a table column when a page utilized horizontal scrolling
   - type: fullwidth
-    background: Rectangular Section
+    background: Rectangular
     content_options:
       - type: generic_content
-        generic-content: >-
+        generic_content: >-
           ## Profile data and management
 
 
@@ -185,10 +187,10 @@ typed_list:
 
           Deleted data would be removed from the main API and added to a separate API for deleted accounts. This delete API would auto remove data after a certain amount of time, according to state regulations. This process would allow users deleted in error to be reinstated.
   - type: fullwidth
-    background: Blank Section
+    background: Blank
     content_options:
       - type: generic_content
-        generic-content: >-
+        generic_content: >-
           ## Reports and custom filtering
 
 

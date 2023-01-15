@@ -1,0 +1,54 @@
+    <section class="{{.background}}" aria-labelledby="heading03">
+    
+    <div class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8 lg:flex">
+
+    <div class="w-full mt-4 lg:mt-0 lg:w-1/2">
+
+{{ range .left_side.content_options }}
+
+{{ if eq .type "heading3" }}
+    <h2 id="heading03">{{.heading03}}</h2>
+{{ end }}
+
+{{ if eq .type "generic_content" }}
+    {{.generic_content | markdownify}}
+{{ end }}
+
+{{ if eq .type "introw" }}
+{{ partial "icon-media-block" . }}
+{{ end }}  
+
+{{ if eq .type "CaptionImg" }}
+    <div>{{ partial "generic_image" . }}</div>
+{{ end }}
+
+
+{{ end }}
+
+      </div>
+
+      <div class="w-full text-top lg:text-left lg:w-1/2">
+        {{ range .right_side.content_options }}
+
+        {{ if eq .type "heading3" }}
+            <h2 id="heading03">{{.heading03}}</h2>
+        {{ end }}
+
+        {{ if eq .type "CaptionImg" }}
+            <div class="img-w-caption">{{ partial "generic_image" . }}</div>
+        {{ end }}    
+
+        {{ if eq .type "generic_content" }}
+            {{.generic_content | markdownify}}
+        {{ end }}
+
+        {{ if eq .type "introw" }}
+        {{ partial "icon-media-block" . }}
+      {{ end }}      
+        
+        {{ end }}
+        
+          </div>
+
+        </div>
+     </section>
