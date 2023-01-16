@@ -29,7 +29,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "TitleOutline*", name: "titlenormal", widget: "string", required: true}
       - {label: "Hero Image*", name: "preview", widget: "image", required: true}
       - {label: "Legal Msg", name: "notice", widget: "select", options: 
-        ["For legal reasons images of work completed cannot be shown", "For legal reasons some images are representational only or blurred", "For legal reasons images of work completed cannot be shown"], required: false}
+        ["For legal reasons images of work completed cannot be shown", "For legal reasons some images are representational only or blurred", "For legal reasons I am not able to show project details. I am able to discuss the generalized process and am available to discuss in more detail upon request."], required: false}
       - {label: "Project Start Date", name: "date", widget: "datetime"}
       - {label: "Project End Date", name: "newdate", widget: "datetime"}
       - {label: "Client", name: "client", widget: "string", required: false}
@@ -38,8 +38,7 @@ collections: # A list of collections the CMS should be able to edit
         ["Software Engineer", "Senior Software Engineer", "UI Developer", Accessibility Specialist", "Front-End Web Developer"], required: false}
       - {label: 'Tags*', name: 'tags', widget: 'select', options: 
         ['accessibility', 'cross-browser', 'javascript', 'mentorship', '.net mvc', 'react', 'sharepoint', 'typescript', 'vue'], multiple: true }
-      - {label: 'Technology Stack*', name: 'technology', widget: 'select', options: 
-        ['adobe xd', 'ASP.NET MVC', 'AxE DevTools', 'balsamiq', 'HTML/CSS', 'HTML, SCSS', 'Javascript', 'NVDA', 'React', 'Sharepoint', 'SharePoint SPFx (Framework)', 'SharePoint Workbench', 'TalkBack', 'Typescript', 'VoiceOver', 'vue', 'WAVE'], multiple: true }
+      - {label: 'Role details: 'technology', widget: 'string', required: true }
       - {label: "Duration*", name: "duration", widget: "text"}
       - {label: "Intro Heading*", name: "introheading", widget: "string"}
       - {label: "IntroBody*", name: "introbody", widget: "markdown"}

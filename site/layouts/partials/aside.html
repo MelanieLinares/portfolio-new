@@ -6,50 +6,60 @@
       </li>
       
       <li>
-        <b>CLIENT</b> {{ .client }}
+        <b>Client</b> {{ .client }}
       </li>
       <details role="listitem">
       <summary role="heading" aria-level="2">Project Details</summary>
       <ul>
+        <li>
+          <b>Role</b> {{ .role }}
+          <br/>
+        {{ if .technology }}
+          <em>{{ .technology }}</em>
+        {{ end }}
+        </li>
+        {{ if .team }}
+        <li>
+          <b>Team</b> {{ .team }} and myself      
+        </li>
+        {{else}}
+        <li>
+          <b>Team</b> Independent project       
+        </li>
+        {{ end}}
       <li>
-        <b>ROLE</b> {{ .role }}
-      </li>
-      <!-- {{ if .technology }}
-      <li>
-        <b>TECHNOLOGY STACK</b> 
-        <ul>{{ range .technology }}
-        <li>{{ . }}</li>
-      {{ end }}</ul>
-      </li>
-      {{ end }} -->
-      <li>
-        <b>DATES</b> 
-        {{ .Date.Format "Jan 2, 2006" }} -
+        <b>Dates</b> 
+        {{ .Date.Format "January" }} -
             {{ with .newdate }}
-            {{ dateFormat "Jan 2 2006" . }}
-        {{ end }}| {{ .duration }}
+            {{ dateFormat "January 2006" . }}
+        {{ end }}| <em>{{ .duration }}</em>
       </li>
       </ul>
     </details>
     <li>
-      <b>ROLE</b> {{ .role }}
+      <b>Role</b> {{ .role }}
+      <br/>
+    {{ if .technology }}
+      <em>{{ .technology }}</em>
+    {{ end }}
     </li>
-    <!-- {{ if .technology }}
+    {{ if .team }}
     <li>
-      <b>TECHNOLOGY STACK</b> 
-      <ul>{{ range .technology }}
-      <li>{{ . }}</li>
-    {{ end }}</ul>
+      <b>Team</b> {{ .team }} and myself       
     </li>
-    {{ end }} -->
+    {{else}}
     <li>
-      <b>DATES</b> 
-      {{ .Date.Format "Jan 2, 2006" }} -
+      <b>Team</b> Independent project       
+    </li>
+    {{ end}}
+    <li>
+      <b>Dates</b> 
+      {{ .Date.Format "January" }} -
           {{ with .newdate }}
-          {{ dateFormat "Jan 2 2006" . }}
+          {{ dateFormat "January 2006" . }}
       {{ end }}
       <br/>
-      ({{ .duration }})
+      <em>({{ .duration }})</em>
     </li>
     </ul>   
  

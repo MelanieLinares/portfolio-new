@@ -4,22 +4,36 @@ title: new - Decreasing the bounce rate of Stay Online's website through a
 titlebold: Decreasing the bounce rate of Stay Online's website
 titlenormal: through a responsive redesign
 preview: img/moodboard-placeholder.jpg
-date: 2023-01-05T20:18:56.086Z
-newdate: 2023-01-05T20:18:56.116Z
+date: 2016-06-30T20:18:56.086Z
+newdate: 2016-09-08T20:18:56.116Z
 client: Stay Online Corp.
 logo: img/logo-icon.svg
 role: Front-End Web Developer
+team: Web Development Manager, Marketing Specialist, 
 tags:
   - cross-browser
-technology:
-  - HTML/CSS
-duration: tbd
+technology: User Research, UI Design, Prototyping, Frontend Technology
+duration: 3 months
 theme: blue
 introheading: Creating a plan to decrease mobile bounce rate
 introbody: >-
-  Stay Online is a power cord manufacturer and distributor, known for having the
-  largest U.S. in-stock inventory of power cords and adapters. The legacy
-  e-commerce website, built in 1997, had not changed to be compliant with best
+  Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets.
+  <br/>
+  **Problem:** Many users did not make or complete purchases. These users included a very high percentage of users from mobile devices.
+  <br/>
+  **The Solution:** Redesign the existing website, focusing on responsive design and maintainable code.
+
+
+  **The starting rate:**
+  <span aria-label="thumb down emoji">👎</span> about 85% of mobile users leave
+  <br/>
+  **The goal:**
+  <span aria-label="okay hand emoji">👌</span> fewer than 50% of mobile users leave
+
+  <em>(note: mobile was defined as less than 1024px screen size during the design sprint)</em>
+
+
+  Stay Online's e-commerce website, launched in 1997, had not changed to be compliant with best
   practices introduced with HTML5. Mobile users were not considered. This
   contributed to a large number of mobile device users leaving the site upon
   load or before completing a purchase. There was a potential to capture these
@@ -27,19 +41,6 @@ introbody: >-
   easy sell to management. Data-driven design through analytics was needed to
   get the pitch approved.
 
-
-
-
-  **The starting rate:**
-
-  👎 about 85% of mobile users leave
-
-
-  **The goal:**
-
-  👌 fewer than 50% of mobile users leave
-
-  (note: mobile was defined as less than 1024px screen size during the design sprint)
 typed_list:
   - type: fullwidth
     background: Blank

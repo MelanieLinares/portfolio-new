@@ -4,31 +4,31 @@ title: new - Creating an accessibility go-to-market strategy through heart,
 titlebold: Creating an accessibility go-to-market strategy
 titlenormal: through heart, harmony, and hunger
 preview: img/sticky-notes1.jpg
-notice: For legal reasons some images are representational only or blurred
-date: 2023-01-02T16:42:06.511Z
-newdate: 2023-01-02T16:42:06.547Z
-client: Insight
+notice: For legal reasons I am not able to show project details. I am able to discuss the generalized process and am available to discuss in more detail upon request.
+date: 2022-10-02T16:42:06.511Z
+newdate: 2022-11-10T16:42:06.547Z
+client: Insight Enterprises
 logo: img/insight-logo.png
-role: Accessibility Specialist"
+role: Accessibility Specialist
+team: National UX Manager, Software Engineers, UX Designers
 tags:
   - accessibility
-technology:
-  - HTML/CSS
-duration: 4 weeks
+technology: Project Management, Triage, Documentation, Digital Strategy
+duration: 7 weeks
 theme: purple
 introheading: "I started with one main goal: bring change in how Insight markets
   accessibility."
 introbody: >-
-  How a company incorporates accessibility into the product cycle says a lot
-  about the impact those changes will make. When I started as a UX Developer at
-  Cardinal Solutions (later Insight via a merger), increasing accessibility
-  awareness was my number one goal.
+  ### Overview:
+  
+  Insight’s Digital Innovation team works closely with designers, developers, and techology experts to help companies implement next-generation digital solutions from the discovery to delivery phase.
+  <br/>
+  **Problem:** Accessibility as an integrated solution was lacking, resulting the delivery of inaccessible products.
+  <br/>
+  **Plan:** Through thoughful internal planning and education a small team was formed of like-minded and skilled individuals to launch a go-to-market strategy for Insight as an upcoming leader in the field.
 
 
-  I ran many workshops and virtual training for team members on accessibility tools and methodology. This caught the attention of the northeast regional UX manager. He started the A11y Rocks team with handpicked individuals, including myself, to focus the company’s accessibility efforts.
-
-
-  Insight knew the importance of accessibility. Over several years they had formed a strong collective of individuals with the knowledge to take on accessibility solutions. The problem was Insight had not focused its efforts on accessibility projects. Accessible practices were completed at the discretion of the individual. Clients were not being educated and teammates were not being held accountable for designing and developing according to WCAG guidelines. The go-to-market plan would allow Insight to gain the experience and knowledge needed to enter the competitive accessibility market. 
+  Insight knew the importance of accessibility, but did not have a strong stance on offering it to clients. Accessible practices were completed at the discretion of the individual consultant. Clients were not being educated and teammates were not being held accountable for designing and developing according to WCAG guidelines. During 2019 the collective of individuals with the knowledge to take on accessibility solutions came together to take accessibility within the company as a nice to have to a best in class integrated solution.
 typed_list:
   - type: fifty_fifty
     background: Blank

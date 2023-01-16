@@ -112,6 +112,10 @@ li {
     margin-bottom: .33em;
 }
 
+.project-info em {
+    font-style: normal;
+}
+
   .caption {
     position: relative;
     padding-left: 4em!important;
@@ -1067,19 +1071,23 @@ img.fullwidth {
     color: #2740ca;
 }
 
-.cms.purple h3 {
+.cms.purple h3,
+.purple .intro-section h3 {
     color: #7F63CA
 }
 
-.cms.pink h3 {
+.cms.pink h3,
+.pink .intro-section h3 {
     color: #D93A3A
 }
 
-.cms.green h3 {
+.cms.green h3,
+.green .intro-section h3 {
     color: #308461
 }
 
-.cms.blue h3 {
+.cms.blue h3,
+.blue .intro-section h3 {
     color: #4F6EDE
 }
 

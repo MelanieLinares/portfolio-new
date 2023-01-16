@@ -4,19 +4,26 @@ title: new - Launching Stay Online's 10,000+ EU product website with improved
 titlebold: Launching Stay Online's 10,000+ EU product website
 titlenormal: with improved information architecture in mind
 preview: img/marvin-meyer-SYTO3xs06fU-unsplash.jpg
-date: 2023-01-11T02:47:12.055Z
-newdate: 2023-01-11T02:47:12.092Z
+date: 2017-02-24T02:47:12.055Z
+newdate: 2017-05-11T02:47:12.092Z
 client: Stay Online
 logo: img/apple-touch-icon.png
 role: Front-End Web Developer
+team: Backend Developers, Marketing Specialist,
 tags:
   - cross-browser
-technology:
-  - HTML/CSS
-duration: tbd
+technology: UI Design, User Research, Information Architecture, Frontend Technology
+duration: 3 months
 theme: blue
 introheading: Creating a plan to help online consumers find products quickly and globally
 introbody: >-
+  Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets.
+  <br/>
+  **Problem:** Sales teammembers expressed difficulties handling customer satisfaction for international orders through the current website.
+  <br/>
+  **The Solution:** Create a EU-specific site that prioritizes content and global UX patterns in order to increase sales and meets international standards.
+
+
   In 2015 Stay Online made the transition from a U.S. business to an
   international one. The company opened a shipping and manufacturing location in
   the Czech Republic. U.S. sales associates had expressed difficulties handling
@@ -25,11 +32,7 @@ introbody: >-
   time. Stay Online wanted a dedicated website to funnel in EU-specific orders
   before planning a merged site in the future. This site would need to reduce
   the strain on Sales team members and increase international orders.
-
-
-  **The goal:** 
-
-  Prioritize content and global UX patterns to create a site that increase sales and meets international standards.
+  
 typed_list:
   - type: fifty_fifty
     background: Blank

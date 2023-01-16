@@ -5,16 +5,16 @@ titlebold: Internal Starbucks portal with an improved interface
 titlenormal: built for better workflows
 preview: img/blog-flavor_wheel.jpg
 notice: For legal reasons images of work completed cannot be shown
-date: 2023-01-05T18:54:53.434Z
-newdate: 2023-01-05T18:54:53.474Z
+date: 2021-09-05T18:54:53.434Z
+newdate: 2021-11-05T18:54:53.474Z
 client: Starbucks
 logo: img/starbucks-logo.png
 role: Senior Software Engineer
 tags:
   - javascript
-technology:
-  - HTML/CSS
-duration: tbd
+technology: UI Design, Design System integration, Frontend Technology
+team: UX Designer, Frontend Developer, Backend Developers
+duration: 2 months
 theme: green
 introheading: Updating the dashboard UI to lead to a better management workflow
 introbody: >-

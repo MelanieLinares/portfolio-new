@@ -88,7 +88,7 @@
 
     details + li,
     details + li + li,
-    details + li + li + li br {
+    details + li + li + li {
         display: none!important;
     }
 
@@ -186,7 +186,7 @@
 
     details + li,
     details + li + li,
-    details + li + li + li br {
+    details + li + li + li {
         display: none!important;
     }
 

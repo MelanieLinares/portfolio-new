@@ -5,28 +5,32 @@ titlebold: Increasing accessibility across NCDOT websites
 titlenormal: to meet Section 508 compliance
 preview: img/accessibility-ncdot.jpg
 notice: For legal reasons some images are representational only or blurred
-date: 2023-01-12T01:37:30.202Z
-newdate: 2023-01-12T01:37:30.230Z
-client: NCDOT
+date: 2019-06-12T01:37:30.202Z
+newdate: 2019-08-01T01:37:30.230Z
+client: NC Department of Transportation
 logo: img/ncdot-logo.jpg
-role: Accessibility Specialist"
+role: Accessibility Specialist
+team: Frontend Department Manager
 tags:
   - accessibility
-technology:
-  - HTML/CSS
-duration: TBD
+technology: Manual auditing, Triage of issues, User Interface Design, Documentation
+duration: 2 months
 theme: pink
 introheading: Creating a plan for usability and accessibility
 introbody: >-
-  The North Carolina Department of Transportation (NCDOT) had a new website
-  redesign in 2018. The redesign’s purpose was to allow citizens an easier way
-  to view all transportation-related information. Unfortunately, despite an
-  improved visual UI, the site failed initial accessibility audits.
+  The North Carolina Department of Transportation (NCDOT) is responsible for building, repairing, and operating highways, bridges, and other modes of transportation, including ferries in the U.S. state of North Carolina.
+  <br/>
+  **The Problem:** Government websites, inncluding that of local agencies, need to be accessible in accordance to the Americans with Disabilities Act (ADA). The NCDOT websites were not meeting minimum compliance. 
+  <br/>
+  **The Solution:** Through targeted auditing of pages and components an ongoing remediation plan was created and phase one of the plan implemented into the main site.
 
 
-  **The starting score:** 67 (based on Google Lighthouse)
+  After the NCDOT website redesign in 2018 an audit was conducted finding accessibility issues with the website individual pages and components. The new interface design brought an integrated a fresh appearance to the set of public-facing sites, but issues that impacted users with visual impairments, those relying on screen readers or keyboards, and users with hearing impairements were discovered. As a government agency the sites needed to meet a higher standart than the currently met WCAG 2.0 A level. While a variety of tools were utilizing in establishing a starting compliance level, the easiest to comprehend for stakeholders was to present changes in Google Lighthouse scores along with changes in Axe Devtools issues found.
 
-  **The goal:** greater than 80
+
+  **Initial compliance:** score of 67 (based on Google Lighthouse) and 147 issues (based on Axe Devtools)
+  <br/>
+  **Phase one goal:** score greater than 80 and fewer than 100 issues
 typed_list:
   - type: fifty_fifty
     background: Blank

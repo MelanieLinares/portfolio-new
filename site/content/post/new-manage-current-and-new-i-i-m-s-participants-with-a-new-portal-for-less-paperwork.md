@@ -4,32 +4,28 @@ title: new - Manage current and new I.I.M.S. participants with a new portal for
 titlebold: Manage current and new I.I.M.S. participants
 titlenormal: with a new portal for less paperwork
 preview: img/homepage-grayscale-laptop.gif
-date: 2023-01-12T00:33:20.559Z
-newdate: 2023-01-12T00:33:20.599Z
-client: NCDOT
+date: 2019-06-04T00:33:20.559Z
+newdate: 2019-11-09T00:33:20.599Z
+client: NC Department of Transportation
 logo: img/ncdot-logo.jpg
-role: Senior Software Engineer
+role: UI Designer and Developer
+team: Backend Developers, API Developers,
 tags:
   - sharepoint
-technology:
-  - HTML/CSS
-duration: TBD
+technology: User Experience Design, Prototyping, Design System integration, Frontend Technology
+duration: 5 months
+notice: For legal reasons I am not able to show project details. I am able to discuss the generalized process and am available to discuss in more detail upon request.
 theme: pink
 introheading: Identifying ways to optimize a legacy internal DMV process digitally
-introbody: "The North Carolina Department of Transportation (NCDOT) on behalf of
-  the North Carolina Driver Motor Vehicles (NCDMV) assigned a team to work
-  directly with the Ignition Interlock Program team. This team needed a new
-  online system for managing the program.
+introbody: "
+  The North Carolina Department of Transportation (NCDOT) is responsible for building, repairing, and operating highways, bridges, and other modes of transportation, including ferries in the U.S. state of North Carolina. 
+  <br/>
+  **Problem:** Internal DMV employees working within an older portal for managing Ignition Interlock participants experience difficulty keeping up with backlog and lack of needed features
+  <br/>
+  **The Solution:** Add missing features to new portal along with a new approach to data management and API integration, while seperating reliance on specific dependencies
 
-  \\ 
 
-  \r
-
-  \r
-
-  The new system would need to still support the legacy system’s data and its
-  user’s needs; this included browser support, a SharePoint frontend, and UI
-  that integrated into the existing design system\r\n"
+  The NCDOT, on behalf of the DMV sector, assigned a team to work directly with the Ignition Interlock Program (IIP) team. The IIP team needed a new online system for managing the program. The new system would need to still support the legacy system’s data and its user’s needs; this included browser support, a SharePoint frontend, and UI that integrated into the existing design system"
 typed_list:
   - type: fullwidth
     background: Blank

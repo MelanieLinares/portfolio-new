@@ -14,11 +14,11 @@
 	<a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a>
 	<p><b>{{ .Params.client }}</b></p>
 	<p class="">
-		<span class="db"><span>{{ .Date.Format "Jan 2, 2006" }}
+		<span class="db"><span>{{ .Date.Format "January 2006" }}
 	-
 	{{if .Params.newdate}}
 	<span>		{{ with .Params.newdate }}
-		{{ dateFormat "Jan 2 2006" . }}
+		{{ dateFormat "January 2006" . }}
 		{{ end }}</span>
 	{{else}}
 	<span>ongoing</span>
