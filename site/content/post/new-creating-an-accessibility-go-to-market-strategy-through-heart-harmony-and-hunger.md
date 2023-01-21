@@ -22,10 +22,14 @@ introbody: >-
   ### Overview:
   
   Insight’s Digital Innovation team works closely with designers, developers, and techology experts to help companies implement next-generation digital solutions from the discovery to delivery phase.
-  <br/>
-  **Problem:** Accessibility as an integrated solution was lacking, resulting the delivery of inaccessible products.
-  <br/>
-  **Plan:** Through thoughful internal planning and education a small team was formed of like-minded and skilled individuals to launch a go-to-market strategy for Insight as an upcoming leader in the field.
+
+
+  **Problem:** <br/>
+  Accessibility as an integrated solution was lacking, resulting the delivery of inaccessible products.
+
+
+  **Plan:** <br/>
+  Through thoughful internal planning and education a small team was formed of like-minded and skilled individuals to launch a go-to-market strategy for Insight as an upcoming leader in the field.
 
 
   Insight knew the importance of accessibility, but did not have a strong stance on offering it to clients. Accessible practices were completed at the discretion of the individual consultant. Clients were not being educated and teammates were not being held accountable for designing and developing according to WCAG guidelines. During 2019 the collective of individuals with the knowledge to take on accessibility solutions came together to take accessibility within the company as a nice to have to a best in class integrated solution.

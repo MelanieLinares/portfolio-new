@@ -3,7 +3,7 @@ title: new - Decreasing the bounce rate of Stay Online's website through a
   responsive redesign
 titlebold: Decreasing the bounce rate of Stay Online's website
 titlenormal: through a responsive redesign
-preview: img/moodboard-placeholder.jpg
+preview: img/stayonline/stayonline-collage.jpg
 date: 2016-06-30T20:18:56.086Z
 newdate: 2016-09-08T20:18:56.116Z
 client: Stay Online Corp.
@@ -126,41 +126,57 @@ typed_list:
 
 
           Making a site responsive is not a matter of making elements fit, but providing an equal experience for users regardless of screen size. When conducting competitor research, specific layouts stood out as standard practices involving the navigation and homepage.
-      - type: fullwidth-img
-        image: img/moodboard-placeholder.jpg
-      - type: generic_content
-        generic_content: >-
-          ### Client approval
+
+      - type: CaptionImg
+        caption: When comparing many of the competitors it was clear that blue, gray, black and yellow were common color schemes. Many sites included certification logos on product pages.
+        image: img/stayonline/stayonline-moodboard.jpg
+        arrow_on_right: false
+      - type: CaptionImg
+        caption: Part of the research analysis included the current graphic design collateral Stay Online used through print and web ads. As part of this project I created an iconset for major product types.
+        image: img/stayonline/stayonline-collage.jpg
+        arrow_on_right: false
+
+  - type: fifty_fifty
+    background: Blank
+    left_side:
+      content_options:
+        - type: generic_content
+          generic_content: >-
+            ### Client approval
 
 
-          Research began on the product after initial conversations with the lead development stakeholders. Data on bounce rate was gathered from Google Analytics thanks to close work with the Marketing director. A presentation of the benefits of a redesign was given to the CEO.
+            Research began on the product after initial conversations with the lead development stakeholders. Data on bounce rate was gathered from Google Analytics thanks to close work with the Marketing director. A presentation of the benefits of a redesign was given to the CEO.
 
 
-          ### Testing designs to determine major changes
+            ### Testing designs to determine major changes
 
 
-          A/B testing was completed to determine whether a 3 or 2 column layout resulted in a better call-to-action response. Additionally testing was conducted regarding removing teh left side navigation in favor of a full-width top menu with drop downs. Despite positive data from new users the negative data from existing users resulted in the decision to keep the side navigation.
+            A/B testing was completed to determine whether a 3 or 2 column layout resulted in a better call-to-action response. Additionally testing was conducted regarding removing teh left side navigation in favor of a full-width top menu with drop downs. Despite positive data from new users the negative data from existing users resulted in the decision to keep the side navigation.
+    right_side:
+      content_options:
+        - type: generic_content
+          generic_content: >-
+            ### Content-first
+
+
+            Requirements from Marketing, Sales, and Development were gathered and compared to what content is most visited by users. Key internal stakeholders were surveyed on the gathered data and asked to rank the importance of the information. Later tests requested users to place key components within a basic wire-frame to gather further data on content hierarchy and placement.
+
+
+            ### Responsive design
+
+
+            Started by making the site optimized for a min-screen size of 1024px which at the time was the average internal and external device-width
+
+            Static tables and charts needed to be refactored and rewritten
+
+            The next goal was to have elements optimized device-widths at a min of 768px. (Unfortunately, the project dissolved mid-release before full responsive implementation)            
+            
+            
   - type: fullwidth
     background: Blank
     content_options:
-      - type: generic_content
-        generic_content: >-
-          ### Content-first:
-
-
-          Requirements from Marketing, Sales, and Development were gathered and compared to what content is most visited by users. Key internal stakeholders were surveyed on the gathered data and asked to rank the importance of the information. Later tests requested users to place key components within a basic wire-frame to gather further data on content hierarchy and placement.
-
-
-          ### Responsive design:
-
-
-          Started by making the site optimized for a min-screen size of 1024px which at the time was the average internal and external device-width
-
-          Static tables and charts needed to be refactored and rewritten
-
-          The next goal was to have elements optimized device-widths at a min of 768px. (Unfortunately, the project dissolved mid-release before full responsive implementation)
       - type: scroll-image
-        caption: tbd
+        caption: This is a caption about the wireframe sketches
         image: img/Group 538.png
   - type: fullwidth
     background: Rectangular
@@ -171,6 +187,23 @@ typed_list:
 
 
           After years of adding every new product line to the sidebar, the experience of navigating product categories was inefficient.
+      - image2caption: same as other
+        image1caption: "Navigation clutter was reduced and information architecture
+          prioritized. In some cases this involved combining categories or
+          breaking them up into more understandable ones. "
+        image1: img/stayonline/2012-homepage-tablet-cropped.gif
+        image2: img/blog-chemex.jpeg
+        type: image-jumble-grid
+
+  - type: fullwidth
+    background: Blank
+    content_options:
+      - type: generic_content
+        generic_content: >-
+          ## Reinvisioning the product pages
+
+
+          TBD - After years of adding every new product line to the sidebar, the experience of navigating product categories was inefficient.
       - image4caption: Product types were re-categorized and the homepage featured
           section changed from including every category to only the most
           commonly bought custom product categories.
@@ -179,13 +212,14 @@ typed_list:
         image1caption: "Navigation clutter was reduced and information architecture
           prioritized. In some cases this involved combining categories or
           breaking them up into more understandable ones. "
-        image1: img/Capture-3.JPG
+        image1: img/stayonline/2012-homepage-tablet-cropped.gif
         image2: img/blog-chemex.jpeg
         image3: img/grayscale-laptop.gif
         image4: img/stayonline-eu-design.jpg
         type: image-jumble-grid
+
   - type: fifty_fifty
-    background: Blank
+    background: Rectangular
     left_side:
       content_options:
         - type: generic_content

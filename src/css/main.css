@@ -116,6 +116,25 @@ li {
     font-style: normal;
 }
 
+.generic-content h2 {
+    display:block;
+}
+
+.fullwidth img {
+    max-height: 61.5vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.fullwidth .scroll-image img {
+    width: unset!important;
+}
+
+.fullwidth img + .caption {
+    max-width: 850px;
+}
+
   .caption {
     position: relative;
     padding-left: 4em!important;
@@ -124,7 +143,7 @@ li {
 
  .caption:before, .img-w-caption .caption:before {
     content: "";
-    filter: drop-shadow(4px 3px 0px #ffffff);
+    filter: drop-shadow(0px 0px 1px #ffffff) drop-shadow(0px 0px 1px #ffffff) drop-shadow(0px 0px 1px #ffffff) drop-shadow(0px 0px 1px #ffffff);
      top: -1em;
      left: -0.5em;
      width: 60px;
@@ -132,6 +151,11 @@ li {
      transform: scale(-1, -1) rotate(45deg);
      display: block;
      position: absolute;
+     pointer-events: none;
+ }
+
+ .fullwidth + style +.fullwidth {
+    margin-top: 4em;
  }
 
  .Angled + .Rectangular,
@@ -226,7 +250,7 @@ li {
 }
 
 header {
-    z-index: 1;
+    z-index: 2;
 }
 
 .hero-header {
@@ -265,6 +289,7 @@ header {
 }
 
 .intro-section:before {
+    pointer-events: none;
     content: '';
     display: block;
     border: 2px dashed rgba(222, 79, 79, 1);
@@ -546,12 +571,14 @@ max-width: 1400px;
 .caption {
     font-family: 'JetBrains Mono', sans-serif;
     font-size: 12.5px;
+    line-height: 1.65em;
+    font-style: normal;
 }
 
 em {
     font-family: 'JetBrains Mono', sans-serif;
-    font-size: 12.5px;
-    line-height: 1.65em;
+    font-size: 14px;
+    font-style: normal;
 }
 
 .Angled .lg\:w-1\/2 + .lg\:w-1\/2 em {
@@ -645,11 +672,19 @@ h3 {
 .generic-content div.max-w-7xl {
     padding-bottom: 6em;
 }
+
+img.icon {
+    border-radius: 0!important
+}
+
+.left-text-only {
+    margin-top: 3em;
+}
  
 h2 {
     position: relative;
     font-family: 'JetBrains Mono', sans-serif;
-    font-size: 2.3em!important;
+    font-size: 2.3em;
     line-height: 1.15;
     /* font-weight: bold!important; */
     /* color: #DE4F4F; */
@@ -702,9 +737,116 @@ div + .Twocol_image_content {
     margin-top: -1.75em;
 }
 
+.purple a.skip {
+    color: #7F63CA;
+    border: 2px solid #7F63CA;
+}
+
+.purple a.skip:hover, .purple a.skip:focus-visible {
+    background-color:#7F63CA;
+    color: white;
+}
+
+.green a.skip {
+    color: #1e7a50;
+    border: 2px solid #1e7a50;
+}
+
+.green a.skip:hover, .green a.skip:focus-visible {
+    background-color:#1e7a50;
+    color: white;
+}
+
+.pink a.skip {
+    color: #de4f4f;
+    border: 2px solid #de4f4f;
+}
+
+.pink a.skip:hover, .pink a.skip:focus-visible {
+    background-color:#de4f4f;
+    color: white;
+}
+
+.blue a.skip {
+    color: #2740ca;
+    border: 2px solid #2740ca;
+}
+
+.blue a.skip:hover, .blue a.skip:focus-visible {
+    background-color:#2740ca;
+    color: white;
+}
+
+a.skip {
+    border-radius: 5px;
+    padding: 7px 12px; 
+    /* position: relative; */
+    display: initial!important;
+    background-color: white;
+    width: 200px;
+    transition: all .2s;
+    /* z-index:1; */
+    top: 0;
+    left: 0;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+a.skip:hover {
+    top: -7px;
+    left: 0;
+}
+
+a.skip:after {
+    left: 0;
+}
+
+a.skip:hover:after {
+    top: 0;
+    left: 0;
+}
+
+a.skip:after {
+    border: 2px dashed #6224b4;
+    /* content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    --radius-lg: calc(var(--radius, 0.25em)*2);
+    border-radius: var(--radius-lg);
+    transition: .2s;*/
+    z-index: -1;
+} 
+
+/* a.skip:hover, a.skip:focus {
+    background-color: #7F63CA;
+    color: white;
+} */
+
 .Angled .container {
     padding-top: 2.5em;
     padding-bottom: 1.75em;
+    position: relative;
+}
+
+.Angled .container:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -14em;
+    left: 72.5vw;
+    width: 822px !important;
+    height: 980px !important;
+    z-index: 1;
+}
+
+.Angled .generic-content,
+.Angled .w-full {
+    z-index:1;
+    position: inherit;
 }
 
 .max-w-7xl.mx-auto.image {
@@ -737,8 +879,16 @@ section.Blank + section.Blank .container:before {
     border-top: 2px solid var(--green-hex);
 }
 
-.cms.blue section.Blank + section.Blank .container:before {
+.cms.blue section.Blank + section.Blank:has(h2) .container:before {
     border-top: 2px solid var(--blue-hex);
+}
+
+section.Blank + section.Blank:not(:has(h2)) {
+    margin-top: -15.5em!important;
+}
+
+section.Blank + style + section.Blank:not(:has(h2)) {
+    margin-top: -15.5em!important;
 }
 
 .yup section:first-of-type .lg\:w-1\/2:has(h2),

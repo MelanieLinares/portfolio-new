@@ -12,7 +12,119 @@
         -ms-flex-pack: center;
         justify-content: center;
     }
+
+    .intro-section {
+        padding: 2.25em 1.25em 2.25em 1.75em!important;
+    }
+
+    .intro-section:before {
+        margin-left: -1.25em!important;
+    }
+
+    h2 {
+        font-size: 2.245em!important;
+    }
+
+    .w-full.lg\:w-1\/2 div {
+        padding-right: 0!important;
+        padding-left: 0!important;
+    }
+
+    .fullwidth img {
+        margin-top: 1em !important;
+    }
+
+    .yup section:first-of-type .lg\:w-1\/2:has(h2), .yup section:first-of-type .generic-content:has(h2), section.Rectangular .generic-content:has(h2), .lg\:w-3\/4:has(h2) {
+        margin-top: 4em!important;
+        padding-bottom: 3em!important;
+    }
+
+    .cms section h2 {
+        margin-left: .65em!important;;
+        margin-right: .65em;
+        display: block;
+        margin-bottom: 2em;
+        text-align: left;
+    }
+
+    h3 {
+        text-align: left;
+    }
+
+    .overlap-bg-reverse + .w-full {
+        padding-left: 0!important;
+    }
+
+    .overlap-bg-reverse + .w-full p,
+    .overlap-bg-reverse + .w-full ul {
+        text-align: left;
+    }
+
+    .parent-of-gallery {
+        display: block!important
+    }
+
+    .mt-4 {
+        margin-top: 3rem!important
+    }
+
+    .caption {
+        margin-top: 3em!important;
+        padding-bottom: 3em!important;
+    }
+
+    .caption:before, .img-w-caption .caption:before {
+        top: -3em!important;
+    }
+
+    .card-list .process .rounded:not(:last-of-type):after {
+        transform: rotate(90deg);
+        left: -50%;
+        position: relative;
+        top: 100%;
+    }
     
+    .Rectangular {
+        padding-top: 1em;
+    }
+
+    .content-850 h3:not(:nth-of-type(1)), .content-850 h3:not(:nth-of-type(1)) + p, .content-850 h3:not(:nth-of-type(1)) + ul, .content-850 h3:not(:nth-of-type(1)) + p + ul {
+        width: 100%!important;
+    }
+
+    .div2-04 {
+        grid-row-start: 1!important;
+        grid-column-start: 1!important;
+        grid-row-end: 1!important;
+    }
+
+    .div2-04 img {
+        position: relative!important;
+        right: -1.5em!important;
+        width: 100vw!important;
+        bottom: -7.65em!important;
+        margin-top: -8em;
+    }
+
+    .fullwidth:not(.card-list) img {
+        min-height: 200px;
+    }
+
+    .fullwidth.card-list .flex-none.bg-cover {
+        width: 20vw!important;
+        padding-right: 1em;
+    }
+
+    .fullwidth.card-list li .w-full {
+        display: flex
+    }
+
+}
+
+@media screen and (min-width: 640px) {
+    h2 {
+        font-size: 2.3em!important;
+    }
 }
 
 @media screen and (min-width: 481px) {

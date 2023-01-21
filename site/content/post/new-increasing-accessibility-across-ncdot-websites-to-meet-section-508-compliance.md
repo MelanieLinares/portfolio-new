@@ -231,7 +231,7 @@ typed_list:
           map, and auto-complete search widgets.*
 
 
-          ### Dialogs, Third-party components, and SharePoint-specific elements (oh my!) were tested for focus changes and screen reader use.
+          ### Dialogs and third-party components were tested for focus changes and screen reader use.
 
 
           * Originally not focusable or operable, the site’s dialogs were not accessible 

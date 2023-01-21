@@ -18,10 +18,14 @@ theme: blue
 introheading: Creating a plan to help online consumers find products quickly and globally
 introbody: >-
   Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets.
-  <br/>
-  **Problem:** Sales teammembers expressed difficulties handling customer satisfaction for international orders through the current website.
-  <br/>
-  **The Solution:** Create a EU-specific site that prioritizes content and global UX patterns in order to increase sales and meets international standards.
+
+
+  **Problem:** <br/>
+  Sales teammembers expressed difficulties handling customer satisfaction for international orders through the current website.
+
+
+  **The Solution:** <br/> 
+  Create a EU-specific site that prioritizes content and global UX patterns in order to increase sales and meets international standards.
 
 
   In 2015 Stay Online made the transition from a U.S. business to an
