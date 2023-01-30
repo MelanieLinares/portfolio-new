@@ -1,29 +1,28 @@
 ---
-title: new - Internal Starbucks portal with an improved interface built for
-  better workflows
-titlebold: Internal Starbucks portal with an improved interface
-titlenormal: built for better workflows
+title: new - Building a better internal Starbucks portal to improve resource
+  management
+titlebold: Building a better internal Starbucks portal
+titlenormal: to improve resource management
 preview: img/blog-flavor_wheel.jpg
 notice: For legal reasons images of work completed cannot be shown
 date: 2021-09-05T18:54:53.434Z
 newdate: 2021-11-05T18:54:53.474Z
 client: Starbucks
 logo: img/starbucks-logo.png
-role: Senior Software Engineer
+role: Front-End Web Developer
 tags:
   - javascript
-technology: UI Design, Design System integration, Frontend Technology
-team: UX Designer, Frontend Developer, Backend Developers
+technology: UI Design, Design System integration
 duration: 2 months
-theme: green
 introheading: Updating the dashboard UI to lead to a better management workflow
 introbody: >-
-  Managing data can be a pain if the application does not give easy access to
-  common actions. My role involved building out pages and components with React
-  and TypeScript.
+  Managing data can be a pain if common actions within an application result in
+  errors or the actions are not easily found within the UI. My role involved
+  developing components with React and TypeScript.
 
 
-  The business learned clients needed to easily see percentages of funding and re-adjust portfolios, calculations, and cross-portfolio assets within portfolios. Concerns were raised to achieve the goal with fewer clicks. A main dashboard would allow direct adjustments as well as portfolio-specific views.
+  The Starbucks management team needed to easily see percentages of funding and re-adjust portfolios, calculations, and cross-portfolio assets within portfolios. A main dashboard would allow direct adjustments as well as portfolio-specific views.
+theme: green
 typed_list:
   - type: fifty_fifty
     background: Blank
@@ -40,22 +39,20 @@ typed_list:
             > The first step in exceeding customer expectations is to know those expectations
 
 
-
-
-            **Expectations:**
+            ### Expectations
 
 
             * I would need to deliver on a fast turn-around schedule
 
             * Weekly stand-up meetings would be required along with code reviews
 
-            * React and Typescript was the Javascript library and language I would be working with
-              I would need to utilize branding colors and established widgets 
+            * React and Typescript were utilized in developing widgets, including the creation and application of variables for branding color and typography 
+
             * I would be working with the product and engineering teams on enterprise-facing features
     right_side:
       content_options:
         - type: CaptionImg
-          caption: "Freshly ground and brewed caramel coffee to start the virtual meeting."
+          caption: Freshly ground and brewed coffee to start the virtual meeting.
           image: img/chris-montgomery-smgtvepind4-unsplash.jpg
   - type: one_three
     background: Rectangular
@@ -63,37 +60,23 @@ typed_list:
       content_options:
         - type: CaptionImg
           arrow_on_right: true
-          caption: >-
-            While the teams worked remotely we connected daily outside of
-            stand-up meetings.
+          caption: While the teams worked remotely we connected daily through stand-up
+            meetings.
           image: img/marvin-meyer-syto3xs06fu-unsplash-1-.jpg
     threeright_side:
       content_options:
         - type: generic_content
-          generic_content: "## Working with the UX team to refine UI
+          generic_content: >-
+            ## Working with the UX team to refine UI
 
 
-            When multiple teams work together, several perspectives
-            and expertise can be utilized. The UX team first met with
-            shareholders to create the initial version of the UI. I met with the
-            UX team and we worked together to harmonize the feedback, along with
-            information I gathered from the data team. There were several
-            problems to be solved, not merely a UI to create.
+            The UX team first met with shareholders to create the initial version of the UI. I met with the UX team and we worked together to harmonize the feedback, along with information I gathered from the data team. There were several problems to be solved, not merely a UI to create.
 
 
-            ### How might we avoid errors when users change how
-            revenue is divided and utilized?
+            ### How might we avoid errors when users change how revenue is divided and utilized?
 
 
-            Existing APIs for each portfolio were causing issues for
-            users making changes due to calculations occurring after form
-            submission and only within a current portfolio set. If revenue
-            allotments for portfolios A, B, and C were below 100%, users could
-            make changes. The UI was not properly informing users when a
-            portfolio or a sub-portfolio would cause the main portfolio to
-            exceed 100%. The big question was how should errors be handled
-            within the UI and within the API? Could and should errors be
-            avoided?"
+            Existing APIs for each portfolio were causing issues due to calculations occurring after form submission and only within a current portfolio set. If revenue allotments for portfolios A, B, and C were below 100%, users could make changes. The UI was not properly informing users when a portfolio or a sub-portfolio would cause the main portfolio to exceed 100%. The big question was how should errors be handled within the UI and within the API? Could and should errors be avoided?
         - type: introw
           blurbsw:
             - imagew: img/wireframe-icon-cropped.png
@@ -106,6 +89,8 @@ typed_list:
                 * The prototype was improved to account for edge cases in user flow
 
                 * Error messages and notifications were improved by providing thoughtful feedback
+
+                * E﻿rror messages and portal data visualizations needed to ne accessible
         - type: pillfeaturedtext
           pillfeaturedtext: Accessibility is not just for public-facing applications. It
             was important for me to emphasize this to the team
@@ -131,4 +116,6 @@ typed_list:
       content_options:
         - type: CaptionImg
           image: img/posts-bro-cropped.png
+          caption: REMOVE THIS REQUIREMENT
+team: UX Designer, Frontend Developer, Backend Developers
 ---
