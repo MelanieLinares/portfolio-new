@@ -38,7 +38,7 @@ collections: # A list of collections the CMS should be able to edit
         ["Software Engineer", "Senior Software Engineer", "UI Developer", Accessibility Specialist", "Front-End Web Developer"], required: false}
       - {label: 'Tags*', name: 'tags', widget: 'select', options: 
         ['accessibility', 'cross-browser', 'javascript', 'mentorship', '.net mvc', 'react', 'sharepoint', 'typescript', 'vue'], multiple: true }
-      - {label: 'Role details: 'technology', widget: 'string', required: true }
+      - {label: 'Role details:', name: 'technology', widget: 'string', required: true }
       - {label: "Duration*", name: "duration", widget: "text"}
       - {label: "Intro Heading*", name: "introheading", widget: "string"}
       - {label: "IntroBody*", name: "introbody", widget: "markdown"}
