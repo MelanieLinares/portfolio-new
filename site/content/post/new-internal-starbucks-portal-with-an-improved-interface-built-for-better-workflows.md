@@ -33,7 +33,6 @@ introbody: >-
 
   **Solution:**
 
-
   The Starbucks management team needed to easily see percentages of funding and re-adjust portfolios, calculations, and cross-portfolio assets within portfolios. A main dashboard with access to all portfolios and the ability to display cross-portfolio information would be best for user experience.
 theme: green
 typed_list:
