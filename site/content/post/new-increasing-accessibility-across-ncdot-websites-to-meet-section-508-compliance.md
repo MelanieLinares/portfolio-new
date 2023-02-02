@@ -22,12 +22,12 @@ introbody: >-
   The North Carolina Department of Transportation (NCDOT) is responsible for building, repairing, and operating highways, bridges, and other modes of transportation, including ferries in the U.S. state of North Carolina. 
 
 
-  **The Problem:**
+  **The Problem:** <br/> 
 
   Government websites, including those of local agencies, need to be accessible in accordance to the Americans with Disabilities Act (ADA). The NCDOT websites were not meeting minimum compliance.  
 
 
-  **The Solution:**
+  **The Solution:** <br/> 
 
   Through targeted auditing of pages and components an ongoing remediation plan was created and phase one of the plan implemented into the main site. 
 
