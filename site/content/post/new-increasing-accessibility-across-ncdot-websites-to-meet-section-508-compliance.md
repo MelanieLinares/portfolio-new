@@ -24,10 +24,10 @@ introbody: >-
 
 
 
-  **The Problem:**/ Government websites, including those of local agencies, need to be accessible in accordance to the Americans with Disabilities Act (ADA). The NCDOT websites were not meeting minimum compliance.  
+  **The Problem:**\ Government websites, including those of local agencies, need to be accessible in accordance to the Americans with Disabilities Act (ADA). The NCDOT websites were not meeting minimum compliance.  
 
 
-  **The Solution:**/ Through targeted auditing of pages and components an ongoing remediation plan was created and phase one of the plan implemented into the main site. 
+  **The Solution:**\ Through targeted auditing of pages and components an ongoing remediation plan was created and phase one of the plan implemented into the main site. 
 
 
   After the NCDOT website redesign in 2018 an audit was conducted finding accessibility issues with the website individual pages and components. The new interface design brought an integrated a fresh appearance to the set of public-facing sites, but issues that negatively impacted users with visual impairments, those relying on screen readers or keyboards, and those affecting hard of hearing users were discovered. As a government agency the sites needed to meet a higher standard than the currently met WCAG 2.0 A level.
