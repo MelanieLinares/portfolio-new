@@ -18,8 +18,20 @@ technology: User Experience Design, Prototyping, Design System integration,
   Frontend Technology
 duration: 5 months
 introheading: Identifying ways to optimize a legacy internal DMV process digitally
-introbody: >-2
-   The North Carolina Department of Transportation (NCDOT) along with the Department of Motor Vehicles (NCDMV) is responsible for managing transportation infrastructure, registration for driver license, and general driver safety.<br/> **Problem:** Internal DMV employees working within an older portal for managing Ignition Interlock participants experience difficulty keeping up with backlog and lack of needed features <br/> **The Solution:** Add missing features to new portal along with a new approach to data management and API integration, while seperating reliance on specific dependencies
+introbody: >-
+  ###  Overview:
+
+
+  The North Carolina Department of Transportation (NCDOT) along with the Department of Motor Vehicles (NCDMV) is responsible for managing transportation infrastructure, registration for driver license, and general driver safety.
+
+
+
+
+  **Problem:** <br/> Internal DMV employees working within an older portal for managing Ignition Interlock participants experience difficulty keeping up with backlog and lack of needed features. 
+
+
+  **The Solution:** <br/> Add missing features to new portal along with a new approach to data management and API integration, while separating reliance on specific dependencies
+
 
   The NCDOT, on behalf of the DMV sector, assigned a team to work directly with the Ignition Interlock Program (IIP) team. The IIP team needed a new online system for managing the program. The new system would need to still support the legacy system’s data and its user’s needs; this included browser support, a SharePoint frontend, and UI that integrated into the existing design system
 theme: pink
