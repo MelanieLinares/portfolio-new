@@ -15,9 +15,10 @@ technology: User Research, UI Design, Prototyping, Frontend Technology
 duration: 3 months
 introheading: Creating a plan to decrease mobile bounce rate
 introbody: >-
-  Stay Online is a manufacturer and distributor of a wide selection of power
-  cords and cables for the data center, power infrastructure and industrial
-  markets. 
+  ### O﻿verview:
+
+
+  Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets. 
 
 
   **Problem:** <br/> Many users did not make or complete purchases. These users included a very high percentage of users from mobile devices. 
