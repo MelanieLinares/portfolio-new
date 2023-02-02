@@ -9,38 +9,30 @@ newdate: 2016-09-08T20:18:56.116Z
 client: Stay Online Corp.
 logo: img/logo-icon.svg
 role: Front-End Web Developer
-team: Web Development Manager, Marketing Specialist, 
 tags:
   - cross-browser
 technology: User Research, UI Design, Prototyping, Frontend Technology
 duration: 3 months
-theme: blue
 introheading: Creating a plan to decrease mobile bounce rate
 introbody: >-
-  Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets.
-  <br/>
-  **Problem:** Many users did not make or complete purchases. These users included a very high percentage of users from mobile devices.
-  <br/>
-  **The Solution:** Redesign the existing website, focusing on responsive design and maintainable code.
+  Stay Online is a manufacturer and distributor of a wide selection of power
+  cords and cables for the data center, power infrastructure and industrial
+  markets. 
 
 
-  **The starting rate:**
-  <span aria-label="thumb down emoji">👎</span> about 85% of mobile users leave
-  <br/>
-  **The goal:**
-  <span aria-label="okay hand emoji">👌</span> fewer than 50% of mobile users leave
+  **Problem:** <br/> Many users did not make or complete purchases. These users included a very high percentage of users from mobile devices. 
+
+
+  **Solution:** <br/> Redesign the existing website, focusing on responsive design and maintainable code.
+
+
+  **The starting rate:** <span aria-label="thumb down emoji">👎</span> about 85% of mobile users leave <br/> **The goal:** <span aria-label="okay hand emoji">👌</span> fewer than 50% of mobile users leave
 
   <em>(note: mobile was defined as less than 1024px screen size during the design sprint)</em>
 
 
-  Stay Online's e-commerce website, launched in 1997, had not changed to be compliant with best
-  practices introduced with HTML5. Mobile users were not considered. This
-  contributed to a large number of mobile device users leaving the site upon
-  load or before completing a purchase. There was a potential to capture these
-  users by making the web experience accessible. Responsive design was not an
-  easy sell to management. Data-driven design through analytics was needed to
-  get the pitch approved.
-
+  Stay Online's e-commerce website, launched in 1997, had not changed to be compliant with best practices introduced with HTML5. Mobile users were not considered. This contributed to a large number of mobile device users leaving the site upon load or before completing a purchase. There was a potential to capture these users by making the web experience accessible. Responsive design was not an easy sell to management. Data-driven design through analytics was needed to get the pitch approved.
+theme: blue
 typed_list:
   - type: fullwidth
     background: Blank
@@ -63,8 +55,7 @@ typed_list:
           * Code refactoring is needed to remove a table-based layout and poorly formed HTML
         img_on_right: false
       - type: needtonamethis
-        unnamed_text: |-
-          ### Three main types of users were identified
+        unnamed_text: "### Three main types of users were identified"
         unnamed_image: img/sample2.png
         introw:
           blurbsw:
@@ -126,16 +117,18 @@ typed_list:
 
 
           Making a site responsive is not a matter of making elements fit, but providing an equal experience for users regardless of screen size. When conducting competitor research, specific layouts stood out as standard practices involving the navigation and homepage.
-
       - type: CaptionImg
-        caption: When comparing many of the competitors it was clear that blue, gray, black and yellow were common color schemes. Many sites included certification logos on product pages.
+        caption: When comparing many of the competitors it was clear that blue, gray,
+          black and yellow were common color schemes. Many sites included
+          certification logos on product pages.
         image: img/stayonline/stayonline-moodboard.jpg
         arrow_on_right: false
       - type: CaptionImg
-        caption: Part of the research analysis included the current graphic design collateral Stay Online used through print and web ads. As part of this project I created an iconset for major product types.
+        caption: Part of the research analysis included the current graphic design
+          collateral Stay Online used through print and web ads. As part of this
+          project I created an iconset for major product types.
         image: img/stayonline/stayonline-collage.jpg
         arrow_on_right: false
-
   - type: fifty_fifty
     background: Blank
     left_side:
@@ -170,8 +163,6 @@ typed_list:
             Static tables and charts needed to be refactored and rewritten
 
             The next goal was to have elements optimized device-widths at a min of 768px. (Unfortunately, the project dissolved mid-release before full responsive implementation)            
-            
-            
   - type: fullwidth
     background: Blank
     content_options:
@@ -194,7 +185,6 @@ typed_list:
         image1: img/stayonline/2012-homepage-tablet-cropped.gif
         image2: img/blog-chemex.jpeg
         type: image-jumble-grid
-
   - type: fullwidth
     background: Blank
     content_options:
@@ -217,7 +207,6 @@ typed_list:
         image3: img/grayscale-laptop.gif
         image4: img/stayonline-eu-design.jpg
         type: image-jumble-grid
-
   - type: fifty_fifty
     background: Rectangular
     left_side:
@@ -267,4 +256,5 @@ typed_list:
         image4: img/stayonline-us-tablet.png
         image5: img/stayonline-eu.jpg
         type: image-jumble-grid
+team: Web Development Manager, Marketing Specialist,
 ---
