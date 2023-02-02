@@ -16,12 +16,25 @@ technology: UI Design, Design System integration
 duration: 2 months
 introheading: Updating the dashboard UI to lead to a better management workflow
 introbody: >-
-  Managing data can be a pain if common actions within an application result in
-  errors or the actions are not easily found within the UI. My role involved
-  developing components with React and TypeScript.
+  ### Overview:
 
 
-  The Starbucks management team needed to easily see percentages of funding and re-adjust portfolios, calculations, and cross-portfolio assets within portfolios. A main dashboard would allow direct adjustments as well as portfolio-specific views.
+  Managing data can be a pain if common actions within an application result in errors or the actions are not easily found within the UI. My role involved developing components with React and TypeScript.
+
+
+
+
+  **Problem:**\
+
+  The internal Starbucks portal experienced sync issues and error management issues in regards to portfolio percentages.
+
+
+
+
+  **Solution:**
+
+
+  The Starbucks management team needed to easily see percentages of funding and re-adjust portfolios, calculations, and cross-portfolio assets within portfolios. A main dashboard with access to all portfolios and the ability to display cross-portfolio information would be best for user experience.
 theme: green
 typed_list:
   - type: fifty_fifty
