@@ -22,7 +22,7 @@ introbody: >-
   ### Overview:
 
 
-  Insight’s Digital Innovation team works closely with designers, developers, and techology experts to help companies implement next-generation digital solutions from the discovery to delivery phase.
+  Insight’s Digital Innovation team works closely with designers, developers, and technology experts to help companies implement next-generation digital solutions from the discovery to delivery phase. My role in this go-to-market plan involved planning and creating a delivery deck, documentation for bid strategy and triage priority, as well as being an accessibility advocate to department leads.
 
 
   **Problem:** <br/> Accessibility as an integrated solution was lacking, resulting the delivery of inaccessible products.
