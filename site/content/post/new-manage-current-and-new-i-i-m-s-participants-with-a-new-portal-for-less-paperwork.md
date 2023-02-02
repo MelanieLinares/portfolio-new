@@ -1,31 +1,28 @@
 ---
-title: new - Manage current and new I.I.M.S. participants with a new portal for
-  less paperwork
-titlebold: Manage current and new I.I.M.S. participants
-titlenormal: with a new portal for less paperwork
+title: new - Increasing efficiency with an internal portal to manage DMV IIMS
+  initiative participants
+titlebold: Increasing efficiency with an internal portal
+titlenormal: to manage DMV IIMS initiative participants
 preview: img/homepage-grayscale-laptop.gif
+notice: For legal reasons I am not able to show project details. I am able to
+  discuss the generalized process and am available to discuss in more detail
+  upon request.
 date: 2019-06-04T00:33:20.559Z
 newdate: 2019-11-09T00:33:20.599Z
 client: NC Department of Transportation
 logo: img/ncdot-logo.jpg
 role: UI Designer and Developer
-team: Backend Developers, API Developers,
 tags:
   - sharepoint
-technology: User Experience Design, Prototyping, Design System integration, Frontend Technology
+technology: User Experience Design, Prototyping, Design System integration,
+  Frontend Technology
 duration: 5 months
-notice: For legal reasons I am not able to show project details. I am able to discuss the generalized process and am available to discuss in more detail upon request.
-theme: pink
 introheading: Identifying ways to optimize a legacy internal DMV process digitally
-introbody: "
-  The North Carolina Department of Transportation (NCDOT) is responsible for building, repairing, and operating highways, bridges, and other modes of transportation, including ferries in the U.S. state of North Carolina. 
-  <br/>
-  **Problem:** Internal DMV employees working within an older portal for managing Ignition Interlock participants experience difficulty keeping up with backlog and lack of needed features
-  <br/>
-  **The Solution:** Add missing features to new portal along with a new approach to data management and API integration, while seperating reliance on specific dependencies
+introbody: >-2
+   The North Carolina Department of Transportation (NCDOT) along with the Department of Motor Vehicles (NCDMV) is responsible for managing transportation infrastructure, registration for driver license, and general driver safety.<br/> **Problem:** Internal DMV employees working within an older portal for managing Ignition Interlock participants experience difficulty keeping up with backlog and lack of needed features <br/> **The Solution:** Add missing features to new portal along with a new approach to data management and API integration, while seperating reliance on specific dependencies
 
-
-  The NCDOT, on behalf of the DMV sector, assigned a team to work directly with the Ignition Interlock Program (IIP) team. The IIP team needed a new online system for managing the program. The new system would need to still support the legacy system’s data and its user’s needs; this included browser support, a SharePoint frontend, and UI that integrated into the existing design system"
+  The NCDOT, on behalf of the DMV sector, assigned a team to work directly with the Ignition Interlock Program (IIP) team. The IIP team needed a new online system for managing the program. The new system would need to still support the legacy system’s data and its user’s needs; this included browser support, a SharePoint frontend, and UI that integrated into the existing design system
+theme: pink
 typed_list:
   - type: fullwidth
     background: Blank
@@ -35,10 +32,15 @@ typed_list:
           ## Why the new portal?
 
 
-          The reason for the new portal was to reduce manual data entry, as well as a way to integrate desired features to aid in managing existing, stale, and new participants and vendors
+          The reason for the new portal was to reduce manual data entry. The system would integrate with the IIMS data APIs to aid in creating desired features to aid in managing existing, stale, and new participants and vendors of the IIMS monitoring devices.
 
 
-          **The new portal would be needed to:**
+          <﻿div class="featured-text">I</div>IMS monitoring devices require a driver to conduct breathalyzer tests in order to start a vehicle.
+
+
+
+
+          **The new portal would:**
       - type: cards
         process: false
         blurbcards:
@@ -53,14 +55,16 @@ typed_list:
     content_options:
       - type: generic_content
         generic_content: >-
-          ## Exploring what is required to deliver the process according to user
-          needs
+          ## Exploring what is required to benefit program management user needs
 
 
           ### Initial research
 
 
-          When brought onto the project other teams had already been researching and working on the legislation and budget allowance involved in getting the project started for years. No visual design or development had started, however.
+          When brought onto the project other teams had already been researching and working on the legislation. This research consisted of the existing application pages and online database that this portal would be incorporated with. We knew the backend database would need data structure updates. I worked with the backend team to define the transition from the existing system to the new in preparation for the UI changes.
+
+
+          and budget allowance involved in getting the project started for years. No visual design or development had started, however.
 
 
           This research also consisted of the existing application pages and online database that this portal would be incorporated with. We knew the backend database would need data structure updates. I worked with the backend team to define the transition from the existing system to the new in preparation for the UI changes.
@@ -78,19 +82,19 @@ typed_list:
           ### Stakeholder interviews
 
 
-          After organizing the existing research, data, and my own questions I consulted with the internal project lead. We unified on a strategy before driving downtown to meet with the project owner. The project owner provided precise insight and feedback.
+          After organizing the existing research, data, and data gained from numerous internal and external ideation sessions I consulted with the internal project lead. We unified on a strategy before driving downtown to meet with the project owner. The project owner ensured the plan met their expectations. Some aspects of the project required clarification to how it would translate within the UI. I was able to sketch and iterate on an initial batch wireframes for each set of pages during the session. The project owner was satisfied with the direction and signed off on the project so work on the UI and APIs could begin.
 
 
-          The sketches were turned into the first round of wireframes to cover each user task.During the interview I sketched out a few components and user flows to ensure we all understood ideas discussed.
+          The sketches were turned into the first round of wireframes to cover each user task. 
 
 
-          Business goals were discussed
+          * Business goals were discussed
 
-          Technical limitations were identified
+          * Technical limitations were identified
 
-          User needs were discussed and a unified approach was decided upon
+          * User needs were discussed and a unified approach was decided upon
 
-          Sketches of how different tasks and goals could be approached were created during the initial interview
+          * Sketches of how different tasks and goals could be approached were created during the initial interview
 
 
           ### User tasks included:
@@ -215,4 +219,5 @@ typed_list:
           The ignition interlock team needed a method to download data based on customizable criteria.
 
           Reports would need to be exportable as pdf, spreadsheet, or both as a single download
+team: Backend Developers, API Developers,
 ---
