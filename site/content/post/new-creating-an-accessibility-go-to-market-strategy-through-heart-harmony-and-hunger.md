@@ -22,16 +22,16 @@ introbody: >-
   ### Overview:
 
 
-  Insight’s Digital Innovation team works closely with designers, developers, and technology experts to help companies implement next-generation digital solutions from the discovery to delivery phase. Insight knew the importance of accessibility, but did not have a strong stance on offering it to clients. During 2019 the collective of individuals with the knowledge to take on accessibility solutions came together to take accessibility within the company from a nice to have, to a best in class integrated solution.
+  Insight’s Digital Innovation team works closely with designers, developers, and technology experts to help companies implement next-generation digital solutions from the discovery to delivery phase. During 2019 the collective of individuals with the knowledge to take on accessibility solutions came together to take accessibility within the company from a nice to have, to a best in class integrated solution.
 
 
   My role in this go-to-market plan involved planning and creating a delivery deck, documentation for bid strategy and triage priority, as well as being an accessibility advocate to department leads.
 
 
-  **Problem:** <br/> Accessibility as an integrated solution was lacking, resulting the delivery of inaccessible products.
+  **Problem:** <br/> Accessibility as an integrated solution was lacking, resulting in the delivery of some inaccessible products.
 
 
-  **Plan:** <br/> Through thoughful internal planning and education a small team was formed of like-minded and skilled individuals to launch a go-to-market strategy for Insight as an upcoming leader in the field. We would start with a client bid.
+  **Plan:** <br/> Through thoughtful internal planning and education a small team was formed of like-minded and skilled individuals to launch a go-to-market strategy for Insight as an up incomer in the field. This would start with team education and would end with a client bid. 
 theme: purple
 typed_list:
   - type: fifty_fifty
