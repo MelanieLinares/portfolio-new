@@ -4,49 +4,49 @@ title: new - Creating an accessibility go-to-market strategy through heart,
 titlebold: Creating an accessibility go-to-market strategy
 titlenormal: through heart, harmony, and hunger
 preview: img/sticky-notes1.jpg
-notice: For legal reasons I am not able to show project details. I am able to discuss the generalized process and am available to discuss in more detail upon request.
+notice: For legal reasons I am not able to show project details. I am able to
+  discuss the generalized process and am available to discuss in more detail
+  upon request.
 date: 2022-10-02T16:42:06.511Z
 newdate: 2022-11-10T16:42:06.547Z
 client: Insight Enterprises
 logo: img/insight-logo.png
 role: Accessibility Specialist
-team: National UX Manager, Software Engineers, UX Designers
 tags:
   - accessibility
-technology: Project Management, Triage, Documentation, Digital Strategy
+technology: Project Management, Triaging issues, Documentation, Digital Strategy
 duration: 7 weeks
-theme: purple
 introheading: "I started with one main goal: bring change in how Insight markets
   accessibility."
 introbody: >-
   ### Overview:
-  
+
+
   Insight’s Digital Innovation team works closely with designers, developers, and techology experts to help companies implement next-generation digital solutions from the discovery to delivery phase.
 
 
-  **Problem:** <br/>
-  Accessibility as an integrated solution was lacking, resulting the delivery of inaccessible products.
+  **Problem:** <br/> Accessibility as an integrated solution was lacking, resulting the delivery of inaccessible products.
 
 
-  **Plan:** <br/>
-  Through thoughful internal planning and education a small team was formed of like-minded and skilled individuals to launch a go-to-market strategy for Insight as an upcoming leader in the field.
+  **Plan:** <br/> Through thoughful internal planning and education a small team was formed of like-minded and skilled individuals to launch a go-to-market strategy for Insight as an upcoming leader in the field. We would start with a client bid.
 
 
-  Insight knew the importance of accessibility, but did not have a strong stance on offering it to clients. Accessible practices were completed at the discretion of the individual consultant. Clients were not being educated and teammates were not being held accountable for designing and developing according to WCAG guidelines. During 2019 the collective of individuals with the knowledge to take on accessibility solutions came together to take accessibility within the company as a nice to have to a best in class integrated solution.
+  Insight knew the importance of accessibility, but did not have a strong stance on offering it to clients. Accessible practices were completed at the discretion of the individual consultant. Clients were not being educated and teammates were not being held accountable for designing and developing according to WCAG guidelines. During 2019 the collective of individuals with the knowledge to take on accessibility solutions came together to take accessibility within the company from a nice to have, to a best in class integrated solution.
+theme: purple
 typed_list:
   - type: fifty_fifty
     background: Blank
     right_side:
       content_options:
         - type: heading3
-          heading03: Discovery and ideation      
+          heading03: Discovery and ideation
         - type: generic_content
           generic_content: >-
             ### Heart for user (and client) experience
-            
+
             Most of our team knew how to integrate accessibility into the design and development process, but we didn’t have a formal audit methodology.
 
-            
+
             **The first week consisted of research:**
 
             * Who is the client and what are their needs? (some of this was provided in the bid brief)
@@ -69,10 +69,9 @@ typed_list:
     left_side:
       content_options:
         - type: heading3
-          heading03: Strategy prioritization      
+          heading03: Strategy prioritization
         - type: generic_content
-          generic_content: |-
-            ### Harmony of WCAG guidelines to actionable tasks
+          generic_content: "### Harmony of WCAG guidelines to actionable tasks"
         - type: pillfeaturedtext
           pillfeaturedtext: An audit considers the compliance of a product and the data as
             the results, but now that you have a long list of issues what do you
@@ -106,9 +105,10 @@ typed_list:
         generic_content: >-
           ### Hunger for continued improvement
 
-          We ran a mock audit of Insight’s website. The purpose was to practice and present a real plan for changes that should and could be implemented internally.
-          
-          
+
+          We ran a mock audit of Insight’s website. The purpose was to practice and present to project stakeholders a real plan for changes that should and could be implemented internally. 
+
+
           **The practice audit included:**
       - type: cards
         process: true
@@ -135,4 +135,34 @@ typed_list:
           discussed how the team can prioritize accessibility when seeking to
           win clients and projects. The goal was to sell accessibility as a new
           pillar in all our offerings rather than an optional service."
+  - type: fullwidth
+    background: Blank
+    content_options:
+      - type: heading3
+        heading03: The bid
+      - type: fullwidth-img
+        image: img/mentorship.jpg
+      - type: generic_content
+        generic_content: >-
+          N﻿ow that our team, Management, and Sales were unified in a strategy
+          we reviewed the bid requirements. The client needed time and cost
+          estimates, as well as an action plan outlined. We were not given
+          access to code samples, but did have access to the public website. The
+          following was considered within the bid:
+
+
+          * explanation of remediation level recommended
+
+          * branding color considerations with plans to remediate while keeping identity intact if issues are found
+
+          * third-party component remediation plan and recommendations for easy, accessible solutions if issues are found
+
+          * cost as an agile solution to begin remediation in phases during testing process
+
+          * client priority and access to dedicated UX and accessibility experts for questions
+
+          * plan for continued monitoring
+
+          * plan for client education to prevent accessibility issues from being reintroduced
+team: National UX Manager, Software Engineers, UX Designers
 ---
