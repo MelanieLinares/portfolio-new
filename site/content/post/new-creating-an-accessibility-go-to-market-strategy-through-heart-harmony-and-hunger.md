@@ -3,7 +3,7 @@ title: new - Creating an accessibility go-to-market strategy through heart,
   harmony, and hunger
 titlebold: Creating an accessibility go-to-market strategy
 titlenormal: through heart, harmony, and hunger
-preview: img/sticky-notes1.jpg
+preview: img/insight-featured.png
 notice: For legal reasons I am not able to show project details. I am able to
   discuss the generalized process and am available to discuss in more detail
   upon request.
