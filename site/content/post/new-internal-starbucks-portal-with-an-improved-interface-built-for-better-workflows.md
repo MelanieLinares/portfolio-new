@@ -66,46 +66,38 @@ typed_list:
         - type: CaptionImg
           caption: Freshly ground and brewed coffee to start the virtual meeting.
           image: img/chris-montgomery-smgtvepind4-unsplash.jpg
-  - type: one_three
+  - type: fullwidth
+    content_options:
+      - type: generic_content
+        generic_content: >-
+          ## Working with the UX team to refine UI
+
+
+          The UX team first met with shareholders to create the initial version of the UI. I met with the UX team and we worked together to harmonize the feedback, along with information I gathered from the data team. There were several problems to be solved, not merely a UI to create.
+
+
+          ### How might we avoid errors when users change how revenue is divided and utilized?
+
+
+          Existing APIs for each portfolio were causing issues due to calculations occurring after form submission and only within a current portfolio set. If revenue allotments for portfolios A, B, and C were below 100%, users could make changes. The UI was not properly informing users when a portfolio or a sub-portfolio would cause the main portfolio to exceed 100%. The big question was how should errors be handled within the UI and within the API? Could and should errors be avoided?
+      - type: introw
+        blurbsw:
+          - textw: >-
+              ### Refining the UI to account for errors
+
+
+              * I collaborated with product and design teams to define features and identify opportunities for improvement
+
+              * The prototype was improved to account for edge cases in user flow
+
+              * Error messages and notifications were improved by providing thoughtful feedback
+
+              * E﻿rror messages and portal data visualizations needed to ne accessible
+            imagew: img/wireframe-icon-cropped.png
+      - type: pillfeaturedtext
+        pillfeaturedtext: Accessibility is not just for public-facing applications. It
+          was important for me to emphasize this to the team
     background: Rectangular
-    oneleft_side:
-      content_options:
-        - type: CaptionImg
-          arrow_on_right: true
-          caption: While the teams worked remotely we connected daily through stand-up
-            meetings.
-          image: img/marvin-meyer-syto3xs06fu-unsplash-1-.jpg
-    threeright_side:
-      content_options:
-        - type: generic_content
-          generic_content: >-
-            ## Working with the UX team to refine UI
-
-
-            The UX team first met with shareholders to create the initial version of the UI. I met with the UX team and we worked together to harmonize the feedback, along with information I gathered from the data team. There were several problems to be solved, not merely a UI to create.
-
-
-            ### How might we avoid errors when users change how revenue is divided and utilized?
-
-
-            Existing APIs for each portfolio were causing issues due to calculations occurring after form submission and only within a current portfolio set. If revenue allotments for portfolios A, B, and C were below 100%, users could make changes. The UI was not properly informing users when a portfolio or a sub-portfolio would cause the main portfolio to exceed 100%. The big question was how should errors be handled within the UI and within the API? Could and should errors be avoided?
-        - type: introw
-          blurbsw:
-            - imagew: img/wireframe-icon-cropped.png
-              textw: >-
-                ### Refining the UI to account for errors
-
-
-                * I collaborated with product and design teams to define features and identify opportunities for improvement
-
-                * The prototype was improved to account for edge cases in user flow
-
-                * Error messages and notifications were improved by providing thoughtful feedback
-
-                * E﻿rror messages and portal data visualizations needed to ne accessible
-        - type: pillfeaturedtext
-          pillfeaturedtext: Accessibility is not just for public-facing applications. It
-            was important for me to emphasize this to the team
   - type: fifty_fifty
     background: Blank
     left_side:
