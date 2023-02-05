@@ -3,7 +3,7 @@ title: new - Increasing efficiency with an internal portal to manage DMV IIMS
   initiative participants
 titlebold: Increasing efficiency with an internal portal
 titlenormal: to manage DMV IIMS initiative participants
-preview: img/homepage-grayscale-laptop.gif
+preview: img/portal-animated.gif
 notice: For legal reasons I am not able to show project details. I am able to
   discuss the generalized process and am available to discuss in more detail
   upon request.
@@ -34,7 +34,7 @@ introbody: >-
 
 
   The NCDOT, on behalf of the DMV sector, assigned a team to work directly with the Ignition Interlock Program (IIP) team. The IIP team needed a new online system for managing the program. The new system would need to still support the legacy system’s data and its user’s needs; this included browser support, a SharePoint frontend, and UI that integrated into the existing design system
-theme: pink
+theme: blue
 typed_list:
   - type: fullwidth
     background: Blank

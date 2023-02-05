@@ -3,7 +3,7 @@ title: new - Launching Stay Online's 10,000+ EU product website with improved
   information architecture in mind
 titlebold: Launching Stay Online's 10,000+ EU product website
 titlenormal: with improved information architecture in mind
-preview: img/marvin-meyer-SYTO3xs06fU-unsplash.jpg
+preview: img/stayonline-eu.png
 date: 2017-02-24T02:47:12.055Z
 newdate: 2017-05-11T02:47:12.092Z
 client: Stay Online

@@ -3,7 +3,7 @@ title: new - Building a better internal Starbucks portal to improve resource
   management
 titlebold: Building a better internal Starbucks portal
 titlenormal: to improve resource management
-preview: img/blog-flavor_wheel.jpg
+preview: img/dashboard-crop.gif
 notice: For legal reasons images of work completed cannot be shown
 date: 2021-09-05T18:54:53.434Z
 newdate: 2021-11-05T18:54:53.474Z

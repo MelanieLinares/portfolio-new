@@ -254,25 +254,32 @@ header {
 }
 
 .hero-header {
-    padding-top: 9rem;
+    padding-top: 6.75rem;
 }
 
+/* .hero-header .text-4xl {
+    border: 1px solid red
+} */
+
 .hero-header-image {
-    max-width: 33.5em;
+    /* max-width: 33.5em; */
+    width: 40em;
     height: 33.85em;
+    /* border: 1px solid red; */
+    position: relative;
     transform: rotate(6deg);
     border-radius: 0.5em;
     margin-top: 2.5em;
     margin-bottom: 3em;
-    background-color: white;
+    /* background-color: white; */
     margin-left: -3em;
     margin-right: 1.5em
 }
 
 .hero-header-image img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    /* height: 100%;
+    width: 100%; */
+    object-fit: contain;
     object-position: top;
     border-radius: 0.5em;
     transform: rotate(1.5deg);
@@ -319,7 +326,8 @@ header {
 }
 
 #main {
-    position: relative
+    position: relative;
+    margin-top: 3rem;
 }
 
 aside {

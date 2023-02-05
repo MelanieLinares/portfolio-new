@@ -3,7 +3,7 @@ title: new - Increasing accessibility across NCDOT websites to meet Section 508
   compliance
 titlebold: Increasing accessibility across NCDOT websites
 titlenormal: to meet Section 508 compliance
-preview: img/accessibility-ncdot.jpg
+preview: img/ncdot-featured.png
 notice: For legal reasons some images are representational only or blurred
 date: 2019-06-12T01:37:30.202Z
 newdate: 2019-08-01T01:37:30.230Z
@@ -39,7 +39,7 @@ introbody: >-
 
 
   **Initial compliance:** score of 67 (based on Google Lighthouse) and 147 issues (based on Axe Devtools) <br/> **Phase one goal:** score greater than 80 and fewer than 100 issues
-theme: pink
+theme: purple
 typed_list:
   - type: fifty_fifty
     background: Blank
