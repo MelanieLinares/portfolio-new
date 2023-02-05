@@ -135,34 +135,38 @@ typed_list:
           discussed how the team can prioritize accessibility when seeking to
           win clients and projects. The goal was to sell accessibility as a new
           pillar in all our offerings rather than an optional service."
-  - type: fullwidth
+  - type: fifty_fifty
     background: Blank
-    content_options:
-      - type: heading3
-        heading03: The bid
-      - type: fullwidth-img
-        image: img/mentorship.jpg
-      - type: generic_content
-        generic_content: >-
-          N﻿ow that our team, Management, and Sales were unified in a strategy
-          we reviewed the bid requirements. The client needed time and cost
-          estimates, as well as an action plan outlined. We were not given
-          access to code samples, but did have access to the public website. The
-          following was considered within the bid:
+    left_side:
+      content_options:
+        - type: CaptionImg
+          image: img/bid.png
+          caption: REMOVE this as required
+    right_side:
+      content_options:
+        - type: heading3
+          heading03: The bid
+        - type: generic_content
+          generic_content: >-
+            N﻿ow that our team, Management, and Sales were unified in a strategy
+            we reviewed the bid requirements. The client needed time and cost
+            estimates, as well as an action plan outlined. We were not given
+            access to code samples, but did have access to the public website.
+            The following was considered within the bid:
 
 
-          * explanation of remediation level recommended
+            * explanation of remediation level recommended
 
-          * branding color considerations with plans to remediate while keeping identity intact if issues are found
+            * branding color considerations with plans to remediate while keeping identity intact if issues are found
 
-          * third-party component remediation plan and recommendations for easy, accessible solutions if issues are found
+            * third-party component remediation plan and recommendations for easy, accessible solutions if issues are found
 
-          * cost as an agile solution to begin remediation in phases during testing process
+            * cost as an agile solution to begin remediation in phases during testing process
 
-          * client priority and access to dedicated UX and accessibility experts for questions
+            * client priority and access to dedicated UX and accessibility experts for questions
 
-          * plan for continued monitoring
+            * plan for continued monitoring
 
-          * plan for client education to prevent accessibility issues from being reintroduced
+            * plan for client education to prevent accessibility issues from being reintroduced
 team: National UX Manager, Software Engineers, UX Designers
 ---
