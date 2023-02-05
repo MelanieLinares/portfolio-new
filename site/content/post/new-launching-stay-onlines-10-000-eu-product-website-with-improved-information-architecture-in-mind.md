@@ -11,6 +11,8 @@ logo: img/apple-touch-icon.png
 role: Front-End Web Developer
 tags:
   - cross-browser
+  - .net mvc
+  - javascript
 technology: UI Design, User Research, Information Architecture, Frontend Technology
 duration: 3 months
 introheading: Creating a plan to help online consumers find products quickly and globally
