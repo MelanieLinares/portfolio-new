@@ -628,7 +628,7 @@ em {
     /* filter: invert(21%) sepia(100%) saturate(329%) hue-rotate(303deg) brightness(185%) contrast(102%) */
 }
 
-h2:before {
+h2::before {
     content:'\FE41'/'';
     transform: scaleX(-1);
     /* color: #DE4F4F; */
@@ -655,7 +655,7 @@ h2:before {
     color: #4F6EDE;
 }
 
-h2:after {
+h2::after {
     content: '\FE42'/ '';
     transform: scaleX(-1);
     font-family: Poppins,sans-serif;
