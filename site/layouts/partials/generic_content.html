@@ -27,6 +27,14 @@
          {{ if eq .type "cards" }}
             {{ partial "icon-cards" . }}
         {{ end }}
+
+        {{ if eq .type "introw" }}
+            {{ partial "icon-media-block" . }}
+        {{ end }}
+
+        {{ if eq .type "pillfeaturedtext" }}
+            {{ partial "pill-featured-text" . }}
+        {{ end }}
         
         {{ if eq .type "overlap_bg_img_content" }}
             {{ partial "overlap_bg_img_content" . }}
