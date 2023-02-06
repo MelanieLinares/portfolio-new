@@ -1325,8 +1325,7 @@ img.fullwidth {
     mix-blend-mode: overlay;
 }
 
-.cms h2 span:nth-of-type(1),
-.cms + section h2 span:nth-of-type(1) {
+h2 span:nth-of-type(1) {
     font-family: Poppins,sans-serif;
     position: absolute;
     left: 0;

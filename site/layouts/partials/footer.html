@@ -54,9 +54,36 @@ $("#slider").on("input change", (e)=>{
 
 <script>
 $(window).on("load", function() {
-// On page load, add greater than and less than signs to all h2s
-var regH2 = $('h2').html();
-$('h2').html( '<span aria-hidden="true">﹁</span>' + regH2 + '<span aria-hidden="true">﹂</span>' );
+var all = document.getElementsByTagName("h2");
+
+for(var i = 0, max = all.length; i < max; i++) 
+{
+	let content = all[i].innerHTML;
+	// var contentnew = content;
+	// $('h2')[i].html( '<span aria-hidden="true">﹁</span>' + contentnew + '<span aria-hidden="true">﹂</span>' );
+
+	(function (index) {
+                document.getElementsByTagName('h2')[index]
+                .innerHTML = '<span aria-hidden="true">﹁</span>' + content + '<span aria-hidden="true">﹂</span>';
+
+				// $('#introheading h2').html( '<span aria-hidden="true">hi</span>' + content + '<span aria-hidden="true">bye</span>' );
+
+				if (document.getElementsByTagName('h2')[index].id == "introheading") {
+					document.getElementsByTagName('h2')[index]
+                .innerHTML = content;
+				}
+
+				if (document.getElementsByTagName('h2')[index].id == "related-title") {
+					document.getElementsByTagName('h2')[index]
+                .innerHTML = content;
+				}
+
+            })(i);
+
+
+}
+
+
 
 });
 	 </script>
