@@ -629,7 +629,7 @@ em {
 }
 
 h2::before {
-    content:'\FE41'/'';
+    content:'\FE41';
     transform: scaleX(-1);
     /* color: #DE4F4F; */
 }
