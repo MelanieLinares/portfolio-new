@@ -139,7 +139,7 @@
   window.addEventListener("scroll", () => {
     if (lastScrollY < window.scrollY) {
 		// nav.classList.add("nav--hidden");
-		if (window.scrollY > 200) {
+		if (window.scrollY > 90) {
 		nav.classList.remove("transparent");
 		nav.classList.add("shadow-sm");
 		nav.classList.add("bg-pink");
@@ -147,7 +147,7 @@
     	}
     } else {
       nav.classList.remove("nav--hidden");
-	  if (window.scrollY < 200) {
+	  if (window.scrollY < 90) {
 		nav.classList.add("transparent");
 		nav.classList.remove("shadow-sm");
 		nav.classList.remove("bg-pink");

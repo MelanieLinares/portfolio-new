@@ -1,4 +1,9 @@
 @media screen and (max-width: 639px) {
+
+    .max-w-7xl {
+        max-width: calc(100vw - 2.5em)!important;
+    }
+
     .sm\:flex {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -14,15 +19,16 @@
     }
 
     .intro-section {
-        padding: 2.25em 1.25em 2.25em 1.75em!important;
+        padding: 1.5em .75em 2.25em 1.25em!important;
     }
 
     .intro-section:before {
         margin-left: -1.25em!important;
+        top: 0!important;
     }
 
     h2 {
-        font-size: 2.245em!important;
+        font-size: 1.77em!important;
     }
 
     .w-full.lg\:w-1\/2 div {
@@ -35,12 +41,12 @@
     }
 
     .yup section:first-of-type .lg\:w-1\/2:has(h2), .yup section:first-of-type .generic-content:has(h2), section.Rectangular .generic-content:has(h2), .lg\:w-3\/4:has(h2) {
-        margin-top: 4em!important;
+        margin-top: 11.5em!important;
         padding-bottom: 3em!important;
     }
 
     .cms section h2 {
-        margin-left: .65em!important;;
+        margin-left: .65em!important;
         margin-right: .65em;
         display: block;
         margin-bottom: 2em;
@@ -49,6 +55,11 @@
 
     h3 {
         text-align: left;
+        font-size: 1.5em !important;
+    }
+
+    .intro-section p:first-of-type {
+        margin-top: .5em!important;
     }
 
     .overlap-bg-reverse + .w-full {
@@ -142,19 +153,26 @@
 }
 
 @media screen and (max-width: 480px) {
+
+    #top-section {
+        padding-bottom: 10.75em!important;
+    }
+
+    #main {
+        margin-top: 11rem!important; 
+    }
+
     h1 {
-        word-spacing: .33rem!important;
-        -webkit-text-stroke-width: unset!important;
-        -webkit-text-stroke-color: unset!important;
-        color: #DE4F4F!important;
+        -webkit-text-stroke-width: 1.5px!important;
     }
     
     h1 b {
         word-spacing: -.5rem!important;
+        -webkit-text-stroke-width: unset!important;
     }
 
     #navbar div:first-of-type {
-        max-width: calc(100vw - 4em)!important;
+        max-width: calc(100vw - 2.5em)!important;
     }
 
     .desktop-logo {
@@ -194,7 +212,7 @@
     }
     
     .hero-header div:first-of-type{
-      width: calc(100vw - 4em)!important; 
+      width: calc(100vw - 2.5em)!important; 
       height: 22em!important; 
     }
 
@@ -211,6 +229,7 @@
     aside {
         position: relative!important; 
         margin-top: 0!important; 
+        padding-bottom: 11em!important; 
     }
 
     .text-4xl {
@@ -222,6 +241,9 @@
         max-width: 40.5em!important;
         margin-left: -4.5em!important;
         margin-right: -5.5em!important;
+        margin-top: 8.25em!important;
+        width: unset!important;
+        height: unset!important;
     }
     
 }
@@ -331,6 +353,10 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .lg\:flex {
+        display: flex;
+    }
 
     h1 {
         word-spacing: .2rem!important;
@@ -460,13 +486,13 @@
 
 }
 
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
 
     .max-w-7xl {
         max-width: calc(100vw - 4em)!important;
     }
 
-}
+} */
 
 @media screen and (min-width: 1901px) {
 
@@ -502,6 +528,10 @@
     /* .content-850 {
         padding-right: 6rem;
     } */
+}
+
+.cms h2 {
+    margin-left: 0.5em!important;
 }
 
 #navbar div:first-of-type {

@@ -59,14 +59,10 @@ var all = document.getElementsByTagName("h2");
 for(var i = 0, max = all.length; i < max; i++) 
 {
 	let content = all[i].innerHTML;
-	// var contentnew = content;
-	// $('h2')[i].html( '<span aria-hidden="true">﹁</span>' + contentnew + '<span aria-hidden="true">﹂</span>' );
 
 	(function (index) {
                 document.getElementsByTagName('h2')[index]
                 .innerHTML = '<span aria-hidden="true">﹁</span>' + content + '<span aria-hidden="true">﹂</span>';
-
-				// $('#introheading h2').html( '<span aria-hidden="true">hi</span>' + content + '<span aria-hidden="true">bye</span>' );
 
 				if (document.getElementsByTagName('h2')[index].id == "introheading") {
 					document.getElementsByTagName('h2')[index]
@@ -80,10 +76,7 @@ for(var i = 0, max = all.length; i < max; i++)
 
             })(i);
 
-
 }
-
-
 
 });
 	 </script>
