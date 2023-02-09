@@ -38,7 +38,7 @@ typed_list:
       content_options:
         - type: generic_content
           generic_content: >-
-            ## Internationalization and globalization was at the heart of
+            ## International and global UX was at the heart of
             product strategy
 
 

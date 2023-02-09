@@ -270,7 +270,7 @@ header {
 }
 
 .hero-header {
-    padding-top: 6.75rem;
+    padding-top: 7.25rem;
 }
 
 /* .hero-header .text-4xl {
@@ -997,7 +997,7 @@ h1 b {
     position: relative;
     padding-left: 35px;
     /* color: white; */
-    margin-top: 3em;
+    margin-top: 3.5em;
     font-family: 'JetBrains Mono', sans-serif;
     max-width: 700px;
 }

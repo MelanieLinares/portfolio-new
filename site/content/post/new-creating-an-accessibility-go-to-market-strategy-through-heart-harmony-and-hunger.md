@@ -17,7 +17,7 @@ tags:
 technology: Project Management, Triaging issues, Documentation, Digital Strategy
 duration: 7 weeks
 introheading: "I started with one main goal: bring change in how Insight markets
-  accessibility."
+  accessibility"
 introbody: >-
   ### Overview:
 
