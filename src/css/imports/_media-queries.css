@@ -1,6 +1,7 @@
 @media screen and (max-width: 639px) {
 
-    .icon-content h3 + ul {
+    .icon-content h3 + ul,
+    .icon-content h3 + p {
         margin-left: calc(-80px - 0.5em)!important;
     }
 
@@ -144,10 +145,11 @@
 
     .div2-04 img {
         position: relative!important;
-        right: -1.5em!important;
+        right: 1.15em!important;
         width: 100vw!important;
-        bottom: -7.65em!important;
+        bottom: -12.15em!important;
         margin-top: -8em;
+        max-width: unset;
     }
 
     .fullwidth:not(.card-list) img {
@@ -292,6 +294,17 @@
         width: 2em;
     }
 
+    h2 {
+        font-size: 2.35em !important;
+    }
+
+    .content-850 h3:not(:nth-of-type(1)),
+    .content-850 h3:not(:nth-of-type(1)) + p,
+    .content-850 h3:not(:nth-of-type(1)) + ul,
+    .content-850 h3:not(:nth-of-type(1)) + p + ul {
+        padding-right:0!important;
+    }
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -302,6 +315,17 @@
 
     .icon-logo {
         width: 2.250em;
+    }
+
+    h2 {
+        font-size: 2.35em !important;
+    }
+
+    .content-850 h3:not(:nth-of-type(1)),
+    .content-850 h3:not(:nth-of-type(1)) + p,
+    .content-850 h3:not(:nth-of-type(1)) + ul,
+    .content-850 h3:not(:nth-of-type(1)) + p + ul {
+        padding-right:0!important;
     }
 
 }
