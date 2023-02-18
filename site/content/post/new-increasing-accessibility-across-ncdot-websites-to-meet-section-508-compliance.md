@@ -12,6 +12,7 @@ logo: img/ncdot-logo.jpg
 role: Accessibility Specialist
 tags:
   - accessibility
+  - sharepoint
 technology: Manual auditing, Triaging of issues, User Interface Design, Documentation
 duration: 2 months
 introheading: Creating a plan for usability and accessibility

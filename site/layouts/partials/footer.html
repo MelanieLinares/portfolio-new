@@ -54,6 +54,10 @@ $("#slider").on("input change", (e)=>{
 
 <script>
 $(window).on("load", function() {
+
+	$("#the-takeaway").before('<span id="results" style="position: absolute; visibility: hidden; margin-top: -11em"></span>');
+
+
 var all = document.getElementsByTagName("h2");
 
 for(var i = 0, max = all.length; i < max; i++) 

@@ -9,13 +9,13 @@ display_image_section_content:
     <!-- <div class="lg:w-4/5"> -->
       <div class="">
     <img src="{{.image1}}" alt="TBD">
-    <em>{{.caption1}}</em>
+    <div class="caption"><em>{{.caption1}}</em></div>
     <br/><br/>
 
 
 
       {{ if .image2 }} 
-      <em>{{.caption2}}</em>
+      <div class="caption"><em>{{.caption2}}</em></div>
       
       <img src="{{.image2}}" alt="TBD">
       {{ end }}

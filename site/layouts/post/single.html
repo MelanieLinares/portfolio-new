@@ -22,7 +22,7 @@
 
     <div>
       {{ .Params.introbodysecondary | markdownify }}<br>
-      <a href="{{ .Permalink }}#changethislater" class="skip card-v8 bg radius-lg"><span aria-hidden="true">🔍</span> skip to results</a>
+      <a href="{{ .Permalink }}#results" class="skip card-v8 bg radius-lg"><span aria-hidden="true">🔍</span> skip to results</a>
     </div>
   </section>
 
@@ -36,21 +36,28 @@
       <div class="cms hi {{.Params.theme}}"> 
 <div class="partials">
         {{ partial "test-multi-sections" .Params }}
-</div>
+
 {{ if .Content }}
         <section id="takeaway" class="body" style="margin-bottom: 4em; margin-top: 50px!important;" aria-labelledby="the-takeaway">
       <div class="inner-wrap max-w-7xl mx-auto">{{ .Content }}</div>
         </section>
         {{ end }}
 
-
+</div>
     </div>
     
 
 
   <section id="changethislater" class="related-content" style="padding-bottom: 7em; padding-top: 10em; margin-top: -4em;" aria-labelledby="related-title"> 
  <div class="inner-wrap max-w-7xl mx-auto">
-    <h2 id="related-title" class="related-title">Related case studies</h2> 
+    <h2 id="related-title" class="related-title">More  
+
+{{ if eq .Params.theme "purple" }}  accessibility  {{ end }}
+{{ if eq .Params.theme "blue"}}  UI/UX  {{ end }}
+{{ if eq .Params.theme "green"}}  development  {{ end }}
+
+case studies</h2> 
+
   <div id="related" style="position: relative">   
     <ul class="relative mx-auto grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-4"> 
       

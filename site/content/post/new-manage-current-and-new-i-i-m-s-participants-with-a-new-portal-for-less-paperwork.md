@@ -14,6 +14,8 @@ logo: img/ncdot-logo.jpg
 role: UI Designer and Developer
 tags:
   - sharepoint
+  - ui
+  - ux
 technology: User Experience Design, Prototyping, Design System integration,
   Frontend Technology
 duration: 5 months
@@ -27,13 +29,13 @@ introbody: >-
 
 
 
-  **Problem:** <br/> Internal DMV employees working within an older portal for managing Ignition Interlock participants experience difficulty keeping up with backlog and lack of needed features. 
+  <span aria-hidden="true">🤔</span> **Problem:** <br/>Internal DMV employees working within an older portal for managing Ignition Interlock participants experience difficulty keeping up with backlog and lack of needed features. 
 
 
-  **The Solution:** <br/> Add missing features to new portal along with a new approach to data management and API integration, while separating reliance on specific dependencies
+  <span aria-hidden="true">💡</span> **Plan:** <br/>Add missing features to new portal along with a new approach to data management and API integration, while separating reliance on specific dependencies
 
 
-  The NCDOT, on behalf of the DMV sector, assigned a team to work directly with the Ignition Interlock Program (IIP) team. The IIP team needed a new online system for managing the program. The new system would need to still support the legacy system’s data and its user’s needs; this included browser support, a SharePoint frontend, and UI that integrated into the existing design system
+  The Ignition Interlock Program team needed a new online system for managing the program. The new system would need to still support the legacy system’s data and its user’s needs; this included browser support, a SharePoint frontend, and UI that integrated into the existing design system
 theme: blue
 typed_list:
   - type: fullwidth
@@ -47,95 +49,67 @@ typed_list:
           The reason for the new portal was to reduce manual data entry. The system would integrate with the IIMS data APIs to aid in creating desired features to aid in managing existing, stale, and new participants and vendors of the IIMS monitoring devices.
 
 
-          <﻿div class="featured-text">I</div>IMS monitoring devices require a driver to conduct breathalyzer tests in order to start a vehicle.
+          <div class="left-text-only">IIMS monitoring devices require a driver to conduct breathalyzer tests in order to start a vehicle.</div></br>
 
+          <b>The new portal would:</b>
 
-
-
-          **The new portal would:**
       - type: cards
         process: false
         blurbcards:
-          - imagecards: img/coffee.svg
+          - imagecards: img/monitor.png
             textcards: Monitor successful use of the ignition interlock device
-          - imagecards: img/idea.png
+          - imagecards: img/identify.png
             textcards: Identify and alert necessary parties of court dates and eventual
               approved removal of the device
-          - imagecards: img/cursor.svg
+          - imagecards: img/authenticate.png
             textcards: Restrict data access to only certain groups of authenticated users
-  - type: fullwidth
-    content_options:
-      - type: generic_content
-        generic_content: >-
-          ## Exploring what is required to benefit program management user needs
 
+  - type: fifty_fifty    
+    left_side:
+      content_options:
+        - type: heading3
+          heading03: Exploring what is required to benefit user needs
+        - type: stacked_image_section
+          caption1: Day 1 of this project began by going through the existing research,
+            project outline, and limitations. A comically-sized stack of paper was
+            placed on my desk. 
+          caption2: I spent the following day going through it with
+            a highlighter and outline the structure on a whiteboard.
+          image2: img/ncdot/whiteboard-ncdot.jpeg
+          image1: img/ncdot/paperwork-ncdot.jpeg
+    right_side:
+      content_options:
+        - type: generic_content
+          generic_content: >-
+            ### Initial research
 
-          ### Initial research
+            When brought onto the project other teams had already been researching and working on the legislation. This research consisted of the existing application pages and online database that this portal would be incorporated with. We knew the backend database would need data structure updates. I worked with the backend team to define the transition from the existing system to the new in preparation for the UI changes
 
+            * How does the current system handle navigation?
 
-          When brought onto the project other teams had already been researching and working on the legislation. This research consisted of the existing application pages and online database that this portal would be incorporated with. We knew the backend database would need data structure updates. I worked with the backend team to define the transition from the existing system to the new in preparation for the UI changes.
+            * How are users authenticated and are there functions that only some users have access to? What does an unauthenticated user see?
 
+            * The current system uses a table with filters. How will filtering be handled without a SharePoint backend?
 
-          and budget allowance involved in getting the project started for years. No visual design or development had started, however.
+            * There is a lot of data. To whom should the data be available, when, and how can the data be grouped into views?            
 
+            ### Stakeholder interviews
 
-          This research also consisted of the existing application pages and online database that this portal would be incorporated with. We knew the backend database would need data structure updates. I worked with the backend team to define the transition from the existing system to the new in preparation for the UI changes.
+            After organizing the existing research, data, and data gained from numerous internal and external ideation sessions I consulted with the internal project lead. We unified on a strategy before driving downtown to meet with the project owner. The project owner ensured the plan met their expectations. Some aspects of the project required clarification to how it would translate within the UI. I was able to sketch and iterate on an initial batch wireframes for each set of pages during the session. The project owner was satisfied with the direction and signed off on the project so work on the UI and APIs could begin.
 
+            
+            The sketches were turned into the first round of wireframes to cover each user task.
 
-          * How does the current system handle navigation?
+            * Business goals were discussed
 
-          * How are users authenticated and are there functions that only some users have access to? What does an unauthenticated user see?
+            * Technical limitations were identified
 
-          * The current system uses a table with filters. How will filtering be handled without a SharePoint backend?
+            * User needs were discussed and a unified approach was decided upon
+            
+            * Sketches of how different tasks and goals could be approached were created during the initial interview
 
-          * There is a lot of data. To whom should the data be available, when, and how can the data be grouped into views?
+    background: Angled       
 
-
-          ### Stakeholder interviews
-
-
-          After organizing the existing research, data, and data gained from numerous internal and external ideation sessions I consulted with the internal project lead. We unified on a strategy before driving downtown to meet with the project owner. The project owner ensured the plan met their expectations. Some aspects of the project required clarification to how it would translate within the UI. I was able to sketch and iterate on an initial batch wireframes for each set of pages during the session. The project owner was satisfied with the direction and signed off on the project so work on the UI and APIs could begin.
-
-
-          The sketches were turned into the first round of wireframes to cover each user task. 
-
-
-          * Business goals were discussed
-
-          * Technical limitations were identified
-
-          * User needs were discussed and a unified approach was decided upon
-
-          * Sketches of how different tasks and goals could be approached were created during the initial interview
-
-
-          ### User tasks included:
-
-
-          * create participant
-
-          * edit participant profile
-
-          * modify dates
-
-          * access a participant flagged for immediate follow-up
-
-          * delete a user
-
-          * download individual participant data
-
-          * download report for a date range
-
-          * review case notes including photographs
-      - type: stacked_image_section
-        caption1: Day 1 of this project began by going through the existing research,
-          project outline, and limitations. A comically-sized stack of paper was
-          placed on my desk and I spent the following day going through it with
-          a highlighter and outline the structure on a whiteboard.
-        caption2: HEY!! I added Stack Image component to the fifty_fifty layout
-        image2: img/laptop.gif
-        image1: img/Rectangle 1.png
-    background: Angled
   - type: fullwidth
     background: Blank
     content_options:

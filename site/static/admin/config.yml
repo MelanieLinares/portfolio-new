@@ -80,7 +80,7 @@ collections: # A list of collections the CMS should be able to edit
                     fields:
                       - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: false}
                       - { label: 'Img', name: 'image', widget: 'image' }  
-                      - { label: 'Caption', name: 'caption', widget: 'text' }
+                      - { label: 'Caption', name: 'caption', widget: 'text', required: false}
                   - label: 'Scroll Image'
                     name: 'scroll-image'
                     widget: 'object'
@@ -191,6 +191,12 @@ collections: # A list of collections the CMS should be able to edit
             widget: 'object'
             fields:
 
+              - label: 'Heading'
+                name: 'heading3'
+                widget: 'object'
+                fields:
+                  - { label: 'Heading', name: 'heading03', widget: 'string' }
+
               - {label: "Content Background", name: "background", widget: "select", options: ["Angled", "Rectangular", "Blank"], required: true}
 
               - label: 'Left Side'
@@ -228,7 +234,7 @@ collections: # A list of collections the CMS should be able to edit
                         fields:
                           - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: false}
                           - { label: 'Img', name: 'image', widget: 'image' }  
-                          - { label: 'Caption', name: 'caption', widget: 'text' }
+                          - { label: 'Caption', name: 'caption', widget: 'text', required: false}
 
                       - label: 'OverlapIMG'
                         name: 'OverlapImg'
@@ -297,7 +303,7 @@ collections: # A list of collections the CMS should be able to edit
                         fields:
                           - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: false}
                           - { label: 'Img', name: 'image', widget: 'image' }  
-                          - { label: 'Caption', name: 'caption', widget: 'text' }
+                          - { label: 'Caption', name: 'caption', widget: 'text', required: false}
 
                       - label: 'OverlapIMG'
                         name: 'OverlapImg'
@@ -374,7 +380,7 @@ collections: # A list of collections the CMS should be able to edit
                         fields:
                           - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: false}
                           - { label: 'Img', name: 'image', widget: 'image' }  
-                          - { label: 'Caption', name: 'caption', widget: 'text' }
+                          - { label: 'Caption', name: 'caption', widget: 'text', required: false}
 
                       - label: 'OverlapIMG'
                         name: 'OverlapImg'
@@ -434,7 +440,7 @@ collections: # A list of collections the CMS should be able to edit
                         fields:
                           - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: false}
                           - { label: 'Img', name: 'image', widget: 'image' }  
-                          - { label: 'Caption', name: 'caption', widget: 'text' }                                                                             
+                          - { label: 'Caption', name: 'caption', widget: 'text', required: false}                                                                            
                       - label: 'Pill Featured Text'
                         name: 'pillfeaturedtext'
                         widget: 'object'
@@ -474,7 +480,7 @@ collections: # A list of collections the CMS should be able to edit
                         fields:
                           - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: false}
                           - { label: 'Img', name: 'image', widget: 'image' }  
-                          - { label: 'Caption', name: 'caption', widget: 'text' }                                                                             
+                          - { label: 'Caption', name: 'caption', widget: 'text', required: false}                                                                            
                       - label: 'Pill Featured Text'
                         name: 'pillfeaturedtext'
                         widget: 'object'
@@ -516,7 +522,7 @@ collections: # A list of collections the CMS should be able to edit
                         fields:
                           - { label: 'Arrow on Right? Default is Left', name: 'arrow_on_right', widget: 'boolean', required: false}
                           - { label: 'Img', name: 'image', widget: 'image' }  
-                          - { label: 'Caption', name: 'caption', widget: 'text' }
+                          - { label: 'Caption', name: 'caption', widget: 'text', required: false}
 
                       - label: 'OverlapIMG'
                         name: 'OverlapImg'

@@ -1,26 +1,3 @@
-<!-- {{ if .textimagesplitcontent }}
-{{ if eq .img_on_right "true" }}
-    {{ partial "textimagesplitreverse" . }}
-    
-{{ else }}
-    {{ partial "textimagesplit" . }}
-{{ end }}
-{{ end }}
-
-
-{{ partial "icon-media-block" .introw }}
-
-    <div class="center db mb3" style="width: fit-content; border: 1px solid red">
-<span style="display: inline-block">
-    <img src="{{ .image }}" alt="">
-    <em>{{.caption }}</em>
-</span>
-</div>
-<div>{{.markdown | markdownify}}</div> -->
-
-<!-- caption: yes generic image
-image: img/team.png -->
-
 <style>
     .caption:before, .img-w-caption .caption:before {
         background: url('img/obtuse-arrow.svg');

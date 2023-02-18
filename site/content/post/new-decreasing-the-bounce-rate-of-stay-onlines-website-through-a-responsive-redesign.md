@@ -11,6 +11,7 @@ logo: img/logo-icon.svg
 role: Front-End Web Developer
 tags:
   - cross-browser
+  - ui
 technology: User Research, UI Design, Prototyping, Frontend Technology
 duration: 3 months
 introheading: Creating a plan to decrease mobile bounce rate

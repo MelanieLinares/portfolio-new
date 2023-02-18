@@ -4,9 +4,7 @@ title: new - Creating an accessibility go-to-market strategy through heart,
 titlebold: Creating an accessibility go-to-market strategy
 titlenormal: through heart, harmony, and hunger
 preview: img/insight-featured.png
-notice: For legal reasons I am not able to show project details. I am able to
-  discuss the generalized process and am available to discuss in more detail
-  upon request.
+notice: For legal reasons I am not able to show project details. Images are representational only.
 date: 2022-10-02T16:42:06.511Z
 newdate: 2022-11-10T16:42:06.547Z
 client: Insight Enterprises
@@ -22,16 +20,13 @@ introbody: >-
   ### Overview:
 
 
-  Insight’s Digital Innovation team works closely with designers, developers, and technology experts to help companies implement next-generation digital solutions from the discovery to delivery phase. During 2019 the collective of individuals with the knowledge to take on accessibility solutions came together to take accessibility within the company from a nice to have, to a best in class integrated solution.
+  Insight’s Digital Innovation team helps companies implement digital solutions from discovery to delivery. During 2019 select individuals from the team came together to improve Insight's stake in accessibility. My role in this go-to-market plan involved ideation, creation of a delivery deck, documentation for bid strategy, and triage.
 
 
-  My role in this go-to-market plan involved planning and creating a delivery deck, documentation for bid strategy and triage priority, as well as being an accessibility advocate to department leads.
+  <span aria-hidden="true">🤔</span> **Problem:** <br/> Accessibility as an integrated solution was lacking. Insight had several subject matter experts but outisde of internal initiatives was not making use of this knowledge for clients.
 
 
-  **Problem:** <br/> Accessibility as an integrated solution was lacking, resulting in the delivery of some inaccessible products.
-
-
-  **Plan:** <br/> Through thoughtful internal planning and education a small team was formed of like-minded and skilled individuals to launch a go-to-market strategy for Insight as an up incomer in the field. This would start with team education and would end with a client bid. 
+  <span aria-hidden="true">💡</span> **Plan:** <br/> Through thoughtful internal planning and education a go-to-market strategy for Insight would be launched as a way for Insight to start taking on accessibility-specific projects. This would start with team education and would end with a client bid. 
 theme: purple
 typed_list:
   - type: fullwidth
@@ -40,21 +35,22 @@ typed_list:
         heading03: Discovery and ideation
       - type: generic_content
         generic_content: >-
-          ### Heart for user (and client) experience
+          ### <span aria-hidden="true">💜</span> Heart for user (and client) experience
 
           Most of our team knew how to integrate accessibility into the design and development process, but we didn’t have a formal audit methodology.
 
+          ![Drag Racing](https://images.unsplash.com/photo-1573495612890-430e48b164df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHRlY2glMjByZXNlYXJjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60)
 
           **The first week consisted of research:**
 
-          * Who is the client and what are their needs? (some of this was provided in the bid brief)
+          * Who is the client and what are their needs? (some of this was provided by the client prior to the bid)
 
           * What are some common audit practices and patterns?
 
           * How can we stand out?
 
 
-          That final question of standing out became the main focus. Our team had the heart and the design/development experience, but we lacked audit-specific experience. Rather than keep the deliverable to a handoff of data only, the team focused on integrating remediation as part of our bid. We sought to answer the “okay, now what?” that can follow introducing anyone to new concepts. We sought empathy in our bid for clients that may be overwhelmed with the changes needed for compliance.
+          That final question of <u>standing out</u> became the main focus. Our team had the heart and the accessible design/development experience, but we lacked audit-specific experience. Rather than keep the deliverable to only a handoff of data the team focused on integrating remediation as part of the bid. We sought to answer the “okay, now what?” that can follow introducing anyone to new concepts. We sought empathy in our bid for clients that may be overwhelmed with the changes needed for compliance.
     background: Blank
   - type: fullwidth
     background: Angled
@@ -63,17 +59,15 @@ typed_list:
         heading03: Strategy prioritization
       - type: generic_content
         generic_content: |-
-          ### Harmony of WCAG guidelines to actionable tasks
-
-          ### Strategy prioritization
+          ### <span aria-hidden="true">⚖️</span> Harmony of WCAG guidelines to actionable tasks
       - type: pillfeaturedtext
         pillfeaturedtext: An audit considers the compliance of a product and the data as
           the results, but now that you have a long list of issues what do you
           do?
       - type: generic_content
         generic_content: >-
-          **The A11y team held a few ideation sessions which resulted in a
-          methodology that could:**
+          **The A11y team held a few ideation sessions resulting in a
+          methodology proposal to:**
 
 
           * quantify issue complexity and severity
@@ -93,7 +87,7 @@ typed_list:
           ### Hunger for continued improvement
 
 
-          We ran a mock audit of Insight’s website. The purpose was to practice and present to project stakeholders a real plan for changes that should and could be implemented internally. 
+          I ran a mock audit of Insight’s website. The purpose was to practice and present to project stakeholders a real plan for changes that should and could be implemented internally. 
 
 
           **The practice audit included:**
@@ -113,23 +107,23 @@ typed_list:
           discussing the remediation timeline.
 
 
-          \r
+          ![Drag Racing](https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGltZWxpbmUlMjBwbGFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60)
 
           \r
 
           Our hunger for hands-on knowledge did not stop with audit
-          and delivery practice. Our team consulted with the sales team. We
+          and delivery practice. I and another team member consulted with the sales team. We
           discussed how the team can prioritize accessibility when seeking to
-          win clients and projects. The goal was to sell accessibility as a new
-          pillar in all our offerings rather than an optional service."
+          win clients and projects. The goal was to sell accessibility as <u>a new
+          pillar</u> in all our offerings rather than an optional service."
   - type: fullwidth
     background: Blank
     content_options:
       - type: heading3
-        heading03: The bid
+        heading03: The client bid
       - type: generic_content
         generic_content: >-
-          N﻿ow that our team, Management, and Sales were unified in a strategy
+          Now that our team, Management, and Sales were unified in a strategy,
           we reviewed the bid requirements. The client needed time and cost
           estimates, as well as an action plan outlined. We were not given
           access to code samples, but did have access to the public website. The
@@ -142,12 +136,29 @@ typed_list:
 
           * third-party component remediation plan and recommendations for easy, accessible solutions if issues are found
 
-          * cost as an agile solution to begin remediation in phases during testing process
+          * an agile solution to remediation in phases during testing process
 
           * client priority and access to dedicated UX and accessibility experts for questions
 
           * plan for continued monitoring
 
           * plan for client education to prevent accessibility issues from being reintroduced
+  - type: fullwidth
+    background: Angled
+    content_options:
+      - type: generic_content
+        generic_content: >-
+          ## The takeaway
+          
+          Insight didn’t win this bid but did prove to internal Insight team members and managers the need for improvements within each department. Initiatives were shortly implemented to encourage team members to get certified and engage in training. This directly led to the Accessibility track of new teammate onboarding. 
+
+
+          <span aria-hidden="true">✨</span> <b>Since the go-to-market project, Insight continues to improve how it markets accessibility.</b> The company has made marked efforts in treating accessibility as an ongoing goal for digital products and people.
+
+          > Thank you for all your efforts in keeping the web accessible.<br>
+          <cite>- Todd Darling <small>Insight Team Lead while on the NCDOT contract</small></cite>
+
+
+
 team: National UX Manager, Software Engineers, UX Designers
 ---
