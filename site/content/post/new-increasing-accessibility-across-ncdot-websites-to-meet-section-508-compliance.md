@@ -28,7 +28,7 @@ introbody: >-
   Government websites, including those of local agencies, need to be accessible in accordance to the Americans with Disabilities Act (ADA). The NCDOT websites were not meeting minimum compliance.  
 
 
-  **The Solution:** <br/> 
+  **The Plan:** <br/> 
 
   Through targeted auditing of pages and components an ongoing remediation plan was created and phase one of the plan implemented into the main site. 
 

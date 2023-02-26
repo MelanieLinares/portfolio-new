@@ -22,10 +22,10 @@ introbody: >-
   Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets. 
 
 
-  **Problem:** <br/> Many users did not make or complete purchases. These users included a very high percentage of users from mobile devices. 
+  **The Problem:** <br/> Many users did not make or complete purchases. These users included a very high percentage of users from mobile devices. 
 
 
-  **Solution:** <br/> Redesign the existing website, focusing on responsive design and maintainable code.
+  **The Plan:** <br/> Redesign the existing website, focusing on responsive design and maintainable code.
 
 
   **The starting rate:** <span aria-label="thumb down emoji">👎</span> about 85% of mobile users leave <br/> **The goal:** <span aria-label="okay hand emoji">👌</span> fewer than 50% of mobile users leave

@@ -23,10 +23,10 @@ introbody: >-
   Insight’s Digital Innovation team helps companies implement digital solutions from discovery to delivery. During 2019 select individuals from the team came together to improve Insight's stake in accessibility. My role in this go-to-market plan involved ideation, creation of a delivery deck, documentation for bid strategy, and triage.
 
 
-  <span aria-hidden="true">🤔</span> **Problem:** <br/> Accessibility as an integrated solution was lacking. Insight had several subject matter experts but outisde of internal initiatives was not making use of this knowledge for clients.
+  <span aria-hidden="true">🤔</span> **The Problem:** <br/> Accessibility as an integrated solution was lacking. Insight had several subject matter experts but outisde of internal initiatives was not making use of this knowledge for clients.
 
 
-  <span aria-hidden="true">💡</span> **Plan:** <br/> Through thoughtful internal planning and education a go-to-market strategy for Insight would be launched as a way for Insight to start taking on accessibility-specific projects. This would start with team education and would end with a client bid. 
+  <span aria-hidden="true">💡</span> **The Plan:** <br/> Through thoughtful internal planning and education a go-to-market strategy for Insight would be launched as a way for Insight to start taking on accessibility-specific projects. This would start with team education and would end with a client bid. 
 theme: purple
 typed_list:
   - type: fullwidth
@@ -114,8 +114,8 @@ typed_list:
           Our hunger for hands-on knowledge did not stop with audit
           and delivery practice. I and another team member consulted with the sales team. We
           discussed how the team can prioritize accessibility when seeking to
-          win clients and projects. The goal was to sell accessibility as <u>a new
-          pillar</u> in all our offerings rather than an optional service."
+          win clients and projects. The goal was to sell accessibility as a new
+          pilla</u> in all our offerings rather than an optional service."
   - type: fullwidth
     background: Blank
     content_options:

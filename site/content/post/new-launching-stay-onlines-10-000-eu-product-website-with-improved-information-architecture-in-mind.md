@@ -24,10 +24,10 @@ introbody: >-
   Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets.
 
 
-  **Problem:** <br/> Sales team members expressed difficulties handling customer satisfaction for international orders through the current website.
+  **The Problem:** <br/> Sales team members expressed difficulties handling customer satisfaction for international orders through the current website.
 
 
-  **The Solution:** <br/>  Create a EU-specific site that prioritizes content and global UX patterns in order to increase sales and meets international standards.
+  **The Plan:** <br/>  Create a EU-specific site that prioritizes content and global UX patterns in order to increase sales and meets international standards.
 
 
   In 2015 Stay Online made the transition from a U.S. business to an international one. The company opened a shipping and manufacturing location in the Czech Republic. U.S. sales associates had expressed difficulties handling customer satisfaction for international orders. The new warehouse would hopefully solve many of the issues concerning shipping costs and turnaround time. Stay Online wanted a dedicated website to funnel in EU-specific orders before planning a merged site in the future. This site would need to reduce the strain on Sales team members and increase international orders.

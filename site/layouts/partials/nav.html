@@ -15,7 +15,7 @@
 					<!-- Primary Navbar items -->
 					<div class="hidden xs:flex items-center space-x-1 justify-end" style="width: 100%">
 						{{ if eq (relURL .URL) ("/values/") }}
-						<a href="/values" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
+						<a href="/values" class="current block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400" aria-current="page">
 							About</a>
 						{{ else }}
 						<a href="/values" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">
@@ -23,7 +23,7 @@
 						{{ end }}
 			
 						{{ if eq (relURL .URL) ("/post/") }}
-						<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
+						<a href="/post" class="current block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400" aria-current="page">
 							Work</a>
 						{{ else }}
 						<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">
@@ -31,7 +31,7 @@
 						{{ end }}
 			
 						{{ if eq (relURL .URL) ("/article/") }}
-						<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400">
+						<a href="/article" class="current block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400" aria-current="page">
 							Articles</a>
 						{{ else }}
 						<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out hover:text-blue-400">

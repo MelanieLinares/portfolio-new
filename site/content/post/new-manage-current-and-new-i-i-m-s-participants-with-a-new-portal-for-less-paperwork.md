@@ -32,7 +32,7 @@ introbody: >-
   <span aria-hidden="true">🤔</span> **Problem:** <br/>Internal DMV employees working within an older portal for managing Ignition Interlock participants experience difficulty keeping up with backlog and lack of needed features. 
 
 
-  <span aria-hidden="true">💡</span> **Plan:** <br/>Add missing features to new portal along with a new approach to data management and API integration, while separating reliance on specific dependencies
+  <span aria-hidden="true">💡</span> **The Plan:** <br/>Add missing features to new portal along with a new approach to data management and API integration, while separating reliance on specific dependencies
 
 
   The Ignition Interlock Program team needed a new online system for managing the program. The new system would need to still support the legacy system’s data and its user’s needs; this included browser support, a SharePoint frontend, and UI that integrated into the existing design system
