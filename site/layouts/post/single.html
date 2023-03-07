@@ -2,92 +2,87 @@
 
 <div id="top-section" class="{{.Params.theme}}">
 
-  <div class=""> <!-- max-w-7xl mx-auto -->
+  <div class="">
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.preview "imageUrl2" .Params.image2 "backgroundcolor" .Params.backgroundcolor "title" .Params.titlebold "subtitle" .Params.titlenormal "text" .Params.notice ) }}
+    {{ partial "jumbotron" (dict "imageUrl" .Params.preview "imageUrl2" .Params.image2 "backgroundcolor" .Params.backgroundcolor "title" .Params.titlebold "subtitle" .Params.titlenormal "text" .Params.notice ) }}
 
 
-  <div id="main" class="max-w-7xl mx-auto ">
+      <div id="main" class="max-w-7xl mx-auto ">
 
-    <div class="">
+        <div class="">
 
-  {{ partial "aside" .Params }}
+          {{ partial "aside" .Params }}
 
-<section class="intro-section content-850" aria-labelledby="introheading">
-    <div>
-    <h2 id="introheading" style="display:block">{{ .Params.introheading }}</h2>
-    {{ .Params.introbody | markdownify }}
+            <section class="intro-section content-850" aria-labelledby="introheading">
+              <div>
+                <h2 id="introheading" style="display:block">{{ .Params.introheading }}</h2>
+                {{ .Params.introbody | markdownify }}
+              </div>
+
+              <div>
+                {{ .Params.introbodysecondary | markdownify }}<br>
+              </div>
+            </section>
+
+        </div>  
+      </div>
+
   </div>
 
+</div>
 
-    <div>
-      {{ .Params.introbodysecondary | markdownify }}<br>
-      <a href="{{ .Permalink }}#results" class="skip card-v8 bg radius-lg"><span aria-hidden="true">🔍</span> skip to results</a>
+
+
+
+
+<div class="{{.Params.theme}} Rectangular skip-area" style="margin-bottom: 10em">
+  <div class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8" style="padding: 4em 0">
+    <p class="white" style="font-size: 1.33em; font-family: 'JetBrains Mono', sans-serif; display: inline-block">Just want the outcome?</p>
+    <a href="{{ .Permalink }}#results" class="skip card-v8 bg radius-lg"><span aria-hidden="true">🔍</span> skip to results</a>
+  </div>
+</div>
+
+<div class="cms hi {{.Params.theme}}"> 
+  <div class="partials">
+    <div class="yup">
+      {{ partial "test-multi-sections" .Params }}
     </div>
-  </section>
-
-</div>  
+  </div>
 </div>
-
-</div>
-
-</div>
-
-      <div class="cms hi {{.Params.theme}}"> 
-<div class="partials">
-        {{ partial "test-multi-sections" .Params }}
-
-{{ if .Content }}
-        <section id="takeaway" class="body" style="margin-bottom: 4em; margin-top: 50px!important;" aria-labelledby="the-takeaway">
-      <div class="inner-wrap max-w-7xl mx-auto">{{ .Content }}</div>
-        </section>
-        {{ end }}
-
-</div>
-    </div>
     
-
-
-  <section id="changethislater" class="related-content" style="padding-bottom: 7em; padding-top: 10em; margin-top: -4em;" aria-labelledby="related-title"> 
- <div class="inner-wrap max-w-7xl mx-auto">
+<div id="changethislater" class="related-content" style="padding-bottom: 7em; padding-top: 11em;" aria-labelledby="related-title"> 
+  <div class="inner-wrap max-w-7xl mx-auto">
     <h2 id="related-title" class="related-title">More  
 
-{{ if eq .Params.theme "purple" }}  accessibility  {{ end }}
-{{ if eq .Params.theme "blue"}}  UI/UX  {{ end }}
-{{ if eq .Params.theme "green"}}  development  {{ end }}
+    {{ if eq .Params.theme "purple" }}  accessibility  {{ end }}
+    {{ if eq .Params.theme "blue"}}  UI/UX  {{ end }}
+    {{ if eq .Params.theme "green"}}  development  {{ end }}
 
-case studies & projects</h2> 
+    case studies & projects</h2> 
 
-  <div id="related" style="position: relative">   
-    <ul class="relative mx-auto grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-4"> 
-      
-      
- 
-
+    <div id="related" style="position: relative">   
+      <ul class="relative mx-auto grid max-w-[40rem] grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-4">  
     
-    {{ range first 3 ( where ( where .Site.Pages ".Params.tags" "intersect" .Params.tags ) "Title" "!=" .Title ) }} 
-    
+        {{ range first 3 ( where ( where .Site.Pages ".Params.tags" "intersect" .Params.tags ) "Title" "!=" .Title ) }}     
 
-    {{ if isset .Params "preview" }}
-    <li>
-      <a href="{{ .Permalink }}" class="card-v8 bg radius-lg">
-        <span style="position: absolute; opacity: 0;">case study</span>
-        <div>
-<img src="{{ .Params.preview }}" alt="" />
-<span class="card-v8__title">{{ .Title }}</span>
-<p class="padding-sm">{{ .Params.description }}</p>
-</div>
-</a>
-    </li>
-    {{ end }}
+        {{ if isset .Params "preview" }}
+        <li>
+          <a href="{{ .Permalink }}" class="card-v8 bg radius-lg">
+            <span style="position: absolute; opacity: 0;">case study</span>
+            <div>
+              <img src="{{ .Params.preview }}" alt="" />
+              <span class="card-v8__title">{{ .Title }}</span>
+              <p class="padding-sm">{{ .Params.description }}</p>
+            </div>
+          </a>
+        </li>
+        {{ end }}
           
         {{ end }}
-  </ul> </div> </div>
-</section>
-    
-<!-- <section id="wild" class="inner-wrap">
-  <h2>Find me in the wild</h2>
-  <p>UX Y'all - 10/04/2019    |    Modern Web October Event - 10/16/2019    |    Code for Durham: Civic Hacking - 12/10/2019</p>
-</section> -->
 
-    {{ end }}
+      </ul> 
+    </div> 
+  </div>
+</div>
+  
+{{ end }}

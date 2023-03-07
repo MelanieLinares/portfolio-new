@@ -99,7 +99,7 @@
 
     .yup section:first-of-type .lg\:w-1\/2:has(h2), .yup section:first-of-type .generic-content:has(h2), section.Rectangular .generic-content:has(h2), .lg\:w-3\/4:has(h2) {
         margin-top: 9.5em!important;
-         padding-bottom: 6em!important; /* was 3 */
+        padding-bottom: 6em!important; /* was 3 */
     }
 
     .cms section h2 {
@@ -235,7 +235,7 @@
     }
     
     h1 b {
-        word-spacing: -.5rem!important;
+        /* word-spacing: -.5rem!important; */
         -webkit-text-stroke-width: unset!important;
     }
 
@@ -366,11 +366,11 @@
 
 @media screen and (min-width: 481px) and (max-width: 767px) {
     h1 {
-        word-spacing: .33rem!important;
+        /* word-spacing: .33rem!important; */
     }
     
     h1 b {
-        word-spacing: -.85rem!important;
+        /* word-spacing: -.85rem!important; */
     }
 
     .desktop-logo {
@@ -451,7 +451,7 @@
     }
 
     h1 {
-        word-spacing: .2rem!important;
+        /* word-spacing: .2rem!important; */
     }
 
     .text-4xl {
@@ -514,12 +514,12 @@
     }
 
     h1 {
-        word-spacing: .25rem!important;
+        /* word-spacing: .25rem!important; */
         font-size: 3.25em!important;
     }
     
     h1 b {
-        word-spacing: -.95rem!important;
+        /* word-spacing: -.95rem!important; */
         font-size: 1em!important;
     }
 
@@ -546,13 +546,12 @@
 @media screen and (min-width: 1536px) {
 
     h1 b {
-        word-spacing: -.95rem!important;
+        /* word-spacing: -.95rem!important; */
         /* font-size: larger; */
     }
 
     .text-4xl {
-        font-size: 3.55rem !important;
-        font-size: 4rem !important;
+        font-size: 4.25rem !important;
     } 
 
     .max-w-7xl {
@@ -624,10 +623,6 @@
     /* .content-850 {
         padding-right: 6rem;
     } */
-}
-
-.cms h2 {
-    margin-left: 0.5em!important;
 }
 
 #navbar div:first-of-type {

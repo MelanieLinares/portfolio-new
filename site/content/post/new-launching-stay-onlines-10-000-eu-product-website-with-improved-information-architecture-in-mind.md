@@ -21,16 +21,14 @@ introbody: >-
   ### Overview:
 
 
-  Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets.
+  Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets. In 2015 Stay Online made the transition from a U.S. business to an international one. The company opened a shipping and manufacturing location in the Czech Republic. U.S. sales associates had expressed difficulties handling customer satisfaction for international orders. 
 
 
-  **The Problem:** <br/> Sales team members expressed difficulties handling customer satisfaction for international orders through the current website.
+  <span aria-hidden="true">🤔</span> **The Problem:** <br/> Sales team members expressed difficulties handling customer satisfaction for international orders through the current website.
 
 
-  **The Plan:** <br/>  Create a EU-specific site that prioritizes content and global UX patterns in order to increase sales and meets international standards.
+  <span aria-hidden="true">💡</span> **The Plan:** <br/>  Create a EU-specific site that prioritizes content and global UX patterns in order to increase sales and meets international standards.
 
-
-  In 2015 Stay Online made the transition from a U.S. business to an international one. The company opened a shipping and manufacturing location in the Czech Republic. U.S. sales associates had expressed difficulties handling customer satisfaction for international orders. The new warehouse would hopefully solve many of the issues concerning shipping costs and turnaround time. Stay Online wanted a dedicated website to funnel in EU-specific orders before planning a merged site in the future. This site would need to reduce the strain on Sales team members and increase international orders.
 theme: blue
 typed_list:
   - type: fifty_fifty
@@ -72,38 +70,39 @@ typed_list:
             and my experience with responsive development
           image: img/Image 46.png
   - type: fullwidth
-    background: Rectangular
+    background: Angled
     content_options:
-      - type: needtonamethis
-        unnamed_text: |-
+      - type: generic_content
+        generic_content: >-
           ## A new market means new users and expectations
 
           ### What do users of this new website need?
-        unnamed_image: img/sample2.png
-        introw:
-          blurbsw:
-            - imagew: img/blue-triangle.png
-              textw: >-
-                * Stay Online team internal members would need the ability to
+
+      - type: introw
+        blurbsw:
+          - imagew: img/citizen.png
+            textw: >-
+              * Stay Online team internal members would need the ability to
                 submit orders on behalf of the company and for phone orders
 
-                * External purchasing customers included one time buy customers and return annual buyers who bought in bulk
-            - imagew: img/blue-triangle.png
-              textw: >-
-                * Product customization and proof that products meet EU
-                regulations
+              * External purchasing customers included one time buy customers and return annual buyers who bought in bulk
+          - imagew: img/blue-triangle.png
+            textw: >-
+              * Product customization and proof that products meet EU regulations
 
-                * Ability to find products quickly
+              * Ability to find products quickly
   - type: fifty_fifty
     background: Blank
-    left_side:
-      content_options:
+    right_side:
+      content_options:     
         - type: CaptionImg
           image: img/eu-responsive.gif
           caption: TBD about the wireframe (also I need to add "Stacked Image" to the Left
             and Right for this component)
-    right_side:
-      content_options:
+    left_side:
+      content_options:   
+        - type: heading3
+          heading03: Prioritizing the findings        
         - type: generic_content
           generic_content: >-
             ### Wireframes and early iterations
@@ -121,8 +120,8 @@ typed_list:
 
             Early ideas that did not work and did not make it into final designs include a horizontal top menu for products, no sidebar layout, and homepage content consensus.
   - type: fifty_fifty
-    background: Angled
-    left_side:
+    background: Blank
+    right_side:
       content_options:
         - type: generic_content
           generic_content: >-
@@ -139,13 +138,13 @@ typed_list:
 
 
             Through a few iterations, categories for products arranged on the sidebar led to less time scrolling on the homepage and a higher click through rate. Previously, heat maps showed that the long category list (originally requiring scrolling) experienced a below-the-fold drop-off. After the categories were reduced the heat map data proved more evenly distributed.
-    right_side:
+    left_side:
       content_options:
         - type: CaptionImg
           image: img/meeting.jpg
           caption: TBD about the wireframe
   - type: fifty_fifty
-    background: Rectangular
+    background: Blank
     left_side:
       content_options:
         - type: generic_content
@@ -166,8 +165,8 @@ typed_list:
           image: img/ncdot-alert.png
           caption: TBD about the image
   - type: fifty_fifty
-    background: Rectangular
-    left_side:
+    background: Blank
+    right_side:
       content_options:
         - type: generic_content
           generic_content: >-
@@ -181,10 +180,39 @@ typed_list:
             * The previous U.S. design utilized a list-view. The only advantage to the detail view was wishlisting an item or checking technical documents
 
             * The new design would add functionality for condensing products differentiated previously only by length and color, as well as adding info related to shipping, VAT, and safety certifications
-    right_side:
+    left_side:
       content_options:
         - type: CaptionImg
           image: img/insight1.jpg
           caption: TBD for image
+
+  - type: fullwidth
+    background: Angled
+    content_options:
+      - type: generic_content
+        generic_content: >-
+          ## The takeaway
+          
+          - 👍 The website saw improved search efficiency over the A/B testing and launch period through the use of categories
+
+          - 👍 Optimized keywords increased efficiency in finding products via search
+
+          - 👌 Category changes were implemented without negatively affecting the U.S. database (the plan was to merge category changes over to the U.S site)
+
+          - Internationalization is not just translation and takes time and effort from many cross-functional teams
+          
+          - The site was released on a very short timeline. I learned a lot from leading this project, both about global standards but also how to properly manage multiple teams.
+
+
+          > Melanie distinguished herself by consistently delivering quality solutions, on schedule. […] She always went the extra mile to ensure the quality of her work was at the highest level.<br>
+          <cite>- Gordon Harris <small>Stay Online Director, Marketing and Communications</small></cite>  
+          
+          
+          > Melanie has a great understanding of CSS, graphics and web design, responsive layout, and CSS compilers. Our websites are much better as a result of her work.<br>
+          <cite>- Brian Futrell <small>Stay Online Web Developer</small></cite>
+
+
+          > Under her leadership the company more than doubled revenue over the last year or so. […] Melanie was a vital part in keeping our company a success.<br>
+          <cite>- Helen Grant <small>Sales Lead at Stay Online</small></cite>
 team: Backend Developers, Marketing Specialist,
 ---

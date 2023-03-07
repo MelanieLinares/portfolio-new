@@ -1,109 +1,19 @@
-<div class="yup">  
+{{ range .typed_list }}
 
-            {{ range .typed_list }}
+    {{ if eq .type "fifty_fifty" }}
+        {{ partial "fifty_fifty" . }}
+    {{ end }}
 
-                <!-- {{ if eq .type "heading" }}
-                    {{ partial "heading" . }}
-                {{ end }}
+    {{ if eq .type "one_three" }}
+        {{ partial "one_three" . }}
+    {{ end }}
 
-                {{ if eq .type "generic_content" }}
-                    {{ partial "generic_content" . }}
-                {{ end }}
+    {{ if eq .type "needtonamethis" }}
+        {{ partial "needtonamethis" . }}
+    {{ end }}
 
-                {{ if eq .type "twocol_icon_content" }}
-                    {{ partial "twocol_icon_content" . }}
-                {{ end }}
+    {{ if eq .type "fullwidth" }}
+        {{ partial "generic_content" . }}
+    {{ end }}              
 
-                {{ if eq .type "generic_image" }}
-                    {{ partial "generic_image" . }}
-                {{ end }}
-                
-                {{ if eq .type "Twocol_image_content" }}
-                    {{ partial "Twocol_image_content" . }}
-                {{ end }} -->
-
-                {{ if eq .type "fifty_fifty" }}
-                    {{ partial "fifty_fifty" . }}
-                {{ end }}
-
-                {{ if eq .type "one_three" }}
-                    {{ partial "one_three" . }}
-                {{ end }}
-
-                {{ if eq .type "needtonamethis" }}
-                    {{ partial "needtonamethis" . }}
-                {{ end }}
-
-                {{ if eq .type "fullwidth" }}
-                    {{ partial "generic_content" . }}
-                {{ end }}
-
-                <!-- {{ if eq .type "display_image_section" }}
-                    {{ partial "display_image_section" . }}
-                {{ end }}
-
-                {{ if eq .type "stacked_image_section" }}
-                    {{ partial "stacked_image_section" . }}
-                {{ end }}
-
-                {{ if eq .type "Twocol_content" }}
-                    {{ partial "Twocol_content" . }}
-                {{ end }}
-
-                {{ if eq .type "scroll-image" }}
-                    {{ partial "scroll-image" . }}
-                {{ end }}
-
-                {{ if eq .type "overlap_bg_img_content" }}
-                    {{ partial "overlap_bg_img_content" . }}
-                {{ end }}
-
-                {{ if eq .type "fullwidth-img" }}
-                    {{ partial "fullwidth-img" . }}
-                {{ end }}
-
-                {{ if eq .type "two-col-text-grid" }}
-                    {{ partial "two-col-text-grid" . }}
-                {{ end }}
-
-                {{ if eq .type "icon-cards" }}
-                    {{ partial "icon-cards" . }}
-                {{ end }}
-
-                {{ if eq .type "featured-text" }}
-                    {{ partial "featured-text" . }}
-                {{ end }}
-
-                {{ if eq .type "image-jumble-grid" }}
-                    {{ partial "image-jumble-grid" . }}
-                {{ end }}
-
-                {{ if eq .type "offset-two-column" }}
-                    {{ partial "offset-two-column" . }}
-                {{ end }}
-
-                {{ if eq .type "pill-featured-text" }}
-                    {{ partial "pill-featured-text" . }}
-                {{ end }}
-
-                {{ if eq .type "scroll-image" }}
-                    {{ partial "scroll-image" . }}
-                {{ end }}
-
-                {{ if eq .type "angled-section" }}
-                    {{ partial "angled-section" . }}
-                {{ end }}
-
-                {{ if eq .type "rectangular-section" }}
-                    {{ partial "rectangular-section" . }}
-                {{ end }}
-                
-                {{ if eq .type "blank-section" }}
-                    {{ partial "blank-section" . }}
-                {{ end }}                    -->
-
-                
-
-            {{ end }}
-
-</div>
+{{ end }}

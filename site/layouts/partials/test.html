@@ -1,8 +1,30 @@
-<ul>
+<!-- <ul>
     {{ $test := site.Data.test }}
     {{ range $test.events }}
         <li>
           {{ .name }} - {{ .date }}
         </li>
     {{ end }}
-</ul>
+</ul> -->
+<b>this is a test</b>
+
+{{ range .Params.typed_list }}
+
+        <!-- {{ if eq .type "fifty_fifty" }} -->
+            {{ partial "fifty_fifty" . }}
+        <!-- {{ end }} -->
+
+        <!-- {{ if eq .type "one_three" }} -->
+            <!-- {{ partial "one_three" . }} -->
+        <!-- {{ end }} -->
+
+        <!-- {{ if eq .type "needtonamethis" }} -->
+            <!-- {{ partial "needtonamethis" . }} -->
+        <!-- {{ end }} -->
+
+        <!-- {{ if eq .type "fullwidth" }} -->
+            {{ partial "generic_content" . }}
+        <!-- {{ end }}               -->
+        
+
+{{ end }} 

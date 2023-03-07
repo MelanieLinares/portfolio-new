@@ -16,16 +16,16 @@ technology: User Research, UI Design, Prototyping, Frontend Technology
 duration: 3 months
 introheading: Creating a plan to decrease mobile bounce rate
 introbody: >-
-  ### O﻿verview:
+  ### Overview:
 
 
-  Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets. 
+  Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets. Stay Online's e-commerce website, launched in 1997, had not changed to be compliant with best practices introduced with HTML5. Mobile users were not considered. This contributed to a large number of mobile device users leaving the site upon load or before completing a purchase. 
 
 
   **The Problem:** <br/> Many users did not make or complete purchases. These users included a very high percentage of users from mobile devices. 
 
 
-  **The Plan:** <br/> Redesign the existing website, focusing on responsive design and maintainable code.
+  **The Plan:** <br/> Redesign the existing website, focusing on responsive design and maintainable code. There was a potential to capture mobile users by making the web experience accessible. Responsive design was not an easy sell to management. Data-driven design through analytics would be used to get the pitch approved.
 
 
   **The starting rate:** <span aria-label="thumb down emoji">👎</span> about 85% of mobile users leave <br/> **The goal:** <span aria-label="okay hand emoji">👌</span> fewer than 50% of mobile users leave
@@ -33,7 +33,6 @@ introbody: >-
   <em>(note: mobile was defined as less than 1024px screen size during the design sprint)</em>
 
 
-  Stay Online's e-commerce website, launched in 1997, had not changed to be compliant with best practices introduced with HTML5. Mobile users were not considered. This contributed to a large number of mobile device users leaving the site upon load or before completing a purchase. There was a potential to capture these users by making the web experience accessible. Responsive design was not an easy sell to management. Data-driven design through analytics was needed to get the pitch approved.
 theme: blue
 typed_list:
   - type: fullwidth
@@ -258,5 +257,14 @@ typed_list:
         image4: img/stayonline-us-tablet.png
         image5: img/stayonline-eu.jpg
         type: image-jumble-grid
+
+  - type: fullwidth
+    background: Angled
+    content_options:
+      - type: generic_content
+        generic_content: >-
+          ## The takeaway
+          
+          ...        
 team: Web Development Manager, Marketing Specialist,
 ---

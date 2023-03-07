@@ -1,16 +1,29 @@
-<!-- - type: stacked_image_section
-heading05: Yes stacked image
-image: img/powercord.png
-display_image_section_content:
-  - type: Content02
-    Content002: Yes stacked image - content2(002) -->
+<style>
+  .blue .Angled .caption:before, .blue .Angled .img-w-caption .caption:before {
+      background: url('img/blue-border-arrow.png');
+      background-repeat: no-repeat;
+  }
+
+  .blue .Blank .caption:before, .blue .Blank .img-w-caption .caption:before {
+      background: url('img/white-border-arrow.png');
+      background-repeat: no-repeat;
+  }
+
+  .caption + .caption:before, .img-w-caption .caption + .caption:before {
+      transform: scaleX(-1) rotate(45deg);
+      top: 5.3em;
+  }
+
+  .blue .Angled .caption + .caption:before, .blue .Angled .img-w-caption .caption + .caption:before {
+      background: url('img/blue-border-arrow.png');
+      background-repeat: no-repeat;
+  }
+</style>
 
 <div class="container max-w-7xl mx-auto">
     <!-- <div class="lg:w-4/5"> -->
-      <div class="">
     <img src="{{.image1}}" alt="TBD">
     <div class="caption"><em>{{.caption1}}</em></div>
-    <br/><br/>
 
 
 
@@ -44,5 +57,4 @@ display_image_section_content:
 
   {{end}}
 
-      </div>
     </div>

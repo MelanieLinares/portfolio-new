@@ -152,6 +152,7 @@ collections: # A list of collections the CMS should be able to edit
                       - { label: 'Image', name: 'image', widget: 'image' }
                       - { label: 'Content', name: 'content', widget: 'markdown' }    
                       - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: true} 
+                      - { label: 'Caption', name: 'caption', widget: 'string' } 
                   - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                         
                   - label: 'Fullwidth Img'
                     name: 'fullwidth-img'
@@ -266,6 +267,7 @@ collections: # A list of collections the CMS should be able to edit
                           - { label: 'Image', name: 'image', widget: 'image' }
                           - { label: 'Content', name: 'content', widget: 'markdown' }    
                           - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: true} 
+                          - { label: 'Caption', name: 'caption', widget: 'string' } 
                       - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                               
 
               - label: 'Right Side'
@@ -335,6 +337,7 @@ collections: # A list of collections the CMS should be able to edit
                           - { label: 'Image', name: 'image', widget: 'image' }
                           - { label: 'Content', name: 'content', widget: 'markdown' }    
                           - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: true} 
+                          - { label: 'Caption', name: 'caption', widget: 'string' } 
                       - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false} 
 
                   
@@ -412,6 +415,7 @@ collections: # A list of collections the CMS should be able to edit
                           - { label: 'Image', name: 'image', widget: 'image' }
                           - { label: 'Content', name: 'content', widget: 'markdown' }    
                           - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: true} 
+                          - { label: 'Caption', name: 'caption', widget: 'string' } 
                       - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                               
 
               - label: '1_rightsection'
@@ -554,6 +558,7 @@ collections: # A list of collections the CMS should be able to edit
                           - { label: 'Image', name: 'image', widget: 'image' }
                           - { label: 'Content', name: 'content', widget: 'markdown' }    
                           - { label: 'Image on Right?', name: 'img_on_right', widget: 'boolean', required: true} 
+                          - { label: 'Caption', name: 'caption', widget: 'string' } 
                       - {label: Vertical icon section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}                                               
                                               
 
