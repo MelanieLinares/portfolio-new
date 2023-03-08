@@ -36,9 +36,9 @@ typed_list:
       content_options:
         - type: generic_content
           generic_content: >-
-            ## Discovery and ideation
+            ## Discovery & ideation
 
-            ### <span aria-hidden="true">💜</span> Heart for user (and client) experience
+            ### Heart for user & client experience
 
             Most of our team knew how to integrate accessibility into the design and development process, but we didn’t have a formal audit methodology.
 
@@ -68,7 +68,7 @@ typed_list:
         heading03: Strategy prioritization
       - type: generic_content
         generic_content: |-
-          ### <span aria-hidden="true">⚖️</span> Harmony of WCAG guidelines to actionable tasks
+          ### Harmony of WCAG guidelines to actionable tasks
       - type: pillfeaturedtext
         pillfeaturedtext: An audit considers the compliance of a product and the data as
           the results, but now that you have a long list of issues what do you

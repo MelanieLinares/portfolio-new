@@ -41,10 +41,10 @@ typed_list:
       - type: overlap_bg_img_content
         image: img/sample.png
         content: >-
-          ## Gathering insight, identifying issues, and clarifying tasks
+          ## Gathering insight, identifying issues, & clarifying tasks
 
 
-          ### Insight and issues
+          ### Insight & issues
 
 
           * Design needs to maintain IE6+ (and later IE8+) browser compatibility
@@ -175,7 +175,7 @@ typed_list:
     content_options:
       - type: generic_content
         generic_content: >-
-          ## Optimizing the navigation and redesigning the homepage
+          ## Optimizing the navigation & redesigning the homepage
 
 
           After years of adding every new product line to the sidebar, the experience of navigating product categories was inefficient.
@@ -220,7 +220,7 @@ typed_list:
             Accessibility baselines were established using Google Lighthouse and Axe DevTools. Manual testing was completed to meet WCAG 2.0 Level A.
 
 
-            ### Layout was changed from tables and legacy code to HTML5
+            ### Layout was changed from tables & legacy code to HTML5
 
 
             * Previous code used floats and absolute positioning to change the logical order of content which negatively affects keyboard users

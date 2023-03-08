@@ -37,11 +37,11 @@ typed_list:
       content_options:
         - type: generic_content
           generic_content: >-
-            ## International and global UX was at the heart of
+            ## International & global UX was at the heart of
             product strategy
 
 
-            ### Team Exploration and Planning
+            ### Team Exploration & Planning
 
 
             * I co-lead a discovery session to explore project requirements, limitations, globalization needs, and eCommerce workflow
@@ -74,7 +74,7 @@ typed_list:
     content_options:
       - type: generic_content
         generic_content: >-
-          ## A new market means new users and expectations
+          ## A new market means new users & expectations
 
           ### What do users of this new website need?
 
@@ -105,7 +105,7 @@ typed_list:
           heading03: Prioritizing the findings        
         - type: generic_content
           generic_content: >-
-            ### Wireframes and early iterations
+            ### Wireframes & early iterations
 
 
             The process of wireframes and interactive prototypes for which the team would be conducted A/B testing a few things worked and didn’t in the ideation process.
@@ -149,7 +149,7 @@ typed_list:
       content_options:
         - type: generic_content
           generic_content: >-
-            ### Search functionality and results page changes
+            ### Search functionality & results page changes
 
 
             * U.S. website did not have a dedicated search page, relying on a Google search plugin that would populate results within a frame
@@ -170,7 +170,7 @@ typed_list:
       content_options:
         - type: generic_content
           generic_content: >-
-            ### Product and category page changes
+            ### Product & category page changes
 
 
             * Previously to get to a product detail page a user may need to click through up to 4 or 5 categories

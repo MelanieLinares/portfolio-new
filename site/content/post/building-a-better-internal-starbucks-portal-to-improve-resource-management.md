@@ -78,10 +78,10 @@ typed_list:
 
           ### How might we avoid errors when users change how revenue is divided and utilized?
 
-          Existing APIs for each portfolio were causing issues due to calculations occurring after form submission and only within a current portfolio set. If revenue allotment totals for portfolios A, B, and C combined were below 100%, users could make changes. Currently there was not user feedback for this issue prior to submission and an unclear error after submission. 
+          Existing APIs for each portfolio were causing issues due to calculations occurring after form submission and only within a current portfolio set. If revenue allotment totals for portfolios A, B, and C combined were below 100%, users could make changes. Currently there was no user feedback for this issue prior to submission and an unclear error after submission. 
           ![test](img/error-data.jpg)
 
-          The UI was not properly informing users when a portfolio or a sub-portfolio would cause the main portfolio to exceed 100%. The big question was how should errors be handled within the UI and within the API? Could and should error states be avoided?
+          The UI was not properly informing users when a portfolio would cause resources to exceed 100%. The big question was how should errors be handled within the UI and within the API? Could and should error states be avoided?
       - type: introw
         blurbsw:
           - textw: >-
@@ -137,7 +137,7 @@ typed_list:
 
           - Components were built for usability and by utilizing test-driven development practices
 
-          - Accessibility and performance improvements were implemented alongside the requested features. It was important to me that both be considered in all development and design deliverables.
+          - Accessibility and performance improvements were implemented alongside the requested features. It was important to emphasize thenecessity for accessible error messages and form elements to the team.
  
         
           Starbucks has a very knowledgeable team and I loved working directly with the UX and back-end folks. I'm glad the Insight team was able to deliver a robust user interface for Starbucks. <span aria-hidden="true">☕✨</span>

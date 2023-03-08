@@ -7,8 +7,8 @@ preview: img/portal-animated-transparent.gif
 notice: For legal reasons I am not able to show project details. I am able to
   discuss the generalized process and am available to discuss in more detail
   upon request.
-date: 2019-06-04T00:33:20.559Z
-newdate: 2019-11-09T00:33:20.599Z
+date: 2018-08-04T00:33:20.559Z
+newdate: 2019-03-09T00:33:20.599Z
 client: NC Department of Transportation
 logo: img/ncdot-logo.jpg
 role: UI Designer and Developer
@@ -18,8 +18,8 @@ tags:
   - ux
 technology: User Experience Design, Prototyping, Design System integration,
   Frontend Technology
-duration: 5 months
-introheading: Identifying ways to optimize a legacy internal DMV process digitally
+duration: 7 months
+introheading: Identifying ways to optimize an internal DMV process digitally
 introbody: >-
   ###  Overview:
 
@@ -28,10 +28,10 @@ introbody: >-
 
 
 
-  <span aria-hidden="true">🤔</span> **Problem:** <br/>Internal DMV employees working within an older portal for managing Ignition Interlock participants experience difficulty keeping up with backlog and lack of needed features. 
+  **Problem:** <span aria-hidden="true">🤔</span><br/>Internal DMV employees working within an older portal for managing Ignition Interlock participants experience difficulty keeping up with backlog and lack of needed features. 
 
 
-  <span aria-hidden="true">💡</span> **The Plan:** <br/>Add missing features to new portal along with a new approach to data management and API integration, while separating reliance on specific dependencies
+   **The Plan:** <span aria-hidden="true">💡</span><br/>Research user and business needs to produce a list of missing and desired features. Create new portal UI and develop a new approach to data management and API integration, while separating reliance on specific dependencies.
 
 theme: blue
 typed_list:
@@ -95,8 +95,6 @@ typed_list:
             After organizing the existing research, data, and data gained from numerous internal and external ideation sessions I consulted with the internal project lead. We unified on a strategy before driving downtown to meet with the project owner. The project owner ensured the plan met their expectations. Some aspects of the project required clarification to how it would translate within the UI. I was able to sketch and iterate on an initial batch wireframes for each set of pages during the session. The project owner was satisfied with the direction and signed off on the project so work on the UI and APIs could begin.
 
             
-            The sketches were turned into the first round of wireframes to cover each user task.
-
             * Business goals were discussed
 
             * Technical limitations were identified
@@ -112,7 +110,7 @@ typed_list:
     content_options:
       - type: generic_content
         generic_content: |-
-          ## Wireframes and high fidelity prototype iterations
+          ## Wireframes & high fidelity prototype iterations
 
           ### The team identified four main views:
 
@@ -135,8 +133,7 @@ typed_list:
           <div>It was important during the iteration stage to maintain the basic structure of the existing pages. The DMV team did not want a rebrand and wanted the new system to fit in atheistically with the existing SharePoint design system. This meant the focus would be on optimized functionality and user experience.</div>
       - type: scroll-image
         image: img/ncdot-wireframe.png
-        caption: Drop-down navigation contained multiple columns and subheaders. This navigation was duplicated within the code for muliple screen sizes rather than using CSS to adjust the layout
-      - type: generic_content
+        caption: Simplified version of wireframes sketched during initial client meeting. 
         generic_content: >-
           ### Some wireframes ideas that were adapted or set aside for later updates:
 
@@ -153,7 +150,7 @@ typed_list:
     content_options:
       - type: generic_content
         generic_content: >-
-          ## Profile data and management
+          ## Profile data & management
 
 
           ### Challenge:
@@ -171,7 +168,7 @@ typed_list:
     content_options:
       - type: generic_content
         generic_content: >-
-          ## Reports and custom filtering
+          ## Reports & custom filtering
 
 
           The portal would be used for exporting, as well as managing information. Reports would contain features for search, sorting, and filtering.
@@ -185,7 +182,7 @@ typed_list:
           * search by date added or follow-up date range
 
 
-          ### Sorting and Filtering
+          ### Sorting & Filtering
 
 
           * sort ascending/descending was discussed and tested as being based on ID or last name, and status
@@ -207,9 +204,16 @@ typed_list:
         generic_content: >-
           ## The takeaway
           
-          This was a very long project, as is the case with most government work but the different teams I was able to work and collaborate with provided a great asset for delivering the projection time and to business needs. While the project did experience some ups and downs with funding and performance obstacles, the end result was highly praised by the team which now uses this application daily. 🎉
+          This was a very long project from start to finish, as is the case with most government work. While the project did experience some ups and downs with funding and performance obstacles, the end result was highly praised by the team which now uses this application daily. There has been a reduction of hours spent by the team managing data. Success! State-wide records and process continues to show improvement as the backlog decreases. 🎉
+
+
+          **Funding obstacle:** During December 2018 and January 2019 NC was affected by the federal government shutdown. All work completed towards projects had to be paused.
+
+
+          **Performance obstacle:** During API quality assurance testing it was found that pages loading mass amounts of data required a lengthy wait time for initial load. The data set for testing included a max of 10,000 records, but the production API exceeded this amount exponentially. This was not disclosed in inital testing and implementation so had to be quickly remediated before project launch. The method used at launch for fetching the amount of data records was not the most ideal, but the due to cross-team disagreements the data would not be sent in batches.
           
-          >[Melanie] helps modernize aging applications by refactoring them using modern JavaScript frameworks, like Vue.js. Her user-first philosophy for user experience […] made Melanie a critical part of the team’s success.<br>
+
+          >[Melanie] helps modernize aging applications by refactoring them using modern JavaScript frameworks, like Vue.js. Her user-first philosophy for user experience […] made her a critical part of the team’s success.<br>
           <cite>- Patrick Doran <small>NCDOT/NCDIT UX and Web Services Manager</small></cite>
 
 

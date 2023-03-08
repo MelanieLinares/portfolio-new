@@ -60,6 +60,10 @@ aside li {
     line-height: 1.4em;
 }
 
+p a {
+    text-decoration: revert!important;
+}
+
 aside li:last-of-type {
     margin-bottom: 0;
 }
