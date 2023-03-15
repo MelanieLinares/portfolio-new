@@ -24,10 +24,10 @@ introbody: >-
   Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets. In 2015 Stay Online made the transition from a U.S. business to an international one. The company opened a shipping and manufacturing location in the Czech Republic. U.S. sales associates had expressed difficulties handling customer satisfaction for international orders. 
 
 
-  <span aria-hidden="true">🤔</span> **The Problem:** <br/> Sales team members expressed difficulties handling customer satisfaction for international orders through the current website.
+  **The Problem:** <span aria-hidden="true">🤔</span><br/>Sales team members expressed difficulties handling customer satisfaction for international orders through the current website. International customers expressed frustration with U.S.-centric site content and often left their shopping carts at the shipping stage of checkout.
 
 
-  <span aria-hidden="true">💡</span> **The Plan:** <br/>  Create a EU-specific site that prioritizes content and global UX patterns in order to increase sales and meets international standards.
+  **The Plan:** <span aria-hidden="true">💡</span><br/>Create a EU-specific site that prioritizes content and global UX patterns in order to increase sales and meets international standards.
 
 theme: blue
 typed_list:
@@ -35,12 +35,48 @@ typed_list:
     background: Blank
     left_side:
       content_options:
+        - type: heading3
+          heading03: International & global UX was at the heart of
+            product strategy 
         - type: generic_content
           generic_content: >-
-            ## International & global UX was at the heart of
-            product strategy
+            ### What is global UX?
+
+            Global UX is a catch-all term that includes multi-language and multi-culture within the UX process. This includes localization, internationalization, and ISO 9241 standard (including country-specific standards).
+
+            - **Localization** - a process through which a website or product is adapted to a specific market. Considerations include: actual content of the app, language, and currency.
+            
+            - **Internationalization** - process of preparing products, services, and internal operations for expansion into global markets. Considerations include: fonts, icons, colors, layout, and specific code implemetations.
+
+            - [ISO 9241](https://www.iso.org/obp/ui/#iso:std:iso:9241:-110:ed-2:v1:en), Ergonomics of Human-System Interaction, among other international standards and laws were considered, including [GDPR](https://gdpr-info.eu/). 
+
+        - type: pillfeaturedtext
+          pillfeaturedtext: ✍️ Check out my article [Global UX is Not Just Translation](article/this-is-a-new-article/)
+        - type: cards
+          process: true
+          blurbcards:
+            - imagecards: img/think-emoji.svg
+              textcards: >-
+                **UX example change**
+            - textcards: blah blah something something.   
+        - type: cards
+          process: true
+          blurbcards:
+            - imagecards: img/think-emoji.svg
+              textcards: >-
+                **UX example change**
+            - textcards: blah blah something something.   
+        - type: cards
+          process: true
+          blurbcards:
+            - imagecards: img/think-emoji.svg
+              textcards: >-
+                **UX example change**
+            - textcards: blah blah something something.   
 
 
+        - type: generic_content
+          generic_content: >-
             ### Team Exploration & Planning
 
 
@@ -85,7 +121,7 @@ typed_list:
               * Stay Online team internal members would need the ability to
                 submit orders on behalf of the company and for phone orders
 
-              * External purchasing customers included one time buy customers and return annual buyers who bought in bulk
+              * External customers, including one time bulk buy customers, that purchase annually need [...]
           - imagew: img/blue-triangle.png
             textw: >-
               * Product customization and proof that products meet EU regulations
@@ -105,8 +141,15 @@ typed_list:
           heading03: Prioritizing the findings        
         - type: generic_content
           generic_content: >-
-            ### Wireframes & early iterations
+            ### Defining the funtionality
 
+            - [sitemap, add a quote from user?]
+
+            - [core function user flow, add a quote from user?]
+
+            - [new features, add a quote from user?]
+
+            ### Wireframes & early iterations
 
             The process of wireframes and interactive prototypes for which the team would be conducted A/B testing a few things worked and didn’t in the ideation process.
 
@@ -119,6 +162,39 @@ typed_list:
 
 
             Early ideas that did not work and did not make it into final designs include a horizontal top menu for products, no sidebar layout, and homepage content consensus.
+
+  - type: fullwidth
+    background: Rectangular
+    content_options:
+      - type: heading3
+        heading03: Boop        
+      - type: generic_content
+        generic_content: >-
+          ### Function A
+
+          - [isolated wireframe]
+
+          - [isolated ui screenshot(s) with flow description]
+
+          - [final ui img or gif]
+
+          ### Function B
+
+          - [isolated wireframe]
+
+          - [isolated ui screenshot(s) with flow description]
+
+          - [final ui img or gif]
+
+          ### Function C
+
+          - [isolated wireframe]
+
+          - [isolated ui screenshot(s) with flow description]
+
+          - [final ui img or gif]
+
+
   - type: fifty_fifty
     background: Blank
     right_side:
@@ -185,6 +261,24 @@ typed_list:
         - type: CaptionImg
           image: img/insight1.jpg
           caption: TBD for image
+
+  - type: fullwidth
+    background: Angled
+    content_options:
+      - type: generic_content
+        generic_content: "## Comparing the results"
+      - image5caption: caption
+        image4caption: caption
+        image3caption: caption
+        image2caption: caption
+        image1caption: caption
+        image1: img/stayonline-us-responsive.jpg
+        image2: img/stayonline-us-table.jpg
+        image3: img/stayonline-us.jpg
+        image4: img/stayonline-us-tablet.png
+        image5: img/stayonline-eu.jpg
+        type: image-jumble-grid
+
 
   - type: fullwidth
     background: Angled

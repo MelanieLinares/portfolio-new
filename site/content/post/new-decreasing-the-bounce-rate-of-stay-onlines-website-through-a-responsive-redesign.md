@@ -22,10 +22,10 @@ introbody: >-
   Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets. Stay Online's e-commerce website, launched in 1997, had not changed to be compliant with best practices introduced with HTML5. Mobile users were not considered. This contributed to a large number of mobile device users leaving the site upon load or before completing a purchase. 
 
 
-  **The Problem:** <br/> Many users did not make or complete purchases. These users included a very high percentage of users from mobile devices. 
+  **The Problem:** <span aria-hidden="true">🤔</span> <br/>Many users did not make or complete purchases. These users included a very high percentage of users from mobile devices. 
 
 
-  **The Plan:** <br/> Redesign the existing website, focusing on responsive design and maintainable code. There was a potential to capture mobile users by making the web experience accessible. Responsive design was not an easy sell to management. Data-driven design through analytics would be used to get the pitch approved.
+  **The Plan:** <span aria-hidden="true">💡</span><br/>Redesign the existing website, focusing on responsive design and maintainable code. There was a potential to capture mobile users by making the web experience accessible. Responsive design was not an easy sell to management. Data-driven design through analytics would be used to get the pitch approved.
 
 
   **The starting rate:** <span aria-label="thumb down emoji">👎</span> about 85% of mobile users leave <br/> **The goal:** <span aria-label="okay hand emoji">👌</span> fewer than 50% of mobile users leave

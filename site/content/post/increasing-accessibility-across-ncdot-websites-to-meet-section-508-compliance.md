@@ -24,13 +24,11 @@ introbody: >-
   The North Carolina Department of Transportation (NCDOT) had a website redesign in 2018. I conducted an audit which found accessibility issues with the website individual pages and components. As a government agency the sites needed to meet a higher standard than the currently met WCAG 2.0 A (single A) level.
 
 
-  <span aria-hidden="true">🤔</span> **The Problem:** <br/> 
-
+  **The Problem:** <span aria-hidden="true">🤔</span><br/> 
   Government websites, including those of local agencies, need to be accessible in accordance to the Americans with Disabilities Act (ADA). The NCDOT websites were not meeting minimum compliance.  
 
 
-  <span aria-hidden="true">💡</span> **The Plan:** <br/> 
-
+  **The Plan:** <span aria-hidden="true">💡</span><br/> 
   Through targeted auditing of pages and components an ongoing remediation plan was created and phase one of the plan implemented into the main site. While a variety of tools were utilizing in establishing a starting compliance level, the easiest to comprehend for stakeholders was to present changes in Google Lighthouse scores along with changes in Axe Devtools issues found.
 
 

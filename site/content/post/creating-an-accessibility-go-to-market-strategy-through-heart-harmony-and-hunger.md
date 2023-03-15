@@ -23,10 +23,10 @@ introbody: >-
   Insight’s Digital Innovation team helps companies implement digital solutions from discovery to delivery. During 2019 select individuals from the team came together to improve Insight's stake in accessibility. My role in this go-to-market plan involved ideation, creation of a delivery deck, documentation for bid strategy, and triage.
 
 
-  <span aria-hidden="true">🤔</span> **The Problem:** <br/> Accessibility as an integrated solution was lacking. Insight had several subject matter experts but outisde of internal initiatives was not making use of this knowledge for clients.
+  **The Problem:** <span aria-hidden="true">🤔</span><br/> Accessibility as an integrated solution was lacking. Insight had several subject matter experts but outisde of internal initiatives was not making use of this knowledge for clients.
 
 
-  <span aria-hidden="true">💡</span> **The Plan:** <br/> Through thoughtful internal planning and education a go-to-market strategy for Insight would be launched as a way for Insight to start taking on accessibility-specific projects. This would start with team education and would end with a client bid. 
+  **The Plan:** <span aria-hidden="true">💡</span><br/> Through thoughtful internal planning and education a go-to-market strategy for Insight would be launched as a way for Insight to start taking on accessibility-specific projects. This would start with team education and would end with a client bid. 
 theme: purple
 typed_list:
 

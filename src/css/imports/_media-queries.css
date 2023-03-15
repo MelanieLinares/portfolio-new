@@ -508,8 +508,12 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1399px) {
 
+    header, #top-section, .skip-area {
+        padding: 0 2em;
+    }
+
     .intro-section.content-850 {
-        max-width: calc(100vw - 600px);
+        max-width: 850px;
         min-width: 725px; 
     }
 

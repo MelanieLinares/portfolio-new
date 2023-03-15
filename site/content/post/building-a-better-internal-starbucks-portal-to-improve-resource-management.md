@@ -25,12 +25,10 @@ introbody: >-
 
 
 
-  <span aria-hidden="true">🤔</span> **The Problem:** <br/>The internal Starbucks portal experienced sync issues and error management issues in regards to portfolio percentages.
+  **The Problem:** <span aria-hidden="true">🤔</span><br/>The internal Starbucks portal experienced sync issues and error management issues in regards to portfolio percentages.
 
 
-
-
-  <span aria-hidden="true">💡</span> **The Plan:** <br/>The Starbucks management team needed to easily see percentages of funding in order to re-adjust portfolios, calculations, and cross-portfolio assets. A main dashboard with access to all portfolios and the ability to display cross-portfolio information was proposed.
+  **The Plan:** <span aria-hidden="true">💡</span><br/>The Starbucks management team needed to easily see percentages of funding in order to re-adjust portfolios, calculations, and cross-portfolio assets. A main dashboard with access to all portfolios and the ability to display cross-portfolio information was proposed.
 theme: green
 typed_list:
   - type: fifty_fifty
