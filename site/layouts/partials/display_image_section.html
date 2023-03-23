@@ -1,7 +1,7 @@
 <div class="display_image_section parent-outer">
 
   <div class="max-w-7xl mx-auto">
-  <div class="content-850">
+  <div class="">
 
 
     {{ if eq .type "display_image_section" }}
@@ -18,7 +18,7 @@
     {{ range .display_image_section_content }}
 
       {{ if eq .type "Content02" }}
-      <p>{{.Content002 | markdownify}}</p>
+      <div>{{.Content002 | markdownify}}</div>
       {{ end }}
 
       <!-- {{ if eq .type "Content03" }}
@@ -36,7 +36,7 @@
     {{ range .display_image_section_content }}
 
       {{ if eq .type "Content03" }}
-      <p>{{.Content003 | markdownify}}</p>
+      <div>{{.Content003 | markdownify}}</div>
       {{ end }}
 
       {{ if eq .type "introw" }}

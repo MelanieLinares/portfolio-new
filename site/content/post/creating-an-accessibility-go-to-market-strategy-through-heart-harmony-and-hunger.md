@@ -17,9 +17,6 @@ duration: 7 weeks
 introheading: "I started with one main goal: bring change in how Insight markets
   accessibility"
 introbody: >-
-  ### Overview:
-
-
   Insight’s Digital Innovation team helps companies implement digital solutions from discovery to delivery. During 2019 select individuals from the team came together to improve Insight's stake in accessibility. My role in this go-to-market plan involved ideation, creation of a delivery deck, documentation for bid strategy, and triage.
 
 
@@ -32,12 +29,10 @@ typed_list:
 
   - type: fifty_fifty
     background: Blank
-    left_side:
+    right_side:
       content_options:
         - type: generic_content
           generic_content: >-
-            ## Discovery & ideation
-
             ### Heart for user & client experience
 
             Most of our team knew how to integrate accessibility into the design and development process, but we didn’t have a formal audit methodology.
@@ -54,8 +49,10 @@ typed_list:
 
             That final question of <u>standing out</u> became the main focus. Our team had the heart and the accessible design/development experience, but we lacked audit-specific experience. Rather than keep the deliverable to only a handoff of data the team focused on integrating remediation as part of the bid. We sought to answer the “okay, now what?” that can follow introducing anyone to new concepts. We sought empathy in our bid for clients that may be overwhelmed with the changes needed for compliance.
 
-    right_side:
+    left_side:
       content_options:
+        - type: heading3
+          heading03: Discovery & ideation 
         - type: generic_content
           generic_content: >-
             ![test](https://images.unsplash.com/photo-1573495612890-430e48b164df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHRlY2glMjByZXNlYXJjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60)

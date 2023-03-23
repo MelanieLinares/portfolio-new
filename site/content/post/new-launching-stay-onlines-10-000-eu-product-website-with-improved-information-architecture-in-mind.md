@@ -18,9 +18,6 @@ technology: UI Design, User Research, Information Architecture, Frontend Technol
 duration: 3 months
 introheading: Creating a plan to help online consumers find products quickly and globally
 introbody: >-
-  ### Overview:
-
-
   Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets. In 2015 Stay Online made the transition from a U.S. business to an international one. The company opened a shipping and manufacturing location in the Czech Republic. U.S. sales associates had expressed difficulties handling customer satisfaction for international orders. 
 
 
@@ -33,11 +30,8 @@ theme: blue
 typed_list:
   - type: fifty_fifty
     background: Blank
-    left_side:
+    right_side:
       content_options:
-        - type: heading3
-          heading03: International & global UX was at the heart of
-            product strategy 
         - type: generic_content
           generic_content: >-
             ### What is global UX?
@@ -51,29 +45,32 @@ typed_list:
             - [ISO 9241](https://www.iso.org/obp/ui/#iso:std:iso:9241:-110:ed-2:v1:en), Ergonomics of Human-System Interaction, among other international standards and laws were considered, including [GDPR](https://gdpr-info.eu/). 
 
         - type: pillfeaturedtext
-          pillfeaturedtext: ✍️ Check out my article [Global UX is Not Just Translation](article/this-is-a-new-article/)
-        - type: cards
-          process: true
-          blurbcards:
-            - imagecards: img/think-emoji.svg
-              textcards: >-
-                **UX example change**
-            - textcards: blah blah something something.   
-        - type: cards
-          process: true
-          blurbcards:
-            - imagecards: img/think-emoji.svg
-              textcards: >-
-                **UX example change**
-            - textcards: blah blah something something.   
-        - type: cards
-          process: true
-          blurbcards:
-            - imagecards: img/think-emoji.svg
-              textcards: >-
-                **UX example change**
-            - textcards: blah blah something something.   
+          pillfeaturedtext: ✍️ Check out my article [Global UX is Not Just Translation](article/this-is-a-new-article/)  
+    
+    left_side:
+      content_options:
+        - type: heading3
+          heading03: International & global UX was at the heart of
+            product strategy       
+        - type: CaptionImg
+          image: img/Connected-world-bro.png
 
+
+
+
+
+
+  - type: fifty_fifty
+    background: Blank
+    right_side:
+      content_options:   
+        - type: CaptionImg
+          caption: Day 1 began with meetings--lots of meetings. Stay Online brought me
+            onto the EU launch team due to my familiarity with the U.S. website
+            and my experience with responsive development
+          image: img/stayonline-eu-display-cropped.png
+    left_side:
+      content_options:
 
         - type: generic_content
           generic_content: >-
@@ -98,102 +95,160 @@ typed_list:
 
 
             Time was a limitation. This forced us to focus on a minimal viable experience for the initial sprint. A large amount of product APIs were required with little to no rewrite as the U.S. site also used the same data. Existing sub-sites and marketing materials would be carried over incrementally as translations completed.
+
+
+  - type: fullwidth
+    background: Angled
+    content_options:
+      - type: heading3
+        heading03: A new market means new users & expectations       
+      - type: fullwidth_img
+        image: img/us-pre-eu-design.png
+      - type: generic_content
+        generic_content: >-
+          <ul class="visually-hidden">
+            <li>Navigation menu was very lengthy and international cords not prioritixed</li>
+            <li>Power cord puirchases were outsourced which made the process time consuming and difficult for international users</li>
+            <li>The available methods to make purchases from countries outside the U.S. was complicated</li>
+            <li>Country-specific and international product pages were not well-designed and served as a link hub rather than a resource</li>
+            <li>The product categories were difficult to distinguish as a glance</li>
+          </ul>        
+
+
+
+  - type: fifty_fifty
+    background: Angled
+    left_side:
+      content_options:  
+        - type: heading4
+          heading04: What do users of this new website need? 
+       
+        - type: introw
+          blurbsw:
+            - imagew: img/businessman.png
+              textw: >-
+                #### External International Buyer
+
+                * Ability to easily locate country-specific products
+
+                * Ability to complete transactions independently without having to contact a sales representative to convert VAT and expalain shipping expectations
+
+                * Customizable products
+
+                * Reduced shipping cost and clear costs prior to adding items to cart
+
+                * Proof that products meet EU regulations
+
     right_side:
       content_options:
-        - type: CaptionImg
-          caption: Day 1 began with meetings--lots of meetings. Stay Online brought me
-            onto the EU launch team due to my familiarity with the U.S. website
-            and my experience with responsive development
-          image: img/Image 46.png
+        - type: introw
+          blurbsw:
+            - imagew: img/salesperson.png
+              textw: >-
+                #### Internal/Outside Sales Team Member
+
+                * Ability to submit orders on behalf of customers
+
+                * Access the site on a varierty of devices, especially during limited service during tradeshows
+                
+                * Locate resources quickly
+
+                * Access specific groups or products for sharing quickly, including categories or searches
+
+                * Ability to easily promote sales or promoted products                
+
   - type: fullwidth
     background: Angled
     content_options:
       - type: generic_content
         generic_content: >-
-          ## A new market means new users & expectations
+          ### What do these needs and expectations mean for the design?              
+      - type: cards
+        process: true
+        blurbcards:
+          - imagecards: img/think-emoji.svg
+            textcards: >-
+                **The checkout process would need to be completely redesigned to ensure VAT was calculated and to simplify the process**
+          - textcards: Form fields only used for data-gathering should be removed. Form fields should utilize autocomplete. Users should be able to find cost (excluding shipping) information prior to the final step.   
+      - type: cards
+        process: true
+        blurbcards:
+          - imagecards: img/think-emoji.svg
+            textcards: >-
+                **Resources would need to be available in multiple locations and in multiple languages**
+          - textcards: Previously the resources were located only on one page and used by the Sales team, but users often requested resources because they were not aware of how to find them. Related , including those regarding EU regulations, need to be located on each category page as well as each individual product page.
 
-          ### What do users of this new website need?
-
-      - type: introw
-        blurbsw:
-          - imagew: img/citizen.png
-            textw: >-
-              * Stay Online team internal members would need the ability to
-                submit orders on behalf of the company and for phone orders
-
-              * External customers, including one time bulk buy customers, that purchase annually need [...]
-          - imagew: img/blue-triangle.png
-            textw: >-
-              * Product customization and proof that products meet EU regulations
-
-              * Ability to find products quickly
   - type: fifty_fifty
-    background: Blank
-    right_side:
-      content_options:     
-        - type: CaptionImg
-          image: img/eu-responsive.gif
-          caption: TBD about the wireframe (also I need to add "Stacked Image" to the Left
-            and Right for this component)
+    background: Rectangular
     left_side:
-      content_options:   
+      content_options:  
         - type: heading3
-          heading03: Prioritizing the findings        
+          heading03: Prioritizing the findings  
+        - type: CaptionImg
+          image: img/eu-sitemap.png
+          caption: Sitemap was re-evaluated to reduce the 
+    right_side:
+      content_options:         
         - type: generic_content
           generic_content: >-
-            ### Defining the funtionality
+            ### Defining the changes in funtionality
 
-            - [sitemap, add a quote from user?]
+            #### Order a Product Flow
 
-            - [core function user flow, add a quote from user?]
+        - type: cards
+          process: true
+          blurbcards:
+            - textcards: >-
+                  **The checkout process would need to be completely redesigned to ensure VAT was calculated and to simplify the process**
+            - textcards: Form fields only used for data-gathering should be removed. Form fields should utilize autocomplete. Users should be able to find cost (excluding shipping) information prior to the final step. 
+            - textcards: Form fields only used for data-gathering should be removed. Form fields should utilize autocomplete. Users should be able to find cost (excluding shipping) information prior to the final step. 
 
-            - [new features, add a quote from user?]
-
-            ### Wireframes & early iterations
-
-            The process of wireframes and interactive prototypes for which the team would be conducted A/B testing a few things worked and didn’t in the ideation process.
-
-
-            * Initially internal stakeholders did not want category changes, but minifying categories proved helpful for user experience and profitable when considering click-through rate once the site moved into development. 
-
-            * The low-resolution photography-based design approach moved to high-resolution display images and iconography/illustration instead of cut out products. 
-
-            * The process was time-consuming, but elevated the brand image. The responsive menu, which went through many iterations and tests, proved one of the design's strengths.
-
-
-            Early ideas that did not work and did not make it into final designs include a horizontal top menu for products, no sidebar layout, and homepage content consensus.
-
+             
   - type: fullwidth
     background: Rectangular
-    content_options:
-      - type: heading3
-        heading03: Boop        
+    content_options:   
       - type: generic_content
         generic_content: >-
-          ### Function A
+          #### Locate a Product Resource Flow
 
-          - [isolated wireframe]
+      - type: cards
+        process: true
+        blurbcards:
+          - textcards: >-
+                **The checkout process would need to be completely redesigned to ensure VAT was calculated and to simplify the process**
+          - textcards: Form fields only used for data-gathering should be removed. Form fields should utilize autocomplete. Users should be able to find cost (excluding shipping) information prior to the final step. 
+          - textcards: Form fields only used for data-gathering should be removed. Form fields should utilize autocomplete. Users should be able to find cost (excluding shipping) information prior to the final step.        
 
-          - [isolated ui screenshot(s) with flow description]
+      - type: generic_content
+        generic_content: >-
+          #### Check Out Flow
 
-          - [final ui img or gif]
+      - type: cards
+        process: true
+        blurbcards:
+          - textcards: >-
+                **The checkout process would need to be completely redesigned to ensure VAT was calculated and to simplify the process**
+          - textcards: Form fields only used for data-gathering should be removed. Form fields should utilize autocomplete. Users should be able to find cost (excluding shipping) information prior to the final step. 
+          - textcards: Form fields only used for data-gathering should be removed. Form fields should utilize autocomplete. Users should be able to find cost (excluding shipping) information prior to the final step. 
 
-          ### Function B
+  # - type: fullwidth
+  #   background: Blank
+  #   content_options:
+  #     - type: generic_content
+  #       generic_content: >-        
+  #         ### Wireframes & early iterations
 
-          - [isolated wireframe]
+  #         The process of wireframes and interactive prototypes for which the team would be conducted A/B testing a few things worked and didn’t in the ideation process.
 
-          - [isolated ui screenshot(s) with flow description]
 
-          - [final ui img or gif]
+  #         * Initially internal stakeholders did not want category changes, but minifying categories proved helpful for user experience and profitable when considering click-through rate once the site moved into development. 
 
-          ### Function C
+  #         * The low-resolution photography-based design approach moved to high-resolution display images and iconography/illustration instead of cut out products. 
 
-          - [isolated wireframe]
+  #         * The process was time-consuming, but elevated the brand image. The responsive menu, which went through many iterations and tests, proved one of the design's strengths.
 
-          - [isolated ui screenshot(s) with flow description]
 
-          - [final ui img or gif]
-
+  #         Early ideas that did not work and did not make it into final designs include a horizontal top menu for products, no sidebar layout, and homepage content consensus.
 
   - type: fifty_fifty
     background: Blank
@@ -216,6 +271,8 @@ typed_list:
             Through a few iterations, categories for products arranged on the sidebar led to less time scrolling on the homepage and a higher click through rate. Previously, heat maps showed that the long category list (originally requiring scrolling) experienced a below-the-fold drop-off. After the categories were reduced the heat map data proved more evenly distributed.
     left_side:
       content_options:
+        - type: heading3
+          heading03: Information Architecture
         - type: CaptionImg
           image: img/meeting.jpg
           caption: TBD about the wireframe
@@ -265,8 +322,8 @@ typed_list:
   - type: fullwidth
     background: Angled
     content_options:
-      - type: generic_content
-        generic_content: "## Comparing the results"
+      - type: heading3
+        heading03: Website UI Results 
       - image5caption: caption
         image4caption: caption
         image3caption: caption

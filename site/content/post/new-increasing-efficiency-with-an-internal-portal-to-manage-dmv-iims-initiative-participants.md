@@ -21,9 +21,6 @@ technology: User Experience Design, Prototyping, Design System integration,
 duration: 7 months
 introheading: Identifying ways to optimize an internal DMV process digitally
 introbody: >-
-  ###  Overview:
-
-
   The North Carolina Department of Transportation (NCDOT) along with the Department of Motor Vehicles (NCDMV) is responsible for managing transportation infrastructure, registration for driver license, and general driver safety. The Ignition Interlock Program team needed a new online system for managing the program. The new system would need to still support the legacy system’s data and its user’s needs; this included browser support, a SharePoint frontend, and UI that integrated into the existing design system
 
 

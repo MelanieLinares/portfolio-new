@@ -183,7 +183,6 @@ collections: # A list of collections the CMS should be able to edit
                     widget: 'object'
                     fields:
                       - { label: "text", name: "unnamed_text", widget: "markdown", required: false}
-                      - { label: "image", name: "unnamed_image", widget: "image", required: false}
                       - {label: main unnamed section, name: introw, widget: object, fields: [{label: Blurbs, name: blurbsw, widget: list, fields: [{label: Image, name: imagew, widget: image}, {label: Text, name: textw, widget: markdown}]}], required: false}
 
 
@@ -224,6 +223,13 @@ collections: # A list of collections the CMS should be able to edit
                         widget: 'object'
                         fields:
                           - { label: 'Heading', name: 'heading03', widget: 'string' }
+
+                      - label: 'Heading'
+                        name: 'heading4'
+                        widget: 'object'
+                        fields:
+                          - { label: 'Heading', name: 'heading04', widget: 'string' }
+
                       - label: 'Basic Content'
                         name: 'generic_content'
                         widget: 'object'

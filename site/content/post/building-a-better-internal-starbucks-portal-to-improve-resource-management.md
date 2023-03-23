@@ -17,9 +17,6 @@ technology: UI Design, Design System integration
 duration: 2 months
 introheading: Updating the dashboard UI for a better management workflow
 introbody: >-
-  ### Overview:
-
-
   Managing data can be a pain if common actions within an application result in errors or the actions are not easily found within the UI. My role involved developing components with React and TypeScript.
 
 

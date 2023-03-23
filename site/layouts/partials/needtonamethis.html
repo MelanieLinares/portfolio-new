@@ -1,11 +1,5 @@
-    <div class="{{.background}}">
+    <div class="fullwidth">
 
-      {{ if .unnamed_text }}
-      {{ .unnamed_text | markdownify }}
-      {{ end }}
-
-      <img alt="tbd" src="{{ .unnamed_image }}">
-    
     <div class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8 lg:flex">
 
 {{ range .introw.blurbsw }}
@@ -14,7 +8,7 @@
   <div class="absolute flex items-center justify-center">
 <img src="{{ .imagew }}" alt="" class="center db mb3 icon">
   </div>
-<div class="mt-2 text-base text-gray-500 icon-content">
+<div class="mt-2 icon-content">
   {{ .textw | markdownify }}
 </div>
 </div>

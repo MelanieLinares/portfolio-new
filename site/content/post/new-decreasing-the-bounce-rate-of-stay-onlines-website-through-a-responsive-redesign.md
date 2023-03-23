@@ -16,9 +16,6 @@ technology: User Research, UI Design, Prototyping, Frontend Technology
 duration: 3 months
 introheading: Creating a plan to decrease mobile bounce rate
 introbody: >-
-  ### Overview:
-
-
   Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets. Stay Online's e-commerce website, launched in 1997, had not changed to be compliant with best practices introduced with HTML5. Mobile users were not considered. This contributed to a large number of mobile device users leaving the site upon load or before completing a purchase. 
 
 
@@ -35,53 +32,9 @@ introbody: >-
 
 theme: blue
 typed_list:
+
   - type: fullwidth
     background: Blank
-    content_options:
-      - type: overlap_bg_img_content
-        image: img/sample.png
-        content: >-
-          ## Gathering insight, identifying issues, & clarifying tasks
-
-
-          ### Insight & issues
-
-
-          * Design needs to maintain IE6+ (and later IE8+) browser compatibility
-
-          * Data-heavy pages need content organization and prioritization to provide an ideal mobile experience
-
-          * The branding system needed updating to incorporate accessible colors for web and print
-
-          * Code refactoring is needed to remove a table-based layout and poorly formed HTML
-        img_on_right: false
-      - type: needtonamethis
-        unnamed_text: "### Three main types of users were identified"
-        unnamed_image: img/sample2.png
-        introw:
-          blurbsw:
-            - textw: >-
-                **Business-to-Business Customers**
-
-                These users include one time buyers and repeat buyers. They use multiple devices and browsers, buy in bulk and enjoy the ability to customize a product or order. Older browser support is very important to the existing user base.
-              imagew: img/scroll.svg
-            - textw: >-
-                **Inventory Warehouse Workers**
-
-                These are internal Stay Online employees working on mobile devices. They use authenticated portions of the website to check stock and product location. They need the website to not limit functionality for small devices.
-              imagew: img/scroll.svg
-            - textw: >-
-                **Sales and Marketing Employees**
-
-                These are internal and external Stay Online employees working on multiple devices, including tablets when at trade shows. They need the website to work fast and reliably on low data connections.
-              imagew: img/scroll.svg
-      - type: generic_content
-        generic_content: I worked with Marketing and Sales managers to identify business
-          needs for a new homepage and discovered that a major problem was that
-          a large number of customers were unable to order products on mobile
-          devices. Responsive design presented an exciting opportunity.
-  - type: fullwidth
-    background: Angled
     content_options:
       - type: generic_content
         generic_content: >-
@@ -109,31 +62,74 @@ typed_list:
 
 
           Many users complained they could not see the content because it was either hidden, off-screen, or required scrolling horizontally on mid-size and small mobile devices. Users complained they were having difficulty tabbing through web content formatted with tables. Keyboard focus needed to be implemented more consistently or hidden. This was directly causing rampant accessibility issues.
+
+          ### Insight & issues
+
+          * Design needs to maintain IE6+ (and later IE8+) browser compatibility
+
+          * Data-heavy pages need content organization and prioritization to provide an ideal mobile experience
+
+          * The branding system needed updating to incorporate accessible colors for web and print
+
+          * Code refactoring is needed to remove a table-based layout and poorly formed HTML
+
   - type: fullwidth
-    background: Blank
+    background: Angled
     content_options:
       - type: generic_content
         generic_content: >-
           ## Rethinking the layout through research
 
+          ### Three main types of users were identified
 
-          Making a site responsive is not a matter of making elements fit, but providing an equal experience for users regardless of screen size. When conducting competitor research, specific layouts stood out as standard practices involving the navigation and homepage.
-      - type: CaptionImg
-        caption: When comparing many of the competitors it was clear that blue, gray,
-          black and yellow were common color schemes. Many sites included
-          certification logos on product pages.
-        image: img/stayonline/stayonline-moodboard.jpg
-        arrow_on_right: false
-      - type: CaptionImg
-        caption: Part of the research analysis included the current graphic design
-          collateral Stay Online used through print and web ads. As part of this
-          project I created an iconset for major product types.
-        image: img/stayonline/stayonline-collage.jpg
-        arrow_on_right: false
+  - type: fullwidth
+    background: Angled
+    content_options:
+      - type: needtonamethis
+        introw:
+          blurbsw:
+            - textw: >-
+                #### Business-to-Business Customers
+
+                These users include one time buyers and repeat buyers. They use multiple devices and browsers, buy in bulk and enjoy the ability to customize a product or order. Older browser support is very important to the existing user base.
+              imagew: img/businessman.png
+            - textw: >-
+                #### Inventory Warehouse Workers
+
+                These are internal Stay Online employees working on mobile devices. They use authenticated portions of the website to check stock and product location. They need the website to not limit functionality for small devices.
+              imagew: img/warehouse-worker.png
+            - textw: >-
+                #### Sales and Marketing Employees
+
+                These are internal and external Stay Online employees working on multiple devices, including tablets when at trade shows. They need the website to work fast and reliably on low data connections.
+              imagew: img/salesperson.png
+        
+  - type: fullwidth
+    background: Angled
+    content_options:   
+      - type: generic_content
+        generic_content: >-
+          ### Examining the existing website
+      - type: fullwidth_img
+        image: img/us-old-design.png
+      - type: generic_content
+        generic_content: >-
+          <ul class="visually-hidden">
+            <li>Navigation menu was very lengthy and the links very small/difficult to use</li>
+            <li>in addition to too many elements on a page, making hierarchy difficult, color contrast was an issue</li>
+            <li>The product categories were difficult to distinguish at a glance</li>
+            <li>Product lists were overwhelming for new users and were not responsive</li>
+            <li>Product detail pagesonly provided minimal features not supplied by the parent list view. Additionally, pages lacked flow and hierarchy</li>
+          </ul>  
+     
+
   - type: fifty_fifty
-    background: Blank
+    background: Rectangular
     left_side:
       content_options:
+
+        - type: heading3
+          heading03: Prioritizing the findings into wireframe iterations
         - type: generic_content
           generic_content: >-
             ### Client approval
@@ -163,99 +159,44 @@ typed_list:
 
             Static tables and charts needed to be refactored and rewritten
 
-            The next goal was to have elements optimized device-widths at a min of 768px. (Unfortunately, the project dissolved mid-release before full responsive implementation)            
+            The next goal was to have elements optimized device-widths at a min of 768px. (Unfortunately, the project dissolved mid-release before full responsive implementation)  
+            
+            
   - type: fullwidth
-    background: Blank
+    background: Rectangular
     content_options:
       - type: scroll-image
         caption: This is a caption about the wireframe sketches
         image: img/Group 538.png
+
   - type: fullwidth
-    background: Rectangular
+    background: Angled
     content_options:
-      - type: generic_content
-        generic_content: >-
-          ## Optimizing the navigation & redesigning the homepage
-
-
-          After years of adding every new product line to the sidebar, the experience of navigating product categories was inefficient.
-      - image2caption: same as other
-        image1caption: "Navigation clutter was reduced and information architecture
-          prioritized. In some cases this involved combining categories or
-          breaking them up into more understandable ones. "
-        image1: img/stayonline/2012-homepage-tablet-cropped.gif
-        image2: img/blog-chemex.jpeg
+      - type: heading3
+        heading03: Optimizing the navigation & redesigning the homepage 
+      - image3caption: After A/B testing the team decided to use the hamburger menu icon with the word "menu". A carousel was also implemented on the homepage to highlight a max of two specific product offerings and one upcoming tradeshow.
+        image2caption: A mobile navigation menu was implemented to improve the responsive implementation of the design.
+        image1caption: The product catalog was re-assessed and most categories either combined or renamed to increase understanding.
+        image1: img/jumble-featured-us-Copy.jpg
+        image2: img/jumble-mobile-us.jpg
+        image3: img/jumble-supplement-us.jpg
         type: image-jumble-grid
+
   - type: fullwidth
     background: Blank
-    content_options:
-      - type: generic_content
-        generic_content: >-
-          ## Reinvisioning the product pages
-
-
-          TBD - After years of adding every new product line to the sidebar, the experience of navigating product categories was inefficient.
-      - image4caption: Product types were re-categorized and the homepage featured
-          section changed from including every category to only the most
-          commonly bought custom product categories.
-        image3caption: same as next
-        image2caption: same as other
-        image1caption: "Navigation clutter was reduced and information architecture
-          prioritized. In some cases this involved combining categories or
-          breaking them up into more understandable ones. "
-        image1: img/stayonline/2012-homepage-tablet-cropped.gif
-        image2: img/blog-chemex.jpeg
-        image3: img/grayscale-laptop.gif
-        image4: img/stayonline-eu-design.jpg
-        type: image-jumble-grid
-  - type: fifty_fifty
-    background: Rectangular
-    left_side:
-      content_options:
-        - type: generic_content
-          generic_content: >-
-            ## Accessible Strategy
-
-
-            Accessibility baselines were established using Google Lighthouse and Axe DevTools. Manual testing was completed to meet WCAG 2.0 Level A.
-
-
-            ### Layout was changed from tables & legacy code to HTML5
-
-
-            * Previous code used floats and absolute positioning to change the logical order of content which negatively affects keyboard users
-
-            * “Divitus” (the overuse of the `<div>` tag) was combated by using `<header>`, `<nav>`, `<aside>`, `<section>`, `<footer>`, and other HTML elements
-
-            * Lists were re-written to use HTML `<ul>` and `<ol>` versus implicit lists so they could be utilized by a screen reader
-
-            * Table usage was changed from layout to data presentation (comparison or analysis) when relevant.
-    right_side:
-      content_options:
-        - type: generic_content
-          generic_content: >-
-            ### Tweaking the color palette to meet accessible color contrast
-            guidelines
-
-            \[screenshots of old design showing inaccessible colors and contrast]
-        - type: CaptionImg
-          image: img/stayonline-us-branding.jpg
-          caption: ratio...
-  - type: fullwidth
-    background: Blank
-    content_options:
-      - type: generic_content
-        generic_content: "## Comparing the results"
+    content_options:          
+      - type: heading3
+        heading03: Reinvisioning the product pages 
       - image5caption: caption
         image4caption: caption
         image3caption: caption
         image2caption: caption
         image1caption: caption
-        image1: img/stayonline-us-responsive.jpg
-        image2: img/stayonline-us-table.jpg
-        image3: img/stayonline-us.jpg
-        image4: img/stayonline-us-tablet.png
-        image5: img/stayonline-eu.jpg
+        image1: img/jumble-featured-us-product.jpg
+        image2: img/jumble-mobile-us-product.jpg
+        image3: img/stayonline-us-chart.jpg
+        image4: img/jumble-supplement-us-only.jpg
+        image5: img/jumble-supplement-us-optional.jpg
         type: image-jumble-grid
 
   - type: fullwidth
@@ -264,7 +205,25 @@ typed_list:
       - type: generic_content
         generic_content: >-
           ## The takeaway
+
+          ### Mobile bounce rate:
+
+          👍 Four months later: only about 25% of mobile users leave before making a purchase, compared to 85%.
           
-          ...        
+          ### Development upkeep:
+
+          👍 The site also has a 20% reduction in lines of code through optimization. This resulted in decreased bugs logged to upkeep cross-browser code.
+
+          Nurturing a site from IE6 to IE9+ has not been easy, but allowing gradual usability changes was beneficial for the company and the existing user base
+          The bounce rate for the site steadily decreased through the agile implementations. Browser usage for older browsers steadily decreased without notable monetary loss. In turn, this decreased the amount of legacy code needed
+          Mobile purchases, not just usage, since this project have increased dramatically
+
+          > Melanie distinguished herself by consistently delivering quality solutions, on schedule. […] She always went the extra mile to ensure the quality of her work was at the highest level.<br>
+          <cite>- Gordon Harris <small>Stay Online Director, Marketing and Communications</small></cite> 
+
+
+          > Melanie has a great understanding of CSS, graphics and web design, responsive layout, and CSS compilers. Our websites are much better as a result of her work.<br>
+          <cite>- Brian Futrell <small>Stay Online Web Developer</small></cite>          
+        
 team: Web Development Manager, Marketing Specialist,
 ---

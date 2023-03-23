@@ -18,9 +18,6 @@ technology: Manual auditing, Triaging of issues, User Interface Design, Document
 duration: 2 months
 introheading: Creating a plan for usability and accessibility
 introbody: >-
-  ### Overview:
-
-
   The North Carolina Department of Transportation (NCDOT) had a website redesign in 2018. I conducted an audit which found accessibility issues with the website individual pages and components. As a government agency the sites needed to meet a higher standard than the currently met WCAG 2.0 A (single A) level.
 
 
@@ -53,12 +50,13 @@ typed_list:
 
 
             The [Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/) are guidelines considered to be the benchmark for accessibility compliance. [Section 508](https://www.levelaccess.com/compliance-overview/section-508-compliance), as part of the Rehabilitation Act of 1973, is a law that requires government agencies to provide access to web and non-web electronic content to people with disabilities.
+
+            ### The main concerns
         - type: introw
           blurbsw:
             - imagew: img/citizen.png
               textw: >-
-                ### The main issue for citizens
-
+                #### Citizens:
 
                 * Citizens with vision difficulties are unable to understand important safety and legal announcements
 
@@ -67,8 +65,7 @@ typed_list:
                 * Citizens may have difficulties completing timed tasks
             - imagew: img/government.png
               textw: >-
-                ### The main issue for the NCDOT
-
+                #### NCDOT:
 
                 * As a federal agency, websites failing to meet guidelines can lead to lawsuits 
 
@@ -116,7 +113,7 @@ typed_list:
               <small>source: <a href="https://www.levelaccess.com/blog/automated-accessibility-testing-tools-how-much-do-scans-catch/">Level Access, <i>Automated Accessibility Testing Tools: How Much Do Scans Catch?</i></a></small></div>
               </div>
 
-              The NVDA screen reader was used to identify issues with the information hierarchy and HTML native elements. Web extensions were utilized for hard to identify issues.
+              <p>The NVDA screen reader was used to identify issues with the information hierarchy and HTML native elements. Web extensions were utilized for hard to identify issues.</p>
 
 
               * Keyboard navigation and operation tested
@@ -128,10 +125,8 @@ typed_list:
               * Code inspection, including JavaScript
   - type: fifty_fifty
     background: Blank
-    left_side:
+    right_side:
       content_options:
-        - type: heading3
-          heading03: Prioritizing the findings  
         - type: generic_content
           generic_content: >-
             ### Focus on components
@@ -145,8 +140,10 @@ typed_list:
             - Contact forms without correct label associations were in the footer of every page
 
             - Incorrect use of headings included <span style="border-bottom: 2px dotted black" title="Implicit: unclear, only appearing like something else">implicit</span> headings which contained no meaning in HTML syntax and skips in heading elements which disrupt a screen reader's ability to parse content
-    right_side:
+    left_side:
       content_options:
+        - type: heading3
+          heading03: Prioritizing the findings        
         - type: CaptionImg
           caption: >-
             Horizontal alerts within the header and pop alerts provided
@@ -211,7 +208,7 @@ typed_list:
               Visual users may be able to discern the relationship between paragraph content and link purpose, but screen reader users may access link names separate from their surrounding content. Vague names do not help a user understand the purpose. 
           * **The ‘Select Your Location’ element opens a pseudo dialog containing a third-party auto-complete input and a current location button**\
               It was important to ensure that the keyboard, as well as screen reader users, could operate the control and understand it. Since this element was not within NCDOT’s codebase any accessibility changes would need to be resourced or the element re-written internally.
-        img_on_right: true
+        img_on_right: false
       - type: OverlapImg
         largeimg: img/ncdot-components.png
         caption: I didn't actually want this. I wanted basically the overlap background
@@ -254,7 +251,7 @@ typed_list:
 
   - type: fifty_fifty
     background: Blank
-    left_side:
+    right_side:
       content_options:
         - type: generic_content
           generic_content: >-
@@ -268,7 +265,7 @@ typed_list:
         - type: pillfeaturedtext
           pillfeaturedtext: Using ARIA roles and attributes, we can improve the accessibility of components by providing additional semantics.
 
-    right_side:
+    left_side:
       content_options:
 
         - type: CaptionImg
