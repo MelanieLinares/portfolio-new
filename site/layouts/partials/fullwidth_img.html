@@ -1,3 +1,13 @@
 <div class="fullwidth mx-auto">
-<img style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" src="{{.image}}" alt="TBD" class="fullwidth">
+<!-- <img style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" src="{{.image}}" alt="TBD" class="fullwidth"> -->
+
+  <picture style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth">
+    <source media="(max-width: 749px)" srcset="{{.image_xsmall}}" />
+    <source media="(max-width: 950px)" srcset="{{.image_small}}" />
+    <source media="(max-width: 1200px)" srcset="{{.image_medium}}" />
+    <source media="(min-width: 1201px)" srcset="{{.image}}" />
+    <img src="{{.image}}" alt="Chris standing up holding his daughter Elva" style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth" />
+  </picture>
+
 </div>
+

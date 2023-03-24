@@ -112,6 +112,10 @@ typed_list:
           ### Examining the existing website
       - type: fullwidth_img
         image: img/us-old-design.png
+        image_medium: img/us-old-design-med.png
+        image_small: img/us-old-design-small.png
+        image_xsmall: img/us-old-design-xsmall.png
+
       - type: generic_content
         generic_content: >-
           <ul class="visually-hidden">
