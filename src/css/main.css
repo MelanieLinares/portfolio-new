@@ -2121,6 +2121,14 @@ h3:has(span) {
     /* margin-top: 11em!important; */
 }
 
+.icon-with-content .flex {
+    border: 10px solid red;
+}
+
+.icon-with-content .flex img {
+    border: 10px solid blue;
+}
+
 .cms .partials .yup section:last-of-type:has(#results) {
     padding-bottom: 10.5em;
     margin-bottom: 0!important;
