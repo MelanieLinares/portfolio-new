@@ -65,7 +65,7 @@ typed_list:
     right_side:
       content_options:   
         - type: CaptionImg
-          caption: Day 1 began with meetings--lots of meetings. Stay Online brought me
+          caption: Day 1 began with meetings--lots of meetings and whiteboarding sessions. Stay Online brought me
             onto the EU launch team due to my familiarity with the U.S. website
             and my experience with responsive development
           image: img/stayonline-eu-display-cropped.png
@@ -104,6 +104,9 @@ typed_list:
         heading03: A new market means new users & expectations       
       - type: fullwidth_img
         image: img/us-pre-eu-design.png
+        image_medium: img/us-pre-eu-design-medium.png
+        image_small: img/us-pre-eu-design-small.png 
+        image_xsmall: img/us-pre-eu-design-xsmall.png       
       - type: generic_content
         generic_content: >-
           <ul class="visually-hidden">
@@ -184,6 +187,9 @@ typed_list:
       content_options:  
         - type: heading3
           heading03: Prioritizing the findings  
+        - type: generic_content
+          generic_content: >-
+            After researching the needs for the two main types of users, content and information architecture was tested through card sorting, tree testing, and first click testing.           
         - type: CaptionImg
           image: img/eu-sitemap.png
           caption: Sitemap was re-evaluated to reduce the 
@@ -198,10 +204,9 @@ typed_list:
         - type: cards
           process: true
           blurbcards:
-            - textcards: >-
-                  **The checkout process would need to be completely redesigned to ensure VAT was calculated and to simplify the process**
-            - textcards: Form fields only used for data-gathering should be removed. Form fields should utilize autocomplete. Users should be able to find cost (excluding shipping) information prior to the final step. 
-            - textcards: Form fields only used for data-gathering should be removed. Form fields should utilize autocomplete. Users should be able to find cost (excluding shipping) information prior to the final step. 
+            - textcards: select country from homepage without requiring a user to be logged in or have an account
+            - textcards: access all products with most relavant filtered up in priority, other country products are labelled as "international" instead of just non-U.S. products 
+            - textcards: add product to cart, all pricing includes VAT or related standard
 
              
   - type: fullwidth
@@ -214,22 +219,9 @@ typed_list:
       - type: cards
         process: true
         blurbcards:
-          - textcards: >-
-                **The checkout process would need to be completely redesigned to ensure VAT was calculated and to simplify the process**
-          - textcards: Form fields only used for data-gathering should be removed. Form fields should utilize autocomplete. Users should be able to find cost (excluding shipping) information prior to the final step. 
-          - textcards: Form fields only used for data-gathering should be removed. Form fields should utilize autocomplete. Users should be able to find cost (excluding shipping) information prior to the final step.        
-
-      - type: generic_content
-        generic_content: >-
-          #### Check Out Flow
-
-      - type: cards
-        process: true
-        blurbcards:
-          - textcards: >-
-                **The checkout process would need to be completely redesigned to ensure VAT was calculated and to simplify the process**
-          - textcards: Form fields only used for data-gathering should be removed. Form fields should utilize autocomplete. Users should be able to find cost (excluding shipping) information prior to the final step. 
-          - textcards: Form fields only used for data-gathering should be removed. Form fields should utilize autocomplete. Users should be able to find cost (excluding shipping) information prior to the final step. 
+          - textcards: Access resource hub from homepage and locat desired information
+          - textcards: Go to a product category page and locate available high-level category resources 
+          - textcards: Go to specific product page and locate product specific resources and certifications        
 
   # - type: fullwidth
   #   background: Blank
@@ -272,10 +264,10 @@ typed_list:
     left_side:
       content_options:
         - type: heading3
-          heading03: Information Architecture
+          heading03: Information architecture and functionality updates
         - type: CaptionImg
           image: img/meeting.jpg
-          caption: TBD about the wireframe
+          caption: TBD high fidelity wireframe - navigation, top and side
   - type: fifty_fifty
     background: Blank
     left_side:
@@ -296,7 +288,7 @@ typed_list:
       content_options:
         - type: CaptionImg
           image: img/ncdot-alert.png
-          caption: TBD about the image
+          caption: TBD high fidelity wireframe - search bar and search page
   - type: fifty_fifty
     background: Blank
     right_side:
@@ -317,23 +309,18 @@ typed_list:
       content_options:
         - type: CaptionImg
           image: img/insight1.jpg
-          caption: TBD for image
+          caption: TBD high fidelity wireframe - category and product detail page
 
   - type: fullwidth
     background: Angled
     content_options:
       - type: heading3
-        heading03: Website UI Results 
-      - image5caption: caption
-        image4caption: caption
-        image3caption: caption
-        image2caption: caption
-        image1caption: caption
-        image1: img/stayonline-us-responsive.jpg
-        image2: img/stayonline-us-table.jpg
-        image3: img/stayonline-us.jpg
-        image4: img/stayonline-us-tablet.png
-        image5: img/stayonline-eu.jpg
+        heading03: From dessign to development, for a MVP UI release  
+      - image1: img/jumble-featured-us-product.jpg
+        image2: img/jumble-mobile-us-product.jpg
+        image3: img/stayonline-us-chart.jpg
+        image4: img/jumble-supplement-us-only.jpg
+        image5: img/jumble-supplement-us-optional.jpg
         type: image-jumble-grid
 
 

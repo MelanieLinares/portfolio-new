@@ -15,17 +15,17 @@ tags:
   - ui
 technology: UI Design, Design System integration
 duration: 2 months
-introheading: Updating the dashboard UI for a better management workflow
+introheading: Updating a dashboard UI for a better management workflow
 introbody: >-
   Managing data can be a pain if common actions within an application result in errors or the actions are not easily found within the UI. My role involved developing components with React and TypeScript.
 
 
 
 
-  **The Problem:** <span aria-hidden="true">🤔</span><br/>The internal Starbucks portal experienced sync issues and error management issues in regards to portfolio percentages.
+  **The Problem:** <span aria-hidden="true">🤔</span><br/>This internal Starbucks portal experienced sync issues and error management issues.
 
 
-  **The Plan:** <span aria-hidden="true">💡</span><br/>The Starbucks management team needed to easily see percentages of funding in order to re-adjust portfolios, calculations, and cross-portfolio assets. A main dashboard with access to all portfolios and the ability to display cross-portfolio information was proposed.
+  **The Plan:** <span aria-hidden="true">💡</span><br/>The Starbucks team needed to easily see information on assets being managed. A main dashboard with access to all data and the ability to display cross-data information was proposed.
 theme: green
 typed_list:
   - type: fifty_fifty
@@ -71,12 +71,12 @@ typed_list:
           The UX team first met with shareholders to create the initial version of the UI. I met with the UX team after this session and we worked together to harmonize the feedback, along with information I gathered from the API team. There were several problems to be solved, not merely a UI to create.
 
 
-          ### How might we avoid errors when users change how revenue is divided and utilized?
+          ### How might we improve how the data, including errors, are managed?
 
-          Existing APIs for each portfolio were causing issues due to calculations occurring after form submission and only within a current portfolio set. If revenue allotment totals for portfolios A, B, and C combined were below 100%, users could make changes. Currently there was no user feedback for this issue prior to submission and an unclear error after submission. 
+          Existing APIs for each data set were causing issues. Currently there was no user feedback for issues prior to submission and an unclear error after submission. The big question was how should errors be handled within the UI and within the API? Could and should error states be avoided?
+
           ![test](img/error-data.jpg)
 
-          The UI was not properly informing users when a portfolio would cause resources to exceed 100%. The big question was how should errors be handled within the UI and within the API? Could and should error states be avoided?
       - type: introw
         blurbsw:
           - textw: >-
@@ -90,10 +90,11 @@ typed_list:
               * Error messages and notifications were improved by providing thoughtful feedback
 
               * Error messages and portal data visualizations needed to be accessible
+
+              <div class="pill-featured-text">
+              <div class="left-text-only">Accessibility is not just for public-facing applications. It was important for me to emphasize this to the team.</div>
+              </div>
             imagew: img/wireframe-icon-cropped.png
-      - type: pillfeaturedtext
-        pillfeaturedtext: Accessibility is not just for public-facing applications. It
-          was important for me to emphasize this to the team.
     background: Angled
   - type: fifty_fifty
     background: Blank
@@ -112,7 +113,7 @@ typed_list:
 
             * Testing API and working with API developers
               Building dashboard based on interactive prototype from UX designer (our team)
-            * Adding portfolios to sidebar menu, including sub portfolios added dynamically by user
+
     right_side:
       content_options:
         - type: generic_content
@@ -132,7 +133,7 @@ typed_list:
 
           - Components were built for usability and by utilizing test-driven development practices
 
-          - Accessibility and performance improvements were implemented alongside the requested features. It was important to emphasize thenecessity for accessible error messages and form elements to the team.
+          - Accessibility and performance improvements were implemented alongside the requested features. It was important to emphasize the necessity for accessible error messages and form elements to the team.
  
         
           Starbucks has a very knowledgeable team and I loved working directly with the UX and back-end folks. I'm glad the Insight team was able to deliver a robust user interface for Starbucks. <span aria-hidden="true">☕✨</span>

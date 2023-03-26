@@ -2,27 +2,33 @@
     <div class="parent-jumble">
       <div class="jumble-div1"> 
         <img class="full-img" src="{{.image1}}" alt="TBD">
+        {{ if .image1caption }}
         <div class="caption"><em>{{.image1caption}}</em></div>
+        {{ end }}
       </div>
       <div class="jumble-div2"> 
         <img class="full-img" src="{{.image2}}" alt="TBD">
+        {{ if .image2caption }}
         <div class="caption"><em>{{.image2caption}}</em></div>
-      </div>
+        {{ end }}      </div>
       <div class="jumble-div3"> 
         <img class="full-img" src="{{.image3}}" alt="TBD">
+        {{ if .image3caption }}
         <div class="caption"><em>{{.image3caption}}</em></div>
-      </div>
+        {{ end }}      </div>
       {{ if .image4 }}
       <div class="jumble-div4"> 
         <img class="full-img" src="{{.image4}}" alt="TBD">
+        {{ if .image4caption }}
         <div class="caption"><em>{{.image4caption}}</em></div>
-      </div>
+        {{ end }}      </div>
       {{ end }}
       {{ if .image5 }}
       <div class="jumble-div5"> 
         <img class="full-img" src="{{.image5}}" alt="TBD">
+        {{ if .image5caption }}
         <div class="caption"><em>{{.image5caption}}</em></div>
-      </div>
+        {{ end }}      </div>
       {{ end }}
     </div>
     </section>

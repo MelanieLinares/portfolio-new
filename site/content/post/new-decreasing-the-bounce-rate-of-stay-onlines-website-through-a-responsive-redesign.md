@@ -191,11 +191,11 @@ typed_list:
     content_options:          
       - type: heading3
         heading03: Reinvisioning the product pages 
-      - image5caption: caption
-        image4caption: caption
-        image3caption: caption
-        image2caption: caption
-        image1caption: caption
+      - image5caption: Product names were moved out from the horizontal card and text with color-based meaning have icons to reinforce meaning. 
+        image4caption: Product custom builers completely rebuit to be responsive and include the updated styling.
+        image3caption: Chart tables updated for spacing and color, as well as better scanability.
+        image2caption: Product tables updated to include stock and product image tooltips. 
+        image1caption: Hierarchy was increased through the addition of heading elements. The styling of buttons and the table was updated for a cleaner look.
         image1: img/jumble-featured-us-product.jpg
         image2: img/jumble-mobile-us-product.jpg
         image3: img/stayonline-us-chart.jpg
