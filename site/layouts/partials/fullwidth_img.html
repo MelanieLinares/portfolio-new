@@ -1,13 +1,79 @@
 <div class="fullwidth mx-auto">
-<!-- <img style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" src="{{.image}}" alt="TBD" class="fullwidth"> -->
 
-  <picture style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth">
+  {{ if and .image_medium .image_small .image_xsmall }}
+  <picture style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth 1">
     <source media="(max-width: 749px)" srcset="{{.image_xsmall}}" />
     <source media="(max-width: 950px)" srcset="{{.image_small}}" />
     <source media="(max-width: 1200px)" srcset="{{.image_medium}}" />
     <source media="(min-width: 1201px)" srcset="{{.image}}" />
-    <img src="{{.image}}" alt="Chris standing up holding his daughter Elva" style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth" />
+    <img src="{{.image}}" alt="TBDa" style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth" />
   </picture>
+  {{ end }}
+
+  {{ if .image_xsmall }}
+  {{ if not .image_small}}
+  {{ if not .image_medium}}
+  <picture style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth 2">
+    <source media="(max-width: 749px)" srcset="{{.image_xsmall}}" />
+    <source media="(min-width: 1201px)" srcset="{{.image}}" />
+    <img src="{{.image}}" alt="TBDa" style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth" />
+  </picture>
+  {{ end }}
+  {{ end }}
+  {{ end }}
+
+  {{ if and .image_xsmall .image_medium }}
+  {{ if not .image_small}}
+  <picture style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth 3">
+    <source media="(max-width: 749px)" srcset="{{.image_xsmall}}" />
+    <source media="(max-width: 1200px)" srcset="{{.image_medium}}" />
+    <source media="(min-width: 1201px)" srcset="{{.image}}" />
+    <img src="{{.image}}" alt="TBDa" style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth" />
+  </picture>
+  {{ end }}
+  {{ end }}
+
+  {{ if not .image_small}}
+  {{ if not .image_medium}}
+  {{ if not .image_xsmall}}
+    <img src="{{.image}}" alt="TBDa" style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth 3 4" />
+  {{ end }}
+  {{ end }}
+  {{ end }}
+
+  {{ if not .image_small}}
+  {{ if not .image_xsmall}}
+  {{ if .image_medium }}
+  <picture style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth 4">
+    <source media="(max-width: 1200px)" srcset="{{.image_medium}}" />
+    <source media="(min-width: 1201px)" srcset="{{.image}}" />
+    <img src="{{.image}}" alt="TBDa" style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth" />
+  </picture>  
+  {{ end }}
+  {{ end }}
+  {{ end }}
+
+  {{ if and .image_medium .image_small }}
+  {{ if not .image_xsmall}}
+  <picture style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth 5">
+    <source media="(max-width: 749px)" srcset="{{.image_medium}}" />
+    <source media="(max-width: 1200px)" srcset="{{.image_small}}" />
+    <source media="(min-width: 1201px)" srcset="{{.image}}" />
+    <img src="{{.image}}" alt="TBDa" style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth" />
+  </picture>
+  {{ end }}
+  {{ end }}
+
+  {{ if and .image_xsmall .image_small }}
+  {{ if not .image_medium}}
+  <picture style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth 6">
+    <source media="(max-width: 749px)" srcset="{{.image_xsmall}}" />
+    <source media="(max-width: 1200px)" srcset="{{.image_small}}" />
+    <source media="(min-width: 1201px)" srcset="{{.image}}" />
+    <img src="{{.image}}" alt="TBDa" style="width: 100%; filter: drop-shadow(3px 2px 2px #dde8f9)" class="fullwidth" />
+  </picture>
+  {{ end }}
+  {{ end }}
 
 </div>
 
