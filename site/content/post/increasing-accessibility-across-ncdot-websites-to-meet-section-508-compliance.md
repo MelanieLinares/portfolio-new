@@ -54,7 +54,7 @@ typed_list:
             ### The main concerns
         - type: introw
           blurbsw:
-            - imagew: img/citizen.png
+            - imagew: img/citizen1.png
               textw: >-
                 #### Citizens:
 
@@ -63,7 +63,7 @@ typed_list:
                 * Citizens may have a hard time making convenient online transactions
 
                 * Citizens may have difficulties completing timed tasks
-            - imagew: img/government.png
+            - imagew: img/government1.png
               textw: >-
                 #### NCDOT:
 
