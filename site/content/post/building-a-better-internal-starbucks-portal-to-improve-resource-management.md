@@ -75,36 +75,30 @@ typed_list:
 
           Existing APIs for each data set were causing issues. Currently there was no user feedback for issues prior to submission and an unclear error after submission. The big question was how should errors be handled within the UI and within the API? Could and should error states be avoided?
 
-          ![test](img/error-data.jpg)
-
-      - type: introw
-        blurbsw:
-          - textw: >-
-              ### Refining the UI to account for errors
+          ### Refining the UI to account for errors
 
 
-              * I collaborated with product and design teams to define features and identify opportunities for improvement
+          * I collaborated with product and design teams to define features and identify opportunities for improvement
 
-              * The prototype was improved to account for edge cases in user flow
+          * The prototype was improved to account for edge cases in user flow
 
-              * Error messages and notifications were improved by providing thoughtful feedback
+          * Error messages and notifications were improved by providing thoughtful feedback
 
-              * Error messages and portal data visualizations needed to be accessible
+          * Error messages and portal data visualizations needed to be accessible
 
-              <div class="pill-featured-text">
-              <div class="left-text-only">Accessibility is not just for public-facing applications. It was important for me to emphasize this to the team.</div>
-              </div>
-            imagew: img/wireframe-icon-cropped.png
+          <div class="pill-featured-text">
+          <div class="left-text-only">Accessibility is not just for public-facing applications. It was important for me to emphasize this to the team.</div>
+          </div>
     background: Angled
   - type: fifty_fifty
     background: Blank
     left_side:
       content_options:
+        - type: heading3
+          heading03: Building the components according to atomic design
+
         - type: generic_content
           generic_content: >-
-            ## Building the components according to atomic design
-
-
             * I developed UI components based on existing widgets and from scratch utilizing React, Typescript, and some Java
 
             * Collaboration was important to the process. I worked with the backend and frontend teams to ensure optimized API calls between parent and child components
