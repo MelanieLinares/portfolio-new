@@ -18,7 +18,7 @@
     {{ range .display_image_section_content }}
 
       {{ if eq .type "Content02" }}
-      <div>{{.Content002 | markdownify}}</div>
+      <div class="is-this">{{.Content002 | markdownify}}</div>
       {{ end }}
 
       <!-- {{ if eq .type "Content03" }}
@@ -49,7 +49,7 @@
 
 
   <div class="div2-04">
-    <img src="{{.image}}" alt="TBD">
+    <img src="{{.image}}" alt="TBD" class="display-img">
   </div>
   </div>
   </div>

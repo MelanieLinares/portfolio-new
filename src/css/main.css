@@ -310,7 +310,7 @@ h3 + .fullwidth {
     max-width: 1280px
 }  
 
-.lg\:w-1\/2 .fullwidth.card-list ol.grid {
+.lg\:w-1\/2 .fullwidth.card-list ol.grid:not(.process) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
@@ -1525,7 +1525,7 @@ section.Rectangular .generic-content:has(h2),
 }
 
 .lg\:w-1\/4 {
-    width: 30%!important
+    width: 30%
 }
 
 .lg\:w-1\/4 + .lg\:w-3\/4{
@@ -1556,7 +1556,7 @@ section.Rectangular .generic-content:has(h2),
     margin-left: -2em
 } */
 
-.lg\:w-1\/2 + .lg\:w-1\/2:not(.icon-with-content) {
+.lg\:w-1\/2 + .lg\:w-1\/2:not(.icon-with-content):not(.w-full) {
     padding: 0 4em;
     padding-right:0;
 }
@@ -1612,9 +1612,12 @@ h1 b {
     color: var(--dark-blue);
 }
 
-
-.cms img:not(.full-img) {
+.cms img:not(.full-img):not(.display-img) {
     border-radius: 1em;
+}
+
+.cms img:not(.full-img):not(.display-img):not(.lzy):not(.caption-img) {
+    
     width: 100%;
     width: -moz-available;          /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
@@ -1741,7 +1744,7 @@ object-position: 50% 0%;
 
 .cms .partials .yup section:last-of-type:has(#results) ul:not([class]), 
 .cms .partials .yup section:last-of-type:has(#results) p:not([class]) {
-    width: 850px!important;
+    max-width: 850px!important;
 }
 
 ul:not([class]), p:not([class]) {
@@ -1774,8 +1777,13 @@ img.fullwidth {
     max-width: 1024px
 }
 
+.display_image_section .is-this *:not(div):not(li):not(img):not(small):not(a):not(i):last-child  {
+    /* border: 5px solid green; */
+    margin-bottom: 3.5em
+}
+
 .display_image_section .max-w-7xl.mx-auto div:not(.parent-all) *:not(:first-child):not(h3:first-of-type):not(h3:first-of-type + ul):not(h3:first-of-type + ul li)  {
-    max-width: 625px;
+    max-width: 625px!important;
 }
 
 .card-list {
@@ -2197,8 +2205,9 @@ h2 span:nth-of-type(1) {
 }
 
 .lg\:w-1\/2 .grid.process {
-    grid-template-columns: repeat(1, minmax(0, 1fr))!important;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
 }
+
 
 .lg\:w-1\/2 .grid.process .rounded:not(:last-of-type):after {
     bottom: -0.85em;

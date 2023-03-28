@@ -315,7 +315,7 @@ typed_list:
     background: Angled
     content_options:
       - type: heading3
-        heading03: From dessign to development, for a MVP UI release  
+        heading03: From design to development, for a MVP UI release  
       - image1: img/jumble-featured-us-product.jpg
         image2: img/jumble-mobile-us-product.jpg
         image3: img/stayonline-us-chart.jpg

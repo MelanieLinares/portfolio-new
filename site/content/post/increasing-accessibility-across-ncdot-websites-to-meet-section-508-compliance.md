@@ -115,7 +115,8 @@ typed_list:
 
               <p>The NVDA screen reader was used to identify issues with the information hierarchy and HTML native elements. Web extensions were utilized for hard to identify issues.</p>
 
-
+          - type: Content03
+            Content003: >-
               * Keyboard navigation and operation tested
 
               * Screen reader: NVDA and Talkback

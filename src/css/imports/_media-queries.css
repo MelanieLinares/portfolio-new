@@ -668,15 +668,79 @@
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .lg\:w-1\/2 .grid.process {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+    .lg\:w-1\/2 .grid.process .rounded:not(:last-of-type):after {
+        transform: unset!important;
+        position: absolute;
+        margin-left: unset!important;
+        margin-right: unset!important;
+        right: -.33em;
+        margin-top: calc(50% - 50px);
+    margin-bottom: 50%;
+    bottom: unset!important;
+    font-weight: 100;
+    }
+    .fullwidth.mx-auto img {
+
+    }
+}
+
 @media screen and (max-width: 1023px) {
-    .cms .fullwidth img:not(.full-img) {
+
+    .lg\:w-1\/4 + .lg\:w-3\/4 {
+        padding-left: 0!important;
+    }
+
+    .lg\:w-1\/4 {
+        width: 100%!important;
+    }
+
+    .card-list .grid:has(> :last-child:nth-child(4)) {
+        grid-template-columns: repeat(2, minmax(0, 1fr))!important;
+    }
+
+    li.flex div.rounded-b.flex {
+        display: block!important;
+        text-align: left!important;
+    }
+
+    li.flex div.rounded-b.flex strong {
+        display: block!important;
+    }
+
+    .overlap-bg-reverse + .w-full {
+        padding-left: 0!important;
+        text-align: left;
+        margin-top: -1.5em!important;
+    }
+
+    .overlap-bg-reverse {
+        padding-right: 1em!important;
+        width: 100vw!important;
+        margin-left: -2em!important;
+    }
+
+    /* .div2-04 img {
+        position: relative!important;
+    } */
+
+    /* .div2-04 {
+        grid-area: 1 / 4 / 2 / 13!important; */
+    /* } */
+
+    .cms .fullwidth img:not(.full-img):not(.caption-img):not(.scroll-img) {
         max-width: 40em!important;
     }
-    .lg\:w-1\/2 + .lg\:w-1\/2:not(.icon-with-content) {
+    .lg\:w-1\/2 + .lg\:w-1\/2:not(.icon-with-content):not(.w-full) {
         padding: 0px 1em!important;
     }
-    .cms img:not(.full-img):not(.icon) {
+    .cms img:not(.full-img):not(.icon):not(.display-img):not(.lzy):not(.scroll-img) {
         max-height: 75vh;
+        width: auto;
+        margin: 0 auto; 
         object-fit: cover;
         object-position: left bottom;
 
@@ -712,6 +776,7 @@
         margin-left: unset!important
     }
 }
+
 
 #navbar div:first-of-type {
     position: relative;
