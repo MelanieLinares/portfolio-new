@@ -5,7 +5,7 @@ weight: 1
 titlebold: Increasing accessibility across NCDOT websites
 titlenormal: to meet Section 508 compliance
 preview: img/ncdot-featured.png
-notice: For legal reasons some images are representational only or blurred
+preview2: img/ncdot-a11y2.png
 date: 2019-06-12T01:37:30.202Z
 newdate: 2019-08-01T01:37:30.230Z
 client: NC Department of Transportation
@@ -33,6 +33,8 @@ introbody: >-
 
   **Phase one goal:** <span aria-label="okay hand emoji">👌</span> Score greater than 80 and fewer than 100 issues
 theme: purple
+casestudy: ux
+
 typed_list:
   - type: fifty_fifty
     background: Blank

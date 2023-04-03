@@ -1,0 +1,67 @@
+                   <!-- 
+                    {{ if .title }}
+                   <b>{{ .titlebold }}</b>
+                   {{ .titlenormal }}
+                   {{ end }}
+         
+                   {{ if .subtitle }}
+                    {{.subtitle}}
+                   {{ end }}
+         
+                 </h1>
+         
+                 {{ if .notice }}        
+                 <div class="notice content-850"><span aria-hidden="true">*</span>{{.notice}}</div>        
+               {{ end }}
+             -->
+
+
+               <section class="relative pt-[5.75rem] pb-[8rem]" style="min-height: calc(100vh + 8rem);">
+                <div class="absolute inset-0 overflow-hidden">
+                    <img src="/img/beams-template-header.png" alt="" class="absolute bottom-0 hidden lg:block">
+                    <img src="/img/beams-templates.png" alt="" class="absolute -top-[7rem] left-1/2 -ml-[16rem] w-[60.4375rem] max-w-none sm:-ml-[10rem] md:-ml-[16rem] lg:-top-[10rem] lg:-ml-[22rem] lg:hidden">
+                </div>
+                <div class="relative">
+                    <div class="relative mx-auto max-w-container px-4 pt-16 sm:px-6 lg:px-8 lg:pt-20">
+                        <div class="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4 md:grid-cols-5 sm:grid-cols-5">
+                            <div class="flex flex-col lg:pb-6 lg:col-span-2 md:col-span-3 sm:col-span-3">
+                                <h1 class="text-4xl leading-none tracking-tight md:text-5xl sm:text-4xl">
+                                    {{ if .title }}
+                                    <b>{{ .titlebold }}</b>
+                                    {{ .titlenormal }}
+                                    {{ end }}
+                          
+                                    {{ if .subtitle }}
+                                     {{.subtitle}}
+                                    {{ end }}
+                          
+                                  </h1>
+                          
+                                  {{ if .notice }}        
+                                  <div class="notice content-850"><span aria-hidden="true">*</span>{{.notice}}</div>        
+                                {{ end }}
+
+                                <div class="flex flex-wrap mt-4 mb-4">
+                                </div>
+              
+                                <a href="{{ .Permalink }}#results" class="skip card-v8 bg radius-lg">
+                                    <div>
+                                      <span class=""><span aria-hidden="true">🔍</span> skip to results</span>
+                                      <p class="padding-sm"></p>
+                                    </div>
+                                  </a>
+            
+                 
+                                <div class="flex flex-wrap mb-4">
+                                    </div><div class="mt-10 flex gap-4">
+                            </div>
+                        </div>
+                        <div class="relative lg:col-span-2">
+                            <img src="{{ .preview }}" class="absolute z-20 -mb-36 max-w-[853px] rounded-xl shadow-xl shadow-black/5 ring-1 ring-slate-900/5 sm:-mb-16 lg:-mb-8 xl:-mb-16">
+                            {{ if .preview2 }}
+                            <img src="{{ .preview2 }}" class="secondary-img max-h-[620px] left-10 absolute ml-20 top-0 mt-72 z-20 rounded-xl max-w-[853px]">
+                            <!-- shadow-xl shadow-black/5 ring-1 ring-slate-900/5 -->
+                        {{ end }}
+                          </div></div></div></div>
+                                    </section>
+            

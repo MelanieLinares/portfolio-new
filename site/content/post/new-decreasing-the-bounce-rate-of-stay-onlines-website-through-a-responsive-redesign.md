@@ -4,6 +4,7 @@ title: new - Decreasing the bounce rate of Stay Online's website through a
 titlebold: Decreasing the bounce rate of Stay Online's website
 titlenormal: through a responsive redesign
 preview: img/stayonline-us.png
+preview2: img/tablet-us.png
 date: 2016-06-30T20:18:56.086Z
 newdate: 2016-09-08T20:18:56.116Z
 client: Stay Online Corp.
@@ -29,8 +30,9 @@ introbody: >-
 
   <em>(note: mobile was defined as less than 1024px screen size during the design sprint)</em>
 
-
 theme: blue
+casestudy: ui
+
 typed_list:
 
   - type: fullwidth

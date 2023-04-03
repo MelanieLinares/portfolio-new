@@ -3,7 +3,8 @@ title: Creating an accessibility go-to-market strategy through heart,
   harmony, and hunger
 titlebold: Creating an accessibility go-to-market strategy
 titlenormal: through heart, harmony, and hunger
-preview: img/insight-featured.png
+preview: img/insight-preview.png
+preview2: img/insight-preview2.png
 notice: For legal reasons I am not able to show project details. Images are representational only.
 date: 2022-10-02T16:42:06.511Z
 newdate: 2022-11-10T16:42:06.547Z
@@ -25,6 +26,8 @@ introbody: >-
 
   **The Plan:** <span aria-hidden="true">💡</span><br/> Through thoughtful internal planning and education a go-to-market strategy for Insight would be launched as a way for Insight to start taking on accessibility-specific projects. This would start with team education and would end with a client bid. 
 theme: purple
+casestudy: ux
+
 typed_list:
 
   - type: fifty_fifty

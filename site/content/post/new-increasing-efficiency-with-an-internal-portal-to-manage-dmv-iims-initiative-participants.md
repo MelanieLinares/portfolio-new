@@ -31,6 +31,8 @@ introbody: >-
   **The Plan:** <span aria-hidden="true">💡</span><br/>Research user and business needs to produce a list of missing and desired features. Create new portal UI and develop a new approach to data management and API integration, while separating reliance on specific dependencies.
 
 theme: blue
+casestudy: test
+
 typed_list:
   - type: fullwidth
     background: Blank

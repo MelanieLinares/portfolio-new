@@ -1,0 +1,15 @@
+<h1 class="mt-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl sm:text-4xl">
+         <p>this is a test</p>
+          {{ if .title }}
+          <b>{{.title}}</b>
+          {{ end }}
+
+          {{ if .subtitle }}
+           {{.subtitle}}
+          {{ end }}
+
+        </h1>
+
+        {{ if .text }}        
+        <div class="notice content-850"><span aria-hidden="true">*</span>{{.text}}</div>        
+      {{ end }}

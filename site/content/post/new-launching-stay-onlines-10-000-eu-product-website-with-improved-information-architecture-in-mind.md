@@ -4,6 +4,7 @@ title: new - Launching Stay Online's 10,000+ EU product website with improved
 titlebold: Launching Stay Online's 10,000+ EU product website
 titlenormal: with improved information architecture in mind
 preview: img/stayonline-eu.png
+preview2: img/tablet-eu.png
 date: 2017-02-24T02:47:12.055Z
 newdate: 2017-05-11T02:47:12.092Z
 client: Stay Online
@@ -27,6 +28,8 @@ introbody: >-
   **The Plan:** <span aria-hidden="true">💡</span><br/>Create a EU-specific site that prioritizes content and global UX patterns in order to increase sales and meets international standards.
 
 theme: blue
+casestudy: ui
+
 typed_list:
   - type: fifty_fifty
     background: Blank

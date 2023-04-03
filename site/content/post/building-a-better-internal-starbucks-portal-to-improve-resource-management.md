@@ -27,6 +27,7 @@ introbody: >-
 
   **The Plan:** <span aria-hidden="true">💡</span><br/>The Starbucks team needed to easily see information on assets being managed. A main dashboard with access to all data and the ability to display cross-data information was proposed.
 theme: green
+casestudy: test
 typed_list:
   - type: fifty_fifty
     background: Blank
