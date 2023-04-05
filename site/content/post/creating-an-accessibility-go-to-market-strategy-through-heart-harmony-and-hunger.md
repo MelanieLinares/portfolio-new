@@ -17,6 +17,7 @@ technology: Project Management, Triaging issues, Documentation, Digital Strategy
 duration: 7 weeks
 introheading: "I started with one main goal: bring change in how Insight markets
   accessibility"
+preview_tools: UX, NVDA, WCAG/ARIA
 introbody: >-
   Insight’s Digital Innovation team helps companies implement digital solutions from discovery to delivery. During 2019 select individuals from the team came together to improve Insight's stake in accessibility. My role in this go-to-market plan involved ideation, creation of a delivery deck, documentation for bid strategy, and triage.
 

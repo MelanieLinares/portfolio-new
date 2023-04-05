@@ -16,6 +16,7 @@ tags:
 technology: User Research, UI Design, Prototyping, Frontend Technology
 duration: 3 months
 introheading: Creating a plan to decrease mobile bounce rate
+preview_tools: UI, HTML/CSS, JavaScript
 introbody: >-
   Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets. Stay Online's e-commerce website, launched in 1997, had not changed to be compliant with best practices introduced with HTML5. Mobile users were not considered. This contributed to a large number of mobile device users leaving the site upon load or before completing a purchase. 
 

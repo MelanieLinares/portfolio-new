@@ -17,10 +17,9 @@ tags:
 technology: Manual auditing, Triaging of issues, User Interface Design, Documentation
 duration: 2 months
 introheading: Creating a plan for usability and accessibility
+preview_intro: The North Carolina Department of Transportation (NCDOT) had a website redesign in 2018. I conducted an audit which found accessibility issues with the website individual pages and components. As a government agency the sites needed to meet a higher standard than the currently met WCAG 2.0 A (single A) level.
+preview_tools: UX, NVDA, WCAG/ARIA
 introbody: >-
-  The North Carolina Department of Transportation (NCDOT) had a website redesign in 2018. I conducted an audit which found accessibility issues with the website individual pages and components. As a government agency the sites needed to meet a higher standard than the currently met WCAG 2.0 A (single A) level.
-
-
   **The Problem:** <span aria-hidden="true">🤔</span><br/> 
   Government websites, including those of local agencies, need to be accessible in accordance to the Americans with Disabilities Act (ADA). The NCDOT websites were not meeting minimum compliance.  
 
