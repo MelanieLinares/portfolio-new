@@ -1,5 +1,5 @@
 @media screen and (max-width: 319px) {
-    .intro-section h2, .cms h2 {
+    .intro-section h2, .cms h2, .content h2 {
         font-size: 2.25rem;
         line-height: 2.5rem;
 }
@@ -24,7 +24,7 @@
 
 /* 375 (iphone) */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-    .intro-section h2, .cms h2 {
+    .intro-section h2, .cms h2, .content h2 {
         font-size: 2.25rem;
         line-height: 2.5rem;
 }
@@ -138,7 +138,7 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 639px) {
-    .intro-section h2, .cms h2 {
+    .intro-section h2, .cms h2, .content h2 {
         font-size: 2.25rem;
         line-height: 2.5rem;
 }
@@ -479,7 +479,7 @@
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
 
-    .intro-section h2, .cms h2 {
+    .intro-section h2, .cms h2, .content h2 {
         font-size: 2.25rem;
         line-height: 2.5rem;
 }
@@ -628,7 +628,7 @@
 /* 834 (ipad portrait) */
 @media screen and (min-width: 768px) and (max-width: 834px) {
 
-    .intro-section h2, .cms h2 {
+    .intro-section h2, .cms h2, .content h2 {
     font-size: 2.3rem;
     line-height: 2.5rem;
 }
@@ -788,7 +788,7 @@
         border: 1px solid green
     }
 
-    .intro-section h2, .cms h2 {
+    .intro-section h2, .cms h2, .content h2 {
         font-size: 2.3rem;
         line-height: 2.5rem;
     }
@@ -934,7 +934,7 @@
         height: 601px
     }
     
-    .intro-section h2, .cms h2 {
+    .intro-section h2, .cms h2, .content h2 {
         font-size: 2.75rem;
         line-height: 2.5rem;
     }
@@ -1011,7 +1011,7 @@
         height: 601px
     }
 
-    .intro-section h2, .cms h2 {
+    .intro-section h2, .cms h2, .content h2 {
         font-size: 2.75rem;
         line-height: 2.5rem;
     }
@@ -1069,7 +1069,7 @@
         height: 601px
     }
 
-    .intro-section h2, .cms h2 {
+    .intro-section h2, .cms h2, .content h2 {
     font-size: 2.75rem;
     line-height: 2.5rem;
 }
