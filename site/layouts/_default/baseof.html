@@ -23,7 +23,46 @@
         document.getElementById(modalID).classList.toggle("flex");
         document.getElementById(modalID + "-backdrop").classList.toggle("flex");
         document.getElementById(modal).focus();
+        
       }
+      $(document).on("keyup", function (e, test) {
+        var test = document.getElementById('modal-id');
+        if(e.key === "Escape") {
+          
+      if ((test.classList.contains('hidden')) == false) {
+        document.getElementById("modal-id").classList.toggle("hidden");
+        document.getElementById("modal-id-backdrop").classList.toggle("hidden");
+        document.getElementById("modal-id").classList.toggle("flex");
+        document.getElementById("modal-id-backdrop").classList.toggle("flex");
+
+
+      }
+        }
+
+        if(e.key === "Tab") {
+          if ((test.classList.contains('hidden')) == false) {
+                    // dummy element
+        var dummyEl = document.getElementById('modal-id-backdrop');
+        var dummyElle = document.getElementById('modal-trigger');
+
+        // check for focus
+        // alert("yay tab!");
+var isFocused = (document.activeElement === dummyEl);
+var isNewFocused = (document.activeElement === dummyElle);
+
+
+if (isFocused) {
+  document.getElementById('close-btn').focus();
+}
+if (isNewFocused) {
+
+  document.getElementById('save-btn').focus();
+}
+        }
+      }
+
+
+      });
     </script>
 
 </body>
