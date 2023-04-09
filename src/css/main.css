@@ -2,9 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;800&display=swap');
 
 @import './imports/_media-queries';
+@import './imports/_pinboard';
 
 body {
     font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+button.underline, a.underline  {
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+button.underline:hover, button.underline:focus, a.underline:hover, a.underline:focus {
+    text-decoration:none
+}
+
+a.underline {
+    font-size: 0.935em;
 }
 
 :root {
@@ -443,6 +456,11 @@ h3 + .fullwidth {
 
 #top-section.green {
     background-image: linear-gradient(0deg,var(--green-hex) 66%,rgba(255, 255, 255, 0));
+}
+
+#top-section.green.Angled {
+    background-image: linear-gradient(0deg,var(--green-hex) 0%,rgba(255, 255, 255, 0));
+    padding-top: 10.55em;
 }
 
 #top-section.blue {
@@ -1088,7 +1106,7 @@ h2 {
 }
 
 h2 + * {
-    margin-top: 2.5em;
+    margin-top: 1.5em;
 }
 
 h2 + h3 {
@@ -1449,13 +1467,20 @@ h1 b {
     min-width: 5.75em;
 }
 
-.notice {
+.notice:not(.mt-4) {
     font-size: 12px;
     position: relative;
     padding-left: 35px;
     margin-top: 3.5em;
     font-family: 'JetBrains Mono', sans-serif;
     max-width: 700px;
+}
+
+.notice.mt-4 {
+    position: relative;
+    padding-left: 35px;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 0.935em;
 }
 
 .notice span {
@@ -1698,6 +1723,10 @@ img.fullwidth {
     background-color: rgba(var(--green-rgb), 0.33);
 }
 
+.green.Angled {
+    background-color: white;
+}
+
 .blue .Angled {
     background-color: rgb(247, 250, 255)
 }
@@ -1761,7 +1790,8 @@ img.fullwidth {
 }
 
 .cms.green h3,
-.green .intro-section h3 {
+.green .intro-section h3,
+.green h3 {
     color: var(--dark-green);
 }
 
@@ -1772,6 +1802,10 @@ img.fullwidth {
 
 .cms .partials .yup section:last-of-type:has(#results) h3 {
     color: white
+}
+
+.text-white {
+    color: white!important;
 }
 
 .Angled:after {
@@ -1836,9 +1870,9 @@ h3:has(span) {
     filter: sepia(0) hue-rotate(-25deg) grayscale(0%);
 }
 
-.items-center img {
+/* .items-center img {
     filter: sepia(0) hue-rotate(30deg) grayscale(0%);
-}
+} */
 
 .purple u {
     text-decoration: none;
@@ -1871,6 +1905,10 @@ h3:has(span) {
 
 .green .Angled:after {
     border-top: 100px solid rgba(var(--green-rgb), 0.33);
+}
+
+.green.Angled:after {
+    border-top: 100px solid rgba(var(--green-rgb), 1);
 }
 
 .blue .Angled:after {

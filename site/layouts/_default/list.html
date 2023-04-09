@@ -1,11 +1,104 @@
 {{ define "main" }}
 
 {{ if eq (relURL .URL) ("/article/") }}
-{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "backgroundcolor" "green" "title" "Articles" "subtitle" "this is a subtitle" "heroP" "If you have questions on any of these projects or would like to discuss how I may be right for your project please " "heroPlinktext" "get in touch" "heroPlinkurl" "/values") }}
+<!-- {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "backgroundcolor" "green" "title" "Articles" "subtitle" "this is a subtitle" "heroP" "If you have questions on any of these projects or would like to discuss how I may be right for your project please " "heroPlinktext" "get in touch" "heroPlinkurl" "/values") }}
+
+
+<b>articles landing page</b> -->
+
+<section class="center ph3 content purple" style="padding-top:77px; margin-top: 50px;">
+
+  <div class="shapes" style="pointer-events: none; position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  opacity: .5;">
+  
+    <div class="cross cross1" data-wh="20">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <div class="circle crc2"></div>
+  
+    <div class="cross cross2">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+  </div>
+
+  <div id="top-section" class="Angled purple mb-52">
+    <div class="max-w-7xl mx-auto">
+  <h1 class="text-4xl leading-none tracking-tight lg:text-6xl md:text-5xl sm:text-4xl"><b>Articles about UX and development </b></h1>
+
+  <p><span class="text-xl">This is the work landing page - I am an <strong>accessibility-focused UX developer</strong> who has been designing and developing for the web since
+    2012.</span></p>
+    <p class="mt-8">As part of the <a href="https://www.levelaccess.com" class="underline">Level Access</a>' delivery team I work with <strong>brands and
+    government agencies</strong> to ensure UX and accessibility are baked-in to digital products. <span
+      aria-hidden="true">🍞✨</span>. Previously I was an Inclusion and Diversity Event Lead and Accessibility and Inclusivity Design team member at <a
+      href="www.insight.com" class="underline">Insight</a>.</p>
+    <p class="mt-4 notice"><span aria-hidden="true">*</span>Check out my <a href="resume" class="underline">résumé</a> or find me on <a href="linkedin" class="underline">LinkedIn</a>.</p>
+  </p>
+</div>
+</div>
+</section>
+
 {{ end }}
 
 {{ if eq (relURL .URL) ("/post/") }}
-{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "backgroundcolor" "purple" "title" "Work case studies" "subtitle" "Here are some of my recent projects and the process behind them" "heroP" "If you have questions on any of these projects or would like to discuss how I may be right for your project please " "heroPlinktext" "get in touch" "heroPlinkurl" "/values") }}
+<!-- {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "backgroundcolor" "purple" "title" "Work case studies" "subtitle" "Here are some of my recent projects and the process behind them" "heroP" "If you have questions on any of these projects or would like to discuss how I may be right for your project please " "heroPlinktext" "get in touch" "heroPlinkurl" "/values") }}
+
+<b>work landing page</b> -->
+
+<section class="center ph3 content blue" style="padding-top:77px; margin-top: 50px;">
+
+  <div class="shapes" style="pointer-events: none; position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  opacity: .5;">
+  
+    <div class="cross cross1" data-wh="20">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <div class="circle crc2"></div>
+  
+    <div class="cross cross2">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+  </div>
+
+  <div id="top-section" class="Angled blue mb-52">
+    <div class="max-w-7xl mx-auto">
+  <h1 class="text-4xl leading-none tracking-tight lg:text-6xl md:text-5xl sm:text-4xl"><b>Recent work & case studies</b></h1>
+
+  <p><span class="text-xl">This is the work landing page - I am an <strong>accessibility-focused UX developer</strong> who has been designing and developing for the web since
+    2012.</span></p>
+    <p class="mt-8">As part of the <a href="https://www.levelaccess.com" class="underline">Level Access</a>' delivery team I work with <strong>brands and
+    government agencies</strong> to ensure UX and accessibility are baked-in to digital products. <span
+      aria-hidden="true">🍞✨</span>. Previously I was an Inclusion and Diversity Event Lead and Accessibility and Inclusivity Design team member at <a
+      href="www.insight.com" class="underline">Insight</a>.</p>
+    <p class="mt-4 notice"><span aria-hidden="true">*</span>Check out my <a href="resume" class="underline">résumé</a> or find me on <a href="linkedin" class="underline">LinkedIn</a>.</p>
+  </p>
+</div>
+</div>
+</section>
+
 {{ end }}
 
 <section class="mw7 center">
