@@ -998,6 +998,15 @@
 
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1280px)  {
+    #link-section .w-44.flex-none:nth-of-type(4) {
+        display: none
+    }
+    #modal-id .mt-20 {
+        margin-top: 16rem;
+    }
+}
+
 /* 1280 (macbook)  */
 @media screen and (min-width: 1201px) and (max-width: 1400px)  {
     #top-section section.max-w-7xl.mx-auto {
