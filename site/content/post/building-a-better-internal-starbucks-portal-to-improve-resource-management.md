@@ -3,7 +3,9 @@ title: Building a better internal Starbucks portal to improve resource
   management
 titlebold: Building a better internal Starbucks portal
 titlenormal: to improve resource management
+thumbnail: img/starbucks-thumbnail.png
 preview: img/dashboard-transparent.gif
+weight: 6
 notice: For legal reasons details of work completed cannot be shown. Images are representational.
 date: 2021-09-05T18:54:53.434Z
 newdate: 2021-11-05T18:54:53.474Z
@@ -12,7 +14,8 @@ logo: img/starbucks-logo.png
 role: Front-End Web Developer
 tags:
   - javascript
-  - ui
+  - react
+  - typescript
 technology: UI Design, Design System integration
 duration: 2 months
 introheading: Updating a dashboard UI for a better management workflow

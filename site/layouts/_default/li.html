@@ -1,17 +1,11 @@
-<div class="w-30 mb2 " style="background-image: url('{{ .Params.image }}')"></div>
+<!-- <div class="w-30 mb2 " style="background-image: url('{{ .Params.image }}')"></div> -->
 
 
 
-<div class="article-block no-underline pa3 br1 mb2 db w-70">
-	{{if .Params.tags}}
-	<ul id="tags"> 
-		{{ range (.GetTerms "tags") }}
-			<li><a href="{{ .Permalink }}" class="px-3 text-base text-indigo-500 border border-indigo-500 undefined">{{ .LinkTitle }}</a></li>
-	   {{ end }}
-	</ul>{{ end }}
+<div class="article-block no-underline pa3 br1 mb2 db w-50">
 
-	<img src="{{ .Params.preview }}" alt="{{ .Title }}" />
-	<a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a>
+	<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>
+	<h2><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h2>
 	<p><b>{{ .Params.client }}</b></p>
 	<p class="">
 		<span class="db"><span>{{ .Date.Format "January 2006" }}
@@ -25,10 +19,18 @@
 	{{end}}
 </span>
 		
-		| {{.Params.duration }}
+{{ if .Params.duration}}
+| {{.Params.duration }} 
 		<!-- {{if .Params.urllink}}
 		<span class="db"><a class="link primary" href="{{ .Params.urllink }}" target="_black">View Live</a></span>	{{end}}		 -->
 	</p>
+	{{if .Params.tags}}
+	
+	<ul class="tags"> 
+		{{ range (.GetTerms "tags") }}
+			<li><a href="{{ .Permalink }}" class="px-3 text-base text-indigo-500 border border-indigo-500 undefined">{{ .LinkTitle }}</a></li>
+	   {{ end }}
+	</ul>{{ end }}{{ end }}
 	<!-- <p>{{ .ReadingTime  }} minute read</p> -->
 
 	

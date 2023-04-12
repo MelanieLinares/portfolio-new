@@ -1,9 +1,11 @@
 ---
-title: new - Increasing efficiency with an internal portal to manage DMV IIMS
+title: Increasing efficiency with an internal portal to manage DMV IIMS
   initiative participants
 titlebold: Increasing efficiency with an internal portal
 titlenormal: to manage DMV IIMS initiative participants
+thumbnail: img/ncdmv-thumbnail.png
 preview: img/portal-animated-transparent.gif
+weight: 2
 notice: For legal reasons I am not able to show project details. I am able to
   discuss the generalized process and am available to discuss in more detail
   upon request.
@@ -13,9 +15,9 @@ client: NC Department of Transportation
 logo: img/ncdot-logo.jpg
 role: UI Designer and Developer
 tags:
+  - javascript
   - sharepoint
-  - ui
-  - ux
+  - vue
 technology: User Experience Design, Prototyping, Design System integration,
   Frontend Technology
 duration: 7 months
@@ -31,7 +33,7 @@ introbody: >-
 
   **The Plan:** <span aria-hidden="true">💡</span><br/>Research user and business needs to produce a list of missing and desired features. Create new portal UI and develop a new approach to data management and API integration, while separating reliance on specific dependencies.
 
-theme: blue
+theme: green
 casestudy: test
 
 typed_list:

@@ -3,6 +3,8 @@ title: Creating an accessibility go-to-market strategy through heart,
   harmony, and hunger
 titlebold: Creating an accessibility go-to-market strategy
 titlenormal: through heart, harmony, and hunger
+thumbnail: img/insight-a11y-thumbnail.png
+weight: 3
 preview: img/insight-preview.png
 preview2: img/insight-preview2.png
 notice: For legal reasons I am not able to show project details. Images are representational only.
@@ -13,6 +15,7 @@ logo: img/insight-logo.png
 role: Accessibility Specialist
 tags:
   - accessibility
+  - strategy
 technology: Project Management, Triaging issues, Documentation, Digital Strategy
 duration: 7 weeks
 introheading: "I started with one main goal: bring change in how Insight markets

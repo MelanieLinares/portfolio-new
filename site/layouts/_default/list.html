@@ -33,13 +33,13 @@
   
   </div>
 
-  <div id="top-section" class="Angled purple mb-52">
+  <div id="top-section" class="Angled purple mb-20">
     <div class="max-w-7xl mx-auto">
   <h1 class="text-4xl leading-none tracking-tight lg:text-6xl md:text-5xl sm:text-4xl"><b>Articles about UX and development </b></h1>
 
   <p><span class="text-xl">This is the work landing page - I am an <strong>accessibility-focused UX developer</strong> who has been designing and developing for the web since
     2012.</span></p>
-    <p class="mt-8">As part of the <a href="https://www.levelaccess.com" class="underline">Level Access</a>' delivery team I work with <strong>brands and
+    <p class="mt-8">As part of the <a href="https://www.levelaccess.com" class="underline">Level Access</a> delivery team I work with <strong>brands and
     government agencies</strong> to ensure UX and accessibility are baked-in to digital products. <span
       aria-hidden="true">🍞✨</span>. Previously I was an Inclusion and Diversity Event Lead and Accessibility and Inclusivity Design team member at <a
       href="www.insight.com" class="underline">Insight</a>.</p>
@@ -83,7 +83,7 @@
   
   </div>
 
-  <div id="top-section" class="Angled blue mb-52">
+  <div id="top-section" class="Angled blue mb-20">
     <div class="max-w-7xl mx-auto">
   <h1 class="text-4xl leading-none tracking-tight lg:text-6xl md:text-5xl sm:text-4xl"><b>Recent work & case studies</b></h1>
 
@@ -101,18 +101,20 @@
 
 {{ end }}
 
-<section class="mw7 center">
-  <ul class="flex-ns flex-wrap mhn1-ns pa3">
+<section class="max-w-7xl mx-auto center mb-20">
+  <ul class="flex-ns flex-wrap mhn1-ns pa3 flex">
       {{ range (.Paginator 7).Pages }}
-          <li class="w-100-ns ph1-ns flex">
+          <li class="w-3/6 ph1-ns">
             {{ .Render "li"}}
           </li>
       {{ end }}
   </ul>
 
-  <div class="pa3 w-100">If you are interested in learning more about the type of teams I enjoy working with, please introduce yourself over on LinkedIn and let’s chat!</div>
+  <!-- <div class="pa3 w-100">If you are interested in learning more about the type of teams I enjoy working with, please introduce yourself over on LinkedIn and let’s chat!</div> -->
 
   {{ partial "pagination" . }}
 </section>
 
 {{end}}
+
+

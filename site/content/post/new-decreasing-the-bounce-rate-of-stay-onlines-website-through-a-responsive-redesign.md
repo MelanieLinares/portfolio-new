@@ -1,8 +1,10 @@
 ---
-title: new - Decreasing the bounce rate of Stay Online's website through a
+title: Decreasing the bounce rate of Stay Online's website through a
   responsive redesign
 titlebold: Decreasing the bounce rate of Stay Online's website
 titlenormal: through a responsive redesign
+thumbnail: img/sample-casestudy-thumbnail-2.png
+weight: 4
 preview: img/stayonline-us.png
 preview2: img/tablet-us.png
 date: 2016-06-30T20:18:56.086Z
@@ -11,8 +13,8 @@ client: Stay Online Corp.
 logo: img/logo-icon.svg
 role: Front-End Web Developer
 tags:
-  - cross-browser
-  - ui
+  - ui/ux
+  - redesign
 technology: User Research, UI Design, Prototyping, Frontend Technology
 duration: 3 months
 introheading: Creating a plan to decrease mobile bounce rate

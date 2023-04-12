@@ -1,9 +1,10 @@
 ---
-title: new - Increasing accessibility across NCDOT websites to meet Section 508
+title: Increasing accessibility across NCDOT websites to meet Section 508
   compliance
 weight: 1
 titlebold: Increasing accessibility across NCDOT websites
 titlenormal: to meet Section 508 compliance
+thumbnail: img/ncdot-a11y-large.png
 preview: img/ncdot-featured.png
 preview2: img/ncdot-a11y2.png
 date: 2019-06-12T01:37:30.202Z
@@ -13,7 +14,8 @@ logo: img/ncdot-logo.jpg
 role: Accessibility Specialist
 tags:
   - accessibility
-  - sharepoint
+  - audit
+  - ux
 technology: Manual auditing, Triaging of issues, User Interface Design, Documentation
 duration: 2 months
 introheading: Creating a plan for usability and accessibility

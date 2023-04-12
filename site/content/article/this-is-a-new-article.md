@@ -6,11 +6,11 @@ newdate: 2019-09-24T04:07:54.877Z
 description: Let’s discuss what needs to be considered and implemented for a
   successful global-ready launch.
 urllink: google.com
+thumbnail: img/sample-casestudy-thumbnail-2.png
 image: img/about-direct-sourcing.jpg
 image1: img/about-single-origin.jpg
 tags:
-  - test
-  - test1
+  - ux
 ---
 # Global UX is Not Just Translation :)
 

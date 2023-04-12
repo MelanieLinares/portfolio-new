@@ -1,8 +1,10 @@
 ---
-title: new - Launching Stay Online's 10,000+ EU product website with improved
+title: Launching Stay Online's 10,000+ EU product website with improved
   information architecture in mind
 titlebold: Launching Stay Online's 10,000+ EU product website
 titlenormal: with improved information architecture in mind
+thumbnail: img/sample-casestudy-thumbnail-1.png
+weight: 5
 preview: img/stayonline-eu.png
 preview2: img/tablet-eu.png
 date: 2017-02-24T02:47:12.055Z
@@ -11,10 +13,8 @@ client: Stay Online
 logo: img/apple-touch-icon.png
 role: Front-End Web Developer
 tags:
-  - cross-browser
-  - ui
-  - ux
-  - javascript
+  - ui/ux
+  - internationalization
 technology: UI Design, User Research, Information Architecture, Frontend Technology
 duration: 3 months
 introheading: Creating a plan to help online consumers find products quickly and globally

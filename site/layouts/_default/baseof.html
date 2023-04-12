@@ -3,6 +3,22 @@
   {{ partial "head" . }}
   <body class="sans-serif">
 
+    {{ if eq (relURL .URL) ("/post/") }}
+    <style>
+      body {
+        background-color: #e5eeff;
+      }
+    </style>
+    {{end}}
+
+    {{ if eq (relURL .URL) ("/article/") }}
+    <style>
+      body {
+        background-color: #e9e3ff;
+      }
+    </style>
+    {{end}}
+
     {{ block "header" . }}{{ partial "nav" . }}{{end}}
 
     {{ block "main" . }}{{ end }}

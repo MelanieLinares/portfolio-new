@@ -1,23 +1,16 @@
-<footer class="ph3 pv4"> 
-	<div class="max-w-7xl mx-auto ">
+<footer class="mx-auto w-full max-w-container px-4 sm:px-6 lg:px-8">
+	<div class="max-w-7xl mx-auto border-t border-slate-900/5 py-10">
 		<div class="mw7 center pt3 mb5">
 			<div class="mb4">
-				<p>
-				<b>⚠️ I am currently looking for new opportunities! Check out my <a href="">resume</a> or <a href="">email me</a>.</b>
+				<p class="text-center max-w-7xl">
+					<b>⚠️ I am currently looking for new opportunities! Check out my <a href="">resume</a> or <a
+							href="">email me</a>.</b>
 				</p>
-				<p>
-				If you’d like to chat or make my day, feel free to <a href="">reach out to me</a> or <a href="">buy me a coffee</a>.</p>
-				<ul class="mhn2">
-					<li class="dib ph2 raise">
-						<a href="#" class="link db relative pa2">Linktree maybe</a>
-					</li>					
-					<li class="dib ph2 raise">
-						<a href="#" class="link db relative pa2">LinkedIn</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="measure-narrow center">
+				<p class="text-center max-w-7xl">
+					If you’d like to chat or make my day, feel free to <a href="">reach out to me</a> or <a href="">buy
+						me a coffee</a>.</p>
+
+		<div class="text-center max-w-7xl mt-8">
 			©{{ dateFormat "2006" now }} Copyright Melanie Linares. </br>
 			All rights reserved. This site was built with Hugo on Netlify.
 		</div>
@@ -29,44 +22,44 @@
 <script src="/app.js"></script>
 
 <script>
-$("#slider").on("input change", (e)=>{
-  const sliderPos = e.target.value;
-  // Update the width of the foreground image
-  $('.foreground-img').css('width', `${sliderPos}%`)
-  // Update the position of the slider button
-  $('.slider-button').css('left', `calc(${sliderPos}% - 18px)`)
-});
+	$("#slider").on("input change", (e) => {
+		const sliderPos = e.target.value;
+		// Update the width of the foreground image
+		$('.foreground-img').css('width', `${sliderPos}%`)
+		// Update the position of the slider button
+		$('.slider-button').css('left', `calc(${sliderPos}% - 18px)`)
+	});
 </script>
 
 <script>
-$(window).on("load", function() {
+	$(window).on("load", function () {
 
-	$("#the-takeaway").before('<span id="results" style="position: absolute; visibility: hidden; margin-top: -11em"></span>');
+		$("#the-takeaway").before('<span id="results" style="position: absolute; visibility: hidden; margin-top: -11em"></span>');
 
 
-// var all = document.getElementsByTagName("h2");
+		// var all = document.getElementsByTagName("h2");
 
-// for(var i = 0, max = all.length; i < max; i++) 
-// {
-// 	let content = all[i].innerHTML;
+		// for(var i = 0, max = all.length; i < max; i++) 
+		// {
+		// 	let content = all[i].innerHTML;
 
-// 	(function (index) {
-//                 document.getElementsByTagName('h2')[index]
-//                 .innerHTML = '<span aria-hidden="true">﹁</span>' + content + '<span aria-hidden="true">﹂</span>';
+		// 	(function (index) {
+		//                 document.getElementsByTagName('h2')[index]
+		//                 .innerHTML = '<span aria-hidden="true">﹁</span>' + content + '<span aria-hidden="true">﹂</span>';
 
-// 				if (document.getElementsByTagName('h2')[index].id == "introheading") {
-// 					document.getElementsByTagName('h2')[index]
-//                 .innerHTML = content;
-// 				}
+		// 				if (document.getElementsByTagName('h2')[index].id == "introheading") {
+		// 					document.getElementsByTagName('h2')[index]
+		//                 .innerHTML = content;
+		// 				}
 
-// 				if (document.getElementsByTagName('h2')[index].id == "related-title") {
-// 					document.getElementsByTagName('h2')[index]
-//                 .innerHTML = content;
-// 				}
+		// 				if (document.getElementsByTagName('h2')[index].id == "related-title") {
+		// 					document.getElementsByTagName('h2')[index]
+		//                 .innerHTML = content;
+		// 				}
 
-//             })(i);
+		//             })(i);
 
-// }
+		// }
 
-});
-	 </script>
+	});
+</script>

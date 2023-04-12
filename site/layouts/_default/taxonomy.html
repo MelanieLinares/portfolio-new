@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<div id="multi" class="pv5 pv6-l ph3 bg-center cover hero" style="background-image: url('/img/blog-index.jpg')">
+<!-- <div id="multi" class="pv5 pv6-l ph3 bg-center cover hero" style="background-image: url('/img/blog-index.jpg')">
     <div class="mw7 center ph3">
       <div class="db mb3">
         <div class="mw7 relative bg-fix-primary mb3">
@@ -10,23 +10,63 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="mw7 tr ph1-ns">
-    <p class="pa3"><a href="/tags">View all tags</a></p>
-  </div>
-<div class="mw7 center">
-  <ul class="flex-ns flex-wrap mhn1-ns pa3">
+  <style>
+    .article-block.no-underline.pa3.br1.mb2.db.w-50 {
+        margin-left: unset;
+        margin-right: unset;
+    }
+  </style>
+
+  <section class="max-w-7xl mx-auto" style="padding-top:77px; margin-top: 50px; overflow-y: hidden;">
+
+    <h1 class="text-4xl leading-none tracking-tight text-black lg:text-6xl md:text-5xl sm:text-4xl mb-8"><b>Tagged as "{{ .Title }}"</b></h1>
+    <p class="mb-20"><a href="/tags">View all tags</a></p>
+
+<div class="mw7 center mb-20">
+  <ul class="flex-ns flex-wrap mhn1-ns pa3 flex">
       {{ range (.Paginator 6).Pages.ByPublishDate.Reverse }}
-          <li class="w-100-ns ph1-ns flex">
-            {{ .Render "li"}}
+          <li class="article-block no-underline pa3 br1 mb2 db w-50 w-3/6 ph1-ns">
+           
+            
+
+
+
+              <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>
+              <h2><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h2>
+              <p><b>{{ .Params.client }}</b></p>
+              <p class="">
+                <span class="db"><span>{{ .Date.Format "January 2006" }}
+              -
+              {{if .Params.newdate}}
+              <span>		{{ with .Params.newdate }}
+                {{ dateFormat "January 2006" . }}
+                {{ end }}</span>
+              {{else}}
+              <span>ongoing</span>
+              {{end}}
+            </span>
+                
+                | {{.Params.duration }}
+                <!-- {{if .Params.urllink}}
+                <span class="db"><a class="link primary" href="{{ .Params.urllink }}" target="_black">View Live</a></span>	{{end}}		 -->
+              </p>
+
+              <!-- <p>{{ .ReadingTime  }} minute read</p> -->
+            
+              
+
+
+
+
           </li>
       {{ end }}
   </ul>
 
-  <div class="pa3 w-100">If you are interested in learning more about the type of teams I enjoy working with, please introduce yourself over on LinkedIn and let’s chat!</div>
-
   {{ partial "pagination" . }}
 </div>
+
+</section>
 
 {{end}}

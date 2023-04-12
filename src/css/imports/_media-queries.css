@@ -1,4 +1,9 @@
 @media screen and (max-width: 319px) {
+
+    .w-3\/6.ph1-ns {
+        width: 100%
+    }
+    
     .intro-section h2, .cms h2, .content h2:not(.text-sm) {
         font-size: 2.25rem;
         line-height: 2.5rem;
@@ -24,6 +29,15 @@
 
 /* 375 (iphone) */
 @media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .w-3\/6:not(:nth-of-type(6))  {
+        padding-bottom: 3rem;
+    }
+
+    .w-3\/6.ph1-ns {
+        width: 100%
+    }
+
     .intro-section h2, .cms h2, .content h2:not(.text-sm) {
         font-size: 2.25rem;
         line-height: 2.5rem;
@@ -74,7 +88,7 @@
         /* height: unset!important;
         padding-bottom: 35vh;
         min-height: 115vh; */
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 
     /* #maincontent {
@@ -138,6 +152,15 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 639px) {
+
+    .w-3\/6:not(:nth-of-type(6))  {
+        padding-bottom: 3rem;
+    }
+
+    .w-3\/6.ph1-ns {
+        width: 100%
+    }
+
     .intro-section h2, .cms h2, .content h2:not(.text-sm) {
         font-size: 2.25rem;
         line-height: 2.5rem;
@@ -410,7 +433,7 @@
         /* height: unset!important;
         padding-bottom: 35vh;
         min-height: 115vh; */
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 
     .hero-header {
@@ -478,6 +501,14 @@
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
+
+    .w-3\/6:not(:nth-of-type(6))  {
+        padding-bottom: 3rem;
+    }
+
+    .w-3\/6.ph1-ns {
+        width: 100%
+    }
 
     .intro-section h2, .cms h2, .content h2:not(.text-sm) {
         font-size: 2.25rem;
@@ -627,6 +658,13 @@
 
 /* 834 (ipad portrait) */
 @media screen and (min-width: 768px) and (max-width: 834px) {
+    .w-3\/6:not(:nth-of-type(6))  {
+        padding-bottom: 3rem;
+    }
+
+    .w-3\/6.ph1-ns {
+        width: 100%
+    }
 
     .intro-section h2, .cms h2, .content h2:not(.text-sm) {
     font-size: 2.3rem;
@@ -782,6 +820,16 @@
 }
 
 @media screen and (min-width: 835px) and (max-width: 1023px) {
+    .w-3\/6:nth-child(odd) .article-block {
+        padding-right: 1rem;
+    }
+    .w-3\/6:nth-child(even) .article-block {
+        padding-left: 1rem;
+    }
+    .w-3\/6:not(:nth-of-type(5)):not(:nth-of-type(6))  {
+        padding-bottom: 2rem;
+    }
+
     #top-section section.max-w-7xl.mx-auto {
         min-height: 45rem;
         max-height: 50rem;    
@@ -923,6 +971,16 @@
 
 /* 1194 (ipad landscape) */
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .w-3\/6:nth-child(odd) .article-block {
+        padding-right: 2rem;
+    }
+    .w-3\/6:nth-child(even) .article-block {
+        padding-left: 2rem;
+    }
+    .w-3\/6:not(:nth-of-type(5)):not(:nth-of-type(6))  {
+        padding-bottom: 4rem;
+    }
+
     #top-section section.max-w-7xl.mx-auto {
         min-height: 45rem;
         max-height: 50rem;    
@@ -1009,6 +1067,16 @@
 
 /* 1280 (macbook)  */
 @media screen and (min-width: 1201px) and (max-width: 1400px)  {
+    .w-3\/6:nth-child(odd) .article-block {
+        padding-right: 2rem;
+    }
+    .w-3\/6:nth-child(even) .article-block {
+        padding-left: 2rem;
+    }
+    .w-3\/6:not(:nth-of-type(5)):not(:nth-of-type(6))  {
+        padding-bottom: 4rem;
+    }
+
     #top-section section.max-w-7xl.mx-auto {
         min-height: 45rem;
         max-height: 50rem;    
@@ -1067,6 +1135,16 @@
 }
 
 @media screen and (min-width: 1401px) {
+
+    .w-3\/6:nth-child(odd) .article-block {
+        padding-right: 2rem;
+    }
+    .w-3\/6:nth-child(even) .article-block {
+        padding-left: 2rem;
+    }
+    .w-3\/6:not(:nth-of-type(5)):not(:nth-of-type(6))  {
+        padding-bottom: 4rem;
+    }
 
     #top-section section.max-w-7xl.mx-auto {
         min-height: 45rem;
