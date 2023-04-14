@@ -30,12 +30,33 @@
 /* 375 (iphone) */
 @media screen and (min-width: 320px) and (max-width: 480px) {
 
+    .Blank, .Angled, .Rectangular, #related-title, #related {
+        padding-left: 1.5em!important;
+        padding-right: 1.5em!important;
+    }
+
+    #top-section section.px-6 {
+        padding-left: 0!important;
+        padding-right: 0!important;    }
+
+    #related-title {
+        display: block
+    }
+
     .w-3\/6:not(:nth-of-type(6))  {
         padding-bottom: 3rem;
     }
 
     .w-3\/6.ph1-ns {
         width: 100%
+    }
+
+    .lg\:w-3\/4.w-full.lg\:text-left {
+        padding-left: 0!important;
+    }
+
+    ul:not(.tags):not(.icon-group):not(.vertical-icon-group):not(.project-info):not(.flex-ns.flex-wrap.mhn1-ns.pa3.flex), ol:not(.icon-group):not(.vertical-icon-group):not(.project-info) {
+        padding-left: 0!important;
     }
 
     .intro-section h2, .cms h2, .content h2:not(.text-sm) {
@@ -47,8 +68,15 @@
         flex: 1 0 100%!important;
         max-width: unset!important;
     }
-    #top-section {
+    #top-section.green {
         padding-bottom: 9.75em!important;
+        /* margin-bottom: 6em */
+    }
+
+    #top-section:not(.green) {
+        /* padding-bottom: 9.75em!important; */
+        margin-bottom: 6em;
+        padding-bottom: 2em
     }
 
     #main {
@@ -64,7 +92,7 @@
         -webkit-text-stroke-width: unset!important;
     }
 
-    #navbar div:first-of-type {
+    #navbar div:first-of-type, #top-section .max-w-7xl.mx-auto, section.max-w-7xl.mx-auto:not(.green):not(.blue) {
         max-width: calc(100vw - 2.5em)!important;
     }
 

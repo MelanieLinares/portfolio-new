@@ -20,6 +20,10 @@ a.underline {
     font-size: 0.935em;
 }
 
+html {
+    overflow-y: auto;
+}
+
 :root {
     --purple-hex: #E9E3FF;
     --purple-rgb: 233,227,255;
@@ -446,13 +450,13 @@ h3 + .fullwidth {
   }
   
 
-#top-section {
+/* #top-section {
     padding-bottom: 7.5em;
-}
+} */
 
 .article-block.no-underline.pa3.br1.mb2.db.w-50 {
     background-color: white;
-    margin: 1rem;
+    /* margin: 1rem; */
     padding: 1rem;
     border-radius: 0.5rem;
 }
