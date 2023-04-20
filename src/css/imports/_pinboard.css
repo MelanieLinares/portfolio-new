@@ -36,14 +36,18 @@
 }
 
 .NMS-Bienvenida-Collage #bloque1{
-    height: 350px;
+    /* height: 350px; */
+    height: auto;
+
     margin-left: 40px;
     transform: rotate(-5deg);
     width: 300px;
 }
 
 .NMS-Bienvenida-Collage #bloque2{
-    height: 450px;
+    /* height: 450px; */
+    height: auto;
+
     margin-left: -80px;
     transform: rotate(10deg);
     width: 350px;
@@ -51,7 +55,9 @@
 }
 
 .NMS-Bienvenida-Collage #bloque3{
-    height: 400px;
+    /* height: 400px; */
+    height: auto;
+
     margin-left: -80px;
     margin-right: 40px;
     transform: rotate(-5deg);

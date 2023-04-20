@@ -2,7 +2,6 @@
 backgroundcolor: turquiose
 title: Global UX is Not Just Translation
 date: 2019-09-24T04:07:54.787Z
-newdate: 2019-09-24T04:07:54.877Z
 description: Let’s discuss what needs to be considered and implemented for a
   successful global-ready launch.
 urllink: google.com

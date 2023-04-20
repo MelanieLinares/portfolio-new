@@ -1032,6 +1032,20 @@ em {
     color: #4F6EDE;
 }
 
+body.overflow-hidden {
+    position: fixed;
+}
+
+header.nav:not(.transparent) .mobile-menu {
+  background-color: unset
+}
+
+iframe:not(#iframe) {
+    border: 3px solid #d4efe1;
+    border-radius: 0.75rem;
+    margin-top: .25rem;
+}
+
 /* h2 span:nth-of-type(2) {
     transform: scaleX(-1);
     font-family: Poppins,sans-serif;
