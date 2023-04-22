@@ -1,24 +1,12 @@
+<!-- <div class="w-30 mb2 " style="background-image: url('{{ .Params.image }}')"></div> -->
 
-	{{ if eq .Dir ("post/") }}
-	<div class="item"><div class="polaroid"><img src="{{ .Params.image }}"></div></div>
-	{{ end }}
 
-	<div style="margin-bottom: 1em">
 
-		<a href="{{ .RelPermalink }}" class="br1 mb1 db raise w-100">
+<div class="article-block no-underline pa3 br1 mb2 db w-50" style="padding: 0">
 
-		<span class="htitle">{{ .Title }}</span></a>
+	<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>
+	<h4><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h4>
+
+
 	
-
-
-
-	<!-- {{ if eq .Dir ("post/") }}
-		{{ range (.GetTerms "tags") }}
-		<a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-		{{ end }}
-	{{ end }} -->
-
-
-<div class="">{{ .Description }}</div>
-
 </div>

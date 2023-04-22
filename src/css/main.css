@@ -474,6 +474,181 @@ li.w-3\/6 {
     display: flex;
 }
 
+#top-section.homepage {
+    background-image: url(/img/mesh-gradient.png);
+    padding-bottom: 10em;
+    padding-top: 10.5em;
+}
+
+#top-section.homepage h2 {
+    color: black
+}
+
+#top-section.homepage h1 b {
+    animation: Color 30s linear infinite;
+    -webkit-animation: Color 30s ease-in-out infinite;
+}
+
+.green a.skip.homepage {
+    padding: 1em;
+    margin-top: .5em;
+}
+
+.green a.skip.homepage:hover, .green a.skip.homepage:focus {
+    animation: BgColor 30s linear infinite;
+    -webkit-animation: BgColor 30s ease-in-out infinite;
+    border-color: transparent;
+}
+
+.green a.skip.homepage:hover:after {
+    animation: BorderColor 30s linear infinite;
+    -webkit-animation: BorderColor 30s ease-in-out infinite;
+}
+
+.green a.skip.homepage:after {
+    margin-top: -2px;
+    padding-bottom: 3.5em;
+    margin-left: -2px;
+    padding-right: 14em;
+    left: 0
+}
+
+@keyframes Color{
+    0%{
+      color:#6224b4;
+      -webkit-text-stroke-color: #6224b4
+    }
+        
+    30%{
+      color:#243bb4;
+      -webkit-text-stroke-color: #243bb4
+    }    
+
+    33%{
+        color:#243bb4;
+        -webkit-text-stroke-color: #243bb4
+      } 
+    
+    63%{
+      color:#006662;
+      -webkit-text-stroke-color: #006662
+    }
+
+    66%{
+        color:#006662;
+        -webkit-text-stroke-color: #006662
+      }
+
+    97%{
+        color:#6224b4;
+        -webkit-text-stroke-color: #6224b4
+    }
+
+    100%{
+        color:#6224b4;
+        -webkit-text-stroke-color: #6224b4
+      }
+  }
+
+  @keyframes BgColor{
+    0%{
+        background-color:#6224b4;
+
+    }
+        
+    30%{
+        background-color:#243bb4;
+    }    
+
+    33%{
+        background-color:#243bb4;
+      } 
+    
+    63%{
+        background-color:#006662;
+    }
+
+    66%{
+        background-color:#006662;
+      }
+
+    97%{
+        color:#6224b4;
+    }
+
+    100%{
+        background-color:#6224b4;
+      }
+  }
+
+  @keyframes BorderColor{
+    0%{
+        border-color: #6224b4;
+    }
+        
+    30%{
+        border-color:#243bb4;
+    }    
+
+    33%{
+        border-color: #243bb4;
+      } 
+    
+    63%{
+        border-color:#006662;
+    }
+
+    66%{
+        border-color:#006662;
+      }
+
+    97%{
+        border-color:#6224b4;
+    }
+
+    100%{
+        border-color:#6224b4;
+      }
+  }
+
+.green .Angled.homepage {
+    background-color: unset!important;
+}
+
+/* .purple .Angled.homepage h1 b, .purple .Angled.homepage h2 {
+    color: black!important
+}
+
+.purple .Angled.homepage h1 {
+    -webkit-text-stroke-color: black;
+} */
+
+.shapes.homepage .cross2 {
+    filter: invert(1) hue-rotate(145deg);
+}
+
+.shapes.homepage .crc2 {
+    border: 5px solid #cef0ff;
+    filter: unset;
+}
+
+.shapes.homepage .cross1 {
+    filter: invert(1) hue-rotate(250deg) brightness(1.15);
+}
+
+#top-section.homepage:after {
+        bottom: 0;
+        content: '';
+        width: 100vw;
+        height: 0;
+        border-left: 100vw solid transparent;
+        position: absolute;
+        /* top: -100px; */
+        z-index: 0;
+        border-bottom: 100px solid #ffffff;
+        border-top: unset;
+    }
+
 #top-section.purple {
     background-image: linear-gradient(0deg,var(--purple-hex) 66%,rgba(255, 255, 255, 0));
 }

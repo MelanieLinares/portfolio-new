@@ -2,31 +2,149 @@
 
 {{ define "main" }}
 
+<!-- {{ partial "jumbotron" (dict "imageUrl" .Params.image "imageUrl2" .Params.image2 "backgroundcolor" .Params.backgroundcolor "subtitle" .Params.subtitle "text" .Content) }}
 
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "imageUrl2" .Params.image2 "backgroundcolor" .Params.backgroundcolor "subtitle" .Params.subtitle "text" .Content) }}
 
+{{ partial "short-text" .Params.blurb}} -->
 
-{{ partial "short-text" .Params.blurb}}
+<!-- <hr> 
 
-<hr> 
-
-{{ partial "blog" . }}
-
+{{ partial "blog" . }} -->
 
 
 
 
 
 
+<section class="center ph3 content green" style="padding-top:77px; margin-top: 50px;">
+
+  <div class="shapes homepage" style="pointer-events: none; position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 0;
+  width: 100%;
+  opacity: .5;">
+  
+    <div class="cross cross1" data-wh="20">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+    <div class="circle crc2"></div>
+  
+    <div class="cross cross2">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  
+  </div>
+
+  <div id="top-section" class="Angled homepage mb-32">
+    <div class="max-w-7xl mx-auto">
+  <h1 class="text-4xl leading-none tracking-tight lg:text-6xl md:text-5xl sm:text-4xl max-w-7xl" style="max-width: 1040px!important"><span aria-hidden="true">👋</span><b>Hello there! I'm Melanie, an accessibility focused UX developer.</b></h1>
+  <h2 class="mt-8 text-3xl leading-none tracking-tight lg:text-4xl md:text-5xl sm:text-4xl max-w-7xl homepage" style="display:block; max-width: 990px!important; word-spacing: -0.65rem;letter-spacing: -0.065em;line-height: 1;">I help brands and agencies ensure accessibility is baked into code and design.</h2>
+<br>
+    <a href="/post" class="skip card-v8 homepage bg radius-lg text-center mt-16">
+      <span class="">Check out my work</span>
+  </a>
 
 
-        
+</div>
+</div>
+</section>
+
+
+<section class="max-w-7xl mx-auto">
+  <h3 style="font-size: 2.3rem !important;">Practical Accessibility: a Web Accessibility sample heading</h3>
+  <br>
+
+  <div class="flex">
+  <div>
+    <p class="slice__description">I'm currently creating a self-paced video course on accessibility for front-end designers and engineers who want to start creating more accessible Web user interfaces and digital products <em>today</em>.</p>
+    <p>You can sign up for course updates as well as early bird discounts on the <a href="https://practical-accessibility.today">Practical Accessibility course website</a>.</p>
+    <br>
+    <p class="slice__description">I'm currently creating a self-paced video course on accessibility for front-end designers and engineers who want to start creating more accessible Web user interfaces and digital products <em>today</em>.</p>
+    <p>You can sign up for course updates as well as early bird discounts on the <a href="https://practical-accessibility.today">Practical Accessibility course website</a>.</p>
+
+<br>
+  <blockquote class="mt-4">
+    <p>[Melanie] helps modernize aging applications by refactoring them using modern JavaScript frameworks, like Vue.js. Her user-first philosophy for user experience […] made her a critical part of the team’s success.<br> <cite>- Patrick Doran <small>NCDOT/NCDIT UX and Web Services Manager</small></cite></p>
+  </blockquote>
+</div>
+<div>
+  <div class="lg:max-w-lg flex">
+    <dl class="max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+
+      <div class="relative pl-20">
+        <dt class="font-semibold text-gray-900">
+          <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/virtual.png">
+          I conduct remote design reviews
+        </dt>
+      </div>
+      <div class="relative pl-20">
+        <dt class="font-semibold text-gray-900">
+          <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/audit.png">
+          I audit websites, apps, and shareable digital files
+        </dt>
+      </div>
+
+      <div class="relative pl-20">
+        <dt class="font-semibold text-gray-900">
+          <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/space.png">
+          I am improving Level Access' methodology
+        </dt>
+      </div>
+
+
+
+
+
+    </dl>
+
+    <dl class="max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+
+      <div class="relative pl-20">
+        <dt class="font-semibold text-gray-900">
+          <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/virtual.png">
+          I conduct remote design reviews
+        </dt>
+      </div>
+      <div class="relative pl-20">
+        <dt class="font-semibold text-gray-900">
+          <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/audit.png">
+          I audit websites, apps, and shareable digital files
+        </dt>
+      </div>
+
+      <div class="relative pl-20">
+        <dt class="font-semibold text-gray-900">
+          <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/space.png">
+          I am improving Level Access' methodology
+        </dt>
+      </div>
+
+
+
+
+
+    </dl>
+  </div>
+</div>
+</div>
+</section>
+<br>
+
+{{ partial "blog" . }}    
 
     
-<div>
+<!-- <div>
     <h2>Find me in the wild</h2>
     <h3 class="text-5xl font-bold tracking-tight sm:text-4xl">This is a test. hello.</h3>
       {{ partial "test.html" .Params }}
-  </div>
-
+  </div> -->
+ 
 {{ end }} 

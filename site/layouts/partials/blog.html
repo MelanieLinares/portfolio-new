@@ -1,10 +1,10 @@
-<section class="bg-off-white pv4" id="article-feed">
+<section class="bg-off-white pv4 max-w-7xl mx-auto" id="article-feed">
 	<div class="ph3 center">
 
-		<h2>Latest case studies & articles: </h2>
-
-		<div style="display: block; position: relative; margin-bottom: 3em">
-		<ul class="w-100 flex work-roll" style="padding-left: 450px;">
+		<h3 style="font-size: 2.3rem !important;">Latest case studies & articles: </h3>
+<div class="flex">
+		<div style="display: block; position: relative; margin-bottom: 3em" class="w-50">
+		<ul class="w-100 flex work-roll" style="padding-left: 0">
 			{{ range first 1 (where .Site.Pages "Type" "post") }}
 				<li class="ph1-ns w-50-ns">
 					<div class="flex">
@@ -14,10 +14,10 @@
 				</li>
 			{{ end }}
 			</ul>
-			<a href="/post" class="btn" style="margin-left: 450px;">All Case Studies</a>
+			<a href="/post" class="btn underline" >All Case Studies</a>
 			</div>
 
-			<div style="padding-left: 450px; display: block;">
+			<div style="display: block;" class="w-50">
 				<ul class="w-100 mhn1-ns mb3 article-roll">
 					{{ range last 1 (where .Site.Pages "Type" "article") }}
 						<li class="ph1-ns w-50-ns">
@@ -27,9 +27,9 @@
 						</li>
 					{{ end }}
 					</ul>
-			<a href="/article" class="btn">All Articles</a>
+			<a href="/article" class="btn underline">All Articles</a>
 		</div>
-
+</div>
 		<!-- <ul class="flex-ns flex-wrap mhn1-ns pa3">
 			{{ range (.Paginator 2).Pages.ByPublishDate.Reverse }}
 				<div class="w-100-ns ph1-ns flex">
