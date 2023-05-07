@@ -1,9 +1,20 @@
 {{ define "main" }}
 
-<div class=""> <!-- max-w-7xl mx-auto -->
-{{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "backgroundcolor" "multi" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }}
+<section class="center ph3 content purple article" style="padding-top:77px; margin-top: 50px;"> <!-- max-w-7xl mx-auto -->
+<!-- {{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "backgroundcolor" "multi" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }} -->
 
-{{ .Content }}
+
+<div id="top-section" class="Angled purple mb-20">
+    <div class="max-w-7xl mx-auto">
+  <h1 class="text-4xl leading-none tracking-tight lg:text-6xl md:text-5xl sm:text-4xl"><b>{{ .Params.title}}</b></h1>
+<br>
+  <div class="mt-4 notice"><span aria-hidden="true">*</span><div class="text-xl">{{.Params.preview_desc}}</div></div>
+
 </div>
+</div>
+
+<div style="max-width: calc(878px + 2em); margin-left: auto; margin-right: auto; background-color: white; padding: 2em">
+{{ .Content }}</div>
+</section>
 
 {{ end }}

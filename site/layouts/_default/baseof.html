@@ -8,16 +8,61 @@
       body {
         background-color: #e5eeff;
       }
+      header.transparent #navbar, header:not(.shadow-sm) #navbar {
+        background-color: #c4d9ff
+      }
+      header.shadow-sm #navbar {
+        background-color: var(--dark-blue)!important;
+      }
+      .blue #top-section:not(.Angled) .max-w-7xl.mx-auto:after {
+        border-right: solid 136vw #e5eeff !important;
+      }
+
+      #top-section.purple .max-w-7xl.mx-auto:after {
+        border-right: solid 136vw #eeeaff !important;
+      }
+      
     </style>
     {{end}}
 
-    {{ if eq (relURL .URL) ("/article/") }}
+    {{ if eq (relURL .URL) ("/values/") }}
     <style>
       body {
-        background-color: #e9e3ff;
+        background-color: #ddfded;
+      }
+      header.shadow-sm.bg-pink #navbar {
+        background-color: var(--dark-green)!important;
+      }
+      header:not(.bg-pink) #navbar a img {
+        filter: hue-rotate(-60deg) brightness(0.78);
+      }
+      
+    </style>
+    {{end}}
+
+
+    
+
+
+    {{ if eq (.URL | truncate 8) ("/article …") }}
+    <style>
+      body {
+        background-color: #eeeaff;
+      }
+      header.transparent #navbar, header:not(.shadow-sm) #navbar {
+        background-color: #d3c4ff
+      }
+      header.transparent:not(.bg-pink) #navbar a img, header:not(.shadow-sm):not(.bg-pink) #navbar a img {
+        filter: hue-rotate(30deg) brightness(0.9)!important;
+      }
+      header.shadow-sm.bg-pink #navbar {
+        background-color: var(--dark-purple)!important;
       }
     </style>
     {{end}}
+
+
+
 
     {{ block "header" . }}{{ partial "nav" . }}{{end}}
 
@@ -85,6 +130,14 @@ if (isNewFocused) {
 
       });
     </script>
+
+<script>
+  const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  
+  const d = new Date();
+  let day = weekday[d.getDay()];
+  document.getElementById("demo").innerHTML = day;
+  </script>
 
 </body>
 </html>
