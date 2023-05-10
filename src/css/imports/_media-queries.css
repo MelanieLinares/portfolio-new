@@ -30,6 +30,46 @@
 /* 375 (iphone) */
 @media screen and (min-width: 320px) and (max-width: 480px) {
     
+    #top-section.blue .img-parent {
+        height: 80vh
+    }
+
+    #top-section.blue section:first-child {
+        margin-right: 0;
+        max-width: calc(100vw - 1.25em) !important;
+    }
+
+    #top-section.blue h1 {
+        margin-right: .5em
+    }
+
+    #article-feed .flex {
+        display: block
+    }
+
+    .caption {
+        padding-right: 0!important;
+        padding-left: 3.5em!important;
+        padding-top: .5em!important;
+    }
+
+    .blue .Blank .caption:before, .green .Blank .caption:before, .purple .Blank .caption:before, .blue .Blank .img-w-caption .caption:before, .green .Blank .img-w-caption .caption:before, .purple .Blank .img-w-caption .caption:before {
+        width: 40px;
+        background-size: contain!important;
+
+    }
+
+    .w-full ul {
+        margin-left: 1em!important
+    }
+
+    .intro-section h2 {
+        font-size: 1.87rem!important;
+        letter-spacing: -0.07em!important;
+        word-spacing: -0.185em!important;
+        font-weight: 300!important;
+    }
+
     header + script + section {
         margin-top: 0!important;
         margin-bottom: -2rem;
@@ -248,7 +288,7 @@
         background-image: linear-gradient(0deg, var(--green-hex) 89%, rgba(255, 255, 255, 0))!important;
     }
 
-    #top-section.green {
+    #top-section.green, #top-section.blue, #top-section.purple {
         margin-top: -3.75rem;
     }
 
@@ -274,6 +314,10 @@
 
     .blue #main {
         margin-top: calc(100vw + 7rem)!important;
+    }
+
+    #top-section.blue #main {
+        margin-top: 10.65rem!important
     }
 
     .pb-\[8rem\] {
