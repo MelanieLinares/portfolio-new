@@ -389,6 +389,7 @@ h3 + .fullwidth {
     top: -100px;
     z-index: 0;
     border-bottom: 100px solid var(--dark-purple);
+    left: 0
 }
 
  .Rectangular + .Rectangular,
@@ -767,13 +768,22 @@ header.nav.blue #navbar, header:not(.shadow-sm).nav.blue #navbar {
     padding-top: 12.55em;
 }
 
+#retro:after {
+    padding-right: 17.65em;
+}
+
+.mobile-menu a.border-b-2:not(.border-transparent) {
+    font-weight: bold;
+    border-color: transparent;
+}
+
 #top-section.blue {
     /* background-image: linear-gradient(0deg,var(--blue-hex) 66%,rgba(255, 255, 255, 0)); */
     background-color: #ffffff;
     padding-top: 12.55em;
 }
 
-#top-section.blue .max-w-7xl.mx-auto:after {
+#top-section.blue:not(.Angled) .max-w-7xl.mx-auto:after {
     display: none
 }
 
@@ -1236,21 +1246,24 @@ max-width: 1400px;
 }
 
 .cms.purple section h2 {
-    border-top: 2.5px dashed var(--purple-hex);
+    border-top: 2.5px dashed var(--dark-purple);
     border-bottom: 2.5px dashed var(--dark-purple);
     padding: 0.5em;
+    border-bottom: unset;
 }
 
 .cms.green section h2 {
     border-top: 2.5px dashed var(--green-hex);
     border-bottom: 2.5px dashed var(--dark-green);
     padding: 0.5em;
+    border-bottom: unset;
 }
 
 .cms.blue section h2 {
     border-top: 2.5px dashed var(--blue-hex);
     border-top: 2.5px dashed var(--dark-blue);
     padding: 0.5em;
+    border-bottom: unset;
 }
 
 header #navbar {
@@ -1951,6 +1964,10 @@ h1 b {
     margin-top: 4em;
 }
 
+.cms section:last-of-type h2 + *:not(h3) {
+    margin-top: 2em;
+}
+
 .cms section h2 + h3 {
     margin-top: 2.5em;
 }
@@ -2199,6 +2216,7 @@ img.fullwidth {
     position: absolute;
     top: 0;
     z-index: 0;
+    left: 0;
 }
 
 .purple .Angled:before {
@@ -2375,8 +2393,18 @@ h3:has(span) {
     opacity: .85;
 }
 
+
+
 .purple .Angled:not(#top-section):after {
     border-top: 100px solid rgba(var(--purple-rgb), 0.33); 
+}
+
+.purple .Angled:has(.display_image_section):after {
+    left: 0;
+}
+
+.purple section:last-of-type.Angled:not(#top-section):after {
+    border-top: unset;
 }
 
 .purple.Angled:not(#top-section):after {
@@ -2617,6 +2645,13 @@ h3:has(span) {
 
 .card-v8:hover:after {
     transform: translate(7px, 7px);
+}
+
+.related-title {
+        font-family: 'Poppins';
+        font-weight: 700 !important;
+        font-size: 2.25rem;
+        line-height: 2.5rem;
 }
 
 .cms.green + .related-content .card-v8:hover:after {

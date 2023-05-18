@@ -15,7 +15,7 @@
 					<!-- Primary Navbar items -->
 					<div class="lg:flex md:flex sm:flex xs:hidden hidden items-center space-x-1 justify-end" style="width: 100%">
 						{{ if eq (relURL .URL) ("/values/") }}
-						<a href="/values" class="current block h-full flex items-center px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400" aria-current="page">
+						<a href="/values" aria-current="page" class="current block h-full flex items-center px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400" aria-current="page">
 							About</a>
 						{{ else }}
 						<a href="/values" class="block h-full flex items-center px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
@@ -23,7 +23,7 @@
 						{{ end }}
 			
 						{{ if eq (relURL .URL) ("/post/") }}
-						<a href="/post" class="current block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400" aria-current="page">
+						<a href="/post" aria-current="page" class="current block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400" aria-current="page">
 							Work</a>
 						{{ else }}
 						<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
@@ -31,7 +31,7 @@
 						{{ end }}
 			
 						{{ if eq (relURL .URL) ("/article/") }}
-						<a href="/article" class="current block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400" aria-current="page">
+						<a href="/article" aria-current="page" class="current block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out hover:text-blue-400" aria-current="page">
 							Articles</a>
 						{{ else }}
 						<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
@@ -61,8 +61,8 @@
 			<ul class="">
 				<li>
 					{{ if eq (relURL .URL) ("/values/") }}
-					<a href="/values" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out">
-						About</a>
+					<a href="/values" aria-current="page" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out">
+						About <span aria-hidden="true" style="padding-left: .25rem">ᐊ</span></a>
 					{{ else }}
 					<a href="/values" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
 						About</a>
@@ -70,8 +70,8 @@
 				</li>
 				<li>
 					{{ if eq (relURL .URL) ("/post/") }}
-					<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out">
-						Work</a>
+					<a href="/post" aria-current="page" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out">
+						Work <span aria-hidden="true" style="padding-left: .25rem">ᐊ</span></a>
 					{{ else }}
 					<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
 						Work</a>
@@ -79,8 +79,8 @@
 				</li>
 				<li>
 					{{ if eq (relURL .URL) ("/article/") }}
-					<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out">
-						Articles</a>
+					<a href="/article" aria-current="page" class="block h-full flex items-center mx-4 px-2 border-b-2 border-black transition-colors duration-300 ease-in-out">
+						Articles <span aria-hidden="true" style="padding-left: .25rem">ᐊ</span></a>
 					{{ else }}
 					<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
 						Articles</a>

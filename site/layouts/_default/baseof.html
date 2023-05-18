@@ -3,6 +3,41 @@
   {{ partial "head" . }}
   <body class="sans-serif">
 
+    {{ if eq (.URL | truncate 14) ("/retrospective …") }}
+    <style>
+      blockquote {
+        font-size: 1em!important;
+        font-weight: 200!important;
+        word-spacing: -0.15rem!important;
+
+      }
+      header.shadow-sm #navbar {
+        background-color: var(--dark-green)!important;
+        color: white
+      }
+      #top-section.purple.Angled .max-w-7xl.mx-auto:after,
+      #top-section .max-w-7xl.mx-auto:before {
+        display: none
+      }
+      #top-section + div {
+        max-width: calc(100vw - 2.5em)!important;
+        padding: 0!important
+      }
+      #top-section {
+        margin-bottom: 3rem!important;
+      }
+
+    #top-section + div blockquote:last-of-type {
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+    }
+    #top-section + div blockquote:not(:last-of-type) {
+      margin-bottom: .25rem;
+      margin-top: 1rem;
+    }
+  </style>
+    {{end}}
+
     {{ if eq (relURL .URL) ("/post/") }}
     <style>
       body {
@@ -137,6 +172,19 @@ if (isNewFocused) {
   const d = new Date();
   let day = weekday[d.getDay()];
   document.getElementById("demo").innerHTML = day;
+  </script>
+
+  <script>
+var dateStart2 = new Date(2022,11,23);
+var dateStart3 = new Date(2024,01,31);
+var dateEnd2 = new Date();
+
+if(dateStart2 < dateEnd2){
+    document.getElementById('retro').style.display = "block";
+}
+if(dateStart3 < dateEnd2){
+    document.getElementById('retro').style.display = "none";
+}  
   </script>
 
 </body>

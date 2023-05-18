@@ -17,7 +17,7 @@ tags:
   - internationalization
 technology: UI Design, User Research, Information Architecture, Frontend Technology
 duration: 3 months
-introheading: Creating a plan to help online consumers find products quickly and globally
+introheading: Creating a plan to help online consumers find products easily & globally
 preview_tools: UI, UX, HTML/CSS
 introbody: >-
   Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets. In 2015 Stay Online made the transition from a U.S. business to an international one. The company opened a shipping and manufacturing location in the Czech Republic. U.S. sales associates had expressed difficulties handling customer satisfaction for international orders. 
@@ -169,7 +169,7 @@ typed_list:
     content_options:
       - type: generic_content
         generic_content: >-
-          ### What do these needs and expectations mean for the design?              
+          ### What do these needs & expectations mean for the design?              
       - type: cards
         process: true
         blurbcards:

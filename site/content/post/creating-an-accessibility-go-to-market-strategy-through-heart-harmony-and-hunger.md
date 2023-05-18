@@ -1,8 +1,8 @@
 ---
 title: Creating an accessibility go-to-market strategy through heart,
-  harmony, and hunger
+  harmony, & hunger
 titlebold: Creating an accessibility go-to-market strategy
-titlenormal: through heart, harmony, and hunger
+titlenormal: through heart, harmony, & hunger
 thumbnail: img/insight-a11y-thumbnail.png
 weight: 3
 preview: img/insight-preview.png
@@ -54,7 +54,7 @@ typed_list:
             * How can we stand out?
 
 
-            That final question of <u>standing out</u> became the main focus. Our team had the heart and the accessible design/development experience, but we lacked audit-specific experience. Rather than keep the deliverable to only a handoff of data the team focused on integrating remediation as part of the bid. We sought to answer the “okay, now what?” that can follow introducing anyone to new concepts. We sought empathy in our bid for clients that may be overwhelmed with the changes needed for compliance.
+            That final question of standing out became the main focus. Our team had the heart and the accessible design/development experience, but we lacked audit-specific experience. Rather than keep the deliverable to only a handoff of data the team focused on integrating remediation as part of the bid. We sought to answer the “okay, now what?” that can follow introducing anyone to new concepts. We sought empathy in our bid for clients that may be overwhelmed with the changes needed for compliance.
 
     left_side:
       content_options:

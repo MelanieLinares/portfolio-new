@@ -104,7 +104,7 @@ typed_list:
                 These are internal Stay Online employees working on mobile devices. They use authenticated portions of the website to check stock and product location. They need the website to not limit functionality for small devices.
               imagew: img/warehouse-worker.png
             - textw: >-
-                #### Sales and Marketing Employees
+                #### Sales & Marketing Employees
 
                 These are internal and external Stay Online employees working on multiple devices, including tablets when at trade shows. They need the website to work fast and reliably on low data connections.
               imagew: img/salesperson.png
