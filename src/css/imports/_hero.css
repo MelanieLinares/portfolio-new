@@ -102,9 +102,9 @@ filter: blur(7em);
     margin-top: 2.5rem
   }
 
-  #red h1 {
+  /* #red h1 {
     -webkit-text-stroke-color: #F11809;
-}
+} */
 
 #red h1 b {
     /* color: #D52B1D; */
@@ -115,9 +115,9 @@ filter: blur(7em);
     stroke: #F7392B;
 }
 
-#blue h1 {
+/* #blue h1 {
     -webkit-text-stroke-color: #1C79E3;
-}
+} */
 
 #blue h1 b {
     color: #1448A9;
@@ -127,9 +127,9 @@ filter: blur(7em);
     stroke: #1C79E3;
 }
 
-#green h1 {
+/* #green h1 {
     -webkit-text-stroke-color: #149377;
-}
+} */
 
 #green h1 b {
     color: #075558;
@@ -139,9 +139,9 @@ filter: blur(7em);
     stroke: #149377;
 }
 
-#purple h1 {
+/* #purple h1 {
     -webkit-text-stroke-color: #6A37F6;
-}
+} */
 
 #purple h1 b {
     color: #2F1692;

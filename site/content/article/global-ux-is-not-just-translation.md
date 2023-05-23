@@ -5,10 +5,8 @@ date: 2019-09-24T04:07:54.787Z
 description: Let’s discuss what needs to be considered and implemented for a
   successful global-ready launch.
 urllink: google.com
+weight: 1
 preview_desc: In UX the golden rule is "you are not your user." Global UX is no different, but with an added layer of multiple languages, cultures, and with that design perspectives and expectations. 
-thumbnail: img/sample-casestudy-thumbnail-2.png
-image: img/about-direct-sourcing.jpg
-image1: img/about-single-origin.jpg
 tags:
   - ux
 ---

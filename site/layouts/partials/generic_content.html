@@ -57,6 +57,10 @@
             {{ partial "fullwidth_img" . }}
         {{ end }}
 
+        {{ if eq .type "fifty_fifty" }}
+            {{ partial "fifty_fifty" . }}
+        {{ end }}
+
         {{ if eq .type "scroll-image" }}
             {{ partial "scroll-image" . }}
         {{ end }}

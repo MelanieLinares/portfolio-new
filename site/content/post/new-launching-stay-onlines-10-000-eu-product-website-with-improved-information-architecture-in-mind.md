@@ -20,7 +20,7 @@ duration: 3 months
 introheading: Creating a plan to help online consumers find products easily & globally
 preview_tools: UI, UX, HTML/CSS
 introbody: >-
-  Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets. In 2015 Stay Online made the transition from a U.S. business to an international one. The company opened a shipping and manufacturing location in the Czech Republic. U.S. sales associates had expressed difficulties handling customer satisfaction for international orders. 
+  Stay Online is a manufacturer and distributor of a wide selection of power cords and cables for the data center, power infrastructure and industrial markets. In 2015 Stay Online made the transition from a U.S. business to an international one. The company opened a shipping and manufacturing location in the Czech Republic.
 
 
   **The Problem:** <span aria-hidden="true">🤔</span><br/>Sales team members expressed difficulties handling customer satisfaction for international orders through the current website. International customers expressed frustration with U.S.-centric site content and often left their shopping carts at the shipping stage of checkout.

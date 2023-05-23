@@ -4,7 +4,7 @@
 
 <div class="article-block no-underline pa3 br1 mb2 db w-50">
 
-	<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>
+	{{ if .Params.thumbnail}}<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>{{ end }}
 	<h2><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h2>
 	<p><b>{{ .Params.client }}</b></p>
 	<p class="">

@@ -21,7 +21,7 @@ duration: 2 months
 introheading: Updating a dashboard UI for a better management workflow
 preview_tools: React, TypeScript, HTML/CSS
 introbody: >-
-  Managing data can be a pain if common actions within an application result in errors or the actions are not easily found within the UI. My role involved developing components with React and TypeScript.
+  Managing data can be a pain if errors get in the way of completing tasks. My role involved developing components with React and TypeScript.
 
 
 

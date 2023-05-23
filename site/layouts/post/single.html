@@ -52,6 +52,12 @@
               <div>
                 <h2 id="introheading" style="display:block">{{ .Params.introheading }}</h2>
                 {{ .Params.introbody | markdownify }}
+                <br>
+                <a href="{{ .Permalink }}#results" class="skip card-v8 bg radius-lg ">
+                  <div>
+                    <span class=""><span aria-hidden="true">🔍</span> skip to results</span>
+                  </div>
+                </a>
               </div>
 
             </section>
@@ -90,10 +96,10 @@
 
 
 
-<div class="{{.Params.theme}} Rectangular skip-area" style="margin-bottom: 10em; opacity: .3">
+<!-- <div class="{{.Params.theme}} Rectangular skip-area" style="margin-bottom: 10em; opacity: .3">
   <div class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8" style="padding: .07em 0">
   </div>
-</div>
+</div> -->
 
 <div class="cms hi {{.Params.theme}}"> 
   <div class="partials">

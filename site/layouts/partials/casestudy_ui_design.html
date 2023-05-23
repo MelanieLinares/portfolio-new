@@ -22,7 +22,7 @@
                     <img src="/img/beams-templates.png" alt="" class="absolute -top-[7rem] left-1/2 -ml-[16rem] w-[60.4375rem] max-w-none sm:-ml-[10rem] md:-ml-[16rem] lg:-top-[10rem] lg:-ml-[22rem] lg:hidden">
                 </div>
                 <div class="relative">
-                    <div class="hmx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+                    <div class="hmx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-1 lg:items-start lg:gap-y-10">
                         <div class="mx-auto grid grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4 md:grid-cols-5 sm:grid-cols-5">
                             <div class="flex relative z-20 flex flex-col lg:pb-6 lg:col-span-2 md:col-span-3 sm:col-span-3">
                                 <h1 class="text-4xl leading-none tracking-tight lg:text-6xl md:text-5xl sm:text-4xl">
@@ -41,15 +41,17 @@
                                   <div class="notice content-850"><span aria-hidden="true">*</span>{{.notice}}</div>        
                                 {{ end }}
 
+                                <p class="mt-8 text-base leading-7 text-slate-600">{{ .preview_intro }}</p>
+
                                 <div class="flex flex-wrap mt-4 mb-4">
                                 </div>
               
-                                <a href="{{ .Permalink }}#results" class="skip card-v8 bg radius-lg">
+                                <!-- <a href="{{ .Permalink }}#results" class="skip card-v8 bg radius-lg">
                                     <div>
                                       <span class=""><span aria-hidden="true">🔍</span> skip to results</span>
                                       <p class="padding-sm"></p>
                                     </div>
-                                  </a>
+                                  </a> -->
             
                  
                                 <div class="flex flex-wrap mb-4">

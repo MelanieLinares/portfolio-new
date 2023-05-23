@@ -23,38 +23,40 @@ preview_intro: The North Carolina Department of Transportation (NCDOT) had a web
 preview_tools: UX, NVDA, WCAG/ARIA
 introbody: >-
   **The Problem:** <span aria-hidden="true">🤔</span><br/> 
-  Government websites, including those of local agencies, need to be accessible in accordance to the Americans with Disabilities Act (ADA). The NCDOT websites were not meeting minimum compliance.  
+  Government websites, including those of local agencies, need to be accessible. The NCDOT websites were not meeting minimum compliance.  
 
 
   **The Plan:** <span aria-hidden="true">💡</span><br/> 
-  Through targeted auditing of pages and components an ongoing remediation plan was created and phase one of the plan implemented into the main site. While a variety of tools were utilizing in establishing a starting compliance level, the easiest to comprehend for stakeholders was to present changes in Google Lighthouse scores along with changes in Axe Devtools issues found.
+  Through targeted auditing of pages and components, an ongoing remediation plan was created. Phase one of the plan would be implemented into the main site. A variety of tools were utilized in establishing a starting compliance level. Google Lighthouse and Axe DevTools were used to establish a baseline score for stakeholders.
 
 
-  **Initial compliance:** <span aria-label="thumb down emoji">👎</span> Score of 67 (based on Google Lighthouse) and 147 issues (based on Axe Devtools)  
+  **Initial compliance:** <span aria-label="thumb down emoji">👎</span> Score of 67 and 147 automatic issues  
 
-  **Phase one goal:** <span aria-label="okay hand emoji">👌</span> Score greater than 80 and fewer than 100 issues
+  **Phase one goal:** <span aria-label="okay hand emoji">👌</span> Score greater than 80 and fewer than 100 automatic issues
 theme: purple
 casestudy: ux
 
 typed_list:
+  - type: fullwidth
+    background: Angled
+    content_options:
+      - type: generic_content
+        generic_content: >-
+          ## Why the concern over accessibility?
+
+
+          At the end of a development project I noticed existing accessibility issues  when the batteries in my mouse died. This [situational disability](www.google.com) required me to use my keyboard to navigate the website. I consulted the NCDOT with my concerns and volunteered to audit the UI and prepare a plan for remediation. 
+
+          ### What is W.C.A.G. & Section 508?
+
+
+          The [Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/) are guidelines considered to be the benchmark for accessibility compliance. [Section 508](https://www.levelaccess.com/compliance-overview/section-508-compliance), as part of the Rehabilitation Act of 1973, is a law that requires government agencies to provide access to web and non-web electronic content to people with disabilities.
+
+          ### The main concerns
   - type: fifty_fifty
-    background: Blank
+    background: Angled
     left_side:
       content_options:
-        - type: generic_content
-          generic_content: >-
-            ## Why the concern over accessibility?
-
-
-            At the end of a development project I noticed existing accessibility issues  when the batteries in my mouse died. This [situational disability](www.google.com) required me to use my keyboard to navigate the website. I consulted the NCDOT with my concerns and volunteered to audit the UI and prepare a plan for remediation. 
-
-
-            ### What is W.C.A.G. & Section 508?
-
-
-            The [Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/) are guidelines considered to be the benchmark for accessibility compliance. [Section 508](https://www.levelaccess.com/compliance-overview/section-508-compliance), as part of the Rehabilitation Act of 1973, is a law that requires government agencies to provide access to web and non-web electronic content to people with disabilities.
-
-            ### The main concerns
         - type: introw
           blurbsw:
             - imagew: img/citizen1.png
@@ -66,6 +68,10 @@ typed_list:
                 * Citizens may have a hard time making convenient online transactions
 
                 * Citizens may have difficulties completing timed tasks
+    right_side:
+      content_options:
+        - type: introw
+          blurbsw:
             - imagew: img/government1.png
               textw: >-
                 #### NCDOT:
@@ -73,13 +79,8 @@ typed_list:
                 * As a federal agency, websites failing to meet guidelines can lead to lawsuits 
 
                 * Potential for increase in user complaints and loss of trust
-    right_side:
-      content_options:
-        - type: CaptionImg
-          image: img/accessibility-citizens.gif
-          caption: "One way to help meet ADA requirements is to ensure that government websites have accessible features for people with disabilities."
   - type: fullwidth
-    background: Angled
+    background: Blank
     content_options:
       - type: generic_content
         generic_content: >-
@@ -90,43 +91,49 @@ typed_list:
 
 
           The NCDOT website consists of several subsites and pages based on templates and reusable components. Sites like this are constantly adding new content but rarely change the underlying CMS structure. By identifying a representative set of pages the audit process takes less time and is more effective.
-      - type: display_image_section
-        image: img/ncdot-display.png
-        display_image_section_content:
-          - type: Content02
-            Content002: >-
-              ### Establishing a baseline with automatic testing
+      - type: fifty_fifty
+        left_side:
+          content_options:
+            - type: generic_content
+              generic_content: >-
+                ### Test Conducting the accessibility audit
+      # - type: display_image_section
+      #   image: img/ncdot-display.png
+      #   display_image_section_content:
+      #     - type: Content02
+      #       Content002: >-
+      #         ### Establishing a baseline with automatic testing
 
 
-              * Automatic violations were identified with Google Lighthouse, Axe DevTools chrome extension, and the W.A.V.E. (web accessibility evaluation tool) extension
+      #         * Automatic violations were identified with Google Lighthouse, Axe DevTools chrome extension, and the W.A.V.E. (web accessibility evaluation tool) extension
 
-              * A spreadsheet was created to organize and group issues
+      #         * A spreadsheet was created to organize and group issues
 
-              * Severity levels and occurrence data were added to the NCDOT ticketing system
+      #         * Severity levels and occurrence data were added to the NCDOT ticketing system
 
-              * The remaining issues were grouped by page or components. They were assigned an individual severity and discussed with the web department lead
+      #         * The remaining issues were grouped by page or components. They were assigned an individual severity and discussed with the web department lead
 
-              ![alt text](img/ncdot-a11y2.png)
+      #         ![alt text](img/ncdot-a11y2.png)
 
 
-              ### Manual testing
+      #         ### Manual testing
 
-              <div class="pill-featured-text">
-              <div class="left-text-only">Automated scans can only identify approximately 30% of WCAG success criteria violations.<br>
-              <small>source: <a href="https://www.levelaccess.com/blog/automated-accessibility-testing-tools-how-much-do-scans-catch/">Level Access, <i>Automated Accessibility Testing Tools: How Much Do Scans Catch?</i></a></small></div>
-              </div>
+      #         <div class="pill-featured-text">
+      #         <div class="left-text-only">Automated scans can only identify approximately 30% of WCAG success criteria violations.<br>
+      #         <small>source: <a href="https://www.levelaccess.com/blog/automated-accessibility-testing-tools-how-much-do-scans-catch/">Level Access, <i>Automated Accessibility Testing Tools: How Much Do Scans Catch?</i></a></small></div>
+      #         </div>
 
-              <p>The NVDA screen reader was used to identify issues with the information hierarchy and HTML native elements. Web extensions were utilized for hard to identify issues.</p>
+      #         <p>The NVDA screen reader was used to identify issues with the information hierarchy and HTML native elements. Web extensions were utilized for hard to identify issues.</p>
 
-          - type: Content03
-            Content003: >-
-              * Keyboard navigation and operation tested
+      #     - type: Content03
+      #       Content003: >-
+      #         * Keyboard navigation and operation tested
 
-              * Screen reader: NVDA and Talkback
+      #         * Screen reader: NVDA and Talkback
 
-              * Color contrast tested
+      #         * Color contrast tested
 
-              * Code inspection, including JavaScript
+      #         * Code inspection, including JavaScript
   - type: fifty_fifty
     background: Blank
     right_side:
@@ -137,13 +144,13 @@ typed_list:
 
             Components associated with key functionality such as date pickers and dynamically populated dropdowns received prioritization. This also included custom controls which have a native alternative that is often replaced in favor of less accessible, but visually branded elements.
 
-            - Date pickers were not operable via keyboard or presented instances of <span style="border-bottom: 2px dotted black" title="keyboard traps: these occur when a user can acccess a component using the keyboard but cannot leave that component using the keyboard">keyboard traps</span>.
+            - Date pickers were not operable via keyboard or presented instances of keyboard traps.
 
             - Custom dropdown elements would refresh pages on key change when cycling through options
 
             - Contact forms without correct label associations were in the footer of every page
 
-            - Incorrect use of headings included <span style="border-bottom: 2px dotted black" title="Implicit: unclear, only appearing like something else">implicit</span> headings which contained no meaning in HTML syntax and skips in heading elements which disrupt a screen reader's ability to parse content
+            - Incorrect use of headings included implicit headings which contained no meaning in HTML syntax and skips in heading elements which disrupt a screen reader's ability to parse content
     left_side:
       content_options:
         - type: heading3

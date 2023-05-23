@@ -11,7 +11,7 @@ notice: For legal reasons I am not able to show project details. I am able to
   upon request.
 date: 2018-08-04T00:33:20.559Z
 newdate: 2019-03-09T00:33:20.599Z
-client: NC Department of Transportation
+client: NC Department of Motor Vehicles
 logo: img/ncdot-logo.jpg
 role: UI Designer and Developer
 tags:
@@ -24,11 +24,11 @@ duration: 7 months
 introheading: Identifying ways to optimize an internal DMV process digitally
 preview_tools: UX, HTML/CSS, Vue
 introbody: >-
-  The North Carolina Department of Transportation (NCDOT) along with the Department of Motor Vehicles (NCDMV) is responsible for managing transportation infrastructure, registration for driver license, and general driver safety. The Ignition Interlock Program team needed a new online system for managing the program. The new system would need to still support the legacy system’s data and its user’s needs; this included browser support, a SharePoint frontend, and UI that integrated into the existing design system
+  The North Carolina Department of Transportation (NCDOT) Ignition Interlock Program team needed a new online system for managing the program. The new system would need to still support the legacy system’s data and its user’s needs.
 
 
 
-  **Problem:** <span aria-hidden="true">🤔</span><br/>Internal DMV employees working within an older portal for managing Ignition Interlock participants experience difficulty keeping up with backlog and lack of needed features. 
+  **Problem:** <span aria-hidden="true">🤔</span><br/>Internal DMV employees experience difficulty keeping up with backlog and lack of needed features. 
 
 
   **The Plan:** <span aria-hidden="true">💡</span><br/>Research user and business needs to produce a list of missing and desired features. Create new portal UI and develop a new approach to data management and API integration, while separating reliance on specific dependencies.
