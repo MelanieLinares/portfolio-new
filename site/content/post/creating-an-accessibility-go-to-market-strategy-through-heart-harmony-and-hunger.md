@@ -78,8 +78,8 @@ typed_list:
           do?
       - type: generic_content
         generic_content: >-
-          **The go-to market accessibility team held a few ideation sessions resulting in a
-          methodology proposal to:**
+          #### The go-to market accessibility team held a few ideation sessions resulting in a
+          methodology proposal to:
 
 
           * quantify issue complexity and severity

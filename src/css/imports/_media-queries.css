@@ -34,7 +34,8 @@
     }
 
     h1 {
-        font-size: 1.85rem!important;
+        /* font-size: 1.85rem!important; I know this works */
+        font-size: 1.9rem!important;
         -webkit-text-stroke-width: 1.5px!important;
       }
 
@@ -533,6 +534,167 @@
 
 @media screen and (min-width: 481px) and (max-width: 639px) {
 
+    .Angled + style + .Angled:before {
+        border-bottom: unset
+    }
+
+    .cms.blue .Rectangular h2 {
+        margin-bottom: -1.5em
+    }
+
+    .cms section h2 + *.max-w-7xl.mx-auto {
+        margin-left: 0;
+        margin-top: -4em;
+    }
+
+    .cms section .w-full h2 + p {
+        margin-top: -3.5em!important;
+    }
+
+    style + div:has(.caption-img) {
+        margin-top: 3em;
+        margin-bottom: 4em
+    }
+
+    blockquote {
+        margin-bottom: 4em!important  
+    }
+
+    /* .card-list .process .rounded:not(:last-of-type):after {
+        bottom: unset!important;
+        margin-top: 0;
+        transform: rotate(90deg)!important;
+        position: absolute!important;
+        margin-left: calc(50% - 50px);
+        margin-right: 50%!important;
+        margin-top: 0.25em!important;
+    } */
+
+    .generic-content h4 + .card-list .process .rounded:not(:last-of-type):after {
+        margin-right: 50%!important;
+        margin-left: 40% !important;        
+        position: absolute!important;
+        margin-top: 0.25em!important;
+    }
+
+    .Angled + style + .Angled + .Rectangular {
+        margin-top: -11em
+    }
+
+    #navbar a.block:first-of-type, #navbar a.block:nth-of-type(2) {
+        box-shadow: unset !important;
+        margin-right: unset !important;
+        padding: unset !important;
+    }
+
+    #top-section.blue .img-parent {
+        height: 78vw;
+    }
+
+    .cms.blue section .Rectangular h2 {
+        margin-top: -5em
+    }
+
+    .img-parent img {
+        max-height: 63.5vw;
+    }
+
+    .img-parent img:first-of-type {
+        margin-left: -1.25em!important;
+    }
+
+    .img-parent img:last-of-type {
+        margin-top: 7rem;
+        right: 0;
+        position: absolute;
+        left: unset;
+    }
+
+    .caption:before {
+        left: 0!important
+    }
+
+    .Angled + style + .Rectangular {
+        margin-top: -5em!important
+    }
+
+    .overlap-bg-reverse {
+        padding-right: 1em!important;
+        padding-top: 1.5em!important;
+        margin-bottom: -1.25em;
+    }
+
+    .fullwidth:has(.caption) {
+        margin-top: 1em
+    }
+
+    section:not(:last-of-type).Blank + style + .Blank {
+        margin-bottom: 0!important;
+    }
+
+    .generic-content h2:not(#the-takeaway) + p {
+        margin-top: -4em!important;
+    }
+
+    h3 {
+        font-size: 1.75em!important;
+        word-spacing: -0.125em!important;
+    }
+
+    #link-section + section h3 {
+        font-size: 1.5rem !important;
+    }
+
+    #top-section.homepage h2 + br + .flex:has(#retro) {
+        display: block;  
+    }
+
+    #top-section.homepage h2 + br + .flex:has(#retro) + div {
+        right: unset;
+        left: 43vw;  
+    }
+
+    #top-section.homepage h2 + br + .flex:has(#retro) a {
+        margin-left: unset;
+        /* background-color: #ffffff54;
+        mix-blend-mode: luminosity;
+        backdrop-filter: blur(8px); */
+    }
+
+    #article-feed .flex {
+        display: block;
+    }
+
+    #top-section.homepage {
+        margin-top: -10em;
+        padding-bottom: 10em!important;
+        margin-bottom: 5rem;
+    }
+
+    #top-section.homepage h1 {
+        font-size: 2.15rem;
+        -webkit-text-stroke-width: 1.5px;
+        margin-bottom: 0;
+        padding-bottom: 0
+    }
+
+    #link-section + section + div + div + section h2 {
+        margin-top:3rem
+    }
+
+    .article-roll {
+        padding-left: 0!important
+    }
+
+    #top-section.homepage h2 {
+        margin-bottom: 0;
+        padding-bottom: .5em
+    }
+
+    .homepage img {
+        margin-bottom: -20px !important;
+    }
+
     .w-3\/6:not(:nth-of-type(6))  {
         padding-bottom: 3rem;
     }
@@ -563,12 +725,16 @@
     ul.project-info {
         display: flex
     }
-    .project-info li {
-        flex: 1 0 50%!important;
-        max-width: unset!important;
+    .project-info li:nth-of-type(odd) {
+        margin-right: 3%
     }
+
+    .fullwidth .grid img {
+        object-position: left top;
+    }
+
     .project-info li {
-        flex: 1 0 50%;
+        flex: 1 0 47%;
         max-width: 350px!important;
     }
     .project-info {
@@ -588,13 +754,18 @@
         margin-left: unset!important
     }
 
+    #top-section .max-w-7xl {
+        margin-bottom: 3rem;
+        padding-bottom: 4rem;
+    }
+
     
     .xs\:h-full{height:100%!important}
     .xs\:justify-center{justify-content:center!important}
 
     .skip.card-v8 {
         display: block!important;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
     .Rectangular.skip-area {
         text-align:center
@@ -605,8 +776,24 @@
     }
 
     .caption {
-        padding-left: 4em!important;
+        padding-left: 4.5em!important;
         padding-top: 0!important;
+    }
+
+    .purple .Rectangular .card-list .process .rounded .flex {
+        padding-left: 1em
+    }
+
+    .purple .Rectangular .card-list .process .rounded:after {
+    margin-top: 0;
+    transform: rotate(90deg);
+    position: absolute;
+    margin-left: calc(50% - 50px);
+    margin-right: 50%;
+    }
+
+    .img-w-caption {
+        margin-top: 5em
     }
 
     .Angled > .container:before {
@@ -631,16 +818,53 @@
         padding-bottom: 3em;
     }
 
-    .Twocol_image_content, .parent-outer {
+    .Twocol_image_content {
         margin-bottom: 14em!important;
     }
 
     .purple .parent-outer {
-        margin-bottom: 10em!important;
+        margin-bottom: 0em!important; /* was 10 */
     }
 
-    .yup > section:not(:last-of-type) {
+    /* .yup > section:not(:last-of-type) {
         margin-bottom: 11em!important;;
+    } */
+
+    .yup > section.Angled:not(:last-of-type) {
+        padding-top: 8em!important;
+    }
+
+    .w-full.lg\:w-1\/2 div:has(.caption):not(.caption):not(.fullwidth):not(.img-w-caption) {
+        padding-left: 2.5rem!important
+    }
+
+    .w-full.lg\:w-1\/2 div:has(.caption):not(.caption) .caption {
+        margin-top: .5em!important
+    }
+
+    .yup > section:not(:last-of-type).Blank + .Blank {
+        margin-bottom: 1em!important;
+    }
+
+    .w-full.lg\:w-1\/2 div:has(.caption):not(.caption) .caption:before {
+        left: 0!important
+    }
+
+    .cms p + h4:not(:last-child):not(blockquote) {
+        margin-top: 1em!important;
+        margin-bottom: 0!important;
+    }
+
+    .w-full.mt-4.lg\:mt-0.lg\:w-1\/2 div.caption {
+        margin-top: 1em!important
+    }
+
+    .w-full.mt-4.lg\:mt-0.lg\:w-1\/2 div.caption:before {
+        left: -.4em!important
+    }
+
+    .Angled + .Angled:has(.flex):not(:last-of-type) {
+        padding-top: 0!important
     }
 
     /* .cms ul {
@@ -679,9 +903,14 @@
         word-spacing: -0.125em;
     }
 
-    .w-full.lg\:w-1\/2 div:not(.caption) {
+    .w-full.lg\:w-1\/2 div:not(.caption):not(.fullwidth):not(.left-text-only) {
         padding-right: 0!important;
         padding-left: 0!important;
+    }
+    
+
+    #the-takeaway {
+        margin-bottom: 0
     }
 
     .fullwidth:not(.card-list) img {
@@ -693,8 +922,8 @@
     }
 
     .yup section:first-of-type .lg\:w-1\/2:has(h2), .yup section:first-of-type .generic-content:has(h2), section.Rectangular .generic-content:has(h2), .lg\:w-3\/4:has(h2) {
-        margin-top: 9.5em!important;
-        padding-bottom: 6em!important; /* was 3 */
+        margin-top: .5em!important; /* was -, then 9.5 */
+        padding-bottom: 1em!important; /* was 3, then 6 */
     }
 
     .cms section h2 {
@@ -779,6 +1008,15 @@
         min-height: 200px;
     }
 
+    .Blank + style + .Angled:not(:last-of-type) {
+        margin-bottom: 5em!important;
+    }
+
+    .icon-with-content .absolute img {
+        min-height: 130px;
+        margin-top: 0!important;
+    }
+
     .fullwidth.card-list .flex-none.bg-cover {
         width: 20vw!important;
         padding-right: 1em;
@@ -809,11 +1047,8 @@
         display: none!important;
     }
 
-    #top-section {
-        /* height: unset!important;
-        padding-bottom: 35vh;
-        min-height: 115vh; */
-        /* overflow-x: hidden; */
+    #top-section.Angled.green .max-w-7xl {
+        margin-bottom: 4rem
     }
 
     .hero-header {
@@ -872,6 +1107,10 @@
 
     .rounded .w-full .flex {
         padding-left: 0 !important;
+    }
+
+    .rounded .w-full .flex.bg-cover {
+        max-width: 6em
     }
 
     .lg\:w-1\/2 .fullwidth.card-list ol.grid li:nth-of-type(1) + li:last-of-type, .fullwidth.card-list ol.grid li:nth-of-type(1) + li:last-of-type {

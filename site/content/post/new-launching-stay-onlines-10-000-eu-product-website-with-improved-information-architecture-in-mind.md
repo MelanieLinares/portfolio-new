@@ -196,7 +196,6 @@ typed_list:
             After researching the needs for the two main types of users, content and information architecture was tested through card sorting, tree testing, and first click testing.           
         - type: CaptionImg
           image: img/eu-sitemap.png
-          caption: Sitemap was re-evaluated to reduce the 
     right_side:
       content_options:         
         - type: generic_content
