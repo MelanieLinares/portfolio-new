@@ -1,0 +1,41 @@
+.fullwidth img + .caption {
+    max-width: 850px;
+    padding-top: 1.5em;
+}
+
+.lg\:w-1\/2 + .lg\:w-1\/2:not(.icon-with-content) .img-w-caption .caption {
+    margin-bottom: 0;
+}
+
+.caption {
+    position: relative;
+    padding-left: 5em;
+    padding-top: 2em;
+    margin-bottom: 5em;
+ }
+
+ .caption + .caption {
+    margin-top: 6em;
+    margin-bottom: 2em;
+ }
+
+ .caption:before, .img-w-caption .caption:before {
+    content: "";
+     top: -1.5em;
+     left: 0.5em;
+     width: 60px;
+     height: 37px;
+     transform: scale(-1, -1) rotate(45deg);
+     display: block;
+     position: absolute;
+     pointer-events: none;
+ }
+
+ .overlap-bg .caption {
+    margin-bottom: 0
+}
+
+.fullwidth .caption:last-child {
+    margin-bottom: 0;
+}
+

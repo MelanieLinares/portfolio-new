@@ -1,0 +1,156 @@
+.shapes {
+    height: 50vh;
+    padding: 50px;
+  }
+  
+  $crossWidth: 35px;
+  $crossHeight: 35px;
+  // Circle
+  $circleWidth: 35px;
+  $circleHeight: 35px;
+  
+  @mixin transform($transform_value) {
+    -webkit-transform: $transform_value;
+    -ms-transform: $transform_value;
+    transform: $transform_value;
+  }
+  
+  @mixin animation($animation_value) {
+    -webkit-animation: $animation_value;
+    animation: $animation_value;
+  }
+
+  .shapes.homepage .cross2 {
+    filter: invert(1) hue-rotate(145deg);
+}
+
+.shapes.homepage .crc2 {
+    border: 5px solid #cef0ff;
+    filter: unset;
+}
+
+.shapes.homepage .cross1 {
+    filter: invert(1) hue-rotate(250deg) brightness(1.15);
+}
+
+  .shapes {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+    .circle, .cross {
+      position: absolute;
+      display: inline-block;
+      @include animation(scale 3s ease alternate-reverse infinite);
+      @keyframes scale {
+        0% {
+          @include transform(scale(1));
+        }
+        100% {
+          opacity: .5;
+          @include transform(rotate(20deg) scale(1.25));
+        }
+      }
+    }
+  }
+
+  .circle {
+    width: $circleWidth;
+    Height: $circleHeight;
+    border-radius: 50%;
+  }
+
+  .circle:not(.crc2) {
+        left: 50%;
+        top: 16em;
+        width: 75px;
+        height: 75px;
+        border: 5px solid #243bb470;
+  }
+  
+  .cross {
+    height: $crossHeight;
+    width: $crossWidth;
+    span {
+      display: block;
+      &:first-child, &:nth-child(2) {
+        height: 50%;
+        width: ($crossWidth / 6);
+        margin: auto;
+      }
+      &:first-child {
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+      &:nth-child(2) {
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+      &:nth-child(3), &:last-child {
+        height: ($crossHeight / 6);
+        width: 50%;
+        position: absolute;
+        top: ($crossWidth - ($crossWidth / 6)) / 2;
+      }
+      &:nth-child(3) {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        left: 0;
+      }
+      &:last-child {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        right: 0;
+      }
+    }
+  }
+
+  .blue .cross span {
+    background-color: var(--dark-blue);
+  }
+
+  .blue .circle {
+    border: ($circleWidth / 7) solid var(--dark-blue);
+  }
+
+  .purple .cross span {
+    background-color: var(--dark-purple);
+  }
+
+  .purple .circle {
+    border: ($circleWidth / 7) solid var(--dark-purple);
+  }
+
+  .green .cross span {
+    background-color: var(--dark-green);
+  }
+
+  .green .circle {
+    border: ($circleWidth / 7) solid var(--dark-green);
+  }
+
+  .circle, .cross {
+    filter: invert(1) hue-rotate(175deg);
+  }
+
+  .cross2 {
+    opacity: .2
+  }
+
+  .circle:not(.crc2) {
+    opacity: .5;
+  }
+
+  .cross.cross1 {
+    left: 90%;
+    top: 17em;
+  }
+  .circle.crc2 {
+    top: 7em;
+    left: 27%;
+  }
+  .cross.cross2 {
+    top: 9em;
+    left: 5%;
+  }

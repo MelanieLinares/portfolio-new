@@ -1,0 +1,21 @@
+.related-title {
+    font-family: 'Poppins';
+    font-weight: 700 !important;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+
+.cms + .related-content,
+.cms + .related-content + footer,
+.cms + footer {
+    background-color: #1e1e38;
+    color: white;
+}
+
+.cms.purple + .related-content #related, .cms.blue + .related-content #related {
+    color: #1e1e38;
+}
+
+.cms.green + .related-content #related {
+    color: #1e1e38;
+}

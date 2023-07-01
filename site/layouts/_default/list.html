@@ -1,6 +1,15 @@
 {{ define "main" }}
 
 {{ if eq (relURL .URL) ("/article/") }}
+<style>
+  footer:before {
+    border-bottom: 100px solid var(--dark-purple);
+}
+
+footer {
+    background-color: var(--dark-purple);
+}
+</style>
 <!-- {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "backgroundcolor" "green" "title" "Articles" "subtitle" "this is a subtitle" "heroP" "If you have questions on any of these projects or would like to discuss how I may be right for your project please " "heroPlinktext" "get in touch" "heroPlinkurl" "/values") }}
 
 
@@ -48,6 +57,15 @@
 {{ end }}
 
 {{ if eq (relURL .URL) ("/post/") }}
+<style>
+  footer:before {
+    border-bottom: 100px solid var(--dark-blue);
+}
+
+footer {
+    background-color: var(--dark-blue);
+}
+</style>
 <!-- {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "backgroundcolor" "purple" "title" "Work case studies" "subtitle" "Here are some of my recent projects and the process behind them" "heroP" "If you have questions on any of these projects or would like to discuss how I may be right for your project please " "heroPlinktext" "get in touch" "heroPlinkurl" "/values") }}
 
 <b>work landing page</b> -->
@@ -84,9 +102,9 @@
   <h1 class="text-4xl leading-none tracking-tight lg:text-6xl md:text-5xl sm:text-4xl"><b>Recent work & case studies</b></h1>
 
   <p><span class="text-xl">My work focuses on digital accessibility and ux-focused development <strong>for the web.</strong></span></p>
-  <br><p class="mt-4 notice"><span aria-hidden="true">*</span>Looking for mobile app or desktop-application focused work? <a href="mailto:mnmclaughlin0@gmail.com" class="underline">Send me a message</a> and we can chat about other projects I've worked on.</p>
+  <br><p class="mt-4 notice mb-12"><span aria-hidden="true">*</span>Looking for mobile app or desktop-application focused work? <a href="mailto:mnmclaughlin0@gmail.com" class="underline">Send me a message</a> and we can chat about other projects I've worked on.</p>
 
-  </p>
+
 </div>
 </div>
 </section>

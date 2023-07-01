@@ -1,9 +1,180 @@
-img {
-  max-width: 100%;
+.fullwidth img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
-/* Remove border-radiius from full-width images */
-img:not(.w-100) {
-  border-radius: var(--border-radius);
-  /* margin-left: -5px; */
+.fullwidth .scroll-image img {
+    width: unset!important;
+}
+
+img.fullwidth {
+    width: 100%;
+    max-width: unset;
+}
+
+.card-list img {
+    width: 11em;
+    height: 3.5em;
+    border-radius: 0;
+    object-fit: contain;
+}
+
+.fullwidth.mx-auto + .caption + .fullwidth.card-list li img, 
+.fullwidth.mx-auto + .caption + .fullwidth.card-list + .fullwidth.card-list li img, 
+.fullwidth.mx-auto + .caption + .fullwidth.card-list + .fullwidth.card-list + .fullwidth.card-list li img, 
+.lg\:w-1\/2 .fullwidth.card-list ol.grid li img, 
+.fullwidth.card-list ol.grid:has(li:nth-of-type(2):last-child) li img {
+    width: 30px;
+    left: 0;
+    margin-top: -30px;
+    height: unset;
+    position: absolute;
+}
+
+.img-w-caption img {
+    max-height: 70vh
+}
+
+.bg-pink.purple a img, .bg-pink.green a img, .bg-pink a img, .bg-pink.pink a img {
+    filter: grayscale(1) brightness(100)!important;
+  }
+
+  .green:not(.bg-pink) a img {
+    filter: hue-rotate(-60deg) brightness(0);
+  }
+
+  header:not(.bg-pink):not(.green):not(.blue):not(.purple) a img {
+    filter: hue-rotate(-60deg) brightness(0);
+  }
+
+  .blue:not(.bg-pink) a img {
+    filter: hue-rotate(-5deg) brightness(0.83);
+  }
+
+  #link-section img.object-cover {
+    border: 2.5px solid black;
+}
+
+.hero-header-image img {
+    object-fit: contain;
+    object-position: top;
+    border-radius: 0.5em;
+    transform: rotate(1.5deg);
+    margin-top: -10px;
+    margin-left: -5px;
+    height: 47em;
+}
+
+aside img {
+    height: 42px;
+    width: auto;
+    max-width: 115px;
+    object-fit: contain;
+}
+
+.overlap-bg img {
+    border: .25em solid white
+}
+
+.scroll-image img {
+    height: 100%;
+    max-width: unset!important;
+}
+
+.div2-04 img { 
+    position: absolute;
+    bottom: 0;
+    right: -8.5em;
+    width: calc(50% + 15.75em);
+ }
+
+ .parent-jumble img {
+    border-radius: 0.5em;
+    filter: drop-shadow(3px 2px 2px #dde8f9);
+    border: 1px solid #dde8f9
+}
+
+header:not(.bg-pink) #navbar a img {
+    filter: brightness(0);
+}
+
+dt img {
+    border: 1.5px solid black;
+    border-radius: 1.75em;
+    margin-top: .5em
+}
+
+#navbar a img {
+    padding: 0 1em
+}
+
+.display_image_section img {
+    max-width: 69em;
+    bottom: -7.75em;
+    max-height: 100vh!important;
+    width: auto!important;
+}
+
+.lg\:w-1\/2 .caption-w-img img {
+    margin-top: -4.75em;
+}
+
+.after-homepage-blue img {
+    height: 80%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.cms img:not(.full-img):not(.display-img) {
+    border-radius: .25em;
+}
+
+.cms img:not(.full-img):not(.display-img):not(.lzy):not(.caption-img) {
+    
+    width: 100%;
+    width: -webkit-fill-available;  
+    width: stretch;
+    min-width: 5.75em;
+}
+
+#related img {
+    min-height: 250px;    
+    max-height: 250px;
+    object-fit: cover;
+    object-position: 0% 0%;
+    }
+
+    p img {
+        margin: 2em 0;
+    }
+
+    .purple p img {
+        filter: sepia(0) hue-rotate(-15deg) grayscale(0%);
+    }
+    
+    .green p img {
+        filter: sepia(0) hue-rotate(-25deg) grayscale(0%);
+    }
+    
+    #how-might-we-avoid-errors-when-users-change-how-revenue-is-divided-and-utilized + p img {
+        filter: sepia(1) grayscale(100%);
+    }
+    
+    .green .lg\:w-1\/2 img {
+        filter: sepia(0) hue-rotate(-25deg) grayscale(0%);
+    }
+
+.div2-04 img {
+    margin-right: -1em;
+    webkit-filter: drop-shadow(-1px 1px 0px rgba(34, 34, 34, 0.25));
+  filter: drop-shadow(-1px 1px 0px  rgba(34, 34, 34, 0.25));
+}
+
+.card-v8 div img {
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-bottom: 1em;
+    width: calc(100% + 2em);
+    max-width: unset;
 }

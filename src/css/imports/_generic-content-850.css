@@ -1,0 +1,49 @@
+.generic-content p:last-child {
+    margin-bottom: 0;
+}
+
+.generic-content div.max-w-7xl:not(:last-child) {
+    padding-bottom: 6em;
+}
+
+.generic-content div.max-w-7xl:last-child {
+    padding-bottom: 1.5em;
+}
+
+.generic-content h3:not(:first-of-type), .container:has(.overlap-bg) {
+    margin-top: 6em
+}
+
+.yup section:first-of-type .generic-content:has(h2),
+.lg\:w-3\/4:has(h2) {
+    margin-top: 1.3em;
+    margin-left: 0;
+}
+
+.container.max-w-7xl .generic-content {    
+    max-width: 1024px;
+    margin-left: 0;
+}
+
+.container.max-w-7xl.parent-outer .generic-content {    
+    width: 100%;
+    max-width: unset;
+    margin-left: 0;
+}
+
+.container.max-w-7xl .generic-content > *:not(.card-list):not(.display_image_section):not(.fullwidth):not(.container):not(p) {
+    max-width: 1024px;
+    margin-left: 0;
+}
+
+.content-850 {
+    max-width: 850px;
+}
+
+.content-850 h3:not(:nth-of-type(1)),
+.content-850 h3:not(:nth-of-type(1)) + p,
+.content-850 h3:not(:nth-of-type(1)) + ul,
+.content-850 h3:not(:nth-of-type(1)) + p + ul {
+    padding-right: 6rem;
+    width: calc(100% - 12em);
+}

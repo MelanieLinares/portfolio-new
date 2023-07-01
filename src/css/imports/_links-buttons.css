@@ -1,0 +1,240 @@
+
+.cms a {
+  text-decoration: underline
+}
+
+p a {
+  text-decoration: revert;
+}
+
+.bg-pink.purple a, .bg-pink.green a, .bg-pink.blue a, .bg-pink.pink a  {
+  color: #ffffff;
+}
+.article-block h2 a  {
+  text-decoration: underline;
+}
+#navbar a {
+  font-size: 1.15em;
+}
+
+.work-roll h4 a, .article-roll h4 a {
+  text-decoration: underline
+}
+
+header.nav.shadow-sm.bg-pink #navbar a {
+  color: white
+} 
+.tags li a {
+  border-radius: .5em;
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.tags li a:hover, .tags li a:focus {
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, var(--tw-border-opacity));
+}
+
+button.underline, a.underline  {
+  font-family: 'JetBrains Mono', sans-serif;
+}
+
+button.underline:hover, button.underline:focus, a.underline:hover, a.underline:focus {
+  text-decoration:none
+}
+
+
+a.underline {
+  font-size: 0.935em;
+}
+
+
+
+.green a.skip.homepage, 
+.homepage-blue a.skip {
+    padding: 1em;
+    margin-top: .5em;
+}
+
+.green a.skip.homepage:hover {
+    background-color: #006662;
+    border-color: transparent;
+}
+
+.green a.skip.homepage:focus {
+    background-color: #006662;
+    border-color: transparent;
+}
+
+.homepage-blue a.skip:hover, .homepage-blue a.skip:focus {
+    background-color: #ffffff;
+    border-color: transparent;
+}
+
+.green a.skip.homepage:hover:after {
+    border-color: #006662;}
+
+.homepage-blue a.skip:hover:after {
+    border-color: #ffffff;}    
+
+.green a.skip.homepage:after,
+.homepage-blue a.skip:after {
+    margin-top: -2px;
+    padding-bottom: 3.5em;
+    margin-left: -2px;
+    padding-right: 14em;
+    left: 0
+}
+
+#top-section.green a.skip:not(:hover):not(:focus):not(.homepage), #top-section.green a.skip:not(:hover):not(:focus) div {
+  background-color: var(--dark-green);
+  color: white
+}
+
+header.nav.purple #navbar a:hover, header.nav.purple #navbar a:focus {
+  background-color: rgba(97, 35, 179, .3);
+}
+header.nav.green #navbar a:hover, header.nav.green #navbar a:focus {
+  background-color: rgba(0, 102, 98, .3);
+}
+header.nav.blue #navbar a:hover, header.nav.blue #navbar a:focus {
+  background-color: rgba(36, 59, 180, .3);
+}
+
+header.nav.shadow-sm.bg-pink #navbar a.current {
+  background-color: rgba(0, 0, 0, 0.25);
+} 
+
+#navbar a.current {
+  text-decoration: overline;
+}
+
+#navbar a:not(.block):first-of-type {
+  margin-bottom: -7px;
+  box-shadow: 2.5px 0 0 0 black;
+  margin-left: -1.235em;
+  padding-left: .235em;
+}
+
+#navbar a.block:first-of-type, #navbar a.block:nth-of-type(2) {
+  box-shadow: -1.5px 0px 0 1px black;
+  margin-right: -.235em;
+  padding: 0 1.235em;
+}
+
+#navbar a.block:nth-of-type(3) {
+  box-shadow: -2.5px 0 0 0px black;
+  margin-right: -1.235em;
+  padding: 0 1.235em;
+}
+
+
+.mobile-menu a.border-b-2:not(.border-transparent) {
+  font-weight: bold;
+  border-color: transparent;
+}
+
+
+.purple a.skip {
+  color: var(--dark-purple);
+  border: 2px solid var(--dark-purple);
+}
+
+.purple a.skip:hover, .purple a.skip:focus-visible {
+  background-color:var(--dark-purple);
+  color: white;
+}
+
+.green a.skip {
+  color: var(--dark-green);
+  border: 2px solid var(--dark-green);
+}
+
+.green a.skip:hover, .green a.skip:focus-visible {
+  background-color: var(--dark-green);
+  color: white;
+}
+
+.pink a.skip {
+  color: #de4f4f;
+  border: 2px solid #de4f4f;
+}
+
+.pink a.skip:hover, .pink a.skip:focus-visible {
+  background-color:#de4f4f;
+  color: white;
+}
+
+.blue a.skip {
+  color: var(--dark-blue);
+  border: 2px solid var(--dark-blue);
+}
+
+.blue a.skip:hover, .blue a.skip:focus-visible {
+  background-color:var(--dark-blue);
+  color: white;
+}
+
+a.skip {
+  width: 200px;
+  font-family: 'JetBrains Mono', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+a.skip:hover, a.skip:focus {
+  background-color: var(--dark-blue)
+}
+
+
+.blue a.skip:not(:hover):not(:focus), .blue a.skip:not(:hover):not(:focus) div {
+  background-color: var(--dark-blue);
+  color: white
+}
+
+.purple a.skip:not(:hover):not(:focus), .purple a.skip:not(:hover):not(:focus) div {
+  background-color: var(--dark-purple);
+  color: white;
+}
+
+.purple a.skip:after {
+  border: 2px dashed var(--dark-purple);
+} 
+
+.blue a.skip:after {
+  border: 2px dashed var(--dark-blue);
+} 
+
+.green a.skip:after {
+  border: 2px dashed var(--dark-green);
+} 
+
+.green a.skip.homepage:after {
+  border: 2px dashed transparent;
+} 
+
+.homepage-blue a.skip:after {
+  border: 2px dashed white;
+} 
+
+.green a.skip.homepage {
+  border: 2px solid black;
+  color: black;
+} 
+
+.homepage-blue a.skip {
+  border: 2px solid white;
+  color: white;
+} 
+
+.green a.skip.homepage:hover, .green a.skip.homepage:focus  {
+  color: white;
+} 
+
+.homepage-blue a.skip:hover, .homepage-blue a.skip:focus {
+  color: black;
+} 
+
+
+a.skip:after {
+  z-index: -1;
+} 

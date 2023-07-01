@@ -1,0 +1,178 @@
+.Blank + style + .Angled {
+    margin-top: 0;
+    padding-top: 12.5em;
+ }
+
+ .Rectangular + style + .Angled:before {
+    content: unset;
+ }
+
+ .Rectangular + style + .Angled {
+    margin-top: -13em;
+ }
+
+ .green .Angled.homepage {
+    background-color: unset!important;
+}
+
+.Angled {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.Angled .lg\:w-1\/2 + .lg\:w-1\/2 em {
+    padding-bottom: 4em;
+    display: block;
+}
+
+.Angled + .Angled:before {
+    content: unset;
+}
+
+.Angled + .Angled, .Angled + style + .Angled {
+    padding-top: 0;
+    margin-top: -17.75em;
+}
+
+.Angled + .Angled:has(.flex) {
+    margin-top: -14.75em!important;
+}
+
+.Angled > .container:not(:last-child) {
+    padding-top: 2.5em;
+    padding-bottom: 1.75em;
+    position: relative;
+}
+
+.yup section:last-child.Angled .container {
+    padding-bottom: 0;
+}
+
+.Angled .generic-content,
+.Angled .w-full {
+    z-index:1;
+    position: inherit;
+}
+
+.Angled {
+    position: relative;
+    padding: 11em 0;
+    padding-top: 13em;
+    padding-bottom: 4.5em;
+    margin-top:-7.5em;
+    margin-bottom: 17.5em;
+}
+
+.Blank + .Angled {
+    margin-top:0;
+}
+
+.pink .Angled {
+    background-color: #fcf2f2;
+}
+
+.green .Angled {
+    background-color: rgba(var(--green-rgb), 0.33);
+}
+
+.green.Angled {
+    background-color: white;
+}
+
+.blue .Angled {
+    background-color: rgb(243, 247, 255)
+}
+
+.purple .Angled {
+    background-color: #f8f6ff;
+}
+
+.Angled:before {
+    content: '';
+    width: 100vw; 
+    height: 0; 
+    border-left: 100vw solid transparent;
+    margin-top: -100px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    left: 0;
+}
+
+.purple .Angled:before {
+    border-bottom: 100px solid #f8f6ff 
+}
+
+.pink .Angled:before {
+    border-bottom: 100px solid #fcf2f2;
+}
+
+.green .Angled:before {
+    border-bottom: 100px solid rgba(var(--green-rgb), 0.33);
+}
+
+.blue .Angled:before {
+    border-bottom: 100px solid rgb(243, 247, 255);
+}
+
+.Angled:after {
+    content: '';
+    width: 100vw; 
+    height: 0; 
+    border-right: 100vw solid transparent;
+    position: absolute;
+    bottom: -100px;
+    z-index: 0;
+}
+
+.purple .Angled:not(#top-section):after {
+    border-top: 100px solid rgba(var(--purple-rgb), 0.33); 
+}
+
+.purple .Angled:has(.display_image_section):after {
+    left: 0;
+}
+
+.purple section:last-of-type.Angled:not(#top-section):after {
+    border-top: unset;
+}
+
+.purple.Angled:not(#top-section):after {
+    border-top: 100px solid rgba(var(--purple-rgb), 1); 
+}
+
+.pink .Angled:after {
+    border-top: 100px solid #fcf2f2;
+}
+
+.green .Angled:after {
+    border-top: 100px solid rgba(var(--green-rgb), 0.33);
+}
+
+.green.Angled:not(#top-section):after {
+    border-top: 100px solid rgba(var(--green-rgb), 1);
+}
+
+.blue .Angled:after {
+    border-top: 100px solid rgb(243, 247, 255);
+}
+
+.blue.Angled:after {
+    border-top: 100px solid rgba(var(--blue-rgb), 1);
+}
+
+.cms.purple .partials .yup section.Angled:last-of-type {
+    background-color: var(--dark-purple);
+    border-top: 1px solid var(--dark-purple);
+    color: white;
+}
+
+.cms .partials .yup section:last-of-type.Angled > .container:before {
+    background: unset;
+}
+
+.cms.green .partials .yup section.Angled:last-of-type {
+    background-color: var(--dark-green);
+    border-top: 1px solid var(--dark-green);
+    color: white;
+}
