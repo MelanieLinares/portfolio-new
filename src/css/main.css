@@ -29,7 +29,7 @@
 @import './imports/_purple-section';
 @import './imports/_rectangular';
 @import './imports/_related';
-/* @import './imports/_tailwind'; ? */
+@import './imports/_tailwind';
 
 
 html {

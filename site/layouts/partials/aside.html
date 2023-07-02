@@ -5,34 +5,7 @@
       <li>
         <b>Client</b> {{ .client }}
       </li>
-      <!-- <details role="listitem">
-      <summary role="heading" aria-level="2">Project Details</summary>
-      <ul>
-        <li>
-          <b>Role</b> {{ .role }}
-          <br/>
-        {{ if .technology }}
-          <em>{{ .technology }}</em>
-        {{ end }}
-        </li>
-        {{ if .team }}
-        <li>
-          <b>Team</b> {{ .team }} and myself      
-        </li>
-        {{else}}
-        <li>
-          <b>Team</b> Independent project       
-        </li>
-        {{ end}}
-      <li>
-        <b>Dates</b> 
-        {{ .Date.Format "January" }} -
-            {{ with .newdate }}
-            {{ dateFormat "January 2006" . }}
-        {{ end }}| <em>{{ .duration }}</em>
-      </li>
-      </ul>
-    </details> -->
+
     <li>
       <b>Role</b> {{ .role }}
       <br/>
