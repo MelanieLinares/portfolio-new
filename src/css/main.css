@@ -5,30 +5,33 @@
 @import './imports/_keyframes';
 @import './imports/_media-queries';
 @import './imports/_reduced-motion';
-@import './imports/_images';
+
 @import './imports/_pinboard';
-@import './imports/_hero';
-@import './imports/_headings';
-@import './imports/_links-buttons';
 @import './imports/_shapes';
-@import './imports/_overlap-image';
 @import './imports/_tags';
 @import './imports/_angled';
 @import './imports/_blank';
 @import './imports/_blockquote';
 @import './imports/_blue-section';
 @import './imports/_caption';
+@import './imports/_card';
 @import './imports/_fullwidth';
 @import './imports/_generic-content-850';
 @import './imports/_green-section';
 @import './imports/_grid';
+@import './imports/_headings';
+@import './imports/_hero';
 @import './imports/_homepage-about';
 @import './imports/_icon-content';
+@import './imports/_images';
+@import './imports/_overlap-image';
+@import './imports/_links-buttons';
 @import './imports/_nav';
 @import './imports/_partials-general';
 @import './imports/_purple-section';
 @import './imports/_rectangular';
 @import './imports/_related';
+
 @import './imports/_tailwind';
 
 

@@ -54,6 +54,7 @@ img.fullwidth {
 
   #link-section img.object-cover {
     border: 2.5px solid black;
+    object-fit: cover;
 }
 
 .hero-header-image img {
