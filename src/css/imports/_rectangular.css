@@ -1,8 +1,8 @@
 .Angled + style + .Rectangular {
     margin-top: -11em;
     position: relative;
-    padding-top: 11em;
-    padding-bottom: 11em;
+    /* padding-top: 11em; */
+    /* padding-bottom: 11em; */
  }
 
  .Angled + style + .Rectangular:after {
@@ -88,9 +88,9 @@ section.Rectangular .generic-content:has(h2) {
 }
 
 .Rectangular:not(.skip-area) {
-    padding: 11em 0;
+    /* padding: 11em 0; */
 }
 
 .Rectangular + .Rectangular .lg\:w-1\/2:has(.img-w-caption) {
-    padding-top: 2.5em 
+    /* padding-top: 2.5em  */
  }

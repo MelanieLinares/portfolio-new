@@ -14,13 +14,13 @@ blockquote {
 }
 
 .blockquote {
-    margin-top: 2em;
+    /* margin-top: 2em; */
 }
 
 .cms .partials .yup section:last-of-type:has(#results) blockquote {
     font-size: 1.5em;
     font-weight: 100;
-    margin-top: 2em;
+    /* margin-top: 2em; */
 }
 
 .homepage-blockquote:before {
@@ -28,7 +28,7 @@ blockquote {
     font-size: 2.3rem; 
     font-family: 'JetBrains Mono';
     position: absolute;
-    left: 0;
+    left: -2.5rem;
     color: var(--dark-blue);
     font-weight: bold
 }
@@ -39,7 +39,7 @@ blockquote {
 }
 
 .homepage-blockquote {
-padding-left: 2em;
+padding-left: 0;
 font-style: initial;
 font-weight: 100;
 }

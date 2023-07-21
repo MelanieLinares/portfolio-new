@@ -3,7 +3,6 @@
 
 @import './imports/_variables';
 @import './imports/_keyframes';
-@import './imports/_media-queries';
 @import './imports/_reduced-motion';
 
 @import './imports/_pinboard';
@@ -34,6 +33,16 @@
 
 @import './imports/_tailwind';
 
+@import './imports/_media-queries';
+
+
+/* section *:not(li):not(a):not(img):not(b) {
+    border: 1px solid blue
+}
+
+section {
+    border: 1px solid red
+} */
 
 html {
     min-width: 280px;
@@ -47,6 +56,28 @@ body {
 
 body.overflow-hidden {
     position: fixed;
+}
+
+.padding {
+    padding: 1.5rem;
+}
+
+.padding-half-top {
+    padding-top: 1rem
+}
+
+.padding-half-bottom {
+    padding-bottom: 1rem
+}
+
+section:not(.content) {
+    border: 1px solid blue;
+    margin-bottom: 6rem
+}
+
+section.content, section.Angled.homepage-blue {
+    margin-bottom: 2.75rem;
+    border: 1px solid lightsalmon
 }
 
 li {
@@ -63,7 +94,6 @@ aside li:last-of-type {
 }
 
 .visually-hidden {
-    position: absolute;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -73,14 +103,26 @@ aside li:last-of-type {
   clip: rect(0,0,0,0);
   white-space: nowrap;
   border: 0;
+  clip-path: inset(50%);
 }
 
   p {max-width: 850px;}
 
+
+  .article #top-section.purple.Angled .max-w-7xl.mx-auto {
+    max-width: unset!important;
+    padding-left: calc((100vw - (878px + 4em))/2);
+    width: calc(878px + 12.5em)!important;
+}
+
 .article-block.no-underline.pa3.br1.mb2.db.w-50 {
     background-color: white;
-    padding: 1rem;
+    padding: 0.001rem 1rem 2.5rem;
     border-radius: 0.5rem;
+}
+
+section.blue:has(.work) + section .article-block.no-underline.pa3.br1.mb2.db.w-50 {
+    padding: 1rem;
 }
 
 li.w-3\/6 {
@@ -113,8 +155,8 @@ cite small {
     position: relative;
     transform: rotate(6deg);
     border-radius: 0.5em;
-    margin-top: 2.5em;
-    margin-bottom: 3em;
+    /* margin-top: 2.5em;
+    margin-bottom: 3em; */
     margin-left: 0em;
     margin-right: -15.5em;
 }
@@ -126,7 +168,7 @@ cite small {
 
 #main {
     position: relative;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 
 aside {
@@ -159,7 +201,7 @@ ul:not(.tags):not(.icon-group):not(.vertical-icon-group):not(.project-info):not(
 ol:not(.icon-group):not(.vertical-icon-group):not(.project-info) {
     list-style: disc;
     padding-left: 1em;
-    margin: .65em 0;
+    /* margin: .65em 0; */
 }
 
 .offset-section:not(.transparent) {
@@ -222,6 +264,34 @@ max-width: 1400px;
     list-style-type: none!important
 }
 
+.article-roll li + li, .work-roll li + li {
+    margin-top: -1.5rem
+}
+
+h2.homepage {
+    font-weight: 400
+}
+
+#link-section {
+    position: absolute;
+    z-index: 1;
+    margin-top: -9.5rem;
+
+    width: 100vw;
+    overflow-x: hidden;
+    margin-left: 0;
+    height: 27vw;
+    padding-top: 0.3rem;
+}
+
+#link-section + * {
+    margin-top: 22rem
+}
+
+#modal-trigger {
+    bottom: -3rem
+}
+
 footer:before {
     border-bottom: 100px solid var(--dark-green);
     content: '';
@@ -235,11 +305,16 @@ footer:before {
     left: 0
 }
 
+footer div.py-10 {
+    padding-bottom: 4rem;
+    padding-top: 1rem
+}
+
 footer {
     position: relative;
     color: white;
     background-color: var(--dark-green);
-    margin-top: 6em !important;
+    /* margin-top: 6em !important; */
 }
 
 .caption {
@@ -267,18 +342,18 @@ em {
 iframe:not(#iframe) {
     border: 3px solid #d4efe1;
     border-radius: 0.75rem;
-    margin-top: .25rem;
+    /* margin-top: .25rem; */
 }
 .tooltip {
     min-width: 150px
 }
 
 .left-text-only {
-    margin-top: 3em;
+    /* margin-top: 3em; */
 }
 
 h2 + * {
-    margin-top: 1.5em;
+    /* margin-top: 1.5em; */
 }
 
 .Twocol_image_content, .parent-outer:not(:only-child):not(.display_image_section) {
@@ -294,8 +369,8 @@ div + .Twocol_image_content {
 }
 
 .cms p + :not(:last-child):not(blockquote):not(h3) {
-    margin-top: -1em;
-    margin-bottom: 1.5em;
+    /* margin-top: -1em;
+    margin-bottom: 1.5em; */
 }
 
 ul:not(.icon-group):last-child, ul:not(.vertical-icon-group):last-child, ul:not(.project-info):last-child {
@@ -303,7 +378,7 @@ margin-bottom: 0!important
 }
 
 .cms p:has(strong:only-child) + ul {
-    margin-top: -1.75em;
+    /* margin-top: -1.75em; */
 }
 
 .white {
@@ -338,7 +413,7 @@ margin-bottom: 0!important
     width: 104vw;
     height: 0;
     border-left: 105vw solid transparent;
-    margin-top: -100px;
+    /* margin-top: -100px; */
     position: absolute;
     bottom: -8.1em;
     left: -4vw;
@@ -350,7 +425,7 @@ margin-bottom: 0!important
     width: 106vw;
     height: 0;
     border-right: 106vw solid transparent;
-    margin-top: -100px;
+    /* margin-top: -100px; */
     position: absolute;
     bottom: -6.15em;
     left: -3vw;
@@ -376,7 +451,7 @@ margin-bottom: 0!important
 .yup section:first-of-type .lg\:w-1\/2:has(h2),
 .yup section:first-of-type .lg\:w-1\/2:has(img),
 .lg\:w-3\/4:has(h2) {
-    margin-top: 1.3em;
+    /* margin-top: 1.3em; */
     margin-left: 0;
 }
 
@@ -389,8 +464,8 @@ margin-bottom: 0!important
 }
 
 .lg\:w-1\/2 + .lg\:w-1\/2:not(.icon-with-content):not(.w-full) {
-    padding: 0 4em;
-    padding-right:0;
+    /* padding: 0 4em;
+    padding-right:0; */
 }
 
 .slice__description {
@@ -418,10 +493,10 @@ section.max-w-7xl.mx-auto.pt-6:after {
 }
 
 .notice:not(.mt-4) {
-    font-size: 12px;
+    font-size: 13px;
     position: relative;
     padding-left: 35px;
-    margin-top: 3.5em;
+    /* margin-top: 3.5em; */
     font-family: 'JetBrains Mono', sans-serif;
     max-width: 700px;
 }
@@ -443,15 +518,15 @@ section.max-w-7xl.mx-auto.pt-6:after {
 }
 
 .cms section h2 + *:not(h3) {
-    margin-top: 4em;
+    /* margin-top: 4em; */
 }
 
 .cms section h2 + p {
-    margin-top: 1.5em;
+    /* margin-top: 1.5em; */
 }
 
 .cms section:last-of-type h2 + *:not(h3) {
-    margin-top: 2em;
+    /* margin-top: 2em; */
 }
 
 .cms section h2 + *.max-w-7xl.mx-auto {
@@ -459,7 +534,7 @@ section.max-w-7xl.mx-auto.pt-6:after {
 }
 
 .cms + section {
-margin-top: 10em;
+/* margin-top: 10em; */
 }
 
 li.rounded {
@@ -476,7 +551,7 @@ li.rounded {
 }
 
 .cms {
-    margin-top: -7.5em;
+    /* margin-top: -7.5em; */
   }
 
 ul:not([class]), p:not([class]) {

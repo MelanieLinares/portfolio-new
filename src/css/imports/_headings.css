@@ -1,4 +1,51 @@
-#top-section.homepage h1 b {
+h1 {
+    margin-bottom: 3rem;
+    margin-top: 0;
+}
+
+h1 + h2 {
+    margin-top: -2rem
+}
+
+.about .top-section-content,
+.work .top-section-content {
+    margin-top: -1.25rem;
+}
+
+section:not(:first-of-type) h2, section:not(:first-of-type) h3 {
+    border: 1px solid red
+}
+
+.article-block h2 {
+    margin-bottom: .5rem
+}
+
+section:not(:first-of-type) {
+    padding-top: 0;
+}
+
+section:not(:first-of-type) h2,
+section:not(:first-of-type) h3 {
+    margin-top: 3rem;
+    display: block
+}
+
+#link-section + section h2.block {
+    margin-top: -2.5rem;
+}
+
+section.max-w-7xl.mx-auto.pt-6 > div.max-w-7xl.mx-auto.pt-6 > div > div:nth-child(1) > div > h2
+ {
+    margin-top: 3rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+#top-section.homepage h1 b, 
+#top-section.homepage h2 {
     animation: Color 30s linear infinite;
     -webkit-animation: Color 30s ease-in-out infinite;
 }
@@ -38,7 +85,7 @@ h1 {
 }
 
 .article-block h2 {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     display: flex;
 }
 #top-section.homepage h2 {
@@ -56,20 +103,20 @@ h1 {
 .cms.purple section h2 {
     border-top: 2.5px dashed var(--dark-purple);
     border-bottom: 2.5px dashed var(--dark-purple);
-    padding: 0.5em;
+    /* padding: 0.5em; */
     border-bottom: unset;
 }
 
 .cms.green section h2 {
     border-top: 2.5px dashed var(--dark-green);
     border-bottom: 2.5px dashed var(--dark-green);
-    padding: 0.5em;
+    /* padding: 0.5em; */
     border-bottom: unset;
 }
 
 .cms.blue section h2 {
     border-top: 2.5px dashed var(--dark-blue)!important;
-    padding: 0.5em;
+    /* padding: 0.5em; */
     border-bottom: unset;
 }
 
@@ -125,8 +172,8 @@ h1 {
 h3 {max-width: 900px}
 
 .div2-16 h3 {
-    margin-top: -.25em;
-    padding-bottom: .25em;
+    /* margin-top: -.25em;
+    padding-bottom: .25em; */
 }
 
 .cms.blue .Rectangular h3 {
@@ -141,10 +188,10 @@ h3 {
 }
 
 h3:not(:first-child) {
-    margin-top: 1.5em;
+    /* margin-top: 1.5em; */
 }
 .icon-with-content h3 {
-    margin-top: 0;
+    /* margin-top: 0; */
 }
 
 h2 + h3 {
@@ -166,7 +213,7 @@ h3 {
     font-weight: 500!important;
 }
 .cms section h2 + h3 {
-    margin-top: 2.5em;
+    /* margin-top: 2.5em; */
 }
 
 .display_image_section h3 {
@@ -179,8 +226,8 @@ h3 {
     color: white
 }
 .work-roll h4, .article-roll h4 {
-    margin-top: .65em;
-    margin-bottom: .65em
+    /* margin-top: .65em;
+    margin-bottom: .65em */
 }
 details h4 {
     text-decoration: underline
@@ -194,23 +241,23 @@ details h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     line-height: 1;
-    margin-top: 1em;
+    /* margin-top: 1em; */
 }
 h4 {
     font-size: 1.1em;
 }
 h3 + h4 {
-    margin-top: 2em
+    /* margin-top: 2em */
 }
 
 #heading03 {
     display: block
   }
 
-  h3:has(span) {
+  /* h3:has(span) {
     padding-left: 1.25em;
     position: relative;
-}
+} */
 
 
 @media screen and (max-width: 319px) {
@@ -260,7 +307,7 @@ h1 {
 
 @media screen and (min-width: 768px) and (max-width: 834px) {
 #top-section.homepage *:not(.shapes):not(.circle):not(.cross) h1 {
-    padding: 0 .75em!important
+    padding: 0 0.3em 0 0!important
 }
 .hero-header h1 {
     max-width: calc(100vw - 1.5em);

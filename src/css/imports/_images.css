@@ -27,7 +27,7 @@ img.fullwidth {
 .fullwidth.card-list ol.grid:has(li:nth-of-type(2):last-child) li img {
     width: 30px;
     left: 0;
-    margin-top: -30px;
+    /* margin-top: -30px; */
     height: unset;
     position: absolute;
 }
@@ -62,7 +62,7 @@ img.fullwidth {
     object-position: top;
     border-radius: 0.5em;
     transform: rotate(1.5deg);
-    margin-top: -10px;
+    /* margin-top: -10px; */
     margin-left: -5px;
     height: 47em;
 }
@@ -103,7 +103,7 @@ header:not(.bg-pink) #navbar a img {
 dt img {
     border: 1.5px solid black;
     border-radius: 1.75em;
-    margin-top: .5em
+    /* margin-top: .5em */
 }
 
 #navbar a img {
@@ -118,7 +118,7 @@ dt img {
 }
 
 .lg\:w-1\/2 .caption-w-img img {
-    margin-top: -4.75em;
+    /* margin-top: -4.75em; */
 }
 
 .after-homepage-blue img {
@@ -147,7 +147,7 @@ dt img {
     }
 
     p img {
-        margin: 2em 0;
+        /* margin: 2em 0; */
     }
 
     .purple p img {

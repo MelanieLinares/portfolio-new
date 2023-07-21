@@ -1,6 +1,6 @@
 .Blank + style + .Angled {
-    margin-top: 0;
-    padding-top: 12.5em;
+    /* margin-top: 0;
+    padding-top: 12.5em; */
  }
 
  .Rectangular + style + .Angled:before {
@@ -16,12 +16,12 @@
 }
 
 .Angled {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
 }
 
 .Angled .lg\:w-1\/2 + .lg\:w-1\/2 em {
-    padding-bottom: 4em;
+    /* padding-bottom: 4em; */
     display: block;
 }
 
@@ -30,8 +30,8 @@
 }
 
 .Angled + .Angled, .Angled + style + .Angled {
-    padding-top: 0;
-    margin-top: -17.75em;
+    /* padding-top: 0;
+    margin-top: -17.75em; */
 }
 
 .Angled + .Angled:has(.flex) {
@@ -39,13 +39,13 @@
 }
 
 .Angled > .container:not(:last-child) {
-    padding-top: 2.5em;
-    padding-bottom: 1.75em;
+    /* padding-top: 2.5em;
+    /* padding-bottom: 1.75em; */
     position: relative;
 }
 
 .yup section:last-child.Angled .container {
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
 }
 
 .Angled .generic-content,
@@ -56,15 +56,15 @@
 
 .Angled {
     position: relative;
-    padding: 11em 0;
-    padding-top: 13em;
+    /* padding: 11em 0; */
+    /* padding-top: 13em;
     padding-bottom: 4.5em;
     margin-top:-7.5em;
-    margin-bottom: 17.5em;
+    margin-bottom: 17.5em; */
 }
 
 .Blank + .Angled {
-    margin-top:0;
+    /* margin-top:0; */
 }
 
 .pink .Angled {
@@ -79,8 +79,12 @@
     background-color: white;
 }
 
-.blue .Angled {
+.blue .Angled:not(#top-section) {
     background-color: rgb(243, 247, 255)
+}
+
+.blue #top-section.Angled {
+    background-color: white
 }
 
 .purple .Angled {
@@ -99,8 +103,36 @@
     left: 0;
 }
 
-.purple .Angled:before {
-    border-bottom: 100px solid #f8f6ff 
+/* .purple .Angled:before {
+    border-bottom: 100px solid #f8f6ff;
+} */
+
+section.article.purple #top-section.Angled:before {
+    content: '';
+    height: 0px;
+    width: 0px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 100px solid #eeeaff;
+    /* border-bottom: solid 1rem transparent; */
+    border-top: solid 6.25rem transparent;
+    position: absolute;
+    z-index: 0;
+    top: unset;
+    margin-top: unset
+}
+
+#top-section .top-section-content:before {
+    content: '';
+    height: 0px;
+    width: 0px;
+    bottom: -4.4rem;
+    left: -5vw;
+    border-right: solid 103vw black;
+    /* border-bottom: solid 1rem transparent; */
+    border-top: solid 6.25rem transparent;
+    position: absolute;
+    z-index: 0;
 }
 
 .pink .Angled:before {

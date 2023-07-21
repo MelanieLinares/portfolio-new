@@ -10,13 +10,13 @@
 .caption {
     position: relative;
     padding-left: 5em;
-    padding-top: 2em;
-    margin-bottom: 5em;
+    /* padding-top: 2em;
+    margin-bottom: 5em; */
  }
 
  .caption + .caption {
-    margin-top: 6em;
-    margin-bottom: 2em;
+    /* margin-top: 6em;
+    margin-bottom: 2em; */
  }
 
  .caption:before, .img-w-caption .caption:before {

@@ -2,12 +2,20 @@
     animation: hue-rotate-emoji 30s linear infinite;
 }
 
+.top-section-content p {
+    padding-bottom: 3rem
+}
+
+.top-section-content p + p {
+    margin-top: -3rem
+}
+
 .opportunity-box {
     position:absolute;
     width: 40%;
     max-width: 650px;
     right: 0;
-    top: calc(-100% + .6em);
+    top: calc(-100% - 2rem);
     border-radius: 2px;
     font-size: .9em;
     z-index: 0
@@ -15,7 +23,6 @@
 
 .opportunity-box-inner {
     background-color: #E2F9ED;
-    padding: 1.5em;
     border: 2.25px solid black;
     border-radius: 2px;
 }
@@ -57,39 +64,66 @@
 }
 
 .dribbble-shots2 {
-    margin-top: 67px;
+    /* margin-top: 67px; */
 }
 
 .Angled.homepage-blue {
     background-color: #d3f6e3;
-    margin-top: 8em!important;
-    margin-bottom: 1em!important;
-    padding-top: 7em;
-    padding-bottom: 0;
+    /* margin-top: 8em!important;
+    margin-bottom: 1em!important; */
+    /* padding-top: 7em;
+    padding-bottom: 0; */
     z-index: 1;
 }
 
 .Angled.homepage-blue h3 + p {
-    margin-top: 1.75em;
+    /* margin-top: 1.75em; */
 }
 
 .Angled.homepage-blue ._10-col-grid + div {
-    margin-top: -3em
+    /* margin-top: -3em */
 }
 
 .Angled.homepage-blue:before {
-    border-bottom: 100px solid #d3f6e3;
+    border-bottom: 100px solid #000000;
     content: '';
     width: 100vw;
     height: 0;
-    border-left: 100vw solid transparent;
-    margin-top: -100px;
+    border-left: 103vw solid transparent;
+    margin-top: -101px;
     position: absolute;
     top: 0;
     z-index: 0;
     left: -1;
 }
 
+.Angled.homepage-blue:not(.about) .container::before {
+    border-bottom: 100px solid #d3f6e3;
+    /* border-bottom: 100px solid #ffffff; */
+    content: '';
+    width: 100vw;
+    height: 0;
+    border-left: 103vw solid transparent;
+    margin-top: -97px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    left: -2vw;
+}
+
+.Angled.homepage-blue.about .container::before {
+    /* border-bottom: 100px solid #d3f6e3; */
+    border-bottom: 100px solid #ffffff;
+    content: '';
+    width: 100vw;
+    height: 0;
+    border-left: 103vw solid transparent;
+    margin-top: -97px;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    left: -2vw;
+}
 
 .Angled.homepage-blue .container:after,
 .after-homepage-blue .container:after {
@@ -97,7 +131,7 @@
     content: '';
     width: 103vw;
     height: 0;
-    border-left: 103vw solid transparent;
+    border-left: 104vw solid transparent;
     position: absolute;
     bottom: -103px;
     left: -3vw;
@@ -114,24 +148,25 @@
 .Angled.homepage-blue:after {
     border-top: 100px solid #d3f6e3;    
     content: '';
-    width: 100vw;
+    width: 101vw;
     height: 0;
-    border-left: 100vw solid transparent;
+    border-left: 101vw solid transparent;
     position: absolute;
     bottom: -100px;
     z-index: -1;
+    left: -1vw
 }
 
 .Angled.homepage-blue.about {
     background-color: #ffffff;
-    padding-top: 4em;
-    padding-bottom: .5em;
+    /* padding-top: 4em;
+    padding-bottom: .5em; */
 }
 
 
 
 .Angled.homepage-blue.about:before {
-    border-bottom: 100px solid white
+    border-bottom: 100px solid black
 }
 
 .Angled.homepage-blue.about:after {
@@ -152,10 +187,15 @@
 
 .after-homepage-blue {
     position: relative;
-    padding-bottom: 5em
+    margin-top: -4rem;
+    /* padding-bottom: 5em */
 }
 
 .after-homepage-blue .flex div:has(h3) {
-    padding-top: 3em;
+    /* padding-top: 3em; */
     padding-right: 3em
+}
+
+.after-homepage-blue .flex div:has(h3) + div {
+    margin-right: -1.25rem
 }

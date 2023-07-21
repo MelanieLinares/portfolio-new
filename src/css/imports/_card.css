@@ -15,11 +15,11 @@
 }
 
 .lg\:w-1\/2 .fullwidth.card-list ol.grid:not(.process) li div.flex, .lg\:w-1\/2 .fullwidth.card-list ol.grid:not(.process) li div.flex > * {
-    padding: unset;
+    /* padding: unset; */
 }
 
 .lg\:w-1\/2 .fullwidth.card-list ol.grid li div.flex strong {
-    padding-top: .75em
+    /* padding-top: .75em */
 }
 
 .fullwidth.mx-auto + .caption + .fullwidth.card-list, .fullwidth.mx-auto + .caption + .fullwidth.card-list + .fullwidth.card-list, .fullwidth.mx-auto + .caption + .fullwidth.card-list + .fullwidth.card-list + .fullwidth.card-list {
@@ -52,7 +52,7 @@
 }
 
 p:has(strong:only-child) + .card-list {
-    margin-top: -1.5em;
+    /* margin-top: -1.5em; */
 }
 
 .card-list strong, .icon-group strong {
@@ -80,23 +80,23 @@ p:has(strong:only-child) + .card-list {
 }
 
 .lg\:w-1\/2 div:not(.icon-content):not(.img-w-caption):not(.fullwidth):not(.icon-with-content):not(.items-center):not(.left-text-only):not(.pill-featured-text):not(.w-full):not(.flex):not(.flex-img) {
-    padding: 0 2em;
+    /* padding: 0 2em; */
 }
 
 
 .card-list {
-    margin-bottom: .75em;
+    /* margin-bottom: .75em; */
     max-width: 1200px
 }
 
 .card-list:last-child {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
 .card-list .process .rounded:before {
     font-family: 'Poppins', sans-serif;
     font-size: 1.65em;
-    margin-top: -3px;
+    /* margin-top: -3px; */
 }
 
 .purple .card-list .process .rounded:before {
@@ -139,7 +139,7 @@ p:has(strong:only-child) + .card-list {
 #related .card-v8 div {
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.15);
-    padding: 0 1em 1em 1em;
+    /* padding: 0 1em 1em 1em; */
 }
 
 .card-v8 div {
@@ -147,7 +147,7 @@ p:has(strong:only-child) + .card-list {
     --radius-lg: calc(var(--radius, 0.25em)*2);
     border-radius: var(--radius-lg);  
     z-index: 999;
-    padding: 1em;
+    /* padding: 1em; */
 }
 
 
