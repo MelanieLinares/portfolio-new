@@ -17,7 +17,7 @@
     color: rgba(var(--green-rgb), 1);
 }
 
-#top-section.green + .cms.green:before {
+/* #top-section.green + .cms.green:before {
     content: '';
     height: 0px;
     width: 0px;
@@ -28,9 +28,9 @@
     border-top: solid 6.25rem transparent;
     position: absolute;
     z-index: 0;
-}
+} */
 
-#top-section.green + .cms.green:after {
+/* #top-section.green + .cms.green:after {
     content: '';
     height: 0px;
     width: 0px;
@@ -41,13 +41,13 @@
     border-top: solid 6.25rem transparent;
     position: absolute;
     z-index: 0;
-}
+} */
 
 .green li::marker {
     color: #08cbc2
 }
 
-.cms.green .partials .yup section:last-of-type:before {
+/* .cms.green .partials .yup section:last-of-type:before {
     border-bottom: 100px solid var(--dark-green);
     margin-top: -100px;
-}
+} */

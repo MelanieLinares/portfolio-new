@@ -19,7 +19,7 @@ tags:
 technology: Manual auditing, Triaging of issues, User Interface Design, Documentation
 duration: 2 months
 introheading: Creating a plan for usability & accessibility
-preview_intro: The North Carolina Department of Transportation (NCDOT) had a website redesign in 2018. I conducted an audit which found accessibility issues with the website individual pages and components. As a government agency the sites needed to meet a higher standard than the currently met WCAG 2.0 A (single A) level.
+preview_intro: The North Carolina Department of Transportation (NCDOT) had a website redesign in 2018. This design established a new set of SharePoint templates and a new design system, but lacked meeting accessibility compliance. I worked with the UX and Web Services team to conduct an audit and establish a remediation plan that would work with and be easily adaptable to the existing design system and components. 
 preview_tools: UX, NVDA, WCAG/ARIA
 introbody: >-
   **The Problem:** <span aria-hidden="true">🤔</span><br/> 
@@ -27,12 +27,12 @@ introbody: >-
 
 
   **The Plan:** <span aria-hidden="true">💡</span><br/> 
-  Through targeted auditing of pages and components, an ongoing remediation plan was created. Phase one of the plan would be implemented into the main site. A variety of tools were utilized in establishing a starting compliance level. Google Lighthouse and Axe DevTools were used to establish a baseline score for stakeholders.
+  Establish a baseline of compliance with various automatic testing and scan tools, as well as user flows with assistive technology. Identify core pages, templates, and components to focus manual testing and remediation. Work with the team on updating documentation and proceedure. 
 
 
-  **Initial compliance:** <span aria-label="thumb down emoji">👎</span> Score of 67 and 147 automatic issues  
+  **Initial compliance:** <span aria-label="thumb down emoji">👎</span> Score of 59 and 147 automatic issues  
 
-  **Phase one goal:** <span aria-label="okay hand emoji">👌</span> Score greater than 80 and fewer than 100 automatic issues
+  **Phase one goal:** <span aria-label="okay hand emoji">👌</span> Score greater than 85 and a 50% automatic issue reduction
 theme: purple
 casestudy: ux
 
@@ -44,41 +44,36 @@ typed_list:
         generic_content: >-
           ## Why the concern over accessibility?
 
+          The NDDOT (now NCDIT) UX and Web department highly values research and creating useful and delightful interfaces for the nearly 7.5 million licensed drivers (source) and 10.5 million citizens (source) within North Carolina. Accessibility  was also something valued within the team, but the team lacked expertise in evaluating WCAG issues. With the number of ADA Title III Website Accessibility lawsuits in the U.S projected to reach 2,408 by June 2019 th compliance of NCDOT applications could not be overlooked. For a local government agency the NC sites have a higher need to be accessible and have incorporated federally mandated Section 508 compliance standards and best practices.
 
-          At the end of a development project I noticed existing accessibility issues  when the batteries in my mouse died. This [situational disability](www.google.com) required me to use my keyboard to navigate the website. I consulted the NCDOT with my concerns and volunteered to audit the UI and prepare a plan for remediation. 
+      - type: fifty_fifty
+        left_side:
+          content_options:
+            - type: generic_content
+              generic_content: >-
+                ### User-first & a11y-first
 
-          ### What is W.C.A.G. & Section 508?
+                dfslkdflskfe kfgj 
+
+      - type: fifty_fifty
+        right_side:
+          content_options:
+            - type: generic_content
+              generic_content: >-
+                ![alt text](img/grow-overview.webp)
 
 
-          The [Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/) are guidelines considered to be the benchmark for accessibility compliance. [Section 508](https://www.levelaccess.com/compliance-overview/section-508-compliance), as part of the Rehabilitation Act of 1973, is a law that requires government agencies to provide access to web and non-web electronic content to people with disabilities.
+  - type: fullwidth
+    background: Blank
+    content_options:
+      - type: generic_content
+        generic_content: >-
+          ## Planning the testing & remediation approach
 
-          ### The main concerns
-  - type: fifty_fifty
-    background: Angled
-    left_side:
-      content_options:
-        - type: introw
-          blurbsw:
-            - imagew: img/citizen1.png
-              textw: >-
-                #### Citizens:
+          - working within the design system
+          - represntative sample
+          - establishing a timeline/roadmap that scales
 
-                * Citizens with vision difficulties are unable to understand important safety and legal announcements
-
-                * Citizens may have a hard time making convenient online transactions
-
-                * Citizens may have difficulties completing timed tasks
-    right_side:
-      content_options:
-        - type: introw
-          blurbsw:
-            - imagew: img/government1.png
-              textw: >-
-                #### NCDOT:
-
-                * As a federal agency, websites failing to meet guidelines can lead to lawsuits 
-
-                * Potential for increase in user complaints and loss of trust
   - type: fullwidth
     background: Blank
     content_options:
@@ -89,119 +84,166 @@ typed_list:
 
           ### Why not test the entire site?
 
+          - scope/identifying key user flows  and components
 
           The NCDOT website consists of several subsites and pages based on templates and reusable components. Sites like this are constantly adding new content but rarely change the underlying CMS structure. By identifying a representative set of pages the audit process takes less time and is more effective.
+
+          ### the tools 
+
+          - assistive technology
+          - extensions/favlets
+
+           <div class="pill-featured-text">
+                <div class="left-text-only">Automated scans can only identify approximately 30% of WCAG success criteria violations.<br>
+                <small>source: <a href="https://www.levelaccess.com/blog/automated-accessibility-testing-tools-how-much-do-scans-catch/">Level Access, <i>Automated Accessibility Testing Tools: How Much Do Scans Catch?</i></a></small></div>
+                </div>
+
+
       - type: fifty_fifty
         left_side:
           content_options:
             - type: generic_content
               generic_content: >-
-                ### Test Conducting the accessibility audit
-      # - type: display_image_section
-      #   image: img/ncdot-display.png
-      #   display_image_section_content:
-      #     - type: Content02
-      #       Content002: >-
-      #         ### Establishing a baseline with automatic testing
+                ### ensuring all users can use complex components
+
+                - calendars/widgets
+
+                - forms
+
+                - carousels
+
+                - tabs
+
+                - cards
+
+                Components associated with key functionality such as date pickers and dynamically populated dropdowns received prioritization. This also included custom controls which have a native alternative that is often replaced in favor of less accessible, but visually branded elements.
 
 
-      #         * Automatic violations were identified with Google Lighthouse, Axe DevTools chrome extension, and the W.A.V.E. (web accessibility evaluation tool) extension
+                * **Originally not focusable or operable, the site’s dialogs were not accessible**\
+                                Dialogs need to have the proper role and structure so assistive technology users understand the content.
+                * **Alerts of important information were not announced to screen readers.**\
+                                Without correct Aria roles, important information may not be announced to users. Low or no-vision users will miss out on important information afforded by visual users.
 
-      #         * A spreadsheet was created to organize and group issues
+                - Incorrect use of headings included implicit headings which contained no meaning in HTML syntax and skips in heading elements which disrupt a screen reader's ability to parse content
+                
+                - Date pickers were not operable via keyboard or presented instances of keyboard traps.
 
-      #         * Severity levels and occurrence data were added to the NCDOT ticketing system
+                - Custom dropdown elements would refresh pages on key change when cycling through options
 
-      #         * The remaining issues were grouped by page or components. They were assigned an individual severity and discussed with the web department lead
+                - Contact forms without correct label associations were in the footer of every page
 
-      #         ![alt text](img/ncdot-a11y2.png)
-
-
-      #         ### Manual testing
-
-      #         <div class="pill-featured-text">
-      #         <div class="left-text-only">Automated scans can only identify approximately 30% of WCAG success criteria violations.<br>
-      #         <small>source: <a href="https://www.levelaccess.com/blog/automated-accessibility-testing-tools-how-much-do-scans-catch/">Level Access, <i>Automated Accessibility Testing Tools: How Much Do Scans Catch?</i></a></small></div>
-      #         </div>
-
-      #         <p>The NVDA screen reader was used to identify issues with the information hierarchy and HTML native elements. Web extensions were utilized for hard to identify issues.</p>
-
-      #     - type: Content03
-      #       Content003: >-
-      #         * Keyboard navigation and operation tested
-
-      #         * Screen reader: NVDA and Talkback
-
-      #         * Color contrast tested
-
-      #         * Code inspection, including JavaScript
-  - type: fifty_fifty
-    background: Blank
-    right_side:
-      content_options:
-        - type: generic_content
-          generic_content: >-
-            ### Focus on components
-
-            Components associated with key functionality such as date pickers and dynamically populated dropdowns received prioritization. This also included custom controls which have a native alternative that is often replaced in favor of less accessible, but visually branded elements.
-
-            - Date pickers were not operable via keyboard or presented instances of keyboard traps.
-
-            - Custom dropdown elements would refresh pages on key change when cycling through options
-
-            - Contact forms without correct label associations were in the footer of every page
-
-            - Incorrect use of headings included implicit headings which contained no meaning in HTML syntax and skips in heading elements which disrupt a screen reader's ability to parse content
-    left_side:
-      content_options:
-        - type: heading3
-          heading03: Prioritizing the findings        
-        - type: CaptionImg
-          caption: >-
-            Horizontal alerts within the header and pop alerts provided
-            important information to users visually and needed ARIA live region
-            roles to share this information with users not accessing the site
-            visually.
+                * **The ‘Select Your Location’ element opens a pseudo dialog containing a third-party auto-complete input and a current location button**\
+                It was important to ensure that the keyboard, as well as screen reader users, could operate the control and understand it. Since this element was not within NCDOT’s codebase any accessibility changes would need to be resourced or the element re-written internally.
 
 
-            Many pages included repeatable card components
-          image: img/Group 542.png
 
-  - type: fifty_fifty
-    background: Blank
-    left_side:
-      content_options:
-        - type: generic_content
-          generic_content: >-
-            ### Header navigation was tested for keyboard operability, clarity of functionality, & color contrast
+                                
+            - type: pillfeaturedtext
+              pillfeaturedtext: Using ARIA roles and attributes, we can improve the accessibility of components by providing additional semantics.  
+              
+              
 
-        - type: cards
-          process: true
-          blurbcards:
-            - imagecards: img/think-emoji.svg
-              textcards: >-
-                **The dropdown navigation was duplicated within the code for multiple screen sizes rather than using CSS to adjust the layout.**
-            - textcards: This resulted in duplicated content for assistive technology users. Link purpose was lost and users could become confused. Additionally, the additional content acted as further navigation barriers for keyboard users.   
-        - type: cards
-          process: true
-          blurbcards:
-            - imagecards: img/think-emoji.svg
-              textcards: >-
-                **Some elements were contained within implicit lists or were non-standard rather than native controls.**
-            - textcards: Implicit lists prevent assistive technology users from understanding information relationships. Custom elements, if improperly coded, do not allow screen reader users to activate them.  
-        - type: cards
-          process: true
-          blurbcards:
-            - imagecards: img/think-emoji.svg
-              textcards: >-
-                **The dropdown navigation bar contained white links over an orange background-image**
-            - textcards: The color contrast for most of the links (some darker areas passed contrast) did not pass the WCAG recommendation of 4.5:1. Low-vision users would have difficulty reading the content.
+        right_side:
+          content_options:
+            - type: generic_content
+              generic_content: >-
+                ![alt text](img/test-img.png)
 
-    right_side:
-      content_options:
-        - type: CaptionImg
-          caption: >-
-            The header consists of a logo, a search form field, and NC-wide helpful links. The main navigation includes dropdown elements of multiple columns of links, each with its header.
-          image: img/header_cropped.jpg
+
+      - type: fifty_fifty
+        right_side:
+          content_options:
+            - type: generic_content
+              generic_content: >-
+                ### informing users of changes
+
+                ...
+
+
+
+        left_side:
+          content_options:
+            - type: CaptionImg
+              caption: >-
+                Horizontal alerts within the header and pop alerts provided
+                important information to users visually and needed ARIA live region
+                roles to share this information with users not accessing the site
+                visually.
+
+
+                Many pages included repeatable card components
+              image: img/Group 542.png
+
+
+   
+      - type: generic_content
+        generic_content: >-
+              ### Rethinking navigation and landmarks
+
+              - top/side nav
+
+              - headings
+
+              - tables
+
+              - lists
+
+              - links/buttons
+
+              * **The overused ‘Learn More’ link name is vague and not recommended in most situations**\
+              Visual users may be able to discern the relationship between paragraph content and link purpose, but screen reader users may access link names separate from their surrounding content. Vague names do not help a user understand the purpose. 
+
+
+      - type: CaptionImg
+        caption: >-
+          The header consists of a logo, a search form field, and NC-wide helpful links. The main navigation includes dropdown elements of multiple columns of links, each with its header.
+        image: img/header.jpg
+
+
+      - type: cards
+        process: true
+        blurbcards:
+          - imagecards: img/think-emoji.svg
+            textcards: >-
+              **The dropdown navigation was duplicated within the code for multiple screen sizes rather than using CSS to adjust the layout.**
+          - textcards: This resulted in duplicated content for assistive technology users. Link purpose was lost and users could become confused. Additionally, the additional content acted as further navigation barriers for keyboard users.   
+      - type: cards
+        process: true
+        blurbcards:
+          - imagecards: img/think-emoji.svg
+            textcards: >-
+              **Some elements were contained within implicit lists or were non-standard rather than native controls.**
+          - textcards: Implicit lists prevent assistive technology users from understanding information relationships. Custom elements, if improperly coded, do not allow screen reader users to activate them.  
+      - type: cards
+        process: true
+        blurbcards:
+          - imagecards: img/think-emoji.svg
+            textcards: >-
+              **The dropdown navigation bar contained white links over an orange background-image**
+          - textcards: The color contrast for most of the links (some darker areas passed contrast) did not pass the WCAG recommendation of 4.5:1. Low-vision users would have difficulty reading the content.
+
+
+      - type: fifty_fifty
+        left_side:
+          content_options:
+            - type: generic_content
+              generic_content: >-
+                ### accessible colors and images
+
+                - colors
+
+                - images
+
+                * **The image was missing the alt attribute and occurred within a section of constantly updating CMS content**\
+                This was something that needed to be fixed on the CMS side of things as alt attributes were not included in the compiled code. Alt text inclusion would still need to be entered manually so the possibility of the alt text being non-compliant remains an issue.
+
+
+        right_side:
+          content_options:
+            - type: generic_content
+              generic_content: >-
+                ![alt text](img/connect-overview.webp)
+
 
   - type: fullwidth
     background: Blank
@@ -213,12 +255,6 @@ typed_list:
           ### Top-of-page/hero content was checked for link purpose, image alternative text, & custom component accessibility
 
         
-          * **The image was missing the alt attribute and occurred within a section of constantly updating CMS content**\
-              This was something that needed to be fixed on the CMS side of things as alt attributes were not included in the compiled code. Alt text inclusion would still need to be entered manually so the possibility of the alt text being non-compliant remains an issue.
-          * **The overused ‘Learn More’ link name is vague and not recommended in most situations**\
-              Visual users may be able to discern the relationship between paragraph content and link purpose, but screen reader users may access link names separate from their surrounding content. Vague names do not help a user understand the purpose. 
-          * **The ‘Select Your Location’ element opens a pseudo dialog containing a third-party auto-complete input and a current location button**\
-              It was important to ensure that the keyboard, as well as screen reader users, could operate the control and understand it. Since this element was not within NCDOT’s codebase any accessibility changes would need to be resourced or the element re-written internally.
         img_on_right: false
       - type: OverlapImg
         largeimg: img/ncdot-components.png
@@ -226,65 +262,59 @@ typed_list:
           image content without the background
         smallimg: img/Group 531.png
 
-  - type: fifty_fifty
-    background: Blank
-    left_side:
-      content_options:
-        - type: generic_content
-          generic_content: >-
-            ### Repeatable card components were tested for structure, image, & link names, as well as tested for duplicated information
-        - type: cards
-          process: true
-          blurbcards:
-            - imagecards: img/think-emoji.svg
-              textcards: >-
-                **Images within each card either serve a decorative or meaningful purpose**
-            - textcards: If the content is decorative but includes unhelpful alternative text it only serves as a barrier for users accessing additional content.   
-        - type: cards
-          process: true
-          blurbcards:
-            - imagecards: img/think-emoji.svg
-              textcards: >-
-                **Headings before each set of card components were tested for explicit markup and correct heading level**
-            - textcards: When a heading has the wrong level or does not use heading markup the baked-in browser element purpose is not conveyed. A user may not understand the content or be able to understand content relationships.
-        - type: featured-text
-          featuredtext: Using ARIA roles and attributes, we can improve the accessibility
-            of components by providing additional semantics.
+  # - type: fifty_fifty
+  #   background: Blank
+  #   left_side:
+  #     content_options:
+  #       - type: generic_content
+  #         generic_content: >-
+  #           ### Repeatable card components were tested for structure, image, & link names, as well as tested for duplicated information
+  #       - type: cards
+  #         process: true
+  #         blurbcards:
+  #           - imagecards: img/think-emoji.svg
+  #             textcards: >-
+  #               **Images within each card either serve a decorative or meaningful purpose**
+  #           - textcards: If the content is decorative but includes unhelpful alternative text it only serves as a barrier for users accessing additional content.   
+  #       - type: cards
+  #         process: true
+  #         blurbcards:
+  #           - imagecards: img/think-emoji.svg
+  #             textcards: >-
+  #               **Headings before each set of card components were tested for explicit markup and correct heading level**
+  #           - textcards: When a heading has the wrong level or does not use heading markup the baked-in browser element purpose is not conveyed. A user may not understand the content or be able to understand content relationships.
+  #       - type: featured-text
+  #         featuredtext: Using ARIA roles and attributes, we can improve the accessibility
+  #           of components by providing additional semantics.
 
-    right_side:
-      content_options:
+  #   right_side:
+  #     content_options:
 
-        - type: CaptionImg
-          caption: >-
-            The card components consist of multiple links, decorative image content, date, and read more buttons. Other cards consisted entirely of images linked to individual articles.
-          image: img/Image 43.png
+  #       - type: CaptionImg
+  #         caption: >-
+  #           The card components consist of multiple links, decorative image content, date, and read more buttons. Other cards consisted entirely of images linked to individual articles.
+  #         image: img/Image 43.png
 
 
-  - type: fifty_fifty
-    background: Blank
-    right_side:
-      content_options:
-        - type: generic_content
-          generic_content: >-
-            ### Dialogs & third-party components were tested for focus changes & screen reader use.
+  # - type: fifty_fifty
+  #   background: Blank
+  #   right_side:
+  #     content_options:
+  #       - type: generic_content
+  #         generic_content: >-
+  #           ### Dialogs & third-party components were tested for focus changes & screen reader use.
 
-            * **Originally not focusable or operable, the site’s dialogs were not accessible**\
-                Dialogs need to have the proper role and structure so assistive technology users understand the content.
-            * **Alerts of important information were not announced to screen readers.**\
-                Without correct Aria roles, important information may not be announced to users. Low or no-vision users will miss out on important information afforded by visual users.
-                
-        - type: pillfeaturedtext
-          pillfeaturedtext: Using ARIA roles and attributes, we can improve the accessibility of components by providing additional semantics.
 
-    left_side:
-      content_options:
 
-        - type: CaptionImg
-          caption: >-
-            The dialogs included those which appear on the first load and those
-            initiated by a user. Third-party components consisted of datepicker,
-            map, and auto-complete search widgets.
-          image: img/dialog-cropped.jpg
+  #   left_side:
+  #     content_options:
+
+  #       - type: CaptionImg
+  #         caption: >-
+  #           The dialogs included those which appear on the first load and those
+  #           initiated by a user. Third-party components consisted of datepicker,
+  #           map, and auto-complete search widgets.
+  #         image: img/dialog-cropped.jpg
 
 
   - type: fullwidth

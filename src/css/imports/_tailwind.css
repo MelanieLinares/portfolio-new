@@ -990,8 +990,20 @@ dd, dl, p {
     margin-bottom: 1rem;
 }
 
+.mb-20 {
+    margin-bottom: 6rem;
+}
+
+.mt-0 {
+    margin-top: 0
+}
+
 .p-4 {
     padding: 1rem;
+}
+
+.p-20 {
+    padding: 6rem;
 }
 
 .flex-shrink-0 {

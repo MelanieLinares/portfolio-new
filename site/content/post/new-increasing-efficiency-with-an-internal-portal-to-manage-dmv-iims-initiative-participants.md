@@ -4,11 +4,10 @@ title: Increasing efficiency with an internal portal to manage DMV IIMS
 titlebold: Increasing efficiency with an internal portal
 titlenormal: to manage DMV IIMS initiative participants
 thumbnail: img/ncdmv-thumbnail.png
-preview: img/portal-animated-transparent.gif
+preview: img/landing-page-hero.webp
 weight: 2
-notice: For legal reasons I am not able to show project details. I am able to
-  discuss the generalized process and am available to discuss in more detail
-  upon request.
+notice: For legal reasons some details of work completed cannot be shown. Images are representational or blurred.
+preview_intro: This is a test description that needs to be updated and added to all case studies. Perhaps even added to the articles. 
 date: 2018-08-04T00:33:20.559Z
 newdate: 2019-03-09T00:33:20.599Z
 client: NC Department of Motor Vehicles

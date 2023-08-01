@@ -35,7 +35,7 @@ blockquote {
 
 .homepage-blue .homepage-blockquote:before {
     color: var(--dark-green);;
-    margin-top: -0.33em;
+    margin-top: 0;
 }
 
 .homepage-blockquote {

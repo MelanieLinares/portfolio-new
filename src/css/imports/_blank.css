@@ -38,7 +38,7 @@ section.Blank:has(.overlap-bg) + section.Blank:not(:has(h2)) {
     /* padding-top: 2em */
 }
 
-.Angled:has(.display_image_section) + section.Blank:before {
+/* .Angled:has(.display_image_section) + section.Blank:before {
     content: '';
     width: 100vw;
     height: 0;
@@ -48,4 +48,4 @@ section.Blank:has(.overlap-bg) + section.Blank:not(:has(h2)) {
     top: 0;
     z-index: 1;
     border-bottom: 100px solid white;
-}
+} */

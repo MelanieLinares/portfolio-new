@@ -3,9 +3,9 @@
     padding-top: 12.5em; */
  }
 
- .Rectangular + style + .Angled:before {
+ /* .Rectangular + style + .Angled:before {
     content: unset;
- }
+ } */
 
  .Rectangular + style + .Angled {
     margin-top: -13em;
@@ -25,9 +25,9 @@
     display: block;
 }
 
-.Angled + .Angled:before {
+/* .Angled + .Angled:before {
     content: unset;
-}
+} */
 
 .Angled + .Angled, .Angled + style + .Angled {
     /* padding-top: 0;
@@ -91,7 +91,7 @@
     background-color: #f8f6ff;
 }
 
-.Angled:before {
+/* .Angled:before {
     content: '';
     width: 100vw; 
     height: 0; 
@@ -101,41 +101,39 @@
     top: 0;
     z-index: 0;
     left: 0;
-}
+} */
 
 /* .purple .Angled:before {
     border-bottom: 100px solid #f8f6ff;
 } */
 
-section.article.purple #top-section.Angled:before {
+/* section.article.purple #top-section.Angled:before {
     content: '';
     height: 0px;
     width: 0px;
     bottom: 0;
     left: 0;
     border-bottom: 100px solid #eeeaff;
-    /* border-bottom: solid 1rem transparent; */
     border-top: solid 6.25rem transparent;
     position: absolute;
     z-index: 0;
     top: unset;
     margin-top: unset
-}
+} */
 
-#top-section .top-section-content:before {
+/* #top-section .top-section-content:before {
     content: '';
     height: 0px;
     width: 0px;
     bottom: -4.4rem;
     left: -5vw;
     border-right: solid 103vw black;
-    /* border-bottom: solid 1rem transparent; */
     border-top: solid 6.25rem transparent;
     position: absolute;
     z-index: 0;
-}
+} */
 
-.pink .Angled:before {
+/* .pink .Angled:before {
     border-bottom: 100px solid #fcf2f2;
 }
 
@@ -145,9 +143,9 @@ section.article.purple #top-section.Angled:before {
 
 .blue .Angled:before {
     border-bottom: 100px solid rgb(243, 247, 255);
-}
+} */
 
-.Angled:after {
+/* .Angled:after {
     content: '';
     width: 100vw; 
     height: 0; 
@@ -155,9 +153,9 @@ section.article.purple #top-section.Angled:before {
     position: absolute;
     bottom: -100px;
     z-index: 0;
-}
+} */
 
-.purple .Angled:not(#top-section):after {
+/* .purple .Angled:not(#top-section):after {
     border-top: 100px solid rgba(var(--purple-rgb), 0.33); 
 }
 
@@ -179,9 +177,9 @@ section.article.purple #top-section.Angled:before {
 
 .green .Angled:after {
     border-top: 100px solid rgba(var(--green-rgb), 0.33);
-}
+} */
 
-.green.Angled:not(#top-section):after {
+/* .green.Angled:not(#top-section):after {
     border-top: 100px solid rgba(var(--green-rgb), 1);
 }
 
@@ -191,7 +189,7 @@ section.article.purple #top-section.Angled:before {
 
 .blue.Angled:after {
     border-top: 100px solid rgba(var(--blue-rgb), 1);
-}
+} */
 
 .cms.purple .partials .yup section.Angled:last-of-type {
     background-color: var(--dark-purple);

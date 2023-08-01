@@ -7,10 +7,10 @@ h1 + h2 {
     margin-top: -2rem
 }
 
-.about .top-section-content,
+/* .about .top-section-content,
 .work .top-section-content {
     margin-top: -1.25rem;
-}
+} */
 
 section:not(:first-of-type) h2, section:not(:first-of-type) h3 {
     border: 1px solid red
@@ -24,8 +24,8 @@ section:not(:first-of-type) {
     padding-top: 0;
 }
 
-section:not(:first-of-type) h2,
-section:not(:first-of-type) h3 {
+section:not(:first-of-type) h2:not(.mt-0),
+section:not(:first-of-type) h3:not(.mt-0) {
     margin-top: 3rem;
     display: block
 }

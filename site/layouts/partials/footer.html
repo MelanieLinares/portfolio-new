@@ -1,5 +1,5 @@
 <footer class="mx-auto w-full max-w-container px-4 sm:px-6 lg:px-8">
-	<div class="max-w-7xl mx-auto border-t border-slate-900/5 py-10">
+	<div class="max-w-7xl mx-auto py-10">
 		<div class="mw7 center pt3 mb5">
 			<div class="mb4">
 				<!-- <p class="text-center max-w-7xl">
@@ -10,14 +10,12 @@
 					<strong>If you’d like to chat or make my day</strong>, feel free to <a href="">reach out to me</a> or <a href="">buy
 						me a coffee</a>.</p>
 
-		<div class="text-center max-w-7xl mt-8">
+		<div class="text-center max-w-7xl">
 			©{{ dateFormat "2006" now }} Copyright Melanie Linares. </br>
 			All rights reserved. This site was built with Hugo on Netlify.
 		</div>
 	</div>
 </footer>
-
-{{ partial "svg" . }}
 
 <script src="/app.js"></script>
 
@@ -34,7 +32,7 @@
 <script>
 	$(window).on("load", function () {
 
-		$("#the-takeaway").before('<span id="results" style="position: absolute; visibility: hidden; margin-top: -11em"></span>');
+		$("#the-takeaway").before('<span id="results" style="position: absolute; visibility: hidden;></span>');
 
 
 

@@ -5,7 +5,7 @@
     /* padding-bottom: 11em; */
  }
 
- .Angled + style + .Rectangular:after {
+ /* .Angled + style + .Rectangular:after {
     content: '';
     width: 100vw;
     height: 0;
@@ -15,7 +15,7 @@
     z-index: 0;
     border-bottom: 100px solid var(--dark-purple);
     left: 0
-}
+} */
 
  .Rectangular + .Rectangular,
  .Rectangular + style + .Rectangular {

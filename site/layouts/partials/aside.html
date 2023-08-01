@@ -8,7 +8,7 @@
 
     <li>
       <b>Role</b> {{ .role }}
-      <br/>
+
     {{ if .technology }}
       <em>{{ .technology }}</em>
     {{ end }}
@@ -28,7 +28,7 @@
           {{ with .newdate }}
           {{ dateFormat "January 2006" . }}
       {{ end }}
-      <br/>
+
       <em>({{ .duration }})</em>
     </li>
     </ul>   

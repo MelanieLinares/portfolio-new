@@ -2,7 +2,7 @@ section.max-w-7xl.mx-auto.pt-6 .mx-auto.grid:last-of-type {
     position: relative
 }
 
-section.max-w-7xl.mx-auto.pt-6 .mx-auto.grid:last-of-type:after {
+/* section.max-w-7xl.mx-auto.pt-6 .mx-auto.grid:last-of-type:after {
     border-top: 106px solid #daf9ea;
     content: '';
     width: 106vw;
@@ -12,7 +12,7 @@ section.max-w-7xl.mx-auto.pt-6 .mx-auto.grid:last-of-type:after {
     bottom: -126.25px;
     left: -3vw;
     z-index: 1;
-}
+} */
 
 .parent-outer {
     position: relative;

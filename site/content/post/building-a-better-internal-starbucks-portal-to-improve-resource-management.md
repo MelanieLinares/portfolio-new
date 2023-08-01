@@ -4,9 +4,11 @@ title: Building a better internal Starbucks portal to improve resource
 titlebold: Building a better internal Starbucks portal
 titlenormal: to improve resource management
 thumbnail: img/starbucks-thumbnail.png
-preview: img/dashboard-transparent.gif
+# preview: img/dashboard-transparent.gif
+preview: img/portal-animated-transparent.gif
+# preview: img/landing-page-hero.webp
 weight: 6
-notice: For legal reasons details of work completed cannot be shown. Images are representational.
+notice: For legal reasons I am not able to show project details or screens. I am able to discuss the generalized process and am available to discuss in more detail upon request.
 date: 2021-09-05T18:54:53.434Z
 newdate: 2021-11-05T18:54:53.474Z
 client: Starbucks

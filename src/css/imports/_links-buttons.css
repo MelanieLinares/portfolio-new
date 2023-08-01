@@ -1,3 +1,6 @@
+button:hover {
+cursor:pointer;
+}
 
 .cms a {
   text-decoration: underline
@@ -26,8 +29,17 @@ header.nav.shadow-sm.bg-pink #navbar a {
 } 
 .tags li a {
   border-radius: .5em;
-  padding-top: 0.25rem;
-  padding-bottom: 0.5rem;
+  /* padding-top: 0.25rem;
+  padding-bottom: 0.5rem; */
+}
+
+.tags {
+  margin-top: 1rem
+}
+.tags li a {
+  box-shadow: 0 0 0 .75px rgba(99, 102, 241, var(--tw-border-opacity));
+  padding: .3rem .75rem;
+  margin-right: .25rem
 }
 
 .tags li a:hover, .tags li a:focus {
@@ -52,7 +64,7 @@ a.underline {
 .green a.skip.homepage, 
 .homepage-blue a.skip {
     padding: 1em;
-    margin-top: .5em;
+    /* margin-top: .5em; */
 }
 
 .green a.skip.homepage:hover {
@@ -78,8 +90,8 @@ a.underline {
 
 .green a.skip.homepage:after,
 .homepage-blue a.skip:after {
-    margin-top: -2px;
-    padding-bottom: 3.5em;
+    /* margin-top: -2px;
+    padding-bottom: 3.5em; */
     margin-left: -2px;
     padding-right: 14em;
     left: 0
