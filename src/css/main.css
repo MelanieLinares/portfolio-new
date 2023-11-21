@@ -44,6 +44,61 @@ section {
     border: 1px solid red
 } */
 
+.thin-angled-bar a {
+    border-bottom: 2px dotted white;
+}
+.thin-angled-bar a:hover, .thin-angled-bar a:focus {
+    border-color: #000000;
+    color: #000000
+}
+
+.thin-angled-bar.red {
+    background-color: #E05C5C;
+    color: white;
+    font-family: 'JetBrains Mono';
+    padding: .5rem .25rem;
+    text-align: center;
+    width: calc(100vw - .5rem);
+    margin-left: calc((((100vw - 1600px)/2)* -1) - 1.75rem);
+    transform: rotate(-4deg);
+    position: relative;
+    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.thin-angled-bar.red:before {
+    content: '';
+    height: 0px;
+    width: 0px;
+    bottom: 0;
+    left: -0.25rem;
+    border-left: solid 100.5vw transparent; /* replace this */
+    border-bottom: solid 8.45rem transparent;
+    margin-bottom: -1.72rem;
+    border-top: unset;
+    border-right: unset;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(4deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------- */
+
 html {
     min-width: 280px;
     overflow-y: auto;
