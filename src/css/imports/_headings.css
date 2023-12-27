@@ -1,11 +1,36 @@
 h1 {
-    margin-bottom: 3rem;
+    margin-bottom: 3.56rem;
     margin-top: 0;
+    font-size: 3.25rem;
+    line-height: 3.25rem;
+    text-wrap: pretty;
+}
+
+.top-section-new h2 {
+    font-size: 2rem;
+    font-family: 'JetBrains Mono';
+    word-spacing: -0.3rem;
+    letter-spacing: -0.05rem;
 }
 
 h1 + h2 {
     margin-top: -2rem
 }
+
+.top-section-new.pink h2 {
+color: var(--dark-green);
+font-size: 1.75rem;
+font-weight: 600;
+padding-top: 12rem;
+padding-top: 3.85rem;
+line-height: 2rem;
+text-wrap: pretty;
+}
+
+.top-section-new.pink h2 + p {
+    margin-top: -1rem;
+    text-wrap: pretty;
+    }
 
 /* .about .top-section-content,
 .work .top-section-content {
@@ -64,8 +89,8 @@ h1 {
     color: var(--dark-purple);
 }
 
-.green h1  {
-    color: var(--dark-green);
+.pink h1  {
+    color: #3D0505;
 }
 
 .blue h1  {

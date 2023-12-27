@@ -44,6 +44,117 @@ section {
     border: 1px solid red
 } */
 
+.visibly-hidden {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+body:before {
+    position: absolute;
+    z-index: 2;
+    top: -0.33rem;
+    content: '';
+    background: url(/img/portfolio-grid.png);
+    display: block;
+    height: 160%;
+    background-size: contain;
+    pointer-events: none;
+    opacity: .9;
+} 
+
+.me-homepage {
+    background: url(/img/me-homepage.png);
+    background-size: contain;
+    position: absolute;
+}
+
+.me-homepage-bg {
+    height: 31rem;
+    background-image: linear-gradient(#F4CBCD 40%, #FFE1E3 77%, #faeaea);
+    content: '';
+    display: block;
+    position: absolute;
+    right: 8.5rem;
+    top: 1.85rem;
+    margin-left: -9.75rem;
+    right: calc((100vw - 99.75rem)/2);
+    top: 10.6rem;
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+}
+
+.bottom-angled-message {
+    /* background-color: #E05C5C; */
+    background-color: #C44F4F;
+    color: white;
+    font-family: 'JetBrains Mono', sans-serif;
+    position: absolute;
+    width: 100%;
+    bottom: 1.33em;
+    padding: 1em;
+    transform: rotate(-4deg);
+    text-align: center;
+}
+
+.top-section-new.pink {
+    background-color: #FAEAEA;
+}
+
+.top-section-new {
+    padding: 90px 0 143px 0
+}
+
+.top-section-new:has(.notification) .notification {
+margin-top: -90px;
+margin-bottom: 90px
+}
+
+.notification {
+background-color: white;
+font-family: 'JetBrains Mono', sans-serif;
+color: #3D0505;
+text-align: center;
+padding: 1em;
+border-bottom: 2px solid #5F0717;
+font-size: 14px;
+}
+
+section div.wrapper {
+    max-width: 98.75rem;
+    margin: 0 auto;
+    text-wrap: pretty;
+}
+
+.h1-category {
+    border-bottom: 2px solid black;
+    padding-bottom: 1.2rem;
+    font-family: 'JetBrains Mono';
+    font-weight: 600
+}
+
+.top-section-new:has(.homepage) .h1-category-wrapper + h1 {
+    z-index: 1
+}
+
+h1 mark {
+    background-color: unset;
+    background-image: linear-gradient(
+        to bottom right,
+        #c4f3db  50%,
+        #c4f3db 50%
+      ),
+      linear-gradient(#c4f3db, #c4f3db),
+      linear-gradient(to top left, #c4f3db 50%, #c4f3db 50%);
+    background-repeat: no-repeat;
+    background-size: 100% 2rem;
+    background-position: bottom;
+    color: inherit
+}
+
 .thin-angled-bar a {
     border-bottom: 2px dotted white;
 }
@@ -131,7 +242,6 @@ section:not(.content) {
 }
 
 section.content, section.Angled.homepage-blue {
-    border: 1px solid lightsalmon;
     margin-bottom: 2.75rem;
 }
 

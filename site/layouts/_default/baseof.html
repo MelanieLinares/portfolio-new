@@ -85,7 +85,7 @@
     </style>
     {{end}}
 
-    {{ if eq (relURL .URL) ("/values/") }}
+    {{ if eq (relURL .URL) ("/about/") }}
     <style>
       body {
         background-color: #ddfded;
@@ -223,7 +223,7 @@ var dateStart3 = new Date(2024,01,31);
 var dateEnd2 = new Date();
 
 if(dateStart2 < dateEnd2){
-    document.getElementById('retro').style.display = "block";
+    document.getElementById('retro').style.display = "inline-block";
 }
 if(dateStart3 < dateEnd2){
     document.getElementById('retro').style.display = "none";

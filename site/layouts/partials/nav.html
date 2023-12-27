@@ -7,7 +7,7 @@
 					<div>
 						{{ if eq (relURL .URL) ("/") }}
 						<!-- Website Logo -->
-						<a href="/index.html" class="current" style="display: inline-block" aria-label="Melanie Linares home">
+						<a href="/index.html" class="current" aria-current="page" style="display: inline-block" aria-label="Melanie Linares home">
 							<img src="/img/logo.svg" alt="" class="h-full desktop-logo"/>
 							<img src="/img/logo-mobile.svg" alt="" class="h-full mobile-logo"/>
 							<img src="/img/logo-icon.svg" alt="" class="h-full icon-logo"/>
@@ -24,11 +24,11 @@
 					</div>
 					<!-- Primary Navbar items -->
 					<div class="lg:flex md:flex sm:flex xs:hidden hidden items-center space-x-1 justify-end" style="width: 100%">
-						{{ if eq (relURL .URL) ("/values/") }}
-						<a href="/values" aria-current="page" class="current block h-full flex items-center px-2 border-black transition-colors duration-300 ease-in-out" aria-current="page">
+						{{ if eq (relURL .URL) ("/about/") }}
+						<a href="/about" aria-current="page" class="current block h-full flex items-center px-2 border-black transition-colors duration-300 ease-in-out" aria-current="page">
 							About</a>
 						{{ else }}
-						<a href="/values" class="block h-full flex items-center px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
+						<a href="/about" class="block h-full flex items-center px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
 							About</a>
 						{{ end }}
 			
@@ -70,11 +70,11 @@
 		<div class="hidden mobile-menu">
 			<ul class="">
 				<li>
-					{{ if eq (relURL .URL) ("/values/") }}
-					<a href="/values" aria-current="page" class="block h-full flex items-center mx-4 px-2 border-black transition-colors duration-300 ease-in-out">
+					{{ if eq (relURL .URL) ("/about/") }}
+					<a href="/about" aria-current="page" class="block h-full flex items-center mx-4 px-2 border-black transition-colors duration-300 ease-in-out">
 						About <span aria-hidden="true" style="padding-left: .25rem">ᐊ</span></a>
 					{{ else }}
-					<a href="/values" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
+					<a href="/about" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
 						About</a>
 					{{ end }}
 				</li>
@@ -128,7 +128,7 @@
 
 			</a>
 		</li>
-		<li><a href="/values" class="pa3 no-underline db">About</a></li>
+		<li><a href="/about" class="pa3 no-underline db">About</a></li>
 
 		<li><a href="/post" class="pa3 no-underline db">Work</a></li>
 

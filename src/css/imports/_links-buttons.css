@@ -61,19 +61,19 @@ a.underline {
 
 
 
-.green a.skip.homepage, 
+.pink .skip.homepage, 
 .homepage-blue a.skip {
     padding: 1em;
-    /* margin-top: .5em; */
+    margin-top: .5em;
 }
 
-.green a.skip.homepage:hover {
-    background-color: #006662;
+.pink a.skip.homepage:hover {
+    background-color: #C44F4F;
     border-color: transparent;
 }
 
-.green a.skip.homepage:focus {
-    background-color: #006662;
+.pink a.skip.homepage:focus {
+    background-color: #C44F4F;
     border-color: transparent;
 }
 
@@ -82,13 +82,13 @@ a.underline {
     border-color: transparent;
 }
 
-.green a.skip.homepage:hover:after {
-    border-color: #006662;}
+.pink a.skip.homepage:hover:after {
+    border-color: #C44F4F;}
 
 .homepage-blue a.skip:hover:after {
     border-color: #ffffff;}    
 
-.green a.skip.homepage:after,
+.pink a.skip.homepage:after,
 .homepage-blue a.skip:after {
     /* margin-top: -2px;
     padding-bottom: 3.5em; */
@@ -156,12 +156,12 @@ header.nav.shadow-sm.bg-pink #navbar a.current {
   color: white;
 }
 
-.green a.skip {
+.pink a.skip {
   color: var(--dark-green);
   border: 2px solid var(--dark-green);
 }
 
-.green a.skip:hover, .green a.skip:focus-visible {
+.pink a.skip:hover, .pink a.skip:focus-visible {
   background-color: var(--dark-green);
   color: white;
 }
@@ -220,7 +220,7 @@ a.skip:hover, a.skip:focus {
   border: 2px dashed var(--dark-green);
 } 
 
-.green a.skip.homepage:after {
+.pink a.skip.homepage:after {
   border: 2px dashed transparent;
 } 
 
@@ -228,9 +228,37 @@ a.skip:hover, a.skip:focus {
   border: 2px dashed white;
 } 
 
-.green a.skip.homepage {
+/* .pink a.skip.homepage {
   border: 2px solid black;
   color: black;
+}  */
+
+.inline-horizontal-links {
+  display: block;
+  position: relative;
+}
+
+.inline-horizontal-links a {
+  display: inline-block;
+}
+
+.inline-horizontal-links:before {
+  content:'';
+  display: block;
+  width: 100vw;
+  position: absolute;
+  left: calc((100vw - 98.75rem) /2 * -1);
+  top: calc(50% - 1px)
+}
+
+.inline-horizontal-links.pink:before {
+border-top: 2px solid #5F0717;
+}
+
+.inline-horizontal-links.pink a {
+  background-color: #FAEAEA;
+  border: 2px solid #5F0717;
+  color: #3D0505
 } 
 
 .homepage-blue a.skip {
@@ -238,7 +266,7 @@ a.skip:hover, a.skip:focus {
   color: white;
 } 
 
-.green a.skip.homepage:hover, .green a.skip.homepage:focus  {
+.pink a.skip.homepage:hover, .pink a.skip.homepage:focus  {
   color: white;
 } 
 

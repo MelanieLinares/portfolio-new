@@ -268,13 +268,13 @@ background-color: #ffffff;
     animation: Gradient 30s linear infinite;
   }
 
-  section:has(.homepage):not(#article-feed):not(.after-homepage-blue) {
+  /* section:has(.homepage):not(#article-feed):not(.after-homepage-blue) {
     padding-bottom: 1.25rem
-       }
+       } */
     
-       section.after-homepage-blue {
-        /* padding-top: 1rem */
-       }
+        /* section.after-homepage-blue {
+       padding-top: 1rem
+       } */
 
   section:has(.homepage.Angled) {
 padding-bottom: 3.25rem
@@ -336,10 +336,10 @@ section.about:not(#top-section) {
         word-spacing: -0.185em!important;
         font-weight: 300!important;
     }
-    .intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
+    /* .intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
         font-size: 2.25rem;
         line-height: 2.5rem;
-    }
+    } */
     .intro-section {
         /* padding: 1rem!important;
         padding-top: 1.75rem!important; */
@@ -365,10 +365,10 @@ section.about:not(#top-section) {
         word-spacing: -0.185em!important;
         font-weight: 300!important;
     }
-    .intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
+    /* .intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
         font-size: 2.25rem;
         line-height: 2.5rem;
-    }
+    } */
     .intro-section {
         /* padding: 1rem!important;
         padding-top: 1.75rem!important; */
@@ -398,10 +398,10 @@ section.about:not(#top-section) {
 ul.project-info {
     display: flex
 }
-.intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
+/* .intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
     font-size: 2.25rem;
     line-height: 2.5rem;
-}
+} */
 .intro-section {
     margin-top: 2em !important;
     margin-left: unset!important
@@ -446,10 +446,10 @@ aside, ul.project-info {
 ul.project-info {
     display: flex
 }
-.intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
+/* .intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
     font-size: 2.25rem;
     line-height: 2.5rem;
-}
+} */
 .intro-section {
     margin-top: 2em !important;
     margin-left: unset!important
@@ -482,10 +482,10 @@ aside, ul.project-info {
 ul.project-info {
     display: flex
 }
-.intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
+/* .intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
     font-size: 2.3rem;
     line-height: 2.5rem;
-}
+} */
 .intro-section {
     margin-top: 2em !important;
     margin-left: unset!important
@@ -517,10 +517,10 @@ aside, ul.project-info {
 ul.project-info {
     display: flex
 }
-.intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
+/* .intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
     font-size: 2.3rem;
     line-height: 2.5rem;
-}
+} */
 .intro-section {
     margin-top: 2em !important;
     margin-left: unset!important
@@ -543,10 +543,10 @@ aside, ul.project-info {
 
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
-.intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
+/* .intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
     font-size: 2.75rem;
     line-height: 2.5rem;
-}
+} */
 .intro-section.content-850 {
     max-width: 850px;
     /* min-width: 725px;  */
@@ -555,10 +555,10 @@ aside, ul.project-info {
 
 
 @media screen and (min-width: 1201px) and (max-width: 1400px)  {
-.intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
+/* .intro-section h2, .cms h2, .content h2:not(.text-sm):not(.homepage) {
     font-size: 2.75rem;
     line-height: 2.5rem;
-}
+} */
 .intro-section {
     margin-left: 20em!important;
 }

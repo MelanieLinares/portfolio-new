@@ -80,13 +80,13 @@
 
 @keyframes Color{
     0%{
-      color:#006662;
-      -webkit-text-stroke-color: #006662
+      color:#C44F4F;
+      -webkit-text-stroke-color: #C44F4F
     }
 
     15%{
-        color:#006662;
-        -webkit-text-stroke-color: #006662
+        color:#C44F4F;
+        -webkit-text-stroke-color: #C44F4F
       }
         
     18%{
@@ -120,23 +120,23 @@
       }
 
     85%{
-        color:#006662;
-        -webkit-text-stroke-color: #006662
+        color:#C44F4F;
+        -webkit-text-stroke-color: #C44F4F
       }
 
     100%{
-        color:#006662;
-        -webkit-text-stroke-color: #006662
+        color:#C44F4F;
+        -webkit-text-stroke-color: #C44F4F
       }
   }
 
   @keyframes BgColor{
     0%{
-        background-color:#006662;
+        background-color:#C44F4F;
     }
 
     7%{
-        background-color:#006662;
+        background-color:#C44F4F;
     }
 
     25%{
@@ -164,11 +164,11 @@
     }
 
     85%{
-        background-color:#006662;
+        background-color:#C44F4F;
       }
 
     100%{
-        background-color:#006662;
+        background-color:#C44F4F;
       }
   }
 
@@ -186,11 +186,11 @@
       } 
     
     63%{
-        border-color:#006662;
+        border-color:#C44F4F;
     }
 
     66%{
-        border-color:#006662;
+        border-color:#C44F4F;
       }
 
     97%{
@@ -204,11 +204,11 @@
 
   @keyframes BorderBottom {
     0%{
-        border-bottom: 100px solid #006662;
+        border-bottom: 100px solid #C44F4F;
     }
 
     7%{
-        border-bottom: 100px solid #006662;
+        border-bottom: 100px solid #C44F4F;
     }
 
     25%{
@@ -236,21 +236,21 @@
     }
 
     85%{
-        border-bottom: 100px solid #006662;
+        border-bottom: 100px solid #C44F4F;
       }
 
     100%{
-        border-bottom: 100px solid #006662;
+        border-bottom: 100px solid #C44F4F;
       }
   }
 
   @keyframes BorderTop {
     0%{
-        border-top: 100px solid #006662;
+        border-top: 100px solid #C44F4F;
     }
 
     7%{
-        border-top: 100px solid #006662;
+        border-top: 100px solid #C44F4F;
     }
 
     25%{
@@ -278,10 +278,10 @@
     }
 
     85%{
-        border-top: 100px solid #006662;
+        border-top: 100px solid #C44F4F;
       }
 
     100%{
-        border-top: 100px solid #006662;
+        border-top: 100px solid #C44F4F;
       }
   }
