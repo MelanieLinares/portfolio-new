@@ -8,6 +8,14 @@ preview: img/landing-page-hero.webp
 weight: 2
 notice: For legal reasons some details of work completed cannot be shown. Images are representational or blurred.
 preview_intro: This is a test description that needs to be updated and added to all case studies. Perhaps even added to the articles. 
+preview_responsibilities:
+  - conduct web audit
+  - test applications
+  - responsibility 3
+  - create issues
+  - remediate issues
+  - responsibility 6
+preview_problem: The North Carolina Department of Transportation (NCDOT) had a website redesign in 2018. This design established a new set of SharePoint templates and a new design system, but lacked meeting accessibility compliance. 
 date: 2018-08-04T00:33:20.559Z
 newdate: 2019-03-09T00:33:20.599Z
 client: NC Department of Motor Vehicles

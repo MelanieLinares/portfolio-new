@@ -6,22 +6,32 @@ h1 {
     text-wrap: pretty;
 }
 
-.top-section-new h2 {
+.top-section-new h2, .top-section-new .h2 {
     font-size: 2rem;
     font-family: 'JetBrains Mono';
     word-spacing: -0.3rem;
     letter-spacing: -0.05rem;
 }
 
-h1 + h2 {
+.top-section-new.purple h2, .top-section-new.purple .h2, .top-section-new.blue .h2 {
+    word-spacing: unset;
+}
+
+h1 + h2, h1 + .h2 {
     margin-top: -2rem
+}
+
+h1 + .h2 {
+    font-weight: 600;
+    font-size: 1.75rem!important;
+    line-height: 2rem;
+    text-wrap: pretty;
 }
 
 .top-section-new.pink h2 {
 color: var(--dark-green);
 font-size: 1.75rem;
 font-weight: 600;
-padding-top: 12rem;
 padding-top: 3.85rem;
 line-height: 2rem;
 text-wrap: pretty;
@@ -37,9 +47,9 @@ text-wrap: pretty;
     margin-top: -1.25rem;
 } */
 
-section:not(:first-of-type) h2, section:not(:first-of-type) h3 {
+/* section:not(:first-of-type) h2, section:not(:first-of-type) h3 {
     border: 1px solid red
-}
+} */
 
 .article-block h2 {
     margin-bottom: .5rem
@@ -64,15 +74,9 @@ section.max-w-7xl.mx-auto.pt-6 > div.max-w-7xl.mx-auto.pt-6 > div > div:nth-chil
     margin-top: 3rem;
 }
 
-h2 {
+h2, .h2 {
     margin-bottom: 2rem;
     margin-top: 0;
-}
-
-#top-section.homepage h1 b, 
-#top-section.homepage h2 {
-    animation: Color 30s linear infinite;
-    -webkit-animation: Color 30s ease-in-out infinite;
 }
 
 #top-section.purple.Angled .max-w-7xl.mx-auto h1 {
@@ -86,15 +90,18 @@ h1 {
 }
 
 .purple h1 {
-    color: var(--dark-purple);
+    /* color: var(--dark-purple); */
+    color: #3C0607
 }
 
 .pink h1  {
-    color: #3D0505;
+    /* color: #3D0505; */
+    color: #3C0607
 }
 
-.blue h1  {
-    color: var(--dark-blue);
+.blue h1, .green h1, .pink h1, .purple h1  {
+    /* color: var(--dark-blue); */
+    color: #3C0607
 }
 
 #link-section + section h2 {
@@ -110,9 +117,9 @@ h1 {
 }
 
 .article-block h2 {
-    /* margin-top: 1rem; */
-    display: flex;
+    margin-top: 1.5rem!important;
 }
+
 #top-section.homepage h2 {
     color: black
 }
@@ -156,9 +163,9 @@ h1 {
 
 .article-block h2 {
     font-family: 'Poppins', sans-serif;
-        font-size: 1.75rem!important;
+        font-size: 1.85rem!important;
         line-height: 2rem;
-        letter-spacing: -0.025em;
+        letter-spacing: unset;
         font-weight: 700!important;
 }
 .skip-area h2 {
@@ -175,20 +182,24 @@ h1 {
 .Angled + .Rectangular h2, .Angled + style + .Rectangular h2 {
     color: white!important
 }
-.purple h2 {
-    color: var(--dark-purple);
+.purple h2, .purple .h2 {
+    /* color: var(--dark-purple); */
+    color: #3C0607
 }
 
 .pink h2 {
-    color: #de4f4f;
+    /* color: #de4f4f; */
+    color: #3C0607
 }
 
 .green h2 {
-    color: var(--dark-green);
+    /* color: var(--dark-green); */
+    color: #3C0607
 }
 
 .blue h2 {
-    color: var(--dark-blue);
+    /* color: var(--dark-blue); */
+    color: #3C0607
 }
 .cms .partials .yup section:last-of-type h2 {
     color: white;

@@ -1,28 +1,41 @@
 {{ define "main" }}
-<style>
-  footer:before {
-    border-bottom: 100px solid var(--dark-purple);
-}
 
-footer {
-    background-color: var(--dark-purple);
-}
-</style>
-
-<section class="center ph3 content purple article"> <!-- max-w-7xl mx-auto -->
+<section class="top-section-new center ph3 content purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative"> <!-- max-w-7xl mx-auto -->
 <!-- {{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "backgroundcolor" "multi" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }} -->
 
 
-<div id="top-section" class="Angled purple mb-20">
-    <div class="max-w-7xl mx-auto top-section-content">
+<div id="top-section-new" class="purple mb-20">
+    <!-- <div class="max-w-7xl mx-auto top-section-content">
   <h1 class="text-4xl leading-none tracking-tight lg:text-6xl md:text-5xl sm:text-4xl"><b>{{ .Params.title}}</b></h1>
 <br>
   <div class="notice"><span aria-hidden="true">*</span><div class="">{{.Params.preview_desc}}</div></div>
 
-</div>
+</div> -->
+
+<div class="wrapper" style="padding-top: .75rem; position: relative">
+
+  <div class="h1-category-wrapper"><span class="h1-category">
+    Published {{ .Params.date.Format "02 January 2006" }} 
+
+    {{if .Params.newdate}}
+	| <span>Updated {{ with .Params.newdate }}
+		{{ dateFormat "02 January 2006" . }}
+		{{ end }}</span>
+    {{ end }}
+
+
+
+
+
+</span></div>
+  <h1>{{ .Params.title}}</h1>
+  
+  <blockquote class="h2"><i>{{.Params.preview_desc}}</i></blockquote>
+  
+  </div>
 </div>
 
-<div style="max-width: 1600px; margin-left: auto; margin-right: auto; background-color: white; padding: 2em">
+<div style="max-width: 1600px; margin-left: auto; margin-right: auto; padding: 2em; padding-left: 5rem; color: #3C0607;">
 {{ .Content }}</div>
 </section>
 

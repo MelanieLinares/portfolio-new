@@ -1,130 +1,68 @@
 {{ define "main" }}
 
 {{ if eq (relURL .URL) ("/article/") }}
-<style>
-  footer:before {
-    border-bottom: 100px solid var(--dark-purple);
-}
 
-footer {
-    background-color: var(--dark-purple);
-}
-</style>
-<!-- {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "backgroundcolor" "green" "title" "Articles" "subtitle" "this is a subtitle" "heroP" "If you have questions on any of these projects or would like to discuss how I may be right for your project please " "heroPlinktext" "get in touch" "heroPlinkurl" "/about") }}
+<section class="top-section-new center ph3 content purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
 
+<div class="wrapper" style="padding-top: .75rem; position: relative">
 
-<b>articles landing page</b> -->
+<div class="h1-category-wrapper"><span class="h1-category">I occassionally write things</span></div>
+<h1>Articles about <mark>ux & development</mark></h1>
 
-<section class="center ph3 content purple">
+<div class="h2">Looking specifically for short-format and blog content? Check out the <a href="/tags/bitesize/" class="underline">#bitesize</a> tag.</div>
 
-  <div class="shapes" style="pointer-events: none; position: absolute;
-  top: 0;
-  z-index: 1;
-  left: 0;
-  width: 95.33%;
-  opacity: .5;">
-  
-    <div class="cross cross1" data-wh="20">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  
-    <div class="circle crc2"></div>
-  
-    <div class="cross cross2">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  
-  </div>
-
-  <div id="top-section" class="Angled purple mb-20 articles">
-    <div class="max-w-7xl mx-auto top-section-content">
-  <h1 class="text-4xl leading-none tracking-tight lg:text-6xl md:text-5xl sm:text-4xl"><b>Articles about UX and development </b></h1>
-  
-    <p><span class="text-xl">
-      
-      <p class="notice"><span aria-hidden="true">*</span>Looking specifically for short-format and blog content? Check out the <a href="/tags/bitesize/" class="underline">#bitesize</a> and <a href="/tags/reference/" class="underline">#reference</a> tags.</p>
-  </div>
-  
 </div>
-</section>
 
+</section>
 {{ end }}
 
 {{ if eq (relURL .URL) ("/post/") }}
-<style>
-  footer:before {
-    border-bottom: 100px solid var(--dark-blue);
-}
 
-footer {
-    background-color: var(--dark-blue);
-}
-</style>
-<!-- {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "backgroundcolor" "purple" "title" "Work case studies" "subtitle" "Here are some of my recent projects and the process behind them" "heroP" "If you have questions on any of these projects or would like to discuss how I may be right for your project please " "heroPlinktext" "get in touch" "heroPlinkurl" "/about") }}
+<section class="top-section-new center ph3 content blue" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
 
-<b>work landing page</b> -->
+<div class="wrapper" style="padding-top: .75rem; position: relative">
 
-<section class="center ph3 content blue">
+<div class="h1-category-wrapper"><span class="h1-category">Professional projects</span></div>
+<h1>Recent work & <mark>case studies</mark></h1>
 
-  <div class="shapes" style="pointer-events: none; position: absolute;
-  top: 0;
-  z-index: 1;
-  left: 0;
-  width: 95.33%;
-  opacity: .5;">
-  
-    <div class="cross cross1" data-wh="20">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  
-    <div class="circle crc2"></div>
-  
-    <div class="cross cross2">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  
-  </div>
-
-  <div id="top-section" class="Angled blue mb-20 work">
-    <div class="max-w-7xl mx-auto top-section-content">
-  <h1 class="text-4xl leading-none tracking-tight lg:text-6xl md:text-5xl sm:text-4xl"><b>Recent work & case studies</b></h1>
-
-  <h2 class="text-3xl leading-none tracking-tight lg:text-4xl md:text-5xl sm:text-4xl max-w-7xl homepage" style="display:block; max-width: 800px!important; word-spacing: -0.25rem;letter-spacing: -0.06em;line-height: 1; font-family: 'JetBrains Mono'; margin-bottom: .5em">My work focuses on digital accessibility and ux-focused development <strong>for the web</strong>.</h2>
-  <br>
-  <p class="notice mb-12"><span aria-hidden="true">*</span>Looking for mobile app or desktop-application focused work? <a href="mailto:mnmclaughlin0@gmail.com" class="underline">Send me a message</a> and we can chat about other projects I've worked on.</p>
-
+<div class="h2">My work focuses on digital accessibility & ux-focused development for the web.</div>
+<p>Looking for mobile app or desktop-application focused work? <a href="/" class="underline">Send me a message</a> and we can chat about other projects I've worked on.</p>
 
 </div>
-</div>
+
 </section>
-
 {{ end }}
 
-<section class="max-w-7xl mx-auto center mb-20">
+{{ if eq (relURL .URL) ("/post/") }} 
+
+<section class="wrapper mx-auto center mb-20">
   <ul class="flex-ns flex-wrap mhn1-ns pa3 flex">
       {{ range (.Paginator 7).Pages }}
           <li class="w-3/6 ph1-ns">
-            {{ .Render "li"}}
+            {{ .Render "li_post"}}
           </li>
       {{ end }}
   </ul>
 
-  <!-- <div class="pa3 w-100">If you are interested in learning more about the type of teams I enjoy working with, please introduce yourself over on LinkedIn and let’s chat!</div> -->
+{{ end }}
+
+{{ if eq (relURL .URL) ("/article/") }}
+
+ <section class="wrapper mx-auto center mb-20">
+  <ul class="flex-ns flex-wrap mhn1-ns pa3 flex">
+      {{ range (.Paginator 7).Pages }}
+      <li class="w-full ph1-ns">
+          <div class="article-card">
+            {{ .Render "li_article"}}
+          </div>
+        </li>
+      {{ end }}
+  </ul>
+
+  {{ end }}
 
   {{ partial "pagination" . }}
-</section>
+</section> 
 
 {{end}}
 

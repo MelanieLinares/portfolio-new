@@ -1,76 +1,75 @@
 {{ define "main" }}
 
-<!-- <div id="multi" class="pv5 pv6-l ph3 bg-center cover hero" style="background-image: url('/img/blog-index.jpg')">
-    <div class="mw7 center ph3">
-      <div class="db mb3">
-        <div class="mw7 relative bg-fix-primary mb3">
-          <h1 class="f2 f1-l b di lh-title mb3 white mw6 bg-primary">
-            Articles and Case Studies by category: {{ .Title }}
-          </h1>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <style>
+  <!-- <style>
     .article-block.no-underline.pa3.br1.mb2.db.w-50 {
         margin-left: unset;
         margin-right: unset;
         border: 1px solid lightgray;
         margin-bottom: 1.5em
     }
-  </style>
+  </style> -->
 
-  <section class="max-w-7xl mx-auto" style="padding-top:77px; margin-top: 50px; overflow-y: hidden;">
+<section class="top-section-new center ph3 content purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
 
-    <h1 class="text-4xl leading-none tracking-tight text-black lg:text-6xl md:text-5xl sm:text-4xl mb-8"><b>Tagged as "{{ .Title }}"</b></h1>
-    <p class="mb-20"><a href="/tags">View all tags</a></p>
+  <div class="wrapper" style="padding-top: .75rem; position: relative">
+  
+  <div class="h1-category-wrapper"><span class="h1-category">I occassionally write things</span></div>
+  <h1>Tagged as <mark>"{{ .Title }}"</mark></h1>
+  
+  <p class="mb-20"><a href="/tags">View all tags</a></p>
+  
+  </div>
+  
 
-<div class="mw7 center mb-20">
-  <ul class="flex-ns flex-wrap mhn1-ns pa3 flex">
+
+
+  <section class="wrapper mx-auto center mb-20">
+  <!-- <ul class="flex-ns flex-wrap mhn1-ns pa3 flex"> -->
+    <ul class="mhn1-ns pa3"></ul>
       {{ range (.Paginator 6).Pages.ByPublishDate.Reverse }}
-          <li class="article-block no-underline pa3 br1 mb2 db w-50 w-3/6 ph1-ns">
+          <li class="no-underline pa3 br1 mb2 db w-50 w-3/6 ph1-ns">
            
-            
+            <div class="article-card">
+              <div class="article-block no-underline pa3 br1 mb2 db w-50"> 
 
 
 
-              <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>
-              <h2><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h2>
-              <p><b>{{ .Params.client }}</b></p>
-              <p class="">
-                <span class="db"><span>{{ .Date.Format "January 2006" }}
-              -
-              {{if .Params.newdate}}
-              <span>		{{ with .Params.newdate }}
-                {{ dateFormat "January 2006" . }}
-                {{ end }}</span>
-              {{else}}
-              {{if .Params.client }}
-              <span>ongoing</span>
-              {{ end }}
+            <!-- {{if .Params.thumbnail}}<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>{{ end }} -->
 
-              {{end}}
-            </span>
+              <div style="display:flex; font-family: 'JetBrains Mono'; font-size: .9rem">
+
                 
-                <!-- | {{.Params.duration }} -->
-                <!-- {{if .Params.urllink}}
-                <span class="db"><a class="link primary" href="{{ .Params.urllink }}" target="_black">View Live</a></span>	{{end}}		 -->
-              </p>
+                <p class="">
+                  <span class="db"><span>Published {{ .Date.Format "02 January 2006" }}
+                {{if .Params.newdate}}
+                | <span>Updated {{ with .Params.newdate }}
+                  {{ dateFormat "02 January 2006" . }}
+                  {{ end }}</span>
+                {{else}}
+                {{if .Params.client }}
+                <span>ongoing</span>
+                {{ end }}
+              {{end}}
+              </span>
+                </p>
+                
+                {{if .Params.tags}}	
+                <ul class="tags"> 
+                  {{ range (.GetTerms "tags") }}
+                    <li><a href="{{ .Permalink }}" class="px-3 text-base text-indigo-500 border border-indigo-500 undefined">{{ .LinkTitle }}</a></li>
+                   {{ end }}
+                </ul>{{ end }}
+                </div>
 
-              <!-- <p>{{ .ReadingTime  }} minute read</p> -->
-            
-              
+                <h2><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h2>
 
-
-
-
+                </div></div>
           </li>
       {{ end }}
   </ul>
 
   {{ partial "pagination" . }}
-</div>
+</section>
 
 </section>
 

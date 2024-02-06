@@ -136,6 +136,10 @@ a {
     padding-top: 0.35rem;
 }
 
+.p-1rem {
+    padding: 1rem 1.75rem;
+}
+
 
 
 
@@ -967,11 +971,11 @@ dd, dl, p {
     line-height: 1.75rem;
 }
 
-.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+/* .space-y-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
+} */
 
 .text-base {
     font-size: 1rem;

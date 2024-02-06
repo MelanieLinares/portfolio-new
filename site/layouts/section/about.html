@@ -3,37 +3,7 @@
   background: url(img/white-border-arrow.png);
   background-repeat: no-repeat;
 }</style>
-
-<!-- {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "backgroundcolor" "blue" "title" "About me & what I love to do" "subtitle" "I'm a front-end UX/UI developer with 7+ years of experience designing and developing for the web" "heroP" "If you have questions on any of these projects or would like to discuss how I may be right for your project please " "heroPlinktext" "get in touch" "heroPlinkurl" "/about") }} -->
-
-
-
-<section class="center ph3 content green mb-20">
-
-  <div class="shapes" style="pointer-events: none; position: absolute;
-  top: 0;
-  z-index: 1;
-  left: 0;
-  width: 95.33%;
-  opacity: .5;">
-  
-    <div class="cross cross1" data-wh="20">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  
-    <div class="circle crc2"></div>
-  
-    <div class="cross cross2">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  
-  </div>
+<!-- <section class="center ph3 content green mb-20">
 
   <div id="top-section" class="Angled green mb-52 about">
     <div class="max-w-7xl mx-auto top-section-content">
@@ -47,7 +17,6 @@
     
     <p class="mt-8">As part of the <a href="https://www.levelaccess.com" class="underline">Level Access</a> delivery team as an Accessibility Consultant I work with cross-functional teams and directly with clients to ensure products are accessible and provide a great user experience, beyond WCAG guidelines.</p> <p>Previously I was an Inclusion and Diversity Event Lead and Accessibility and Inclusivity Design team member at <a
       href="https://www.insight.com" class="underline">Insight</a>.</p>
-    <!-- <p class="mt-4 notice"><span aria-hidden="true">*</span>Check out my <a href="/files/MelanieLinares-Resume.pdf" class="underline">résumé</a> or find me on <a href="https://www.linkedin.com/in/melanie-linares-79845553" class="underline">LinkedIn</a>.</p> -->
   
     <div class="flex mt-5">
     <a href="/post" style="margin-right: 1rem" class="skip card-v8 homepage bg radius-lg text-center">
@@ -60,8 +29,58 @@
 
 </div>
 </div>
-</section>
+</section> -->
 
+<section class="top-section-new center ph3 content green" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
+
+  <div class="wrapper flex" style="padding-top: .75rem; position: relative">
+  
+    <div>
+  <div class="h1-category-wrapper"><span class="h1-category">Hey, I'm Mel Linares</span></div>
+  <h1>Accessibility professional, ux developer, & <mark>mentor</mark></h1>
+  
+  <div class="h2">As part of the <a href="/" class="underline">Level Access</a> delivery consulting team I work with brandsd and government agencies to ensure UX and accessibility are baked-in to digital products. <span aria-hidden="true">🍞✨</span></div>
+
+  <p>I started my accessibility and usability journey when I moved to Raleigh, NC to study web & graphic design. 2012 was the year I landed my first full-time job after years of freelancing gigs. During this job I led the charge in a responsive-first design and code overhaul of the company's existing site.</p>
+
+<p>I learned a lot during that first job! How to pitch an idea, how to lead with data, how to rally a group of stubborn developers and stakeholders, how to run a user study, and how to own a project start to finish. Mostly I learned that <strong>I have a knack for leadership and a love of accessibility.</strong></p>
+
+<br>
+
+<div class="inline-horizontal-links {{.Params.backgroundcolor}}">
+  <a href="https://drive.google.com/file/d/1wy-sYCgWdrL9d0tpPKvTUyMnO6VhF5qL/view?usp=sharing" style="margin-right: 1rem" class="skip card-v8 homepage bg radius-lg text-center">
+    <span class="">check out my resume {{ partial "external" }}</span>
+</a>
+<a href="https://www.linkedin.com/in/melanie-linares-79845553/" id="retro" style="min-width: 251px;" class="retrospective skip card-v8 homepage bg radius-lg text-center">
+  <span class="">find me on linkedin {{ partial "external" }} </span>
+</a>
+
+<div style="right: -4rem;position: relative;top: -2.4rem;z-index: -1;">
+  <img src="/img/test-capture2.png" style="object-fit: cover; object-position: top center; min-width: 40rem; max-width: 45rem; height: 100%; width: 100%;">
+  </div>
+</div>
+
+  </div>
+  <div style="width: 102rem; max-height: 45rem; padding-left: 11.5rem; position: relative">
+    <img src="/img/test-capture.png" style="object-fit: cover; object-position: top center; min-height: 40rem; max-height: 45rem; height: 100%; width: 100%;">
+  <div class="info-block flex">
+    <div class="pr-3">
+    <span class="h2" style="font-family: 'Poppins', sans-serif;">11+ <small class="h2">years</small></span><small class="h2">building the web</small>
+    </div>
+    <div>
+    <span class="h2" style="font-family: 'Poppins', sans-serif;">120+</span><small class="h2">companies consulted</small>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+  
+  </section>
+
+
+
+<!-- 
 <section id="link-section" class="-mt-64">
 
   <div class="">
@@ -80,36 +99,35 @@
           </div>
           <div class="relative aspect-[9/10] w-44 flex-none  sm:w-72 ">
               <img alt="black dog with white fur around face lazilyrelaxing on a grey couch" src="/img/about-dog.jpeg" width="4240" height="2384" decoding="async" data-nimg="1" class="overflow-hidden sm:rounded-2xl rotate-2 rounded-xl absolute inset-0 h-full w-full object-cover" loading="lazy" style="color:transparent">
-<!-- Modal -->
 <button id="modal-trigger" class="absolute bottom-0 text-sm px-0 py-3 underline right-0 -mb-16 mr-20 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
 <span aria-hidden="true">+</span> view personal pinboard
 </button>
           </div>
-      </div>
+      </div>-->
       <!-- <button id="modal-trigger" class="absolute bottom-0 text-sm px-0 py-3 underline right-0 -mb-16 mr-20 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
         <span aria-hidden="true">+</span> view personal pinboard
         </button> -->
-  </div>
+  <!-- </div>
 
-  </section>
+  </section>  -->
 
-<section class="max-w-7xl mx-auto pt-6">
-  <h2 class="mt-20 block">What I'm up to:</h2>
+<section class="mx-auto pt-6 flex wrapper">
+  <h2 class="mt-20 block">What I'm up to <span style="display: block">[during the week]</span></h2>
 
-  <div class="mt-0 mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-    <div class="lg:pr-8 lg:pt-4">
-      <div class="lg:max-w-lg">
-        <h3 class="mt-8 text-2xl leading-none tracking-tight lg:text-3xl md:text-4xl sm:text-3xl max-w-7xl homepage" style="display:block; max-width: 825px!important; word-spacing: -0.5rem;letter-spacing: -0.095em;line-height: 1; font-family: 'JetBrains Mono'; margin-bottom: .5em; font-weight: 200;">During the week</h3>
-        <dl class="mt-4 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+  <div class="wrapper mt-0 mx-auto grid max-w-2xl gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none">
+    <div class="lg:pt-4">
+      <div class="">
 
-          <div class="relative pl-20">
+        <dl class="mt-4 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none flex col about-up-to" style="max-width: 70rem">
+
+          <div class="relative pl-20 p-1rem">
             <dt class="font-semibold text-gray-900">
               <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/virtual.png">
               I conduct remote design reviews
             </dt>
             <dd>Part of my work at Level Access is assessing prototypes and design systems for UX issues live with clients.</dd>
           </div>
-          <div class="relative pl-20">
+          <div class="relative pl-20 p-1rem">
             <dt class="font-semibold text-gray-900">
               <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/audit.png">
               I audit websites, apps, and shareable digital files
@@ -117,7 +135,7 @@
             <dd>Reports (including VPATs) are created and shared with clients that include specific WCAG notes and product recommendations. </dd>
           </div>
 
-          <div class="relative pl-20">
+          <div class="relative pl-20 p-1rem">
             <dt class="font-semibold text-gray-900">
               <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/space.png">
               I am improving Level Access' methodology
@@ -125,7 +143,7 @@
             <dd>Accessibility + Agile! Team Mercury is improving the auditing process for both consultants and clients.</dd>
           </div>
 
-          <div class="relative pl-20">
+          <div class="relative pl-20 p-1rem">
             <dt class="font-semibold text-gray-900">
               <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/highfive.png">
               I mentor individuals and teams
@@ -139,108 +157,63 @@
         </dl>
       </div>
     </div>
-    <div class="lg:pr-8 lg:pt-4">
-      <div class="lg:max-w-lg">
-        <h3 class="mt-8 text-2xl leading-none tracking-tight lg:text-3xl md:text-4xl sm:text-3xl max-w-7xl homepage" style="font-weight: 200; display:block; max-width: 825px!important; word-spacing: -0.5rem;letter-spacing: -0.095em;line-height: 1; font-family: 'JetBrains Mono'; margin-bottom: .5em; font-weight: 200">When I'm not working</h3>
-        <dl class="mt-4 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+  </div>
+</section>
 
-          <div class="relative pl-20">
+<section class="mx-auto pt-6 flex wrapper" style="flex-direction: row-reverse">
+  <h2 class="mt-20 block">What I'm up to <span style="display: block">[when offline]</span></h2>
+
+  <div class="wrapper mt-0 mx-auto grid max-w-2xl gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none">
+    <div class="lg:pt-4">
+      <div class="">
+
+        <dl class="mt-4 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none flex col about-up-to" style="max-width: 70rem">
+
+          <div class="relative pl-20 p-1rem">
             <dt class="font-semibold text-gray-900">
-              <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/boardgame.png">
-              I enjoy playing and teaching how to play boardgames
+              <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/virtual.png">
+              I conduct remote design reviews
             </dt>
-            <dd>Fun Fact: Back in 2019 I was invited to Gencon (gaming convention) to be a gamemaster.</dd>
+            <dd>Part of my work at Level Access is assessing prototypes and design systems for UX issues live with clients.</dd>
+          </div>
+          <div class="relative pl-20 p-1rem">
+            <dt class="font-semibold text-gray-900">
+              <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/audit.png">
+              I audit websites, apps, and shareable digital files
+            </dt>
+            <dd>Reports (including VPATs) are created and shared with clients that include specific WCAG notes and product recommendations. </dd>
           </div>
 
-          <div class="relative pl-20">
+          <div class="relative pl-20 p-1rem">
             <dt class="font-semibold text-gray-900">
-              <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/rollerblade.png">
-              I can be found rollerblading in the park with my dog
+              <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/space.png">
+              I am improving Level Access' methodology
             </dt>
-            <dd>This is still a new interest so I am still working to build up my strength.</dd>
+            <dd>Accessibility + Agile! Team Mercury is improving the auditing process for both consultants and clients.</dd>
           </div>
 
-          <div class="relative pl-20">
+          <div class="relative pl-20 p-1rem">
             <dt class="font-semibold text-gray-900">
-              <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/podcast.png">
-              I occassionally stream on <a href="twitch" class="underline font-bold">Twitch</a> and <a href="youtube" class="underline font-bold">YouTube</a>
+              <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/highfive.png">
+              I mentor individuals and teams
             </dt>
-            <dd>I chat about accessibility, design, or can be found playing some of my favorite casual games.</dd>
+            <dd>I guide new and growing accessibility professionals on tools, process, and development (including JSX/TSX)</dd>
           </div>
 
-          <div class="relative pl-20">
-            <dt class="font-semibold text-gray-900">
-              <img class="absolute left-0 h-14 w-14 text-indigo-600" src="/img/lego.png">
-              I love building Lego sets and custom planted terrariums
-            </dt>
-            <dd>The Lego botanical sets are my favorite.</dd>
-          </div>
+
 
 
         </dl>
       </div>
     </div>
   </div>
-
-
-  <!-- <div class="max-w-7xl mx-auto pt-6">
-  
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-      <div class="lg:pr-8 lg:pt-4">
-        <div class="lg:max-w-lg">
-          <h2>Collections</h2>
-          <p class="lg:pt-4 text-xl">I love making lists and try to keep these updated annually.</p>
-          <ul>
-            <li>
-              <a href="https://boardgamegeek.com/collection/user/melanielinares" class="underline">Boardgame collection<span aria-hidden="true"> ↗</span><span style="position: absolute; opacity: 0">external link</span></span></a>
-            </li>
-            <li>
-              <details>
-                <summary><h4 class="inline">Books I want to add to my collection</h4></summary>
-                <ul>
-                  <li>Alt-Text As Poetry, by Bojana Coklyat and Shannon Finnegan </li>
-                  <li><s>Inclusive Design Patterns, by Heydon Pickering</s> ✔️</li>
-                  <li><s>Sitting Pretty, by Rebekah Taussig</s> ✔️</li>
-                </ul>
-              </details>      </li>
-            <li>
-              <details>
-                <summary><h4 class="inline">What I want to see and do list</h4> (places, activities, etc.)</summary>
-                <ul>
-                  <li><s>participate in a GAAD (global accessibility awareness day) event</s> ✔️</li>
-                  <li>learn spanish</li>
-                  <li>learn ASL (american sign language)</li>
-                  <li><s>go to an escape room</s> ✔️</li>
-                  <li><s>go on a cruise</s> ✔️</li>
-                  <li>learn archery</li>
-                </ul>
-              </details>      </li>
-          </ul>
-              </div>
-      </div>
-      <div class="lg:pr-8 lg:pt-4">
-        <div class="">
-          <h2>Recent post I love</h2>
-          <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7026972328563490816" height="172rem" width="100%" frameborder="0" allowfullscreen="" title="Jonathan Avila, CPWA post on LinkedIn about WCAG 2.2"></iframe>
-        </div>
-      </div>
-    </div>
-  
-  </div> -->
-
-
-
-
-
 </section>
 
 
 
-<div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50  justify-center items-center" id="modal-id">
+<!-- <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50  justify-center items-center" id="modal-id">
   <div class="relative w-auto mt-20 mb-6 mx-auto transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:max-w-[500px] min-[992px]:max-w-[800px] min-[1200px]:max-w-[1140px] transform-none opacity-100">
-    <!--content-->
     <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full mt-20" role="dialog" tabindex="-1" aria-describedby="modal-title" aria-modal="true" id="modal">
-      <!--header-->
       <div class="flex items-start justify-between p-5 rounded-t">
         <h3 id="modal-title" class="text-3xl font-semibold text-white">
           Virtual Pinboard
@@ -251,11 +224,9 @@
           </span>
         </button>
       </div>
-      <!--body-->
       <div class="relative flex-auto">
         {{ partial "pinboard" }}
       </div>
-      <!--footer-->
       <div class="flex items-center justify-end p-6 rounded-b">
         <button id="second-close-btn" class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm mr-1 mb-1 ease-linear transition-all duration-150" type="button" onclick="toggleModal('modal-id')">
           Close
@@ -264,7 +235,7 @@
     </div>
   </div>
 </div>
-<div class="hidden opacity-75 fixed inset-0 z-40 bg-black" id="modal-id-backdrop" tabindex="0"></div>
+<div class="hidden opacity-75 fixed inset-0 z-40 bg-black" id="modal-id-backdrop" tabindex="0"></div> -->
 
 <!-- </div>    
 
@@ -274,31 +245,20 @@
 
 
  
-  <section class="Angled homepage-blue about">
+  <section class="Angled homepage-blue about" style="padding: 5rem 0 8rem 0">
 
-    <div class="container max-w-7xl mx-auto">
+    <div class="container wrapper mx-auto">
       <div class="flex relative _2-col-grid">
       
       <div>
-        <h3 style="font-size: 2.3rem; padding-left: 0; font-family: 'Poppins'">What skills I'm improving:</h3>
-        <ul class="two-three-col" style="margin-top: .5em">
-          <li>Accessibility audits</li>
-          <li>WAI-ARIA</li>
-          <li>VPAT creation</li>
-          <li>WCAG expertise</li>
-          <li>Accessible PDFs</li>
-          <li>Agile web development</li>
-          <li>HTML and CSS</li>
-          <li>Javascript and jQuery</li>
-          <li>Javascript frameworks</li>
-          <li>Web design</li>
-          <li>User experience design</li>
-          <li>Design reviews</li>
-          <li>Use case analysis</li>
-          <li>Rapid prototyping</li>
-          <li>Wireframing</li>
-          <li>User exerience testing</li>
-          <li>Layout design</li>
+        <h2 style="font-size: 2.3rem; padding-left: 0; font-family: 'Poppins'">Contributions & Certifications</h2>
+        <ul class="" style="margin-top: .5em">
+          <li><strong>Vue A11y Github Repo</strong> <small><a href="https://github.com/kevinlogan94/vue-a11y" class="underline">https://github.com/kevinlogan94/vue-a11y</a></small><br>Collaborative effort to create vueJS web application for demoing accessibility</li>
+          <li style="margin-top: 1em"><strong>Career Village</strong> <small><a href="https://careervillage.org/questions/tagged/accessibility" class="underline">https://careervillage.org/questions/tagged/accessibility</a></small><br>Answering student concerns about accessibility, ux, and the web</li>
+          <li style="margin-top: 1em"><strong>Amara[?] Caption Volunteer</strong> <small><a href="https://blog.amara.org/2023/12/18/how-to-transcribe-audio-to-text" class="underline">https://blog.amara.org/2023/12/18/how-to-transcribe-audio-to-text</a></small><br>Adding captions and transcriptions to open-source and educational video content</li>
+          <li style="margin-top: 1em"><strong>IAAP CPWA</strong> <small><a href="https://www.accessibilityassociation.org/s/cpwa-cpcc-was" class="underline">https://www.accessibilityassociation.org/s/cpwa-cpcc-was</a></small><br>June 2022 - Present</li>
+          <li style="margin-top: 1em"><strong>IAAP CPACC</strong> <small><a href="https://www.accessibilityassociation.org/s/cpwa-cpcc-was" class="underline">https://www.accessibilityassociation.org/s/cpwa-cpcc-was</a></small><br>June 2022 - Present</li>
+          <li style="margin-top: 1em"><strong>IAAP WAS</strong> <small><a href="https://www.accessibilityassociation.org/s/cpwa-cpcc-was" class="underline">https://www.accessibilityassociation.org/s/cpwa-cpcc-was</a></small><br>June 2022 - Present</li>
         </ul>
         
     </div>
@@ -330,13 +290,13 @@
       </div>
 
 
-      <div class="flex relative _2-col-grid mb-20">
+      <div class="flex relative _2-col-grid" style="margin-top: 2rem">
       
         <div>
           <div class="lg:pr-8">
             <div class="lg:max-w-lg">
               <h2 class="mt-0" style="font-size: 2.3rem; padding-left: 0; font-family: 'Poppins'">Collections</h2>
-              <p class="lg:pt-4 text-xl">I love making lists and try to keep these updated annually.</p>
+
               <ul>
                 <li>
                   <a href="https://boardgamegeek.com/collection/user/melanielinares" class="underline">Boardgame collection<span aria-hidden="true"> ↗</span><span style="position: absolute; opacity: 0">external link</span></span></a>
@@ -383,7 +343,54 @@
   </section>
 
 
-  </div>
-</section>
+
+
+
+
+
+
+  <section class="Angled homepage-blue" style="padding-bottom: 5rem">
+ 
+
+    <div class="container wrapper mx-auto">
+      <div class="flex relative ">
+      
+      <div>
+        <h2 style="font-size: 2.3rem; padding-left: 0; font-family: 'Poppins'">Want to get in touch?</h2>
+        
+        <div class="flex" style="gap: 4rem;">
+        <p>
+          <strong>Contact</strong><br>
+          If you'd like to reach out to chat or ask me anything, please contact me via <a href="/">email.</a>
+        </p>
+        <p>
+          <strong>Mentoring</strong><br>
+          If youwant to schedule some time to talk shop or goals check out my <a href="/">Calendly.</a>
+        </p>
+        <p>
+          <strong>Work Inquiries</strong><br>
+         I'm, not currently taking on new projects.
+        </p>
+        </div>
+    </div>
+
+      
+      </div>
+
+
+
+
+
+        </div>
+
+  
+  </section>
+
+
+
+
+
+
+
 
 {{ end }}

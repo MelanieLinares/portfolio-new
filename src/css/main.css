@@ -54,10 +54,10 @@ section {
     width: 1px;
 }
 
-body:before {
+/* body:before {
     position: absolute;
     z-index: 2;
-    top: -0.33rem;
+    top: -1.25rem;
     content: '';
     background: url(/img/portfolio-grid.png);
     display: block;
@@ -65,7 +65,12 @@ body:before {
     background-size: contain;
     pointer-events: none;
     opacity: .9;
-} 
+}  */
+
+.article-card {
+    width: 65.25rem;
+    margin-bottom: 1.75rem;
+}
 
 .me-homepage {
     background: url(/img/me-homepage.png);
@@ -85,6 +90,11 @@ body:before {
     right: calc((100vw - 99.75rem)/2);
     top: 10.6rem;
     clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+}
+
+.article-card h2 + p {
+    font-size: 1.2rem;
+    color: #3C0607
 }
 
 .bottom-angled-message {
@@ -108,9 +118,17 @@ body:before {
     padding: 90px 0 143px 0
 }
 
-.top-section-new:has(.notification) .notification {
+.top-section-new:not(.pink) {
+    padding: 125px 0 50px 0
+}
+
+.top-section-new.pink:has(.notification) .notification {
 margin-top: -90px;
-margin-bottom: 90px
+margin-bottom: 75px
+}
+
+.top-section-new.pink:not(:has(.notification)) {
+    padding: 126px 0 143px 0;
 }
 
 .notification {
@@ -140,8 +158,87 @@ section div.wrapper {
     z-index: 1
 }
 
+.article-card h2 a {
+    color: #8B5FD3
+}
+
+.overlap-img {
+    position: absolute;
+    margin-top: 15rem;
+    margin-left: -5rem;
+    margin-right: 5rem;
+    padding: 0 !important;
+}
+
+.info-block {
+    background-color: #2c1212;
+    color: white;
+    padding: 2rem;
+    position: absolute;
+    left: 1.25rem;
+    bottom: 1.85rem;
+}
+
+.sr-only {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+.about-up-to div {
+    flex: 1 1 50%;
+}
+
+.about-up-to {
+    flex-wrap: wrap;
+    border: 2px solid #5F0717;
+    color: #3D0505;
+    border-radius: calc(0.25em*2);
+    margin: 0 5rem; 
+    padding: 1rem 2rem
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.85rem !important;
+    line-height: 2rem;
+    letter-spacing: unset;
+    font-weight: 700 !important;
+}
+
+a:hover .icon, a:focus .icon {
+    filter: brightness(0) invert(1)!important;
+}
+
+.h2 + small.h2 {
+    font-size: unset!important;
+    display: block;
+    margin-bottom: unset
+}
+
+.h2 small.h2 {
+    font-size: .95rem!important;
+    display: inline-block;
+    margin-bottom: unset
+}
+
+.pr-3 {
+    padding-right: 3rem
+}
+
 h1 mark {
     background-color: unset;
+    background-repeat: no-repeat;
+    background-size: 100% 2rem;
+    background-position: bottom;
+    color: inherit
+}
+
+.pink h1 mark {
     background-image: linear-gradient(
         to bottom right,
         #c4f3db  50%,
@@ -149,10 +246,36 @@ h1 mark {
       ),
       linear-gradient(#c4f3db, #c4f3db),
       linear-gradient(to top left, #c4f3db 50%, #c4f3db 50%);
-    background-repeat: no-repeat;
-    background-size: 100% 2rem;
-    background-position: bottom;
-    color: inherit
+}
+
+.purple h1 mark {
+    background-image: linear-gradient(
+        to bottom right,
+        #BEA8FF  50%,
+        #BEA8FF 50%
+      ),
+      linear-gradient(#BEA8FF, #BEA8FF),
+      linear-gradient(to top left, #BEA8FF 50%, #BEA8FF 50%);
+}
+
+.blue h1 mark {
+    background-image: linear-gradient(
+        to bottom right,
+        #89C6FF  50%,
+        #89C6FF 50%
+      ),
+      linear-gradient(#89C6FF, #89C6FF),
+      linear-gradient(to top left, #89C6FF 50%, #89C6FF 50%);
+}
+
+.green h1 mark {
+    background-image: linear-gradient(
+        to bottom right,
+        #8EE1AF  50%,
+        #8EE1AF 50%
+      ),
+      linear-gradient(#8EE1AF, #8EE1AF),
+      linear-gradient(to top left, #8EE1AF 50%, #8EE1AF 50%);
 }
 
 .thin-angled-bar a {
@@ -237,7 +360,7 @@ body.overflow-hidden {
 }
 
 section:not(.content) {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin-bottom: 6rem
 }
 
@@ -277,6 +400,35 @@ aside li:last-of-type {
 
   p {max-width: 850px;}
 
+  .h3 {
+    font-size: 1.25rem
+  }
+
+  .article-block .h3 {
+    margin-bottom: 2rem
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 2rem
+  }
+
+  .responsibilities li {
+    padding-right: 2rem
+  }
+
+  .h2 i {
+    display: block;
+    color: #7541C8;
+    font-weight: 400
+  }
+
+  .h2:has(i) {
+    margin-top: 1rem
+  }
+
+  blockquote.h2 {
+    margin-left: 0
+  }
 
   .article #top-section.purple.Angled .max-w-7xl.mx-auto {
     max-width: unset!important;
@@ -285,9 +437,10 @@ aside li:last-of-type {
 }
 
 .article-block.no-underline.pa3.br1.mb2.db.w-50 {
-    background-color: white;
-    padding: 0.001rem 1rem 2.5rem;
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 1.75rem;
     border-radius: 0.5rem;
+    border: 2.5px solid #3C0607;
 }
 
 section.blue:has(.work) + section .article-block.no-underline.pa3.br1.mb2.db.w-50 {
@@ -461,30 +614,16 @@ h2.homepage {
     bottom: -3rem
 }
 
-footer:before {
-    border-bottom: 100px solid var(--dark-green);
-    content: '';
-    width: 100vw;
-    height: 0;
-    border-right: 100vw solid transparent;
-    margin-top: -100px;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    left: 0
-}
-
 footer div.py-10 {
     padding-bottom: 4rem;
     padding-top: 1rem
 }
 
-footer {
+/* footer {
     position: relative;
     color: white;
     background-color: var(--dark-green);
-    /* margin-top: 6em !important; */
-}
+} */
 
 .caption {
     font-family: 'JetBrains Mono', sans-serif;

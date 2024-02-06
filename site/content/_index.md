@@ -1,7 +1,7 @@
 ---
 backgroundcolor: pink
 title: Home
-h1category: design + dev + accessibility
+h1category: Design + dev + accessibility
 h1main: I help brands & agencies ensure accessibility is
 h1mainmark: baked into code & design
 subtitle: I am an accessibility focused UX developer.

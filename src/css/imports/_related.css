@@ -5,9 +5,7 @@
     line-height: 2.5rem;
 }
 
-.cms + .related-content,
-.cms + .related-content + footer,
-.cms + footer {
+.cms + .related-content {
     background-color: #1e1e38;
     color: white;
 }

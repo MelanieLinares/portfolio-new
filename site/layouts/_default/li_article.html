@@ -1,0 +1,44 @@
+<div class="article-block no-underline pa3 br1 mb2 db w-50">
+<div style="display:flex; font-family: 'JetBrains Mono'; font-size: .9rem">
+	{{ if .Params.thumbnail}}<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>{{ end }}
+	
+	<p class="">
+		<span class="db"><span>Published {{ .Date.Format "02 January 2006" }}
+	{{if .Params.newdate}}
+	| <span>Updated {{ with .Params.newdate }}
+		{{ dateFormat "02 January 2006" . }}
+		{{ end }}</span>
+	{{else}}
+	{{if .Params.client }}
+	<span>ongoing</span>
+	{{ end }}
+{{end}}
+</span>
+	</p>
+	
+	{{if .Params.tags}}	
+	<ul class="tags"> 
+		{{ range (.GetTerms "tags") }}
+			<li><a href="{{ .Permalink }}" class="px-3 text-base text-indigo-500 border border-indigo-500 undefined">{{ .LinkTitle }}</a></li>
+	   {{ end }}
+	</ul>{{ end }}
+	</div>
+
+	<h2><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h2>
+
+	<p><b></b>{{ .Params.description }}</b></p>
+
+	<p><b>{{ .Params.client }}</b></p>
+{{ if .Params.duration}}
+| {{.Params.duration }} 
+
+	
+	{{if .Params.tags}}
+	
+	<ul class="tags"> 
+		{{ range (.GetTerms "tags") }}
+			<li><a href="{{ .Permalink }}" class="px-3 text-base text-indigo-500 border border-indigo-500 undefined">{{ .LinkTitle }}</a></li>
+	   {{ end }}
+	</ul>{{ end }}{{ end }}
+	
+</div>

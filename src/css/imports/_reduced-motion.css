@@ -1,13 +1,4 @@
   /* Tones down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
   @media (prefers-reduced-motion) {
-    .circle, .cross {
-        animation: none;
-    }
-    .circle.crc2, .cross1 {
-        opacity: .3!important
-    }
 
-    .circle:not(.crc2), .cross:not(.cross1) {
-        opacity: .6!important
-    }
   }

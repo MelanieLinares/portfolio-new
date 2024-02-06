@@ -227,21 +227,19 @@ ul.project-info b {
 } */
 
 
-#top-section.purple.Angled {
+/* #top-section.purple.Angled {
 background-color: #ffffff;
-/* padding-top: 12.55em; */
-}
+} */
 
 #top-section.green {
     background-image: linear-gradient(0deg,var(--green-hex) 66%,rgba(255, 255, 255, 0));
 }
 
-#top-section.green.Angled,
+/* #top-section.green.Angled,
 #top-section.purple.Angled {
     background-color: #ffffff;
     background-image: unset;
-    /* padding-top: 12.55em; */
-}
+} */
 
 .article #top-section.purple.Angled {
     padding-top: 11rem;
@@ -263,10 +261,6 @@ background-color: #ffffff;
 /* #top-section.blue:not(.Angled) .max-w-7xl.mx-auto:after {
     display: none
 } */
-
-#top-section {
-    animation: Gradient 30s linear infinite;
-  }
 
   /* section:has(.homepage):not(#article-feed):not(.after-homepage-blue) {
     padding-bottom: 1.25rem

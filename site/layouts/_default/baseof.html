@@ -113,7 +113,59 @@
     
 
 
+    {{ if eq (.URL | truncate 14) ("/retrospective …") }}
+    <style>
+      body {
+        background-color: #FAEAEA;
+      }
+      header.transparent #navbar, header:not(.shadow-sm) #navbar {
+        background-color: #FAEAEA
+      }
+      header.transparent:not(.bg-pink) #navbar a img, header:not(.shadow-sm):not(.bg-pink) #navbar a img {
+        filter: hue-rotate(30deg) brightness(0)!important;
+      }
+      header.shadow-sm.bg-pink #navbar {
+        background-color: var(--dark-purple)!important;
+      }
+
+      header.nav #navbar a.current {
+          background-color: rgba(98, 36, 180, .25);
+      }
+
+      header.nav #navbar a:hover, header.nav #navbar a:focus {
+          background-color: rgba(98, 36, 180, .5);
+      }
+
+    </style>
+    {{end}}
+
     {{ if eq (.URL | truncate 8) ("/article …") }}
+    <style>
+      body {
+        background-color: #eeeaff;
+      }
+      header.transparent #navbar, header:not(.shadow-sm) #navbar {
+        background-color: #d3c4ff
+      }
+      header.transparent:not(.bg-pink) #navbar a img, header:not(.shadow-sm):not(.bg-pink) #navbar a img {
+        filter: hue-rotate(30deg) brightness(0)!important;
+      }
+      header.shadow-sm.bg-pink #navbar {
+        background-color: var(--dark-purple)!important;
+      }
+
+      header.nav #navbar a.current {
+          background-color: rgba(98, 36, 180, .25);
+      }
+
+      header.nav #navbar a:hover, header.nav #navbar a:focus {
+          background-color: rgba(98, 36, 180, .5);
+      }
+
+    </style>
+    {{end}}
+
+    {{ if eq (.URL | truncate 5) ("/tags …") }}
     <style>
       body {
         background-color: #eeeaff;

@@ -1,0 +1,95 @@
+
+<div style="display:flex; margin-bottom: 7.33rem">
+<div class="article-block no-underline pa3 br1 mb2 db w-50" style="margin-right: 1.75rem">
+
+<div style="display:flex; font-family: 'JetBrains Mono'; font-size: .9rem">
+
+	<h2><span class="no-underline br1 mb1 db raise w-100 htitle primary">{{ .Title }}</span></h2>
+	<!-- DO NOT DELETE -->
+		<!-- <h2><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h2> -->
+
+		<div class="tags px-3 text-base text-indigo-500 border border-indigo-500 undefined"><span>case study in progress</span>   
+		</div>
+		
+
+	<!-- {{ if .Params.thumbnail}}<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>{{ end }}
+	
+	<p class="">
+		<span class="db"><span>hiii Published {{ .Date.Format "02 January 2006" }}
+	{{if .Params.newdate}}
+	| <span>Updated {{ with .Params.newdate }}
+		{{ dateFormat "02 January 2006" . }}
+		{{ end }}</span>
+	{{else}}
+	{{if .Params.client }}
+	<span>ongoing</span>
+	{{ end }}
+{{end}}
+</span>
+	</p>
+	
+	{{if .Params.tags}}	
+	<ul class="tags"> 
+		{{ range (.GetTerms "tags") }}
+			<li><a href="{{ .Permalink }}" class="px-3 text-base text-indigo-500 border border-indigo-500 undefined">{{ .LinkTitle }}</a></li>
+	   {{ end }}
+	</ul>{{ end }} -->
+	</div>
+
+	<p class="h3">{{ .Params.preview_intro }}</p>
+
+	{{if .Params.preview_responsibilities}}<p><b>The problem:</b><br>{{ .Params.preview_problem }}</p>{{ end }}
+
+	{{if .Params.preview_responsibilities}}	
+			
+		<b>Responsibilites:</b>
+		<ul class="responsibilities" style="column-count: 2; width: max-content"> 
+			{{ range .Params.preview_responsibilities }}
+				<li>{{ . }}</li>
+		   {{ end }}
+		</ul>
+		{{ end }}
+
+	<!-- <p><b>{{ .Params.client }}</b></p>
+{{ if .Params.duration}}
+| {{.Params.duration }} 	
+	{{ end }} -->
+	
+</div>
+
+
+<div style="position: relative; z-index: 1; max-width: 37rem; min-width: 37rem">
+	{{ if .Params.thumbnail2}}<div class="article-block overlap-img no-underline pa3 br1 mb2 db w-50" style="z-index: -1"><img src="{{ .Params.thumbnail2 }}" alt="{{ .Title }}" class="radius-lg"/></div>{{ end }}
+
+	{{ if .Params.thumbnail}}<div class="article-block no-underline pa3 br1 mb2 db w-50" style="padding: 0"><img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg" style="height: 100%;"/></div>{{ end }}
+</div>
+
+</div>
+
+<!-- <div class="article-block no-underline pa3 br1 mb2 db w-50">
+	{{ if .Params.thumbnail}}<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>{{ end }}
+	<h2><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h2>
+	<p><b>{{ .Params.client }}</b></p>
+	<p class="">
+		<span class="db"><span>{{ .Date.Format "January 2006" }}
+	{{if .Params.newdate}}
+	-<span>		{{ with .Params.newdate }}
+		{{ dateFormat "January 2006" . }}
+		{{ end }}</span>
+	{{else}}
+	{{if .Params.client }}
+	<span>ongoing</span>
+	{{ end }}
+{{end}}
+</span>		
+{{ if .Params.duration}}
+| {{.Params.duration }} 
+	</p>
+	{{if .Params.tags}}
+	
+	<ul class="tags"> 
+		{{ range (.GetTerms "tags") }}
+			<li><a href="{{ .Permalink }}" class="px-3 text-base text-indigo-500 border border-indigo-500 undefined">{{ .LinkTitle }}</a></li>
+	   {{ end }}
+	</ul>{{ end }}{{ end }}	
+</div> -->

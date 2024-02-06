@@ -34,9 +34,9 @@
     margin-top: -17.75em; */
 }
 
-.Angled + .Angled:has(.flex) {
+/* .Angled + .Angled:has(.flex) {
     margin-top: -14.75em!important;
-}
+} */
 
 .Angled > .container:not(:last-child) {
     /* padding-top: 2.5em;
@@ -87,9 +87,9 @@
     background-color: white
 }
 
-.purple .Angled {
+/* .purple .Angled {
     background-color: #f8f6ff;
-}
+} */
 
 /* .Angled:before {
     content: '';
