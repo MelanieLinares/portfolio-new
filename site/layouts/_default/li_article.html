@@ -5,7 +5,7 @@
 	<p class="">
 		<span class="db"><span>Published {{ .Date.Format "02 January 2006" }}
 	{{if .Params.newdate}}
-	| <span>Updated {{ with .Params.newdate }}
+	| <span class="updated">Updated {{ with .Params.newdate }}
 		{{ dateFormat "02 January 2006" . }}
 		{{ end }}</span>
 	{{else}}
@@ -26,9 +26,12 @@
 
 	<h2><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h2>
 
-	<p><b></b>{{ .Params.description }}</b></p>
-
-	<p><b>{{ .Params.client }}</b></p>
+	{{if .Params.description}}
+	<p>{{ .Params.description }}</p>
+{{end}}
+{{if .Params.client}}
+	<p>{{ .Params.client }}</p>
+	{{end}}
 {{ if .Params.duration}}
 | {{.Params.duration }} 
 

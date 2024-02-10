@@ -38,7 +38,7 @@
 
 .cms .partials .yup section:last-of-type:has(#results) ul:not([class]), 
 .cms .partials .yup section:last-of-type:has(#results) p:not([class]) {
-    max-width: 850px;
+    max-width: 940px;
 }
 
 

@@ -36,6 +36,10 @@ header.nav.shadow-sm.bg-pink #navbar a {
   background-color: rgba(255, 255, 255, 0.35);
 }
 
+.flex.tags li:has(a) {
+  margin-bottom: 12px;
+}
+
 .flex.tags li:last-child a {
   margin-right: 0;
 }

@@ -427,7 +427,7 @@ aside li:last-of-type {
   }
 
   blockquote.h2 {
-    margin-left: 0
+    margin-left: 4rem
   }
 
   .article #top-section.purple.Angled .max-w-7xl.mx-auto {
@@ -862,7 +862,7 @@ li.rounded {
   }
 
 ul:not([class]), p:not([class]) {
-    max-width: 850px;
+    max-width: 940px;
 }
 
 .container:has(.overlap-bg) .w-full:not(.overlap-bg) {
