@@ -3,19 +3,21 @@ title: Increasing efficiency with an internal portal to manage DMV IIMS
   initiative participants
 titlebold: Increasing efficiency with an internal portal
 titlenormal: to manage DMV IIMS initiative participants
-thumbnail: img/ncdmv-thumbnail.png
+thumbnail: img/voma-2.png
+thumbnail2: img/voma-1.png
 preview: img/landing-page-hero.webp
 weight: 2
 notice: For legal reasons some details of work completed cannot be shown. Images are representational or blurred.
 preview_intro: This is a test description that needs to be updated and added to all case studies. Perhaps even added to the articles. 
 preview_responsibilities:
-  - conduct web audit
-  - test applications
-  - responsibility 3
-  - create issues
-  - remediate issues
-  - responsibility 6
-preview_problem: The North Carolina Department of Transportation (NCDOT) had a website redesign in 2018. This design established a new set of SharePoint templates and a new design system, but lacked meeting accessibility compliance. 
+  - Collaborate with designers on user flows and information architecture
+  - Build out components for new and existing design systems
+  - Test applications to cross-browser specifications and requirements
+  - Create wireframes and prototypes
+  - Utilize compilers, browser dev tools, and APIs
+  - Conduct research and created user stories for existing applications
+preview_intro: Identifying ways to optimize an internal DMV process digitally. The North Carolina Department of Transportation (NCDOT) Ignition Interlock Program team needed a new online system for managing the program. The new system would need to still support the legacy system’s data and its user’s needs.
+preview_problem: Internal DMV employees experience difficulty keeping up with backlog and lack of needed features. 
 date: 2018-08-04T00:33:20.559Z
 newdate: 2019-03-09T00:33:20.599Z
 client: NC Department of Motor Vehicles

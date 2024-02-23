@@ -12,6 +12,8 @@
 
 </div> -->
 
+{{ if in .RelPermalink "article"}}
+
 <div class="wrapper" style="padding-top: .75rem; position: relative">
 
   <div class="h1-category-wrapper"><span class="h1-category">
@@ -23,19 +25,63 @@
 		{{ end }}</span>
     {{ end }}
 
-
-
-
-
 </span></div>
   <h1>{{ .Params.title}}</h1>
+
+{{end}}
+
+
+
+
+  {{ if in .RelPermalink "retrospective"}}
+
+  <div class="wrapper" style="padding-top: .75rem; position: relative">
+
+<div class="flex">
+  <div>
+
+    <div class="h1-category-wrapper"><span class="h1-category">
+      Published {{ .Params.date.Format "02 January 2006" }} 
   
+      {{if .Params.newdate}}
+    | <span class="updated">Updated {{ with .Params.newdate }}
+      {{ dateFormat "02 January 2006" . }}
+      {{ end }}</span>
+      {{ end }}
+  
+  </span></div>
+    <h1>{{ .Params.title}}</h1>
+
+    </div>
+
+    <div style="margin-left: auto;">
+      {{ if in .Params.date "2022" }}             
+      <a href="/retrospective/2023" style="margin-right: 1rem" class="homepage bg radius-lg text-center retro">
+        <span class="">NEXT: 2023 <span aria-hidden="true">--></span></span>
+      </a> 
+      {{else}}
+      <a href="/retrospective/{{ sub .Date.Year 1 }}" style="margin-right: 1rem" class="homepage bg radius-lg text-center retro">
+        <span class=""><span aria-hidden="true"><--</span> PREVIOUS: {{ sub .Date.Year 1 }}</span>
+      </a>
+      {{end}}
+    </div>
+
+    </div>
+
+    {{end}}
+
+
+
+
+  
+  {{if .Params.preview_desc}}
   <blockquote class="h2"><i>{{.Params.preview_desc}}</i></blockquote>
+  {{end}}
   
   </div>
 </div>
 
-<div style="max-width: 1600px; margin-left: auto; margin-right: auto; padding: 2em; padding-left: 5rem; color: #3C0607;">
+<div style="margin-top: -6rem; max-width: 1600px; margin-left: auto; margin-right: auto; padding: 2em; padding-left: 5rem; color: #3C0607;">
 {{ .Content }}</div>
 </section>
 

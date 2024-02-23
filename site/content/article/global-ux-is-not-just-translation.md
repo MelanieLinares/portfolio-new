@@ -2,7 +2,7 @@
 backgroundcolor: purple
 title: Global UX is not just translation
 date: 2019-09-23T15:21:54+05:30
-newdate: 2024-02-12T04:07:54.787Z
+newdate: 
 description: Let’s discuss what needs to be considered and implemented for a successful global-ready launch
 urllink: google.com
 weight: 1

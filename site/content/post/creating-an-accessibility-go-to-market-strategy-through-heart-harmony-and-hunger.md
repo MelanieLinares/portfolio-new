@@ -3,7 +3,7 @@ title: Creating an accessibility go-to-market strategy through heart,
   harmony, & hunger
 titlebold: Creating an accessibility go-to-market strategy
 titlenormal: through heart, harmony, & hunger
-thumbnail: img/insight-a11y-thumbnail.png
+thumbnail: img/insight-1.png
 weight: 3
 preview: img/insight-preview.png
 preview2: img/insight-preview2.png
@@ -16,6 +16,14 @@ role: Accessibility Specialist
 tags:
   - accessibility
   - strategy
+preview_responsibilities:
+  - Co-develop global and regional accessibility go-to-market strategy
+  - Utilize WCAG and Section 508 accessibility standards in design and development practices
+  - Meet weekly with global accessibility team to refine auditing and development methodology
+  - Co-run accessibility mind mapping session
+  - Co-create and presented stakeholder presentation document
+preview_intro: I started with one main goal, bring change in how Insight markets accessibility. Insight’s Digital Innovation team helps companies implement digital solutions from discovery to delivery. During 2019 select individuals from the team came together to improve Insight’s stake in accessibility. My role in this go-to-market plan involved ideation, creation of a delivery deck, documentation for bid strategy, and triage.
+preview_problem: Accessibility as an integrated and offered solution was lacking. Through thoughtful internal planning and education a go-to-market strategy for Insight would be launched as a way for Insight to start taking on accessibility-specific projects. This would start with team education and would end with a client bid. 
 technology: Project Management, Triaging issues, Documentation, Digital Strategy
 duration: 7 weeks
 introheading: "I started with one main goal: bring change in how Insight markets
