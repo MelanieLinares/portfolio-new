@@ -161,7 +161,8 @@ section {
     color: white;
     font-family: 'JetBrains Mono', sans-serif;
     position: absolute;
-    width: 100%;
+    width: 102%;
+    left: -1%;
     /* bottom: 1.33em; */
     bottom: 4.25em;   
     padding: 1em;
