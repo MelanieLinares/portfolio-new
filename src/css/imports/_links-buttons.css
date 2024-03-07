@@ -162,7 +162,7 @@ header.nav.shadow-sm.bg-pink #navbar a.current {
   background-color: rgba(0, 0, 0, 0.25);
 } 
 
-#navbar a.current {
+#navbar .wrapper a.current {
   text-decoration: overline;
 }
 

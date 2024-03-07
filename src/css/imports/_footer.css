@@ -1,0 +1,13 @@
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+footer div.wrapper {
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

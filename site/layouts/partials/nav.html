@@ -1,52 +1,30 @@
 <header class="nav {{.Params.theme}}">
-	<!-- flex items-center h-20 justify-between transparent max-w-7xl mx-auto -->
 	<nav id="navbar" class="">
-		 <div class="wrapper mx-auto"> <!-- max-w-7xl mx-auto -->
-			<div class="flex justify-between">
-				<div class="flex space-x-7" style="width: 100%; font-size: .87em;">
+		 <div class="wrapper">
+			<div class="flex ">
+				<div class="flex " style="width: 100%; ">
 					<div>
-						{{ if eq (relURL .URL) ("/") }}
 						<!-- Website Logo -->
-						<a href="/index.html" class="current" aria-current="page" style="display: inline-block" aria-label="Melanie Linares home">
-							<img src="/img/logo.svg" alt="" class="h-full desktop-logo"/>
-							<img src="/img/logo-mobile.svg" alt="" class="h-full mobile-logo"/>
-							<img src="/img/logo-icon.svg" alt="" class="h-full icon-logo"/>
+						<a href="/index.html" {{ if eq .URL "/" }} class="current" aria-current="page" {{ end }} style="display: inline-block" aria-label="Melanie Linares home">
+							<img src="/img/logo.svg" alt="" class=" desktop-logo"/>
+							<img src="/img/logo-mobile.svg" alt="" class=" mobile-logo"/>
+							<img src="/img/logo-icon.svg" alt="" class=" icon-logo"/>
 						</a>
-						{{ else }}
-						<!-- Website Logo -->
-						<a href="/index.html" style="display: inline-block" aria-label="Melanie Linares home">
-							<img src="/img/logo.svg" alt="" class="h-full desktop-logo"/>
-							<img src="/img/logo-mobile.svg" alt="" class="h-full mobile-logo"/>
-							<img src="/img/logo-icon.svg" alt="" class="h-full icon-logo"/>
-						</a>
-						{{end }}
 						
 					</div>
 					<!-- Primary Navbar items -->
 					<div class="lg:flex md:flex sm:flex xs:hidden hidden items-center space-x-1 justify-end" style="width: 100%">
-						{{ if eq (relURL .URL) ("/about/") }}
-						<a href="/about" aria-current="page" class="current block h-full flex items-center px-2 border-black transition-colors duration-300 ease-in-out" aria-current="page">
-							About</a>
-						{{ else }}
-						<a href="/about" class="block h-full flex items-center px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
-							About</a>
-						{{ end }}
-			
-						{{ if eq (relURL .URL) ("/post/") }}
-						<a href="/post" aria-current="page" class="current block h-full flex items-center mx-4 px-2 border-black transition-colors duration-300 ease-in-out" aria-current="page">
-							Work</a>
-						{{ else }}
-						<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
-							Work</a>
-						{{ end }}
-			
-						{{ if eq (relURL .URL) ("/article/") }}
-						<a href="/article" aria-current="page" class="current block h-full flex items-center mx-4 px-2 border-black transition-colors duration-300 ease-in-out" aria-current="page">
-							Articles</a>
-						{{ else }}
-						<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
-							Articles</a>
-						{{ end }}					</div>
+
+						<a href="/about" {{ if eq .URL "/about/" }} class="current" aria-current="page" {{ else }} class="block h-full flex items-center px-2 border-black transition-colors duration-300 ease-in-out" {{ end }}>
+							About</a>		
+							
+						<a href="/post" {{ if eq .URL "/post/" }} class="current b" aria-current="page" {{ else }} class="block h-full flex items-center px-2 border-black transition-colors duration-300 ease-in-out" {{ end }}>
+							Work</a>	
+
+						<a href="/article" {{ if eq .URL "/article/" }} class="current " aria-current="page" {{ else }} class="block h-full flex items-center px-2 border-black transition-colors duration-300 ease-in-out" {{ end }}>
+							Articles</a>	
+					
+					</div>
 				</div>
 				<!-- Mobile menu button -->
 				<div class="lg:hidden md:hidden sm:hidden xs:flex flex items-center">
@@ -70,31 +48,22 @@
 		<div class="hidden mobile-menu">
 			<ul class="">
 				<li>
-					{{ if eq (relURL .URL) ("/about/") }}
-					<a href="/about" aria-current="page" class="block h-full flex items-center mx-4 px-2 border-black transition-colors duration-300 ease-in-out">
-						About <span aria-hidden="true" style="padding-left: .25rem">ᐊ</span></a>
-					{{ else }}
-					<a href="/about" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
-						About</a>
-					{{ end }}
+					<a href="/about" {{ if eq .URL "/about/" }} class="current block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out" aria-current="page" {{ else }} class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out" {{ end }}>
+						About 
+						{{ if eq .URL "/about/" }}<span aria-hidden="true" style="padding-left: .25rem">ᐊ</span>{{end}}
+					</a>
 				</li>
 				<li>
-					{{ if eq (relURL .URL) ("/post/") }}
-					<a href="/post" aria-current="page" class="block h-full flex items-center mx-4 px-2 border-black transition-colors duration-300 ease-in-out">
-						Work <span aria-hidden="true" style="padding-left: .25rem">ᐊ</span></a>
-					{{ else }}
-					<a href="/post" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
-						Work</a>
-					{{ end }}
+					<a href="/post" {{ if eq .URL "/post/" }} class="current block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out" aria-current="page" {{ else }} class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out" {{ end }}>
+						Work 
+						{{ if eq .URL "/post/" }}<span aria-hidden="true" style="padding-left: .25rem">ᐊ</span>{{end}}
+					</a>
 				</li>
 				<li>
-					{{ if eq (relURL .URL) ("/article/") }}
-					<a href="/article" aria-current="page" class="block h-full flex items-center mx-4 px-2 border-black transition-colors duration-300 ease-in-out">
-						Articles <span aria-hidden="true" style="padding-left: .25rem">ᐊ</span></a>
-					{{ else }}
-					<a href="/article" class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out">
-						Articles</a>
-					{{ end }}
+					<a href="/article" {{ if eq .URL "/article/" }} class="current block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out" aria-current="page" {{ else }} class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out" {{ end }}>
+						Articles 
+						{{ if eq .URL "/article/" }}<span aria-hidden="true" style="padding-left: .25rem">ᐊ</span>{{end}}
+					</a>
 				</li>			
 			</ul>
 		</div>
@@ -111,36 +80,7 @@
 </header>
 
 
-<!-- <header>
-<nav id="navbar" class="flex justify-between items-center center relative">
-	<div id="skiptocontent"><a href="{{ .Permalink }}#maincontent" class="">skip to main content</a></div>
-
-<div class="inner-nav">
-
-
-	<ul class="flex b">
-		<li>
-
-			<a href="/index.html" style="display: inline-block" aria-label="home">
-				<img src="/img/logo.svg" alt="Melanie Linares logo" class="br0 db mb0 desktop-logo"/>
-				<img src="/img/logo-mobile.svg" alt="Melanie Linares logo" class="br0 db mb0 mobile-logo"/>
-				<img src="/img/logo-icon.svg" alt="Melanie Linares logo" class="br0 db mb0 icon-logo"/>
-
-			</a>
-		</li>
-		<li><a href="/about" class="pa3 no-underline db">About</a></li>
-
-		<li><a href="/post" class="pa3 no-underline db">Work</a></li>
-
-		<li><a href="/article" class="pa3 no-underline db">Articles</a></li>
-	</ul>
-</div>
-</nav>
-</header> -->
-
-
 <script>
-
 // Enable hidden nav bar
 {
   const nav = document.querySelector(".nav");
@@ -148,7 +88,6 @@
 
   window.addEventListener("scroll", () => {
     if (lastScrollY < window.scrollY) {
-		// nav.classList.add("nav--hidden");
 		if (window.scrollY > 90) {
 		nav.classList.remove("transparent");
 		nav.classList.add("shadow-sm");
@@ -169,7 +108,6 @@
 			nav.classList.remove("nav--hidden");
 		}
     }
-
     lastScrollY = window.scrollY;
   });
 }
