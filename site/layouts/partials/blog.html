@@ -1,8 +1,9 @@
-<section class="bg-off-white pv4 max-w-7xl mx-auto" id="article-feed">
+<section class="" id="article-feed">
 	<div class="ph3 center">
 
 <div class="">
 		<div style="display: block; position: relative; margin-bottom: 3em" >
+			<h2 class="mt-20 block">Recent Work</h2>
 		<ul class="w-100 work-roll" style="padding-left: 0">
 			{{ range first 2 (where .Site.Pages "Type" "post") }}
 				<li class="ph1-ns w-50-ns block">
@@ -29,8 +30,9 @@
 			</div>
 
 			<div style="display: block;">
+				<h2 class="mt-20 block">Recent Articles</h2>
 				<ul class="w-100 mhn1-ns mb3 article-roll">
-					{{ range last 2 (where .Site.Pages "Type" "article") }}
+					{{ range first 1 (where .Site.Pages "Type" "article") }}
 						<li class="ph1-ns w-50-ns">
 							<div class="db">
 
