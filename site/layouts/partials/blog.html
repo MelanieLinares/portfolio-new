@@ -1,17 +1,33 @@
-<section class="" id="article-feed">
+<div class="" id="article-feed">
 	<div class="ph3 center">
 
 <div class="">
 		<div style="display: block; position: relative; margin-bottom: 3em" >
 			<h2 class="mt-20 block">Recent Work</h2>
 		<ul class="w-100 work-roll" style="padding-left: 0">
-			{{ range first 2 (where .Site.Pages "Type" "post") }}
+			{{ range first 4 (where .Site.Pages "Type" "post") }}
 				<li class="ph1-ns w-50-ns block">
 					<div class="flex">
 
 						<div class="article-block no-underline pa3 br1 mb2 db w-50">
 
-							<h4><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h4>
+							{{ if .Params.thumbnail}}<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>{{ end }}
+
+							{{ range first 1 (.GetTerms "tags") }}
+							{{ if in .LinkTitle "ux" }} 						
+							<small>user experience</small> 
+							{{else}}
+							<small>{{ .LinkTitle }}</small>
+							{{end}}					
+							{{ end }}
+
+
+							<h4>
+								<!-- <a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a> -->
+								<span class="link no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></span>
+							</h4>
+							<div class="tags text-indigo-500 border border-indigo-500 flex undefined" style="margin-top: -.75rem; margin-bottom: 1.5rem;"><span>case study in progress</span>   
+							</div>
 							<p>{{ .Params.preview_intro }}</p>
 						
 						
@@ -21,52 +37,49 @@
 					</div>
 				</li>
 			{{ end }}
+
+			{{ range first 1 (where .Site.Pages "Type" "article") }}
+			<li class="ph1-ns w-50-ns">
+				<div class="db">
+
+					<div class="article-block no-underline pa3 br1 mb2 db w-50">
+
+						{{ range first 1 (.GetTerms "tags") }}
+						{{ if in .LinkTitle "ux" }} 						
+						<small>user experience</small> 
+						{{else}}
+						<small>{{ .LinkTitle }}</small>
+						{{end}}					
+						{{ end }}
+
+						<!-- <div class="tags text-indigo-500 border border-indigo-500 flex undefined" style="margin-top: 1.25rem; margin-bottom: -.75rem;"><span style="background-color: rgba(255, 255, 255, 0.25);">case study in progress</span>   
+						</div> -->
+						<h4>
+							<a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a>
+							<!-- <span class="link no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></span> -->
+						</h4>
+					
+					
+						
+					</div>
+
+				</div>
+			</li>
+			{{end}}
 			</ul>
-			<!-- <a href="/post" class="btn underline" >All Case Studies</a> -->
-			<div class="flex green">
+
+			<!-- <div class="flex green">
 			<a href="/post" style="margin-left: 0" class="skip card-v8 homepage bg radius-lg text-center">
 				<span class="">All Case Studies</span>
 			</a></div>
-			</div>
-
-			<div style="display: block;">
-				<h2 class="mt-20 block">Recent Articles</h2>
-				<ul class="w-100 mhn1-ns mb3 article-roll">
-					{{ range first 1 (where .Site.Pages "Type" "article") }}
-						<li class="ph1-ns w-50-ns">
-							<div class="db">
-
-								<div class="article-block no-underline pa3 br1 mb2 db w-50">
-
-
-									<h4><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h4>
-								
-								
-									
-								</div>
-
-							</div>
-						</li>
-					{{ end }}
-					</ul>
-			<!-- <a href="/article" class="btn underline">All Articles</a> -->
-
 			<div class="flex green">
 				<a href="/article" style="margin-left: 0" class="skip card-v8 homepage bg radius-lg text-center">
 					<span class="">All Articles</span>
-				</a></div>
+				</a></div> -->
 
-		</div>
+			</div>
+
 </div>
-		<!-- <ul class="flex-ns flex-wrap mhn1-ns pa3">
-			{{ range (.Paginator 2).Pages.ByPublishDate.Reverse }}
-				<div class="w-100-ns ph1-ns flex">
-				  {{ .Render "li copy"}}
-				</div>
-			{{ end }}
-		</ul> -->
-
-			<!-- <a href="/article" class="btn raise">More Articles</a> -->
 
 	</div>
-</section>
+</div>

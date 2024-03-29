@@ -1,2 +1,17 @@
-<div class="h1-category-wrapper"><span class="h1-category">{{ .Params.h1category }}</span></div>
-<h1>{{ .Params.h1main }} <mark>{{ .Params.h1mainmark }}</mark>.</h1>
+<div class="h1-main-grid">
+    <div class="h1-category-wrapper"><span class="h1-category">{{ .Params.h1category }}</span></div>
+    <h1>{{ .Params.h1main }} <mark>{{ .Params.h1mainmark }}</mark>.</h1>
+
+
+
+
+    <div class="inline-horizontal-links {{.Params.backgroundcolor}}" style="padding-bottom: 1rem;">
+  <a href="/post" style="margin-right: 1rem" class="skip card-v8 homepage bg radius-lg text-center">
+    <span class="">check out my work</span>
+</a>
+<a href="/retrospective/2023" id="retro" style="min-width: 251px;" class="retrospective skip card-v8 homepage bg radius-lg text-center">
+  <span class="">read my 2023 retrospective</span>
+</a>
+</div>
+
+</div>

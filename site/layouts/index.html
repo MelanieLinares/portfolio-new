@@ -6,37 +6,181 @@
   background-repeat: no-repeat;
 }</style>
 
-<section class="top-section-new center ph3 content {{.Params.backgroundcolor}}" style="margin-top: 70px; margin-bottom: 6.25rem; position: relative">
+<section class="top-section-new center ph3 content {{.Params.backgroundcolor}}" style="margin-top: 70px; margin-bottom: 10rem; position: relative">
   <div class="me-homepage-bg"></div>
   <div class="notification">WCAG 2.2 is live! Learn about how to make your next project compliant.</div>
 
 <div class="wrapper" style="padding-top: .75rem; position: relative">
 
-{{ partial "h1-main" . }}
 
-<div class="inline-horizontal-links {{.Params.backgroundcolor}}">
-  <a href="/post" style="margin-right: 1rem" class="skip card-v8 homepage bg radius-lg text-center">
-    <span class="">check out my work</span>
-</a>
-<a href="/retrospective/2023" id="retro" style="min-width: 251px;" class="retrospective skip card-v8 homepage bg radius-lg text-center">
-  <span class="">read my 2023 retrospective</span>
-</a>
+
+
+  <div class="grid">
+  {{ partial "h1-main" . }}
+
+  <div class="grid-7-11">
+    <img src="/img/me-homepage.png" alt="I love working with new and existing teams" style="margin-bottom: 6rem">
+    <!-- <span class="visibly-hidden">I love working with new and existing teams</span> -->
+  </div>
+  </div>
+
+
+<div class="grid">
+  <div class="grid-1-6">
+    <span class="large-non-heading">
+      Hey, my name is Mel and I have been designing & developing for the web since 2012. I have worked with small local companies, government agencies, global enterprises, and mid-size teams as both in-house contributor and consultant.<br>
+      <strong>I am currently an Accessibility Consultant at Level Access.</strong>
+    </span>
+  </div>
+  <div class="grid-8-11">
+    <strong class="medium-non-heading">
+      I love helping teams...
+    </strong>
+    <ul>
+      <li>Ensure design systems are WCAG 2.2 compliant</li>
+      <li>Create process/branding documentation</li>
+      <li>Comply with Section 508
+    Work towards a  culture of constant growth</li>
+    <li>Take upcoming and existing projects to the next level</li>
+    </ul>
+  </div>
 </div>
 
-<h2>Hey, I’m Mel and I have been designing & developing for the web since 2012.</h2>
-<p>Advocating for accessibility is my top priority within UX and I love chatting with folks that are new to the space. The development process works best when design teams are brought in early and often. Designs become great designs when teams value accessibility!</p>
+<div class="grid">
+  <div class="info-bar">
+    <div class="info-bar-flex-container">
+      <div class="info-bar-box">
+        <div class="info-bar-box-inner">
+          <span class="h2">11+</span> years<br>building the web
+        </div>
+      </div>
+      <div class="info-bar-box">
+        <div class="info-bar-box-inner">
+          <span class="h2">6+</span> years<br>in accessibility
+        </div>
+      </div>
+      <div class="info-bar-box">
+        <div class="info-bar-box-inner">
+          <span class="h2">7+</span> years<br>advocating ux
+        </div>
+      </div>
+      <div class="info-bar-box">
+        <div class="info-bar-box-inner">
+          <span class="h2">120+</span><br>client high-fives
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
-<div class="me-homepage"><span class="visibly-hidden">I love working with new and existing teams</span></div>
-
-</div>
-
-<div class="bottom-angled-message"><div class="wrapper">You can <a href="https://calendly.com/melanielinares" class="underline">schedule a chat</a> with me to discuss accessibility and design. I hope your <span id="demo"></span> is going amazing!</div></div>
 
 </section>
 
-<div class="after-angled" style="background-color: white; width: 102%; left: -1%; height: 12rem; transform: rotate(-4deg); margin-top: -10.5rem; margin-bottom: 5rem;"></div>
+<section>
+  <div class="wrapper">
 
+    <style>
+      img {
+  max-width: 100%;
+  display: block;
+}
 
+blockquote {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+.container {
+  column-count: 3;
+  column-gap: 10px;
+}
+    </style>
+
+<div class="grid">
+  <div class="grid-1-6 grid">
+    <h2 class="grid-1-7">Folks have some really nice things to say </h2>
+  </div>
+  <div class="grid-1-7 col-2">
+
+    <div class="container" style="margin-bottom: -3rem">
+
+      <blockquote>
+        Melanie's superpower is their ability to learn and to learn fast!
+        <br>
+        <small><strong>Teamate</strong>
+        Senior Consultant</small>
+      </blockquote>
+
+      <blockquote>
+        Mel is a powerhouse! She is extremely knowledgeable and is willing to share this knowledge with others. She has helped me grow and develop my technical skills.
+        <br>
+        <small><strong>Teamate</strong>
+        Consultant</small>
+      </blockquote>
+
+      <blockquote>
+        Melanie's positive attitude and natural leadership skills allow her to take on the role of the leader/mentor with ease, inspiring and guiding her colleagues in the right direction.
+        <br>
+        <small><strong>Teamate</strong>
+        Manager</small>
+      </blockquote>
+
+      <blockquote>
+        Mel is awesome and consistently goes out of her way to support the team.
+        <br>
+        <small><strong>Teamate</strong>
+        Analyst</small>
+      </blockquote>
+
+      <blockquote>
+        Under her leadership the company more than doubled revenue over the last year or so.
+        <br>
+        <small><strong>Previous Teamate Lead</strong>
+        Sales Associate</small>
+      </blockquote>
+
+      <blockquote>
+        I very much appreciate Mel's support. She was very prepared and qualified to help address the team's questions. She ensured we were all aligned.
+        <br>
+        <small><strong>Anonymous Client</strong>
+        Product Designer</small>
+      </blockquote>
+
+    </div>
+
+  </div>
+
+  <div class="grid-8-11 col-2">
+    <img src="/img/homepage-desk.png" style="margin-left: 26px;" alt="accessibility notes and mug with tea on a wooden desk ">
+  </div>
+
+</div>
+
+</section>
+
+<!-- <section>
+  <div class="wrapper">
+
+<div class="grid">
+  <div class="grid-1-6">
+    <h2>Insight into my work</h2>
+    <p>Many of the projects I've worked on have been under NDA. While I can't share specific details about many of them, I do share insights into the work that went into them in the form of macro case studies.
+      You can get insights into the kind of work I do, the principles that guide it, and strategies that I use by exploring the writeups on my blog. There you will find project case studies, tutorials, and articles on all things front-end design engineering.</p>
+</div>
+</div>
+
+</section> -->
+
+<section class="has-fullwidth-bg">
+  <div class="wrapper" style="margin-top: 8rem">
+
+{{ partial "blog" . }}
+
+  </div>
+</section>
 
 
 

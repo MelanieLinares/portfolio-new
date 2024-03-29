@@ -12,7 +12,7 @@
 
       }
       header.shadow-sm {
-        background-color: var(--dark-green)!important;
+        background-color: #B55A63;
         color: white
       }
 
@@ -38,15 +38,15 @@
     {{ if eq (relURL .URL) ("/") }}
     <style>
     header.shadow-sm {
-      background-color: var(--dark-green)!important;
+      background-color: #B55A63!important;
       color: white
     }
     header.nav #navbar a.current {
-          background-color: rgba(0, 102, 98, .25);
+          background-color: #EBA6AA;
       }
 
       header.nav #navbar a:hover, header.nav #navbar a:focus {
-          background-color: rgba(0, 102, 98, .5);
+          background-color: #EBA6AA;
       }
     </style>
     {{end}}
@@ -55,6 +55,9 @@
     <style>
       body {
         background-color: #e5eeff;
+      }
+      body:has(.bg-pink) footer {
+        background-color: #c4d9ff
       }
       header.transparent #navbar, header:not(.shadow-sm) #navbar {
         background-color: #c4d9ff
@@ -87,6 +90,9 @@
       body {
         background-color: #ddfded;
       }
+      body:has(.bg-pink) footer {
+        background-color: #b5e5c8
+      }
       header.shadow-sm.bg-pink #navbar {
         background-color: var(--dark-green)!important;
         color: white
@@ -95,12 +101,16 @@
         filter: hue-rotate(-60deg) brightness(0);
       }
 
+      header.transparent, header:not(.shadow-sm) {
+        background-color: #b5e5c8;
+      }
+
       header.nav #navbar a.current {
-          background-color: rgba(0, 102, 98, .25);
+          background-color: #85c3ac;
       }
 
       header.nav #navbar a:hover, header.nav #navbar a:focus {
-          background-color: rgba(0, 102, 98, .5);
+          background-color: #85c3ac;
       }
       
     </style>
@@ -141,6 +151,9 @@
       body {
         background-color: #eeeaff;
       }
+      body:has(.bg-pink) footer {
+        background-color: #d3c4ff
+      }
       header.transparent #navbar, header:not(.shadow-sm) #navbar {
         background-color: #d3c4ff
       }
@@ -166,6 +179,9 @@
     <style>
       body {
         background-color: #eeeaff;
+      }
+      body:has(.bg-pink) footer {
+        background-color: #d3c4ff
       }
       header.transparent #navbar, header:not(.shadow-sm) #navbar {
         background-color: #d3c4ff

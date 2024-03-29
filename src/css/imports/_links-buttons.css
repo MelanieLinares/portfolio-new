@@ -57,7 +57,7 @@ header.nav.shadow-sm.bg-pink #navbar a {
 
 .tags li a, .tags:not(:has(a)) span {
   /* box-shadow: 0 0 0 .75px rgba(99, 102, 241, var(--tw-border-opacity)); */
-  box-shadow: 0 0 0 .75px rgba(131, 83, 208, var(--tw-border-opacity));
+  box-shadow: 0 0 0 .75px rgba(0, 0, 0, var(--tw-border-opacity));
   padding: .3rem .75rem;
   margin-right: .25rem;
   font-size: .9rem
@@ -69,8 +69,8 @@ header.nav.shadow-sm.bg-pink #navbar a {
 }
 
 .tags:not(:has(a)) span {
-  color: #3667C9;
-  box-shadow: 0 0 0 .75px rgba(54, 103, 201, var(--tw-border-opacity));
+  color: #000000;
+  box-shadow: 0 0 0 .75px rgba(0, 0, 0, var(--tw-border-opacity));
   display: block
 }
 
@@ -282,6 +282,7 @@ a.skip:hover, a.skip:focus {
 .inline-horizontal-links {
   display: block;
   position: relative;
+  margin-top: 5rem
 }
 
 .inline-horizontal-links a {
@@ -295,10 +296,6 @@ a.skip:hover, a.skip:focus {
   position: absolute;
   left: calc((100vw - 98.75rem) /2 * -1);
   top: calc(50% - 1px)
-}
-
-.inline-horizontal-links.pink:before {
-border-top: 2px solid #5F0717;
 }
 
 .inline-horizontal-links.pink a {
