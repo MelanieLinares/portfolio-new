@@ -2,211 +2,7 @@
 <html lang="{{ $.Site.Language.Lang }}">
   {{ partial "head" . }}
   <body class="sans-serif">
-
-    {{ if eq (.URL | truncate 14) ("/retrospective …") }}
-    <style>
-      blockquote {
-        font-size: 1em!important;
-        font-weight: 200!important;
-        word-spacing: -0.15rem!important;
-
-      }
-      header.shadow-sm {
-        background-color: #B55A63;
-        color: white
-      }
-
-      #top-section + div {
-        max-width: calc(100vw - 2.5em)!important;
-        /* padding: 0!important */
-      }
-      #top-section {
-        margin-bottom: 3rem!important;
-      }
-
-    #top-section + div blockquote:last-of-type {
-      /* margin-bottom: 1rem;
-      margin-top: 1rem; */
-    }
-    #top-section + div blockquote:not(:last-of-type) {
-      /* margin-bottom: .25rem;
-      margin-top: 1rem; */
-    }
-  </style>
-    {{end}}
-
-    {{ if eq (relURL .URL) ("/") }}
-    <style>
-    header.shadow-sm {
-      background-color: #B55A63!important;
-      color: white
-    }
-    header.nav #navbar a.current {
-          background-color: #EBA6AA;
-      }
-
-      header.nav #navbar a:hover, header.nav #navbar a:focus {
-          background-color: #EBA6AA;
-      }
-    </style>
-    {{end}}
-
-    {{ if eq (relURL .URL) ("/post/") }}
-    <style>
-      body {
-        background-color: #e5eeff;
-      }
-      body:has(.bg-pink) footer {
-        background-color: #c4d9ff
-      }
-      header.transparent #navbar, header:not(.shadow-sm) #navbar {
-        background-color: #c4d9ff
-      }
-      header.shadow-sm {
-        background-color: var(--dark-blue)!important;
-        color: white;
-      }
-      /* .blue #top-section:not(.Angled) .max-w-7xl.mx-auto:after {
-        border-right: solid 136vw #e5eeff !important;
-      } */
-
-      /* #top-section.purple .max-w-7xl.mx-auto:after {
-        border-right: solid 136vw #eeeaff !important;
-      }   */
-
-      header.nav #navbar a.current {
-          background-color: rgba(36, 59, 180, .25);
-      }
-
-      header.nav #navbar a:hover, header.nav #navbar a:focus {
-          background-color: rgba(36, 59, 180, .5);
-      }
-      
-    </style>
-    {{end}}
-
-    {{ if eq (relURL .URL) ("/about/") }}
-    <style>
-      body {
-        background-color: #ddfded;
-      }
-      body:has(.bg-pink) footer {
-        background-color: #b5e5c8
-      }
-      header.shadow-sm.bg-pink #navbar {
-        background-color: var(--dark-green)!important;
-        color: white
-      }
-      header:not(.bg-pink) #navbar a img {
-        filter: hue-rotate(-60deg) brightness(0);
-      }
-
-      header.transparent, header:not(.shadow-sm) {
-        background-color: #b5e5c8;
-      }
-
-      header.nav #navbar a.current {
-          background-color: #85c3ac;
-      }
-
-      header.nav #navbar a:hover, header.nav #navbar a:focus {
-          background-color: #85c3ac;
-      }
-      
-    </style>
-    {{end}}
-
-
-    
-
-
-    {{ if eq (.URL | truncate 14) ("/retrospective …") }}
-    <style>
-      body {
-        background-color: #FAEAEA;
-      }
-      header.transparent #navbar, header:not(.shadow-sm) #navbar {
-        background-color: #FAEAEA
-      }
-      header.transparent:not(.bg-pink) #navbar a img, header:not(.shadow-sm):not(.bg-pink) #navbar a img {
-        filter: hue-rotate(30deg) brightness(0)!important;
-      }
-      header.shadow-sm.bg-pink #navbar {
-        background-color: var(--dark-purple)!important;
-      }
-
-      header.nav #navbar a.current {
-          background-color: rgba(98, 36, 180, .25);
-      }
-
-      header.nav #navbar a:hover, header.nav #navbar a:focus {
-          background-color: rgba(98, 36, 180, .5);
-      }
-
-    </style>
-    {{end}}
-
-    {{ if eq (.URL | truncate 8) ("/article …") }}
-    <style>
-      body {
-        background-color: #eeeaff;
-      }
-      body:has(.bg-pink) footer {
-        background-color: #d3c4ff
-      }
-      header.transparent #navbar, header:not(.shadow-sm) #navbar {
-        background-color: #d3c4ff
-      }
-      header.transparent:not(.bg-pink) #navbar a img, header:not(.shadow-sm):not(.bg-pink) #navbar a img {
-        filter: hue-rotate(30deg) brightness(0)!important;
-      }
-      header.shadow-sm.bg-pink #navbar {
-        background-color: var(--dark-purple)!important;
-      }
-
-      header.nav #navbar a.current {
-          background-color: rgba(98, 36, 180, .25);
-      }
-
-      header.nav #navbar a:hover, header.nav #navbar a:focus {
-          background-color: rgba(98, 36, 180, .5);
-      }
-
-    </style>
-    {{end}}
-
-    {{ if eq (.URL | truncate 5) ("/tags …") }}
-    <style>
-      body {
-        background-color: #eeeaff;
-      }
-      body:has(.bg-pink) footer {
-        background-color: #d3c4ff
-      }
-      header.transparent #navbar, header:not(.shadow-sm) #navbar {
-        background-color: #d3c4ff
-      }
-      header.transparent:not(.bg-pink) #navbar a img, header:not(.shadow-sm):not(.bg-pink) #navbar a img {
-        filter: hue-rotate(30deg) brightness(0)!important;
-      }
-      header.shadow-sm.bg-pink #navbar {
-        background-color: var(--dark-purple)!important;
-      }
-
-      header.nav #navbar a.current {
-          background-color: rgba(98, 36, 180, .25);
-      }
-
-      header.nav #navbar a:hover, header.nav #navbar a:focus {
-          background-color: rgba(98, 36, 180, .5);
-      }
-
-    </style>
-    {{end}}
-
-
-
-
+  
     {{ block "header" . }}{{ partial "nav" . }}{{end}}
 
     {{ block "main" . }}{{ end }}
@@ -220,7 +16,7 @@
     
     <!-- <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script> -->
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       function toggleModal(modalID){
         document.body.classList.toggle("overflow-hidden");
         document.getElementById(modalID).classList.toggle("hidden");
@@ -229,8 +25,7 @@
         document.getElementById(modalID + "-backdrop").classList.toggle("flex");
         document.getElementById('modal').focus();
         
-      }
-      $(document).on("keyup", function (e, test) {
+      }$(document).on("keyup", function (e, test) {
         var test = document.getElementById('modal-id');
         if(e.key === "Escape") {
           
@@ -247,13 +42,11 @@
 
         if(e.key === "Tab") {
           if ((test.classList.contains('hidden')) == false) {
-                    // dummy element
+
         var dummyEl = document.getElementById('modal-id-backdrop');
         var dummyElle = document.getElementById('modal-trigger');
 
 
-        // check for focus
-        // alert("yay tab!");
 var isFocused = (document.activeElement === dummyEl);
 var isNewFocused = (document.activeElement === dummyElle);
 
@@ -272,15 +65,16 @@ if (isNewFocused) {
 
 
       });
-    </script>
+      
+    </script> -->
 
-<script>
+<!-- <script>
   const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
   
   const d = new Date();
   let day = weekday[d.getDay()];
   document.getElementById("demo").innerHTML = day;
-  </script>
+  </script> -->
 
   <!-- <script>
 var dateStart2 = new Date(2022,11,23);
@@ -294,6 +88,143 @@ if(dateStart3 < dateEnd2){
     document.getElementById('retro').style.display = "none";
 }  
   </script> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-3be6af89-9dcc-1972-a8e7-9a5cbe13ca3d" crossorigin=""></script>
+
+  <script type="text/javascript">
+
+window.addEventListener('DOMContentLoaded', () => {
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const id = entry.target.getAttribute('id');
+    if (entry.intersectionRatio > 0) {
+      document.querySelector(`nav.section-nav li a[href="test/#${id}"]`).parentElement.classList.add('active');
+    } else {
+      document.querySelector(`nav.section-nav li a[href="test/#${id}"]`).parentElement.classList.remove('active');
+    }
+  });
+});
+
+// Track all sections that have an `id` applied
+document.querySelectorAll('h2[id]').forEach((h2) => {
+  observer.observe(h2);
+});
+
+});
+
+var previousButton, nextButton;
+var slidesContainer, slides, slideDots;
+var leftMostSlideIndex = 0;
+var slideGap = 5;
+
+window.addEventListener('DOMContentLoaded', function(e) {
+  previousButton = document.querySelector('.previous');
+  nextButton = document.querySelector('.next');
+  slidesContainer = document.querySelector('.slides');
+  slides = slidesContainer.querySelectorAll('.slide');
+  slideDots = document.querySelectorAll('.navigation li button');
+
+  // Set up previous/next button behaviors
+  previousButton.addEventListener('click', previousSlide);
+  nextButton.addEventListener('click', nextSlide);
+  
+  // Ensure that all non-visible slides are impossible to reach.
+  hideNonVisibleSlides();
+  
+  // Set up the slide dot behaviors
+  slideDots.forEach(function(dot) {
+    dot.addEventListener('click', function(e) {
+      goToSlide(Array.prototype.slice.call(slideDots).indexOf(e.target));
+    });
+  });
+});
+
+/** Go to previous slide */
+function previousSlide() {
+    if(leftMostSlideIndex > 0) {
+
+      if(leftMostSlideIndex < slides.length - 3) {
+        goToSlide(leftMostSlideIndex - 1);
+      }
+      else {
+        goToSlide(leftMostSlideIndex - 3);
+      }
+  } else {
+    goToSlide(slides.length - 1);
+  }
+}
+
+/** Go to next slide */
+function nextSlide() {
+  if(leftMostSlideIndex < slides.length - 3) {
+    goToSlide(leftMostSlideIndex + 1);
+  } else {
+    goToSlide(0);
+  }
+}
+
+/** Go to a specific slide */
+function goToSlide(nextLeftMostSlideIndex) {
+  // Smoothly scroll to the requested slide
+  $(slidesContainer).animate({
+    scrollLeft: (slidesContainer.offsetWidth / 3) * nextLeftMostSlideIndex
+  }, {
+    duration: 200
+  });
+  
+  // Unset aria-current attribute from any slide dots that have it
+  slideDots.forEach(function(dot) {
+    dot.removeAttribute('aria-current');
+  });
+  
+  // Set aria-current attribute on the correct slide dot
+  slideDots[nextLeftMostSlideIndex].setAttribute('aria-current', true);
+  
+  // Update the record of the left-most slide
+  leftMostSlideIndex = nextLeftMostSlideIndex;
+  
+  // Update each slide so that the ones that are now off-screen are fully hidden.
+  hideNonVisibleSlides();
+}
+
+
+/**
+  Fully hide non-visible slides by adding aria-hidden="true" and tabindex="-1" when they go out of view
+*/
+function hideNonVisibleSlides() {
+  // Start by hiding all the slides and their content
+  slides.forEach(function(slide) {
+    slide.setAttribute('aria-hidden', true);
+    
+    slide.querySelectorAll('a, button, select, input, textarea, [tabindex="0"]').forEach(function(focusableElement) {
+      focusableElement.setAttribute('tabindex', -1);      
+    });
+  });
+  
+  // Since we know 3 slides are visible at a time, make sure that the 3 slides starting with the left-most one are not hidden to anybody.
+  if(leftMostSlideIndex < 6) {
+    for(var i = leftMostSlideIndex; i < leftMostSlideIndex + 3; i++) {
+      slides[i].removeAttribute('aria-hidden');
+      
+      slides[i].querySelectorAll('a, button, select, input, textarea, [tabindex="0"]').forEach(function(focusableElement) {
+        focusableElement.removeAttribute('tabindex');      
+      });
+    }
+    
+  // Since scrolling stops when the carousel reaches the last three slides, we should make sure that these last three slides stay visible until the user wraps or goes backwards.
+  } else {
+    for(var i = 6; i < 9; i++) {
+      slides[i].removeAttribute('aria-hidden');
+      
+      slides[i].querySelectorAll('a, button, select, input, textarea, [tabindex="0"]').forEach(function(focusableElement) {
+        focusableElement.removeAttribute('tabindex');      
+      });
+    }
+  }
+}
+        </script>
 
 </body>
 </html>

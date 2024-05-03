@@ -1,3 +1,4 @@
+
 {{ range .typed_list }}
 
     {{ if eq .type "fifty_fifty" }}
@@ -14,6 +15,8 @@
 
     {{ if eq .type "fullwidth" }}
         {{ partial "generic_content" . }}
-    {{ end }}              
+    {{ end }}  
+    
+    {{ partial "centered_text" . }}
 
 {{ end }}

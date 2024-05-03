@@ -4,7 +4,6 @@
 @import './imports/_variables';
 @import './imports/_keyframes';
 @import './imports/_reduced-motion';
-@import './imports/_pinboard';
 @import './imports/_shapes';
 @import './imports/_tags';
 @import './imports/_angled';
@@ -27,7 +26,6 @@
 @import './imports/_nav';
 @import './imports/_footer';
 @import './imports/_partials-general';
-@import './imports/_purple-section';
 @import './imports/_rectangular';
 @import './imports/_related';
 @import './imports/_tailwind';
@@ -609,7 +607,7 @@ section:not(.content):last-of-type {
 }
 
 body:has(.bg-pink) footer {
-    background-color: #F6D5D6
+    background-color: #faeaea
 }
 
 section.content, section.Angled.homepage-blue {

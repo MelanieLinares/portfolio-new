@@ -14,12 +14,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
 
 <!-- <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;600;800&display=swap" rel="stylesheet"> -->
 
@@ -28,7 +24,7 @@
 
 <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 
 	<!-- Favicons -->
 	<!-- <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
@@ -47,4 +43,118 @@
   {{ if .IsHome }}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {{ end }}
+
+
+  {{ if eq (.URL | truncate 14) ("/retrospective …") }}
+  <style>
+  body {
+	background-color: #FAEAEA;
+  }
+  </style>
+  {{end}}
+
+    {{ if or (eq (relURL .URL) ("/")) (eq (.URL | truncate 14) ("/retrospective …")) }}
+    <style>
+    header.shadow-sm {
+      background-color: #B55A63;
+      color: white
+    }
+    header.nav #navbar a.current {
+          background-color: #EBA6AA;
+      }
+      header.nav #navbar a:hover, header.nav #navbar a:focus {
+          background-color: #EBA6AA;
+      }
+      header.transparent #navbar, header:not(.shadow-sm) #navbar {
+        background-color: #FAEAEA
+      }
+      header.transparent:not(.bg-pink) #navbar a img, header:not(.shadow-sm):not(.bg-pink) #navbar a img {
+        filter: hue-rotate(30deg) brightness(0);
+      }
+      header.nav #navbar a.current {
+          background-color: rgba(235, 166, 169, 0.65)
+      }
+      header.nav #navbar a:hover, header.nav #navbar a:focus {
+		  background-color: #EBA6AA
+      }
+    </style>
+    {{end}}
+
+    {{ if eq (relURL .URL) ("/post/") }}
+    <style>
+      body {
+        background-color: #e5eeff;
+      }
+      body:has(.bg-pink) footer {
+        background-color: #e5eeff
+      }
+      header.transparent #navbar, header:not(.shadow-sm) #navbar {
+        background-color: #c4d9ff
+      }
+      header.shadow-sm {
+        background-color: var(--dark-blue);
+        color: white;
+      }
+      header.nav #navbar a.current {
+          background-color: rgba(36, 59, 180, .25);
+      }
+      header.nav #navbar a:hover, header.nav #navbar a:focus {
+          background-color: rgba(36, 59, 180, .5);
+      }      
+    </style>
+    {{end}}
+
+    {{ if eq (relURL .URL) ("/about/") }}
+    <style>
+      body {
+        background-color: #ddfded;
+      }
+      body footer, body:has(.bg-pink) footer {
+        background-color: #ddfded
+      }
+      header.shadow-sm.bg-pink #navbar {
+        background-color: var(--dark-green);
+        color: white
+      }
+      header:not(.bg-pink) #navbar a img {
+        filter: hue-rotate(-60deg) brightness(0);
+      }
+
+      header.transparent, header:not(.shadow-sm) {
+        background-color: #b5e5c8;
+      }
+
+      header.nav #navbar a.current {
+          background-color: #85c3ac;
+      }
+
+      header.nav #navbar a:hover, header.nav #navbar a:focus {
+          background-color: #85c3ac;
+      }      
+    </style>
+    {{end}}
+
+
+    {{ if or (eq (.URL | truncate 5) ("/tags …")) (eq (.URL | truncate 8) ("/article …")) }}
+    <style>
+      body {
+        background-color: #eeeaff;
+      }
+      header.transparent #navbar, header:not(.shadow-sm) #navbar {
+        background-color: #d3c4ff
+      }
+      header.transparent:not(.bg-pink) #navbar a img, header:not(.shadow-sm):not(.bg-pink) #navbar a img {
+        filter: hue-rotate(30deg) brightness(0);
+      }
+      header.shadow-sm.bg-pink #navbar {
+        background-color: var(--dark-purple);
+      }
+      header.nav #navbar a:hover, header.nav #navbar a:focus {
+          background-color: #9e82d9
+      }
+      body footer, body:has(.bg-pink) footer {
+        background-color: #eeeaff
+      }      
+    </style>
+    {{end}}
 </head>
