@@ -1,14 +1,16 @@
 .tags li {
     display: inline-block;
     /* margin: 1em .25em; */
+    margin-bottom: unset;
 }
-
-
-
 
 .tags li a:focus:focus-visible {
     box-shadow: unset;
-    outline-color: rgba(99, 102, 241, var(--tw-border-opacity));
+    /* outline-color: rgba(99, 102, 241, var(--tw-border-opacity)); */
     outline-width: 2px;
 }
 
+ul.tags {
+    top: -1.05rem;
+    right: -1.9rem;
+}

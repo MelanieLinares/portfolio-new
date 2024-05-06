@@ -22,7 +22,7 @@ header.transparent, header:not(.shadow-sm){
 }
 
 header.transparent, header:not(.shadow-sm) {
-    background-color: #FFD6D8 
+    background-color: #ffd6d8 
 }
 
 header.nav:not(.transparent) .mobile-menu {

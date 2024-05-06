@@ -132,13 +132,13 @@
     left: -3vw;
 } */
 
-.Angled.homepage-blue .container:after {
+/* .Angled.homepage-blue .container:after {
     z-index: -1;
-}
-
+} */
+/* 
 .after-homepage-blue .container:after {
     z-index: 1;
-}
+} */
 
 /* .Angled.homepage-blue:after {
     border-top: 100px solid #d3f6e3;    
@@ -158,15 +158,124 @@
     padding-bottom: .5em; */
 }
 
+.info-bar { 
+    grid-column-start: 2;
+    grid-column-end: 11;
+    background-color: #57A287;
+    padding: 30px;
+    font-size: 18.66px;
+    font-weight: bold;
+    letter-spacing: .025rem;
+    margin-top: 7rem;
+    margin-bottom: -5rem;
+    grid-row-start: 1;
+ }
 
+ .info-bar-flex-container {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .info-bar-flex-container > div {
+    color: white;
+  }
 
-/* .Angled.homepage-blue.about:before {
+  .info-bar-box {
+    flex-grow: 1; display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-bar-box-inner {
+    width: fit-content;
+    line-height: 1.5rem
+  }
+
+  .info-bar-box-inner .h2 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .info-block {
+    background-color: #2c1212;
+    color: white;
+    padding: 2rem;
+    position: absolute;
+    left: 1.25rem;
+    bottom: 1.85rem;
+}
+
+.me-homepage {
+    background: url(/img/me-homepage.png);
+    background-size: contain;
+    /* position: absolute; */
+    background-repeat: no-repeat;
+    /* margin-bottom: -2.2rem;     */
+}
+
+.me-homepage-bg {
+    height: 31rem;
+    background-image: linear-gradient(#F4CBCD 40%, #FFE1E3 77%, #faeaea);
+    content: '';
+    display: block;
+    position: absolute;
+    right: 8.5rem;
+    top: 1.85rem;
+    margin-left: -9.75rem;
+    right: calc((100vw - 99.75rem)/2);
+    top: 10.6rem;
+    clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+}
+
+.top-section-new:has(.homepage) .h1-category-wrapper + h1 {
+    z-index: 1
+}
+
+section.content, section.Angled.homepage-blue {
+    margin-bottom: 2.75rem;
+}
+
+section.Angled.homepage-blue:not(:last-child) {
+    margin-bottom: 0;
+}
+
+h2.homepage {
+    font-weight: 400
+}
+
+.Angled.homepage-blue:before {
+bottom: unset!important;
+top: -6.2rem!important;
+}
+
+.homepage-blue.about:before {
+    bottom: unset!important;
+    top: .15rem!important;
+    border-bottom: solid 6.25rem transparent!important;
+    border-top: unset!important;
+    }
+
+    .homepage-blue.about:after {
+        top: 0!important;
+    }
+    .Angled.homepage-blue:after {
+        bottom: unset!important;
+        top: -6.05rem!important;
+    }
+    
+    .homepage-blue.about:after {
+        bottom: unset!important;
+        border-bottom: solid 6.25rem transparent!important;
+        border-top: unset!important;
+    }
+
+ .Angled.homepage-blue.about:before {
     border-bottom: 100px solid black
 }
 
 .Angled.homepage-blue.about:after {
     border-top: 100px solid white
-} */
+}
 
 /* .after-homepage-blue:after {
     border-top: 104px solid white;
@@ -180,18 +289,38 @@
     left: -4vw;
 } */
 
-.after-homepage-blue {
+/* .after-homepage-blue {
     position: relative;
-    /* margin-top: -4rem; */
+    margin-top: -4rem;
     margin-top: 0;
-    /* padding-bottom: 5em */
-}
+    padding-bottom: 5em
+} */
 
-.after-homepage-blue .flex div:has(h3) {
-    /* padding-top: 3em; */
+/* .after-homepage-blue .flex div:has(h3) {
+    padding-top: 3em;
     padding-right: 3em
-}
+} */
 
-.after-homepage-blue .flex div:has(h3) + div {
+/* .after-homepage-blue .flex div:has(h3) + div {
     margin-right: -1.25rem
-}
+} */
+
+.large-non-heading {
+    font-size: 1.75rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.85rem;
+    color: #3C0607;
+  }
+
+  .large-non-heading strong,
+  .medium-non-heading {
+    font-size: 1.25rem;
+    line-height: 1.35rem;
+    font-weight: bold;
+  }
+
+  .large-non-heading strong {
+    display: block;
+    margin-top: 1rem
+  }

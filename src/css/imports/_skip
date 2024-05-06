@@ -1,0 +1,62 @@
+a.skip, .tags {
+  padding: 1em;
+  margin-top: .5em;
+  margin-right: 1rem;
+  font-family: JetBrains Mono, sans-serif;
+  font-weight: 600;
+  border-radius: calc(0.25em*2);
+  position: relative;
+
+}
+
+.tags li a, div.tags span {
+  border: 1px solid #5F0717;
+  /* padding: .25em; */
+  display: inline-block!important;
+}
+
+div.tags span {
+  margin-left: -1rem;
+}
+
+a.skip:after {
+  content: "";
+  border: 2px dashed transparent;
+  position: absolute;
+  top: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border-radius: calc(0.25em*2);
+  transition: top, left, .15s;
+  z-index: 0;
+  margin-left: -2px;
+  left: 0;
+}
+
+a.skip:hover:after, a.skip:focus:after {
+  top: -.5rem;
+  left: .5rem;
+}
+
+a.skip:hover, a.skip:focus {
+  color: white;
+  outline: 0;
+}
+
+.pink a.skip:hover, .pink a.skip:focus {
+  background-color: #c44f4f;
+  border-color: #c44f4f;
+}
+
+.pink a.skip:hover:after, .pink a.skip:focus:after {
+  border: 2px dashed #c44f4f;
+}
+
+.limegreen a.skip:hover, .limegreen a.skip:focus {
+  background-color: #006662;
+  border-color: #006662;
+}
+
+.limegreen a.skip:hover:after, .limegreen a.skip:focus:after {
+  border: 2px dashed #006662;
+}

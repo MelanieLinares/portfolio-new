@@ -754,10 +754,10 @@
         width: 0
     }
 
-    #link-section .w-44.flex-none:nth-of-type(2) img {
+    /* #link-section .w-44.flex-none:nth-of-type(2) img {
         --tw-rotate: -2deg;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    }
+    } */
 
     .NMS-Bienvenida-Collage .bloques {
         transform: unset!important;
@@ -1859,10 +1859,10 @@
         width: 0
     }
 
-    #link-section .w-44.flex-none:nth-of-type(2) img {
+    /* #link-section .w-44.flex-none:nth-of-type(2) img {
         --tw-rotate: -2deg;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    }
+    } */
 
     .NMS-Bienvenida-Collage .bloques {
         transform: unset!important;

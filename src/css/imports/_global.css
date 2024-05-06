@@ -1,0 +1,176 @@
+p {
+    font-size: 18.66px
+}
+
+.visibly-hidden {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+.sr-only {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem !important;
+    line-height: 2.65rem;
+    letter-spacing: unset;
+    /* font-weight: 700 !important; */
+    color: #3C0607
+}
+
+html {
+    min-width: 280px;
+    overflow-y: auto;
+}
+
+body {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    overflow:hidden;
+}
+
+body.overflow-hidden {
+    position: fixed;
+}
+
+.padding {
+    padding: 1.5rem;
+}
+
+.padding-half-top {
+    padding-top: 1rem
+}
+
+.padding-half-bottom {
+    padding-bottom: 1rem
+}
+
+li {
+    margin-bottom: .33em;
+}
+
+aside li {
+    margin-bottom: .9em;
+    line-height: 1.4em;
+}
+
+aside li:last-of-type {
+    margin-bottom: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(50%);
+}
+
+  p {max-width: 850px;}
+
+  .h3 {
+    font-size: 1.25rem
+  }
+
+  cite {
+    font-size: .85em;
+    font-weight: 600;
+    font-style:normal;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+cite small {
+    display: block;
+    padding-left: .75em;
+}
+
+#main {
+    position: relative;
+}
+
+aside {
+    position: absolute;
+    left: 0;
+    top: -1.65em;
+}
+
+.center-text-only {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 1em;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 1.05em;
+}
+
+.left-text-only {
+    max-width: 850px;
+    padding: 1em;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: .9em;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+.caption {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 12.5px;
+    line-height: 1.65em;
+    font-style: normal;
+}
+
+em {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+}
+
+iframe:not(#iframe) {
+    border: 3px solid #d4efe1;
+    border-radius: 0.75rem;
+}
+.tooltip {
+    min-width: 150px
+}
+
+.text-white {
+    color: white!important;
+}
+
+/* .transparent {
+    --tw-bg-opacity: 0;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+} */
+
+.radius-lg {
+    --radius-lg: calc(var(--radius, 0.25em)*2);
+    border-radius: var(--radius-lg);
+}
+
+.bg {
+    --color-primary-h: 250;
+    --color-primary-s: 84%;
+    --color-primary-l: 54%;
+    --bg-o: 1;
+    background-color: hsla(var(--color-bg-h),var(--color-bg-s),var(--color-bg-l),var(--bg-o));
+}
+
+
+

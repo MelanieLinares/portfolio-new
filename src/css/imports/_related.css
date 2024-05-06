@@ -10,10 +10,6 @@
     color: white;
 }
 
-.cms.purple + .related-content #related, .cms.blue + .related-content #related {
-    color: #1e1e38;
-}
-
-.cms.green + .related-content #related {
+.cms.purple + .related-content #related, .cms.blue + .related-content #related, .cms.green + .related-content #related {
     color: #1e1e38;
 }
