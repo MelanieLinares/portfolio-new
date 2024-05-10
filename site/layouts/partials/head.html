@@ -5,8 +5,6 @@
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
     <link href="{{ relURL . }}" rel="stylesheet">
-	<!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
-	
   {{ end }}
 
 	<meta charset="utf-8">
@@ -17,24 +15,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;600;800&display=swap" rel="stylesheet"> -->
-
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
-<!-- <script src="https://cdn.tailwindcss.com"></script> -->
-
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
-
-	<!-- Favicons -->
-	<!-- <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400">
-	<meta name="theme-color" content="#fff"> -->
-
-	<!-- Open Graph -->
 	<meta property="og:type" content="business.business">
 	<meta property="og:title" content="Melanie Linares | Accessibility Professional and UX Developer">
 	<meta property="og:url" content="/">
@@ -65,9 +48,6 @@
       header.nav #navbar a:hover, header.nav #navbar a:focus {
           background-color: #EBA6AA;
       }
-      /* header.transparent #navbar, header:not(.shadow-sm) #navbar {
-        background-color: #FAEAEA
-      } */
       header.transparent:not(.bg-pink) #navbar a img, header:not(.shadow-sm):not(.bg-pink) #navbar a img {
         filter: hue-rotate(30deg) brightness(0);
       }

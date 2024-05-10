@@ -1,9 +1,4 @@
 {{ define "main" }}
-  <!-- <style>
-    .article-block.no-underline.pa3.br1.mb2.db. {
-
-    }
-  </style> -->
 
 <section class="top-section-new purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
 
@@ -20,27 +15,17 @@
 
 
   <section class="wrapper mx-auto mb-20">
-  <!-- <ul class="flex-ns flex-wrap mhn1-ns pa3 flex"> -->
     <ul class="mhn1-ns pa3">
-      {{ range (.Paginator 6).Pages.ByPublishDate.Reverse }}
-          
-           
+      {{ range (.Paginator 6).Pages.ByPublishDate.Reverse }}          
             
                 {{ if in .RelPermalink "post"}}
-
-                    <!-- //hidden content -->
 
                   {{else}}
 <li class="no-underline pa3  w-3/6 ph1-ns">
                   <div class="article-card">
                     <div class="article-block no-underline pa3 "> 
       
-      
-      
-                  <!-- {{if .Params.thumbnail}}<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>{{ end }} -->
-      
-                    <div style="display:flex; font-family: 'JetBrains Mono'; font-size: .9rem">
-      
+                    <div style="display:flex; font-family: 'JetBrains Mono'; font-size: .9rem">      
                       
                       <p>
                         <span><span>Published {{ .Date.Format "02 January 2006" }}
@@ -60,7 +45,6 @@
                       <ul class="tags"> 
                         {{ range (.GetTerms "tags") }}
                           <li><a role="none" class="px-3 text-base">{{ .LinkTitle }}</a></li>
-                          <!-- {{ .Permalink }} -->
                          {{ end }}
                       </ul>{{ end }}
                       </div>
@@ -70,8 +54,6 @@
                       </div></div>
 </li>
                 {{end}}
-
-
           
       {{ end }}
   </ul>

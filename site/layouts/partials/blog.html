@@ -9,7 +9,7 @@
 				<li class="ph1-ns block">
 					<div class="flex">
 
-						<div class="article-block overlap-img no-underline pa3 br1 mb2 db w-50">
+						<div class="article-block pa3">
 
 							{{ if .Params.thumbnail}}<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>{{ end }}
 
@@ -21,15 +21,12 @@
 							{{end}}					
 							{{ end }}
 
-
 							<h4>
-								<!-- <a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a> -->
 								<span class="link"><span>{{ .Title }}</span></span>
 							</h4>
 							<div class="tags flex" style="margin-top: -.75rem; margin-bottom: 1.5rem;"><span>case study in progress</span>   
 							</div>
-							<p>{{ .Params.preview_intro }}</p>
-						
+							<p>{{ .Params.preview_intro }}</p>					
 						
 							
 						</div>
@@ -42,7 +39,7 @@
 			<li class="ph1-ns">
 				<div>
 
-					<div class="article-block overlap-img no-underline pa3 br1 mb2 db w-50">
+					<div class="article-block pa3">
 
 						{{ range first 1 (.GetTerms "tags") }}
 						{{ if in .LinkTitle "ux" }} 						
@@ -52,11 +49,8 @@
 						{{end}}					
 						{{ end }}
 
-						<!-- <div class="tags text-indigo-500 border border-indigo-500 flex undefined" style="margin-top: 1.25rem; margin-bottom: -.75rem;"><span style="background-color: rgba(255, 255, 255, 0.25);">case study in progress</span>   
-						</div> -->
 						<h4>
 							<a href="{{ .RelPermalink }}"><span>{{ .Title }}</span></a>
-							<!-- <span class="link no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></span> -->
 						</h4>
 					
 					
@@ -67,15 +61,6 @@
 			</li>
 			{{end}}
 			</ul>
-
-			<!-- <div class="flex green">
-			<a href="/post" style="margin-left: 0" class="skip card-v8 homepage bg radius-lg text-center">
-				<span class="">All Case Studies</span>
-			</a></div>
-			<div class="flex green">
-				<a href="/article" style="margin-left: 0" class="skip card-v8 homepage bg radius-lg text-center">
-					<span class="">All Articles</span>
-				</a></div> -->
 
 			</div>
 

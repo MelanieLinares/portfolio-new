@@ -1,8 +1,4 @@
 {{ define "main" }}
-  <!-- <section class="max-w-7xl mx-auto" style="padding-top:77px; margin-top: 50px; overflow-y: hidden;">
-
-    <h1 class="text-4xl leading-none tracking-tight text-black lg:text-6xl md:text-5xl sm:text-4xl mb-20"><b>Articles and Case Study Tags</b></h1> -->
-      
 
     <section class="top-section-new purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
 
@@ -15,22 +11,12 @@
       
       </div>    
 
-
-
 <div class="wrapper mx-auto">
   <ul class="flex-ns flex-wrap flex tags">
       {{ range (sort .Pages "Title") }}
           <li class="ph1-ns flex">
-            
-
-
-
 
 	<a role="none" aria-disabled="true" class="justify-center text-sm font-semibold px-3"><span>{{ .Title }} {{ trim .Pages "Pages" }}</span></a>
-  <!-- href="{{ .RelPermalink }}"" -->
-
-
-
 
 </li>
       {{ end }}
@@ -40,11 +26,5 @@
 </div>
     
     </section>
-
-
-  <!-- <div class="pa3 w-100">If you are interested in learning more about the type of teams I enjoy working with, please introduce yourself over on LinkedIn and let’s chat!</div>
-
-  {{ partial "pagination" . }}
- -->
 
 {{end}}
