@@ -1,8 +1,7 @@
 {{ define "main" }}
-
 {{ if eq (relURL .URL) ("/article/") }}
 
-<section class="top-section-new center ph3 content purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
+<section class="top-section-new purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
 
 <div class="wrapper" style="padding-top: .75rem; position: relative">
 
@@ -18,7 +17,7 @@
 
 {{ if eq (relURL .URL) ("/post/") }}
 
-<section class="top-section-new center ph3 content blue" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
+<section class="top-section-new blue" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
 
 <div class="wrapper" style="padding-top: .75rem; position: relative">
 
@@ -35,7 +34,7 @@
 
 {{ if eq (relURL .URL) ("/post/") }} 
 
-<section class="wrapper mx-auto center mb-20">
+<section class="wrapper mx-auto mb-20">
   <ul class="flex-ns flex-wrap mhn1-ns pa3 flex">
       {{ range (.Paginator 7).Pages }}
           <li class="w-3/6 ph1-ns">
@@ -48,7 +47,7 @@
 
 {{ if eq (relURL .URL) ("/article/") }}
 
- <section class="wrapper mx-auto center mb-20">
+ <section class="wrapper mx-auto mb-20">
   <ul class="flex-ns flex-wrap mhn1-ns pa3 flex">
       {{ range (.Paginator 7).Pages }}
       <li class="w-full ph1-ns">

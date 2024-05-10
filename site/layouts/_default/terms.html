@@ -1,11 +1,10 @@
 {{ define "main" }}
-
   <!-- <section class="max-w-7xl mx-auto" style="padding-top:77px; margin-top: 50px; overflow-y: hidden;">
 
     <h1 class="text-4xl leading-none tracking-tight text-black lg:text-6xl md:text-5xl sm:text-4xl mb-20"><b>Articles and Case Study Tags</b></h1> -->
       
 
-    <section class="top-section-new center ph3 content purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
+    <section class="top-section-new purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
 
       <div class="wrapper" style="padding-top: .75rem; position: relative">
       
@@ -18,16 +17,16 @@
 
 
 
-<div class="wrapper mx-auto center -mt-4 mb-14 pb-6">
-  <ul class="flex-ns flex-wrap flex pl-0 tags">
+<div class="wrapper mx-auto">
+  <ul class="flex-ns flex-wrap flex tags">
       {{ range (sort .Pages "Title") }}
-          <li class="w-100-ns ph1-ns flex">
+          <li class="ph1-ns flex">
             
 
 
 
 
-	<a role="none" aria-disabled="true" class="inline-flex justify-center rounded-lg text-sm font-semibold px-3 text-base text-indigo-500 border border-indigo-500 undefined"><span class="f3 b lh-title primary">{{ .Title }} {{ trim .Pages "Pages" }}</span></a>
+	<a role="none" aria-disabled="true" class="justify-center text-sm font-semibold px-3"><span>{{ .Title }} {{ trim .Pages "Pages" }}</span></a>
   <!-- href="{{ .RelPermalink }}"" -->
 
 

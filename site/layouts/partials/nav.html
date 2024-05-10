@@ -1,27 +1,27 @@
 <header class="nav {{.Params.theme}}">
-	<nav id="navbar" class="">
+	<nav id="navbar">
 		 <div class="wrapper">
-			<div class="flex ">
-				<div class="flex " style="width: 100%; ">
+			<div class="flex">
+				<div class="flex" style="width: 100%; ">
 					<div>
 						<!-- Website Logo -->
 						<a href="/index.html" {{ if eq .URL "/" }} class="current" aria-current="page" {{ end }} style="display: inline-block" aria-label="Melanie Linares home">
-							<img src="/img/logo.svg" alt="" class=" desktop-logo"/>
-							<img src="/img/logo-mobile.svg" alt="" class=" mobile-logo"/>
-							<img src="/img/logo-icon.svg" alt="" class=" icon-logo"/>
+							<img src="/img/logo.svg" alt="" class="desktop-logo"/>
+							<img src="/img/logo-mobile.svg" alt="" class="mobile-logo"/>
+							<img src="/img/logo-icon.svg" alt="" class="icon-logo"/>
 						</a>
 						
 					</div>
 					<!-- Primary Navbar items -->
-					<div class="lg:flex md:flex sm:flex xs:hidden hidden items-center space-x-1 justify-end" style="width: 100%">
+					<div class="lg:flex md:flex sm:flex xs:hidden hidden items-center justify-end" style="width: 100%">
 
-						<a href="/about" {{ if eq .URL "/about/" }} class="current block" aria-current="page" {{ else }} class="block h-full flex items-center px-2 border-black transition-colors duration-300 ease-in-out" {{ end }}>
+						<a href="/about" {{ if eq .URL "/about/" }} class="current block" aria-current="page" {{ else }} class="block h-full flex items-center px-2  transition-colors duration-300 ease-in-out" {{ end }}>
 							About</a>		
 							
-						<a href="/post" {{ if eq .URL "/post/" }} class="current block" aria-current="page" {{ else }} class="block h-full flex items-center px-2 border-black transition-colors duration-300 ease-in-out" {{ end }}>
+						<a href="/post" {{ if eq .URL "/post/" }} class="current block" aria-current="page" {{ else }} class="block h-full flex items-center px-2  transition-colors duration-300 ease-in-out" {{ end }}>
 							Work</a>	
 
-						<a href="/article" {{ if eq .URL "/article/" }} class="current block" aria-current="page" {{ else }} class="block h-full flex items-center px-2 border-black transition-colors duration-300 ease-in-out" {{ end }}>
+						<a href="/article" {{ if eq .URL "/article/" }} class="current block" aria-current="page" {{ else }} class="block h-full flex items-center px-2  transition-colors duration-300 ease-in-out" {{ end }}>
 							Articles</a>	
 					
 					</div>
@@ -29,7 +29,7 @@
 				<!-- Mobile menu button -->
 				<div class="lg:hidden md:hidden sm:hidden xs:flex flex items-center">
 					<button class="outline-none mobile-menu-button" aria-label="navigation menu">
-					<svg aria-hidden="true" class=" w-6 h-6 text-gray-500 hover:text-green-500 "
+					<svg aria-hidden="true" class=" w-6 h-6"
 						x-show="!showMenu"
 						fill="none"
 						stroke-linecap="round"
@@ -46,7 +46,7 @@
 		</div>
 		<!-- mobile menu -->
 		<div class="hidden mobile-menu">
-			<ul class="">
+			<ul>
 				<li>
 					<a href="/about" {{ if eq .URL "/about/" }} class="current block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out" aria-current="page" {{ else }} class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out" {{ end }}>
 						About 

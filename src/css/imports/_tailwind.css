@@ -150,6 +150,11 @@ a {
     line-height: 1.5rem;
 }
 
+/* .text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+} */
+
 .px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -930,14 +935,11 @@ dd, dl, p {
     margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 } */
 
-.text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
 
+/* 
 .max-w-2xl {
     max-width: 42rem;
-}
+} */
 
 .flex-wrap {
     flex-wrap: wrap;

@@ -1,14 +1,14 @@
 
 <div style="display:flex; margin-bottom: 12rem">
-<div class="article-block no-underline pa3 br1 mb2 db w-50" style="margin-right: 1.75rem; width: 60rem">
+<div class="article-block pa3" style="margin-right: 1.75rem; width: 60rem">
 
 <div style="display:flex; font-family: 'JetBrains Mono'; font-size: .9rem">
 
-	<h2><span class="no-underline br1 mb1 db raise w-100 htitle primary">{{ .Title }}</span></h2>
+	<h2><span>{{ .Title }}</span></h2>
 	<!-- DO NOT DELETE -->
 		<!-- <h2><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h2> -->
 
-		<div class="tags px-3 text-base text-indigo-500 border border-indigo-500 undefined"><span>case study in progress</span>   
+		<div class="tags px-3 text-base"><span>case study in progress</span>   
 		</div>
 		
 	<!-- {{ if .Params.thumbnail}}<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>{{ end }}
@@ -59,17 +59,17 @@
 
 <div style="position: relative; z-index: 1; width: 40rem">
 	{{ if .Params.thumbnail}}
-	<div class="article-block no-underline pa3 br1 mb2 db w-50" style="padding: 0"><img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg" style="height: 100%;"/></div>
+	<div class="article-block pa3" style="padding: 0"><img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg" style="height: 100%;"/></div>
 	{{ end }}
 
 	{{ if .Params.thumbnail2}}
-	<div class="article-block overlap-img no-underline pa3 br1 mb2 db w-50" style="z-index: -1"><img src="{{ .Params.thumbnail2 }}" alt="{{ .Title }}" class="radius-lg"/></div>
+	<div class="article-block overlap-img  " style="z-index: -1"><img src="{{ .Params.thumbnail2 }}" alt="{{ .Title }}" class="radius-lg"/></div>
 	{{ end }}
 </div>
 
 </div>
 
-<!-- <div class="article-block no-underline pa3 br1 mb2 db w-50">
+<!-- <div class="article-block no-underline pa3 br1 mb2 db ">
 	{{ if .Params.thumbnail}}<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>{{ end }}
 	<h2><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h2>
 	<p><b>{{ .Params.client }}</b></p>

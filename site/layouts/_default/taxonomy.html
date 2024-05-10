@@ -1,15 +1,11 @@
 {{ define "main" }}
-
   <!-- <style>
-    .article-block.no-underline.pa3.br1.mb2.db.w-50 {
-        margin-left: unset;
-        margin-right: unset;
-        border: 1px solid lightgray;
-        margin-bottom: 1.5em
+    .article-block.no-underline.pa3.br1.mb2.db. {
+
     }
   </style> -->
 
-<section class="top-section-new center ph3 content purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
+<section class="top-section-new purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
 
   <div class="wrapper" style="padding-top: .75rem; position: relative">
   
@@ -23,7 +19,7 @@
 
 
 
-  <section class="wrapper mx-auto center mb-20">
+  <section class="wrapper mx-auto mb-20">
   <!-- <ul class="flex-ns flex-wrap mhn1-ns pa3 flex"> -->
     <ul class="mhn1-ns pa3">
       {{ range (.Paginator 6).Pages.ByPublishDate.Reverse }}
@@ -35,9 +31,9 @@
                     <!-- //hidden content -->
 
                   {{else}}
-<li class="no-underline pa3 br1 mb2 db w-50 w-3/6 ph1-ns">
+<li class="no-underline pa3  w-3/6 ph1-ns">
                   <div class="article-card">
-                    <div class="article-block no-underline pa3 br1 mb2 db w-50"> 
+                    <div class="article-block no-underline pa3 "> 
       
       
       
@@ -46,8 +42,8 @@
                     <div style="display:flex; font-family: 'JetBrains Mono'; font-size: .9rem">
       
                       
-                      <p class="">
-                        <span class="db"><span>Published {{ .Date.Format "02 January 2006" }}
+                      <p>
+                        <span><span>Published {{ .Date.Format "02 January 2006" }}
                       {{if .Params.newdate}}
                       | <span class="updated">Updated {{ with .Params.newdate }}
                         {{ dateFormat "02 January 2006" . }}
@@ -63,13 +59,13 @@
                       {{if .Params.tags}}	
                       <ul class="tags"> 
                         {{ range (.GetTerms "tags") }}
-                          <li><a role="none" class="px-3 text-base text-indigo-500 border border-indigo-500 undefined">{{ .LinkTitle }}</a></li>
+                          <li><a role="none" class="px-3 text-base">{{ .LinkTitle }}</a></li>
                           <!-- {{ .Permalink }} -->
                          {{ end }}
                       </ul>{{ end }}
                       </div>
       
-                      <h2><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h2>
+                      <h2><a href="{{ .RelPermalink }}"><span>{{ .Title }}</span></a></h2>
       
                       </div></div>
 </li>

@@ -1,11 +1,11 @@
-.fullwidth img + .caption {
+/* .fullwidth img + .caption {
     max-width: 850px;
     padding-top: 1.5em;
 }
 
 .lg\:w-1\/2 + .lg\:w-1\/2:not(.icon-with-content) .img-w-caption .caption {
     margin-bottom: 0;
-}
+} */
 
 .caption {
     position: relative;
@@ -31,11 +31,11 @@
      pointer-events: none;
  }
 
- .overlap-bg .caption {
+ /* .overlap-bg .caption {
     margin-bottom: 0
 }
 
 .fullwidth .caption:last-child {
     margin-bottom: 0;
-}
+} */
 

@@ -1,16 +1,7 @@
 {{ define "main" }}
-
-<section class="top-section-new center ph3 content purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative"> <!-- max-w-7xl mx-auto -->
-<!-- {{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "backgroundcolor" "multi" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }} -->
-
+<section class="top-section-new purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative"> 
 
 <div id="top-section-new" class="purple mb-20">
-    <!-- <div class="max-w-7xl mx-auto top-section-content">
-  <h1 class="text-4xl leading-none tracking-tight lg:text-6xl md:text-5xl sm:text-4xl"><b>{{ .Params.title}}</b></h1>
-<br>
-  <div class="notice"><span aria-hidden="true">*</span><div class="">{{.Params.preview_desc}}</div></div>
-
-</div> -->
 
 {{ if in .RelPermalink "article"}}
 
@@ -57,11 +48,11 @@
     <div style="margin-left: auto;">
       {{ if in .Params.date "2022" }}             
       <a href="/retrospective/2023" style="margin-right: 1rem" class="homepage bg radius-lg text-center retro">
-        <span class="">NEXT: 2023 <span aria-hidden="true">--></span></span>
+        <span>NEXT: 2023 <span aria-hidden="true">--></span></span>
       </a> 
       {{else}}
       <a href="/retrospective/{{ sub .Date.Year 1 }}" style="margin-right: 1rem" class="homepage bg radius-lg text-center retro">
-        <span class=""><span aria-hidden="true"><--</span> PREVIOUS: {{ sub .Date.Year 1 }}</span>
+        <span><span aria-hidden="true"><--</span> PREVIOUS: {{ sub .Date.Year 1 }}</span>
       </a>
       {{end}}
     </div>

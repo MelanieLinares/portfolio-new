@@ -9,7 +9,7 @@
 /* @import './imports/_blank'; */
 @import './imports/_blockquote';
 /* @import './imports/_blue-section'; */
-/* @import './imports/_caption'; */
+@import './imports/_caption';
 /* @import './imports/_card'; */
 /* @import './imports/_generic-content-850'; */
 /* @import './imports/_green-section'; */
@@ -356,6 +356,10 @@ body:has(.bg-pink) footer {
     margin-bottom: 2rem
   }
 
+  .article-block p:not(:last-child), .article-block .tags {
+    margin-bottom: 0!important
+  }
+
   .responsibilities li {
     padding-right: 2rem
   }
@@ -376,14 +380,14 @@ body:has(.bg-pink) footer {
 
 
 
-.article-block.no-underline.pa3.br1.mb2.db.w-50 {
+.article-block {
     background-color: rgba(255, 255, 255, 0.25);
     padding: 1.75rem;
     border-radius: 0.6rem;
     border: 2.5px solid #3C0607;
 }
 
-section.blue:has(.work) + section .article-block.no-underline.pa3.br1.mb2.db.w-50 {
+section.blue:has(.work) + section .article-block {
     padding: 1rem;
 }
 
@@ -639,7 +643,7 @@ margin-bottom: 1rem
     position:relative
 }
 
-.content:has(.shapes) + section.max-w-7xl.mx-auto.center.mb-20:not(#link-section) {
+.content:has(.shapes) + section.max-w-7xl.mx-auto.mb-20:not(#link-section) {
     padding-bottom: 3em;
 }
 
@@ -767,3 +771,21 @@ h3 span:not(.icon) {
 /* .top-section-content .flex:has(.skip) a.skip.homepage {
     margin-top: 1em;
 } */
+
+
+
+
+
+
+/* diagonal sections */
+.Angled {
+    margin-top: 2rem!important;
+    padding-top: 2rem!important;
+    padding-bottom: 3rem!important;
+    clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 3rem));
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -29,11 +29,5 @@ tags:
 technology: Manual auditing, Triaging of issues, User Interface Design, Documentation
 duration: 2 months
 
-typed_list:
-  - centered_text:
-    text: >-
-      partial: centered_text
-
-
 
 ---
