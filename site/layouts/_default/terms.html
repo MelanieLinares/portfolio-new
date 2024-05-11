@@ -16,8 +16,8 @@
       {{ range (sort .Pages "Title") }}
           <li class="ph1-ns flex">
 
-	<a role="none" aria-disabled="true" class="justify-center text-sm font-semibold px-3"><span>{{ .Title }} {{ trim .Pages "Pages" }}</span></a>
-
+	<a aria-disabled="true" class="justify-center text-sm font-semibold px-3"><span>{{ .Title }} {{ trim .Pages "Pages" }}</span></a>
+<!-- href="{{ .RelPermalink }}"" -->
 </li>
       {{ end }}
       

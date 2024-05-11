@@ -120,14 +120,14 @@ aside {
     font-size: 1.05em;
 }
 
-.left-text-only {
+/* .left-text-only {
     max-width: 850px;
     padding: 1em;
     font-family: 'JetBrains Mono', sans-serif;
     font-size: .9em;
     border-radius: .5em;
     font-weight: 600;
-}
+} */
 
 .caption {
     font-family: 'JetBrains Mono', sans-serif;
@@ -172,5 +172,140 @@ iframe:not(#iframe) {
     background-color: hsla(var(--color-bg-h),var(--color-bg-s),var(--color-bg-l),var(--bg-o));
 }
 
+h1 mark {
+    background-color: unset;
+    background-repeat: no-repeat;
+    background-size: 100% 2rem;
+    background-position: bottom;
+    color: inherit
+}
 
+section div.wrapper {
+    max-width: 98.75rem;
+    margin: 0 auto;
+    text-wrap: pretty;
+}
 
+a:hover .icon, a:focus .icon {
+    filter: brightness(0) invert(1)!important;
+}
+
+.lg\:w-3\/4 {
+    max-width: 1024px
+}
+
+.lg\:w-1\/4 {
+    width: 30%
+}
+
+.lg\:w-1\/4 + .lg\:w-3\/4{
+    padding-left: 4em;
+}
+
+.caption {
+    max-width: 850px
+}
+
+.lg\:w-3\/4:has(h2) {
+    margin-left: 0;
+}
+
+li.w-3\/6 {
+    list-style-type: none  
+}
+
+section:not(.content) {
+    margin-bottom: 6rem
+}
+
+section:not(.content):last-of-type {
+    padding-bottom: 6rem;
+    margin-bottom: 0
+}
+
+.purple h1 mark {
+    background-image: linear-gradient(
+        to bottom right,
+        #BEA8FF  50%,
+        #BEA8FF 50%
+      ),
+      linear-gradient(#BEA8FF, #BEA8FF),
+      linear-gradient(to top left, #BEA8FF 50%, #BEA8FF 50%);
+}
+
+.blue h1 mark {
+    background-image: linear-gradient(
+        to bottom right,
+        #89C6FF  50%,
+        #89C6FF 50%
+      ),
+      linear-gradient(#89C6FF, #89C6FF),
+      linear-gradient(to top left, #89C6FF 50%, #89C6FF 50%);
+}
+
+.green h1 mark {
+    background-image: linear-gradient(
+        to bottom right,
+        #8EE1AF  50%,
+        #8EE1AF 50%
+      ),
+      linear-gradient(#8EE1AF, #8EE1AF),
+      linear-gradient(to top left, #8EE1AF 50%, #8EE1AF 50%);
+}
+
+.pink h1 mark {
+    background-image: linear-gradient(
+        to bottom right,
+        #EBA6AA  50%,
+        #EBA6AA 50%
+      ),
+      linear-gradient(#EBA6AA, #EBA6AA),
+      linear-gradient(to top left, #EBA6AA 50%, #EBA6AA 50%);
+}
+
+.pr-3 {
+    padding-right: 3rem
+}
+
+.h2 + small.h2 {
+    font-size: unset!important;
+    display: block;
+    margin-bottom: unset
+}
+
+.h2 small.h2 {
+    font-size: .95rem!important;
+    display: inline-block;
+    margin-bottom: unset
+}
+
+body:has(.bg-pink) footer {
+    background-color: #F6D5D6
+}
+
+  p:not(:last-child) {
+    margin-bottom: 2rem
+  }
+
+  .h2:has(i) {
+    margin-top: 1rem
+  }
+
+  ul:not([class]), p:not([class]) {
+    max-width: 940px;
+}
+
+p.h3 + p:not([class]) {
+    max-width: 850px;
+}
+
+h3 span:not(.icon) {
+    font-size: .75em;
+    position:absolute;
+    line-height: 1.65em;
+    left: 0;
+}
+
+.lg\:w-3\/4:has(h2) {
+    margin-left: 0;
+}

@@ -17,11 +17,10 @@ blockquote {
     border-left: .15em solid #BEA8FF;
 }
 
-.cms .partials .yup section:last-of-type:has(#results) blockquote {
+/* .cms .partials .yup section:last-of-type:has(#results) blockquote {
     font-size: 1.5em;
     font-weight: 100;
-    /* margin-top: 2em; */
-}
+} */
 
 .homepage-blockquote:before {
     content: '>';
@@ -43,3 +42,23 @@ padding-left: 0;
 font-style: initial;
 font-weight: 100;
 }
+
+.grid blockquote {
+    padding: 1.875rem;
+    padding-left: 0;
+    padding-top: 0;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-size: 1.15rem;
+    letter-spacing: unset;
+    word-spacing: unset;
+    font-style: normal;
+  }
+
+  blockquote small strong {
+    display: block;
+    margin-top: 1rem
+  }
+
+  blockquote.h2 {
+    margin-left: 4rem
+  }

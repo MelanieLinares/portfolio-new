@@ -5,11 +5,11 @@
     line-height: 2.5rem;
 }
 
-.cms + .related-content {
+/* .cms + .related-content {
     background-color: #1e1e38;
     color: white;
 }
 
 .cms.purple + .related-content #related, .cms.blue + .related-content #related, .cms.green + .related-content #related {
     color: #1e1e38;
-}
+} */

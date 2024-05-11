@@ -1,0 +1,47 @@
+#overview + ul {
+    margin-top: -1rem; 
+    margin-bottom: 3rem;
+    list-style: none!important;
+    border: 2px solid #3C0607;
+    color: #BB3107;
+    background-color: rgba(245, 219, 216, .4);
+    display: inline-block;
+    max-width: 850px;
+    padding: 1.5em;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: .9em;
+    border-radius: 0.5em;
+    font-weight: 600;
+    padding-left: 1.5em!important
+}
+
+#overview + ul li:not(:last-of-type) {
+    margin-bottom: 1rem
+}
+
+#overview + ul li {
+    padding-left: 1.75rem
+}
+
+#overview + ul li strong {
+    display: block;
+    margin-left: -1.75rem;
+    color: #3C0607;
+}
+
+a.retro {
+    padding: 12px;
+    border: 1px dashed #3C0607;
+    }
+
+    
+a.retro:hover {
+    border: 2px solid #3C0607;
+    padding: 11px;
+    }
+
+    .h2 i {
+        display: block;
+        color: #7541C8;
+        font-weight: 400
+      }

@@ -320,7 +320,53 @@ top: -6.2rem!important;
     font-weight: bold;
   }
 
+  .medium-non-heading {
+    display: block;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: #3C0607;
+  }
+
   .large-non-heading strong {
     display: block;
     margin-top: 1rem
   }
+
+  #retro:after {
+    padding-right: 17.65em;
+}
+
+.notification {
+    background-color: white;
+    font-family: 'JetBrains Mono', sans-serif;
+    color: #3D0505;
+    text-align: center;
+    padding: 1em;
+    border-bottom: 2px solid #5F0717;
+    font-size: 14px;
+    }
+
+    .about-up-to div {
+        flex: 1 1 50%;
+    }
+    
+    .about-up-to {
+        flex-wrap: wrap;
+        border: 2px solid #5F0717;
+        color: #3D0505;
+        border-radius: calc(0.25em*2);
+        margin: 0 2.55rem; 
+        padding: 1rem 2rem
+    }
+
+    .Angled {
+        margin-top: 2rem!important;
+        padding-top: 2rem!important;
+        padding-bottom: 3rem!important;
+        clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 3rem));
+        position: relative;
+        z-index: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }

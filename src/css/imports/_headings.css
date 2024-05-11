@@ -57,9 +57,9 @@ section:not(:first-of-type) h3:not(.mt-0) {
     display: block
 }
 
-#link-section + section h2.block {
+/* #link-section + section h2.block {
     margin-top: -2.5rem;
-}
+} */
 
 section.max-w-7xl.mx-auto.pt-6 > div.max-w-7xl.mx-auto.pt-6 > div > div:nth-child(1) > div > h2
  {
@@ -95,7 +95,7 @@ h1 {
     /* color: var(--dark-blue); */
     color: #3C0607
 }
-
+/* 
 #link-section + section h2 {
     font-size: 2.3rem !important;
     font-family: 'Poppins';
@@ -106,7 +106,7 @@ h1 {
 #link-section + section + div + div + section h2 {
     font-size: 1.75rem !important;
     font-family: 'Poppins';    
-}
+} */
 
 .article-block h2 {
     margin-top: 1.5rem!important;
@@ -302,15 +302,15 @@ h1 {
     margin-bottom: 0;
     padding-bottom: 0
 }
-.hero-header div:first-of-type h1{
+/* .hero-header div:first-of-type h1{
     padding-bottom: 2.5em!important; 
-  }
+  } */
 }
 
 @media screen and (min-width: 640px) and (max-width: 767px) {
-.hero-header div:first-of-type h1{
+/* .hero-header div:first-of-type h1{
     padding-bottom: 2.5em!important; 
-  }
+  } */
   h1.sm\:text-4xl {
     font-size: 2.5rem!important;
 }
@@ -321,10 +321,10 @@ h1 {
 #top-section.homepage *:not(.shapes):not(.circle):not(.cross) h1 {
     padding: 0 0.3em 0 0!important
 }
-.hero-header h1 {
+/* .hero-header h1 {
     max-width: calc(100vw - 1.5em);
     padding-bottom: 2.5em;
-}
+} */
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {

@@ -1,45 +1,21 @@
-.cms .partials .yup section:last-of-type:after {
+/* .cms .partials .yup section:last-of-type:after {
     border-top: 0px solid #3a0a7a;
-}
+} */
 
-.cms .partials .yup section:last-of-type {
-    /* padding-bottom: .01em;
-    margin-bottom: 4em; */
-}
-
-.cms .partials .yup section:last-of-type:has(#results) {
-    /* padding-bottom: 10.5em;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-top: 13em!important */
-}
-
-.partials .yup {
-    /* padding-top: 6.5em; */
-  }
-
-  .cms .partials .yup section:last-of-type:has(#results) cite {
+  /* .cms .partials .yup section:last-of-type:has(#results) cite {
     font-weight: 200;
     font-size: .75em;
     font-family: 'Atkinson Hyperlegible', sans-serif;
-}
+} */
 
-.cms .partials .yup section:last-of-type:has(#results) ul + p{
-    /* margin-top: 2em */
-}
-
-.cms .partials .yup section:last-of-type:has(#results) li::marker {
+/* .cms .partials .yup section:last-of-type:has(#results) li::marker {
     color: white
-}
-
-.cms .partials div:nth-of-type(1) section:last-of-type .parent-all {
-    /* padding-bottom: 0; */
 }
 
 .cms .partials .yup section:last-of-type:has(#results) ul:not([class]), 
 .cms .partials .yup section:last-of-type:has(#results) p:not([class]) {
     max-width: 940px;
-}
+} */
 
 
 /* display image section */

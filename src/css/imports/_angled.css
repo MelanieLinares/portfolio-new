@@ -1,70 +1,13 @@
-.Blank + style + .Angled {
-    /* margin-top: 0;
-    padding-top: 12.5em; */
- }
-
- /* .Rectangular + style + .Angled:before {
-    content: unset;
- } */
-
- .Rectangular + style + .Angled {
-    margin-top: -13em;
- }
-
- .green .Angled.homepage {
-    background-color: unset!important;
-}
-
 .Angled {
     padding-left: 1.2em;
     padding-right: 1.2em;
+    position: relative;
 }
-
-.Angled .lg\:w-1\/2 + .lg\:w-1\/2 em {
-    /* padding-bottom: 4em; */
-    display: block;
-}
-
-/* .Angled + .Angled:before {
-    content: unset;
-} */
-
-.Angled + .Angled, .Angled + style + .Angled {
-    /* padding-top: 0;
-    margin-top: -17.75em; */
-}
-
-/* .Angled + .Angled:has(.flex) {
-    margin-top: -14.75em!important;
-} */
 
 .Angled > .container:not(:last-child) {
     /* padding-top: 2.5em;
     /* padding-bottom: 1.75em; */
     position: relative;
-}
-
-.yup section:last-child.Angled .container {
-    /* padding-bottom: 0; */
-}
-
-.Angled .generic-content,
-.Angled .w-full {
-    z-index:1;
-    position: inherit;
-}
-
-.Angled {
-    position: relative;
-    /* padding: 11em 0; */
-    /* padding-top: 13em;
-    padding-bottom: 4.5em;
-    margin-top:-7.5em;
-    margin-bottom: 17.5em; */
-}
-
-.Blank + .Angled {
-    /* margin-top:0; */
 }
 
 .pink .Angled {
@@ -75,17 +18,13 @@
     background-color: rgba(var(--green-rgb), 0.33);
 }
 
-.green.Angled {
-    background-color: white;
-}
-
 .blue .Angled:not(#top-section) {
     background-color: rgb(243, 247, 255)
 }
 
-.blue #top-section.Angled {
+/* .blue #top-section.Angled {
     background-color: white
-}
+} */
 
 /* .purple .Angled {
     background-color: #f8f6ff;
@@ -191,7 +130,7 @@
     border-top: 100px solid rgba(var(--blue-rgb), 1);
 } */
 
-.cms.purple .partials .yup section.Angled:last-of-type {
+/* .cms.purple .partials .yup section.Angled:last-of-type {
     background-color: var(--dark-purple);
     border-top: 1px solid var(--dark-purple);
     color: white;
@@ -205,4 +144,4 @@
     background-color: var(--dark-green);
     border-top: 1px solid var(--dark-green);
     color: white;
-}
+} */

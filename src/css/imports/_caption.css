@@ -19,7 +19,9 @@
     margin-bottom: 2em; */
  }
 
- .caption:before, .img-w-caption .caption:before {
+ .caption:before 
+ /* .img-w-caption .caption:before  */
+ {
     content: "";
      top: -1.5em;
      left: 0.5em;
