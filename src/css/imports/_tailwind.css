@@ -240,7 +240,7 @@ a {
 
 menu,
 ol,
-ul {
+ul:not(.responsibilities):not(.tags) {
     list-style: none;
     margin: 0;
     padding: 0

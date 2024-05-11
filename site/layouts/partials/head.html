@@ -25,12 +25,17 @@
 
   {{ if .IsHome }}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <style>
+     body footer {
+      background-color: #FFFFFF;
+      }
+    </style>
   {{ end }}
 
 
   {{ if eq (.URL | truncate 14) ("/retrospective …") }}
   <style>
-  body, body:has(.bg-pink) footer {
+  body:has(.bg-pink) footer {
 	background-color: #FAEAEA;
   }
   </style>

@@ -1,4 +1,51 @@
 {{ define "main" }}
+<style>
+  blockquote {
+    font-size: 1em!important;
+    font-weight: 200!important;
+    word-spacing: -0.15rem!important;
+
+  }
+  header.shadow-sm {
+    background-color: #B55A63;
+    color: white
+  }
+
+  #top-section + div {
+    max-width: calc(100vw - 2.5em)!important;
+     
+  }
+  #top-section {
+    margin-bottom: 3rem!important;
+  }
+
+#top-section + div blockquote:last-of-type {
+   
+}
+#top-section + div blockquote:not(:last-of-type) {
+   
+}
+</style>
+
+<style>
+
+  header.transparent:not(.bg-pink) #navbar a img, header:not(.shadow-sm):not(.bg-pink) #navbar a img {
+    filter: hue-rotate(30deg) brightness(0)!important;
+  }
+  /* header.shadow-sm.bg-pink #navbar {
+    background-color: var(--dark-purple)!important;
+  } */
+
+  /* header.nav #navbar a.current {
+      background-color: rgba(98, 36, 180, .25);
+  }
+
+  header.nav #navbar a:hover, header.nav #navbar a:focus {
+      background-color: rgba(98, 36, 180, .5);
+  } */
+
+</style>
+
 <section class="top-section-new purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative"> 
 
 <div id="top-section-new" class="purple mb-20">
@@ -26,6 +73,15 @@
 
   {{ if in .RelPermalink "retrospective"}}
 
+  <style>
+    body {
+      background-color: #FAEAEA;
+    } */
+    /* header.transparent #navbar, header:not(.shadow-sm) #navbar {
+      background-color: #FAEAEA
+    }
+    </style>
+
   <div class="wrapper" style="padding-top: .75rem; position: relative">
 
 <div class="flex">
@@ -47,11 +103,11 @@
 
     <div style="margin-left: auto;">
       {{ if in .Params.date "2022" }}             
-      <a href="/retrospective/2023" style="margin-right: 1rem" class="homepage bg radius-lg text-center retro">
+      <a href="/retrospective/2023" style="margin-right: 1rem" class="homepage radius-lg text-center retro">
         <span>NEXT: 2023 <span aria-hidden="true">--></span></span>
       </a> 
       {{else}}
-      <a href="/retrospective/{{ sub .Date.Year 1 }}" style="margin-right: 1rem" class="homepage bg radius-lg text-center retro">
+      <a href="/retrospective/{{ sub .Date.Year 1 }}" style="margin-right: 1rem" class="homepage radius-lg text-center retro">
         <span><span aria-hidden="true"><--</span> PREVIOUS: {{ sub .Date.Year 1 }}</span>
       </a>
       {{end}}

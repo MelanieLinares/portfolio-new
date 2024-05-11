@@ -14,11 +14,6 @@
     margin-bottom: 5em; */
  }
 
- .caption + .caption {
-    /* margin-top: 6em;
-    margin-bottom: 2em; */
- }
-
  .caption:before 
  /* .img-w-caption .caption:before  */
  {

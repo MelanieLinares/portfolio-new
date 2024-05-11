@@ -22,7 +22,7 @@ blockquote {
     font-weight: 100;
 } */
 
-.homepage-blockquote:before {
+/* .homepage-blockquote:before {
     content: '>';
     font-size: 2.3rem; 
     font-family: 'JetBrains Mono';
@@ -30,9 +30,9 @@ blockquote {
     left: -2.5rem;
     color: var(--dark-blue);
     font-weight: bold
-}
+} */
 
-.homepage-blue .homepage-blockquote:before {
+/* .homepage-blue .homepage-blockquote:before {
     color: var(--dark-green);;
     margin-top: 0;
 }
@@ -41,7 +41,7 @@ blockquote {
 padding-left: 0;
 font-style: initial;
 font-weight: 100;
-}
+} */
 
 .grid blockquote {
     padding: 1.875rem;

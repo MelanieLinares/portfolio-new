@@ -45,3 +45,22 @@ a.retro:hover {
         color: #7541C8;
         font-weight: 400
       }
+
+      #photo-highlights + p img {
+        width: 32.33%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        margin-bottom: 1.75rem;
+    }
+
+    #photo-highlights + p {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1440px !important;
+        grid-gap: 1.5%;
+        gap: 1.5%;
+        margin-top: -1rem;
+        margin-bottom: 1.72rem;
+    }

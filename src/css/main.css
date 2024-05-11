@@ -24,4 +24,28 @@
 @import './imports/_fullwidth';
 @import './imports/_retrospective';
 @import './imports/_article-blog';
-@import './imports/_work-card';
+@import './imports/_work';
+
+img {
+	max-width: 100%;
+	display: block;
+  }
+  
+  blockquote {
+	margin: 0;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	margin-bottom: 10px;
+	break-inside: avoid;
+  }
+
+  /* removed this for the about page, but might still need this? */
+  /* .container {
+	column-count: 3;
+	column-gap: 10px;
+  } */
+
+  .caption:before {
+	background: url(/img/white-border-arrow.png);
+	background-repeat: no-repeat;
+  }

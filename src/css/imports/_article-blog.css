@@ -16,8 +16,9 @@
     margin-bottom: 2rem
   }
   
-  .article-block p:not(:last-child), .article-block .tags {
-    margin-bottom: 0!important
+  /* .article-block p:not(:last-child),  */
+  .article-block .tags {
+    /* margin-bottom: 0!important */
   }
 
   .article-block {
@@ -101,3 +102,7 @@ section.blue:has(.work) + section .article-block {
 .work-roll h4 a, .article-roll h4 a {
     text-decoration: underline
   }
+
+  .tags {
+    margin-left: auto;
+}

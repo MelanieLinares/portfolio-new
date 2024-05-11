@@ -157,9 +157,9 @@ h1 {
         letter-spacing: unset;
         font-weight: 700!important;
 }
-.skip-area h2 {
+/* .skip-area h2 {
     font-size: 1.65em;
-}
+} */
 /* .cms section h2 {
     max-width: 918px;
     font-family: 'Poppins';
@@ -231,9 +231,9 @@ h3 {
     font-weight: 500!important;
 } */
 
-.display_image_section h3 {
+/* .display_image_section h3 {
     margin-top: 1.5em !important
-}
+} */
 .blue .Rectangular h3 {
     color: white;
 }

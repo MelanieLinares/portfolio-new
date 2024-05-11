@@ -19,7 +19,7 @@
 
 
 /* display image section */
-.display_image_section {
+/* .display_image_section {
     width: 100%;
     max-width: unset;
     margin-bottom: 0;
@@ -31,4 +31,4 @@
 
 .display_image_section .max-w-7xl.mx-auto div:not(.parent-all) *:not(:first-child):not(h3:first-of-type):not(h3:first-of-type + ul):not(h3:first-of-type + ul li)  {
     max-width: 625px;
-}
+} */
