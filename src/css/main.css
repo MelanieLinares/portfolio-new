@@ -49,3 +49,11 @@ img {
 	background: url(/img/white-border-arrow.png);
 	background-repeat: no-repeat;
   }
+
+  html {
+	scroll-behavior: smooth;
+  }
+
+  body {
+	padding-top: 5rem
+  }

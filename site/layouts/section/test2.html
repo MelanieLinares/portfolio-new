@@ -1,0 +1,373 @@
+{{ define "main" }}
+<div class="wrapper" style="margin-top: 70px; margin-bottom: 4rem; position: relative;">
+
+<style>
+  /* 1. Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body:has(.section-nav) {
+  overflow: unset
+}
+
+h2 {
+  padding-top: 110px
+}
+
+main section:first-of-type h2 {
+  margin-top: -110px;
+}
+
+/* 2. Make nav sticky */
+main > nav {
+  position: sticky;
+  top: 7rem;
+  align-self: start;
+}
+
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active > a {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Sidebar Navigation */
+.section-nav {
+  padding-left: 0;
+  border-left: 1px solid #efefef;
+}
+
+.section-nav a {
+  text-decoration: none;
+  display: block;
+  padding: .125rem 0;
+  color: #ccc;
+  transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+  color: #666;
+}
+
+/** Poor man's reset **/
+h1 {
+  padding-top: 3rem;
+}
+
+/** page layout **/
+main {
+  display: grid;
+  grid-template-columns: 15em 1fr;
+  /* max-width: 100em;
+  width: 90%; */
+  margin: 0 auto;
+}
+
+/** enlarge the sections for this demo, so that we have a long scrollable page **/
+/* section {
+  padding-bottom: 20rem;
+} */
+</style>
+
+
+
+
+
+
+
+
+
+
+
+<h1>WHERE IS THIS? 45</h1>
+  <h1>Smooth Scrolling Sticky ScrollSpy Navigation</h1>
+  <p><em>Want an explanation of how this works?<br />&rarr; <a href="https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/" target="_top">https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/</a></em></p>
+
+
+
+
+
+<style>
+  .gradient-line {
+    background-image: linear-gradient(90deg, transparent, transparent 50%, #ffffff 50%, #ffffff 100%), linear-gradient(90deg, #B2A4FF, #FFB4B4);
+    background-size: var(--gradient-space) var(--gradient-height), 100% var(--gradient-height);
+    border-radius: 9999px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .3s;
+}
+</style>
+
+
+<div class="w-full h-[1px] mt-10 lg:mt-[50px] overflow-hidden gradient-line group-last:hidden"></div>
+<br>
+
+
+
+
+
+
+
+<main class="wrapper">
+  <nav class="section-nav">
+    <ol>
+      <li><a href="test/#accessible-carousel">Accessible Carousel</a></li>
+      <li><a href="test/#request-response">Request &amp; Response</a></li>
+      <li><a href="test/#authentication">Authentication</a></li>
+      <li><a href="test/#endpoints">Endpoints</a></li>
+      <li class=""><a href="test/#links">Links</a></li>
+      <li class=""><a href="test/#expanders">Expanders</a></li>
+      <li class=""><a href="test/#filters">Filters</a></li>
+    </ol>
+  </nav>
+  <div style="max-width: calc(100% - 25em);">
+    <section>
+      <h2 id="accessible-carousel">Accessible Carousel</h2>
+
+          <style>
+        /** Wrapper **********************/
+.carousel {
+  position: relative;
+  width: calc(100% - 40px);
+  max-width: 100%;
+  height: var(--carousel-height);
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+/** Previous/next buttons ********/
+.previous,
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 5px 10px;
+  position: absolute;
+  top: calc(50% - 16px);
+  cursor: pointer;
+  font-size: 32px;
+  
+  border: 0;
+  background: none;
+}
+
+  .previous { left: 0; }
+  .next { right: 0; }
+
+/** Slides track ***************/
+.slides {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+/** Individual slides ***********/
+.slide {
+  flex: 0 0 calc(100% / 3 - 10px);
+  
+  margin: 0 5px;
+  padding: 20px;
+  height: var(--carousel-height);
+  
+  display: flex;
+  align-items: center;
+  
+  font-size: 18px;
+  line-height: 26px;
+  background-color: white;
+}
+
+  @media screen and (max-width: 768px) {
+    .slide {
+      font-size: 14px;
+      line-height: 18px;
+      align-items: flex-start;
+    }
+  }
+
+  .slide a {
+    color: black;
+    font-weight: bold;
+  }
+
+/** Slide dots ******************/
+.navigation {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+  .navigation li {
+    display: inline-block;
+  }
+
+    .navigation li button {
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      border: 0;
+      border-radius: 100px;
+      background-color: rgba(0,0,0,.2);
+      cursor: pointer;
+    }
+
+      .navigation li button:focus {
+        outline-offset: 4px;
+      }
+
+      /** Active slide dot */
+      .navigation li button[aria-current="true"] {
+        background-color: black;
+        width: 15px;
+        height: 15px;
+      }
+    </style>
+
+    <div class="carousel" aria-label="carousel" style="border: 1px solid black">
+        <p class="visibly-hidden">Carousel with three slides shown at a time. Use the Previous and Next buttons to navigate, or the slide dot buttons at the end to jump to slides.</p>
+        
+        <button class="previous">
+          <span class="fas fa-chevron-left" aria-hidden="true"><</span>
+          <span class="visibly-hidden">Previous slides</span>
+        </button>
+        
+        <div class="slides">
+          <div class="slide" role="group" aria-label="slide 1 of 9">
+            <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
+          </div>
+          
+          <div class="slide" role="group" aria-label="slide 2 of 9">
+            <p>2- This painting comes right out of your heart. It's beautiful - and we haven't even done anything to it yet. In this world, everything can be happy. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+          </div>
+          
+          <div class="slide" role="group" aria-label="slide 3 of 9">
+            <p>3- We don't make mistakes we just have happy little accidents. Mountains are so simple, they're hard. You got your heavy coat out yet? <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+          </div>
+          
+          <div class="slide" role="group" aria-label="slide 4 of 9">
+            <p>4- It's getting colder. You can't have light without dark. You can't know happiness unless you've known sorrow. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+          </div>
+          
+          <div class="slide" role="group" aria-label="slide 5 of 9">
+            <p>5- Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+          </div>
+          
+          <div class="slide" role="group" aria-label="slide 6 of 9">
+            <p>6- I spend a lot of time walking around in the woods and talking to trees, and squirrels, and little rabbits and stuff. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+          </div>
+          
+          <div class="slide" role="group" aria-label="slide 7 of 9">
+            <p>7- And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+          </div>
+          
+          <div class="slide" role="group" aria-label="slide 8 of 9">
+            <p>8- Let your imagination just wonder around when you're doing these things. It looks so good, I might as well not stop. Just use the old one inch brush. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+          </div>
+          
+          <div class="slide" role="group" aria-label="slide 9 of 9">
+            <p>9- This is probably the greatest thing that's ever happened in my life. You don't want to kill all your dark areas they are very important. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+          </div>
+        </div>
+        
+        <button class="next">
+          <span class="fas fa-chevron-right" aria-hidden="true">></span>
+          <span class="visibly-hidden">Next slides</span>
+        </button>
+        
+        <ul class="navigation" style="display: none">
+          <li>
+            <button aria-current="true">
+              <span class="visibly-hidden">Go to slide 1</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <span class="visibly-hidden">Go to slide 2</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <span class="visibly-hidden">Go to slide 3</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <span class="visibly-hidden">Go to slide 4</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <span class="visibly-hidden">Go to slide 5</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <span class="visibly-hidden">Go to slide 6</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <span class="visibly-hidden">Go to slide 7</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <span class="visibly-hidden">Go to slide 8</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <span class="visibly-hidden">Go to slide 9</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+    <section>
+      <h2 id="request-response">Request &amp; Response</h2>
+      <p>…<br><button>test</button></p>
+    </section>
+    <section>
+      <h2 id="authentication">Authentication</h2>
+      <p>…<br><button>test</button></p>
+    </section>
+    <section>
+      <h2 id="endpoints">Endpoints</h2>
+      <p>…<br><button>test</button></p>
+      </section>
+    </section>
+    <section>
+      <h2 id="links">Links</h2>
+      <p>…<br><button>test</button></p>
+    </section>
+    <section>
+      <h2 id="expanders">Expanders</h2>
+      <p>…<br><button>test</button></p>
+    </section>
+    <section>
+      <h2 id="filters">Filters</h2>
+      <p>…<br><button>test</button></p>
+    </section>
+  </div>
+</main>
+
+</div>
+
+{{ end }}

@@ -32,7 +32,8 @@ html {
 
 body {
     font-family: 'Atkinson Hyperlegible', sans-serif;
-    overflow:hidden;
+    /* overflow:hidden; */
+     /* removed due to position: sticky */
 }
 
 /* body.overflow-hidden {

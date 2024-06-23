@@ -150,5 +150,377 @@ function hideNonVisibleSlides() {
 }
         </script>
 
+        <script>
+          window.addEventListener('DOMContentLoaded', () => {
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const id = entry.target.getAttribute('id');
+    if (entry.intersectionRatio > 0) {
+
+
+      console.log("if " + id);
+
+      // alert(id);
+      // document.querySelector(`nav li a:not(#${id})`).classList.remove('toc__link--selected');
+
+      // alert("entry.intersectionRatio " + entry.intersectionRatio);
+
+// alert("not zero?");
+      // document.querySelector("nav.toc__nav li a:has(.toc__link--selected)").classList.remove('toc__link--selected');
+      // alert("remove class before adding");
+      document.querySelector(`nav li a:not([href="test/#${id}"])`).classList.remove('toc__link--selected');
+      // alert("add the class"); 
+      document.querySelector(`nav li a[href="test/#${id}"]`).classList.add('toc__link--selected');
+
+
+
+    } else {
+      // alert("entry.intersectionRatio " + entry.intersectionRatio);
+      // alert(id);
+      // alert("is zero? " + entry.intersectionRatio);
+      console.log("else");
+      console.log(id);
+      document.querySelector(`nav li a[href="test/#${id}"]`).classList.remove('toc__link--selected');
+        }
+  });
+});
+
+// Track all sections that have an `id` applied
+document.querySelectorAll('section[id]').forEach((section) => {
+  observer.observe(section);
+});
+
+});
+        </script>
+
+<script>
+if(!Util) function Util () {};
+
+Util.hasClass = ({classList}, className) => classList.contains(className);
+
+Util.addClass = (el, className) => {
+  const classList = className.split(' ');
+  el.classList.add(classList[0]);
+  if (classList.length > 1) Util.addClass(el, classList.slice(1).join(' '));
+};
+
+Util.removeClass = (el, className) => {
+  const classList = className.split(' ');
+  el.classList.remove(classList[0]);
+  if (classList.length > 1) Util.removeClass(el, classList.slice(1).join(' '));
+};
+
+Util.toggleClass = (el, className, bool) => {
+  if(bool) Util.addClass(el, className);
+  else Util.removeClass(el, className);
+};
+
+// File#: _2_table-of-contents
+// Usage: codyhouse.co/license
+(() => {
+  const Toc = function(element) {
+		this.element = element;
+    this.list = this.element.getElementsByClassName('js-toc__list')[0];
+    this.anchors = this.list.querySelectorAll('a[href^="#"]');
+    this.sections = getSections(this);
+    this.controller = this.element.getElementsByClassName('js-toc__control');
+    this.controllerLabel = this.element.getElementsByClassName('js-toc__control-label');
+    this.content = getTocContent(this);
+    this.clickScrolling = false;
+    this.intervalID = false;
+    this.staticLayoutClass = 'toc--static';
+    this.contentStaticLayoutClass = 'toc-content--toc-static';
+    this.expandedClass = 'toc--expanded';
+    this.isStatic = Util.hasClass(this.element, this.staticLayoutClass);
+    this.layout = 'static';
+    initToc(this);
+  };
+
+  function getSections({anchors}) {
+    const sections = [];
+    // get all content sections
+    for(let i = 0; i < anchors.length; i++) {
+      const section = document.getElementById(anchors[i].getAttribute('href').replace('#', ''));
+      if(section) sections.push(section);
+    }
+    return sections;
+  };
+
+  function getTocContent({sections}) {
+    if(sections.length < 1) return false;
+    const content = sections[0].closest('.js-toc-content');
+    return content;
+  };
+
+  function initToc(toc) {
+    checkTocLayour(toc); // switch between mobile and desktop layout
+    if(toc.sections.length > 0) {
+      // listen for click on anchors
+      toc.list.addEventListener('click', ({target}) => {
+        const anchor = target.closest('a[href^="#"]');
+        if(!anchor) return;
+        // reset link apperance 
+        toc.clickScrolling = true;
+        resetAnchors(toc, anchor);
+        // close toc if expanded on mobile
+        toggleToc(toc, true);
+      });
+
+      // check when a new section enters the viewport
+      const intersectionObserverSupported = ('IntersectionObserver' in window && 'IntersectionObserverEntry' in window && 'intersectionRatio' in window.IntersectionObserverEntry.prototype);
+      if(intersectionObserverSupported) {
+        const observer = new IntersectionObserver(
+          (entries, observer) => { 
+            entries.forEach(entry => {
+              if(!toc.clickScrolling) { // do not update classes if user clicked on a link
+                getVisibleSection(toc);
+              }
+            });
+          }, 
+          {
+            threshold: [0, 0.1],
+            rootMargin: "0px 0px -70% 0px"
+          }
+        );
+
+        for(let i = 0; i < toc.sections.length; i++) {
+          observer.observe(toc.sections[i]);
+        }
+      }
+
+      // detect the end of scrolling -> reactivate IntersectionObserver on scroll
+      toc.element.addEventListener('toc-scroll', event => {
+        toc.clickScrolling = false;
+      });
+    }
+
+    // custom event emitted when window is resized
+    toc.element.addEventListener('toc-resize', event => {
+      checkTocLayour(toc);
+    });
+
+    // collapsed version only (mobile)
+    initCollapsedVersion(toc);
+  };
+
+  function resetAnchors({anchors}, anchor) {
+    alert("hm, this isn't reached");
+    if(!anchor) return;
+    for(let i = 0; i < anchors.length; i++) Util.removeClass(anchors[i], 'toc__link--selected');
+    Util.addClass(anchor, 'toc__link--selected');
+  };
+
+  function getVisibleSection(toc) {
+    if(toc.intervalID) {
+      clearInterval(toc.intervalID);
+    }
+    toc.intervalID = setTimeout(() => {
+      const halfWindowHeight = window.innerHeight/2;
+      let index = -1;
+      for(let i = 0; i < toc.sections.length; i++) {
+        const top = toc.sections[i].getBoundingClientRect().top;
+        if(top < halfWindowHeight) index = i;
+      }
+      if(index > -1) {
+        resetAnchors(toc, toc.anchors[index]);
+      }
+      toc.intervalID = false;
+    }, 100);
+  };
+
+  function checkTocLayour(toc) {
+    if(toc.isStatic) return;
+    toc.layout = getComputedStyle(toc.element, ':before').getPropertyValue('content').replace(/\'|"/g, '');
+    Util.toggleClass(toc.element, toc.staticLayoutClass, toc.layout == 'static');
+    if(toc.content) Util.toggleClass(toc.content, toc.contentStaticLayoutClass, toc.layout == 'static');
+  };
+
+  function initCollapsedVersion(toc) { // collapsed version only (mobile)
+    if(toc.controller.length < 1) return;
+    
+    // toggle nav visibility
+    toc.controller[0].addEventListener('click', event => {
+      const isOpen = Util.hasClass(toc.element, toc.expandedClass);
+      toggleToc(toc, isOpen);
+    });
+
+    // close expanded version on esc
+    toc.element.addEventListener('keydown', ({keyCode, key}) => {
+      if(toc.layout == 'static') return;
+      if( (keyCode && keyCode == 27) || (key && key.toLowerCase() == 'escape') ) {
+        toggleToc(toc, true);
+        toc.controller[0].focus();
+      }
+    });
+  };
+
+  function toggleToc({controller, element, expandedClass, anchors}, bool) { // collapsed version only (mobile)
+    if(controller.length < 1) return;
+    // toggle mobile version
+    Util.toggleClass(element, expandedClass, !bool);
+    bool ? controller[0].removeAttribute('aria-expanded') : controller[0].setAttribute('aria-expanded', 'true');
+    if(!bool && anchors.length > 0) {
+      anchors[0].focus();
+    }
+  };
+  
+  const tocs = document.getElementsByClassName('js-toc');
+
+  const tocsArray = [];
+	if( tocs.length > 0) {
+      for( let i = 0; i < tocs.length; i++) {
+          (i => { tocsArray.push(new Toc(tocs[i])); })(i);
+  }
+
+      // listen to window scroll -> reset clickScrolling property
+      let scrollId = false;
+
+      const resizeId = false;
+      const scrollEvent = new CustomEvent('toc-scroll');
+      const resizeEvent = new CustomEvent('toc-resize');
+
+      window.addEventListener('scroll', () => {
+        clearTimeout(scrollId);
+        scrollId = setTimeout(doneScrolling, 100);
+      });
+
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeId);
+        scrollId = setTimeout(doneResizing, 100);
+      });
+
+      function doneScrolling() {
+        for( let i = 0; i < tocsArray.length; i++) {
+          (i => {tocsArray[i].element.dispatchEvent(scrollEvent)})(i);
+        };
+      }
+
+      function doneResizing() {
+        for( let i = 0; i < tocsArray.length; i++) {
+          (i => {tocsArray[i].element.dispatchEvent(resizeEvent)})(i);
+        };
+      }
+    }
+})();
+</script>
+
+<script>
+  // File#: _1_sticky-feature
+// Usage: codyhouse.co/license
+(function() {
+  var StickyFeature = function(element) {
+    this.element = element;
+    this.contentList = this.element.getElementsByClassName('js-sticky-feature__content-list');
+    this.assetsList = this.element.getElementsByClassName('js-sticky-feature__media-list');
+    
+    if(this.contentList.length < 1 || this.assetsList.length < 1) return;
+
+    this.contentItems = this.contentList[0].getElementsByClassName('js-sticky-feature__content-item');
+    this.assetItems = this.assetsList[0].getElementsByClassName('js-sticky-feature__media-item');
+
+    this.titleItems = this.contentList[0].getElementsByClassName('js-sticky-feature__title');
+    this.activeSectionClass = 'sticky-feature-current-item';
+    this.bindScroll = false;
+    this.scrolling = false;
+    initStickyFeature(this);
+  };
+
+  function initStickyFeature(el) {
+    // init observer - detect when feature list enters the viewport and change section
+    var observer = new IntersectionObserver(stickyFeatureObserve.bind(el));
+    observer.observe(el.contentList[0]);
+
+    // init click on title
+    for(var i = 0; i < el.titleItems.length; i++) {
+      (function(i){
+        el.titleItems[i].addEventListener('click', function(event){
+          scrollToSection(el, i);
+        });
+      })(i);
+    }
+  };
+
+  function stickyFeatureObserve(entries) {
+    if(entries[0].isIntersecting) {
+      if(!this.bindScroll) {
+        getSelectSection(this); // update selected section
+        bindScroll(this); // bind window scroll
+      }
+    } else if(this.bindScroll) {
+      unbindScroll(this); // unbind window scroll
+      resetSectionVisibility(this); // reset selected section
+    }
+  };
+
+  function updateVisibleSection(el) {
+    // on scroll, detect which section should be selected
+    var self = this;
+    if(this.scrolling) return;
+    this.scrolling = true;
+    window.requestAnimationFrame(function(){
+      getSelectSection(self);
+      self.scrolling = false;
+    });
+  };
+
+  function getSelectSection(el) {
+    resetSectionVisibility(el); // remove selected class from all sections
+    // get the section to select
+    var index = [];
+    for(var i = 0; i < el.contentItems.length; i++) {
+      if(el.contentItems[i].getBoundingClientRect().top <= window.innerHeight/2) index.push(i);
+    }
+    var itemIndex = (index.length > 0) ? index[index.length - 1] : 0; // select either the first section or the one in the center of the viewport
+    selectSection(el, itemIndex);
+  };
+
+  function resetSectionVisibility(el) {
+    // no section is selected -> remove selected class
+    var selectedItems = el.element.getElementsByClassName(el.activeSectionClass);
+    while (selectedItems[0]) {
+      selectedItems[0].classList.remove(el.activeSectionClass);
+    }
+  };
+
+  function selectSection(el, index) {
+    el.contentItems[index].classList.add(el.activeSectionClass);
+    el.assetItems[index].classList.add(el.activeSectionClass);
+  };
+
+  function scrollToSection(el, index) {
+    // on click - scroll to the selected section
+    if(el.assetsList[0].offsetWidth < 1) return;
+    window.scrollBy({
+      top: el.titleItems[index].getBoundingClientRect().top - window.innerHeight/2 + 10,
+      behavior: 'smooth'
+    });
+  };
+
+  function bindScroll(el) {
+    if(!el.bindScroll) {
+      el.bindScroll = updateVisibleSection.bind(el);
+      window.addEventListener('scroll', el.bindScroll);
+    }
+  };
+
+  function unbindScroll(el) {
+    if(el.bindScroll) {
+      window.removeEventListener('scroll', el.bindScroll);
+      el.bindScroll = false;
+    }
+  };
+
+  window.StickyFeature = StickyFeature;
+
+	//initialize the StickyFeature objects
+	var stickyFeatures = document.getElementsByClassName('js-sticky-feature');
+	if( stickyFeatures.length > 0 ) {
+		for( var i = 0; i < stickyFeatures.length; i++) {
+			(function(i){new StickyFeature(stickyFeatures[i]);})(i);
+		}
+	}
+}());
+</script>
+
 </body>
 </html>
