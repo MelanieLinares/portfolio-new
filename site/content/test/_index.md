@@ -61,4 +61,4 @@ image_list:
 ---
 I work at **[Insight](google.com)** as a senior software developer and consultant. Currently I am having fun working with Vue, React and RESTful APIs.
 
-**[Check out my recent work](/post)**
+**[Check out my recent work](/work)**

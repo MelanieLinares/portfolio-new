@@ -448,6 +448,14 @@ padding-bottom: 3.25rem
     padding-top: 3rem
 }
 
+section:not(:first-of-type).max-w-7xl.mx-auto:has(div h3), section:not(:first-of-type).max-w-7xl.mx-auto:has(div h3) {
+    padding-top: unset
+}
+
+/* section:not(:first-of-type).max-w-7xl.mx-auto:has(div h3), section:not(:first-of-type).max-w-7xl.mx-auto:has(div h3) h3 {
+    margin-top: unset
+} */
+
 section.about:not(#top-section) {
     padding-top: 2.75rem
 }

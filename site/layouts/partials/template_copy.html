@@ -1,0 +1,22 @@
+    <section class="{{.background}}" aria-labelledby="heading03_copy" style="border: 1px solid red">
+    
+    <div class="container max-w-7xl mx-auto lg:h-128 lg:space-x-8 lg:flex">
+
+      <div class="w-full text-top lg:text-left lg:w-1/2">
+        {{ range .content_options }}
+
+        {{ if eq .type "heading3_copy" }}
+            The heading COPY? <h2 id="heading03_copy">{{.heading03_copy}}</h2>
+        {{ end }}
+
+        {{ if eq .type "generic_content" }}
+            {{.generic_content | markdownify}}
+        {{ end }}
+ 
+        
+        {{ end }}
+        
+          </div>
+
+        </div>
+     </section>

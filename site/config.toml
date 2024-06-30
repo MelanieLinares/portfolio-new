@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "Melanie Linares Accessibility Professional and UX Developer"
+title = "Melanie Linares, Accessibility & UX"
 
 [markup]
   [markup.goldmark]

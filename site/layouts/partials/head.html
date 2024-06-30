@@ -60,7 +60,7 @@
     </style>
     {{end}}
 
-    {{ if eq (relURL .URL) ("/post/") }}
+    {{ if eq (relURL .URL) ("/work/") }}
     <style>
       body {
         background-color: #e5eeff;
@@ -68,14 +68,20 @@
       body:has(.bg-pink) footer {
         background-color: #e5eeff
       }
+    </style>
+    {{end}}
+
+    {{ if or (eq (relURL .URL) ("/work/")) (eq (.URL | truncate 5) ("/work …")) }}
+    <style>
       header.transparent #navbar, header:not(.shadow-sm) #navbar {
-        background-color: #c4d9ff
+        background-color: #c4d9ff!important
       }
-      header.shadow-sm {
+      header.shadow-sm,
+      header.bg-pink.nav.green #navbar, header:not(.shadow-sm).bg-pink.nav.green #navbar {
         background-color: var(--dark-blue);
         color: white;
       }
-      header.nav #navbar a.current {
+      header.nav #navbar a.current, header.nav.green #navbar a:hover, header.nav.green #navbar a:focus {
           background-color: rgba(36, 59, 180, .25);
       }
       header.nav #navbar a:hover, header.nav #navbar a:focus {

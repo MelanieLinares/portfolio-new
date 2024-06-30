@@ -1,0 +1,24 @@
+<blockquote>
+    
+    "{{.quote | markdownify}}"
+
+    <br><cite>
+
+      {{ .quote_name }}
+
+         
+      {{ if .cite }}   
+
+      {{ if .cite.cite_url }}
+      Source: <a href="{{ .cite.cite_url }}">{{ .cite.cite_text }}</a>
+
+      {{ else }}
+      Source: {{ .cite.cite_text }}
+      
+      {{end}}
+      {{ end }}
+
+    
+    </cite>
+  
+  </blockquote>

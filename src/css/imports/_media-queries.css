@@ -2061,10 +2061,10 @@
         display: block
     }
 
-    .container:has(blockquote) {
+    /* .container:has(blockquote) {
         -moz-column-count: 2 !important;
         column-count: 2 !important;
-    }
+    } */
 
     .info-bar {
         grid-column-start: 1!important;
@@ -3035,9 +3035,9 @@
         row-gap: 3rem
     }
 
-    .container:has(blockquote) {
+    /* .container:has(blockquote) {
         column-count: 2!important;
-    }
+    } */
 
     .grid-1-7 {
         grid-column-end: 12!important;

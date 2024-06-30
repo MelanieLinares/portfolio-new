@@ -22,9 +22,18 @@ p {
     width: 1px;
   }
 
-  h2 {
+  h2:not(.h3) {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem !important;
+    line-height: 2.65rem;
+    letter-spacing: unset;
+    /* font-weight: 700 !important; */
+    color: #3C0607
+}
+
+h2.h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
     line-height: 2.65rem;
     letter-spacing: unset;
     /* font-weight: 700 !important; */
@@ -219,8 +228,9 @@ section:not(.content) {
 }
 
 section:not(.content):last-of-type {
-    padding-bottom: 6rem;
-    margin-bottom: 0
+    margin-bottom: 6rem;
+    /* padding-bottom: 6rem;     */
+    /* margin-bottom: 0 */
 }
 
 .purple h1 mark {

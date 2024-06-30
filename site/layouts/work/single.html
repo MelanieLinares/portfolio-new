@@ -1,0 +1,232 @@
+{{ define "main" }}
+<style>
+    blockquote p, blockquote {
+        font-size: 1.5rem;
+        border-left: unset!important;
+        margin: 0 auto
+    }
+    blockquote:has(:not(p)) {
+      padding: 3rem 0;
+    }
+    blockquote:has(p) {
+      padding: 5rem 0;
+    }
+    section.blue blockquote, section.blue blockquote p{
+      margin: unset
+    }
+cite {display: block; margin-top: 1rem; }
+    blockquote {
+      max-width: 940px;
+      margin: 0 auto
+    }
+    blockquote:has(p) {
+      max-width: unset;
+    }
+    h3 {
+        display: block
+    }
+
+    .blue blockquote:has(p) {
+        margin-left: 0;
+        padding-left: 0;
+        font-size: 1.5rem;
+        border-left: unset!important;
+        margin-top: unset;
+        margin-bottom: 1rem
+    }
+
+    section > h3:first-child {
+      margin-top: unset!important
+    }
+
+
+    .adv-gallery-v5 {margin-top: 3rem}
+
+    .adv-gallery-v5  img {
+    border-radius: .5rem;
+    }
+
+.adv-gallery-v5__grid-1,
+.adv-gallery-v5__grid-2 {
+  display: grid;
+}
+
+.adv-gallery-v5__grid-1 > *,
+.adv-gallery-v5__grid-2 > * {
+  min-width: 0;
+}
+
+.adv-gallery-v5__grid-1 {
+  gap: 3rem;
+}
+
+.adv-gallery-v5__grid-2 {
+  gap: 1rem;
+}
+
+.adv-gallery-v5__img {
+  width: 100%;
+}
+
+.adv-gallery-v5__caption > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.adv-gallery-v5__caption-title {
+  font-size: 1.375rem;
+}
+
+.adv-gallery-v5__caption-description {
+  font-size: 0.9375rem;
+  color: hsl(225, 4%, 47%);
+}
+
+@media (min-width: 64rem) {
+  .adv-gallery-v5__grid-1,
+  .adv-gallery-v5__grid-2 {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+  }
+
+  .adv-gallery-v5__grid-1-item-1 {
+    grid-column-end: span 8;
+  }
+
+  .adv-gallery-v5__grid-1-item-2 {
+    grid-column-end: span 4;
+  }
+
+  .adv-gallery-v5__grid-1-item-3 {
+    grid-column-end: span 12;
+  }
+
+  .adv-gallery-v5__grid-2-item-1 {
+    grid-column-end: span 8;
+    order: 2;
+  }
+
+  .adv-gallery-v5__grid-2-item-2 {
+    grid-column-end: span 4;
+    order: 1;
+  }
+}
+
+.adv-gallery-v5 img {
+  max-height: 75vh;
+  
+}
+
+/* -------------------------------- 
+
+Utilities 
+
+-------------------------------- */
+
+.cd-flex {
+  display: flex;
+}
+
+.cd-flex-column {
+  flex-direction: column;
+}
+
+.cd-margin-bottom-xs {
+  margin-bottom: 1rem;
+}
+
+</style>
+
+
+<section class="story-v4 ac6-padding-y-lg blue" style="margin-top: 71px; background-color: #e5eeff">
+    <div class="wrapper">
+      <div style="padding: 5rem 0">
+        <h1>{{ .Params.titlebold }} <mark>{{ .Params.titlenormal }}</mark></h1>
+      </div>
+  
+      <div class="ac6-grid ac6-gap-md">
+        <div class="ac6-col-3@md ac6-col-4@lg" style="margin-bottom: 4rem">
+          <dl class="cs-top-list">
+            <dt><strong>Date:</strong></dt>
+            <dd>{{ .Params.date.Format "January" }} - 
+                {{if .Params.newdate}}
+                {{ with .Params.newdate }}
+                  {{ dateFormat "January 2006" . }}
+                  {{ end }}
+              {{end}} 
+            </dd>
+
+            {{ if .Params.technology }}
+            <dt><strong>Skillset:</strong></dt>
+            <dd>{{ .Params.technology }}</dd>
+            {{ end }}
+
+            {{ if .Params.notice }}
+            <dt><strong>NDA Disclosure:</strong></dt>
+            <dd>{{ .Params.notice }}</dd>
+            {{ end }}
+
+          </dl>
+        </div>
+  
+        <div class="ac6-text-component ac6-text-gap-md ac6-line-height-lg ac6-col-9@md ac6-col-8@lg">
+
+            <h2>{{.Params.introheading}}</h2>
+            <p>{{.Params.introbody | markdownify}}</p>
+
+          <!-- <p>
+            <a class="link-fx-1 ac6-color-contrast-higher" href="#0">
+              <span>Read more</span>
+              <svg class="ac6-icon" viewBox="0 0 32 32" aria-hidden="true">
+                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="16" cy="16" r="15.5" />
+                  <line x1="10" y1="18" x2="16" y2="12" />
+                  <line x1="16" y1="12" x2="22" y2="18" />
+                </g>
+              </svg>
+            </a>
+          </p> -->
+
+          
+          <!-- <img src="{{.Params.preview}}" alt="Image description" style="margin-bottom: 3rem; width: 100%; max-height: 75vh; object-fit: cover; object-position: left top"> -->
+
+</div>
+
+<div style="border-radius: .75rem; background-color: #d1e6ff; margin-bottom: 3rem;">
+    <img src="{{.Params.preview}}" alt="Image description" style="border-radius: .9rem; max-height: 50vh; border: .5rem solid #d1e6ff; width: 100%; object-fit: cover; object-position: left top">
+  </div>
+
+</section>
+
+
+
+<!-- <section class="story-v4 ac6-padding-y-lg" style="margin-top: 71px;">
+    <div class="wrapper">
+
+<p> remove this??? </p>
+
+
+</div>
+</section> -->
+
+{{ partial "test-multi-sections" .Params }}
+
+
+<section class="feature-v2 cd-position-relative cd-z-index-1 cd-margin-y-2xl container max-w-7xl mx-auto">
+
+    <div class="feature-v2__grid">
+      <div class="feature-v2__grid-item-1">
+        <h2 style="margin-top: unset">Key takeaways and project outcomes:</h2>
+        (significant measures of performance and progress, success or failure of business goals, outcome/effectiveness of actonable benchmarks)
+      </div>
+    
+      <div class="feature-v2__grid-item-2">
+        <div class="feature-v2__content">
+          <p>{{ .Params.takeaway }}</p>
+
+        </div>
+      </div>
+    </div>
+</section>
+
+  
+{{ end }}

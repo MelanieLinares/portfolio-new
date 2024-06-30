@@ -18,7 +18,7 @@
 						<a href="/about" {{ if eq .URL "/about/" }} class="current block" aria-current="page" {{ else }} class="block h-full flex items-center px-2  transition-colors duration-300 ease-in-out" {{ end }}>
 							About</a>		
 							
-						<a href="/post" {{ if eq .URL "/post/" }} class="current block" aria-current="page" {{ else }} class="block h-full flex items-center px-2  transition-colors duration-300 ease-in-out" {{ end }}>
+						<a href="/work" {{ if eq .URL "/work/" }} class="current block" aria-current="page" {{ else }} class="block h-full flex items-center px-2  transition-colors duration-300 ease-in-out" {{ end }}>
 							Work</a>	
 
 						<a href="/article" {{ if eq .URL "/article/" }} class="current block" aria-current="page" {{ else }} class="block h-full flex items-center px-2  transition-colors duration-300 ease-in-out" {{ end }}>
@@ -54,9 +54,9 @@
 					</a>
 				</li>
 				<li>
-					<a href="/post" {{ if eq .URL "/post/" }} class="current block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out" aria-current="page" {{ else }} class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out" {{ end }}>
+					<a href="/work" {{ if eq .URL "/work/" }} class="current block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out" aria-current="page" {{ else }} class="block h-full flex items-center mx-4 px-2 border-b-2 border-transparent transition-colors duration-300 ease-in-out" {{ end }}>
 						Work 
-						{{ if eq .URL "/post/" }}<span aria-hidden="true" style="padding-left: .25rem">ᐊ</span>{{end}}
+						{{ if eq .URL "/work/" }}<span aria-hidden="true" style="padding-left: .25rem">ᐊ</span>{{end}}
 					</a>
 				</li>
 				<li>
