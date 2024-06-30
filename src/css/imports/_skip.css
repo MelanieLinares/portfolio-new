@@ -19,6 +19,15 @@ div.tags span {
   margin-left: -1rem;
 }
 
+.article-block div.tags span {
+  margin-left: 0;
+}
+
+.article-block div.tags {
+  margin-bottom: 1rem;
+  margin-top: -.5rem
+}
+
 a.skip:after {
   content: "";
   border: 2px dashed transparent;

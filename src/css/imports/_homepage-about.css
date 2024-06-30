@@ -1,13 +1,13 @@
 
-.top-section-content p {
+/* .top-section-content p {
     padding-bottom: 3rem
 }
 
 .top-section-content p + p {
     margin-top: -3rem
-}
+} */
 
-.opportunity-box {
+/* .opportunity-box {
     position:absolute;
     width: 40%;
     max-width: 650px;
@@ -34,9 +34,9 @@
     height: 100%;
     z-index: -1;
     border-radius: 2px;
-}
+} */
 
-.opportunity-box:after {
+/* .opportunity-box:after {
     content: "";
     background-color: var(--dark-blue);
     width: 100%;
@@ -51,17 +51,13 @@
 .opportunity-box strong {
     font-family: 'JetBrains Mono', sans-serif;
     font-size: 14px;
-}
+} */
 
 .dribbble-shots2 .dribbble-shot {
     border-radius: 5px;
     margin-bottom: 24px;
     overflow: hidden;
     box-shadow: 3px 3px 16px rgba(48, 48, 55, .2);
-}
-
-.dribbble-shots2 {
-    /* margin-top: 67px; */
 }
 
 .Angled.homepage-blue {

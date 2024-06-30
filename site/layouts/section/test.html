@@ -1,373 +1,2581 @@
 {{ define "main" }}
-<div class="wrapper" style="margin-top: 70px; margin-bottom: 4rem; position: relative;">
 
 <style>
-  /* 1. Enable smooth scrolling */
-html {
-  scroll-behavior: smooth;
+
+  /* .sticky-nav {
+    border: 5px solid red
+  } */
+
+  body:has(header.nav.shadow-sm.bg-pink:not(.nav--hidden)) .sticky-nav-article .toc--static[class*=position-sticky] {
+    top: 5.5rem
+  }
+
+  /* -------------------------------- 
+
+File#: _2_table-of-contents
+Title: Table of Contents
+Descr: A navigation with a list of links to the main sections of the page 
+Usage: codyhouse.co/license
+
+-------------------------------- */
+/* reset */
+*, *::after, *::before {
+  box-sizing: border-box;
 }
 
-body:has(.section-nav) {
-  overflow: unset
+* {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: system-ui, sans-serif;
+  color: hsl(230, 7%, 23%);
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  color: hsl(230, 13%, 9%);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.0736rem;
 }
 
 h2 {
-  padding-top: 110px
+  font-size: 1.728rem;
 }
 
-main section:first-of-type h2 {
-  margin-top: -110px;
+h3 {
+  font-size: 1.25rem;
 }
 
-/* 2. Make nav sticky */
-main > nav {
-  position: sticky;
-  top: 7rem;
-  align-self: start;
+h4 {
+  font-size: 1.2rem;
 }
 
-/* 3. ScrollSpy active styles (see JS tab for activation) */
-.section-nav li.active > a {
-  color: #333;
-  font-weight: 500;
-}
-
-/* Sidebar Navigation */
-.section-nav {
-  padding-left: 0;
-  border-left: 1px solid #efefef;
-}
-
-.section-nav a {
-  text-decoration: none;
-  display: block;
-  padding: .125rem 0;
-  color: #ccc;
-  transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
-}
-
-.section-nav a:hover,
-.section-nav a:focus {
-  color: #666;
-}
-
-/** Poor man's reset **/
-h1 {
-  padding-top: 3rem;
-}
-
-/** page layout **/
-main {
-  display: grid;
-  grid-template-columns: 15em 1fr;
-  /* max-width: 100em;
-  width: 90%; */
-  margin: 0 auto;
-}
-
-/** enlarge the sections for this demo, so that we have a long scrollable page **/
-/* section {
-  padding-bottom: 20rem;
-} */
-</style>
-
-
-
-
-
-
-
-
-
-
-
-<h1>WHERE IS THIS? 45</h1>
-  <h1>Smooth Scrolling Sticky ScrollSpy Navigation</h1>
-  <p><em>Want an explanation of how this works?<br />&rarr; <a href="https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/" target="_top">https://www.bram.us/2020/01/10/smooth-scrolling-sticky-scrollspy-navigation/</a></em></p>
-
-
-
-
-
-<style>
-  .gradient-line {
-    background-image: linear-gradient(90deg, transparent, transparent 50%, #ffffff 50%, #ffffff 100%), linear-gradient(90deg, #B2A4FF, #FFB4B4);
-    background-size: var(--gradient-space) var(--gradient-height), 100% var(--gradient-height);
-    border-radius: 9999px;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: .3s;
-}
-</style>
-
-
-<div class="w-full h-[1px] mt-10 lg:mt-[50px] overflow-hidden gradient-line group-last:hidden"></div>
-<br>
-
-
-
-
-
-
-
-<main class="wrapper">
-  <nav class="section-nav">
-    <ol>
-      <li><a href="test/#accessible-carousel">Accessible Carousel</a></li>
-      <li><a href="test/#request-response">Request &amp; Response</a></li>
-      <li><a href="test/#authentication">Authentication</a></li>
-      <li><a href="test/#endpoints">Endpoints</a></li>
-      <li class=""><a href="test/#links">Links</a></li>
-      <li class=""><a href="test/#expanders">Expanders</a></li>
-      <li class=""><a href="test/#filters">Filters</a></li>
-    </ol>
-  </nav>
-  <div style="max-width: calc(100% - 5em);">
-    <section>
-      <h2 id="accessible-carousel">Accessible Carousel</h2>
-
-          <style>
-        /** Wrapper **********************/
-.carousel {
-  position: relative;
-  width: calc(100% - 40px);
-  max-width: 100%;
-  height: var(--carousel-height);
-  margin: 0 auto;
-  padding: 0 50px;
-}
-
-/** Previous/next buttons ********/
-.previous,
-.next {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  padding: 5px 10px;
-  position: absolute;
-  top: calc(50% - 16px);
-  cursor: pointer;
-  font-size: 32px;
-  
-  border: 0;
-  background: none;
-}
-
-  .previous { left: 0; }
-  .next { right: 0; }
-
-/** Slides track ***************/
-.slides {
+ol, ul, menu {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  
-  display: flex;
-  width: 100%;
-  overflow: hidden;
 }
 
-/** Individual slides ***********/
-.slide {
-  flex: 0 0 calc(100% / 3 - 10px);
-  
-  margin: 0 5px;
-  padding: 20px;
-  height: var(--carousel-height);
-  
-  display: flex;
-  align-items: center;
-  
-  font-size: 18px;
-  line-height: 26px;
-  background-color: white;
+button, input, textarea, select {
+  background-color: transparent;
+  border-radius: 0;
+  color: inherit;
+  line-height: inherit;
+  appearance: none;
 }
 
-  @media screen and (max-width: 768px) {
-    .slide {
-      font-size: 14px;
-      line-height: 18px;
-      align-items: flex-start;
-    }
+textarea {
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+}
+
+a {
+  color: hsl(250, 84%, 54%);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, video, svg {
+  display: block;
+  max-width: 100%;
+}
+
+@media (min-width: 64rem) {
+  body {
+    font-size: 1.25rem;
   }
 
-  .slide a {
-    color: black;
-    font-weight: bold;
+  h1 {
+    font-size: 3.051rem;
   }
 
-/** Slide dots ******************/
-.navigation {
+    h2 {
+    font-size: 2.44rem;
+  }
+
+    h3 {
+    font-size: 1.75rem;
+  }
+
+    h4 {
+    font-size: 1.5625rem;
+  }
+}
+
+/* variables */
+:root {
+  /* colors */
+  --tb9-color-primary-hsl: 250, 84%, 54%;
+  --tb9-color-bg-hsl: 0, 0%, 100%;
+  --tb9-color-contrast-high-hsl: 230, 7%, 23%;
+  --tb9-color-contrast-higher-hsl: 230, 13%, 9%;
+  --tb9-color-contrast-lower-hsl: 240, 4%, 85%;
+  --tb9-color-contrast-medium-hsl: 225, 4%, 47%;
+  --tb9-color-bg-light-hsl: 0, 0%, 100%;
+  --tb9-color-accent-hsl: 342, 89%, 48%;
+
+  /* spacing */
+  --tb9-space-4xs: 0.125rem;
+  --tb9-space-3xs: 0.25rem;
+  --tb9-space-2xs: 0.375rem;
+  --tb9-space-xs: 0.5rem;
+  --tb9-space-sm: 0.75rem;
+  --tb9-space-md: 1.25rem;
+
+  /* typography */
+  --tb9-text-sm: 0.833rem;
+  --tb9-text-xs: 0.694rem;
+  --tb9-text-sm: 0.833rem;
+}
+
+@media(min-width: 64rem){
+  :root {
+    /* spacing */
+    --tb9-space-4xs: 0.1875rem;
+    --tb9-space-3xs: 0.375rem;
+    --tb9-space-2xs: 0.5625rem;
+    --tb9-space-xs: 0.75rem;
+    --tb9-space-sm: 1.125rem;
+    --tb9-space-md: 2rem;
+
+    /* typography */
+    --tb9-text-sm: 1rem;
+    --tb9-text-xs: 0.8rem;
+    --tb9-text-sm: 1rem;
+  }
+}
+
+/* icons */
+.tb9-icon {
+  height: var(--tb9-size, 1em);
+  width: var(--tb9-size, 1em);
+  display: inline-block;
+  color: inherit;
+  fill: currentColor;
+  line-height: 1;
+  flex-shrink: 0;
+  max-width: initial;
+}
+
+.tb9-icon--xs {
+  --tb9-size: 16px;
+}
+
+/* component */
+:root {
+  --toc-border-width: 1px;
+  /* static version only */
+}
+
+/* #region (style affecting collapsed + static versions) 👇 */
+.toc {
+  --space-unit: 1rem;
+  /* use rem units for spacing */
+}
+
+.toc__list {
+  position: relative;
+}
+.toc__list .toc__list .toc__link {
+  padding-left: calc(var(--tb9-space-sm) * 2);
+  /* offset sub nav */
+}
+
+.toc__link,
+.toc__label {
+  padding: var(--tb9-space-3xs) var(--tb9-space-sm);
+}
+
+.toc__link {
+  position: relative;
+  color: hsl(var(--tb9-color-contrast-medium-hsl));
+  text-decoration: none;
+}
+.toc__link::before {
+  /* left mark */
+  content: "";
+  width: var(--toc-border-width);
+  height: 100%;
   position: absolute;
   left: 0;
-  bottom: -40px;
-  
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  top: 0;
+}
+.toc__link:hover {
+  color: hsl(var(--tb9-color-contrast-high-hsl));
+}
+
+.toc__link--selected {
+  color: hsl(var(--tb9-color-primary-hsl));
+}
+.toc__link--selected:hover {
+  color: hsl(var(--tb9-color-primary-hsl));
+}
+
+.toc__label {
+  /* label style */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: var(--tb9-text-sm);
+}
+
+.toc__control {
+  /* control button */
+  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+}
+
+.toc__control-text {
+  /* text inside control button */
+  position: relative;
+}
+.toc__control-text > * {
+  display: inline-block;
+  transition: opacity 0.4s, -webkit-transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.4s, transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.4s, transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.toc__control-text > *:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.toc__icon-arrow {
+  /* arrow icon  */
+}
+.toc__icon-arrow .icon__group {
+  will-change: transform;
+  -webkit-transform-origin: 8px 8px;
+          transform-origin: 8px 8px;
+  transition: -webkit-transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.toc__icon-arrow .icon__group > * {
+  -webkit-transform-origin: 8px 8px;
+          transform-origin: 8px 8px;
+  stroke-dasharray: 17;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  transition: stroke-dashoffset 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, stroke-dashoffset 0.3s;
+  transition: transform 0.3s, stroke-dashoffset 0.3s, -webkit-transform 0.3s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.toc__icon-arrow .icon__group > *:first-child {
+  stroke-dashoffset: 10;
+}
+.toc__icon-arrow .icon__group > *:last-child {
+  stroke-dashoffset: 10;
+}
+
+.toc-content__target {
+  scroll-margin-top: var(--tb9-space-4xs);
+}
+
+/* #endregion */
+/* #region (collapsed version only - mobile 👇) */
+.toc:not(.toc--static) {
+  border-radius: 0.25em;
+  background-color: hsl(var(--tb9-color-bg-light-hsl));
+  box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075), 0 0.3px 0.4px rgba(0, 0, 0, 0.025),0 0.9px 1.5px rgba(0, 0, 0, 0.05), 0 3.5px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.toc:not(.toc--static):hover {
+  box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075), 0 0.9px 1.5px rgba(0, 0, 0, 0.03),0 3.1px 5.5px rgba(0, 0, 0, 0.08),0 14px 25px rgba(0, 0, 0, 0.12);
+}
+.toc:not(.toc--static) .toc__nav {
+  /* navigation */
+  display: none;
+  margin: var(--tb9-space-2xs) 0;
+}
+.toc:not(.toc--static) .toc__list {
+  padding-bottom: var(--tb9-space-xs);
+}
+.toc:not(.toc--static) .toc__label {
+  display: none;
+}
+.toc:not(.toc--static) .toc__link {
+  display: flex;
+}
+.toc:not(.toc--static).toc--expanded .toc__control-text > *:first-child {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  opacity: 0;
+  pointer-events: none;
+}
+.toc:not(.toc--static).toc--expanded .toc__control-text > *:last-child {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.toc:not(.toc--static).toc--expanded .toc__nav {
+  display: block;
+  -webkit-animation: toc-entry-animation 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+          animation: toc-entry-animation 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.toc:not(.toc--static).toc--expanded .toc__icon-arrow .icon__group {
+  /* animate arrow icon */
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.toc:not(.toc--static).toc--expanded .toc__icon-arrow .icon__group > *:first-child, .toc:not(.toc--static).toc--expanded .toc__icon-arrow .icon__group *:last-child {
+  stroke-dashoffset: 0;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+/* #endregion */
+/* #region (static version only - desktop 👇) */
+.toc--static {
+  box-shadow: inset var(--toc-border-width) 0 0 hsl(var(--tb9-color-contrast-lower-hsl));
+  /* left border */
+}
+.toc--static[class*=position-sticky] {
+  top: var(--tb9-space-md);
+  /* used if position = sticky */
+  max-height: calc(100vh - var(--tb9-space-md) * 2);
+  /* set max height */
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.toc--static .toc__label {
+  font-size: var(--tb9-text-xs);
+}
+.toc--static .toc__link {
+  display: inline-flex;
+  font-size: var(--tb9-text-sm);
+}
+.toc--static .toc__link--selected::before {
+  background-color: hsl(var(--tb9-color-primary-hsl));
+}
+.toc--static .toc__control {
+  /* control - static version only */
+  display: none;
+}
+
+.toc-content--toc-static *:target {
+  -webkit-animation: toc-target 2s;
+          animation: toc-target 2s;
+  /* highlight section on target */
+}
+
+/* #endregion */
+@-webkit-keyframes toc-target {
+  0%, 50% {
+    outline: 2px solid hsla(var(--tb9-color-primary-hsl), 0.5);
+  }
+  100% {
+    outline: 2px solid hsla(var(--tb9-color-primary-hsl), 0);
+  }
+}
+@keyframes toc-target {
+  0%, 50% {
+    outline: 2px solid hsla(var(--tb9-color-primary-hsl), 0.5);
+  }
+  100% {
+    outline: 2px solid hsla(var(--tb9-color-primary-hsl), 0);
+  }
+}
+@-webkit-keyframes toc-entry-animation {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+@keyframes toc-entry-animation {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+/* used in JS - detect when the TOC needs to switch from a collapsed to a static version */
+[class*=toc--static]::before {
+  display: none;
+  content: "collapsed";
+}
+
+@media (min-width: 32rem) {
+  .toc--static\@xs::before {
+    content: "static";
+  }
+}
+@media (min-width: 48rem) {
+  .toc--static\@sm::before {
+    content: "static";
+  }
+}
+@media (min-width: 64rem) {
+  .toc--static\@md::before {
+    content: "static";
+  }
+}
+@media (min-width: 80rem) {
+  .toc--static\@lg::before {
+    content: "static";
+  }
+}
+@media (min-width: 90rem) {
+  .toc--static\@xl::before {
+    content: "static";
+  }
+}
+
+/* utility classes */
+.tb9-article {
+  --tb9-heading-line-height: 1.22;
+  --tb9-body-line-height: 1.66;
+  --tb9-space-multiplier: 1.2;
+}
+
+.tb9-text-component :where(h1, h2, h3, h4) {
+  line-height: var(--tb9-heading-line-height, 1.2);
+  margin-top: calc(var(--tb9-space-md) * var(--tb9-space-multiplier, 1));
+  margin-bottom: calc(var(--tb9-space-sm) * var(--tb9-space-multiplier, 1));
+}
+
+.tb9-text-component :where(p, blockquote, ul li, ol li) {
+  line-height: var(--tb9-body-line-height, 1.4);
+}
+
+.tb9-text-component :where(ul, ol, p, blockquote, .tb9-text-component__block) {
+  margin-bottom: calc(var(--tb9-space-sm) * var(--tb9-space-multiplier, 1));
+}
+
+.tb9-text-component :where(ul, ol) {
+  padding-left: 1.25em;
+}
+
+.tb9-text-component ul :where(ul, ol), .tb9-text-component ol :where(ul, ol) {
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+
+.tb9-text-component ul {
+  list-style-type: disc;
+}
+
+.tb9-text-component ol {
+  list-style-type: decimal;
+}
+
+.tb9-text-component img {
+  display: block;
+  margin: 0 auto;
+}
+
+.tb9-text-component figcaption {
+  margin-top: calc(var(--tb9-space-xs) * var(--tb9-space-multiplier, 1));
+  font-size: var(--tb9-text-sm);
+  text-align: center;}
+
+.tb9-text-component em {
+  font-style: italic;
+}
+
+.tb9-text-component strong {
+  font-weight: bold;
+}
+
+.tb9-text-component s {
+  text-decoration: line-through;
+}
+
+.tb9-text-component u {
+  text-decoration: underline;
+}
+
+.tb9-text-component mark {
+  background-color: hsla(var(--tb9-color-accent-hsl), 0.2);
+  color: inherit;
+}
+
+.tb9-text-component blockquote {
+  padding-left: 1em;
+  border-left: 4px solid hsl(var(--tb9-color-contrast-lower-hsl));
+  font-style: italic;
+}
+
+.tb9-text-component hr {
+  margin: calc(var(--tb9-space-md) * var(--tb9-space-multiplier, 1)) auto;
+  background: hsl(var(--tb9-color-contrast-lower-hsl));
+  height: 1px;
+}
+
+.tb9-text-component > *:first-child {
+  margin-top: 0;
+}
+
+.tb9-text-component > *:last-child {
+  margin-bottom: 0;
+}
+
+.tb9-text-component.tb9-line-height-xs {
+  --tb9-heading-line-height: 1;
+  --tb9-body-line-height: 1.1;
+}
+
+.tb9-text-component.tb9-line-height-sm {
+  --tb9-heading-line-height: 1.1;
+  --tb9-body-line-height: 1.2;
+}
+
+.tb9-text-component.tb9-line-height-md {
+  --tb9-heading-line-height: 1.15;
+  --tb9-body-line-height: 1.4;
+}
+
+.tb9-text-component.tb9-line-height-lg {
+  --tb9-heading-line-height: 1.22;
+  --tb9-body-line-height: 1.58;
+}
+
+.tb9-text-component.tb9-line-height-xl {
+  --tb9-heading-line-height: 1.3;
+  --tb9-body-line-height: 1.72;
+}
+
+.tb9-margin-left-3xs {
+  margin-left: var(--tb9-space-3xs);
+}
+
+.tb9-sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
+
+.tb9-padding-sm {
+  padding: var(--tb9-space-sm);
+}
+
+.tb9-gap-md {
+  gap: var(--tb9-space-md);
+}
+
+.tb9-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.tb9-grid > * {
+  min-width: 0;
+  grid-column-end: span 12;
+}
+
+.tb9-max-width-adaptive-md {
+  max-width: 32rem;
+}
+
+@media(min-width: 48rem) {
+  .tb9-max-width-adaptive-md {
+    max-width: 48rem;
+  }
+}
+
+@media(min-width: 64rem) {
+  .tb9-max-width-adaptive-md {
+    max-width: 64rem;
+  }
+}
+
+.tb9-container {
+  width: calc(100% - 2*var(--tb9-space-md));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media(min-width: 64rem){
+  .tb9-position-sticky\@md {
+    position: sticky;
+  }
+
+  .tb9-order-2\@md {
+    order: 2;
+  }
+
+  .tb9-flex-row-reverse\@md {
+    flex-direction: row-reverse;
+  }
+
+  .tb9-col-3\@md {
+    grid-column-end: span 2;
+  }
+
+  .tb9-col-9\@md {
+    grid-column-end: span 10;
+  }
+}
+</style>
+
+<div class="wrapper">
+  <div class="tb9-grid tb9-gap-md tb9-flex-row-reverse@md">
+    <div class="tb9-col-3@md tb9-order-2@md sticky-nav-article" >
+      <div class="toc toc--static@md tb9-position-sticky@md js-toc">
+        <button class="toc__control tb9-padding-sm  js-tab-focus js-toc__control" aria-controls="toc">
+          <span class="toc__control-text">
+            <i class="js-toc__control-label">In this article <span class="tb9-sr-only">- press button to select new section.</span></i>
+            <i aria-hidden="true">Select</i>
+          </span>
+      
+          <svg class="toc__icon-arrow tb9-icon tb9-icon--xs tb9-margin-left-3xs " viewBox="0 0 16 16" aria-hidden="true">
+            <g class="icon__group" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path d="M3 3l10 10"></path>
+              <path d="M13 3L3 13"></path>
+            </g>
+          </svg>
+        </button>
+
+        <nav class="toc__nav">
+          <ul class="toc__list js-toc__list">
+            <li class="toc__label" tabindex="0">In this article</li>
+            <li><a class="toc__link js-smooth-scroll" href="test/#accessible-carousel">Accessible Carousel</a></li>
+            <li>
+              <a class="toc__link js-smooth-scroll" href="test/#grid-column-items">Grid Column Items</a>
+        
+              <!-- <ul class="toc__list">
+                <li><a class="toc__link js-smooth-scroll" href="test/#intellisense">Sticky Content</a></li>
+                <li><a class="toc__link js-smooth-scroll" href="test/#indentation">Indentation</a></li>
+                <li><a class="toc__link js-smooth-scroll" href="test/#folding">Folding</a></li>
+              </ul> -->
+
+            <li><a class="toc__link js-smooth-scroll" href="test/#intellisense">Sticky Content</a></li>
+            <li><a class="toc__link js-smooth-scroll" href="test/#indentation">Lists</a></li>
+            <li><a class="toc__link js-smooth-scroll" href="test/#folding">Image Gallery 1</a></li>
+            <!-- </li> -->
+            <li><a class="toc__link js-smooth-scroll" href="test/#hot-exit">Image Gallery 2</a></li>
+            <li><a class="toc__link js-smooth-scroll" href="test/#common-questions">Common questions</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+    <div class="tb9-col-9@md">
+      <div class="tb9-text-component tb9-article toc-content js-toc-content">
+        <h1>Table of Contents</h1>
+        <p>A navigation with a list of links to the main sections of the page.</p>
+<section id="accessible-carousel">
+        <h2 class="toc-content__target">Accessible Carousel</h2>
+        <style>
+          /** Wrapper **********************/
+  .carousel {
+    position: relative;
+    width: calc(100% - 40px);
+    max-width: 100%;
+    height: var(--carousel-height);
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  
+  /** Previous/next buttons ********/
+  .previous,
+  .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 5px 10px;
+    position: absolute;
+    top: calc(50% - 16px);
+    cursor: pointer;
+    font-size: 32px;
+    
+    border: 0;
+    background: none;
+  }
+  
+    .previous { left: 0; }
+    .next { right: 0; }
+  
+  /** Slides track ***************/
+  .slides {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /** Individual slides ***********/
+  .slide {
+    flex: 0 0 calc(100% / 3 - 10px);
+    
+    margin: 0 5px;
+    padding: 20px;
+    height: var(--carousel-height);
+    
+    display: flex;
+    align-items: center;
+    
+    font-size: 18px;
+    line-height: 26px;
+    background-color: white;
+  }
+  
+    @media screen and (max-width: 768px) {
+      .slide {
+        font-size: 14px;
+        line-height: 18px;
+        align-items: flex-start;
+      }
+    }
+  
+    .slide a {
+      color: black;
+      font-weight: bold;
+    }
+  
+  /** Slide dots ******************/
+  .navigation {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+    .navigation li {
+      display: inline-block;
+    }
+  
+      .navigation li button {
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        border: 0;
+        border-radius: 100px;
+        background-color: rgba(0,0,0,.2);
+        cursor: pointer;
+      }
+  
+        .navigation li button:focus {
+          outline-offset: 4px;
+        }
+  
+        /** Active slide dot */
+        .navigation li button[aria-current="true"] {
+          background-color: black;
+          width: 15px;
+          height: 15px;
+        }
+      </style>
+  
+      <div class="carousel" aria-label="carousel" style="border: 1px solid black">
+          <p class="visibly-hidden">Carousel with three slides shown at a time. Use the Previous and Next buttons to navigate, or the slide dot buttons at the end to jump to slides.</p>
+          
+          <button class="previous">
+            <span class="fas fa-chevron-left" aria-hidden="true"><</span>
+            <span class="visibly-hidden">Previous slides</span>
+          </button>
+          
+          <div class="slides">
+            <div class="slide" role="group" aria-label="slide 1 of 9">
+              <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
+            </div>
+            
+            <div class="slide" role="group" aria-label="slide 2 of 9">
+              <p>2- This painting comes right out of your heart. It's beautiful - and we haven't even done anything to it yet. In this world, everything can be happy. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+            </div>
+            
+            <div class="slide" role="group" aria-label="slide 3 of 9">
+              <p>3- We don't make mistakes we just have happy little accidents. Mountains are so simple, they're hard. You got your heavy coat out yet? <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+            </div>
+            
+            <div class="slide" role="group" aria-label="slide 4 of 9">
+              <p>4- It's getting colder. You can't have light without dark. You can't know happiness unless you've known sorrow. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+            </div>
+            
+            <div class="slide" role="group" aria-label="slide 5 of 9">
+              <p>5- Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+            </div>
+            
+            <div class="slide" role="group" aria-label="slide 6 of 9">
+              <p>6- I spend a lot of time walking around in the woods and talking to trees, and squirrels, and little rabbits and stuff. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+            </div>
+            
+            <div class="slide" role="group" aria-label="slide 7 of 9">
+              <p>7- And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+            </div>
+            
+            <div class="slide" role="group" aria-label="slide 8 of 9">
+              <p>8- Let your imagination just wonder around when you're doing these things. It looks so good, I might as well not stop. Just use the old one inch brush. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+            </div>
+            
+            <div class="slide" role="group" aria-label="slide 9 of 9">
+              <p>9- This is probably the greatest thing that's ever happened in my life. You don't want to kill all your dark areas they are very important. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+            </div>
+          </div>
+          
+          <button class="next">
+            <span class="fas fa-chevron-right" aria-hidden="true">></span>
+            <span class="visibly-hidden">Next slides</span>
+          </button>
+          
+          <ul class="navigation" style="display: none">
+            <li>
+              <button aria-current="true">
+                <span class="visibly-hidden">Go to slide 1</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span class="visibly-hidden">Go to slide 2</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span class="visibly-hidden">Go to slide 3</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span class="visibly-hidden">Go to slide 4</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span class="visibly-hidden">Go to slide 5</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span class="visibly-hidden">Go to slide 6</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span class="visibly-hidden">Go to slide 7</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span class="visibly-hidden">Go to slide 8</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span class="visibly-hidden">Go to slide 9</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        </section>
+        <section id="grid-column-items">
+        <h2 class="toc-content__target">Grid Column Items</h2>
+        <style>
+          /* -------------------------------- 
+
+File#: _1_feature-v20
+Title: Feature v20
+Descr: A list of features with icons
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+/* reset */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: system-ui, sans-serif;
+  color: hsl(230, 7%, 23%);
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  color: hsl(230, 13%, 9%);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+  font-size: 2.125rem; /* 34px */
+}
+
+h3 {
+  font-size: 1.75rem; /* 28px */
+}
+
+h4 {
+  font-size: 1.375rem; /* 22px */
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  background-color: transparent;
+  border-radius: 0;
+  color: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+}
+
+a {
+  color: hsl(250, 84%, 54%);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, video, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* -------------------------------- 
+
+Icons 
+
+-------------------------------- */
+
+.cd-icon {
+  --size: 1em;
+  font-size: var(--size);
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+  color: inherit;
+  fill: currentColor;
+  line-height: 1;
+  flex-shrink: 0;
+  max-width: initial;
+}
+
+.cd-icon--is-spinning { /* rotate the icon infinitely */
+  animation: cd-icon-spin 1s infinite linear;
+}
+
+@keyframes cd-icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.cd-icon use { /* SVG symbols - enable icon color corrections */
+  color: inherit;
+  fill: currentColor;
+}
+
+/* --------------------------------
+
+Component 
+
+-------------------------------- */
+
+.feature-v20 {
+  position: relative;
+  z-index: 1;
+}
+
+.feature-v20__list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+}
+
+.feature-v20__list > * {
+  min-width: 0;
+}
+
+.feature-v20__item {
+  grid-column-end: span 12;
+}
+
+@media (min-width: 48rem) {
+  .feature-v20__item {
+    grid-column-end: span 6;
+  }  
+}
+
+@media (min-width: 64rem) {
+  .feature-v20__item {
+    grid-column-end: span 3;
+  }
+}
+
+.feature-v20__item-title {
+  transition: color 0.3s;
+}
+
+.feature-v20__icon-wrapper {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: hsl(250, 84%, 54%); /* icon color */
+  transition: color 0.3s;
+}
+.feature-v20__icon-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 0 0 1px hsla(230, 13%, 9%, 0.05);
+  z-index: 1;
+  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.3s;
+}
+
+.feature-v20__icon {
+  --size: 24px;
+  z-index: 2;
+}
+
+.feature-v20__paragraph {
+  color: hsl(240, 4%, 65%);
+}
+
+/* -------------------------------- 
+
+Utilities 
+
+-------------------------------- */
+
+.cd-container {
+  width: calc(100% - 3rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cd-max-width-sm {
+  max-width: 48rem;
+}
+
+.cd-max-width-adaptive-lg {
+  max-width: 32rem;
+}
+
+@media (min-width: 48rem) {
+  .cd-max-width-adaptive-lg {
+    max-width: 48rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .cd-max-width-adaptive-lg {
+    max-width: 64rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .cd-max-width-adaptive-lg {
+    max-width: 80rem;
+  }
+}
+
+.cd-padding-y-xl {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.cd-margin-bottom-xl {
+  margin-bottom: 4.5rem;
+}
+
+.cd-margin-bottom-2xs {
+  margin-bottom: 0.75rem;
+}
+
+.cd-text-center {
+  text-align: center;
+}
+        </style>        
+          <div>
+            <ul class="feature-v20__list">
+              <li class="feature-v20__item">
+                <figure class="feature-v20__icon-wrapper">
+                  <svg class="feature-v20__icon cd-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <g fill="currentColor">
+                      <path d="M21 10H3c-1.103 0-2-.897-2-2V5c0-1.103.897-2 2-2h18c1.103 0 2 .897 2 2v3c0 1.103-.897 2-2 2z"></path>
+                      <rect x="1" y="12" width="6" height="9" rx="2" ry="2" opacity=".4"></rect>
+                      <rect x="9" y="12" width="14" height="9" rx="2" ry="2" opacity=".4"></rect>
+                    </g>
+                  </svg>
+                </figure>
+        
+                <div class="cd-text-center">
+                  <h4 class="cd-margin-bottom-2xs">Navigations</h4>
+                  <p class="feature-v20__paragraph">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+              </li>
+        
+              <li class="feature-v20__item">
+                <figure class="feature-v20__icon-wrapper">
+                  <svg class="feature-v20__icon cd-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <title>Galleries</title>
+                    <g fill="currentColor">
+                      <path d="M9 9H4c-1.103 0-2-.897-2-2V4c0-1.103.897-2 2-2h5c1.103 0 2 .897 2 2v3c0 1.103-.897 2-2 2z"></path>
+                      <rect x="2" y="11" width="9" height="11" rx="2" ry="2" opacity=".4"></rect>
+                      <path d="M20 22h-5c-1.103 0-2-.897-2-2v-3c0-1.103.897-2 2-2h5c1.103 0 2 .897 2 2v3c0 1.103-.897 2-2 2z"></path>
+                      <rect x="13" y="2" width="9" height="11" rx="2" ry="2" transform="rotate(180 17.5 7.5)" opacity=".4"></rect>
+                    </g>
+                  </svg>
+                </figure>
+        
+                <div class="cd-text-center">
+                  <h4 class="cd-margin-bottom-2xs">Galleries</h4>
+                  <p class="feature-v20__paragraph">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+              </li>
+        
+              <li class="feature-v20__item">
+                <figure class="feature-v20__icon-wrapper">
+                  <svg class="feature-v20__icon cd-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <title>Animations</title>
+                    <g fill="currentColor">
+                      <circle cx="19" cy="9" r="5"></circle>
+                      <path d="M1 3.059A23.925 23.925 0 0 1 8 20c0-3.416 1.557-6.468 4-8.486" fill="none" opacity=".4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                    </g>
+                  </svg>
+                </figure>
+        
+                <div class="cd-text-center">
+                  <h4 class="cd-margin-bottom-2xs">Animations</h4>
+                  <p class="feature-v20__paragraph">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+              </li>
+        
+              <li class="feature-v20__item">
+                <figure class="feature-v20__icon-wrapper">
+                  <svg class="feature-v20__icon cd-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <title>UI Controls</title>
+                    <g fill="currentColor">
+                      <path d="M17.5 11h-11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2h11C19.981 2 22 4.019 22 6.5S19.981 11 17.5 11z" opacity=".4"></path>
+                      <circle cx="6.5" cy="6.5" r="4.5"></circle>
+                      <path d="M6.5 13h11c2.481 0 4.5 2.019 4.5 4.5S19.981 22 17.5 22h-11C4.019 22 2 19.981 2 17.5S4.019 13 6.5 13z" opacity=".4"></path>
+                      <circle cx="17.5" cy="17.5" r="4.5"></circle>
+                    </g>
+                  </svg>
+                </figure>
+        
+                <div class="cd-text-center">
+                  <h4 class="cd-margin-bottom-2xs">Controls</h4>
+                  <p class="feature-v20__paragraph">Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="intellisense">
+        <h2 class="toc-content__target">Sticky Content</h2>
+        <style>
+          /* -------------------------------- 
+
+File#: _1_sticky-feature
+Title: Sticky Feature
+Descr: List of product features with sticky images
+Usage: codyhouse.co/license
+
+-------------------------------- */
+/* reset */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: system-ui, sans-serif;
+  color: hsl(230, 7%, 23%);
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  color: hsl(230, 13%, 9%);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.0736rem;
+}
+
+h2 {
+  font-size: 1.728rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  background-color: transparent;
+  border-radius: 0;
+  color: inherit;
+  line-height: inherit;
+  appearance: none;
+}
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+}
+
+a {
+  color: hsl(250, 84%, 54%);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, video, svg {
+  display: block;
+  max-width: 100%;
+}
+
+@media (min-width: 64rem) {
+  body {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 3.051rem;
+  }
+
+    h2 {
+    font-size: 2.44rem;
+  }
+
+    h3 {
+    font-size: 1.75rem;
+  }
+
+    h4 {
+    font-size: 1.5625rem;
+  }
+}
+
+/* variables */
+:root {
+  /* colors */
+  --sh4-color-primary-hsl: 250, 84%, 54%;
+  --sh4-color-contrast-lower-hsl: 240, 4%, 85%;
+  --sh4-color-contrast-medium-hsl: 225, 4%, 47%;
+  --sh4-color-contrast-high-hsl: 230, 7%, 23%;
+  --sh4-color-contrast-higher-hsl: 230, 13%, 9%;
+  --sh4-color-bg-dark-hsl: 240, 4%, 95%;
+  --sh4-color-bg-hsl: 0, 0%, 100%;
+  --sh4-color-black-hsl: 230, 13%, 9%;
+  --sh4-color-accent-hsl: 342, 89%, 48%;
+
+  /* spacing */
+  --sh4-space-xs: 0.5rem;
+  --sh4-space-sm: 0.75rem;
+  --sh4-space-md: 1.25rem;
+  --sh4-space-lg: 2rem;
+  --sh4-space-xl: 3.25rem;
+  --sh4-space-2xl: 5.25rem;
+
+  /* typography */
+  --sh4-text-xl: 1.728rem;
+  --sh4-text-sm: 0.833rem;
+}
+
+@media(min-width: 64rem){
+  :root {
+    /* spacing */
+    --sh4-space-xs: 0.75rem;
+    --sh4-space-sm: 1.125rem;
+    --sh4-space-md: 2rem;
+    --sh4-space-lg: 3.125rem;
+    --sh4-space-xl: 5.125rem;
+    --sh4-space-2xl: 8.25rem;
+    
+    /* typography */
+    --sh4-text-xl: 2.44rem;
+    --sh4-text-sm: 1rem;
+  }
+}
+
+/* component */
+.sticky-feature {
+  position: relative;
+  z-index: 1;
+  padding: var(--sh4-space-lg) 0;
+}
+
+.sticky-feature__container {
+  width: calc(100% - 2*var(--sh4-space-md));
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 32rem;
+}
+
+@media(min-width: 48rem) {
+  .sticky-feature__container {
+    max-width: 48rem;
+  }
+}
+
+@media(min-width: 64rem) {
+  .sticky-feature__container {
+    max-width: 64rem;
+  }
+}
+
+@media(min-width: 80rem) {
+  .sticky-feature__container {
+    max-width: 80rem;
+  }
+}
+
+.sticky-feature__grid-1 {
+  display: grid;
+}
+
+@media(min-width: 64rem) {
+  .sticky-feature__grid-1 {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sh4-space-md);
+  }
+}
+
+@media(min-width: 80rem) {
+  .sticky-feature__grid-1 > *:first-child {
+    padding-right: var(--sh4-space-xl);
+  }
+}
+
+.sticky-feature__grid-2 {
+  display: grid;
+  gap: var(--sh4-space-xl);
+}
+
+@media(min-width: 64rem) {
+  .sticky-feature__grid-2 {
+    gap: var(--sh4-space-2xl);
+  }
+}
+
+.sticky-feature__content-figure {
+  /* images visible on small screens */
+  border-radius: 0.375em;
+  overflow: hidden;
+  box-shadow: 0 0.3px 0.4px hsla(var(--sh4-color-black-hsl), 0.025),0 0.9px 1.5px hsla(var(--sh4-color-black-hsl), 0.05), 0 3.5px 6px hsla(var(--sh4-color-black-hsl), 0.1);
+  margin-top: var(--sh4-space-md);
+}
+
+.sticky-feature__content-figure img {
+  display: block;
   width: 100%;
 }
 
-  .navigation li {
-    display: inline-block;
+.sticky-feature__media-list {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sticky-feature__media-item {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky-feature__media-figure {
+  /* images visible on bigger screens */
+  border-radius: 0.75em;
+  box-shadow: 0 0.3px 0.4px hsla(var(--sh4-color-black-hsl), 0.025),0 0.9px 1.5px hsla(var(--sh4-color-black-hsl), 0.05), 0 3.5px 6px hsla(var(--sh4-color-black-hsl), 0.1);
+  overflow: hidden;
+  opacity: 0;
+}
+
+.sticky-feature__media-figure img {
+  display: block;
+  width: 100%;
+  max-height: 90vh;
+}
+
+.sticky-feature-current-item .sticky-feature__media-figure {
+  opacity: 1;
+}
+
+@media (min-width: 64rem) {
+  .sticky-feature__content-list {
+    padding-top: 50vh;
+    padding-bottom: 50vh;
   }
 
-    .navigation li button {
-      display: block;
-      width: 10px;
-      height: 10px;
-      margin: 0 5px;
-      border: 0;
-      border-radius: 100px;
-      background-color: rgba(0,0,0,.2);
-      cursor: pointer;
-    }
+  .sticky-feature__title {
+    font-size: var(--sh4-text-xl);
+    cursor: pointer;
+    opacity: 0.3;
+  }
 
-      .navigation li button:focus {
-        outline-offset: 4px;
-      }
+  .sticky-feature__title:hover, .sticky-feature-current-item .sticky-feature__title {
+    opacity: 1;
+  }
 
-      /** Active slide dot */
-      .navigation li button[aria-current="true"] {
-        background-color: black;
-        width: 15px;
-        height: 15px;
-      }
-    </style>
+  .sticky-feature__content-figure {
+    /* show only to screen readers */
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+  }
 
-    <div class="carousel" aria-label="carousel" style="border: 1px solid black">
-        <p class="sr-only">Carousel with three slides shown at a time. Use the Previous and Next buttons to navigate, or the slide dot buttons at the end to jump to slides.</p>
-        
-        <button class="previous">
-          <span class="fas fa-chevron-left" aria-hidden="true"><</span>
-          <span class="sr-only">Previous slides</span>
-        </button>
-        
-        <div class="slides">
-          <div class="slide" role="group" aria-label="slide 1 of 9">
-            <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
-          </div>
+/* text overlay gradients */
+  /* .sticky-feature__media-list::before, .sticky-feature__media-list::after {
+    
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    height: 100px;
+    pointer-events: none;
+  }
+
+  .sticky-feature__media-list::before {
+    top: 0;
+    background: linear-gradient(to bottom, hsl(var(--sh4-color-bg-hsl)), hsla(var(--sh4-color-bg-hsl), 0.8), hsla(var(--sh4-color-bg-hsl), 0));
+  }
+
+  .sticky-feature__media-list::after {
+    bottom: 0;
+    background: linear-gradient(to top, hsl(var(--sh4-color-bg-hsl)), hsla(var(--sh4-color-bg-hsl), 0.8), hsla(var(--sh4-color-bg-hsl), 0));
+  } */
+}
+
+/* utility classes */
+@media not all and (min-width: 64rem) {
+  .sticky-feature-display\@md {
+    display:none !important;
+  }
+}
+        </style>
+        <div class="sticky-feature js-sticky-feature">
+          <div class="sticky-feature__container">
+            <div class="sticky-feature__grid-1">
+              <div>
+                <ul class="sticky-feature__content-list sticky-feature__grid-2 js-sticky-feature__content-list">
+                  <li class="js-sticky-feature__content-item">
+                    <h3>Import and organize all your icons</h3>
+                    <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
+                    <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
+                    <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
           
-          <div class="slide" role="group" aria-label="slide 2 of 9">
-            <p>2- This painting comes right out of your heart. It's beautiful - and we haven't even done anything to it yet. In this world, everything can be happy. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
-          </div>
+                    <figure class="sticky-feature__content-figure">
+                      <img src="https://codyhouse.co/app/assets/img/sticky-feature-img-1.png" alt="Image description">
+                    </figure>
+                  </li>
           
-          <div class="slide" role="group" aria-label="slide 3 of 9">
-            <p>3- We don't make mistakes we just have happy little accidents. Mountains are so simple, they're hard. You got your heavy coat out yet? <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
-          </div>
+                  <li class="js-sticky-feature__content-item">
+                    <h3>Cutomize colors and strokes</h3>
+                    <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
+                    <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
+                    <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
+                    
+                    <figure class="sticky-feature__content-figure">
+                      <img src="https://codyhouse.co/app/assets/img/sticky-feature-img-2.png" alt="Image description">
+                    </figure>
+                  </li>
           
-          <div class="slide" role="group" aria-label="slide 4 of 9">
-            <p>4- It's getting colder. You can't have light without dark. You can't know happiness unless you've known sorrow. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
-          </div>
+                  <li class="js-sticky-feature__content-item">
+                    <h3>Export your icons in different formats</h3>
+                    <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
+                    <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
+                    <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
+                    
+                    <figure class="sticky-feature__content-figure">
+                      <img src="https://codyhouse.co/app/assets/img/sticky-feature-img-3.png" alt="Image description">
+                    </figure>
+                  </li>
           
-          <div class="slide" role="group" aria-label="slide 5 of 9">
-            <p>5- Exercising the imagination, experimenting with talents, being creative; these things, to me, are truly the windows to your soul. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
-          </div>
+                  <li class="js-sticky-feature__content-item">
+                    <h3>Share projects with your team</h3>
+                    <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
+                    <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
+                    <p>1- And I know you're saying, 'Oh Bob, you've done it this time.' And you may be right. Little short strokes. In life you need colors. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a>.</p>
+                    
+                    <figure class="sticky-feature__content-figure">
+                      <img src="https://codyhouse.co/app/assets/img/sticky-feature-img-4.png" alt="Image description">
+                    </figure>
+                  </li>
+                </ul>
+              </div>
           
-          <div class="slide" role="group" aria-label="slide 6 of 9">
-            <p>6- I spend a lot of time walking around in the woods and talking to trees, and squirrels, and little rabbits and stuff. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
-          </div>
+              <div class="sticky-feature-display@md" aria-hidden="true">
+                <ul class="sticky-feature__media-list js-sticky-feature__media-list">
+                  <li class="sticky-feature__media-item js-sticky-feature__media-item">
+                    <figure class="sticky-feature__media-figure">
+                      <img src="https://codyhouse.co/app/assets/img/sticky-feature-img-1.png" alt="Image description">
+                    </figure>
+                  </li>
           
-          <div class="slide" role="group" aria-label="slide 7 of 9">
-            <p>7- And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
-          </div>
+                  <li class="sticky-feature__media-item js-sticky-feature__media-item">
+                    <figure class="sticky-feature__media-figure">
+                      <img src="https://codyhouse.co/app/assets/img/sticky-feature-img-2.png" alt="Image description">
+                    </figure>
+                  </li>
           
-          <div class="slide" role="group" aria-label="slide 8 of 9">
-            <p>8- Let your imagination just wonder around when you're doing these things. It looks so good, I might as well not stop. Just use the old one inch brush. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
-          </div>
+                  <li class="sticky-feature__media-item js-sticky-feature__media-item">
+                    <figure class="sticky-feature__media-figure">
+                      <img src="https://codyhouse.co/app/assets/img/sticky-feature-img-3.png" alt="Image description">
+                    </figure>
+                  </li>
           
-          <div class="slide" role="group" aria-label="slide 9 of 9">
-            <p>9- This is probably the greatest thing that's ever happened in my life. You don't want to kill all your dark areas they are very important. <a href="https://en.wikipedia.org/wiki/Bob_Ross">Read more</a></p>
+                  <li class="sticky-feature__media-item js-sticky-feature__media-item">
+                    <figure class="sticky-feature__media-figure">
+                      <img src="https://codyhouse.co/app/assets/img/sticky-feature-img-4.png" alt="Image description">
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <button class="next">
-          <span class="fas fa-chevron-right" aria-hidden="true">></span>
-          <span class="sr-only">Next slides</span>
-        </button>
-        
-        <ul class="navigation" style="display: none">
-          <li>
-            <button aria-current="true">
-              <span class="sr-only">Go to slide 1</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <span class="sr-only">Go to slide 2</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <span class="sr-only">Go to slide 3</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <span class="sr-only">Go to slide 4</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <span class="sr-only">Go to slide 5</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <span class="sr-only">Go to slide 6</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <span class="sr-only">Go to slide 7</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <span class="sr-only">Go to slide 8</span>
-            </button>
-          </li>
-          <li>
-            <button>
-              <span class="sr-only">Go to slide 9</span>
-            </button>
-          </li>
-        </ul>
-      </div>
-
-    </section>
-    <section>
-      <h2 id="request-response">Request &amp; Response</h2>
-      <p>…<br><button>test</button></p>
-    </section>
-    <section>
-      <h2 id="authentication">Authentication</h2>
-      <p>…<br><button>test</button></p>
-    </section>
-    <section>
-      <h2 id="endpoints">Endpoints</h2>
-      <p>…<br><button>test</button></p>
       </section>
-    </section>
-    <section>
-      <h2 id="links">Links</h2>
-      <p>…<br><button>test</button></p>
-    </section>
-    <section>
-      <h2 id="expanders">Expanders</h2>
-      <p>…<br><button>test</button></p>
-    </section>
-    <section>
-      <h2 id="filters">Filters</h2>
-      <p>…<br><button>test</button></p>
-    </section>
-  </div>
-</main>
+<section id="indentation">
+        <h2 class="toc-content__target">Lists</h2>
+        <style>
+          /* -------------------------------- 
 
+File#: _1_list-v2
+Title: List v2
+Descr: Custom list component
+Usage: codyhouse.co/license
+
+-------------------------------- */
+/* reset */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: system-ui, sans-serif;
+  color: hsl(230, 7%, 23%);
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  color: hsl(230, 13%, 9%);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.0736rem;
+}
+
+h2 {
+  font-size: 1.728rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  background-color: transparent;
+  border-radius: 0;
+  color: inherit;
+  line-height: inherit;
+  appearance: none;
+}
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+}
+
+a {
+  color: hsl(250, 84%, 54%);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, video, svg {
+  display: block;
+  max-width: 100%;
+}
+
+@media (min-width: 64rem) {
+  body {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 3.051rem;
+  }
+
+    h2 {
+    font-size: 2.44rem;
+  }
+
+    h3 {
+    font-size: 1.75rem;
+  }
+
+    h4 {
+    font-size: 1.5625rem;
+  }
+}
+
+/* variables */
+:root {
+  /* colors */
+  --lf2-color-primary-hsl: 250, 84%, 54%;
+  --lf2-color-bg-hsl: 0, 0%, 100%;
+  --lf2-color-contrast-high-hsl: 230, 7%, 23%;
+  --lf2-color-contrast-higher-hsl: 230, 13%, 9%;
+  --lf2-color-contrast-medium-hsl: 225, 4%, 47%;
+  --lf2-color-accent-hsl: 342, 89%, 48%;
+  --lf2-color-contrast-lower-hsl: 240, 4%, 85%;
+
+  /* spacing */
+  --lf2-space-xs: 0.5rem;
+  --lf2-space-lg: 2rem;
+  --lf2-space-md: 1.25rem;
+  --lf2-space-sm: 0.75rem;
+
+  /* typography */
+  --lf2-text-sm: 0.833rem;
+}
+
+@media(min-width: 64rem){
+  :root {
+    /* spacing */
+    --lf2-space-xs: 0.75rem;
+    --lf2-space-lg: 3.125rem;
+    --lf2-space-md: 2rem;
+    --lf2-space-sm: 1.125rem;
+
+    /* typography */
+    --lf2-text-sm: 1rem;
+  }
+}
+
+/* icons */
+.lf2-icon {
+  height: var(--lf2-size, 1em);
+  width: var(--lf2-size, 1em);
+  display: inline-block;
+  color: inherit;
+  fill: currentColor;
+  line-height: 1;
+  flex-shrink: 0;
+  max-width: initial;
+}
+
+/* component */
+:root {
+  --list-v2-bullet-size: 40px;
+  --list-v2-bullet-font-size: 1rem;
+  --list-v2-bullet-margin-right: 1rem;
+  --list-v2-gap-y: var(--lf2-space-lg);
+  /* list points gap */
+}
+
+.list-v2, .lf2-text-component .list-v2 {
+  padding-left: 0;
+  list-style: none;
+}
+.list-v2 > li:not(:last-child), .lf2-text-component .list-v2 > li:not(:last-child) {
+  margin-bottom: var(--list-v2-gap-y);
+}
+
+.list-v2__title {
+  padding-left: calc(var(--list-v2-bullet-size) + var(--list-v2-bullet-margin-right));
+}
+
+.list-v2__bullet {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: var(--list-v2-bullet-size);
+  height: var(--list-v2-bullet-size);
+  margin-right: var(--list-v2-bullet-margin-right);
+  margin-left: calc(-1 * var(--list-v2-bullet-size) - var(--list-v2-bullet-margin-right));
+  vertical-align: middle;
+  position: relative;
+  top: -0.1em;
+}
+
+.list-v2__content {
+  margin-left: calc(var(--list-v2-bullet-size) + var(--list-v2-bullet-margin-right));
+}
+
+/* ordered list */
+.list-v2--ol, .lf2-text-component .list-v2--ol {
+  counter-reset: list-items;
+}
+.list-v2--ol > li, .lf2-text-component .list-v2--ol > li {
+  counter-increment: list-items;
+}
+.list-v2--ol .list-v2__bullet, .lf2-text-component .list-v2--ol .list-v2__bullet {
+  border-radius: 50%;
+  background-color: hsla(var(--lf2-color-primary-hsl), 0.2);
+  color: hsl(var(--lf2-color-primary-hsl));
+  font-size: var(--list-v2-bullet-font-size);
+  font-weight: 500;
+}
+.list-v2--ol .list-v2__bullet::before, .lf2-text-component .list-v2--ol .list-v2__bullet::before {
+  content: counter(list-items);
+}
+
+/* unordered list */
+.list-v2--ul, .lf2-text-component .list-v2--ul {
+  --list-v2-bullet-size: 10px;
+}
+.list-v2--ul .list-v2__bullet, .lf2-text-component .list-v2--ul .list-v2__bullet {
+  border-radius: 50%;
+  background-color: hsl(var(--lf2-color-primary-hsl));
+}
+
+/* icons */
+.list-v2--icons, .lf2-text-component .list-v2--icons {
+  --list-v2-bullet-size: 48px;
+}
+.list-v2--icons .list-v2__bullet, .lf2-text-component .list-v2--icons .list-v2__bullet {
+  border-radius: 50%;
+  background-color: hsla(var(--lf2-color-primary-hsl), 0.2);
+}
+.list-v2--icons .list-v2__icon, .lf2-text-component .list-v2--icons .list-v2__icon {
+  --lf2-size: 24px;
+  color: hsl(var(--lf2-color-primary-hsl));
+  /* icon color */
+}
+
+/* utility classes */
+.lf2-color-contrast-medium {
+  --lf2-color-o: 1;
+  color: hsla(var(--lf2-color-contrast-medium-hsl), var(--lf2-color-o, 1));
+}
+
+.lf2-text-component :where(h1, h2, h3, h4) {
+  line-height: var(--lf2-heading-line-height, 1.2);
+  margin-top: calc(var(--lf2-space-md) * var(--lf2-space-multiplier, 1));
+  margin-bottom: calc(var(--lf2-space-sm) * var(--lf2-space-multiplier, 1));
+}
+
+.lf2-text-component :where(p, blockquote, ul li, ol li) {
+  line-height: var(--lf2-body-line-height, 1.4);
+}
+
+.lf2-text-component :where(ul, ol, p, blockquote, .lf2-text-component__block) {
+  margin-bottom: calc(var(--lf2-space-sm) * var(--lf2-space-multiplier, 1));
+}
+
+.lf2-text-component :where(ul, ol) {
+  padding-left: 1.25em;
+}
+
+.lf2-text-component ul :where(ul, ol), .lf2-text-component ol :where(ul, ol) {
+  padding-left: 1em;
+  margin-bottom: 0;
+}
+
+.lf2-text-component ul {
+  list-style-type: disc;
+}
+
+.lf2-text-component ol {
+  list-style-type: decimal;
+}
+
+.lf2-text-component img {
+  display: block;
+  margin: 0 auto;
+}
+
+.lf2-text-component figcaption {
+  margin-top: calc(var(--lf2-space-xs) * var(--lf2-space-multiplier, 1));
+  font-size: var(--lf2-text-sm);
+  text-align: center;}
+
+.lf2-text-component em {
+  font-style: italic;
+}
+
+.lf2-text-component strong {
+  font-weight: bold;
+}
+
+.lf2-text-component s {
+  text-decoration: line-through;
+}
+
+.lf2-text-component u {
+  text-decoration: underline;
+}
+
+.lf2-text-component mark {
+  background-color: hsla(var(--lf2-color-accent-hsl), 0.2);
+  color: inherit;
+}
+
+.lf2-text-component blockquote {
+  padding-left: 1em;
+  border-left: 4px solid hsl(var(--lf2-color-contrast-lower-hsl));
+  font-style: italic;
+}
+
+.lf2-text-component hr {
+  margin: calc(var(--lf2-space-md) * var(--lf2-space-multiplier, 1)) auto;
+  background: hsl(var(--lf2-color-contrast-lower-hsl));
+  height: 1px;
+}
+
+.lf2-text-component > *:first-child {
+  margin-top: 0;
+}
+
+.lf2-text-component > *:last-child {
+  margin-bottom: 0;
+}
+
+.lf2-text-component.lf2-line-height-xs {
+  --lf2-heading-line-height: 1;
+  --lf2-body-line-height: 1.1;
+}
+
+.lf2-text-component.lf2-line-height-sm {
+  --lf2-heading-line-height: 1.1;
+  --lf2-body-line-height: 1.2;
+}
+
+.lf2-text-component.lf2-line-height-md {
+  --lf2-heading-line-height: 1.15;
+  --lf2-body-line-height: 1.4;
+}
+
+.lf2-text-component.lf2-line-height-lg {
+  --lf2-heading-line-height: 1.22;
+  --lf2-body-line-height: 1.58;
+}
+
+.lf2-text-component.lf2-line-height-xl {
+  --lf2-heading-line-height: 1.3;
+  --lf2-body-line-height: 1.72;
+}
+
+.lf2-margin-bottom-xs {
+  margin-bottom: var(--lf2-space-xs);
+}
+        </style>
+        <div>
+        <h3>Ordered List</h3>
+<ol class="list-v2 list-v2--ol">
+  <li>
+    <div class="lf2-margin-bottom-xs">
+      <h4 class="list-v2__title">
+        <span class="list-v2__bullet" aria-hidden="true"></span>CSS Framework
+      </h4>
+    </div>
+
+    <div class="list-v2__content">
+      <div class="lf2-text-component">
+        <p class="lf2-color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatum rerum repudiandae nobis quae, autem minima eius doloribus recusandae minus?</p>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="lf2-margin-bottom-xs">
+      <h4 class="list-v2__title">
+        <span class="list-v2__bullet" aria-hidden="true"></span>Components
+      </h4>
+    </div>
+
+    <div class="list-v2__content">
+      <div class="lf2-text-component">
+        <p class="lf2-color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eum tempora maxime, praesentium veritatis consectetur quia laudantium pariatur.</p>
+        <p class="lf2-color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente unde explicabo natus consequuntur laborum dolores, asperiores sint, eveniet deserunt porro illum aut ab earum non ducimus, cumque nam qui minima itaque ipsam ad esse. Atque architecto molestiae assumenda inventore dignissimos.</p>
+      </div>
+    </div>
+  </li>
+  </ol>
+<h3>Unordered List</h3>
+
+<ul class="list-v2 list-v2--ul">
+  <li>
+    <div class="lf2-margin-bottom-xs">
+      <h4 class="list-v2__title">
+        <span class="list-v2__bullet" aria-hidden="true"></span>CSS Framework
+      </h4>
+    </div>
+
+    <div class="list-v2__content">
+      <div class="lf2-text-component">
+        <p class="lf2-color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatum rerum repudiandae nobis quae, autem minima eius doloribus recusandae minus?</p>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="lf2-margin-bottom-xs">
+      <h4 class="list-v2__title">
+        <span class="list-v2__bullet" aria-hidden="true"></span>Components
+      </h4>
+    </div>
+
+    <div class="list-v2__content">
+      <div class="lf2-text-component">
+        <p class="lf2-color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eum tempora maxime, praesentium veritatis consectetur quia laudantium pariatur.</p>
+        <p class="lf2-color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente unde explicabo natus consequuntur laborum dolores, asperiores sint, eveniet deserunt porro illum aut ab earum non ducimus, cumque nam qui minima itaque ipsam ad esse. Atque architecto molestiae assumenda inventore dignissimos.</p>
+      </div>
+    </div>
+  </li>
+</ul>
+</div>
+</section>
+<section id="folding">
+        <h2 class="toc-content__target">Image Gallery 1</h2>
+        <style>
+          /* -------------------------------- 
+
+File#: _2_adv-gallery-v3
+Title: Advanced Gallery v3
+Descr: Advanced image gallery template
+Usage: codyhouse.co/license
+
+-------------------------------- */
+/* reset */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: system-ui, sans-serif;
+  color: hsl(230, 7%, 23%);
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  color: hsl(230, 13%, 9%);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.0736rem;
+}
+
+h2 {
+  font-size: 1.728rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  background-color: transparent;
+  border-radius: 0;
+  color: inherit;
+  line-height: inherit;
+  appearance: none;
+}
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+}
+
+a {
+  color: hsl(250, 84%, 54%);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, video, svg {
+  display: block;
+  max-width: 100%;
+}
+
+@media (min-width: 64rem) {
+  body {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 3.051rem;
+  }
+
+    h2 {
+    font-size: 2.44rem;
+  }
+
+    h3 {
+    font-size: 1.75rem;
+  }
+
+    h4 {
+    font-size: 1.5625rem;
+  }
+}
+
+/* variables */
+:root {
+  /* colors */
+  --ao2-color-primary-hsl: 250, 84%, 54%;
+  --ao2-color-bg-hsl: 0, 0%, 100%;
+  --ao2-color-contrast-high-hsl: 230, 7%, 23%;
+  --ao2-color-contrast-higher-hsl: 230, 13%, 9%;
+  --ao2-color-contrast-lower-hsl: 240, 4%, 85%;
+  --ao2-color-black-hsl: 230, 13%, 9%;
+
+  /* spacing */
+  --ao2-space-xs: 0.5rem;
+  --ao2-space-lg: 2rem;
+}
+
+@media(min-width: 64rem){
+  :root {
+    /* spacing */
+    --ao2-space-xs: 0.75rem;
+    --ao2-space-lg: 3.125rem;
+  }
+}
+
+/* component */
+@media (min-width: 64rem) {
+  .adv-gallery-v3__title {
+    border-top: 1px solid hsl(var(--ao2-color-contrast-lower-hsl));
+    padding-top: var(--ao2-space-xs);
+  }
+}
+.adv-gallery-v3__img-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.adv-gallery-v3__img-link::before, .adv-gallery-v3__img-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 48px;
+  height: 48px;
+}
+.adv-gallery-v3__img-link::before {
+  -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 100% 0%);
+          clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 100% 0%);
+  background-color: hsla(var(--ao2-color-black-hsl), 0.9);
+  transition: -webkit-clip-path 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: clip-path 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: clip-path 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-clip-path 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.adv-gallery-v3__img-link::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpolyline points='4 2 14 2 14 12' fill='none' stroke='%23FFF' stroke-miterlimit='10' stroke-width='2'/%3E%3Cline x1='14' y1='2' x2='2' y2='14' fill='none' stroke='%23FFF' stroke-miterlimit='10' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transform: scale(0.5) translateX(-5px) translateY(5px);
+          transform: scale(0.5) translateX(-5px) translateY(5px);
+  will-change: transform;
+  opacity: 0;
+  transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.2s, transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: opacity 0.2s, transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.adv-gallery-v3__img-link:hover::before {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.adv-gallery-v3__img-link:hover::after {
+  -webkit-transform: scale(1) translateX(0) translateY(0);
+          transform: scale(1) translateX(0) translateY(0);
+  opacity: 1;
+}
+
+/* utility classes */
+.ao2-width-100\% {
+  width: 100%;
+}
+
+.ao2-block {
+  display: block;
+}
+
+.ao2-padding-bottom-lg {
+  padding-bottom: var(--ao2-space-lg);
+}
+
+.ao2-gap-xs {
+  gap: var(--ao2-space-xs);
+}
+
+.ao2-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.ao2-grid > * {
+  min-width: 0;
+  grid-column-end: span 12;
+}
+
+@media(min-width: 64rem){
+  .ao2-col-start-1\@md {
+    grid-column-start: 2;
+  }
+
+  .ao2-col-4\@md {
+    grid-column-end: span 4;
+  }
+
+  .ao2-col-8\@md {
+    grid-column-end: span 8;
+  }
+
+  .ao2-col-7\@md {
+    grid-column-end: span 7;
+  }
+
+  .ao2-col-10\@md {
+    grid-column-end: span 10;
+  }
+
+  .ao2-col-3\@md {
+    grid-column-end: span 3;
+  }
+
+  .ao2-col-9\@md {
+    grid-column-end: span 9;
+  }
+}
+
+@media(min-width: 80rem){
+  .ao2-col-start-1\@lg {
+    grid-column-start: 2;
+  }
+
+  .ao2-col-start-2\@lg {
+    grid-column-start: 3;
+  }
+
+  .ao2-col-3\@lg {
+    grid-column-end: span 3;
+  }
+
+  .ao2-col-6\@lg {
+    grid-column-end: span 6;
+  }
+
+  .ao2-col-8\@lg {
+    grid-column-end: span 8;
+  }
+}
+          /* -------------------------------- 
+
+File#: _1_adv-gallery-v5
+Title: Advanced Gallery v5
+Descr: Advanced image gallery template
+Usage: codyhouse.co/license
+
+-------------------------------- */
+
+/* reset */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+* {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: system-ui, sans-serif;
+  color: hsl(230, 7%, 23%);
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  color: hsl(230, 13%, 9%);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem; /* 40px */
+}
+
+h2 {
+  font-size: 2.125rem; /* 34px */
+}
+
+h3 {
+  font-size: 1.75rem; /* 28px */
+}
+
+h4 {
+  font-size: 1.375rem; /* 22px */
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  background-color: transparent;
+  border-radius: 0;
+  color: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+}
+
+a {
+  color: hsl(250, 84%, 54%);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, video, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* -------------------------------- 
+
+Component 
+
+-------------------------------- */
+
+.adv-gallery-v5 {}
+
+.adv-gallery-v5__grid-1,
+.adv-gallery-v5__grid-2 {
+  display: grid;
+}
+
+.adv-gallery-v5__grid-1 > *,
+.adv-gallery-v5__grid-2 > * {
+  min-width: 0;
+}
+
+.adv-gallery-v5__grid-1 {
+  gap: 3rem;
+}
+
+.adv-gallery-v5__grid-2 {
+  gap: 1rem;
+}
+
+.adv-gallery-v5__img {
+  width: 100%;
+}
+
+.adv-gallery-v5__caption {
+  margin-top: auto;
+}
+
+.adv-gallery-v5__caption > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.adv-gallery-v5__caption-title {
+  font-size: 1.375rem;
+}
+
+.adv-gallery-v5__caption-description {
+  font-size: 0.9375rem;
+  color: hsl(225, 4%, 47%);
+}
+
+@media (min-width: 64rem) {
+  .adv-gallery-v5__grid-1,
+  .adv-gallery-v5__grid-2 {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+  }
+
+  .adv-gallery-v5__grid-1-item-1 {
+    grid-column-end: span 8;
+  }
+
+  .adv-gallery-v5__grid-1-item-2 {
+    grid-column-end: span 4;
+  }
+
+  .adv-gallery-v5__grid-1-item-3 {
+    grid-column-end: span 12;
+  }
+
+  .adv-gallery-v5__grid-2-item-1 {
+    grid-column-end: span 8;
+    order: 2;
+  }
+
+  .adv-gallery-v5__grid-2-item-2 {
+    grid-column-end: span 4;
+    order: 1;
+  }
+}
+
+/* -------------------------------- 
+
+Utilities 
+
+-------------------------------- */
+
+.cd-flex {
+  display: flex;
+}
+
+.cd-flex-column {
+  flex-direction: column;
+}
+
+.cd-margin-bottom-xs {
+  margin-bottom: 1rem;
+}
+        </style>
+        <div class="adv-gallery-v5">
+          <ul class="adv-gallery-v5__grid-1">
+            <li class="adv-gallery-v5__grid-1-item-1">
+              <img class="adv-gallery-v5__img" src="https://codyhouse.co/app/assets/img/adv-gallery-v5-img-1.jpg" alt="Image description">
+            </li>
+        
+            <li class="adv-gallery-v5__grid-1-item-2 cd-flex cd-flex-column">
+              <img class="adv-gallery-v5__img cd-margin-bottom-xs" src="https://codyhouse.co/app/assets/img/adv-gallery-v5-img-2.jpg" alt="Image description">
+        
+              <div class="adv-gallery-v5__caption">
+                <h3 class="adv-gallery-v5__caption-title">Nothing is cheap</h3>
+                <p class="adv-gallery-v5__caption-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis in incidunt asperiores eum fugit.</p>
+              </div>
+            </li>
+        
+            <li class="adv-gallery-v5__grid-1-item-3">
+              <div class="adv-gallery-v5__grid-2">
+                <div class="adv-gallery-v5__grid-2-item-1">
+                  <img class="adv-gallery-v5__img" src="https://codyhouse.co/app/assets/img/adv-gallery-v5-img-3.jpg" alt="Image description">
+                </div>
+        
+                <div class="adv-gallery-v5__grid-2-item-2 cd-flex cd-flex-column">
+                  <div class="adv-gallery-v5__caption">
+                    <h3 class="adv-gallery-v5__caption-title">I have a dream</h3>
+                    <p class="adv-gallery-v5__caption-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis in incidunt asperiores eum fugit.</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+</section>
+<section id="hot-exit">
+        <h2  class="toc-content__target">Image Gallery 2</h2>
+        <style>
+
+        </style>
+       <div class="adv-gallery-v3">
+  <ul class="ao2-grid ao2-gap-xs">
+    <li class="ao2-col-4@md ao2-col-3@lg">
+      <p class="adv-gallery-v3__title">Selected Works</p>
+    </li>
+
+    <li class="ao2-col-8@md ao2-col-6@lg reveal-fx reveal-fx--translate-up" data-reveal-fx-delta="100">
+      <img class="ao2-block ao2-width-100%" src="https://codyhouse.co/app/assets/img/adv-gallery-v3-img-1.jpg" alt="Image description">
+    </li>
+
+    <li class="ao2-col-8@md ao2-col-6@lg ao2-col-start-2@lg reveal-fx reveal-fx--translate-up" data-reveal-fx-delta="100">
+      <img class="ao2-block ao2-width-100%" src="https://codyhouse.co/app/assets/img/adv-gallery-v3-img-2.jpg" alt="Image description">
+    </li>
+
+    <li class="ao2-col-4@md reveal-fx reveal-fx--translate-up" data-reveal-fx-delta="100">
+      <img class="ao2-block ao2-width-100%" src="https://codyhouse.co/app/assets/img/adv-gallery-v3-img-3.jpg" alt="Image description">
+    </li>
+
+    <li class="ao2-col-4@md reveal-fx reveal-fx--translate-up" data-reveal-fx-delta="100">
+      <img class="ao2-block ao2-width-100%" src="https://codyhouse.co/app/assets/img/adv-gallery-v3-img-4.jpg" alt="Image description">
+    </li>
+
+    <li class="ao2-col-7@md ao2-col-6@lg reveal-fx reveal-fx--translate-up" data-reveal-fx-delta="100">
+      <img class="ao2-block ao2-width-100%" src="https://codyhouse.co/app/assets/img/adv-gallery-v3-img-5.jpg" alt="Image description">
+    </li>
+
+    <li class="ao2-col-10@md ao2-col-start-1@md ao2-col-8@lg ao2-col-start-2@lg reveal-fx reveal-fx--translate-up" data-reveal-fx-delta="100">
+      <img class="ao2-block ao2-width-100%" src="https://codyhouse.co/app/assets/img/adv-gallery-v3-img-6.jpg" alt="Image description">
+    </li>
+
+    <li class="ao2-col-3@md ao2-col-start-1@lg reveal-fx reveal-fx--translate-up" data-reveal-fx-delta="100">
+      <img class="ao2-block ao2-width-100%" src="https://codyhouse.co/app/assets/img/adv-gallery-v3-img-7.jpg" alt="Image description">
+    </li>
+
+    <li class="ao2-col-9@md ao2-col-8@lg reveal-fx reveal-fx--translate-up" data-reveal-fx-delta="100">
+      <img class="ao2-block ao2-width-100%" src="https://codyhouse.co/app/assets/img/adv-gallery-v3-img-8.jpg" alt="Image description">
+    </li>
+  </ul>
+</div>
+</section>
+<section id="common-questions">
+        <h2 class="toc-content__target">Common questions</h2>
+        <p> <a href="/">test link</a> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit beatae laborum itaque aliquam ipsam consequatur numquam? Qui nobis molestiae accusantium fugiat, culpa asperiores similique ad dolor, eum cum maiores earum ipsam dolores veritatis nostrum odit illum rerum delectus officiis dolore. Doloribus odit nulla quasi eos mollitia rem perferendis est laudantium unde ad blanditiis, ut vitae dicta aliquam beatae sed impedit illum explicabo. Saepe aliquam, at similique ipsum quae cum soluta quia cumque illum reprehenderit iusto, adipisci, unde id totam. Nihil explicabo distinctio quibusdam fugiat expedita voluptate atque eligendi, sit at ullam, in optio vero facere maxime nesciunt pariatur autem id suscipit labore fuga quis ipsum! Quidem sint eius omnis, inventore consequatur minus fugit vitae mollitia, pariatur quo neque vel aliquid.</p>
+</section>
+      </div>
+    </div>
+  </div>
 </div>
 
 {{ end }}

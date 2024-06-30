@@ -11,7 +11,6 @@
     padding-right: 2rem
   }
 
-  /* variables */
 :root {
     /* colors */
     /* --lw7-color-primary-hsl: 250, 84%, 54%;
@@ -694,4 +693,12 @@ Component
     grid-column-start: 5;
     grid-column-end: span 8;
   }
+
+  /* .article-block .h3, p:not(:last-child) {
+    margin-bottom: 2rem;
+} */
+
+.responsibilities {
+    margin-left: 1.25rem;
+    list-style-type: disc;
 }
