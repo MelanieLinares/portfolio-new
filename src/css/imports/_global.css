@@ -18,7 +18,7 @@ p {
 
   h2:not(.h3) {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem !important;
+    font-size: 2.25rem !important;
     line-height: 2.65rem;
     letter-spacing: unset;
     /* font-weight: 700 !important; */

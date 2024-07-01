@@ -103,15 +103,36 @@
     </div>
 
     <div style="margin-left: auto;">
-      {{ if in .Params.date "2022" }}             
-      <a href="/retrospective/2023" style="margin-right: 1rem" class="homepage radius-lg text-center retro">
-        <span>NEXT: 2023 <span aria-hidden="true">--></span></span>
-      </a> 
-      {{else}}
-      <a href="/retrospective/{{ sub .Date.Year 1 }}" style="margin-right: 1rem" class="homepage radius-lg text-center retro">
-        <span><span aria-hidden="true"><--</span> PREVIOUS: {{ sub .Date.Year 1 }}</span>
-      </a>
-      {{end}}
+
+            <!-- if viewing current year -->
+            {{  if in .Date.Year "2024" }} 
+
+            <a href="/retrospective/{{ sub .Date.Year 1 }}" style="margin-right: 1rem" class="homepage radius-lg text-center retro">
+              <span><span aria-hidden="true"><--</span> PREVIOUS: {{ sub .Date.Year 1 }}</span>
+            </a> 
+            
+            {{end}}
+
+            {{  if in .Date.Year "2023" }} 
+
+            <a href="/retrospective/{{ sub .Date.Year 1 }}" style="margin-right: 1rem" class="homepage radius-lg text-center retro">
+              <span><span aria-hidden="true"><--</span> PREVIOUS: {{ sub .Date.Year 1 }}</span>
+            </a> 
+
+            <a href="/retrospective/{{ sub .Date.Year -1 }}" style="margin-right: 1rem" class="homepage radius-lg text-center retro">
+              <span>NEXT: {{ sub .Date.Year -1 }} <span aria-hidden="true">--></span></span>
+            </a> 
+
+            {{end}}
+
+            {{  if in .Date.Year "2022" }} 
+
+            <a href="/retrospective/{{ sub .Date.Year -1 }}" style="margin-right: 1rem" class="homepage radius-lg text-center retro">
+              <span>NEXT: {{ sub .Date.Year -1 }} <span aria-hidden="true">--></span></span>
+            </a> 
+
+            {{end}}
+
     </div>
 
     </div>

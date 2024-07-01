@@ -4,12 +4,21 @@
 
 <div style="display:flex; font-family: 'JetBrains Mono'; font-size: .9rem">
 
-	<h2><span>{{ .Title }}</span></h2>
-	<!-- DO NOT DELETE -->
-		<!-- <h2><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h2> -->
+	{{ if .Params.typed_list }}
+		<h2><a href="{{ .RelPermalink }}" class="no-underline br1 mb1 db raise w-100"><span class="htitle primary">{{ .Title }}</span></a></h2>
+		{{else}}
+		<h2><span>{{ .Title }}</span></h2>
+		{{end}}
 
-		<div class="tags px-3 text-base"><span>case study in progress</span>   
-		</div>
+		{{ if .Params.typed_list }}
+		<ul class="tags px-3 text-base" style="white-space: nowrap">
+			{{ range (.GetTerms "tags") }}
+			<li><a href="{{ .Permalink }}" class="px-3 text-base text-indigo-500 border border-indigo-500 undefined">{{ .LinkTitle }}</a></li>   
+			{{end}}
+		</ul>
+		{{else}}
+		<div class="tags px-3 text-base"><span style="border: 1px dashed #5F0717;">case study in progress</span></div>
+		{{end}}
 		
 	<!-- {{ if .Params.thumbnail}}<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>{{ end }}
 	

@@ -4751,7 +4751,8 @@
     }
 
     .top-section-new.pink h2, .top-section-new.pink h2 + p, .top-section-new.purple h2, .top-section-new.purple h2 + p, #top-section-new + div:not(.wrapper) p {
-        max-width: 40rem;
+        /* max-width: 40rem; */
+        max-width: 28rem;
     }
 
     #top-section-new.purple div:not(.wrapper) blockquote {

@@ -4,7 +4,8 @@ titlebold: Creating impact through a
 titlenormal: new online DMV IIMS portal
 thumbnail: img/voma-2.png
 thumbnail2: img/voma-1.png
-preview: https://codyhouse.co/app/assets/img/article-v4-img-1.jpg
+preview: img/voma-2.png
+# preview: https://codyhouse.co/app/assets/img/article-v4-img-1.jpg
 weight: 2
 notice: For legal reasons final UI cannot be shown and some some details have been omitted.
 preview_intro: This is a test description that needs to be updated and added to all case studies. Perhaps even added to the articles. 
@@ -166,7 +167,7 @@ typed_list:
           Per department and NC system standards profile data needed to be retained for years. Users also needed to be able to remove accounts whether due to error or dismissal from the program.
 
 
-          ***Solution:**
+          **Solution:**
 
 
           Deleted data would be removed from the main API and added to a separate API for deleted accounts. This delete API would auto remove data after a certain amount of time, according to state regulations. This process would allow users deleted in error to be reinstated.
