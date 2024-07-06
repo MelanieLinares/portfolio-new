@@ -196,6 +196,10 @@ li.w-3\/6 {
     list-style-type: none  
 }
 
+section:has(.adv-gallery-v5):not(.content) {
+    margin-bottom: 0
+}
+
 section:not(.content) {
     margin-bottom: 6rem
 }
@@ -216,7 +220,8 @@ section:not(.content):last-of-type {
       linear-gradient(to top left, #BEA8FF 50%, #BEA8FF 50%);
 }
 
-.blue h1 mark {
+.blue h1 mark,
+body:has(.blue) h3 mark {
     background-image: linear-gradient(
         to bottom right,
         #89C6FF  50%,
@@ -224,6 +229,14 @@ section:not(.content):last-of-type {
       ),
       linear-gradient(#89C6FF, #89C6FF),
       linear-gradient(to top left, #89C6FF 50%, #89C6FF 50%);
+}
+
+body:has(.blue) h3 mark {
+transform: rotate(-7deg);
+position: absolute;
+margin-left: -1rem;
+padding-left: .25rem;
+top: -.5rem;
 }
 
 .green h1 mark {

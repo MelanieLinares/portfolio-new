@@ -10,8 +10,13 @@
 .caption {
     position: relative;
     padding-left: 5em;
-    /* padding-top: 2em;
-    margin-bottom: 5em; */
+    display: inline-block;
+    width: fit-content;
+ }
+
+ li:nth-child(even) .caption {
+padding-left: unset;
+padding-right: 5em;
  }
 
  .caption:before 
@@ -26,6 +31,14 @@
      display: block;
      position: absolute;
      pointer-events: none;
+ }
+
+ li:nth-child(even) .caption:before 
+ /* .img-w-caption .caption:before  */
+ {
+     left: unset;
+     right: 0;
+     transform: scale(1, -1) rotate(45deg);
  }
 
  /* .overlap-bg .caption {

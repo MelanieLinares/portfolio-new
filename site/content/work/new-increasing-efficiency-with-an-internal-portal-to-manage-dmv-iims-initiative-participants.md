@@ -4,7 +4,7 @@ titlebold: Creating impact through a
 titlenormal: new online DMV IIMS portal
 thumbnail: img/voma-2.png
 thumbnail2: img/voma-1.png
-preview: img/voma-2.png
+preview: img/voma-display2.png
 # preview: https://codyhouse.co/app/assets/img/article-v4-img-1.jpg
 weight: 2
 notice: For legal reasons final UI cannot be shown and some some details have been omitted.
@@ -71,7 +71,7 @@ typed_list:
     - type: two_column
       two_column:  
         right: >-
-          ### Initial research
+          ### <mark>Goal:</mark> <br>Prioritize existing research into user needs and flows
 
           When brought onto the project other teams had already been researching, interviewing users, and working on the legislation involved in getting the project started for years. Day 1 was analyzing the existing research, locating gaps that could be actioned upon with new research/interviews, creating a project outline, and identifying limitations. 
 
@@ -79,7 +79,7 @@ typed_list:
 
           Ignition Interlock users, while not users of the portal, do have specific needs that affect how this application works. The main benefit (or need) of these individuals is to ensure that their data is up to date, synced properly with important events, and that PII documentation is handled securely.
         left: >-
-          ### Why a new online portal?
+          ### <mark>Goal:</mark> <br>Upgrade the system with a new, improved online portal
 
           The NCDMV had no interest in expanding the process beyond an internal application, but improving the existing one. The existing application was limited and for the process to work it required over half of the labor to be manual entry. That was the identified issue. Appropriate improvents and features were prioritized to benefit new and existing participants, as well as vendors of the IIMS monitoring devices. 
 
@@ -98,10 +98,13 @@ typed_list:
         > "Currently, 10,894 ignition interlocks are installed in the vehicles of DWI offenders in North Carolina. [...] Prior to implementation of the new web-based system, the NCDMV had been implementing the ignition interlock program through labor intensive, manual processes."<cite>Source: <a href="https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/fy2019_annual_report_-_north_carolina_governors_highway_safety_program.pdf">fy2019 North Carolina Governor's Highway Safety Program annual report</a></cite>
 
     - type: fullwidth_img
+      image: img/ignition-interlock.jpg 
+      image_caption: Stock photo of driver blowing into Vehicle Alcohol Ignition Interlock
+
 
     - type: text
       text: >-
-        ### Stakeholder interviews
+        ### <mark>Goal:</mark> <br>Interview stakeholders to outline features and UI
 
         The day 1 research also consisted of existing application pages and database information. This gave a good idea of the types of information that would need to be stored, parent-child relationships, and possible UI groups. With the interlock participant in mind we now turned to the end-user, IIMS DMV employees in charge of managing the data. We sought to answer questions such as:
 
@@ -127,11 +130,35 @@ typed_list:
     typed_list:
       - type: text
         text: >-
-          ## How do we fix it? - way 1 title tbd
+          ## Altering the UI approach from digitized form to integrated process
 
-          ### Identifying core pages and user flows
+          ### Identifying data structures and user flows
 
-          **Internal user flows were divided into different screen types:**
+          Based on the existing research, the backend and API teams had already begun identifying data sets. Using the outlined user flows and UI pages I led the process to categorize the data into components and pages. Any issues in structure identified at this point was brought up during weekly standups.
+
+      - type: image_grid_gallery
+        image1: img/voma-sketch2.png 
+        image1_caption: >-
+          **Focusing on the UI and macro interactions**<br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis in incidunt asperiores eum fugit.
+        image2: img/ma-flow.jpg
+        image2_caption: >-
+          **Focusing on the UI and macro interactions**<br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis in incidunt asperiores eum fugit       
+          
+      - type: text
+        text: >-
+          ### Organizing the data into components
+
+          The existing physical form was taken and broken down into into a table for the individual data: first name, last name, address, etc. This information was then cross referenced when outlining components. Was all data being used? What was the severity or importance of information? 
+
+      - type: fullwidth_img
+        image: img/ignition-interlock.jpg 
+        image_caption: Stock photo of driver blowing into Vehicle Alcohol Ignition Interlock
+
+      - type: text
+        text: >-
+          **Components and features were categorized into four page types:**
 
           - Dashboard: Users need only high-level information and quick access to reporting options
 
@@ -139,26 +166,23 @@ typed_list:
 
           - Group view: Users are very focused on dates; participants are grouped by action item deadline dates
           
-          - Detail view: Users need detailed documentation access for a specific participant to aid in preparing resources or violation resolutions 
+          - Detail view: Users need detailed documentation access for a specific participant to aid in preparing resources or violation resolutions
 
-      - type: image_grid_gallery
-        text: >-
-          ### Focusing on the UI and macro interactions 
-
-  - type: section
-    typed_list:
       - type: quote
         quote: >-
           [The project will] create additional subsystems within the current IIMS system that will be integrated to allow for a completely automated process across business units within the DMV for managing all aspects of the Ignition Interlock Program.
         cite: 
-          cite_text: fy2020 North Carolina Governor's Highway Safety Program annual report
+          cite_text: fy2020 North Carolina Governor's Highway Safety Program annual report          
+
+  - type: section
+    typed_list:
       - type: text
         text: >-
-          ## How do we fix it? - way 2 title tbd
+          ## Overcoming project challenges
 
-          ### Creating the frontend
+          ### TBD - Creating the frontend
 
-          #### SharePoint and templated components 
+          #### TBD - SharePoint and templated components 
 
           Moving away from SharePoint Lists has the team look into JavaScript templating languages with would allow more flexibility while still being browser compatible. The final portal is built with a combination of ASP.Net Core and VUEjs. Atomic design methodology was used to create reusable components. 
 

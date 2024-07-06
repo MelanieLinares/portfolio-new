@@ -1,31 +1,40 @@
 <div class="adv-gallery-v5 container max-w-7xl mx-auto">
   <ul class="adv-gallery-v5__grid-1" role="presentation">
+    
     <li class="adv-gallery-v5__grid-1-item-1">
-      <img class="adv-gallery-v5__img" src="https://codyhouse.co/app/assets/img/article-v4-img-1.jpg" alt="Image description">
+      <img class="adv-gallery-v5__img cd-margin-bottom-xs" src="{{.image1}}" alt="Image description">
+      <div class="adv-gallery-v5__caption caption">
+        {{.image1_caption | markdownify}}
+      </div>
     </li>
 
+    {{ if .image2 }}
     <li class="adv-gallery-v5__grid-1-item-2 cd-flex cd-flex-column">
-      <img class="adv-gallery-v5__img cd-margin-bottom-xs" src="https://codyhouse.co/app/assets/img/article-v4-img-1.jpg" alt="Image description">
-
-      <div class="adv-gallery-v5__caption">
-        <strong class="adv-gallery-v5__caption-title">Nothing is cheap</strong>
-        <p class="adv-gallery-v5__caption-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis in incidunt asperiores eum fugit.</p>
+      <img class="adv-gallery-v5__img cd-margin-bottom-xs" src="{{.image2}}" alt="Image description">
+      <div class="adv-gallery-v5__caption caption">
+        {{.image2_caption | markdownify}}
       </div>
     </li>
+    {{end}}
 
-    <li class="adv-gallery-v5__grid-1-item-3">
-      <div class="adv-gallery-v5__grid-2">
-        <div class="adv-gallery-v5__grid-2-item-1">
-          <img class="adv-gallery-v5__img" src="https://codyhouse.co/app/assets/img/article-v4-img-1.jpg" alt="Image description">
-        </div>
-
-        <div class="adv-gallery-v5__grid-2-item-2 cd-flex cd-flex-column">
-          <div class="adv-gallery-v5__caption">
-            <strong class="adv-gallery-v5__caption-title">I have a dream</strong>
-            <p class="adv-gallery-v5__caption-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis in incidunt asperiores eum fugit.</p>
+    {{ if .image3 }}
+        <li class="adv-gallery-v5__grid-2-item-2">
+          <img class="adv-gallery-v5__img cd-margin-bottom-xs" src="{{.image3}}" alt="Image description">
+          <div class="adv-gallery-v5__caption caption">
+            {{.image3_caption | markdownify}}
           </div>
-        </div>
-      </div>
-    </li>
+        </li>
+        {{end}}
+
+{{ if .image4 }}
+        <li class="adv-gallery-v5__grid-2-item-1 cd-flex cd-flex-column">
+          <img class="adv-gallery-v5__img cd-margin-bottom-xs" src="{{.image4}}" alt="Image description">          
+          <div class="adv-gallery-v5__caption caption">
+            {{.image4_caption | markdownify}}
+          </div>
+        </li>
+{{end}}
+
+   
   </ul>
 </div>

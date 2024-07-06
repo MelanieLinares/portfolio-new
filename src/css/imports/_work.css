@@ -553,9 +553,9 @@
     /* line-height: 57%; */
   }
 
-  section ul {
-    list-style: disc;
-    padding-left: 1.15rem;
+  section ul:not([role=presentation]) {
+    list-style: disc!important;
+    padding-left: 1.15rem!important;
   }
 
   section ul[role=presentation] {
@@ -615,7 +615,7 @@ section:has(.adv-gallery-v5), section:nth-of-type(3):has(:not(.adv-gallery-v5)) 
 } */
 
 @supports ((-webkit-clip-path: inset(50%)) or (clip-path: inset(50%))) {
-  section:has(.adv-gallery-v5), section:nth-of-type(3):has(:not(.adv-gallery-v5)) + section {
+  section:has(.adv-gallery-v5), section:nth-of-type(3):not(:has(.adv-gallery-v5)) + section {
     padding-top: 4rem;
     padding-bottom: 9rem;
     -webkit-clip-path: polygon(0% 0%, 100% var(--diagonal-section-offset), 100% 100%, 0% calc(100% - var(--diagonal-section-offset)));
