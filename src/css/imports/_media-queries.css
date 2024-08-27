@@ -1009,6 +1009,12 @@ ul.flex li {
 
 /* 375 (iphone) */
 @media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .top-section-new:has(.me-homepage-bg) .grid-7-11 img {
+        max-width: 155vw;
+        margin-left: -8.5rem;
+    }
+    
     html, .top-section-new {
          overflow-x: clip; width: 100vw;
 
