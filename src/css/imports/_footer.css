@@ -11,3 +11,7 @@ footer div.wrapper {
     margin-right: auto;
     text-align: center;
 }
+
+footer a, .notification a {
+    text-decoration: underline
+}

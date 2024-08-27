@@ -10,12 +10,9 @@ weight: 2
 notice: For legal reasons final UI cannot be shown and some some details have been omitted.
 preview_intro: This is a test description that needs to be updated and added to all case studies. Perhaps even added to the articles. 
 preview_responsibilities:
-  - Collaborate with designers on user flows and information architecture
-  - Build out components for new and existing design systems
-  - Test applications to cross-browser specifications and requirements
-  - Create wireframes and prototypes
-  - Utilize compilers, browser dev tools, and APIs
-  - Conduct research and created user stories for existing applications
+  - Create wireframes and components for design systems
+  - Test applications to cross-browser specifications
+  - Conduct research and create user stories
 preview_intro: Identifying ways to optimize an internal DMV process digitally. The North Carolina Department of Transportation (NCDOT) Ignition Interlock Program team needed a new online system for managing the program. The new system would need to still support the legacy system’s data and its user’s needs.
 preview_problem: Internal DMV employees experience difficulty keeping up with backlog and lack of needed features. 
 date: 2018-08-04T00:33:20.559Z
@@ -24,20 +21,25 @@ client: NC Department of Motor Vehicles
 logo: img/ncdot-logo.jpg
 role: UI Designer and Developer
 tags:
-  - javascript
+  - frontend
   - sharepoint
   - vue
 technology: User Experience Design, Prototyping, Design System integration,
   Frontend Technology
 duration: 7 months
-introheading: The program affects thousands of NC citizens, but the existing system is broken. How do we fix it?
 preview_tools: UX, HTML/CSS, Vue
+
+introheading: The program affects thousands of NC citizens, but the existing system is broken. How do we fix it?
 introbody: >-
-  The North Carolina Department of Transportation (NCDOT) on behalf of the North Carolina Driver and Motor Vehicles (NCDMV) assigned a team to improve the Ignition Interlock Management System (IIMS). This team required a new online system due to being overloaded with manual entry tasks and physical forms, often prone to user error.
+  The North Carolina Department of Transportation (NCDOT) on behalf of the North Carolina Department Division of Motor Vehicles (NCDMV) assigned a team to improve the Ignition Interlock Management System (IIMS). This team required a new online system due to being overloaded with manual entry tasks and physical forms, often prone to user error.
+
+  <div aria-hidden="true" style="font-size: 2.25rem; text-align: center; margin-top: 3rem; margin-bottom: -3rem;color:#89C6FF">〰</div>
+
 
   > "The agency’s decades-old computer system has led to some residents being able to continue driving even though their license should be suspended and other residents unable to renew."
   
-  <br><cite>Source: <a href="https://www.wbtv.com">https://www.wbtv.com</a></cite>
+  <br><cite>Source: <a href="https://www.wbtv.com">www.wbtv.com</a></cite>
+
 
 theme: green
 casestudy: test
@@ -68,20 +70,21 @@ typed_list:
 
   - type: section
     typed_list:
+
     - type: two_column
       two_column:  
         right: >-
           ### <mark>Goal:</mark> <br>Prioritize existing research into user needs and flows
 
-          When brought onto the project other teams had already been researching, interviewing users, and working on the legislation involved in getting the project started for years. Day 1 was analyzing the existing research, locating gaps that could be actioned upon with new research/interviews, creating a project outline, and identifying limitations. 
+          When brought onto the project other teams had already been researching, interviewing users, and working on the legislation involved in getting the project started for years. Day 1 for me was analyzing the existing research, locating gaps that could be actioned upon with new research/interviews, creating a project outline, and identifying limitations. 
 
           #### What does this research tell us? 
 
-          Ignition Interlock users, while not users of the portal, do have specific needs that affect how this application works. The main benefit (or need) of these individuals is to ensure that their data is up to date, synced properly with important events, and that PII documentation is handled securely.
+          Ignition Interlock users, while not users of the portal, do have specific needs that affect how this application works. The main requirement from these individuals is to ensure that their data is up to date, synced properly with important events, and that PII documentation is handled securely.
         left: >-
           ### <mark>Goal:</mark> <br>Upgrade the system with a new, improved online portal
 
-          The NCDMV had no interest in expanding the process beyond an internal application, but improving the existing one. The existing application was limited and for the process to work it required over half of the labor to be manual entry. That was the identified issue. Appropriate improvents and features were prioritized to benefit new and existing participants, as well as vendors of the IIMS monitoring devices. 
+          The NCDMV had no interest in expanding the process beyond an internal application, but improving the existing one. The existing system was limited and for the process to work it required over half of the labor to be manual entry. That was the identified issue. Appropriate improvents and features were prioritized to benefit new and existing participants, as well as vendors of the IIMS monitoring devices. 
 
           #### Requirements and limitations
 
@@ -99,12 +102,15 @@ typed_list:
 
     - type: fullwidth_img
       image: img/ignition-interlock.jpg 
-      image_caption: Stock photo of driver blowing into Vehicle Alcohol Ignition Interlock
+      image_caption: Stock photo of driver blowing into Vehicle Ignition Interlock
 
 
     - type: text
       text: >-
-        ### <mark>Goal:</mark> <br>Interview stakeholders to outline features and UI
+        <div aria-hidden="true" style="font-size: 2.25rem; text-align: center; margin-top: -1rem; margin-bottom: 4rem;color:#89C6FF">〰</div>
+
+
+        ### <mark>Goal:</mark><br> Interview stakeholders to outline features and UI
 
         The day 1 research also consisted of existing application pages and database information. This gave a good idea of the types of information that would need to be stored, parent-child relationships, and possible UI groups. With the interlock participant in mind we now turned to the end-user, IIMS DMV employees in charge of managing the data. We sought to answer questions such as:
 
@@ -113,6 +119,7 @@ typed_list:
         - How will authentication and restricted access work?
 
         - What are the main goals of employees managing the system?
+
 
         I consulted with the internal project lead. We unified on a strategy before driving downtown to meet with the project owner. We defined:
 
@@ -124,7 +131,7 @@ typed_list:
 
         #### What do these interviews/sessions tell us? 
 
-        We now had a better understanding of the types of actions needed to manage a participant: create, edit, modify, delete, etc. Special attention was made to important dates/decisions and how that information would be alerted to employees and vendors monitoring accounts. If dates were missed or no action was taken, decisions were made on what kind of automated actions would occur. The employee’s main needs are accuracy, ease of access, and download options.
+        We now had a better understanding of the types of actions needed to manage a participant: create, edit data, modify account, delete, etc. Special attention was given to important dates/decisions and how that information would be alerted to employees and vendors monitoring accounts. If dates were missed or no action was taken, decisions were made on what kind of automated actions would occur. The employee’s main needs are accuracy, ease of access, and download options.
 
   - type: section
     typed_list:
@@ -139,22 +146,23 @@ typed_list:
       - type: image_grid_gallery
         image1: img/voma-sketch2.png 
         image1_caption: >-
-          **Focusing on the UI and macro interactions**<br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis in incidunt asperiores eum fugit.
+          **Whiteboard full of different data points, categorized into pages:** participant profile, main dashboard sidebar, participant search 
         image2: img/ma-flow.jpg
         image2_caption: >-
-          **Focusing on the UI and macro interactions**<br>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis in incidunt asperiores eum fugit       
+          **The medical accomodation process broken down on sticky notes:** from citizen request to participant being approved for program exception
           
       - type: text
         text: >-
+          <div aria-hidden="true" style="font-size: 2.25rem; text-align: center; margin-top: 3rem; margin-bottom: 4rem;color:#89C6FF">〰</div>
+
+
           ### Organizing the data into components
 
           The existing physical form was taken and broken down into into a table for the individual data: first name, last name, address, etc. This information was then cross referenced when outlining components. Was all data being used? What was the severity or importance of information? 
 
       - type: fullwidth_img
-        image: img/ignition-interlock.jpg 
-        image_caption: Stock photo of driver blowing into Vehicle Alcohol Ignition Interlock
+        image: img/pexels-picjumbo-com-55570-196644.jpg 
+        image_caption: Stock photo from picjumbo.com
 
       - type: text
         text: >-
@@ -180,20 +188,18 @@ typed_list:
         text: >-
           ## Overcoming project challenges
 
-          ### TBD - Creating the frontend
-
-          #### TBD - SharePoint and templated components 
+          ### SharePoint and templated components
 
           Moving away from SharePoint Lists has the team look into JavaScript templating languages with would allow more flexibility while still being browser compatible. The final portal is built with a combination of ASP.Net Core and VUEjs. Atomic design methodology was used to create reusable components. 
 
-          #### Legal challenges
+
+          ### Legal challenges
 
           Per department and NC system standards profile data needed to be retained for years. Users also needed to be able to remove accounts whether due to error or dismissal from the program.
 
 
           **Solution:**
-
-
+          <br>
           Deleted data would be removed from the main API and added to a separate API for deleted accounts. This delete API would auto remove data after a certain amount of time, according to state regulations. This process would allow users deleted in error to be reinstated.
           Accessibility considerations
           Stakeholders of this project did not consider accessibility a huge concern since the application was not public-facing. If you have some familiarity with UX and WCAG you’ll know that internal applications need to be compliant too. People will need to access it so make it a good experience. During frontend development attention was given to accessibility issues I could control such as headings, tables, and some interactive elements. I briefed the team that would be managing the code base going forward on best practices and easy-to implement improvements if both backend and frontend worked together to make it happen.
@@ -207,6 +213,10 @@ typed_list:
         cite: 
           cite_text: fy2019 North Carolina Governor’s Highway Safety Program annual report
           cite_url: https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/fy2019_annual_report_-_north_carolina_governors_highway_safety_program.pdf
+      - type: text
+        text: >-
+          <div aria-hidden="true" style="font-size: 2.25rem; text-align: center; margin-top: 3rem; margin-bottom: 3rem;color:#89C6FF">〰</div>
+
 
 takeaway: >-
   This was a very long project, due in part to government shutdowns and COVID furloughs. However this project was a fantastic experience in working directly with multiple teams and organizing several interviews and walkthroughs.  The project was able to enter beta early into 2021 fiscal funding year which allowed plenty of QA time and addressing secondary features such as loading times. The end result was highly praised by the internal team which now uses this application daily. 🎉

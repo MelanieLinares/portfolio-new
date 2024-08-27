@@ -1,14 +1,14 @@
 {{ define "main" }}
 {{ if eq (relURL .URL) ("/article/") }}
 
-<section class="top-section-new purple" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
+<section class="top-section-new purple" style="margin-top: 25px; margin-bottom: 4rem; position: relative">
 
 <div class="wrapper" style="padding-top: .75rem; position: relative">
 
 <div class="h1-category-wrapper"><span class="h1-category">I occassionally write things</span></div>
-<h1>Articles about <mark>ux & development</mark></h1>
+<h1>Articles about <mark>design & development</mark></h1>
 
-<div class="h2">Looking specifically for short-format and blog content? Check out the <a href="/tags/bitesize/" class="underline">#bitesize</a> tag.</div>
+<div class="h2">Looking specifically for short-format and blog content? Check out the <a href="/tags/bitesize/" class="underline">bitesize</a> tag.</div>
 
 </div>
 
@@ -17,7 +17,7 @@
 
 {{ if eq (relURL .URL) ("/work/") }}
 
-<section class="top-section-new blue" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
+<section class="top-section-new blue" style="margin-top: 25px; margin-bottom: 4rem; position: relative">
 
 <div class="wrapper" style="padding-top: .75rem; position: relative">
 
@@ -25,7 +25,7 @@
 <h1>Recent work & <mark>case studies</mark></h1>
 
 <div class="h2">My work focuses on digital accessibility & ux-focused development for the web.</div>
-<p>Looking for mobile app or desktop-application focused work? <a href="/" class="underline">Send me a message</a> and we can chat about other projects I've worked on.</p>
+<p>Looking for mobile app or desktop-application focused work? <a href="mailto:melanielinares.a11y@gmail.com" class="underline">Send me a message</a> and we can chat about other projects I've worked on.</p>
 
 </div>
 
@@ -35,7 +35,7 @@
 {{ if eq (relURL .URL) ("/work/") }} 
 
 <section class="wrapper mx-auto mb-20">
-  <ul class="flex-ns flex-wrap mhn1-ns pa3 flex">
+  <ul class="flex-ns flex-wrap mhn1-ns pa3 flex" style="padding-left:0">
       {{ range (.Paginator 7).Pages }}
           <li class="w-3/6 ph1-ns">
             {{ .Render "li_post"}}
@@ -48,7 +48,7 @@
 {{ if eq (relURL .URL) ("/article/") }}
 
  <section class="wrapper mx-auto mb-20">
-  <ul class="flex-ns flex-wrap mhn1-ns pa3 flex">
+  <ul class="flex-ns flex-wrap mhn1-ns pa3 flex" style="padding-left:0">
       {{ range (.Paginator 7).Pages }}
       <li class="w-full ph1-ns">
           <div class="article-card">

@@ -30,6 +30,10 @@
         {{ partial "image_grid_gallery" . }}
     {{ end }}  
 
+    {{ if eq .type "column_cards" }}
+    {{ partial "column_cards" . }}
+    {{ end }}  
+
 {{ end }}
 
 </section>

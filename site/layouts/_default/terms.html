@@ -6,7 +6,7 @@
       
       <div class="h1-category-wrapper"><span class="h1-category">Articles and case studies</span></div>
       <h1>All Tags</h1>
-      <p>(content currently disabled while site is in-progress)</p>
+      <!-- <p>(content currently disabled while site is in-progress)</p> -->
       <br>
       
       </div>    
@@ -16,7 +16,7 @@
       {{ range (sort .Pages "Title") }}
           <li class="ph1-ns flex">
 
-	<a aria-disabled="true" class="justify-center text-sm font-semibold px-3"><span>{{ .Title }} {{ trim .Pages "Pages" }}</span></a>
+	<a href="{{ .RelPermalink }}" class="justify-center text-sm font-semibold px-3"><span>{{ .Title }} {{ trim .Pages "Pages" }}</span> <span class="visibly-hidden">tagged pages</span></a>
 <!-- href="{{ .RelPermalink }}"" -->
 </li>
       {{ end }}

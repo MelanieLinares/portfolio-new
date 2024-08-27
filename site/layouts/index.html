@@ -4,7 +4,7 @@
 
 <section class="top-section-new center {{.Params.backgroundcolor}}" style="margin-top: 70px; margin-bottom: 10rem; position: relative">
   <div class="me-homepage-bg"></div>
-  <div class="notification">WCAG 2.2 is live! Learn about how to make your next project compliant.</div>
+  <div class="notification">WCAG 2.2 is the new standard! <a href="https://calendly.com/melanielinares">Get in touch</a> and learn how to make your next project compliant.</div>
 
 <div class="wrapper" style="padding-top: .75rem; position: relative">
 
@@ -24,10 +24,10 @@
       <strong>I am currently an Accessibility Consultant at Level Access.</strong>
     </span>
   </div>
-  <div class="grid-8-11">
-    <strong class="medium-non-heading">
+  <div class="grid-7-11">
+    <h2>
       I love helping teams...
-    </strong>
+    </h2>
     <ul>
       <li>Ensure design systems are WCAG 2.2 compliant</li>
       <li>Create process/branding documentation</li>
@@ -39,24 +39,25 @@
 </div>
 
 <div class="grid">
+  <h2 class="visibly-hidden">My unique experience</h2>
   <div class="info-bar">
-    <div class="info-bar-flex-container">
-      <div class="info-bar-box">
+    <div class="info-bar-flex-container" role="list">
+      <div class="info-bar-box" role="listitem">
         <div class="info-bar-box-inner">
           <span class="h2">11+</span> years<br>building the web
         </div>
       </div>
-      <div class="info-bar-box">
+      <div class="info-bar-box" role="listitem">
         <div class="info-bar-box-inner">
-          <span class="h2">6+</span> years<br>in accessibility
+          <span class="h2">5+</span> years<br>in accessibility
         </div>
       </div>
-      <div class="info-bar-box">
+      <div class="info-bar-box" role="listitem">
         <div class="info-bar-box-inner">
           <span class="h2">7+</span> years<br>advocating ux
         </div>
       </div>
-      <div class="info-bar-box">
+      <div class="info-bar-box" role="listitem">
         <div class="info-bar-box-inner">
           <span class="h2">120+</span><br>client high-fives
         </div>
@@ -68,7 +69,7 @@
 
 </section>
 
-<section>
+<section data-color="green">
   <div class="wrapper">
 
 <div class="grid">
@@ -133,7 +134,7 @@
 
 </section>
 
-<section class="has-fullwidth-bg">
+<section class="has-fullwidth-bg" data-color="violet">
   <div class="wrapper" style="margin-top: 8rem">
 
 {{ partial "blog" . }}

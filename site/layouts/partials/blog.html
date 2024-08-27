@@ -5,13 +5,12 @@
 		<div style="display: block; position: relative; margin-bottom: 3em" >
 			<h2 class="mt-20 block">Recent Work</h2>
 		<ul class="work-roll" style="padding-left: 0">
-			{{ range first 4 (where .Site.Pages "Type" "post") }}
+			{{ range first 4 (where .Site.Pages "Type" "work") }}
 				<li class="ph1-ns block">
 					<div class="flex">
-
 						<div class="article-block pa3">
 
-							{{ if .Params.thumbnail}}<img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg"/>{{ end }}
+							{{ if .Params.thumbnail}}<img src="{{ .Params.thumbnail }}" alt="" class="radius-lg"/>{{ end }}
 
 							{{ range first 1 (.GetTerms "tags") }}
 							{{ if in .LinkTitle "ux" }} 						
@@ -21,11 +20,12 @@
 							{{end}}					
 							{{ end }}
 
-							<h4>
-								<span class="link"><span>{{ .Title }}</span></span>
+							<h4 aria-level="3">
+								<!-- <span class="link"><span>{{ .Title }}</span></span> -->
+								<a href="{{ .RelPermalink }}"><span>{{ .Title }}</span></a>
 							</h4>
-							<div class="tags flex" style="margin-top: -.75rem; margin-bottom: 1.5rem;"><span>case study in progress</span>   
-							</div>
+							<!-- <div class="tags flex" style="margin-top: -.75rem; margin-bottom: 1.5rem;"><span>case study in progress</span>   
+							</div> -->
 							<p>{{ .Params.preview_intro }}</p>					
 						
 							
@@ -38,18 +38,13 @@
 			{{ range first 1 (where .Site.Pages "Type" "article") }}
 			<li class="ph1-ns">
 				<div>
-
 					<div class="article-block pa3">
 
 						{{ range first 1 (.GetTerms "tags") }}
-						{{ if in .LinkTitle "ux" }} 						
-						<small>user experience</small> 
-						{{else}}
-						<small>{{ .LinkTitle }}</small>
-						{{end}}					
+						<small>Article</small>			
 						{{ end }}
 
-						<h4>
+						<h4 aria-level="3">
 							<a href="{{ .RelPermalink }}"><span>{{ .Title }}</span></a>
 						</h4>
 					

@@ -44,14 +44,13 @@
 	</ul>{{ end }} -->
 	</div>
 
-	<p class="h3">{{ .Params.preview_intro }}</p>
-
-	{{if .Params.preview_responsibilities}}<p><b>The problem:</b><br>{{ .Params.preview_problem }}</p>{{ end }}
+	<p class="h3 small">{{ .Params.preview_intro }}</p>
 
 	{{if .Params.preview_responsibilities}}	
 			
-		<b>Responsibilities:</b>
-		<ul class="responsibilities" style="column-count: 2; width: fit-content"> 
+	<!-- MAX 3 -->
+		<b class="small">Responsibilities:</b>
+		<ul class="responsibilities small" style="column-count: 2; width: fit-content"> 
 			{{ range .Params.preview_responsibilities }}
 				<li>{{ . }}</li>
 		   {{ end }}
@@ -68,11 +67,11 @@
 
 <div style="position: relative; z-index: 1; width: 40rem">
 	{{ if .Params.thumbnail}}
-	<div class="article-block pa3" style="padding: 0"><img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="radius-lg" style="height: 100%;"/></div>
+	<div class="article-block pa3" style="padding: 0"><img src="{{ .Params.thumbnail }}" alt="" class="radius-lg" style="height: 100%;"/></div>
 	{{ end }}
 
 	{{ if .Params.thumbnail2}}
-	<div class="article-block overlap-img" style="z-index: -1"><img src="{{ .Params.thumbnail2 }}" alt="{{ .Title }}" class="radius-lg"/></div>
+	<div class="article-block overlap-img" style="z-index: -1"><img src="{{ .Params.thumbnail2 }}" alt="" class="radius-lg"/></div>
 	{{ end }}
 </div>
 

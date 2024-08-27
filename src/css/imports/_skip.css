@@ -15,6 +15,25 @@ a.skip, .tags {
   display: inline-block!important;
 }
 
+.blue + section .tags li a:hover {
+  outline: 3.25px solid #89C6FF;
+  border: 1px solid #0F8BFF;
+}
+
+.purple + section .tags li a:hover,
+.purple .tags li a:not([role='none']):hover {
+  outline: 3.25px solid #BEA8FF;
+  border: 1px solid #916DFD;
+}
+
+.purple section .tags li a[role='none'] {
+  border: unset
+}
+
+.purple section .tags {
+  padding-top: .4rem
+}
+
 div.tags span {
   margin-left: -1rem;
 }

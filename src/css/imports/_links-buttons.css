@@ -13,9 +13,69 @@ p a, blockquote cite a {
 .bg-pink.purple a, .bg-pink.green a, .bg-pink.blue a, .bg-pink.pink a  {
   color: #ffffff;
 }
-.article-block h2 a  {
+.article-block h2 a, .article-block h4 a,
+.article-block h3 a  {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
+
+.article-block h2 a:hover, .article-block h2 a:focus,
+.article-block h4 a:hover, .article-block h4 a:focus,
+.article-block h3 a:hover, .article-block h3 a:focus {
+  text-decoration: unset
+}
+
+.article-block h2 a:hover span, .article-block h2 a:focus span,
+.article-block h4 a:hover span, .article-block h4 a:focus span,
+.article-block h3 a:hover span, .article-block h3 a:focus span {
+  background-color: unset;
+    background-repeat: no-repeat;
+    background-size: 100% 1.25rem;
+    background-position: bottom;
+    color: inherit;
+}
+
+.blue + section .article-block h2 a:hover span, .blue + section .article-block h2 a:focus span {
+  background-image: linear-gradient(to bottom right, #89C6FF 50%, #89C6FF 50%), linear-gradient(#89C6FF, #89C6FF), linear-gradient(to top left, #89C6FF 50%, #89C6FF 50%);
+}
+
+.purple + section .article-block h2 a:hover span, .purple + section .article-block h2 a:focus span,
+.purple section .article-block h2 a:hover span, .purple section .article-block h2 a:focus span {
+    background-image: linear-gradient(to bottom right, #BEA8FF 50%, #BEA8FF 50%), linear-gradient(#BEA8FF, #BEA8FF), linear-gradient(to top left, #BEA8FF 50%, #BEA8FF 50%);
+}
+
+body.color-violet .work-roll .article-block h4 a:hover span, body.color-violet .work-roll .article-block h4 a:focus span {
+  background-image: linear-gradient(to bottom right, #BEA8FF 50%, #BEA8FF 50%), linear-gradient(#BEA8FF, #BEA8FF), linear-gradient(to top left, #BEA8FF 50%, #BEA8FF 50%);
+  background-size: 100% 1rem;
+  transition: background-image 1s ease;
+}
+
+body.color-green .work-roll .article-block h4 a:hover span, body.color-green .work-roll .article-block h4 a:focus span {
+  background-image: linear-gradient(to bottom right, #8EE1AF 50%, #8EE1AF 50%), linear-gradient(#8EE1AF, #8EE1AF), linear-gradient(to top left, #8EE1AF 50%, #8EE1AF 50%);
+  background-size: 100% 1rem;
+  transition: background-image 1s ease;
+}
+
+body.color-green .top-section-new.pink:after, body.color-green .top-section-new.pink {
+  transition: background-color 1s ease;
+  background-color: #ffffff
+}
+
+body:not(.color-green) .top-section-new.pink:after, body:not(.color-green) .top-section-new.pink, body:not(.color-violet) .article-block {
+  transition: background-color 1s ease;
+}
+
+body.color-violet .article-block {
+  background-color: rgba(190, 168, 255, .25)
+}
+
+body:not(.color-violet) .article-block {
+  background-color: rgba(255, 255, 255, .25);
+  transition: background-color 1s ease;
+}
+
+
+
 #navbar a {
   font-size: 1.15em;
 }
@@ -65,7 +125,7 @@ header.nav.shadow-sm.bg-pink #navbar a {
 
 .purple + section .tags li a {
   /* box-shadow: 0 0 0 .75px rgba(131, 83, 208, var(--tw-border-opacity)); */
-  color: #8353D0;
+  /* color: #8353D0; */
 }
 
 .tags:not(:has(a)) span {

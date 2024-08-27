@@ -3,6 +3,10 @@
     box-shadow: none;
 }
 
+.nav--hidden:has(a:focus) {
+    transform: unset!important
+}
+
 .nav {
     width: 100%;
     position: fixed;

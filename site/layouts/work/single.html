@@ -5,8 +5,12 @@
         border-left: unset!important;
         margin: 0 auto
     }
+    section:last-of-type.feature-v2 blockquote p {
+      margin-left: unset;
+    }
+
     blockquote:has(:not(p)) {
-      padding: 3rem 0;
+      padding: 3rem 0; 
     }
     blockquote:has(p) {
       padding: 5rem 0;
@@ -41,6 +45,11 @@ cite {display: block; margin-top: 1rem; }
 
 
     .adv-gallery-v5 {margin-top: 3rem}
+
+    .adv-gallery-v5 img {
+  object-fit: cover;
+    object-position: center top;
+}
 
     .adv-gallery-v5  img {
     border-radius: .5rem;
@@ -140,9 +149,12 @@ Utilities
 <section class="story-v4 ac6-padding-y-lg blue" style="margin-top: 71px; background-color: #e5eeff">
     <div class="wrapper">
       <div style="padding: 5rem 0">
-        <h1>{{ .Params.titlebold }} <mark>{{ .Params.titlenormal }}</mark></h1>
+        <h1>{{ .Params.titlebold }} <mark>{{ .Params.titlenormal }}</mark>{{if .Params.emoji}}<span aria-hidden="true" style="filter: hue-rotate(180deg); bottom: -.5rem;
+    position: relative;"> {{.Params.emoji}}</span>
+          {{else}}<span aria-hidden="true" style="filter: hue-rotate(180deg); bottom: -.5rem;
+    position: relative;"> ✨</span>{{end}}
+        </h1>
       </div>
-  
       <div class="ac6-grid ac6-gap-md">
         <div class="ac6-col-3@md ac6-col-4@lg" style="margin-bottom: 4rem">
           <dl class="cs-top-list">
@@ -162,7 +174,7 @@ Utilities
 
             {{ if .Params.notice }}
             <dt><strong>NDA Disclosure:</strong></dt>
-            <dd>{{ .Params.notice }}</dd>
+            <dd><span aria-hidden="true">🚨</span> {{ .Params.notice }}</dd>
             {{ end }}
 
           </dl>
@@ -191,8 +203,8 @@ Utilities
 
 </div>
 
-<div style="border-radius: .75rem; background-color: #d1e6ff; margin-bottom: 3rem;">
-    <img src="{{.Params.preview}}" alt="Image description" style="border-radius: .9rem; max-height: 50vh; border: .5rem solid #d1e6ff; width: 100%; object-fit: cover; object-position: left top">
+<div style="border-radius: .75rem; background-color: #d1e6ff; margin-bottom: 3rem; margin-top: 3rem">
+    <img src="{{.Params.preview}}" alt="{{.Params.preview_alt}}" style="border-radius: .9rem; max-height: 60vh; min-height: 30rem;border: .5rem solid #d1e6ff; width: 100%; object-fit: cover; object-position: left top">
   </div>
 
 </section>
@@ -216,12 +228,16 @@ Utilities
     <div class="feature-v2__grid">
       <div class="feature-v2__grid-item-1">
         <h2 style="margin-top: unset">Key takeaways and project outcomes:</h2>
-        (significant measures of performance and progress, success or failure of business goals, outcome/effectiveness of actonable benchmarks)
+        <!-- (significant measures of performance and progress, success or failure of business goals, outcome/effectiveness of actonable benchmarks)<br> -->
+
+        {{ if .Params.takeaway_img }}
+        <img src="{{.Params.takeaway_img}}" alt="">
+        {{end}}
       </div>
     
       <div class="feature-v2__grid-item-2">
         <div class="feature-v2__content">
-          <p>{{ .Params.takeaway }}</p>
+          <p>{{ .Params.takeaway | markdownify }}</p>
 
         </div>
       </div>

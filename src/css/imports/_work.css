@@ -1,6 +1,6 @@
 .overlap-img {
     position: absolute;
-    margin-top: 12em;
+    margin-top: 9em;
     top: 0;
     margin-left: -5rem;
     margin-right: 5rem;
@@ -553,9 +553,14 @@
     /* line-height: 57%; */
   }
 
-  section ul:not([role=presentation]) {
+  /* section ul:not([role=presentation]):not(.col-cards) {
     list-style: disc!important;
     padding-left: 1.15rem!important;
+  } */
+
+  section ul:not([role=presentation]):not(.col-cards) ul {
+    padding-left: .15rem!important;
+    font-size: 85%
   }
 
   section ul[role=presentation] {
@@ -613,6 +618,10 @@ section:has(.adv-gallery-v5), section:nth-of-type(3):has(:not(.adv-gallery-v5)) 
   width: calc(100vw - 6em);
   margin: 0 auto
 } */
+
+.lg\:text-left cite {
+  text-align: right
+}
 
 @supports ((-webkit-clip-path: inset(50%)) or (clip-path: inset(50%))) {
   section:has(.adv-gallery-v5), section:nth-of-type(3):not(:has(.adv-gallery-v5)) + section {
