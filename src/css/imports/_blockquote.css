@@ -17,6 +17,11 @@ blockquote {
     border-left: .15em solid #BEA8FF;
 }
 
+figure + div:has(blockquote) blockquote {
+    margin-top: -5rem;
+    margin-bottom: 2rem
+}
+
 /* .cms .partials .yup section:last-of-type:has(#results) blockquote {
     font-size: 1.5em;
     font-weight: 100;

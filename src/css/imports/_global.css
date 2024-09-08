@@ -1,7 +1,31 @@
 p {
-    font-size: 18.66px;
+    font-size: 19px;
     max-width: 850px;
 }
+
+
+ul:not([attribute]) ul:not([attribute]):not(.tags):not(.responsibilities) li {
+    list-style: none;
+    display: flex;
+    position: relative;
+    font-size: 125%;
+    padding-left: .5rem;
+    /* color: #0069CC; */
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    /* font-family: 'JetBrains Mono', sans-serif; */
+  }
+  
+  /* ul:not([attribute]) ul:not([attribute]):not(.tags):not(.responsibilities) li:before {
+    content: '⤸';
+    transform: scale(-1, 1) rotate(45deg);
+    font-weight: bold;
+    position: absolute;
+    color: #0081FA;
+    top: -.5rem;
+    left: -1rem;
+    font-size: 1.5rem;
+  } */
 
 .visibly-hidden {
     position: absolute;
@@ -80,10 +104,44 @@ aside li:last-of-type {
 
   cite {
     font-size: .85em;
-    font-weight: 600;
+    /* font-weight: 600; */
     font-style:normal;
     letter-spacing: 0;
     word-spacing: 0;
+}
+
+cite a {
+    text-decoration: underline;
+}
+
+.lg\:w-1\/2 img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: left top;
+}
+
+.lg\:w-1\/2 h3:first-child,
+.container:has(mark) h3:first-child:has(mark) {
+margin-top: 0!important;
+margin-bottom: 2rem
+}
+
+.lg\:w-1\/2 h4:first-child {
+    margin-top: 0!important;
+    margin-bottom: 2rem
+    }
+
+.container:has(mark):not(:has(.lg\:w-1\/2)) h3:first-child:has(mark) mark {
+margin-top: -2rem;
+}
+
+/* .lg\:w-1\/2 *:first-child mark {
+    margin-top: -3rem!important
+} */
+
+.lg\:w-1\/2 {
+    margin-top: 1rem
 }
 
 cite small {
@@ -120,7 +178,7 @@ cite small {
 
 .caption {
     font-family: 'JetBrains Mono', sans-serif;
-    font-size: 12.5px;
+    font-size: 85%;
     line-height: 1.65em;
     font-style: normal;
 }
@@ -205,8 +263,8 @@ section:not(.content) {
 }
 
 section:not(.content):last-of-type {
-    margin-bottom: 6rem;
-    /* padding-bottom: 6rem;     */
+    margin-bottom: 0;
+    padding-bottom: 6rem;    
     /* margin-bottom: 0 */
 }
 
@@ -234,7 +292,7 @@ body:has(.blue) h3 mark {
 body:has(.blue) h3 mark {
 transform: rotate(-7deg);
 position: absolute;
-margin-left: -1rem;
+margin-left: -.25rem;
 padding-left: .25rem;
 top: -.5rem;
 }
@@ -274,13 +332,34 @@ top: -.5rem;
     display: inline-block;
     margin-bottom: unset
 }
-/* 
+
 body:has(.bg-pink) footer {
     background-color: #F6D5D6
-} */
+}
+
+body:has(.bg-pink):has(.story-v4) footer {
+    background-color: #ffffff!important
+}
+
+body.color-violet footer {
+    background-color: unset
+}
+
 
   p:not(:last-child) {
     margin-bottom: 2rem
+  }
+
+  ul + p {
+    margin-top: 2rem
+  }
+
+  body:has(.story-v4) h2 {
+    max-width: 90vw
+  }
+
+  body:has(.story-v4) section:not(:has(.adv-gallery-v5)) cite {
+  color: #757575
   }
 
   .h2:has(i) {

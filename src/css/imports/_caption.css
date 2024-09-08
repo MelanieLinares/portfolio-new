@@ -33,6 +33,11 @@ padding-right: 5em;
      pointer-events: none;
  }
 
+ figcaption.caption:before {
+    top: -3em;
+ }
+
+
  li:nth-child(even) .caption:before 
  /* .img-w-caption .caption:before  */
  {

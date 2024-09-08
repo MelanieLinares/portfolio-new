@@ -12,6 +12,37 @@
     --tw-content: ''
 } */
 
+.col-cards:has(.user-cell:nth-of-type(4):last-of-type) {
+    max-width: 80rem !important;
+}
+
+.col-cards:has(.user-cell:nth-of-type(3):last-of-type) {
+    max-width: 60rem !important;
+}
+
+.col-cards:has(.user-cell:nth-of-type(2):last-of-type) {
+    max-width:40rem !important;
+}
+
+.col-cards:has(.user-cell:nth-of-type(1):last-of-type) {
+    max-width: 20rem !important;
+}
+
+.col-cards {
+    align-items: start;
+    margin-top: -.25rem;
+    margin-bottom: 3rem;
+    list-style: none!important;
+    padding-left: 1rem
+}
+
+.col-cards .user-cell {
+    border: 3px solid #89c6ff;
+    background-color: #eef4ff;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: .85rem;
+}
+
 html {
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
@@ -238,9 +269,13 @@ a {
     margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))
 } */
 
+ul:not([attribute]) {
+    font-size: 18px;
+}
+
 menu,
 ol,
-ul:not(.responsibilities):not(.tags) {
+ul:not(.responsibilities):not(.tags):not(.col-cards):has([attribute]) {
     list-style: none;
     margin: 0;
     padding: 0
@@ -339,8 +374,8 @@ strong {
     width: 100%
 }
 
-small {
-    font-size: 80%
+small, .small {
+    font-size: 85%!important
 }
 
 button {
@@ -413,6 +448,43 @@ summary {
 .overflow-hidden {
     overflow: hidden;
 }
+
+.user-cell {
+    background-color: #e5eeff;
+    margin: .33rem;
+    padding: clamp(1rem, calc(1rem + 0vw), 1rem);
+    border-radius: 0.375em;
+}
+
+    /* one item */
+    .user-cell:first-child:nth-last-child(1) {
+    /* -or- li:only-child { */
+       flex: 1
+    }
+    
+    /* two items */
+    .user-cell:first-child:nth-last-child(2),
+    .user-cell:first-child:nth-last-child(2) ~ .user-cell {
+       flex: 2
+    }
+    
+    /* three items */
+    .user-cell:first-child:nth-last-child(3),
+    .user-cell:first-child:nth-last-child(3) ~ .user-cell {
+        flex:3
+    }
+    
+    /* four items */
+    .user-cell:first-child:nth-last-child(4),
+    .user-cell:first-child:nth-last-child(4) ~ .user-cell {
+        flex: 4
+    }
+
+     /* four items */
+    .user-cell:first-child:nth-last-child(5),
+    .user-cell:first-child:nth-last-child(5) ~ .user-cell {
+        flex: 5
+    }
 
 /* .gap-y-16 {
     row-gap: 4rem;

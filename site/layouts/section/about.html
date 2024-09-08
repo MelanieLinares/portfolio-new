@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<section class="top-section-new green" style="margin-top: 70px; margin-bottom: 4rem; position: relative">
+<section class="top-section-new green" style="margin-top: 25px; margin-bottom: 4rem; position: relative">
 
   <div class="wrapper flex" style="padding-top: .75rem; position: relative">
   
@@ -14,10 +14,10 @@
 
 <p>I learned a lot during that first job! How to pitch an idea, how to lead with data, how to rally a group of stubborn developers and stakeholders, how to run a user study, and how to own a project start to finish. Mostly I learned that <strong>I have a knack for leadership and a love of accessibility.</strong></p>
 
-<br>
+
 
 <div class="inline-horizontal-links {{.Params.backgroundcolor}}">
-  <a href="https://drive.google.com/file/d/1wy-sYCgWdrL9d0tpPKvTUyMnO6VhF5qL/view?usp=sharing" style="margin-right: 1rem" class="skip">
+  <a href="/files/MelanieLinares-2024.pdf" style="margin-right: 1rem" class="skip">
     <span class="">check out my resume {{ partial "external" }}</span>
 </a>
 <a href="https://www.linkedin.com/in/melanie-linares-79845553/" id="retro" style="min-width: 251px;" class="retrospective skip">
@@ -25,7 +25,7 @@
 </a>
 
 <div style="right: -4rem;position: relative;top: -2.4rem;z-index: -1;">
-  <img src="/img/mel-about5.jpg" style="object-fit: cover; object-position: top center; min-width: 40rem; max-width: 45rem; height: 100%; width: 100%; opacity: .85; filter: saturate(0.35)contrast(1.25)hue-rotate(-52deg);" alt="desk with skeleton raven, laptop with the text make for good, small telescope nad 3d paper star">
+  <img src="/img/mel-about5.jpg" style="object-fit: cover; object-position: top center; min-width: 40rem; max-width: 45rem; height: 100%; width: 100%; opacity: .85; filter: saturate(0.35)contrast(1.25)hue-rotate(-52deg);" alt="desk with raven skeleton, laptop with the text make for good, small telescope and a 3D paper star">
   </div>
 </div>
 
@@ -49,7 +49,7 @@
 
 
 <section class="mx-auto pt-6 flex wrapper">
-  <h2 class="mt-20 block">What I'm up to <span style="display: block">[during the week]</span></h2>
+  <h2 class="mt-20 block">What I'm up to <span style="display: block"><span aria-hidden="true">[</span>during the week<span aria-hidden="true">]</span></span></h2>
 
   <div class="mt-0 mx-auto grid max-w-2xl gap-x-8 gap-y-16">
     <div class="lg:pt-4">
@@ -59,14 +59,14 @@
 
           <div class="relative pl-20 p-1rem">
             <dt class="font-semibold">
-              <img class="absolute left-0 h-14 w-14" src="/img/virtual.png">
+              <img class="absolute left-0 h-14 w-14" src="/img/virtual.png" alt="">
               I conduct remote design reviews
             </dt>
             <dd>Part of my work at Level Access is assessing prototypes and design systems for UX issues live with clients.</dd>
           </div>
           <div class="relative pl-20 p-1rem">
             <dt class="font-semibold">
-              <img class="absolute left-0 h-14 w-14" src="/img/audit.png">
+              <img class="absolute left-0 h-14 w-14" src="/img/audit.png" alt="">
               I audit websites, apps, and shareable digital files
             </dt>
             <dd>Reports (including VPATs) are created and shared with clients that include specific WCAG notes and product recommendations. </dd>
@@ -74,15 +74,15 @@
 
           <div class="relative pl-20 p-1rem">
             <dt class="font-semibold">
-              <img class="absolute left-0 h-14 w-14" src="/img/space.png">
+              <img class="absolute left-0 h-14 w-14" src="/img/space.png" alt="">
               I am improving Level Access' methodology
             </dt>
-            <dd>Accessibility + Agile! Team Mercury is improving the auditing process for both consultants and clients.</dd>
+            <dd>Accessibility + Agile! My team is improving the auditing process for both consultants and clients.</dd>
           </div>
 
           <div class="relative pl-20 p-1rem">
             <dt class="font-semibold">
-              <img class="absolute left-0 h-14 w-14" src="/img/highfive.png">
+              <img class="absolute left-0 h-14 w-14" src="/img/highfive.png" alt="">
               I mentor individuals and teams
             </dt>
             <dd>I guide new and growing accessibility professionals on tools, process, and development (including JSX/TSX)</dd>
@@ -98,7 +98,7 @@
 </section>
 
 <section class="mx-auto pt-6 flex wrapper" style="flex-direction: row-reverse">
-  <h2 class="mt-20 block">What I'm up to <span style="display: block">[when offline]</span></h2>
+  <h2 class="mt-20 block">What I'm up to <span style="display: block"><span aria-hidden="true">[</span>when offline<span aria-hidden="true">]</span></span></h2>
 
   <div class="mt-0 mx-auto grid max-w-2xl gap-x-8 gap-y-16">
     <div class="lg:pt-4">
@@ -108,33 +108,34 @@
 
           <div class="relative pl-20 p-1rem">
             <dt class="font-semibold">
-              <img class="absolute left-0 h-14 w-14" src="/img/virtual.png">
-              I conduct remote design reviews
-            </dt>
-            <dd>Part of my work at Level Access is assessing prototypes and design systems for UX issues live with clients.</dd>
+              <img class="absolute left-0 h-14 w-14" src="/img/boardgame.png" alt="">
+              Boardgames
+          </dt>
+            <dd>
+              I enjoy playing and teaching people how to play board games. Back in 2019 I was a gamemaster at the convention: Gencon.</dd>
           </div>
           <div class="relative pl-20 p-1rem">
             <dt class="font-semibold">
-              <img class="absolute left-0 h-14 w-14" src="/img/audit.png">
-              I audit websites, apps, and shareable digital files
+              <img class="absolute left-0 h-14 w-14" src="/img/lego.png" alt="">
+              Building Lego
             </dt>
-            <dd>Reports (including VPATs) are created and shared with clients that include specific WCAG notes and product recommendations. </dd>
-          </div>
-
-          <div class="relative pl-20 p-1rem">
-            <dt class="font-semibold">
-              <img class="absolute left-0 h-14 w-14" src="/img/space.png">
-              I am improving Level Access' methodology
-            </dt>
-            <dd>Accessibility + Agile! Team Mercury is improving the auditing process for both consultants and clients.</dd>
+            <dd>I love building Lego sets and nerdy terrariums. The botanical Lego builds are my favorite. </dd>
           </div>
 
           <div class="relative pl-20 p-1rem">
             <dt class="font-semibold">
-              <img class="absolute left-0 h-14 w-14" src="/img/highfive.png">
-              I mentor individuals and teams
+              <img class="absolute left-0 h-14 w-14" src="/img/rollerblade.png" alt="">
+              Rollerblading
             </dt>
-            <dd>I guide new and growing accessibility professionals on tools, process, and development (including JSX/TSX)</dd>
+            <dd>I can be found learning to roller-blade in my local park.</dd>
+          </div>
+
+          <div class="relative pl-20 p-1rem">
+            <dt class="font-semibold">
+              <img class="absolute left-0 h-14 w-14" src="/img/highfive.png" alt="">
+              Collecting
+            </dt>
+            <dd>I collect enamel pins, tech stickers, and am getting back into painting.</dd>
           </div>
 
 
@@ -154,12 +155,10 @@
       <div>
         <h2 style="font-size: 2.3rem; padding-left: 0; font-family: 'Poppins'">Contributions & Certifications</h2>
         <ul class="" style="margin-top: .5em">
-          <li><strong>Vue A11y Github Repo</strong> <small><a href="https://github.com/kevinlogan94/vue-a11y" class="underline">https://github.com/kevinlogan94/vue-a11y</a></small><br>Collaborative effort to create vueJS web application for demoing accessibility</li>
-          <li style="margin-top: 1em"><strong>Career Village Volunteer</strong> <small><a href="https://careervillage.org/questions/tagged/accessibility" class="underline">https://careervillage.org/questions/tagged/accessibility</a></small><br>Answering student concerns about accessibility, ux, and the web</li>
-          <li style="margin-top: 1em"><strong>Amara Caption Volunteer</strong> <small><a href="https://blog.amara.org/2023/12/18/how-to-transcribe-audio-to-text" class="underline">https://blog.amara.org/2023/12/18/how-to-transcribe-audio-to-text</a></small><br>Adding captions and transcriptions to open-source and educational video content</li>
-          <li style="margin-top: 1em"><strong>IAAP CPWA</strong> <small><a href="https://www.accessibilityassociation.org/s/cpwa-cpcc-was" class="underline">https://www.accessibilityassociation.org/s/cpwa-cpcc-was</a></small><br>November 2023 - Present</li>
-          <li style="margin-top: 1em"><strong>IAAP CPACC</strong> <small><a href="https://www.accessibilityassociation.org/s/cpwa-cpcc-was" class="underline">https://www.accessibilityassociation.org/s/cpwa-cpcc-was</a></small><br>November 2023 - Present</li>
-          <li style="margin-top: 1em"><strong>IAAP WAS</strong> <small><a href="https://www.accessibilityassociation.org/s/cpwa-cpcc-was" class="underline">https://www.accessibilityassociation.org/s/cpwa-cpcc-was</a></small><br>September 2021 - Present</li>
+          <li><strong><a href="https://github.com/kevinlogan94/vue-a11y" class="underline">Vue A11y Github Repo</a></strong> <br><small>Collaborative effort to create vueJS web application for demoing accessibility</small></li>
+          <li style="margin-top: 1em"><strong><a href="https://careervillage.org/questions/tagged/accessibility" class="underline">Career Village Volunteer</a></strong> <br><small>Answering student concerns about accessibility, ux, and the web</small></li>
+          <li style="margin-top: 1em"><strong><a href="https://blog.amara.org/2023/12/18/how-to-transcribe-audio-to-text" class="underline">Amara Caption Volunteer</a></strong> <br><small>Adding captions and transcriptions to open-source and educational video content</small></li>
+          <li style="margin-top: 1em"><strong><a href="https://www.credly.com/badges/2aeb357c-4af8-463f-9824-4d3fd35998ea" class="underline">IAAP CPWA, CPACC, WAS certifications</a></strong> <br><small>Present - December 2026</small></li>
         </ul>
         
     </div>
@@ -188,11 +187,11 @@
 
               <ul>
                 <li>
-                  <a href="https://boardgamegeek.com/collection/user/melanielinares" class="underline">Boardgame collection<span aria-hidden="true"> ↗</span><span style="position: absolute; opacity: 0">external link</span></span></a>
+                  <a href="https://boardgamegeek.com/collection/user/melanielinares" class="underline">Boardgame collection <span aria-hidden="true"> ↗</span><span style="position: absolute; opacity: 0; left: 0">external link</span></span></a>
                 </li>
                 <li>
                   <details>
-                    <summary><h4 class="inline">Books I want to add to my collection</h4></summary>
+                    <summary><h4 aria-level="3" class="inline">Books I want to add to my collection</h4></summary>
                     <ul>
                       <li>Alt-Text As Poetry, by Bojana Coklyat and Shannon Finnegan </li>
                       <li><s>Inclusive Design Patterns, by Heydon Pickering</s> ✔️</li>
@@ -201,7 +200,7 @@
                   </details>      </li>
                 <li>
                   <details>
-                    <summary><h4 class="inline">What I want to see and do list</h4> (places, activities, etc.)</summary>
+                    <summary><h4 aria-level="3" class="inline">What I want to see and do list</h4> (places, activities, etc.)</summary>
                     <ul>
                       <li><s>participate in a GAAD (global accessibility awareness day) event</s> ✔️</li>
                       <li>learn spanish</li>

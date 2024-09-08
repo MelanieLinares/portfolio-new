@@ -54,6 +54,10 @@ img {
 	scroll-behavior: smooth;
   }
 
+  .cs-top-list {
+	padding-right: 1rem
+  }
+
   /* body {
 	padding-top: 5rem
   } */

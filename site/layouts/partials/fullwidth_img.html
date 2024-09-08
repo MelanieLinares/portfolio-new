@@ -1,4 +1,4 @@
 <figure style="border-radius: .75rem; margin-bottom: 6rem" class="container max-w-7xl mx-auto">
-  <img src="{{.image}}" alt="Image description" style="border-radius: .5rem; max-height: 50vh; width: 100%; object-fit: cover; object-position: left top; margin-bottom: .5rem">
-  <figcaption>{{.image_caption}}</figcaption>
+  <img src="{{.image}}" {{if .image_caption}}alt="" {{else}}alt="{{.image_alt}}"{{end}} style="border-radius: .5rem; max-height: 60vh; min-height: 32.5rem; width: 100%; object-fit: cover; object-position: left top; margin-bottom: .5rem">
+  {{if .image_caption}}<figcaption class="caption">{{.image_caption}}</figcaption>{{end}}
 </figure>
