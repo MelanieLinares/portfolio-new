@@ -2578,4 +2578,47 @@ Utilities
   </div>
 </div>
 
+
+<!-- below is the new section -->
+
+
+          <div class="col-span-12 lg:col-span-6">
+            <a href="https://www.youtube-nocookie.com/watch?v=fZ_JOBCLF-I" class="block" aria-controls="modal-video-1" data-url="https://www.youtube-nocookie.com/embed/fZ_JOBCLF-I">
+              <figure class="td-card td-card--video js-td-card">
+                <div class="inner-glow-top shadow-lg rounded-xl overflow-hidden backdrop-blur-md">
+                  <img class="block w-full light:display" src="../assets/3d-card-img-1.png" alt="Image description">
+                  <img class="block w-full dark:display" src="../assets/3d-card-img-1-dark.png" alt="Image description">
+                </div>
+              </figure>
+            </a>
+          </div>
+
+              <div class="modal modal--is-loading flex justify-center items-center bg-black/90 px-5 lg:px-8 js-modal" id="modal-video-1" data-modal-first-focus=".modal__close-btn">
+      <div class="modal__content w-full max-w-5xl max-h-full overflow-auto shadow-lg" role="alertdialog" aria-labelledby="modal-video-title-1" aria-describedby="">
+        <p class="sr-only" id="modal-video-title-1">A video is being shown</p>
+    
+        <figure class="aspect-w-16 aspect-h-9">
+          <iframe src="" referrerpolicy="strict-origin-when-cross-origin" class="js-modal-video__media" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+
+        </figure>
+      </div>
+    
+      <div class="modal__loader" aria-hidden="true">
+        <svg class="icon w-[48px] h-[48px] text-floor icon--is-spinning" viewBox="0 0 48 48">
+          <path d="M24,48A24,24,0,1,1,48,24,24.027,24.027,0,0,1,24,48ZM24,4A20,20,0,1,0,44,24,20.023,20.023,0,0,0,24,4Z" opacity="0.4"></path>
+          <path d="M48,24H44A20.023,20.023,0,0,0,24,4V0A24.028,24.028,0,0,1,48,24Z"></path>
+        </svg>
+      </div>
+    
+      <button class="appearance-none modal__close-btn modal__close-btn--outer js-modal__close js-tab-focus">
+        <svg class="icon w-[20px] h-[20px]" viewBox="0 0 24 24">
+          <title>Close modal window</title>
+          <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="3" x2="21" y2="21" />
+            <line x1="21" y1="3" x2="3" y2="21" />
+          </g>
+        </svg>
+      </button>
+    </div>
+
 {{ end }}
