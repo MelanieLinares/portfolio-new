@@ -104,34 +104,22 @@
 
     <div style="margin-left: auto;">
 
-            <!-- if viewing current year -->
-            {{  if in .Date.Year "2024" }} 
+{{ $currentYear := .Date.Year }}
+{{ $prevYear := sub $currentYear 1 }}
+{{ $nextYear := sub $currentYear -1 }}
 
-            <a href="/retrospective/{{ sub .Date.Year 1 }}" style="margin-right: 1rem" class="homepage radius-lg text-center retro">
-              <span><span aria-hidden="true"><--</span> PREVIOUS: {{ sub .Date.Year 1 }}</span>
-            </a> 
-            
-            {{end}}
+{{ if ne $currentYear 2022 }}
+  <a href="/retrospective/{{ $prevYear }}" style="margin-right: 1rem" class="homepage radius-lg text-center retro">
+    <span><span aria-hidden="true"><--</span> PREVIOUS: {{ $prevYear }}</span>
+  </a>
+{{ end }}
 
-            {{  if in .Date.Year "2023" }} 
+{{ if ne $currentYear 2025 }}
+  <a href="/retrospective/{{ $nextYear }}" style="margin-right: 1rem" class="homepage radius-lg text-center retro">
+    <span>NEXT: {{ $nextYear }} <span aria-hidden="true">--></span></span>
+  </a>
 
-            <a href="/retrospective/{{ sub .Date.Year 1 }}" style="margin-right: 1rem" class="homepage radius-lg text-center retro">
-              <span><span aria-hidden="true"><--</span> PREVIOUS: {{ sub .Date.Year 1 }}</span>
-            </a> 
-
-            <a href="/retrospective/{{ sub .Date.Year -1 }}" style="margin-right: 1rem" class="homepage radius-lg text-center retro">
-              <span>NEXT: {{ sub .Date.Year -1 }} <span aria-hidden="true">--></span></span>
-            </a> 
-
-            {{end}}
-
-            {{  if in .Date.Year "2022" }} 
-
-            <a href="/retrospective/{{ sub .Date.Year -1 }}" style="margin-right: 1rem" class="homepage radius-lg text-center retro">
-              <span>NEXT: {{ sub .Date.Year -1 }} <span aria-hidden="true">--></span></span>
-            </a> 
-
-            {{end}}
+{{ end }}
 
     </div>
 
