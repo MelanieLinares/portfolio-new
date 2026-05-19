@@ -1,10 +1,132 @@
-<header class="nav {{.Params.theme}}">
+    <header class="f-header hide-nav hide-nav--fixed js-hide-nav js-hide-nav--main js-f-header">
+      <div class="f-header__mobile-content w-[calc(100%_-_2.5rem)] lg:w-[calc(100%_-_4rem)] mx-auto max-w-7xl">
+						<a href="/index.html" {{ if eq .URL "/" }} class="current" aria-current="page" {{ end }} style="display: inline-block" aria-label="Melanie Linares home">
+							<!-- <img src="/img/logo.svg" alt="" class="desktop-logo"/> -->
+							<img src="/img/logo-mobile.svg" alt="" class="mobile-logo"/>
+							<!-- <img src="/img/logo-icon.svg" alt="" class="icon-logo"/> -->
+						</a>
+    
+        <button class="appearance-none bg-transparent anim-menu-btn js-anim-menu-btn js-tab-focus f-header__nav-control" aria-label="Toggle menu">
+          <i class="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden="true"></i>
+        </button>
+      </div>
+    
+      <div class="f-header__nav" role="navigation">
+        <div class="f-header__nav-grid w-[calc(100%_-_2.5rem)] lg:w-[calc(100%_-_4rem)] mx-auto max-w-7xl">
+          <div class="f-header__nav-logo-wrapper lg:mr-12">
+						<a href="/index.html" {{ if eq .URL "/" }} class="current" aria-current="page" {{ end }} style="display: inline-block" aria-label="Melanie Linares home">
+							<img src="/img/logo.svg" alt="" class="desktop-logo"/>
+							<!-- <img src="/img/logo-mobile.svg" alt="" class="mobile-logo"/>
+							<img src="/img/logo-icon.svg" alt="" class="icon-logo"/> -->
+						</a>
+          </div>
+      
+          <ul class="f-header__list js-f-header__list">
+            <li class="f-header__item"><a href="/about" class="f-header__link text-[1.2rem] lg:text-[1rem] js-f-header__link js-tab-focus">About</a></li>
+            <li class="f-header__item"><a href="/work" class="f-header__link text-[1.2rem] lg:text-[1rem] js-f-header__link js-tab-focus">Work</a></li>
+            <li class="f-header__item"><a href="/article" class="f-header__link text-[1.2rem] lg:text-[1rem] js-f-header__link js-tab-focus">Articles</a></li>
+          </ul>
+      
+          <ul class="f-header__list lg:ml-auto">
+            <li class="hidden lg:block">
+              <div class="ld-switch flex justify-center items-center js-adv-select js-ld-switch">
+                <select name="select-color-theme" id="select-color-theme">
+                  <optgroup label="Appearance">
+                    <option value="0" data-option-theme="default" data-option-theme-preview="select-color-theme-light.svg">Light</option>
+                    <option value="1" data-option-theme="dark" data-option-theme-preview="select-color-theme-dark.svg">Dark</option>
+                    <option value="2" data-option-theme-preview="select-color-theme-system.svg">System</option>
+                  </optgroup>
+                </select>
+              
+                <button class="appearance-none bg-transparent ld-switch-btn hidden js-adv-select__control" aria-controls="color-theme-popover" aria-haspopup="listbox">
+                  <span class="sr-only js-adv-select__value"></span>
+              
+                  <div class="ld-switch-btn__icon-wrapper ld-switch-btn__icon-wrapper--in js-ld-switch-icon" aria-hidden="true">
+                    <svg class="icon ld-switch-btn__icon" viewBox="0 0 20 20">
+                      <title>light</title>
+                      <g fill="currentColor">
+                        <circle cx="10" cy="10" r="4" fill-opacity=".2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 1v1.5"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.364 3.636l-1.061 1.061"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 10h-1.5"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.364 16.364l-1.061-1.061"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19v-1.5"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.636 16.364l1.061-1.061"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 10h1.5"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.636 3.636l1.061 1.061"></path>
+                      </g>
+                    </svg>
+                  </div>
+              
+                  <div class="ld-switch-btn__icon-wrapper js-ld-switch-icon" aria-hidden="true">
+                    <svg class="icon ld-switch-btn__icon" viewBox="0 0 20 20">
+                      <title>dark</title>
+                      <g fill="currentColor">
+                        <path d="M11.964 3.284c.021.237.036.474.036.716a8 8 0 0 1-8 8c-.242 0-.479-.015-.716-.036a7 7 0 1 0 8.68-8.68z" fill-opacity=".2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                        <path d="M7 4a.979.979 0 0 1-1-1 1 1 0 0 0-2 0 .979.979 0 0 1-1 1 1 1 0 0 0 0 2 .979.979 0 0 1 1 1 1 1 0 0 0 2 0 .979.979 0 0 1 1-1 1 1 0 0 0 0-2z"></path>
+                      </g>
+                    </svg>
+                  </div>
+              
+                  <div class="ld-switch-btn__icon-wrapper js-ld-switch-icon" aria-hidden="true">
+                    <svg class="icon ld-switch-btn__icon" viewBox="0 0 20 20">
+                      <title>light-auto</title>
+                      <g fill="currentColor">
+                        <path d="M10 14a4 4 0 1 1 3.465-6" fill-opacity=".2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18l2.5-7h1l2.5 7"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.714 16h4.572"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 1v1.5"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.364 3.636l-1.061 1.061"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.636 16.364l1.061-1.061"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 10h1.5"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.636 3.636l1.061 1.061"></path>
+                      </g>
+                    </svg>
+                  </div>
+              
+                  <div class="ld-switch-btn__icon-wrapper js-ld-switch-icon" aria-hidden="true">
+                    <svg class="icon ld-switch-btn__icon" viewBox="0 0 20 20">
+                      <title>dark-auto</title>
+                      <g fill="currentColor">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18l2.5-7h1l2.5 7"></path>
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.714 16h4.572"></path>
+                        <path d="M12.146 10.159A2.5 2.5 0 0 1 14.5 8.5h1a2.5 2.5 0 0 1 1.412.441 7 7 0 0 0-4.948-5.657c.021.237.036.474.036.716a8 8 0 0 1-8 8c-.242 0-.479-.015-.716-.036a6.99 6.99 0 0 0 6.427 5.012z" fill-opacity=".2"></path>
+                        <path d="M16.71 8a7.015 7.015 0 0 0-4.746-4.716c.021.237.036.474.036.716a8 8 0 0 1-8 8c-.242 0-.479-.015-.716-.036A7.006 7.006 0 0 0 9 16.929" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                        <path d="M7 4a.979.979 0 0 1-1-1 1 1 0 0 0-2 0 .979.979 0 0 1-1 1 1 1 0 0 0 0 2 .979.979 0 0 1 1 1 1 1 0 0 0 2 0 .979.979 0 0 1 1-1 1 1 0 0 0 0-2z"></path>
+                      </g>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              
+              <div id="color-theme-popover" class="popover ld-switch-popover bg-floor-light px-2 lg:px-3 pb-2 lg:pb-3 pt-1 lg:pt-1.5 rounded-md inner-glow shadow-lg hidden js-popover js-adv-select-popover js-tab-focus" role="listbox">
+                <div class="flex flex-wrap justify-between" role="group" describedby="select-color-theme-optgroup-label">
+                  <div class="w-full mb-2 lg:mb-3" id="select-color-theme-optgroup-label">
+                    <span class="text-xs text-contrast-medium">{optgroup-label}</span>
+                  </div>
+              
+                  <div class="ld-switch-popover__option" role="option">
+                    <figure class="rounded-md inner-glow">
+                      <img class="block rounded-[inherit]" src="../assets/{option-theme-preview}" alt="Theme preview">
+                    </figure>
+              
+                    <div class="text-xs mt-1 lg:mt-1.5 px-0.5 lg:px-1">{option-label}</div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+<!-- <header class="nav {{.Params.theme}}">
 	<nav id="navbar">
 		 <div class="wrapper">
 			<div class="flex">
 				<div class="flex" style="width: 100%; ">
 					<div>
-						<!-- Website Logo -->
+
 						<a href="/index.html" {{ if eq .URL "/" }} class="current" aria-current="page" {{ end }} style="display: inline-block" aria-label="Melanie Linares home">
 							<img src="/img/logo.svg" alt="" class="desktop-logo"/>
 							<img src="/img/logo-mobile.svg" alt="" class="mobile-logo"/>
@@ -12,7 +134,7 @@
 						</a>
 						
 					</div>
-					<!-- Primary Navbar items -->
+
 					<div class="lg:flex md:flex sm:flex xs:hidden hidden items-center justify-end" style="width: 100%">
 
 						<a href="/about" {{ if eq .URL "/about/" }} class="current block" aria-current="page" {{ else }} class="block h-full flex items-center px-2  transition-colors duration-300 ease-in-out" {{ end }}>
@@ -26,7 +148,6 @@
 					
 					</div>
 				</div>
-				<!-- Mobile menu button -->
 				<div class="lg:hidden md:hidden sm:hidden xs:flex flex items-center">
 					<button class="outline-none mobile-menu-button" aria-label="navigation menu">
 					<svg aria-hidden="true" class=" w-6 h-6"
@@ -44,7 +165,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- mobile menu -->
+
 		<div class="hidden mobile-menu">
 			<ul>
 				<li>
@@ -77,9 +198,9 @@
 		</script>
 	</nav>
 
-</header>
+</header> -->
 
-
+<!-- 
 <script>
 // Enable hidden nav bar
 {
@@ -111,5 +232,5 @@
     lastScrollY = window.scrollY;
   });
 }
-</script>
+</script> -->
 

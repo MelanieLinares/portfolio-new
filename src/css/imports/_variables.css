@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --purple-hex: #E9E3FF;
     --purple-rgb: 233,227,255;
 
@@ -27,4 +27,117 @@
 
   body:not(.color-undefined) .has-fullwidth-bg {
     background: unset
-  }
+  } */
+
+  /* --------------------------------
+
+  (START) Global editor code https://codyhouse.co/ds/globals/colors
+
+  -------------------------------- */
+
+:root, [data-theme="default"] {
+  /* main */
+  --color-primary-darker: 264, 68%, 29%;
+  --color-primary-dark: 264, 68%, 35%;
+  --color-primary: 264, 68%, 41%;
+  --color-primary-light: 264, 68%, 47%;
+  --color-primary-lighter: 264, 68%, 53%;
+  --color-accent-darker: 354, 80%, 52%;
+  --color-accent-dark: 354, 90%, 58%;
+  --color-accent: 354, 100%, 64%;
+  --color-accent-light: 354, 100%, 69%;
+  --color-accent-lighter: 354, 100%, 73%;
+  --color-secondary-darker: 29, 31%, 41%;
+  --color-secondary-dark: 29, 31%, 45%;
+  --color-secondary: 29, 31%, 50%;
+  --color-secondary-light: 29, 31%, 56%;
+  --color-secondary-lighter: 29, 31%, 62%;
+  --color-black: 265, 68%, 5%;
+  --color-white: 0, 0%, 100%;
+  /* feedback */
+  --color-warning-darker: 35, 79%, 48%;
+  --color-warning-dark: 35, 79%, 56%;
+  --color-warning: 35, 79%, 66%;
+  --color-warning-light: 35, 79%, 74%;
+  --color-warning-lighter: 35, 79%, 82%;
+  --color-success-darker: 154, 75%, 40%;
+  --color-success-dark: 154, 70%, 44%;
+  --color-success: 154, 66%, 48%;
+  --color-success-light: 154, 62%, 57%;
+  --color-success-lighter: 154, 58%, 67%;
+  --color-error-darker: 354, 100%, 52%;
+  --color-error-dark: 354, 100%, 58%;
+  --color-error: 354, 100%, 64%;
+  --color-error-light: 354, 100%, 69%;
+  --color-error-lighter: 354, 100%, 73%;
+  /* background */
+  --color-floor-darker: 240, 2%, 89%;
+  --color-floor-dark: 240, 3%, 94%;
+  --color-floor: 0, 0%, 100%;
+  --color-floor-light: 240, 3%, 100%;
+  --color-floor-lighter: 240, 2%, 100%;
+  /* color contrasts */
+  --color-contrast-lower: 270, 2%, 84%;
+  --color-contrast-low: 252, 3%, 63%;
+  --color-contrast-medium: 262, 4%, 45%;
+  --color-contrast-high: 258, 10%, 20%;
+  --color-contrast-higher: 265, 68%, 5%;
+}
+
+[data-theme="dark"] {
+  /* main */
+  --color-primary-darker: 264, 90%, 52%;
+  --color-primary-dark: 264, 95%, 57%;
+  --color-primary: 264, 100%, 62%;
+  --color-primary-light: 264, 100%, 66%;
+  --color-primary-lighter: 264, 100%, 70%;
+  --color-accent-darker: 354, 80%, 52%;
+  --color-accent-dark: 354, 90%, 58%;
+  --color-accent: 354, 100%, 64%;
+  --color-accent-light: 354, 100%, 69%;
+  --color-accent-lighter: 354, 100%, 73%;
+  --color-secondary-darker: 29, 31%, 41%;
+  --color-secondary-dark: 29, 31%, 45%;
+  --color-secondary: 29, 31%, 50%;
+  --color-secondary-light: 29, 31%, 56%;
+  --color-secondary-lighter: 29, 31%, 62%;
+  --color-black: 265, 68%, 5%;
+  --color-white: 0, 0%, 100%;
+  /* feedback */
+  --color-warning-darker: 35, 79%, 48%;
+  --color-warning-dark: 35, 79%, 56%;
+  --color-warning: 35, 79%, 66%;
+  --color-warning-light: 35, 79%, 74%;
+  --color-warning-lighter: 35, 79%, 82%;
+  --color-success-darker: 154, 75%, 40%;
+  --color-success-dark: 154, 70%, 44%;
+  --color-success: 154, 66%, 48%;
+  --color-success-light: 154, 62%, 57%;
+  --color-success-lighter: 154, 58%, 67%;
+  --color-error-darker: 354, 100%, 52%;
+  --color-error-dark: 354, 100%, 58%;
+  --color-error: 354, 100%, 64%;
+  --color-error-light: 354, 100%, 69%;
+  --color-error-lighter: 354, 100%, 73%;
+  /* background */
+  --color-floor-darker: 270, 8%, 6%;
+  --color-floor-dark: 270, 9%, 9%;
+  --color-floor: 270, 12%, 13%;
+  --color-floor-light: 270, 9%, 17%;
+  --color-floor-lighter: 270, 8%, 20%;
+  /* color contrasts */
+  --color-contrast-lower: 273, 7%, 24%;
+  --color-contrast-low: 273, 4%, 39%;
+  --color-contrast-medium: 264, 4%, 56%;
+  --color-contrast-high: 270, 10%, 81%;
+  --color-contrast-higher: 264, 100%, 98%;
+  /* font rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------------------------------
+
+  (END) Global editor code
+
+  -------------------------------- */

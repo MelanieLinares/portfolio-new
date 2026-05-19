@@ -105,9 +105,9 @@
     position: relative;
     display: inline-block;
     padding: 4px 6px;
-    /* color: hsl(var(--lw7-color-contrast-higher-hsl)); */
+    /* color: HSL(var(--lw7-color-contrast-higher-hsl)); */
     text-decoration: none;
-    /* background-image: linear-gradient(hsl(var(--lw7-color-contrast-higher-hsl)), hsl(var(--lw7-color-contrast-higher-hsl))); */
+    /* background-image: linear-gradient(HSL(var(--lw7-color-contrast-higher-hsl)), HSL(var(--lw7-color-contrast-higher-hsl))); */
     background-size: 100% 1px;
     background-repeat: repeat-x;
     background-position: left bottom;
@@ -118,7 +118,7 @@
   }
   .link-fx-2::after {
     content: attr(data-link-fx-clone);
-    /* color: hsl(var(--lw7-color-bg-hsl)); */
+    /* color: HSL(var(--lw7-color-bg-hsl)); */
     position: absolute;
     top: 0;
     left: 0;
@@ -213,8 +213,8 @@
     position: relative;
     display: inline-block;
     padding: 6px 10px;
-    /* background-color: hsl(var(--lw7-color-contrast-lower-hsl));
-    color: hsl(var(--lw7-color-contrast-higher-hsl)); */
+    /* background-color: HSL(var(--lw7-color-contrast-lower-hsl));
+    color: HSL(var(--lw7-color-contrast-higher-hsl)); */
     text-decoration: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -230,8 +230,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: hsl(var(--lw7-color-contrast-higher-hsl));
-    color: hsl(var(--lw7-color-bg-hsl)); */
+    /* background-color: HSL(var(--lw7-color-contrast-higher-hsl));
+    color: HSL(var(--lw7-color-bg-hsl)); */
     will-change: clip-path;
     -webkit-clip-path: polygon(0% 0%, 1px 0%, 1px 100%, 0% 100%);
             clip-path: polygon(0% 0%, 1px 0%, 1px 100%, 0% 100%);
@@ -280,7 +280,7 @@
   /* utility classes */
   .lw7-color-contrast-higher {
     /* --lw7-color-o: 1;
-    color: hsla(var(--lw7-color-contrast-higher-hsl), var(--lw7-color-o, 1)); */
+    color: HSLA(var(--lw7-color-contrast-higher-hsl), var(--lw7-color-o, 1)); */
   }
 
   /* icons */
@@ -302,14 +302,14 @@
   }
   
   .story-v4__title {
-    /* color: hsl(var(--ac6-color-contrast-higher-hsl));
-    -webkit-text-decoration-color: hsla(var(--ac6-color-contrast-higher-hsl), 0.2);
-            text-decoration-color: hsla(var(--ac6-color-contrast-higher-hsl), 0.2); */
+    /* color: HSL(var(--ac6-color-contrast-higher-hsl));
+    -webkit-text-decoration-color: HSLA(var(--ac6-color-contrast-higher-hsl), 0.2);
+            text-decoration-color: HSLA(var(--ac6-color-contrast-higher-hsl), 0.2); */
     transition: 0.2s;
   }
   .story-v4__title:hover {
-    /* -webkit-text-decoration-color: hsla(var(--ac6-color-contrast-higher-hsl), 1);
-            text-decoration-color: hsla(var(--ac6-color-contrast-higher-hsl), 1); */
+    /* -webkit-text-decoration-color: HSLA(var(--ac6-color-contrast-higher-hsl), 1);
+            text-decoration-color: HSLA(var(--ac6-color-contrast-higher-hsl), 1); */
   }
   
   .story-v4__img-link {
@@ -335,7 +335,7 @@
   
   .ac6-color-contrast-higher {
     --ac6-color-o: 1;
-    /* color: hsla(var(--ac6-color-contrast-higher-hsl), var(--ac6-color-o, 1)); */
+    /* color: HSLA(var(--ac6-color-contrast-higher-hsl), var(--ac6-color-o, 1)); */
   }
   
   .ac6-line-height-lg {
@@ -404,19 +404,19 @@
   }
   
   .ac6-text-component mark {
-    /* background-color: hsla(var(--ac6-color-accent-hsl), 0.2); */
+    /* background-color: HSLA(var(--ac6-color-accent-hsl), 0.2); */
     color: inherit;
   }
   
   .ac6-text-component blockquote {
     padding-left: 1em;
-    /* border-left: 4px solid hsl(var(--ac6-color-contrast-lower-hsl)); */
+    /* border-left: 4px solid HSL(var(--ac6-color-contrast-lower-hsl)); */
     font-style: italic;
   }
   
   .ac6-text-component hr {
     margin: calc(var(--ac6-space-md) * var(--ac6-space-multiplier, 1)) auto;
-    /* background: hsl(var(--ac6-color-contrast-lower-hsl)); */
+    /* background: HSL(var(--ac6-color-contrast-lower-hsl)); */
     height: 1px;
   }
   
@@ -654,7 +654,7 @@ Component
   gap: 1rem;
   align-items: center;
   font-size: 0.9375rem;
-  color: hsl(240, 4%, 65%);
+  color: HSL(240, 4%, 65%);
   text-transform: capitalize;
   margin-bottom: 1.5rem;
 }
@@ -663,7 +663,7 @@ Component
   content: "";
   height: 1px;
   flex-grow: 1;
-  background-color: hsla(230, 13%, 9%, 0.1);
+  background-color: HSLA(230, 13%, 9%, 0.1);
 }
 
 .feature-v2__grid {

@@ -220,6 +220,8 @@
     };
 
     function hideNavScrollDown() {
+          const headerExpandedClass = 'f-header--expanded';
+      if (!mainNav[0].classList.contains(headerExpandedClass)) {
       // if there's a secondary nav -> it has to reach the top before hiding nav
       if( subNav.length  > 0 && subNav[0].getBoundingClientRect().top > headerHeight) return;
       // on mobile -> hide navigation only if dropdown is not open
@@ -230,11 +232,15 @@
         mainNav[0].addEventListener('transitionend', addOffCanvasClass);
       }
       if( subNav.length  > 0 ) setTranslate(subNav[0], '-'+headerHeight+'px');
+    }
     };
 
     function hideNavScrollUp() {
+      const headerExpandedClass = 'f-header--expanded';
+      if (!mainNav[0].classList.contains(headerExpandedClass)) {
       if( mainNav.length > 0 ) {setTranslate(mainNav[0], '0%'); Util.removeClass(mainNav[0], 'hide-nav--off-canvas');mainNav[0].removeEventListener('transitionend', addOffCanvasClass);}
       if( subNav.length  > 0 ) setTranslate(subNav[0], '0%');
+      }
     };
 
     function addOffCanvasClass() {

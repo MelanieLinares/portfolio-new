@@ -2,7 +2,7 @@
 backgroundcolor: pink
 title: Home
 h1category: Design + dev + accessibility
-h1main: I help brands & agencies ensure accessibility is baked into
+h1main: I love helping brands & agencies ensure accessibility is baked into
 h1mainmark: code & design
 subtitle: I am an accessibility focused UX developer.
 text: I craft high performing, beautiful websites that are conversion-focused & user friendly.

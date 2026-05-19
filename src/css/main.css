@@ -3,12 +3,12 @@
 
 @import './imports/_variables';
 @import './imports/_global';
-@import './imports/_reduced-motion';
+/* @import './imports/_reduced-motion';
 @import './imports/_tags';
 @import './imports/_angled';
 @import './imports/_blockquote';
 @import './imports/_caption';
-@import './imports/_grid';
+
 @import './imports/_headings';
 @import './imports/_hero';
 @import './imports/_homepage-about';
@@ -24,40 +24,8 @@
 @import './imports/_fullwidth';
 @import './imports/_retrospective';
 @import './imports/_article-blog';
-@import './imports/_work';
+@import './imports/_work'; */
 
-img {
-	max-width: 100%;
-	display: block;
-  }
-  
-  blockquote {
-	margin: 0;
-	display: grid;
-	grid-template-rows: 1fr auto;
-	margin-bottom: 10px;
-	break-inside: avoid;
-  }
-
-  /* removed this for the about page, but might still need this? */
-  /* .container {
-	column-count: 3;
-	column-gap: 10px;
-  } */
-
-  .caption:before {
-	background: url(/img/white-border-arrow.png);
-	background-repeat: no-repeat;
-  }
-
-  html {
-	scroll-behavior: smooth;
-  }
-
-  .cs-top-list {
-	padding-right: 1rem
-  }
-
-  /* body {
-	padding-top: 5rem
-  } */
+@import './imports/_headings';
+@import './imports/_stats';
+@import './imports/_testimonial';

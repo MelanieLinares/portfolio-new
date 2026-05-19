@@ -1,3 +1,22 @@
+@media screen and (max-width: 319px) {
+    .work-roll li:not(:first-of-type) {
+        margin-left: 0!important;
+    }
+
+    .work-roll li:not(:first-of-type) .flex {
+        margin-left: .5rem
+    }
+ 
+    section:not(.content):last-of-type {
+    padding-bottom: 3rem;    
+}
+
+    .work-roll, .wrapper .grid {
+        display: block!important
+    }
+}
+
+
 .article-card {
     width: 65.25rem;
     margin-bottom: 1.75rem;
